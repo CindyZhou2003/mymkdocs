@@ -12,3 +12,8 @@ h1 {
         height: 300px; /* Adjust for smaller devices */
     }
 }
+
+.md-header-nav {
+  background-color: #14b079;
+}
+
