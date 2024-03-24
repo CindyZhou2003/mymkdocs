@@ -2,32 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/</loc>
-         <lastmod>2024-03-23</lastmod>
+         <lastmod>2024-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cindyzhou2003.github.io/mymkdocs/SE_courses/FDS/</loc>
-         <lastmod>2024-03-23</lastmod>
+         <loc>https://cindyzhou2003.github.io/mymkdocs/Courses/FDS/</loc>
+         <lastmod>2024-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cindyzhou2003.github.io/mymkdocs/SE_courses/OOP/</loc>
-         <lastmod>2024-03-23</lastmod>
+         <loc>https://cindyzhou2003.github.io/mymkdocs/Courses/OOP/</loc>
+         <lastmod>2024-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cindyzhou2003.github.io/mymkdocs/SE_courses/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86/</loc>
-         <lastmod>2024-03-23</lastmod>
+         <loc>https://cindyzhou2003.github.io/mymkdocs/Courses/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86/</loc>
+         <lastmod>2024-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/other/IELTs/</loc>
-         <lastmod>2024-03-23</lastmod>
+         <lastmod>2024-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/other/test/</loc>
-         <lastmod>2024-03-23</lastmod>
+         <lastmod>2024-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cindyzhou2003.github.io/mymkdocs/skills/Python/</loc>
+         <lastmod>2024-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cindyzhou2003.github.io/mymkdocs/skills/deeplearning/</loc>
+         <lastmod>2024-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
