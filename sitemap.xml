@@ -2,42 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/</loc>
-         <lastmod>2024-03-24</lastmod>
+         <lastmod>2024-03-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cindyzhou2003.github.io/mymkdocs/Courses/ADS/</loc>
+         <lastmod>2024-03-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/Courses/FDS/</loc>
-         <lastmod>2024-03-24</lastmod>
+         <lastmod>2024-03-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/Courses/OOP/</loc>
-         <lastmod>2024-03-24</lastmod>
+         <lastmod>2024-03-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/Courses/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86/</loc>
-         <lastmod>2024-03-24</lastmod>
+         <lastmod>2024-03-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cindyzhou2003.github.io/mymkdocs/Courses/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9FDB/</loc>
+         <lastmod>2024-03-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cindyzhou2003.github.io/mymkdocs/Courses/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8DM/</loc>
+         <lastmod>2024-03-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/other/IELTs/</loc>
-         <lastmod>2024-03-24</lastmod>
+         <lastmod>2024-03-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/other/test/</loc>
-         <lastmod>2024-03-24</lastmod>
+         <lastmod>2024-03-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cindyzhou2003.github.io/mymkdocs/skills/Algorithm/</loc>
+         <lastmod>2024-03-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/skills/Python/</loc>
-         <lastmod>2024-03-24</lastmod>
+         <lastmod>2024-03-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/skills/deeplearning/</loc>
-         <lastmod>2024-03-24</lastmod>
+         <lastmod>2024-03-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
