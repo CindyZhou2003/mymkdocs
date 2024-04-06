@@ -696,6 +696,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#169major-element" class="md-nav__link">
+    <span class="md-ellipsis">
+      169.Major Element
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -792,17 +801,17 @@
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#189rotate-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      189.Rotate Array
+    </span>
+  </a>
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#169major-element" class="md-nav__link">
-    <span class="md-ellipsis">
-      169.Major Element
-    </span>
-  </a>
+      </ul>
+    </nav>
   
 </li>
         
@@ -1021,6 +1030,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#169major-element" class="md-nav__link">
+    <span class="md-ellipsis">
+      169.Major Element
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1117,17 +1135,17 @@
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#189rotate-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      189.Rotate Array
+    </span>
+  </a>
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#169major-element" class="md-nav__link">
-    <span class="md-ellipsis">
-      169.Major Element
-    </span>
-  </a>
+      </ul>
+    </nav>
   
 </li>
         
@@ -1232,6 +1250,21 @@ We can actually do away with just 1 row as well. We denoted <code>dp[1][i]</code
 <span class="w">    </span><span class="p">}</span>
 <span class="p">};</span>
 </code></pre></div></p>
+<h4 id="169major-element">169.Major Element<a class="headerlink" href="#169major-element" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Solution</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">majorityElement</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">nums</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">l</span><span class="o">=</span><span class="n">nums</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">major</span><span class="o">=</span><span class="n">nums</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+<span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">l</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">count</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="n">major</span><span class="o">=</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">];</span><span class="c1">//count=0说明有另一个数出现的次数大于原来的</span>
+<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="n">major</span><span class="p">)</span><span class="n">count</span><span class="o">++</span><span class="p">;</span>
+<span class="w">            </span><span class="k">else</span><span class="w"> </span><span class="n">count</span><span class="o">--</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">major</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div>
 <h3 id="two-sum">Two sum<a class="headerlink" href="#two-sum" title="Permanent link">&para;</a></h3>
 <p><strong>暴力破解</strong>
 <div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Solution</span><span class="w"> </span><span class="p">{</span>
@@ -1531,22 +1564,7 @@ We can actually do away with just 1 row as well. We denoted <code>dp[1][i]</code
 <span class="p">};</span>
 <span class="c1">//最多出现两个重复的是2， 最多有k个重复的就把2改成k</span>
 </code></pre></div>
-<h3 id="169major-element">169.Major Element<a class="headerlink" href="#169major-element" title="Permanent link">&para;</a></h3>
-<p><div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Solution</span><span class="w"> </span><span class="p">{</span>
-<span class="k">public</span><span class="o">:</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">majorityElement</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">nums</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">l</span><span class="o">=</span><span class="n">nums</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
-<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">major</span><span class="o">=</span><span class="n">nums</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
-<span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">l</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
-<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">count</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="n">major</span><span class="o">=</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">];</span><span class="c1">//count=0说明有另一个数出现的次数大于原来的</span>
-<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="n">major</span><span class="p">)</span><span class="n">count</span><span class="o">++</span><span class="p">;</span>
-<span class="w">            </span><span class="k">else</span><span class="w"> </span><span class="n">count</span><span class="o">--</span><span class="p">;</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">major</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">};</span>
-</code></pre></div>
-189.Rotate Array
+<h4 id="189rotate-array">189.Rotate Array<a class="headerlink" href="#189rotate-array" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Solution</span><span class="w"> </span><span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
 <span class="kt">void</span><span class="w"> </span><span class="n">rotate</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">nums</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">k</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -1556,7 +1574,7 @@ We can actually do away with just 1 row as well. We denoted <code>dp[1][i]</code
 <span class="w">    </span><span class="n">reverse</span><span class="p">(</span><span class="n">nums</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="n">nums</span><span class="p">.</span><span class="n">begin</span><span class="p">()</span><span class="o">+</span><span class="n">k</span><span class="p">);</span>
 <span class="w">    </span><span class="n">reverse</span><span class="p">(</span><span class="n">nums</span><span class="p">.</span><span class="n">begin</span><span class="p">()</span><span class="o">+</span><span class="n">k</span><span class="p">,</span><span class="n">nums</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
 <span class="p">}</span><span class="w">     </span>
-</code></pre></div></p>
+</code></pre></div>
 <h3 id="hard">Hard<a class="headerlink" href="#hard" title="Permanent link">&para;</a></h3>
 <h4 id="239sliding-window-maximum">239.Sliding window maximum<a class="headerlink" href="#239sliding-window-maximum" title="Permanent link">&para;</a></h4>
 <p>You are given an array of integers <code>nums</code>, there is a sliding window of size <code>k</code> which is moving from the very left of the array to the very right. You can only see the <code>k</code> numbers in the window. Each time the sliding window moves right by one position.</p>
