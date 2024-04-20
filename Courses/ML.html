@@ -56,6 +56,8 @@
     
       <link rel="stylesheet" href="../css/neoteroi-mkdocs.css">
     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
       <link rel="stylesheet" href="../termynal.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
@@ -663,6 +665,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#training-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Training Metrics
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -753,6 +764,21 @@
       Beta distribution
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Beta distribution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1092,6 +1118,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#training-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Training Metrics
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1182,6 +1217,21 @@
       Beta distribution
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Beta distribution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1315,17 +1365,16 @@ linear vs. nonlinear</p>
 </table>
 </li>
 </ul>
-<p>$$
-  accuracy=\frac{TP+TN}{TP+TN+FP+FN
-  }\
-  recall=\frac{TP}{TP+FN}\
-  precision=\frac{TP}{TP+FP}\
-  F_1=\frac{2<em>recall</em>precison}{recall+precision}
-  $$</p>
+<div class="arithmatex">\[
+  accuracy=\frac{TP+TN}{TP+TN+FP+FN}\\
+  recall=\frac{TP}{TP+FN}\\
+  precision=\frac{TP}{TP+FP}\\
+  F_1=\frac{2*recall*precison}{recall+precision}
+\]</div>
 <ul>
 <li>mean squared error</li>
 </ul>
-<p>#### Training Metrics</p>
+<h4 id="training-metrics">Training Metrics<a class="headerlink" href="#training-metrics" title="Permanent link">&para;</a></h4>
 <ul>
 <li>mean squared error, cross entropy loss</li>
 <li>mean squared error</li>
@@ -1383,15 +1432,15 @@ linear vs. nonlinear</p>
 <p><strong>Usage</strong>: This distribution is used to model scenarios with two outcomes, such as pass/fail, yes/no, win/lose, etc. It's a fundamental building block for more complex distributions like the Binomial distribution, which models the number of successes in a fixed number of independent Bernoulli trials.</p>
 </li>
 <li>
-<p><strong>Probability Mass Function (PMF)</strong>: The PMF of a Bernoulli distributed random variable 
-   $$
+<p><strong>Probability Mass Function (PMF)</strong>: The PMF of a Bernoulli distributed random variable
+$$
    \begin{align<em>}
    P(X = k) = \begin{cases} 
    p &amp; \text{if } k = 1 \
    1-p &amp; \text{if } k = 0 
    \end{cases}
    \end{align</em>}
-   $$</p>
+$$</p>
 </li>
 </ol>
 <h4 id="binomial-distribution">Binomial distribution 二项分布<a class="headerlink" href="#binomial-distribution" title="Permanent link">&para;</a></h4>
@@ -1416,11 +1465,11 @@ linear vs. nonlinear</p>
 </li>
 <li>
 <p><strong>Probability Mass Function (PMF)</strong>: The probability of getting exactly k successes in n trials is given by:
-   $$
+$$
    \begin{align<em>}
    P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}
    \end{align</em>}
-   $$</p>
+$$</p>
 </li>
 <li>
 <p><strong>Usage</strong>: The Binomial distribution is used widely in statistics, particularly for modeling the number of successes in various scenarios such as flipping a coin, quality control processes, survey responses, and other fields where the outcomes are binary and trials are independent.</p>
@@ -1439,12 +1488,12 @@ linear vs. nonlinear</p>
 <p><strong>Standard Deviation (σ)</strong>: This measures the dispersion or variability around the mean; 68% of the data falls within <em>one σ</em>  standard deviation of the mean, 95% within <em>two</em> σ, and 99.7% within <em>three σ</em>, a property known as the empirical rule or 68-95-99.7 rule.</p>
 </li>
 <li>
-<p><strong>Formula</strong>: The probability density function (PDF) of the Normal distribution for a random variable X* is given by:
-   $$
+<p><strong>Formula</strong>: The probability density function (PDF) of the Normal distribution for a random variable X is given by:
+$$
    \begin{align<em>}
    f(x) = \frac{1}{\sigma\sqrt{2\pi}} e<sup>{-\frac{(x-\mu)</sup>2}{2\sigma^2}}
    \end{align</em>}
-   $$
+$$
     μ 是平均值，σ 是标准差standard deviation</p>
 </li>
 <li>
@@ -1477,14 +1526,14 @@ linear vs. nonlinear</p>
 <p><strong>Range</strong>: The outcomes are uniformly distributed over the interval [<em>a</em>,<em>b</em>].</p>
 </li>
 <li>
-<p><strong>Probability Density Function (PDF)</strong>: The PDF of the Uniform distribution is given by:
-  $$
-  \begin{align<em>}
-  f(x) = \frac{1}{b-a} \quad \text{for} \quad x \in [a, b]
-  \end{align</em>}
-  $$</p>
+<p><strong>Probability Density Function (PDF)</strong>: The PDF of the Uniform distribution is given by:</p>
 </li>
 </ul>
+<div class="arithmatex">\[
+  \begin{align*}
+  f(x) = \frac{1}{b-a} \quad \text{for} \quad x \in [a, b]
+  \end{align*}
+\]</div>
 <p>This indicates that every point in the interval [<em>a</em>,<em>b</em>] has the same probability density.</p>
 <ul>
 <li>
@@ -1495,9 +1544,9 @@ linear vs. nonlinear</p>
 </li>
 <li>
 <p><strong>Variance</strong>: 
-    $$
+$$
     \frac{(b-a)^2}{12}
-    $$</p>
+$$ </p>
 </li>
 </ul>
 <h4 id="poisson-distribution">Poisson distribution 泊松分布<a class="headerlink" href="#poisson-distribution" title="Permanent link">&para;</a></h4>
@@ -1510,14 +1559,16 @@ linear vs. nonlinear</p>
 <p><strong>Discrete Distribution</strong>: The Poisson distribution is used for discrete events (e.g., counting the number of emails received in an hour).</p>
 </li>
 <li>
-<p><strong>Probability Mass Function (PMF)</strong>: The PMF of a Poisson distributed random variable <em>X</em> indicating the probability of observing exactly k events is given by:
-   $$
-   \begin{align<em>}
-   P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}
-   \end{align</em>}
-   $$
-   for k=0,1,2,…, where <em>e</em> is the base of the natural logarithm.</p>
+<p><strong>Probability Mass Function (PMF)</strong>: The PMF of a Poisson distributed random variable <em>X</em> indicating the probability of observing exactly k events is given by:</p>
 </li>
+</ol>
+<div class="arithmatex">\[
+   \begin{align*}
+   P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}
+   \end{align*}
+\]</div>
+<p>for k=0,1,2,…, where <em>e</em> is the base of the natural logarithm.</p>
+<ol>
 <li>
 <p><strong>Mean and Variance</strong>:</p>
 </li>
@@ -1540,42 +1591,36 @@ linear vs. nonlinear</p>
 </ul>
 <h4 id="beta-distribution">Beta distribution<a class="headerlink" href="#beta-distribution" title="Permanent link">&para;</a></h4>
 <p>beta 分布是在区间 [0, 1] 上定义的一系列连续概率分布，由两个正形状参数（用 α 和 β 表示）进行参数化。 它在统计、贝叶斯分析和机器学习等领域特别有用。</p>
-<ol>
+<p>1.<strong>Support:</strong> The distribution is defined for values on the interval [0, 1].</p>
+<p>2.<strong>Shape Parameters</strong>:
+<em>α</em> and <em>β</em> control the shape of the distribution:</p>
+<ul>
 <li>
-<p><strong>Support:</strong> The distribution is defined for values on the interval [0, 1].</p>
+<p>If α=β=1, the beta distribution is uniform.</p>
 </li>
 <li>
-<p>Shape Parameters:<em>α</em>and <em>β</em></p>
-<p>control the shape of the distribution:</p>
+<p>If α&gt;1 and β=1 (or vice versa), the distribution is skewed towards 1 (or 0).</p>
 </li>
 <li>
-<p>If α<em>=</em>β=1, the beta distribution is uniform.</p>
-</li>
-<li>If α<em>&gt;1 and β</em>=1 (or vice versa), the distribution is skewed towards 1 (or 0).</li>
-<li>If α<em>=</em>β&gt;1, the distribution is symmetric and bell-shaped around 0.5.</li>
-<li>
-<p>If <em>α</em>&lt;1 and β&lt;1, the distribution is U-shaped.</p>
+<p>If α=β&gt;1, the distribution is symmetric and bell-shaped around 0.5.</p>
 </li>
 <li>
-<p><strong>Mean:</strong> The mean of the beta distribution is <span class="arithmatex">\(<span class="arithmatex">\(\frac{\alpha}{\alpha+\beta}\)</span>\)</span>.</p>
+<p>If α&lt;1 and β&lt;1, the distribution is U-shaped.</p>
 </li>
-<li>
-<p><strong>Variance:</strong> The variance is <span class="arithmatex">\(<span class="arithmatex">\(\frac{α+β}{(α+β)^2(α+β+1)}\)</span>\)</span>​.</p>
-</li>
-<li>
-<p><strong>Probability Density Function (PDF):</strong>
-   $$
-   f(x;\alpha,\beta)=\frac{x<sup _beta-1="\beta-1">{\alpha-1}(1-x)</sup>}{B(\alpha,\beta)}
-   $$
-   Where:</p>
-</li>
-<li>
-<p><em>x</em> is the variable over the interval [0, 1].</p>
-</li>
-<li><em>α</em> and β are shape parameters.</li>
-<li><em>B</em>(<em>α</em>,<em>β</em>) is the beta function, serving as a normalization factor.</li>
-</ol>
-<p>##### Example</p>
+</ul>
+<p>3.<strong>Mean:</strong> The mean of the beta distribution is <span class="arithmatex">\(\frac{\alpha}{\alpha+\beta}\)</span>.</p>
+<p>4.<strong>Variance:</strong> The variance is <span class="arithmatex">\(\frac{α+β}{(α+β)^2(α+β+1)}\)</span>​.</p>
+<p>5.<strong>Probability Density Function (PDF):</strong></p>
+<div class="arithmatex">\[
+f(x;\alpha,\beta)=\frac{x^{\alpha-1}(1-x)^{\beta-1}}{B(\alpha,\beta)}
+\]</div>
+<p>Where:</p>
+<ul>
+<li>x is the variable over the interval [0, 1].</li>
+<li>α and β are shape parameters.</li>
+<li>B(α,β) is the beta function, serving as a normalization factor.</li>
+</ul>
+<h5 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h5>
 <p>​    In Bayesian data analysis, if the prior distribution for a parameter <strong>0</strong> is Beta(2, 2), and after observing data, the posterior distribution is Beta(5, 3), what is the <strong>maximum a posteriori (MAP)</strong> estimate for 0?</p>
 <p><img src="../images/image-20240414172044383.png" alt="image-20240414172044383" style="zoom: 50%;" /></p>
 <p>​   Given a posterior distribution Beta(5, 3), let's plug in the values α=5 and β=3 into the formula to calculate the MAP estimate. The maximum a posteriori (MAP) estimate for the parameter x is approximately 0.67.</p>
@@ -1634,29 +1679,29 @@ linear vs. nonlinear</p>
 <li>
 <p>Bayesian equation</p>
 </li>
-<li>
-<p>$$
-    P(\theta|D)=\frac{P(D|\theta)P(\theta)}{P(D)}\</p>
-<p>posterior=\frac{likelihood*prior}{evidence}
-$$</p>
-</li>
+</ul>
+<div class="arithmatex">\[
+    P(\theta|D)=\frac{P(D|\theta)P(\theta)}{P(D)}\\
+    \\
+    posterior=\frac{likelihood*prior}{evidence}
+\]</div>
+<ul>
 <li>
 <p>Bayesian inference</p>
 </li>
 <li>
-<p><strong>Maximum A Posterior(MAP)</strong>
-    $$
-    \theta^* =  \mathop{argmax}<em _theta="\theta">{\theta}\, P(\theta|D)=\mathop{argmax}</em>\, P(D|\theta)P(\theta)
-    $$</p>
-</li>
-<li></li>
-<li>
-<p>Minimum Mean Squared Error
-    $$
-    \theta^* =  \mathop{argmin}<em _hat_theta="\hat{\theta">{\theta}\mathop{E}</em>-posterior} {(\hat{\theta}-\theta)}^2=\mathop{E}_{\hat{\theta}-posterior}[\hat{\theta}]
-    $$</p>
+<p><strong>Maximum A Posterior(MAP)</strong></p>
 </li>
 </ul>
+<div class="arithmatex">\[
+\theta^* =  \mathop{argmax}_{\theta}\,  P(\theta|D)=\mathop{argmax}_{\theta}\, P(D|\theta)P(\theta)
+\]</div>
+<ul>
+<li>Minimum Mean Squared Error</li>
+</ul>
+<div class="arithmatex">\[
+\theta^* =  \mathop{argmin}_{\theta}\mathop{E}_{\hat{\theta}-posterior} {(\hat{\theta}-\theta)}^2=\mathop{E}_{\hat{\theta}-posterior}[\hat{\theta}]
+\]</div>
 <p><a href="https://chat.openai.com/share/80223f00-4ab2-41d5-8691-db83547f1ff9">https://chat.openai.com/share/80223f00-4ab2-41d5-8691-db83547f1ff9</a></p>
 <h2 id="4-null-hypothesis-testing">4 Null hypothesis testing<a class="headerlink" href="#4-null-hypothesis-testing" title="Permanent link">&para;</a></h2>
 <p>假设检验</p>
@@ -1836,13 +1881,11 @@ $$</p>
       
         <script src="../js/extra.js"></script>
       
-        <script src="../js/mathjax.js"></script>
-      
         <script src="../js/katex.js"></script>
       
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
       
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
       
         <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
       
