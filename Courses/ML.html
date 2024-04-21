@@ -1546,7 +1546,7 @@ $$
 <p><strong>Variance</strong>: 
 $$
     \frac{(b-a)^2}{12}
-$$ </p>
+$$</p>
 </li>
 </ul>
 <h4 id="poisson-distribution">Poisson distribution 泊松分布<a class="headerlink" href="#poisson-distribution" title="Permanent link">&para;</a></h4>
@@ -1648,50 +1648,46 @@ f(x;\alpha,\beta)=\frac{x^{\alpha-1}(1-x)^{\beta-1}}{B(\alpha,\beta)}
 </li>
 </ul>
 <h2 id="3-bayesian-theorem">3 Bayesian Theorem<a class="headerlink" href="#3-bayesian-theorem" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
 <p>Bayesian view <span class="arithmatex">\(P(D|θ)\)</span></p>
-</li>
+<ul>
 <li>
 <p>realtions between events</p>
-<ul>
-<li>subsetting(inclusion) and equality</li>
-<li>mutuak exclusion and negation</li>
+</li>
+<li>
+<p>subsetting(inclusion) and equality</p>
+</li>
+<li>mutuak exclusion and negation<ul>
 <li>Addition Law of Probability</li>
 <li>Total Probability</li>
 </ul>
 </li>
 <li>
 <p>operations on events</p>
-<ul>
-<li>addition(union)</li>
-<li>multiplication(intersection)</li>
-<li>subtraction(difference)</li>
-</ul>
 </li>
 <li>
+<p>addition(union)</p>
+</li>
+<li>multiplication(intersection)</li>
+<li>subtraction(difference)</li>
+<li>
 <p>Conditional probability</p>
+</li>
+<li>
+<p>independence among events</p>
 <ul>
-<li>independence among events</li>
 <li>Multiplication law of Probability</li>
 </ul>
 </li>
-<li>
-<p>Bayesian equation</p>
-</li>
 </ul>
-<div class="arithmatex">\[
-    P(\theta|D)=\frac{P(D|\theta)P(\theta)}{P(D)}\\
-    \\
+<p>Bayesian equation
+$$
+    P(\theta|D)=\frac{P(D|\theta)P(\theta)}{P(D)}\
+    \
     posterior=\frac{likelihood*prior}{evidence}
-\]</div>
-<ul>
-<li>
+$$</p>
 <p>Bayesian inference</p>
-</li>
-<li>
-<p><strong>Maximum A Posterior(MAP)</strong></p>
-</li>
+<ul>
+<li><strong>Maximum A Posterior(MAP)</strong></li>
 </ul>
 <div class="arithmatex">\[
 \theta^* =  \mathop{argmax}_{\theta}\,  P(\theta|D)=\mathop{argmax}_{\theta}\, P(D|\theta)P(\theta)

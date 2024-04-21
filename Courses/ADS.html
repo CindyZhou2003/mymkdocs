@@ -624,6 +624,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#find" class="md-nav__link">
+    <span class="md-ellipsis">
+      Find
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#insert_2" class="md-nav__link">
     <span class="md-ellipsis">
       Insert
@@ -1035,9 +1044,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#master" class="md-nav__link">
+  <a href="#master-theorem" class="md-nav__link">
     <span class="md-ellipsis">
-      master
+      master theorem
     </span>
   </a>
   
@@ -1614,6 +1623,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#find" class="md-nav__link">
+    <span class="md-ellipsis">
+      Find
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#insert_2" class="md-nav__link">
     <span class="md-ellipsis">
       Insert
@@ -2025,9 +2043,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#master" class="md-nav__link">
+  <a href="#master-theorem" class="md-nav__link">
     <span class="md-ellipsis">
-      master
+      master theorem
     </span>
   </a>
   
@@ -2120,19 +2138,63 @@
 
 <h1 id="advanced-data-structure">Advanced Data Structure<a class="headerlink" href="#advanced-data-structure" title="Permanent link">&para;</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 3465 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span> 101 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 13 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 3612 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span> 100 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 13 分钟</p>
 </div>
 <h2 id="1-trees">1 Trees<a class="headerlink" href="#1-trees" title="Permanent link">&para;</a></h2>
 <h3 id="avl-trees">AVL trees 平衡树<a class="headerlink" href="#avl-trees" title="Permanent link">&para;</a></h3>
 <p>平衡的二叉搜索树，目的是使动态搜索更快</p>
-<p>所有操作的时间复杂度为：<span class="arithmatex">\(O(logN)\)</span>即高度 h</p>
-<p>在高度为 h 的 AVL 树中，最少节点数 <span class="arithmatex">\(n_h=\frac{1}{\sqrt{5}}(\frac{1+\sqrt{5}}{2})^{h+2}\)</span>，其中 <span class="arithmatex">\(h=-1,n_h=0\)</span>（空树的高度定义为-1）</p>
+<p>所有操作的时间复杂度为：<span class="arithmatex">\(O(logN)\)</span>，即高度 h</p>
+<p>在高度为 h 的 AVL 树中，最少节点数 <span class="arithmatex">\(n_h≈\frac{1}{\sqrt{5}}(\frac{1+\sqrt{5}}{2})^{h+3}-1\)</span>，其中 <span class="arithmatex">\(h=-1,n_h=0\)</span>​​（空树的高度定义为-1）</p>
+<p><span class="arithmatex">\(n_h=n_{h-1}+n_{h-2}+1\)</span></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">h/depth</th>
+<th><span class="arithmatex">\(n_h\)</span> 最少节点数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">0（一个结点root）</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td>4</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td>7</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td>12</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td>20</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td>33</td>
+</tr>
+</tbody>
+</table>
+<p>【Definition】The balance factor <span class="arithmatex">\(BF( node ) = h_L -h_R\)</span>​  .  In an AVL tree, BF( node ) = -1, 0, or 1.</p>
+<p>在 AVL 树中，不可能出现一个节点及其两个子节点的平衡因子都为 - 1的情况</p>
 <h4 id="insert">Insert<a class="headerlink" href="#insert" title="Permanent link">&para;</a></h4>
 <p>先插入到正确的位置上 bst，从下到上更新 BF，有问题做旋转</p>
 <h4 id="_1">单旋转<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
 <h4 id="_2">双旋转<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
+<p>left-right 是zjg-zag双旋转</p>
 <h3 id="splay-trees">Splay trees 伸展树<a class="headerlink" href="#splay-trees" title="Permanent link">&para;</a></h3>
 <p>性能类 AVL 树，但不关心是否平衡<br />每访问一个节点 X，从这个节点向上对树进行一系列旋转，使这个节点变成根<br />如果 X 的父节点是根，单旋转 X 和树根；如果 X 有父亲 P 和祖父 G，双旋转（zigzig 或 zigzag）</p>
+<p><img src="../images/image-20240420150207786.png" alt="image-20240420150207786" style="zoom: 33%;" /></p>
+<p>All of the Zig, Zig-zig, and Zig-zag rotations not only move the accessed node to the root, but also roughly half the depth of most nodes on the path.</p>
 <h3 id="amortized-analysis">Amortized Analysis 平摊分析<a class="headerlink" href="#amortized-analysis" title="Permanent link">&para;</a></h3>
 <p>书 chapter17<br />确保 amortized bound 是 实际 cost 的上界</p>
 <h4 id="aggregate-for-analysis">Aggregate for analysis 合计法<a class="headerlink" href="#aggregate-for-analysis" title="Permanent link">&para;</a></h4>
@@ -2147,43 +2209,69 @@
 <li>困难是要猜对每个操作的 credit，所以引入第三种方法</li>
 </ul>
 <h4 id="potential-method">Potential method 势能法<a class="headerlink" href="#potential-method" title="Permanent link">&para;</a></h4>
-<p>定义：<img src="../images/ads_1.png" style="zoom:50%;" /></p>
+<p>定义：<img src="../images/ads_1.png" style="zoom:40%;" /></p>
 <p><span class="arithmatex">\(D_{i-1}\)</span>是在本次操作前的结构；<span class="arithmatex">\(D_i\)</span>是本次操作后的结构<br />potential function 将当前问题的结构映射成一个数字——结构的势能<br />credit = 两个势能函数 potential function 的值的差——这个操作把问题的结构改变了多少</p>
 <ul>
 <li>困难是要找到一个好的势能函数，确保 its minimum at the start of the sequence</li>
 </ul>
-<p>对正整数 a, b, c, 如果<span class="arithmatex">\(a+b≤c\)</span>，那么<span class="arithmatex">\(lga+logb≤2lgc-2\)</span> </p>
+<p>对正整数 a, b, c, 如果<span class="arithmatex">\(a+b≤c\)</span>，那么<span class="arithmatex">\(lga+lgb≤2lgc-2\)</span> </p>
 <h3 id="red-black-trees">Red-Black Trees 红黑树<a class="headerlink" href="#red-black-trees" title="Permanent link">&para;</a></h3>
-<p>平衡的二叉搜索树，目的是使动态搜索更快<br />定义：<br />1. Root property: The root is black.<br />2. External property: Every leaf (Leaf is a NULL child of a node) is black in the Red-Black tree.<br />3. Internal property: The children of a red node are black. Hence possible parent of red node is a black node.<br />4. Depth property: All the leaves have the same black depth.<br />5. Path property: Every simple path from root to descendant leaf node contains the same number of black nodes. <br />The result of all these above-mentioned properties is that the Red-Black tree is <em>roughly balanced</em>.<br />**Rules That Every Red-Black Tree Follows: **</p>
+<p>平衡的二叉搜索树，目的是使动态搜索更快<br />定义：</p>
 <ol>
-<li>Every node has a color either red or black.</li>
-<li>The root of the tree is always black.</li>
-<li>Every leaf (e.i. NULL node) must be colored BLACK.</li>
-<li>There are no two adjacent red nodes (A red node cannot have a red parent or red child).</li>
-<li>Every path from a node (including root) to any of its descendants' NULL nodes has the same number of black nodes.</li>
+<li>
+<p>Root property: The root is black.</p>
+</li>
+<li>
+<p>External property: Every leaf (Leaf is a NULL child of a node) is black in the Red-Black tree.</p>
+</li>
+<li>
+<p>Internal property: The children of a red node are black. Hence possible parent of red node is a black node.</p>
+</li>
+<li>
+<p>Depth property: All the leaves have the same black depth.</p>
+</li>
+<li>
+<p>Path property: Every simple path from root to descendant leaf node contains the same number of black nodes. </p>
+</li>
 </ol>
+<p>The result of all these above-mentioned properties is that the Red-Black tree is <em>roughly balanced</em>.</p>
 <p>一棵有 N 个内部节点的红黑树，其高度最多为<span class="arithmatex">\(2ln(N+1)\)</span>可由以下两个命题得证</p>
 <ul>
-<li>对于任何一个节点 x，<span class="arithmatex">\(sizeof(x)≥2^{blackheight(x)}-1\)</span></li>
+<li>对于任何一个节点 x，<span class="arithmatex">\(sizeof(x)≥2^{blackheight(x)}-1\)</span>，即 the number of internal nodes in the subtree rooted at
+  x is more than bh(x) </li>
 <li><span class="arithmatex">\(blackheight(T)&gt;=h(T)/2\)</span></li>
 </ul>
 <p><img src="../images/ads_2.png" style="zoom: 33%;" /></p>
 <p>2 和 3 是旋转次数</p>
+<ul>
+<li>In a red-black tree, an internal red node cannot be a node of degree 1</li>
+</ul>
 <h4 id="insert_1">Insert 插入<a class="headerlink" href="#insert_1" title="Permanent link">&para;</a></h4>
-<p>插入，检查颜色，旋转 <br />可以循环实现</p>
+<p>插入，检查颜色，旋转 </p>
+<p>可以循环实现</p>
 <h4 id="delete">Delete 删除<a class="headerlink" href="#delete" title="Permanent link">&para;</a></h4>
 <ul>
 <li>删除叶子</li>
 <li>删除 1 度的节点：用孩子代替</li>
 <li>删除 2 度的节点：用左子树的最大或右子树的最小代替（保持颜色不变）；删除子树的代替节点</li>
 </ul>
-<p>总之，必须在被替代（删除）的路径上加一个黑节点 或者 整棵树的黑高-1 rebalance<br />运行时间：<span class="arithmatex">\(O(logN)\)</span>对比 AVL，红黑树删除有优势<br /><strong>被删除的节点 x 为黑色</strong>（x 为红色可以直接删掉）<br /><em><strong>case 1</strong>：x 有个红色的兄弟 w</em><br />交换兄弟和它父亲的颜色；对兄弟 w 和父亲 p 进行一次旋转，转化为以下三种情况</p>
+<p>总之，必须在被替代（删除）的路径上加一个黑节点 或者 整棵树的黑高-1 rebalance，不需要旋转</p>
+<p>运行时间：<span class="arithmatex">\(O(logN)\)</span>对比 AVL，红黑树删除有优势<br /><strong>被删除的节点 x 为黑色</strong>（x 为红色可以直接删掉）<br /><em><strong>case 1</strong>：x 有个红色的兄弟 w</em><br />交换兄弟和它父亲的颜色；对兄弟 w 和父亲 p 进行一次旋转，转化为以下三种情况</p>
 <p><em><strong>case 2</strong>：x 的兄弟 w 是黑色，且 w 的两个子节点都是黑色</em><br />将兄弟变红色；将 x 上移（到它原本的父亲处）；检查如果 x 变成根，则表明虽然没有在这条路径上加一个黑节点，但是成功从其他所有路径上移除了一个黑节点，可以删除原来 x；循环</p>
 <p><em><strong>case 3</strong>：x 的兄弟 w 是黑色，且左孩子是红色，右孩子是黑色</em><br />交换兄弟和它左孩子的颜色，两者进行一次旋转；转化为情况 4</p>
 <p><em><strong>case 4</strong>：x 的兄弟 w 是黑色，且右孩子是红色</em><br />将兄弟变红，它的孩子和父亲变黑（或其他颜色更改）；旋转父亲 p 和兄弟 w</p>
 <h3 id="b-trees">B+ trees<a class="headerlink" href="#b-trees" title="Permanent link">&para;</a></h3>
-<p>一种<strong>查找树</strong>，类似红黑树，不是二叉树，平衡，自下而上构建而成<br />一棵m阶的B+树定义如下：<br />(1)每个结点至多有m个子女；<br />(2)除根结点外，每个结点至少有[m/2]个子女，根结点至少有两个子女；<br />(3)有k个子女的结点必有k个关键字。<br />B+树的查找与B树不同，当索引部分某个结点的关键字与所查的关键字相等时，并不停止查找，应继续沿着这个关键字左边的指针向下，一直查到该关键字所在的叶子结点为止。</p>
-<p>B 树的高度仅随它所包含的节点数按对数增长<br />M 阶 B+树，总节点数 N，<span class="arithmatex">\(Depth(M,N)=O(⌈log_{⌈M/2⌉}N⌉\)</span>，<span class="arithmatex">\(T_{find}(M,N)=O(logN)\)</span><br />通常 M=3 or 4</p>
+<p>一种<strong>查找树</strong>，类似红黑树，不是二叉树，平衡，自下而上构建而成<br />一棵m阶的B+树定义如下：<br />(1)每个结点至多有m个子女；<br />(2)除根结点外，每个结点至少有[m/2]个子女，根结点至少有两个子女；<br />(3)有k个子女的结点必有k个关键字。<br /></p>
+<ul>
+<li>B 树的高度仅随它所包含的节点数按对数增长</li>
+</ul>
+<p>M 阶 B+树，总节点数 N，<span class="arithmatex">\(Depth(M,N)=O(⌈log_{⌈M/2⌉}N⌉\)</span></p>
+<p>通常 M=3 or 4</p>
+<p>2-3 tree 各节点度数为2或3</p>
+<p>叶子结点存储真实值；父亲结点从第二片叶子起，存每片叶子的最小值</p>
+<h4 id="find">Find<a class="headerlink" href="#find" title="Permanent link">&para;</a></h4>
+<p>B+树的查找与B树不同，当索引部分某个结点的关键字与所查的关键字相等时，并不停止查找，应继续沿着这个关键字左边的指针向下，一直查到该关键字所在的叶子结点为止。</p>
+<p><span class="arithmatex">\(T_{find}(M,N)=O(logN)\)</span>，和是M阶B+树的阶数无关</p>
 <h4 id="insert_2">Insert<a class="headerlink" href="#insert_2" title="Permanent link">&para;</a></h4>
 <p>分裂</p>
 <h4 id="delete_1">Delete<a class="headerlink" href="#delete_1" title="Permanent link">&para;</a></h4>
@@ -2198,8 +2286,8 @@
 设 <span class="arithmatex">\(size_i\)</span>为 第 <em>i</em> 次插入前 buffer 的大小。
 <span class="arithmatex">\(c^i=c_i+ϕ_i−ϕ_{i−1}.\)</span>
 如果插入前 buffer 没满，<span class="arithmatex">\(c_i\)</span>=1 ，否则 <span class="arithmatex">\(c_i\)</span>=<span class="arithmatex">\(size_i\)</span>+1.
-A: 如果插入前 buffer 没满, <span class="arithmatex">\(c^i=ci+ϕi−ϕ_{i−1}=1+(size_i+1)−size_i=2\)</span>.
-如果插入前 buffer 满，<span class="arithmatex">\(c^i=ci+ϕi−ϕ_{i−1}=size_i+1+(size_i+1)−size_i=size_i+2\)</span>.
+A: 如果插入前 buffer 没满, <span class="arithmatex">\(c^i=c_i+ϕ_i−ϕ_{i−1}=1+(size_i+1)−size_i=2\)</span>.
+如果插入前 buffer 满，<span class="arithmatex">\(c^i=c_i+ϕ_i−ϕ_{i−1}=size_i+1+(size_i+1)−size_i=size_i+2\)</span>.
 B: 同理, 两种情况 <span class="arithmatex">\(ϕi−ϕi−1\)</span> 要么是 1 要么是 -1， 而 <em>ci</em> 却和当前 buffer 大小有关，<span class="arithmatex">\(c^i\)</span> 肯定不是常数。
 C: 如果插入前 buffer 没满, <span class="arithmatex">\(ϕi−ϕ_{i−1}=−1,c^i=ci+ϕi−ϕi−1=1+(−1)=0\)</span>.</p>
 <p>如果插入前 buffer 满，<span class="arithmatex">\(ϕi−ϕ_{i−1}=(size_i−1)−0=size_i−1\)</span>,</p>
@@ -2217,31 +2305,36 @@ D: 如果插入前 buffer 没满, <span class="arithmatex">\(ϕi−ϕ_{i−1}=1,
 <h3 id="modules">modules<a class="headerlink" href="#modules" title="Permanent link">&para;</a></h3>
 <p>index generator 包括 token analyzer stop filter, vocabulary scanner, vocabulary insertor, memory management</p>
 <ol>
-<li><strong>word stemming</strong> 提取词干 and stop filter 将单词的不同形式都记为原型；常见的词为 <strong>stop words</strong>，将它们剔除出原来的文件，但还是有它们的 posting list</li>
-<li>What are the pros and cons of using <em>hashing</em>, compared to <em>search trees</em>?</li>
+<li><strong>word stemming</strong> 提取词干 and stop filter 将单词的不同形式都记为原型</li>
+<li>常见的词为 <strong>stop words</strong>，将它们剔除出原来的文件，但还是有它们的 posting list</li>
+<li>What are the pros and cons of using <em>hashing</em>, compared to <em>search trees</em>? Faster for a single word but expansive for a range of search.</li>
 </ol>
-<p>Faster for a single word but expansive for a range of search</p>
 <h3 id="topic">topic<a class="headerlink" href="#topic" title="Permanent link">&para;</a></h3>
 <p><em>Distributed indexing</em>：each node contains a <strong>subset</strong> of a collection 集合的部分<br />Dynamic indexing：新的文件先存到附加序号集中，等到用户搜索时查询 main index 以及 auxiliary index<br />Compression 压缩：<br /><em>Thresholding</em> 阈值：for documents，返回前 k 个权重最大的文件；for query， 查询单词频率最低的一些文件</p>
 <h3 id="measure">Measure<a class="headerlink" href="#measure" title="Permanent link">&para;</a></h3>
-<p><span class="arithmatex">\(precision=R_R/(R_R+I_R)\)</span><br /><span class="arithmatex">\(recall=R_R/(R_R+R_N)\)</span></p>
+<p><span class="arithmatex">\(precision=R_R/(R_R+I_R)\)</span><br /><span class="arithmatex">\(recall=R_R/(R_R+R_N)\)</span>​</p>
 <h3 id="questions_1">Questions<a class="headerlink" href="#questions_1" title="Permanent link">&para;</a></h3>
 <ol>
-<li>While accessing a term stored in a B+ tree in an inverted file index, range searches are expensive. F</li>
+<li>While accessing a term stored in a B+ tree in an inverted file index, range searches are expensive. <strong>F</strong></li>
 </ol>
 <p><a href="https://blog.csdn.net/HGGshiwo/article/details/116351170">[题集]Lecture3. Inverted File Index_in distributed indexing, document-partitioned stra-CSDN博客</a></p>
 <h2 id="3-heap">3 Heap<a class="headerlink" href="#3-heap" title="Permanent link">&para;</a></h2>
 <h3 id="lefiest-heap">Lefiest Heap 左式堆<a class="headerlink" href="#lefiest-heap" title="Permanent link">&para;</a></h3>
 <p>用建堆的方法<strong>合并</strong>两个堆的时间复杂度是<span class="arithmatex">\(Θ(N)\)</span>；用指针的方式会使其他操作（find）变慢<br />需要频繁的 Merge 时使用左式堆<br />性质：有序性（和普通堆一样）；结构不平衡的二叉树</p>
-<p>定义：Npl(x) <strong>null path length</strong> 任意一个节点 x 的 Npl 是从 x 到一个没有两个孩子的节点的<strong>最短路径长</strong>；令 Npl(NULL)=-1<br /><span class="arithmatex">\(Npl(X)\)</span> = min { <span class="arithmatex">\(Npl(C)+ 1\)</span>for all C as children of X } 从下往上算 Npl</p>
+<p>定义：Npl(x) <strong>null path length</strong> 任意一个节点 x 的 Npl 是从 x 到一个没有两个孩子的节点的<strong>最短路径长</strong>；令 <span class="arithmatex">\(Npl(NULL)=-1\)</span></p>
+<p><span class="arithmatex">\(Npl(X)\)</span> = min { <span class="arithmatex">\(Npl(C)+ 1\)</span>for all C as children of X } 从下往上算 Npl</p>
 <p>The leftist heap property is that for every node X in the heap, the <strong>null path length</strong> of the left child is <strong>at least</strong> as large as that of the right child.</p>
 <p>定理：</p>
 <p>右路径上有 r 个节点的左式树至少有总共<span class="arithmatex">\(2^r-1\)</span>个节点；即 有 N 个节点的左式树，它的右路径上最多有<span class="arithmatex">\(⌊log(N+1)⌋\)</span>个节点</p>
-<p>我们可以把所有工作都放在右路径上，因为它更短<br />A leftist heap with the null path length of the root being <strong>r</strong> must have at least <span class="arithmatex">\(2^{r+1}-1\)</span> nodes</p>
+<p>我们可以把所有工作都放在右路径上，因为它更短</p>
+<p>A leftist heap with the null path length of the root being <strong>r</strong> must have at least <span class="arithmatex">\(2^{r+1}-1\)</span> nodes</p>
 <h4 id="merge">Merge<a class="headerlink" href="#merge" title="Permanent link">&para;</a></h4>
 <h5 id="recursive">recursive<a class="headerlink" href="#recursive" title="Permanent link">&para;</a></h5>
-<p>step1 <code>Merge(H1-&gt;Right,H2)</code><br />step2 <code>Attach(H2,H1-&gt;Right)</code><br />step3 <code>Swap(H1-&gt;Right,H1-&gt;Left)</code> if necessary
-<div class="highlight"><pre><span></span><code><span class="k">struct</span><span class="w"> </span><span class="nc">Treenode</span><span class="p">{</span>
+<p><img src="../images/image-20240420160748947.png" alt="image-20240420160748947" style="zoom:33%;" /></p>
+<p>step1 <code>Merge(H1-&gt;Right,H2)</code>; step2 <code>Attach(H2,H1-&gt;Right)</code></p>
+<p><img src="../images/image-20240420160811151.png" alt="image-20240420160811151" style="zoom:33%;" />                     <img src="../images/image-20240420160825942.png" alt="image-20240420160825942" style="zoom: 33%;" />      </p>
+<p>step3 <code>Swap(H1-&gt;Right,H1-&gt;Left)</code> if necessary</p>
+<p><div class="highlight"><pre><span></span><code><span class="k">struct</span><span class="w"> </span><span class="nc">Treenode</span><span class="p">{</span>
 <span class="w">    </span><span class="n">ElementType</span><span class="w"> </span><span class="n">Element</span><span class="p">;</span>
 <span class="w">    </span><span class="n">PriorityQueue</span><span class="w"> </span><span class="n">Left</span><span class="p">;</span>
 <span class="w">    </span><span class="n">PriorityQueue</span><span class="w"> </span><span class="n">Right</span><span class="p">;</span>
@@ -2268,25 +2361,30 @@ D: 如果插入前 buffer 没满, <span class="arithmatex">\(ϕi−ϕ_{i−1}=1,
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">H1</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
-要求 h1 的 root &lt; h2 的 root<br />Time complexity: <span class="arithmatex">\(O(logN)\)</span></p>
+要求 <strong>h1 的 root &lt; h2 的 root</strong><br /><span class="arithmatex">\(T= O(logN)\)</span></p>
 <h5 id="iterative">iterative<a class="headerlink" href="#iterative" title="Permanent link">&para;</a></h5>
 <p>step1 对两棵树的右路径进行排序，不改变他们的左孩子<br />step2 交换孩子（如果有必要）</p>
 <h4 id="deletemin">DeleteMin<a class="headerlink" href="#deletemin" title="Permanent link">&para;</a></h4>
 <p>step1：delete min<br />step2：merge 2 subtrees</p>
 <h3 id="skew-heaps">Skew Heaps 斜堆<a class="headerlink" href="#skew-heaps" title="Permanent link">&para;</a></h3>
-<p>一种左式堆 2，目的是使任意 M 种操作花费最多<span class="arithmatex">\(O(MlogN)\)</span>的时间</p>
+<p>左式堆的自调节形式 ，目的是使任意 M 种操作花费最多<span class="arithmatex">\(O(MlogN)\)</span>​的时间</p>
+<p>结构不平衡的二叉树，斜堆的右路径可以是任意长度（左右旋转）</p>
 <h4 id="merge_1">Merge<a class="headerlink" href="#merge_1" title="Permanent link">&para;</a></h4>
-<p>总是交换左右孩子 直到包含右路径的最大节点的根没有孩子可以交换 No Npl<br />merge(h1, h2) </p>
+<p>总是交换左右孩子 直到包含右路径的最大节点的根没有孩子可以交换 No Npl</p>
+<p><code>merge(h1, h2)</code> </p>
 <ol>
 <li>Let h1 and h2 be the two min skew heaps to be merged. Let h1's root be smaller than h2's root (If not smaller, we can swap to get the same).</li>
-<li>We swap h1-&gt;left and h1-&gt;right.</li>
-<li>h1-&gt;left = merge(h2, h1-&gt;left)</li>
+<li>We swap <code>h1-&gt;left</code> and <code>h1-&gt;right</code>.</li>
+<li><code>h1-&gt;left = merge(h2, h1-&gt;left)</code></li>
 </ol>
 <h4 id="insert_3">Insert<a class="headerlink" href="#insert_3" title="Permanent link">&para;</a></h4>
 <p>保持最小的节点，交换（左树变到右树），再连另外一棵树</p>
 <p>优势：不需要额外空间去保存路径长度，不需要测试来确保什么时候要交换孩子</p>
+<p>A perfectly balanced tree forms if keys 1 to 2k−1 are inserted in order into an initally empty skew heap.</p>
 <h4 id="_3">平摊分析<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
-<p><span class="arithmatex">\(T_{amoritized}=O(logN)\)</span><br /><span class="arithmatex">\(ϕ(D_i)=\)</span>number of heavy nodes<br />[Definition] A node p is <em>heavy</em> if the number of descendants of p's <em>right</em> subtree is <strong>at least half</strong> of the number of descendants of p, and light otherwise. Note that the number of descendants of a node _include_s the node itself.<br />只有在原来右路径上的节点 heavy/light 状态会改变<br />h-heavy nodes；l-light nodes<br /><img src="./../images/1710306364781-fc21bc6d-963d-4e08-8d3c-56a6965909a3.png" alt="image.png" style="zoom: 67%;" /><br />为什么 light node 的复杂度是<span class="arithmatex">\(log(N)\)</span>：每一个 light node 的右子树 node 数量都要减半（≤(n-1)/2)</p>
+<p><span class="arithmatex">\(T_{amoritized}=O(logN)\)</span></p>
+<p><span class="arithmatex">\(ϕ(D_i)=\)</span>number of heavy nodes</p>
+<p>[Definition] A node p is <em>heavy</em> if the number of descendants of p's <em>right</em> subtree is <strong>at least half</strong> of the number of descendants of p, and light otherwise. Note that the number of descendants of a node _include_s the node itself.<br />只有在原来右路径上的节点 heavy/light 状态会改变<br />h-heavy nodes；l-light nodes<br /><img src="./../images/1710306364781-fc21bc6d-963d-4e08-8d3c-56a6965909a3.png" alt="image.png" style="zoom: 67%;" /><br />为什么 light node 的复杂度是<span class="arithmatex">\(log(N)\)</span>​：每一个 light node 的右子树 node 数量都要减半（≤(n-1)/2)</p>
 <h3 id="questions_2">Questions<a class="headerlink" href="#questions_2" title="Permanent link">&para;</a></h3>
 <p><a href="https://blog.csdn.net/HGGshiwo/article/details/115060750">[题集]Lecture 4. Leftist Heaps and Skew Heaps_when doing amortized analysis, which one of the fo-CSDN博客</a></p>
 <h2 id="4-binomial-queue">4 Binomial Queue<a class="headerlink" href="#4-binomial-queue" title="Permanent link">&para;</a></h2>
@@ -2332,12 +2430,12 @@ D: 如果插入前 buffer 没满, <span class="arithmatex">\(ϕi−ϕ_{i−1}=1,
 <span class="w">                </span><span class="n">H2</span><span class="o">-&gt;</span><span class="n">TheTrees</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="nb">NULL</span><span class="p">;</span><span class="k">break</span><span class="p">;</span>
 <span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">7</span><span class="p">:</span><span class="c1">//111</span>
 <span class="w">                </span><span class="n">H1</span><span class="o">-&gt;</span><span class="n">TheTrees</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">Carry</span><span class="p">;</span>
-<span class="w">                </span><span class="n">Carry</span><span class="o">=</span><span class="n">CombineTrees</span><span class="p">(</span><span class="n">T1</span><span class="p">,</span><span class="n">Carry</span><span class="p">);</span>
+<span class="w">                </span><span class="n">Carry</span><span class="o">=</span><span class="n">CombineTrees</span><span class="p">(</span><span class="n">T1</span><span class="p">,</span><span class="n">T2</span><span class="p">);</span>
 <span class="w">                </span><span class="n">H2</span><span class="o">-&gt;</span><span class="n">TheTrees</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="nb">NULL</span><span class="p">;</span><span class="k">break</span><span class="p">;</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">H1</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="p">}</span><span class="w">     </span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="n">ElementType</span><span class="w"> </span><span class="nf">DeleteMin</span><span class="p">(</span><span class="w"> </span><span class="n">BinQueue</span><span class="w"> </span><span class="n">H</span><span class="w"> </span><span class="p">){</span>
 <span class="w">    </span><span class="n">BinQueue</span><span class="w"> </span><span class="n">DeletedQueue</span><span class="p">;</span>
@@ -2458,9 +2556,10 @@ D: 如果插入前 buffer 没满, <span class="arithmatex">\(ϕi−ϕ_{i−1}=1,
 <p>高度：<span class="arithmatex">\(log_4N\)</span> </p>
 <ol>
 <li>
-<h4 id="master">master<a class="headerlink" href="#master" title="Permanent link">&para;</a></h4>
+<h4 id="master-theorem">master theorem<a class="headerlink" href="#master-theorem" title="Permanent link">&para;</a></h4>
 </li>
 </ol>
+<p><img src="../images/image-20240420114033231.png" alt="image-20240420114033231" style="zoom:40%;" /></p>
 <p><img src="../images/image-20240403133416478.png" alt="image-20240403133416478" style="zoom: 33%;" /></p>
 <p><img alt="image-20240409102545096" src="../images/image-20240409102545096.png" /></p>
 <h3 id="questions_5">Questions<a class="headerlink" href="#questions_5" title="Permanent link">&para;</a></h3>
@@ -2469,6 +2568,8 @@ D: 如果插入前 buffer 没满, <span class="arithmatex">\(ϕi−ϕ_{i−1}=1,
 <p><img src="../images/image-20240412161300240.png" alt="image-20240412161300240" style="zoom: 50%;" /></p>
 <h2 id="7-dynamic-programming">7 Dynamic programming<a class="headerlink" href="#7-dynamic-programming" title="Permanent link">&para;</a></h2>
 <p>动态规划可以解决Longest common subsequence problem</p>
+<p>polynomial time 多项式时间</p>
+<p>To solve a problem by dynamic programming instead of recursions, the key approach is to store the results of computations for the subproblems so that we only have to compute each different subproblem once. Those solutions can be stored in an array or a hash table.</p>
 <h3 id="71-fibonacci-number">7.1 Fibonacci number<a class="headerlink" href="#71-fibonacci-number" title="Permanent link">&para;</a></h3>
 <p>只解决子问题一次，将答案存在表中</p>
 <p><span class="arithmatex">\(T=O(N)\)</span> </p>
