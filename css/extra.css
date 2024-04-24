@@ -49,7 +49,7 @@
   }
   
   #myBtn:hover {
-      background-color: #d3d3d3; 
+      background-color: #c7edcc; 
   }
   
   span.mjpage {
@@ -83,6 +83,18 @@
   .md-header  {
     z-index: 12 !important;
   }
+
+  :root {
+    --md-text-font: "JetBrains Mono", "LXGW WenKai Screen"; 
+    --md-code-font: "JetBrains Mono";
+  }
+  :root {
+    --md-primary-fg-color:        #EE0F0F;
+    --md-primary-fg-color--light: #ECB7B7;
+    --md-primary-fg-color--dark:  #90030C;
+  }
+
+  
   
   /* h1, h2, h3, h4 {
     font-weight: 500 !important;

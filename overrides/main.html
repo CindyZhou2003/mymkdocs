@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block site_nav %}
+  <!-- Add scripts that need to run before here -->
+  {{ super() }}
+  <!-- Add scripts that need to run afterwards here -->
+  {% if page.toc and not "toc.integrate" in features %}
+    <script src="/js/toc.js" defer></script>
+    <link rel="stylesheet" href="/css/fold_toc.css">
+  {% endif %}
+{% endblock %}
