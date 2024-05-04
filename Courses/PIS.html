@@ -695,15 +695,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      历年卷
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -977,15 +968,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      历年卷
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1012,7 +994,7 @@
 
 <h1 id="_1">信息安全原理<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 6390 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 21 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 4827 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 16 分钟</p>
 </div>
 <h3 id="_2">密码学<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <p>绝大部分的泄密都是从内部发生的</p>
@@ -1047,9 +1029,9 @@
 5. 控制、对抗措施(Control)：对于漏洞的修复或移除的方式</p>
 <p>安全攻击的类型：
 1. 中断(Interruption)：攻击安全要素中的Availablity(eg.DOS / remove program or file)
-2. 截取(Interception)(四者中唯一一个被动攻击的类型，很难被检测到，防范比检测更重要)：攻击安全要素中的Interceptior
+2. 截取(Interception)(四者中唯一一个被动攻击的类型，很难被检测到，防范比检测更重要)：攻击安全要素中的Interceptior保密性
 3. 修改(Modification)：攻击安全要素中的Integrity，比如数字水印方式
-4. 制造(Fabrication)：攻击安全要素的Authenticity，比如数字签名等方式提高不可抵赖性</p>
+4. 伪造(Fabrication)：攻击安全要素的Authenticity，比如数字签名等方式提高不可抵赖性</p>
 <p>其余三者比较容易被检测到，比较难防范，能够在damage后resume</p>
 <p>密码的几个基础部分：明文、密文、加密算法、解密算法
 * plaintext：P
@@ -1127,7 +1109,7 @@
   + 能够验证签名日期和时间的签名，消息内容的签名时刻（不可重复使用，不可伪造，不可更改，时间绑定）</p>
 <ul>
 <li>
-<p>为什么数字签名需要使用单向hash函数：<br>当文档比较长的时候，不能对整份文档签名(即直接对整份文档进行RSA，成本太高)，但是依然要求一旦文档出现变化，签名就要失效。所以解决办法是我们对文档用单向hash函数缩小体积，之后<em>对hash值进行签名</em>以完成数字签名的要求</p>
+<p>为什么数字签名需要使用单向hash函数：<br>当文档比较长的时候，不能对整份文档签名(即直接对整份文档进行RSA，成本太高)，但是依然要求一旦文档出现变化，签名就要失效。所以解决办法是我们对文档用单向hash函数<strong>缩小体积</strong>，之后<em>对hash值进行签名</em>以完成数字签名的要求</p>
 </li>
 <li>
 <p>单向hash函数的概念：</p>
@@ -1343,71 +1325,6 @@ SSL会话，一个客户端与服务器的建立，在建立的时候进行协�
 <li>未来：向着无中心化的方向发展</li>
 <li>进行DDOS攻击不再需要伪装ip</li>
 </ul>
-<h2 id="_5">历年卷<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<ol>
-<li>
-<p>手撕三个凯撒密码（大受震撼） （说起来，第三个明文是 eliminate human tyranny the world belongs to trisolaris ，也就是消灭人类暴政，世界属于三体） </p>
-</li>
-<li>
-<p>简述 mac 和隐通道的概念（举例子） </p>
-</li>
-</ol>
-<p><strong>强制访问控制 (MAC)</strong>  中访问权限由中央机构根据安全许可级别和信息分类进行监管。与信息所有者可以控制谁可以访问信息的自主访问控制 (DAC) 不同，在 MAC 中，对系统资源的访问由操作系统或安全内核强制执行的严格策略控制。 </p>
-<p>集中执行：谁可以访问哪些资源的规则由中央机构（例如系统管理员）设置。 用户无法更改资源的权限； 他们只能根据策略访问资源。 </p>
-<p>安全标签：为资源（如文件、数据和系统进程）和用户分配标签，指示其安全许可（针对用户）和分类级别（针对资源）。</p>
-<p>访问决策：系统根据设定的策略根据标签和许可的比较来决定是否允许访问。 例如，具有“secret权限”的用户可以访问标记为“秘密”的文件，但不能访问标记为“top secret”的文件。 同时“秘密权限”的用户不能写低级的文档“unclassified”、“confidential”，这是MAC中的贝尔拉帕多拉模型，来确保MAC的保密性。</p>
-<p>执行：MAC 系统执行通常旨在<em>遵守国家安全准则的访问策略，使其适合政府和军事应用</em>。</p>
-<p><strong>隐通道</strong>是一种通信方式，允许以违反系统安全策略的方式在实体之间传输信息。 本质上，它是一种用户或进程使用系统资源进行通信而绕过正常安全机制以隐藏或不明显的方式传输信息的方法。 </p>
-<div class="highlight"><pre><span></span><code>隐蔽通道的类型：隐蔽通道可大致分为两种类型： 存储通道：这些通道涉及对另一个进程可以读取的存储位或变量的修改。 即使没有发生直接通信，信息也会通过共享系统资源传递。 计时通道：这些通道基于观察系统的时间行为或其他时间方面。 例如，*一个进程可能会调整其对系统资源（如 CPU 时间）的使用，以影响另一进程看到的响应时间，从而传输信息*。
-
-安全威胁：隐蔽通道是一个重大的安全风险，因为它们可用于秘密泄露敏感信息。 在公开通信路径受到严格控制的高度安全的环境中，它们尤其成问题。 检测和缓解：检测隐蔽通道具有挑战性，因为它们利用了硬件或软件的合法功能。 有效的缓解可能涉及仔细的系统设计，包括减少共享资源的数量或实施机制来监视和控制进程之间交互的时间。
-</code></pre></div>
-<ol start="3">
-<li>简述 dh 算法和它的中间人攻击 </li>
-</ol>
-<p><strong>Diffie-Hellman算法</strong>是一种密钥交换协议，允许双方在不安全的通信渠道上建立一个共享的秘密密钥，通常用于后续的加密通信。它是由Whitfield Diffie和Martin Hellman在1976年提出的，是一种利用数学难题（离散对数问题）来确保通信安全的方法。</p>
-<p>#### 工作原理：
-   1. <strong>选择公共基础</strong>：首先，双方同意使用一个公共的质数 <span class="arithmatex">\( p \)</span> 和一个基数 <span class="arithmatex">\( g \)</span>（通常是一个原根模 <span class="arithmatex">\( p \)</span>）。
-   2. <strong>生成私钥和计算公钥</strong>：
-      - 每一方选择一个私有的密钥，分别为 <span class="arithmatex">\( a \)</span> 和 <span class="arithmatex">\( b \)</span>（这些是随机选择的数字）。
-      - 接着，双方分别计算公钥 <span class="arithmatex">\( A \)</span> 和 <span class="arithmatex">\( B \)</span>：<span class="arithmatex">\( A = g^a \mod p \)</span> 和 <span class="arithmatex">\( B = g^b \mod p \)</span>。
-   3. <strong>交换公钥并计算共享密钥</strong>：
-      - 双方交换他们的公钥。
-      - 然后，双方分别计算共享密钥：使用对方的公钥和自己的私钥，计算 <span class="arithmatex">\( S = B^a \mod p \)</span> 或 <span class="arithmatex">\( S = A^b \mod p \)</span>。通过数学的特性，这两个计算结果是相同的，即 <span class="arithmatex">\( S \)</span>。</p>
-<p>#### 安全性：
-   Diffie-Hellman算法的安全性依赖于离散对数问题的计算难度，即在已知 <span class="arithmatex">\( g \)</span>、<span class="arithmatex">\( p \)</span> 和 <span class="arithmatex">\( $g^a \mod p$ \)</span> 的情况下，很难计算出 (a)。</p>
-<p><strong>Diffie-Hellman 中间人攻击</strong></p>
-<p>尽管Diffie-Hellman算法本身在数学上是安全的，但它并不保护身份验证，这意味着它容易受到中间人攻击（MITM攻击）。</p>
-<p>#### 攻击方式：
-   1. <strong>攻击者插入通信中</strong>：攻击者 <span class="arithmatex">\( M \)</span> 在两个通信者 <span class="arithmatex">\( A \)</span> 和 <span class="arithmatex">\( B \)</span> 之间插入自己，拦截他们的消息。
-   2. <strong>替换公钥</strong>：
-      - <span class="arithmatex">\( A \)</span> 发送公钥 <span class="arithmatex">\( A \)</span> 给 <span class="arithmatex">\( B \)</span>，但是 <span class="arithmatex">\( M \)</span> 拦截了它，并向 <span class="arithmatex">\( B \)</span> 发送一个假的公钥 <span class="arithmatex">\( M_A \)</span>。
-      - <span class="arithmatex">\( B \)</span> 发送公钥 <span class="arithmatex">\( B \)</span> 给 <span class="arithmatex">\( A \)</span>，同样，<span class="arithmatex">\( M \)</span> 拦截它，并向 <span class="arithmatex">\( A \)</span> 发送一个假的公钥 <span class="arithmatex">\( M_B \)</span>。
-   3. <strong>建立密钥</strong>：
-      - <span class="arithmatex">\( A \)</span> 和 <span class="arithmatex">\( M \)</span> 分别计算他们之间的共享密钥 <span class="arithmatex">\( S_{AM} \)</span>。
-      - <span class="arithmatex">\( M \)</span> 和 <span class="arithmatex">\( B \)</span> 分别计算他们之间的共享密钥 <span class="arithmatex">\( S_{MB} \)</span>。
-   4. <strong>转发消息</strong>：攻击者 <span class="arithmatex">\( M \)</span> 可以解密从一方发来的消息，并重新加密后发送给另一方。</p>
-<p>#### 防御措施：
-   - <strong>使用公钥基础设施 (PKI)</strong>：通过PKI系统，每个用户可以有一个与其身份绑定的证书，这可以用来验证公钥的真实性。
-   - <strong>端到端的身份验证</strong>：在建立密钥之前验证通信对方的身份。</p>
-<p>总之，虽然Diffie-Hellman算法提供了一种有效的方式来安全地交换密钥，但它需要额外的身份验证措施来抵御中间人攻击。</p>
-<ol start="4">
-<li>
-<p>简述 kerckhoff 原则和它在密码学史的意义 </p>
-</li>
-<li>
-<p>简述 tcp syn 洪水攻击和 syn cookie 的过程（画图+文字）</p>
-</li>
-<li>
-<p>提出至少四点针对无人驾驶汽车的攻击和防护方法 </p>
-</li>
-<li>
-<p>提出至少四点针对在线考试的安全风险和解决方法（大概是有个同学说让助教提前一天把试卷发给他第二天钉钉视频通话做完拍照发给助教） </p>
-</li>
-<li>
-<p>简述做过的四个作业，说出三点你遇到的问题和解决方法，说出三点你的收获（大受震撼）</p>
-</li>
-</ol>
 
 
 
