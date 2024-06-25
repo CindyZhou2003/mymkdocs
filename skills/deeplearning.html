@@ -1212,40 +1212,40 @@
 <p><a name="PNMXd"></a></p>
 <h3 id="_4">算法<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>前向传播：输入进去 网络做了什么计算
-<img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/34417153/1709724929106-958fec79-3810-4abc-8ea5-7d799905dafe.png" />
+<img alt="" src="../images/1709724929106-958fec79-3810-4abc-8ea5-7d799905dafe.png" />
 <a name="FEcw3"></a></p>
 <h4 id="_5">常用的激活函数<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
 <ol>
 <li><strong>Sigmoid</strong>，两端饱和函数</li>
 <li>
-<p><strong>Logistic</strong> <img src="https://cdn.nlark.com/yuque/0/2024/png/34417153/1709725299105-4c06743a-67ff-4933-8295-213c27a6ef32.png#averageHue=%23fcfbfa&clientId=u66705bcf-f251-4&from=paste&height=45&id=uf102fe18&originHeight=67&originWidth=222&originalType=binary&ratio=1.5&rotation=0&showTitle=false&size=7501&status=done&style=none&taskId=u6f8926d0-699d-4a35-898f-00eba4cd52d&title=&width=148" alt="Alt text"></p>
+<p><strong>Logistic</strong> <img src="../images/1709725299105-4c06743a-67ff-4933-8295-213c27a6ef32.png" alt="Alt text" style="zoom:50%;" ></p>
 </li>
 <li>
-<p><strong>Tanh</strong> <img alt="image.png" src="https://cdn.nlark.com/yuque/0/2024/png/34417153/1709725314557-8451b1a3-64ae-4126-b6ee-c57d37eae75c.png#averageHue=%23dcd3ca&amp;clientId=u66705bcf-f251-4&amp;from=paste&amp;height=48&amp;id=u4360faec&amp;originHeight=72&amp;originWidth=292&amp;originalType=binary&amp;ratio=1.5&amp;rotation=0&amp;showTitle=false&amp;size=16035&amp;status=done&amp;style=none&amp;taskId=ud3b1fb52-4edc-4946-b705-f4af05fed80&amp;title=&amp;width=194.66666666666666" /><img alt="image.png" src="https://cdn.nlark.com/yuque/0/2024/png/34417153/1709725383719-55775481-905c-4583-a225-8823a6827840.png#averageHue=%23f8f7f5&amp;clientId=u66705bcf-f251-4&amp;from=paste&amp;height=27&amp;id=u6cacfb91&amp;originHeight=40&amp;originWidth=222&amp;originalType=binary&amp;ratio=1.5&amp;rotation=0&amp;showTitle=false&amp;size=7148&amp;status=done&amp;style=none&amp;taskId=ucd715632-e4ac-4f17-ba45-a382eb0df47&amp;title=&amp;width=148" />
-饱和定义对于函数 𝑓(𝑥)，若 𝑥 → −∞ 时，其导数 𝑓′(𝑥) → 0，则称其为左饱和．若 𝑥 → +∞ 时，其导数 𝑓′(𝑥) → 0，则称其为右饱和．当同时满足左、右饱和时，就称为两端饱和</p>
+<p><strong>Tanh</strong> <img src="../images/1709725314557-8451b1a3-64ae-4126-b6ee-c57d37eae75c.png" alt="image.png" style="zoom:50%;" /><img src="../images/1709725383719-55775481-905c-4583-a225-8823a6827840.png" alt="image.png" style="zoom:50%;" />
+   饱和定义对于函数 𝑓(𝑥)，若 𝑥 → −∞ 时，其导数 𝑓′(𝑥) → 0，则称其为左饱和．若 𝑥 → +∞ 时，其导数 𝑓′(𝑥) → 0，则称其为右饱和．当同时满足左、右饱和时，就称为两端饱和</p>
 </li>
 <li>
 <p>Hard-Logistic &amp; hard-Tanh 一阶泰勒展开的直线近似</p>
 </li>
 <li><strong>ReLU</strong>(PReLU)</li>
 </ol>
-<p><img alt="image.png" src="https://cdn.nlark.com/yuque/0/2024/png/34417153/1709725612997-13ad4348-a7c1-45ae-b72e-f13cbb5ae07e.png#averageHue=%23fbfaf9&amp;clientId=u66705bcf-f251-4&amp;from=paste&amp;height=59&amp;id=u8c2f6cff&amp;originHeight=88&amp;originWidth=237&amp;originalType=binary&amp;ratio=1.5&amp;rotation=0&amp;showTitle=false&amp;size=10381&amp;status=done&amp;style=none&amp;taskId=u6b09a76c-ec08-436b-a3cd-adb470da8b3&amp;title=&amp;width=158" /><img alt="image.png" src="https://cdn.nlark.com/yuque/0/2024/png/34417153/1709815006287-233d495c-ffe3-4c14-a9e2-7c101d7239e0.png#averageHue=%23fbfbfa&amp;clientId=u84e4090c-43d5-4&amp;from=paste&amp;height=92&amp;id=u39688cc8&amp;originHeight=138&amp;originWidth=381&amp;originalType=binary&amp;ratio=1.5&amp;rotation=0&amp;showTitle=false&amp;size=23005&amp;status=done&amp;style=none&amp;taskId=uce4efad2-7d34-483a-9c66-bbbfad8d4a1&amp;title=&amp;width=254" /><br />其中 𝛾𝑖 为 𝑥 ≤ 0 时函数的斜率．因此，PReLU 是非饱和函数．如果 𝛾𝑖 = 0，那么PReLU 就退化为 ReLU</p>
+<p><img src="../images/1709725612997-13ad4348-a7c1-45ae-b72e-f13cbb5ae07e.png" alt="image.png" style="zoom:50%;" /><img src="../images/1709815006287-233d495c-ffe3-4c14-a9e2-7c101d7239e0.png" alt="image.png" style="zoom:50%;" /><br />其中 𝛾𝑖 为 𝑥 ≤ 0 时函数的斜率．因此，PReLU 是非饱和函数．如果 𝛾𝑖 = 0，那么PReLU 就退化为 ReLU</p>
 <ol start="4">
 <li><strong>ELU</strong></li>
 </ol>
-<p><img alt="image.png" src="https://cdn.nlark.com/yuque/0/2024/png/34417153/1709815094072-4b37f2f5-6453-4da4-acf4-188bfc33f1b9.png#averageHue=%23fbfafa&amp;clientId=u84e4090c-43d5-4&amp;from=paste&amp;height=91&amp;id=u7148bb36&amp;originHeight=136&amp;originWidth=441&amp;originalType=binary&amp;ratio=1.5&amp;rotation=0&amp;showTitle=false&amp;size=29726&amp;status=done&amp;style=none&amp;taskId=u40b939fb-3b26-4e61-99bd-dcdcd3460a3&amp;title=&amp;width=294" /></p>
+<p><img src="../images/1709815094072-4b37f2f5-6453-4da4-acf4-188bfc33f1b9.png" alt="image.png" style="zoom: 50%;" /></p>
 <ol start="5">
 <li><strong>Softplus</strong></li>
 </ol>
-<p><img alt="image.png" src="https://cdn.nlark.com/yuque/0/2024/png/34417153/1709815132024-7f02bb15-94eb-48c2-ad24-cc57bfe537ea.png#averageHue=%23ddd6ce&amp;clientId=u84e4090c-43d5-4&amp;from=paste&amp;height=23&amp;id=uf27f199f&amp;originHeight=34&amp;originWidth=306&amp;originalType=binary&amp;ratio=1.5&amp;rotation=0&amp;showTitle=false&amp;size=11347&amp;status=done&amp;style=none&amp;taskId=uddcab670-6e76-4666-8f38-b8807f17fd8&amp;title=&amp;width=204" /><br />Softplus 函数其导数刚好是 Logistic 函数．Softplus 函数虽然也具有单侧抑制、宽兴奋边界的特性，却没有稀疏激活性</p>
+<p><img src="../images/1709815132024-7f02bb15-94eb-48c2-ad24-cc57bfe537ea.png" alt="image.png" style="zoom:67%;" /><br />Softplus 函数其导数刚好是 Logistic 函数．Softplus 函数虽然也具有单侧抑制、宽兴奋边界的特性，却没有稀疏激活性</p>
 <ol start="6">
 <li><strong>Swish</strong></li>
 </ol>
-<p><img alt="image.png" src="https://cdn.nlark.com/yuque/0/2024/png/34417153/1709815228781-0b3008bd-cee3-48d9-a3e8-8a81f47337d4.png#averageHue=%23f9f8f7&amp;clientId=u84e4090c-43d5-4&amp;from=paste&amp;height=133&amp;id=u0ddc9319&amp;originHeight=199&amp;originWidth=769&amp;originalType=binary&amp;ratio=1.5&amp;rotation=0&amp;showTitle=false&amp;size=102308&amp;status=done&amp;style=none&amp;taskId=uc515cbfc-80f0-42d8-a624-3e4b4e22bff&amp;title=&amp;width=512.6666666666666" /></p>
+<p><img src="../images/1709815228781-0b3008bd-cee3-48d9-a3e8-8a81f47337d4.png" alt="image.png" style="zoom: 67%;" /></p>
 <ol start="7">
 <li><strong>GELU</strong></li>
 </ol>
-<p><img alt="image.png" src="https://cdn.nlark.com/yuque/0/2024/png/34417153/1709815285967-80ed2bf3-8b53-4f0f-b19a-2f96562e3a04.png#averageHue=%23dfdad2&amp;clientId=u84e4090c-43d5-4&amp;from=paste&amp;height=24&amp;id=ud352bb2c&amp;originHeight=36&amp;originWidth=240&amp;originalType=binary&amp;ratio=1.5&amp;rotation=0&amp;showTitle=false&amp;size=8528&amp;status=done&amp;style=none&amp;taskId=udf1b892e-5ac4-4917-b35f-699b65c4c86&amp;title=&amp;width=160" /><img alt="image.png" src="https://cdn.nlark.com/yuque/0/2024/png/34417153/1709815302136-66c55af4-61bc-48be-b58a-d92a63e77aa7.png#averageHue=%23ded6ce&amp;clientId=u84e4090c-43d5-4&amp;from=paste&amp;height=79&amp;id=u7282e022&amp;originHeight=118&amp;originWidth=777&amp;originalType=binary&amp;ratio=1.5&amp;rotation=0&amp;showTitle=false&amp;size=80124&amp;status=done&amp;style=none&amp;taskId=u2af67573-5093-4a9b-a65f-f9548d968a2&amp;title=&amp;width=518" /><br /><img alt="image.png" src="https://cdn.nlark.com/yuque/0/2024/png/34417153/1709815329086-b72081ea-416c-4fda-adb4-73d1db78e8df.png#averageHue=%23fbfaf9&amp;clientId=u84e4090c-43d5-4&amp;from=paste&amp;height=70&amp;id=u4136e230&amp;originHeight=105&amp;originWidth=579&amp;originalType=binary&amp;ratio=1.5&amp;rotation=0&amp;showTitle=false&amp;size=30243&amp;status=done&amp;style=none&amp;taskId=u86831f01-b63a-4e76-92a3-b7952b3ad74&amp;title=&amp;width=386" />
+<p><img src="../images/1709815285967-80ed2bf3-8b53-4f0f-b19a-2f96562e3a04.png" alt="image.png" style="zoom: 67%;" /><img src="../images/1709815302136-66c55af4-61bc-48be-b58a-d92a63e77aa7.png" alt="image.png" style="zoom:67%;" /><br /><img src="../images/1709815329086-b72081ea-416c-4fda-adb4-73d1db78e8df.png" alt="image.png" style="zoom:67%;" />
 <a name="njnWz"></a></p>
 <h4 id="mlpfnn">MLP（FNN）<a class="headerlink" href="#mlpfnn" title="Permanent link">&para;</a></h4>
 <p>多层感知器（MLP ）是现代前馈人工神经网络（ANN） 的名称，由具有非线性激活函数的<strong>完全连接</strong>的神经元组成，包含至少三层节点：输入层、一个或多个隐藏层和输出层。 一层中的每个节点或神经元以一定的权重连接到下一层中的每个节点，使网络完全连接。 MLP 使用称为<strong>反向传播的监督学习</strong>技术进行训练。 神经网络中的节点将<strong>非线性激活函数</strong>应用于从前一层接收的加权输入，然后将结果传递到下一层。 这种非线性使得 MLP 能够对输入和输出之间的复杂关系进行建模，而线性模型无法做到这一点。 <br />MLP 可用于从计算机视觉到语音识别等领域的各种任务，例如分类、回归和特征学习。 MLP 的关键特征包括其深度（层数）、宽度（每层中的节点数）、激活函数（例如 sigmoid、tanh 或 ReLU）以及用于训练的优化算法（通常是某种形式的梯度下降）。 MLP 被认为是深度学习的基础架构，尽管卷积神经网络 (CNN) 和循环神经网络 (RNN) 等更复杂的网络分别更常用于涉及图像和序列数据的任务。
