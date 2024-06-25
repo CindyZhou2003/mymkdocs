@@ -50,8 +50,6 @@
       
     
     
-      <link rel="stylesheet" href="../css/timeago.css">
-    
       <link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css">
@@ -1218,10 +1216,10 @@
 <ol>
 <li><strong>Sigmoid</strong>，两端饱和函数</li>
 <li>
-<p><strong>Logistic</strong> <img src="../images/1709725299105-4c06743a-67ff-4933-8295-213c27a6ef32.png" alt="Alt text" style="zoom:50%;" ></p>
+<p><strong>Logistic</strong> <img src="../images/1709725299105-4c06743a-67ff-4933-8295-213c27a6ef32.png" alt="Alt text"></p>
 </li>
 <li>
-<p><strong>Tanh</strong> <img src="../images/1709725314557-8451b1a3-64ae-4126-b6ee-c57d37eae75c.png" alt="image.png" style="zoom:50%;" /><img src="../images/1709725383719-55775481-905c-4583-a225-8823a6827840.png" alt="image.png" style="zoom:50%;" />
+<p><strong>Tanh</strong> <img alt="image.png" src="../images/1709725314557-8451b1a3-64ae-4126-b6ee-c57d37eae75c.png" /><img alt="image.png" src="../images/1709725383719-55775481-905c-4583-a225-8823a6827840.png" />
    饱和定义对于函数 𝑓(𝑥)，若 𝑥 → −∞ 时，其导数 𝑓′(𝑥) → 0，则称其为左饱和．若 𝑥 → +∞ 时，其导数 𝑓′(𝑥) → 0，则称其为右饱和．当同时满足左、右饱和时，就称为两端饱和</p>
 </li>
 <li>
@@ -1229,23 +1227,23 @@
 </li>
 <li><strong>ReLU</strong>(PReLU)</li>
 </ol>
-<p><img src="../images/1709725612997-13ad4348-a7c1-45ae-b72e-f13cbb5ae07e.png" alt="image.png" style="zoom:50%;" /><img src="../images/1709815006287-233d495c-ffe3-4c14-a9e2-7c101d7239e0.png" alt="image.png" style="zoom:50%;" /><br />其中 𝛾𝑖 为 𝑥 ≤ 0 时函数的斜率．因此，PReLU 是非饱和函数．如果 𝛾𝑖 = 0，那么PReLU 就退化为 ReLU</p>
+<p><img alt="image.png" src="../images/1709725612997-13ad4348-a7c1-45ae-b72e-f13cbb5ae07e.png" /><img alt="image.png" src="../images/1709815006287-233d495c-ffe3-4c14-a9e2-7c101d7239e0.png" /><br />其中 𝛾𝑖 为 𝑥 ≤ 0 时函数的斜率．因此，PReLU 是非饱和函数．如果 𝛾𝑖 = 0，那么PReLU 就退化为 ReLU</p>
 <ol start="4">
 <li><strong>ELU</strong></li>
 </ol>
-<p><img src="../images/1709815094072-4b37f2f5-6453-4da4-acf4-188bfc33f1b9.png" alt="image.png" style="zoom: 50%;" /></p>
+<p><img alt="image.png" src="../images/1709815094072-4b37f2f5-6453-4da4-acf4-188bfc33f1b9.png" /></p>
 <ol start="5">
 <li><strong>Softplus</strong></li>
 </ol>
-<p><img src="../images/1709815132024-7f02bb15-94eb-48c2-ad24-cc57bfe537ea.png" alt="image.png" style="zoom:67%;" /><br />Softplus 函数其导数刚好是 Logistic 函数．Softplus 函数虽然也具有单侧抑制、宽兴奋边界的特性，却没有稀疏激活性</p>
+<p><img alt="image.png" src="https://cdn.nlark.com/yuque/0/2024/png/34417153/1709815132024-7f02bb15-94eb-48c2-ad24-cc57bfe537ea.png#averageHue=%23ddd6ce&amp;clientId=u84e4090c-43d5-4&amp;from=paste&amp;height=23&amp;id=uf27f199f&amp;originHeight=34&amp;originWidth=306&amp;originalType=binary&amp;ratio=1.5&amp;rotation=0&amp;showTitle=false&amp;size=11347&amp;status=done&amp;style=none&amp;taskId=uddcab670-6e76-4666-8f38-b8807f17fd8&amp;title=&amp;width=204" /><br />Softplus 函数其导数刚好是 Logistic 函数．Softplus 函数虽然也具有单侧抑制、宽兴奋边界的特性，却没有稀疏激活性</p>
 <ol start="6">
 <li><strong>Swish</strong></li>
 </ol>
-<p><img src="../images/1709815228781-0b3008bd-cee3-48d9-a3e8-8a81f47337d4.png" alt="image.png" style="zoom: 67%;" /></p>
+<p><img alt="image.png" src="../images/1709815228781-0b3008bd-cee3-48d9-a3e8-8a81f47337d4.png" /></p>
 <ol start="7">
 <li><strong>GELU</strong></li>
 </ol>
-<p><img src="../images/1709815285967-80ed2bf3-8b53-4f0f-b19a-2f96562e3a04.png" alt="image.png" style="zoom: 67%;" /><img src="../images/1709815302136-66c55af4-61bc-48be-b58a-d92a63e77aa7.png" alt="image.png" style="zoom:67%;" /><br /><img src="../images/1709815329086-b72081ea-416c-4fda-adb4-73d1db78e8df.png" alt="image.png" style="zoom:67%;" />
+<p><img alt="image.png" src="../images/1709815285967-80ed2bf3-8b53-4f0f-b19a-2f96562e3a04.png" /><img alt="image.png" src="../images/1709815302136-66c55af4-61bc-48be-b58a-d92a63e77aa7.png" /><br /><img alt="image.png" src="../images/1709815329086-b72081ea-416c-4fda-adb4-73d1db78e8df.png" />
 <a name="njnWz"></a></p>
 <h4 id="mlpfnn">MLP（FNN）<a class="headerlink" href="#mlpfnn" title="Permanent link">&para;</a></h4>
 <p>多层感知器（MLP ）是现代前馈人工神经网络（ANN） 的名称，由具有非线性激活函数的<strong>完全连接</strong>的神经元组成，包含至少三层节点：输入层、一个或多个隐藏层和输出层。 一层中的每个节点或神经元以一定的权重连接到下一层中的每个节点，使网络完全连接。 MLP 使用称为<strong>反向传播的监督学习</strong>技术进行训练。 神经网络中的节点将<strong>非线性激活函数</strong>应用于从前一层接收的加权输入，然后将结果传递到下一层。 这种非线性使得 MLP 能够对输入和输出之间的复杂关系进行建模，而线性模型无法做到这一点。 <br />MLP 可用于从计算机视觉到语音识别等领域的各种任务，例如分类、回归和特征学习。 MLP 的关键特征包括其深度（层数）、宽度（每层中的节点数）、激活函数（例如 sigmoid、tanh 或 ReLU）以及用于训练的优化算法（通常是某种形式的梯度下降）。 MLP 被认为是深度学习的基础架构，尽管卷积神经网络 (CNN) 和循环神经网络 (RNN) 等更复杂的网络分别更常用于涉及图像和序列数据的任务。
@@ -1554,7 +1552,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-06-25T16:35:02+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-06-25</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2024年6月26日 00:54:04</span>
   </span>
 
     
@@ -1564,7 +1562,7 @@
     <span class="md-icon" title="创建日期">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-06-25T15:02:31+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-06-25</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2024年6月25日 23:02:31</span>
   </span>
 
     
@@ -1784,14 +1782,10 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "navigation.indexes", "navigation.expand", "toc.follow", "navigation.top", "search.suggest", "navigation.footer", "navigation.tabs", "navigation.tracking", "navigation.instant", "navigation.instant.progress", "content.code.copy", "search.suggest", "search.highlight", "search.share"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "navigation.indexes", "navigation.expand", "toc.follow", "navigation.top", "search.suggest", "navigation.footer", "navigation.tabs", "navigation.tracking", "navigation.instant.progress", "content.code.copy", "search.highlight", "search.share", "content.code.annotate", "navigation.tabs"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
       <script src="../assets/javascripts/bundle.c8d2eff1.min.js"></script>
-      
-        <script src="../js/timeago.min.js"></script>
-      
-        <script src="../js/timeago_mkdocs_material.js"></script>
       
         <script src="https://gcore.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
       
