@@ -2,92 +2,117 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/index.html</loc>
-         <lastmod>2024-09-08</lastmod>
+         <lastmod>2024-10-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/Courses/ADS.html</loc>
-         <lastmod>2024-09-08</lastmod>
+         <lastmod>2024-10-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cindyzhou2003.github.io/mymkdocs/Courses/BS.html</loc>
+         <lastmod>2024-10-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cindyzhou2003.github.io/mymkdocs/Courses/CN.html</loc>
+         <lastmod>2024-10-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/Courses/DB.html</loc>
-         <lastmod>2024-09-08</lastmod>
+         <lastmod>2024-10-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/Courses/DM.html</loc>
-         <lastmod>2024-09-08</lastmod>
+         <lastmod>2024-10-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/Courses/FDS.html</loc>
-         <lastmod>2024-09-08</lastmod>
+         <lastmod>2024-10-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cindyzhou2003.github.io/mymkdocs/Courses/IoT.html</loc>
+         <lastmod>2024-10-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/Courses/ML.html</loc>
-         <lastmod>2024-09-08</lastmod>
+         <lastmod>2024-10-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/Courses/OOP.html</loc>
-         <lastmod>2024-09-08</lastmod>
+         <lastmod>2024-10-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cindyzhou2003.github.io/mymkdocs/Courses/OSC.html</loc>
-         <lastmod>2024-09-08</lastmod>
+         <loc>https://cindyzhou2003.github.io/mymkdocs/Courses/OS.html</loc>
+         <lastmod>2024-10-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/Courses/PIS.html</loc>
-         <lastmod>2024-09-08</lastmod>
+         <lastmod>2024-10-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cindyzhou2003.github.io/mymkdocs/Courses/SEM.html</loc>
+         <lastmod>2024-10-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cindyzhou2003.github.io/mymkdocs/Courses/%E6%AF%9B%E6%A6%82.html</loc>
+         <lastmod>2024-10-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/other/IELTs.html</loc>
-         <lastmod>2024-09-08</lastmod>
+         <lastmod>2024-10-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/other/SRTP.html</loc>
-         <lastmod>2024-09-08</lastmod>
+         <lastmod>2024-10-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/other/novel.html</loc>
-         <lastmod>2024-09-08</lastmod>
+         <lastmod>2024-10-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/other/test.html</loc>
-         <lastmod>2024-09-08</lastmod>
+         <lastmod>2024-10-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/skills/100questions.html</loc>
-         <lastmod>2024-09-08</lastmod>
+         <lastmod>2024-10-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/skills/Algorithm.html</loc>
-         <lastmod>2024-09-08</lastmod>
+         <lastmod>2024-10-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/skills/Java.html</loc>
-         <lastmod>2024-09-08</lastmod>
+         <lastmod>2024-10-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/skills/deeplearning.html</loc>
-         <lastmod>2024-09-08</lastmod>
+         <lastmod>2024-10-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cindyzhou2003.github.io/mymkdocs/work/Interview.html</loc>
-         <lastmod>2024-09-08</lastmod>
+         <lastmod>2024-10-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
