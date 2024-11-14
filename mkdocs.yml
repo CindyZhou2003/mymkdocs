@@ -1,0 +1,153 @@
+site_name: Cindy的笔记本
+site_url: https://cindyzhou2003.github.io/mymkdocs/
+repo_name: Cindy's notebook
+repo_url: https://github.com/CindyZhou2003/mymkdocs  #存储库URL
+# edit_uri: tree/master/docs  #每个文档的顶部显示一个编辑按钮，""则隐藏
+site_description: Cindy的笔记本
+copyright: Copyright &copy; 2024 <a href="https://github.com/CindyZhou2003/mymkdocs"  target="_blank" rel="noopener">Cindy</a>'本页面的全部内容在 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA 4.0</a> 和 <a href="https://github.com/zTrix/sata-license">SATA</a> 协议之条款下提供，附加条款亦可能应用'
+theme: 
+  name: material
+  language: zh
+  favicon: assets/images/favcion.png
+  icon:
+    logo: fontawesome/solid/book
+  custom_dir: docs/overrides
+  features:
+    - content.code.annotate
+    - navigation.indexes
+    - navigation.expand # 目录自动展开子目录
+    # - toc.integrate # 右边的toc融合到左侧的目录中
+    - toc.follow # 右侧toc随着页面滑动自动滑动
+    - navigation.top # 有回到页面最上方top的按键
+    - search.suggest # 搜索建议
+    - navigation.footer # 页面底部有下一页的链接(按目录上的顺序)
+    - navigation.tabs # 一级目录融合至顶栏，并且只展示二级目录
+    - navigation.tracking # 在翻到页面对应的标题处时，会将地址栏的地址更新成标题处的链接
+    - navigation.instant.progress # 页面顶部显示加载进度条
+    - content.code.copy # 代码块复制按键
+    - search.highlight # 搜索结果高亮/突出显示
+    - search.share # 搜索结果分享
+    - content.code.annotate
+    # - navigation.instant # This will cause LaTeX render fail at the first try.
+    - navigation.tabs
+    # - navigation.tabs.sticky
+  font:
+    text: LXGW WenKai
+    # code: JetBrains Mono
+  palette:     #切换昼夜模式的颜色
+    - media: "(prefers-color-scheme: light)" 
+      scheme: forest  #配色方案：浅色模式
+      primary: teal  #原色，默认蓝，用于标题、侧边栏、文本链接和其他几个组件
+      accent: teal  #强调色，默认蓝，可以交互的元素如悬停链接、按钮和滚动条
+      toggle:
+        icon: material/weather-sunny #图标，太阳
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"  
+      scheme: forest-dark  #配色方案：深色模式
+      primary: Brown  #原色，默认蓝，用于标题、侧边栏、文本链接和其他几个组件
+      toggle:
+        icon: material/weather-night  #图标，月亮
+        name: Switch to light mode
+
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 4
+  - meta
+  - def_list
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - md_in_html
+  - sane_lists
+  - admonition
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.smartsymbols  #智能符号
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.arithmatex:
+      generic: true
+
+
+extra_css:
+  - https://gcore.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css
+  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
+  # - https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
+  # - https://gcore.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
+  # - https://cdn.tonycrane.cc/jbmono/jetbrainsmono.css
+  - css/extra.css
+  - css/neoteroi-mkdocs.css
+  - css/style.css
+  - css/font.css
+  
+
+extra_javascript:
+  - https://gcore.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js
+  - js/katex.js
+  - js/tablesort.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/CindyZhou2003/mymkdocs
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+      separator: '[\s\-\.]+'
+  - statistics
+  - git-revision-date-localized: # 页面下方创建和修改时间
+      type: datetime
+      timezone: Asia/Shanghai
+      locale: zh
+      enable_creation_date: true
+
+nav:
+  - 主页🤖:
+    - index.md
+  - SE课程📝:
+    - 大一春夏:
+      - 离散数学及其应用: Courses/DM.md
+    - 大二秋冬:
+      - 面向对象程序设计: Courses/OOP.md
+      - 数据结构基础: Courses/FDS.md
+    - 大二春夏:
+      - 高级数据结构与算法分析: Courses/ADS.md
+      - 数据库系统: Courses/DB.md
+      - 机器学习（国际化）: Courses/ML.md
+      - 信息安全原理: Courses/PIS.md
+    - 大三秋冬:
+      - 操作系统: Courses/OS.md
+      - 计算机网络: Courses/CN.md
+      - 毛概: Courses/毛概.md
+      - 物联网: Courses/IoT.md
+  - 技能⚙️:
+    - 算法: skills/Algorithm.md
+    - 深度学习: skills/deeplearning.md
+  - 其他🎊:
+    - IELTS: other/IELTs.md
+    - Test: other/test.md
+  - 找工:
+    - 面试: work/Interview.md
+   
+
+use_directory_urls: false #解决图片相对路径无法解析的问题
