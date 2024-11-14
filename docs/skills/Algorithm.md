@@ -314,7 +314,12 @@ public:
 bool isValid(string s) {
     int n=s.size();
     if(n%2==1)return false;
-    unordered_map<char,char>pair={{')','('},{']','['},{'}','{'}};//匹配时右边先
+    unordered_map<char, char> pair_map = {
+        {')', '('},
+        {']', '['},
+        {'}', '{'}
+    };
+    //匹配时右边先
     stack<char>stk;
     for(char ch :s){
         if(pair.count(ch)){//如果Map中存在具有给定键的值，则此函数返回1，否则返回0,即是右括号的情况
