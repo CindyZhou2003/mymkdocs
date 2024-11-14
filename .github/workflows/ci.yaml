@@ -1,19 +1,34 @@
-name: ci 
+name: ci
+
 on:
   push:
     branches:
-      - master 
+      - master
       - main
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:  # mkdocs-blogging-plugin 给出的渲染问题解决方案
+      # Step 1: Checkout the code
+      - uses: actions/checkout@v3
+        with:
           fetch-depth: 0
-      - uses: actions/setup-python@v2
+
+      # Step 2: Set up Python
+      - uses: actions/setup-python@v4
         with:
           python-version: 3.x
-      - run: pip install mkdocs-material 
-      - run: pip install mkdocs-blogging-plugin
-      - run: mkdocs gh-deploy --force
+
+      # Step 3: Install dependencies
+      - run: pip install mkdocs-material mkdocs-blogging-plugin
+
+      # Step 4: Build the site
+      - run: mkdocs build
+
+      # Step 5: Add a .nojekyll file to prevent Jekyll processing
+      - run: echo "" > ./site/.nojekyll
+
+      # Step 6: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force --clean
