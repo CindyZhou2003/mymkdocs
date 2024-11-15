@@ -16,6 +16,8 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 * `mkdocs -h` - Print help message and exit.
 * `mkdocs gh-deploy` - Push to the github.
 
+## Problems when building this site
+详见 其他-部署网站时的问题
 
 ## Atrribute
 The icons are attribted By Freepik.

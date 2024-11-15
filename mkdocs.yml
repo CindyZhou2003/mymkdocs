@@ -141,13 +141,14 @@ nav:
       - 毛概: Courses/毛概.md
       - 物联网: Courses/IoT.md
   - 技能⚙️:
-  # - 算法: skills/Algorithm.md
+    - 算法: skills/Algorithm.md
     - 深度学习: skills/deeplearning.md
-  - 出国:
+  - 出国✈️:
     - 雅思口语: other/IELTs_speaking.md 
     - 雅思作文: other/IELTs_writing.md
   - 其他🎊:
     - Test: other/test.md
+    - 部署网站时的问题: other/Debug_issue.md
   - 找工:
     - 面试: work/Interview.md
    
