@@ -24,6 +24,6 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material mkdocs-git-revision-date-localized-plugin mkdocs-statistics-plugin 
-      - run: git clone https://github.com/TonyCrane/mkdocs-toolchain.git
-      - run: mkdir cache
+      # - run: git clone https://github.com/TonyCrane/mkdocs-toolchain.git
+      # - run: mkdir cache
       - run: mkdocs gh-deploy --force
