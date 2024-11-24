@@ -645,6 +645,8 @@ The best part for me is just how connected I feel to nature when I’m there. I 
 
 公园
 
+去的一个新的地方
+
 > 
 
 Ok, so, today I want to talk about our new dog park（狗狗公园） in the city.

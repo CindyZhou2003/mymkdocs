@@ -8,7 +8,7 @@
 
 This line graph illustrates the proportion of urban citizens in Philippines, Malaysia, Thailand and Indonesia between 1970 and 2020, with the expected population in 2030 and 2040.
 
-Overall, it can be easily seen from the graph that all four countries has a dramatic rise in population, starting at the lowest point in 1970 and being projected to reach the peak in 2040.
+Overall, it can be easily seen from the graph that all four countries has **a dramatic rise** in population, starting at the lowest point in 1970 and being projected to reach the peak in 2040.
 
 Malaysia starts at 30%, about twice as much as Indonesia. After that, both showed an obvious increase, with the former rising to approximately 76% in 2020, and the latter rising to approximately 50%. Both sides are expected to continue rising thereafter, with Malaysia slowly rising to about 83%, while Indonesia is expected to see a 12% gain.
 
@@ -96,9 +96,10 @@ Hence, viewing rural-to-urban migration through a binary lens of positive or neg
 
 **In many countries, people are now living longer than ever before. Some people say an ageing population creates problems for governments. Other people think there are benefits if society has more elderly people. To what extent do the advantages of having an ageing population outweigh the disadvantages?**
 
-
-
-
+efore. While some people suggest the ageing population leads to problems for the government, others maitain it's beneficial to have more elderly poeple.
+On one hand, a vast number of elderly people create a significant financial burden for the government and the young. The government has to impose more taxes on young people mainly due to the social security for the elderly including pensions and healthcare fees to ensure their life quality. Meanwhile, the ageing population may lead to a lack of labor because the base population doesn;t change a lot but the proportion of the young is relatively low. Therefore, there're plenty of vacant positions in the workforce. This may contribute to the decline of the economy and the stagnancy of development, which the government has to introduce policies such as encouraging migrants to deter from getting worse.
+On the other hand, the increasing life span does imply that people have a better life in the modern world thanks to the advanced medical technology and social welfares. The aging population may greatly promote the medical industry, as there's a large demand in inventing more efficient drugs and finding treatments of some rare diseases which haven't been cured. On top of that, the elder may boost the local tourism as some of them are reluctant to stay at home after retirement. They can pay a visit to a number of attractions they haven't gone in their young ages or have anticipated for a long time.
+ In conclusion, from my perspective, the benefits of an increasingly older population are kinds of limited, only conducive to medical industry and tourism while the harmful effects potencially impacting the whole society can't be neglected, which is really a headache for the government.
 
 ### 两问
 
@@ -112,6 +113,6 @@ Additionally, the behavior of some tourists can harm the environment and cultura
 
 To **mitigate** these negative effects of international tourism, several measures can be implemented. First, governments should invest in upgrading infrastructure to accommodate larger numbers of visitors without **compromising the well-being of residents**. This could include expanding public transport networks, improving waste management systems, and implementing sustainable tourism practices. Second, **stricter regulations and penalties** should be **enforced** to **curb** uncivilized behavior. Fines, community service, or even temporary bans from entering the country could **serve as effective deterrents** against tourists who break the rules.
 
-Moreover, fostering a culture of responsible tourism through educational campaigns can encourage visitors to respect local traditions and the environment. If visitors demonstrate respect and cultural sensitivity, locals are likely to feel more positively about their presence.
+Moreover, **fostering a culture** of responsible tourism through educational campaigns can encourage visitors to respect local traditions and the environment. If visitors demonstrate respect and cultural sensitivity, locals are likely to feel more positively about their presence.
 
 In conclusion, while it is understandable that some countries are wary of international tourism, improving infrastructure, enforcing rules, and fostering responsible behavior can help mitigate its negative effects. This approach could allow countries to benefit economically from tourism while preserving their cultural and environmental integrity.
