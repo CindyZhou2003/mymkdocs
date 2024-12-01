@@ -9,6 +9,8 @@
 >
 > <https://zjucomp.net/docs/terms> 术语中英对照表
 
+[TOC]
+
 ## 引言
 
 ### 初识互联网
@@ -22,6 +24,8 @@
 - 可靠性、实时/非实时等外特性
 
 ### 网络实例
+
+计算机网络拓扑结构主要取决于它的通信子网
 
 #### 网络分类（按地域规模）
 
@@ -38,6 +42,14 @@ IXP或IX：互联网交换点
 
 #### 网络组成
 
+> [!NOTE]
+>
+> 计算机网络从逻辑功能上可划为通信子网和资源子网
+>
+> 
+
+
+
 ##### 网络边缘
 
 **端系统**：位于互联网边缘与互联网相连的计算机和其他设备
@@ -46,7 +58,7 @@ IXP或IX：互联网交换点
 
 ##### 网络核心
 
-由互联端系统的分组交换设备和通信链路构成的网状网络
+由互联端系统的分组交换设备和通信链路构成的网状网络（网络+路由器）
 
 ###### 接入网
 
@@ -73,7 +85,7 @@ IXP或IX：互联网交换点
 >
 > 1B=8b （注意大小写）
 
-物理媒介
+###### 物理媒介
 
 - 是指发射机和接收机之间的具体链路介质
 - 引导型介质：信号在固体介质中传播，例如铜、光纤、同轴电缆
@@ -83,30 +95,33 @@ IXP或IX：互联网交换点
 
 ![image-20240912104651823](../images/image-20240912104651823.png)
 
-###### 分组交换和电路交换
+#### 分组交换和电路交换
 
-分组交换（也称包交换 packet switching）
+##### 分组交换（也称包交换 packet switching）
 
 - 主机将数据分成分组，发送到网络，通信双方以分组为单位、使用存储-转发机制，实现数据交互的通信方式
 - 网络将数据分组从一个路由器转发到下一个路由器，通过从源到目标的路径上的链路，逐跳传输抵达目的地
 - 每个分组在互联网中独立的选择传输路径
 - 支持灵活的统计多路复用 multiplexing
 - 到达包的顺序和发送顺序可能不一致
+- 附加信息开销大
 
-电路交换（circuit switching）
+##### 电路交换（circuit switching）
 
+- 通信、传输时延小
 - 资源预留，不会被抢占 -> 有序、性能有保障
 - 容错性低（无法应对互联网中广泛存在的“突发”（Burst）流量）
 - 资源利用不够充分
 
-存储转发的报文交换
+##### 存储转发的报文交换（Message switching）
 
 - 路由器需要接收到完整的整个数据报文后，才能开始向下一跳发送
 - 有传输延迟
+- 同一报文的不同分组可以经过不同的传输路径通过通信子网
 
 ![image-20240912110029010](../images/image-20240912110029010.png)
 
-分组交换在实际应用率最高
+总结：**分组交换在实际应用率最高**
 
 ### 协议和分层结构
 
@@ -126,6 +141,8 @@ IXP或IX：互联网交换点
 
 ##### 分层结构
 
+不同机器上的同一层称为对等层，同一层的实体称为对等实体
+
 ![image-20240912111717713](../images/image-20240912111717713.png)
 
 发送端：层层封装；接收端：层层解封装
@@ -138,7 +155,7 @@ IXP或IX：互联网交换点
 
 #### 服务原语
 
-服务原语 Service Primitives
+服务原语 Service Primitives：请求 request、指示 indication、响应 response、证实 confirmation
 
 - 面向连接（电话系统）/无连接（邮政系统）
 
@@ -163,9 +180,11 @@ OSI：Open Systems Interconnection
 
 ##### 物理层（Physical Layer）
 
-定义如何在信道上传输0、1：Bits on the wire
+定义如何在信道上**传输比特**0、1：Bits on the wire
 
 ##### 数据链路层 (Data Link Layer)
+
+数据链路层的传输单位是帧；点到点通信
 
 实现相邻（Neighboring）网络实体间的数据传输
 
@@ -175,7 +194,11 @@ OSI：Open Systems Interconnection
 
 共享信道上的访问控制（MAC）：同一个信道，同时传输信号。
 
+数据链路层协议有：SDLC\HDLC\PPP\STP
+
 ##### 网络层 (Network Layer)
+
+网络层的传输单位是数据报
 
 将数据包跨越网络从源设备发送到目的设备（host to host）
 
@@ -187,21 +210,24 @@ OSI：Open Systems Interconnection
 >
 > 为什么除了MAC地址外，还有IP地址？不能用MAC（网卡地址）寻址，路由器不知道网卡在哪；？？面向运营商（第一节课）
 
+网络层的协议有：IP\IPX\ICMP\IGMP\ARP\RARP\RIP\OSPF等
+
 ##### 传输层 (Transport Layer)
 
 将数据从源端口发送到目的端口（进程到进程）
 
-传输层为终端用户提供端到端的数据传输控制
+传输层为终端用户提供**端到端的数据传输控制**
 
 两类模式：可靠的传输模式，或不可靠传输模式
 
 - 可靠传输：可靠的端到端数据传输，适合于对通信质量有要求的应用场景，如文件传输等
 - 不可靠传输：更快捷、更轻量的端到端数据传输，适合于对通信质量要求不高，对通信响应速度要求高的应用场景，如语音对话、视频会议等
 
+传输层的协议有：TCP\UDP
+
 ##### 会话层 (Session Layer)
 
-利用传输层提供的服务，在应用程序之间建立和维持会
-话，并能使会话获得同步
+利用传输层提供的服务，在应用程序之间建立和维持会话，并能使会话获得同步
 
 ##### 表示层（Presentation Layer）
 
@@ -262,17 +288,18 @@ Host上每个层都有
 
 ### 计算机网络度量单位
 
-##### 比特率(bit rate)
+#### 速率/比特率(bit rate)
 
 - 主机在数字信道上传送数据的速率，也称数据率
 - 比特率的单位是b/s(比特每秒)，也可以写为bps，(bit per second)，或 kbit/s、Mbit/s、 Gbit/s等
 
-##### 带宽
+#### 带宽(bandwidth)
 
 - 网络中某通道传送数据的能力，即单位时间内网络中的某信道所能通过的“最高数据率”
 - 单位是 bit/s，即 “比特每秒”
+- $带宽=发送数据大小/传播时延$
 
-##### 包转发率(PPS)
+#### 包转发率(PPS)
 
 - 全称是Packet Per Second(包/秒)，表示交换机或
 路由器等网络设备以包为单位的转发速率
@@ -282,35 +309,49 @@ Host上每个层都有
 >
 > 在交换机上：大包和小包，哪个更容易实现线速？小的
 
-##### 时延(Delay)
+#### 时延(Delay)
 
 时延 (delay 或 latency) 是指数据（一个报文或分组）从网络（或链路）的一端传送到另一端所需的时间，也称为延迟
-- 传输时延(transmission delay)：数据从结点进入到传输媒体所需要的时间，传输时延又称为发送时延
-- 传播时延(propagation delay)：电磁波在信道中需要传播一定距离而花费的时间
-- 处理时延(processing delay)：主机或路由器在收到分组时，为处理分组（例如分析首部、提取数据、差错检验或查找路由）所花费的时间
-- 排队时延(queueing delay)：分组在路由器输入输出队列中排队等待处理所经历的时延 -> queue不长不短最好
+
+- **传输时延/发送时延(transmission delay)**：数据从结点进入到传输媒体所需要的时间
+
+$$
+\text{发送时延}=\text{分组长度}/\text{发送速率}
+$$
+
+- **传播时延(propagation delay)**：电磁波在信道中需要传播一定距离而花费的时间
+
+$$
+\text{传播时延}=\text{信道长度}/\text{电磁波在信道上的传播速率}
+$$
+
+- **处理时延(processing delay)**：主机或路由器在收到分组时，为处理分组（例如分析首部、提取数据、差错检验或查找路由）所花费的时间
+- **排队时延(queueing delay)**：分组在路由器输入输出队列中排队等待处理所经历的时延 -> queue不长不短最好
 
 ![image-20240912122025795](../images/image-20240912122025795.png)
 
-##### 往返时延RTT(Round-Trip Time)
+#### 往返时延RTT(Round-Trip Time)
 
 - 从发送方发送数据开始，到发送方收到来自接收方的确认，经历的总时间
 - 可用于判断网络的通断性、测试网络时延、计算数据包丢失率等
 
-##### 时延带宽积
+#### 时延带宽积
 
-时延带宽积 = 传播时延 * 带宽，即按比特计数的链路长度
+$时延带宽积 = 传播时延 \times 带宽$，即按比特计数的链路长度
 
-EG:传播时延为20ms，带宽为10Mb/s，则：
-	时延带宽积= 20/1000 × 10×106 = 2 × 105 bit
+EG: 传播时延为20ms，带宽为10Mb/s，则：时延带宽积= 20/1000 × 10×106 = 2 × 105 bit
 
 吞吐量 throughput
 
 有效吞吐量 goodput
 
-利用率
+信道利用率
 
 丢包率
+
+
+
+传输m个分组所需时间：T=(路由器数量+1)r + (m-1)r，r=分组大小/传输速率
 
 ### 网络安全威胁
 
@@ -335,27 +376,21 @@ EG:传播时延为20ms，带宽为10Mb/s，则：
 ➢ 访问限制：受密码保护的VPN
 ➢ 防火墙：接入网络和核心网络中的专用“安全卫士”
 
-
-
 ### 标准化组织
 
-ISO
-
-ITO
-
-IEEE
-
-WFA
-
-IETF
-
-IRTF(Interent research of )
+ISO、ITO、IEEE、WFA、IETF、IRTF(Interent research of )
 
 - RFC(request for comments)标准
 
 ### 互联网发展史与启示
 
 1983 ARPANET采用TCP/IP——标志互联网诞生
+
+### 总结
+
+主机A给主机B发送数据的理论最高速率取决于链路带宽、主机A/B网卡速率的最小者
+
+
 
 ## 物理层
 
@@ -384,6 +419,7 @@ IRTF(Interent research of )
 ##### 物理层电气特性
 
 规定了多条信号线的电气连接及有关电路特性
+
 - 发送器和接收器的电路特性、负载要求、传输速率和连接距离等
 - 如发送信号电平、发送器和接收器的输出阻抗、平衡特性等
 
@@ -421,6 +457,7 @@ a~n~, b~n~ n次谐波项的正弦和余弦振幅值
 ##### 有限带宽信号
 
 信号在信道上传输时的特性
+
 - 对不同傅立叶分量的衰减不同，引起输出失真
 - 信道有**截止频率fc** , 0 ~ fc的振幅衰减较弱， fc以上的振幅衰减厉害，这主要由信道的物理特性决定， **0 ~ fc是信道的有限带宽**
 - 实际使用时，可以接入滤波器，限制用户的带宽
@@ -429,12 +466,18 @@ EG：<img src="../images/image-20240919110243928.png" alt="image-202409191102439
 
 #### 信道的最大数据传输速率
 
-**奈魁斯特定理**
+##### 奈魁斯特定理
 
 **无噪声**有限带宽信道的最大数据传输率公式
 
 - 最大数据传输率 = $2Hlog_2V$​ (bps)
 - 任意信号通过一个*带宽为Ｈ*的低通滤波器，则*每秒采样2H次（频率）*就能完整地重现该信号（无损！），*信号电平分为V级*
+
+--------------------------------------
+
+EG：无噪声理想信道带宽4MHz，QAM调制，信道最大数据传输速率为48Mb/s，则QAM调制方案是？
+
+> $2Hlog_2V=48Mb/s$，H=4MHz，V=64 ==> QAM-64
 
 > [!NOTE]
 >
@@ -446,18 +489,21 @@ EG：<img src="../images/image-20240919110243928.png" alt="image-202409191102439
 >
 > **The modulation technique determines the number of bits/symbol**
 
+##### 信噪比
+
 随机噪声出现的大小用**信噪比**（**信号功率S**与**噪声功率N**之比）来衡量
 
 - 信噪比=$10log_{10}S/N$，单位：分贝db
 
-**香农定理**
+##### 香农定理
 
 带宽为*H赫兹*，*信噪比为S/N*的任意信道的**最大数据传输率**为：$$Hlog_2(1 + S/N)$$ (bps)
+
 - 此式是利用信息论得出的，具有普遍意义
 - 与信号电平级数、采样速度无关
 - 此式仅是上限，难以达到
 
-**信息量**
+##### 信息量
 
 一条消息包含信息的多少称为信息量
 
@@ -2911,9 +2957,11 @@ TCP服务模型： 在一对通信的进程之间提供一条理想的**字节�
 
 <img src="../images/image-20241121112208877.png" alt="image-20241121112208877" style="zoom:33%;" />
 
-发送序号 seq number：数据载荷中第一个字节在字节流中的序号
+**发送序号 seq number**：数据载荷中第一个字节在字节流中的序号
 
-确认序号 ack number：期望接收的下一个字节的序号
+**确认序号 ack number**：期望接收的下一个字节的序号
+
+**最大段长度（MSS）**：TCP段中可以携带的最大数据字节数; 建立连接时，每个主机可声明自己能够接受的MSS，缺省为536字节
 
 <img src="../images/image-20241121112530950.png" alt="image-20241121112530950" style="zoom:50%;" />
 
@@ -3014,13 +3062,258 @@ TCP接收端有一个接收缓存：
 
 #### TCP连接管理
 
+##### TCP两次次握手建立连接
 
+建立一条TCP连接需要确定两件事：
+
+- 双方都同意建立连接（知晓另一方想建立连接） 
+- 初始化连接参数（序号，MSS等）
+
+> [!CAUTION]
+>
+> **在网络中，2次握手总是可行的吗？**
+> 在一个不可靠的网络中，总会有一些意外发生：
+> • 包传输延迟变化很大
+> • 存在重传的报文段
+> • 存在报文重排序
+>
+> ==> delayed duplicates problem
+
+<img src="../images/image-20241128101520034.png" alt="image-20241128101520034" style="zoom: 33%;" />
+
+Solution 1
+
+Problems
+There are two problems which complicates the scenario:
+• Possible wrap around of seqno
+• Client/Host or Server may crash
+Assume seqno = 0,1,…,7 (i.e. 3 bits)
+
+Problem: How to differentiate <span style="color:#CC0000;">delay duplicate</span> and <span style="color:#336600;">new pkt with wrapped around seqno</span>? 
+
+Idea: use time 
+
+Two assumptions that simplifies the problem
+• Assumption 1. Time for seqno wrap around (**T1**) is typically large if, e.g., seqno is 32 bits long. 
+• Assumption 2. If pkt delays a relatively short time (**T2<T1**), we can use time to differentiate the two.
+
+Solution 2
+
+##### How to realize the assumptions?
+
+**1. Restrict packet lifetime**
+
+Packet lifetime can be restricted to a known maximum using one of the following techniques 
+
+• Restricted subnet design. 
+
+• Putting a hop counter in each packet. 
+
+• Timestamping each packet (router synchronization required)
+
+**T** = *n* * (pkt lifetime)
+
+• It is impossible to receive a delay duplicate after **T**
+
+**2. use time-of-day clock**
+
+- Time-of-day clock at hosts
+
+Each clock is assumed to take the form of a binary counter that increments itself at uniform intervals. 时钟不断增加
+
+The number of bits in the counter must equal or exceed the number of bits in the sequence numbers.
+
+The clock is assumed to continue running even if the host goes down. 
+
+The clocks at different hosts need **not** be synchronized.
+
+- initial seqno of a connection = low k bits of time-of-day clock
+
+##### TCP起始序号的选择
+
+基于时钟的起始序号选取算法：
+• 每个主机使用一个时钟，以二进制计数器的形式工作，每隔ΔT时间计数器加1 
+
+• 新建一个连接时，以本地计数器值的最低32位作为起始序号
+• 该方法确保连接的起始序号随时间单调增长
+ΔT取较小的值（4微秒）：确保发送序号的增长速度，不会超过起始序号的增长速度
+
+使用较长的字节序号（32位）： 确保序号回绕的时间远大于分组在网络中的最长寿命
+
+##### Forbidden region of seqno
+
+<img src="../images/image-20241128102832279.png" alt="image-20241128102832279" style="zoom:50%;" />
+
+<img src="../images/image-20241128103527044.png" alt="image-20241128103527044" style="zoom:33%;" />
+
+The increments of seqno cannot be **too fast or too slow**
+
+Solution for the delayed duplicates：
+
+1. the maximum data rate on any connection is one segment per clock tick. (i.e., cannot be too fast)
+2. limits how slowly sequence numbers can advance on a connection (or how long the connections may last). (i.e., cannot be too slow)
+
+##### TCP三次握手建立连接
+
+<img src="../images/image-20241128103834658.png" alt="image-20241128103834658" style="zoom: 33%;" />
+
+<img src="../images/image-20241128105458546.png" alt="image-20241128105458546" style="zoom:50%;" />
+
+##### 关闭TCP连接
+
+Asymmetric release 非对称
+
+- When one part hangs up, the connection is broken. 
+- Asymmetric release is abrupt and may result in data loss
+
+Symmetric release 对称
+
+- to treat the connection as two separate unidirectional connections and require each one to be released separately.
+
+SYMMETRIC
+
+<img src="../images/image-20241128104959324.png" alt="image-20241128104959324" style="zoom: 50%;" />
+
+**Two army-problem**：A white army is encamped in a valley. On both of the surrounding hillsides are blue armies. 
+
+##### 客户/服务器经历的TCP状态序列
+
+<img src="../images/image-20241128105703887.png" alt="image-20241128105703887" style="zoom:50%;" />
+
+##### SYN洪泛攻击
+
+攻击者采用伪造的源IP地址，向服务器发送大量的SYN段，却不发送ACK段
+
+服务器为维护一个巨大的半连接表耗尽资源，导致无法处理正常客户的连接请求，表现为服务器停止服务
+
+##### TCP端口扫描
+
+TCP端口扫描的原理：
+• 扫描程序依次与目标机器的各个端口建立TCP连接
+• 根据获得的响应来收集目标机器信息
+
+在典型的TCP端口扫描过程中，发送端向目标端口发送SYN报文段： 
+
+• 若收到SYNACK段，表明目标端口上有服务在运行
+• 若收到RST段，表明目标端口上没有服务在运行
+• 若什么也没收到，表明路径上有防火墙，有些防火墙会丢弃来自外网的SYN报文段
 
 ### 理解网络拥塞
+
+#### 网络拥塞的后果
+
+网络拥塞造成：
+• 丢包：由路由器缓存溢出造成
+• 分组延迟增大：链路接近满载造成
+大量网络资源用于：
+• 重传丢失的分组
+• （不必要地）重传延迟过大的分组
+• 转发最终被丢弃的分组
+
+结果：进入网络的负载很重，网络吞吐量却很低
+
+#### 拥塞控制的常用方法
+
+端到端拥塞控制
+• 网络层不向端系统提供反馈
+• 端系统通过观察丢包和延迟，自行推断拥塞的发生
+• TCP采用此类方法
 
 
 
 ### TCP拥塞控制
+
+#### 拥塞检测和速率限制
+
+<span style="color:#CC0000;">发送方如何感知拥塞?</span>
+
+发送方利用丢包事件感知拥塞： • 拥塞造成丢包和分组延迟增大
+• 无论是丢包还是分组延迟过大，对
+于发送端来说都是丢包了 丢包事件包括：
+• 重传定时器超时
+• 发送端收到3个重复的ACK
+
+<span style="color:#CC0000;">发送方采用什么机制限制发送速率？</span>
+
+发送方使用**拥塞窗口cwnd**限制已发 送未确认的数据量：LastByteSent-LastByteAcked ≤ cwnd 
+
+$rate = \frac{cwnd}{RTT} \text{Bytes/sec}$
+
+cwnd随发送方感知的网络拥塞程度而变化
+
+#### 拥塞窗口的调节策略：AIMD
+
+Multiplicative Decrease & Additive Increase
+
+<img src="../images/image-20241128112144283.png" alt="image-20241128112144283" style="zoom:50%;" />
+
+#### TCP慢启动
+
+在新建的连接（或沉寂了一段时间的连接）上，以什么速率发送数据（此时接收窗口达最大值）? 
+
+早期的TCP协议：
+• 发送端仅以接收窗口大小限制发送速率，网络经常因为拥塞而崩溃！
+
+采用“加性增”增大发送窗口，太慢！
+• 在新建连接上，令cwnd = 1 MSS，起始速度= MSS/RTT
+• 然而，网络中的可用带宽可能远大于MSS/RTT 
+
+**慢启动**的基本思想：
+• 在新建连接上指数增大cwnd，直至检测到丢包（此时终止慢启动）
+• 希望迅速增大cwnd至可用的发送速度
+
+--------------
+
+慢启动的策略：每经过一个RTT，将cwnd加倍
+
+慢启动的具体实施：
+• **每收到一个ACK段，cwnd增加一个MSS**
+• 只要发送窗口允许，发送端可以立即发送下一个报文段
+
+特点：以一个很低的速率开始，按指数增大发送速率
+
+慢启动比谁“慢”？与早期TCP按接收窗口发送数据的策略相比，采用慢启动后发送速率的增长较慢
+
+#### 区分不同的丢包事件
+
+<img src="../images/image-20241128112853377.png" alt="image-20241128112853377" style="zoom:50%;" />
+
+#### TCP拥塞控制的实现
+
+发送方维护变量ssthresh 
+发生丢包时，ssthresh=cwnd/2
+
+**ssthresh是从慢启动转为拥塞避免的分水岭**：
+
+- cwnd低于门限时，执行慢启动
+- cwnd高于门限：执行拥塞避免
+
+拥塞避免阶段，拥塞窗口线性增长：每当收到ACK， cwnd=cwnd + MSS*(MSS/cwnd)
+
+检测到3个重复的ACK后：
+
+- TCP Reno实现： cwnd= ssthresh+3，线性增长
+- TCP Tahoe实现：cwnd=1✖MSS，慢启动
+
+<img src="../images/image-20241128113502853.png" alt="image-20241128113502853" style="zoom:33%;" />
+
+#### TCP发送端的事件与动作
+
+<img src="../images/image-20241128113715827.png" alt="image-20241128113715827" style="zoom:50%;" />
+
+#### Wireless Issues
+
+linker layer重传 速度快于TCP的反应
+
+#### TCP连接的吞吐量
+
+<img src="../images/image-20241128114412311.png" alt="image-20241128114412311" style="zoom:50%;" />
+
+#### TCP的公平性
+
+公平性目标: 如果K条TCP连接共享某条带宽为R的瓶颈链路，每条连接应具有平均速度R/K
+
+<img src="../images/image-20241128115004736.png" alt="image-20241128115004736" style="zoom:50%;" />
 
 
 
@@ -3044,4 +3337,5 @@ TCP接收端有一个接收缓存：
 
 > D
 
+2. 
 2. 

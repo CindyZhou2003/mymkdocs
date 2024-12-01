@@ -969,7 +969,7 @@ Take Response Ratio as priority
 
 Larger Response Ratio, higher priority
 
-##### **HRRN** 算法的工作原理
+##### HRRN 算法的工作原理
 
 1. **初始化**： 记录每个进程的到达时间和所需的服务时间。
 
@@ -2054,7 +2054,56 @@ To run a program of size n pages, need to find n free frames and load program
 
 <img src="../images/image-20241120144532930.png" alt="image-20241120144532930" style="zoom:50%;" />
 
+页号、页面偏移
 
+地址转换
+
+<img src="../images/image-20241125100730054.png" alt="image-20241125100730054" style="zoom:50%;" />
+
+> 为了将虚地址转换为物理地址，需要结合虚地址的页号和页内偏移，以及页表中页号与页框号的映射关系。以下是计算步骤：
+>
+> ### 已知条件
+>
+> 1. **页面大小** = $$4 \, \text{KB} = 2^{12} = 4096 \, \text{bytes}$$，页号用高 20 位，页内偏移用低 12 位表示。
+> 2. 虚地址：
+>    - 2362H=9026102362H = 9026_{10}
+>    - 1565H=5477101565H = 5477_{10}
+> 3. 页表：
+>    - 页号 0 → 页框号 101H
+>    - 页号 1 → 页框号 102H
+>    - 页号 2 → 页框号 254H
+>
+> ------
+>
+> ### 转换步骤
+>
+> #### 1. 计算虚地址的页号和页内偏移
+>
+> $$\text{页号} = \left\lfloor \frac{\text{虚地址}}{\text{页面大小}} \right\rfloor$$, $$\quad \text{页内偏移} = \text{虚地址} \mod \text{页面大小}$$
+>
+> - **2362H**： $$\text{页号} = \left\lfloor \frac{9026}{4096} \right\rfloor = 2$$, $$\quad \text{页内偏移} = 9026 \mod 4096 = 1834$$
+> - **1565H**： $$\text{页号} = \left\lfloor \frac{5477}{4096} \right\rfloor = 1$$, $$\text{页内偏移} = 5477 \mod 4096 = 1381$$
+>
+> #### 2. 根据页表找到对应页框号
+>
+> - **页号 2** → 页框号 254H
+> - **页号 1** → 页框号 102H
+>
+> 页框号左移 12 位（乘以 4096），再加上页内偏移，得到物理地址。
+>
+> ------
+>
+> #### 3. 计算物理地址
+>
+> - **2362H（页号 2，页框号 254H）**：$$\text{物理地址} = \text{页框号} \times 4096 + \text{页内偏移}$$，$$\text{物理地址} = 254H \times 4096 + 1834 = 254000H + 072A = 25472AH$$
+> - **1565H（页号 1，页框号 102H）**：$$\text{物理地址} = 102H \times 4096 + 1381 = 102000H + 0565 = 1020565H$$
+>
+> ------
+>
+> ### 结果
+>
+> 1. 虚地址 2362H2362H → 物理地址 25472AH25472AH
+> 2. 虚地址 1565H1565H → 物理地址 1020565H1020565H
 
 #### Page 
 
@@ -2110,6 +2159,10 @@ Valid-invalid bit attached to each entry in the page table
 
 <img src="../images/image-20241120152043420.png" alt="image-20241120152043420" style="zoom:50%;" />
 
+p1->outer page table -- p2 -> page of page table -- d -> real physical address 
+
+64=42+10+12, 32=12+10+10
+
 > [!NOTE]
 >
 > **Page-table base register (PTBR)** ？
@@ -2139,7 +2192,7 @@ Search is slow, so put page table entries into a hash table. TLB can be used to 
 ### Swapping 
 
 A process can be swapped temporarily out of memory to a backing store, and then brought back into memory for continued execution 进程可以暂时从内存交换到备用存储器，然后再返回到内存中继续执行
-**Backing store** – fast disk large enough to accommodate copies of all memory images for all users; must provide direct access to these memory images 足够大的快速磁盘，可以容纳所有用户的所有内存映像的副本；必须提供对这些内存映像的直接访问
+**Backing store 交换区** – fast disk large enough to accommodate copies of all memory images for all users; must provide direct access to these memory images 足够大的快速磁盘，可以容纳所有用户的所有内存映像的副本；必须提供对这些内存映像的直接访问
 
 <img src="../images/image-20241120154044395.png" alt="image-20241120154044395" style="zoom:50%;" />
 
@@ -2155,9 +2208,9 @@ Memory-management scheme that supports user view of memory
 
 - **limit** – specifies the length of the segment
 
-**Segment-table base register (STBR)** points to the segment table’s location in memory 每个块对应的起始地址
+**Segment-table base register (STBR)** points to the segment table’s location in memory 段表中每个块对应的起始物理地址
 
-**Segment-table length register (STLR)** indicates number of segments used by a program;
+**Segment-table length register (STLR)** indicates number of segments used by a program
 
 - segment number **s** is legal if **s** < **STLR**
 
@@ -2171,4 +2224,309 @@ Memory-management scheme that supports user view of memory
 
 ### Example: The Intel Pentium
 
+奔腾处理器
+
 Supports both segmentation and segmentation with paging 段页混合，先分段再分页
+
+linear address: 32 offset
+
+<img src="../images/image-20241125104027505.png" alt="image-20241125104027505" style="zoom:50%;" />
+
+#### Intel Pentium Segmentation
+
+根据段号找页表基址，根据分页的va（页框号）找到页号，两者拼接
+
+Local Descriptor Table contains entries for the segments local to each program itself; 
+Global Descriptor Table contains entries of the system (OS).
+
+## Virtual Memory
+
+### Background
+
+Virtual memory – separation of user logical memory from physical memory 虚拟内存不是物理对象，而是指内核提供的用于管理物理内存和虚拟地址的抽象和机制的集合
+
+- Only **part** of the program needs to be in memory for execution
+- Logical address space can therefore be much **larger** than physical address space
+- Allows address spaces to be **shared** by several processes
+- Allows for more efficient process **creation**
+
+Virtual memory can be implemented via 虚拟内存的实现：
+
+- Demand paging 请求式分页
+
+- Demand segmentation 请求式分段
+
+----------------------------------
+
+#### principle of locality
+
+**局部性原理 (principle of locality)**: 指程序在执行过程中的一个较短时期所执行的指令地址和指令的操作数地址，分别局限于一定区域。
+
+- 时间局部性 : 一条指令的一次执行和下次执行，一个数据的一次访问和下次访问都集中在一个较短时期内 ; 
+- 空间局部性 : 当前指令和邻近的几条指令，当前访问的数据和邻近的数据都集中在一个较小区域内。
+- 虚拟存储器是具有请求调入功能和置换功能，仅把进程的一部分装入内存便可运行进程的存储管理系统，它能从逻辑上对内存容量进行扩充的一种虚拟的存储管理系统。
+
+-----------------
+
+虚拟内存其他优点：
+
+- System libraries can be shared by several processes through mapping of the shared object into a virtual address space 通过将共享对象映射到虚拟地址空间，系统库可由多个进程共享
+- Shared memory is enabled 共享内存
+- Pages can be shared during process creation (speeds up creation) 可在进程创建期间共享页面（加快创建速度）
+
+#### Process Creation
+
+Virtual memory allows other benefits during process creation:
+- **Copy-on-Write(COW) 写时复制**：CoW 的主要目的是减少内存使用和提高性能，通过延迟实际的内存
+  复制，直到某个进程尝试修改内存内容时才进行复制（省时间和空间）
+- **Memory-Mapped Files (later)**: 将文件内容映射到进程的地址空间的技术。通过内存映射文件，可以像访问内存一样访问文件内容，而无需显式地进行读写操作。这种技术在处理大文件、提高文件访问性能以及实现进程间通信等方面非常有用
+
+
+
+### Demand Paging
+
+需要时放到内存
+
+Bring a page into memory only when it is needed
+
+- Less I/O needed
+
+- Less memory needed 
+
+- Faster response
+
+- More users
+
+- Page is needed => reference to it
+
+  - invalid reference => abort
+
+  - not-in-memory => bring to memory
+
+- Lazy swapper – never swaps a page into memory unless page will be needed
+  - Swapper that deals with pages is a pager
+
+Transfer of a Paged Memory to Contiguous Disk Space 连续分配
+
+#### Valid-Invalid Bit
+
+With each page table entry a valid–invalid bit is associated (**v**: in-memory, **i**: not-in-memory)
+
+* Initially valid–invalid bit is set to i on all entries
+* During address translation, if valid–invalid bit in page table entry is **i** => **page fault** (a trap to the OS 缺页中断)
+
+<img src="../images/image-20241125112104401.png" alt="image-20241125112104401" style="zoom:50%;" />
+
+#### Page Fault
+
+If there is a reference to a page, first reference to that page will trap to operating system: **page fault**
+1. Operating system looks at <span style="color:#CC0000;">another table</span> (kept with PCB) to decide:
+   Invalid reference => abort
+   Just not in memory
+2. Get empty frame
+3. Swap page into frame
+4. Reset tables 磁盘内部表和页表
+5. Set `validation bit = v`
+6. Restart the instruction that caused the page fault
+   1. 中断后恢复 block move
+   2. auto increment/decrement location
+
+------------------
+
+What’s the state of the process that has page fault?
+
+-------------
+
+#### Performance of Demand Paging
+
+Page Fault Rate 0 ≤ p ≤ 1.0
+ if p = 0 no page faults 
+ if p = 1, every reference is a fault
+
+**Effective Access Time (EAT)**
+EAT = (1 – p) x memory access + p (page fault overhead + swap page out + swap page in + restart overhead)
+
+例子：
+
+<img src="../images/image-20241125113529011.png" alt="image-20241125113529011" style="zoom: 33%;" />
+
+
+
+### Copy-on-Write
+
+### Page Replacement
+
+#### Page replacement
+
+如果没有空闲帧 free frame：
+
+**Page replacement 页面替换** – find some page in memory, but not really in use, swap it out
+
+- algorithm 页面替换算法
+- performance – want an algorithm which will result in minimum number of page faults
+- Same page may be brought into memory several times
+
+好处：
+
+- Prevent over-allocation of memory by modifying page-fault service routine to include page replacement
+- Use **modify (dirty) bit 脏位** to reduce overhead of page transfers – only modified pages are written to disk
+- Page replacement completes separation between logical memory and physical memory – large virtual memory can be provided on a smaller physical memory
+
+实际上不是等到没有空闲帧的时候进行替换，操作系统会提前做
+
+<img src="../images/image-20241127143706318.png" alt="image-20241127143706318" style="zoom:50%;" />
+
+#### Page Replacement Algorithms
+
+Want lowest page-fault rate 最低缺页率
+
+输入：引用串 reference string；输出：缺页的次数 number of page faults on that string
+
+> [!NOTE]
+>
+> **内存无限大，缺页会无线趋近于零吗**？不会，趋于一个常数，缺页次数随着内存变大会变小
+
+##### First-In-First-Out (FIFO) Algorithm
+
+先进先出算法
+
+<img src="../images/image-20241127145037198.png" alt="image-20241127145037198" style="zoom:50%;" />
+
+##### Optimal Algorithm
+
+最佳置换算法 缺页次数最小 => optimal
+
+替换将来最长不使用的page Replace page that will not be used for longest period of time
+
+<img src="../images/image-20241127145836832.png" alt="image-20241127145836832" style="zoom:50%;" />
+
+##### Least Recently Used (LRU) Algorithm
+
+最近最久未使用置换算法：选择内存中最久没有引用的页面被置换。这是局部性原理的合理近似，性能接近最佳算法。但由于需要记录页面使用时间，硬件开销太大。
+
+<img src="../images/image-20241127145959957.png" alt="image-20241127145959957" style="zoom:50%;" />
+
+##### LRU Algorithm
+
+以下三种方法都是通过硬件实现
+
+Counter implementation：每次引用时钟+1
+
+Stack implementation：设置一个特殊的栈，把被访问的页面移到栈顶，于是栈底的是最久未使用页面。
+
+移位寄存器 : 被访问时左边最高位置 1 ，定期右移并且最高位补0 ，于是寄存器数值最小的是最久未使用页面。 (AdditionalReference-Bits Algorithm 附加引用位算法 )
+
+##### LRU Approximation Algorithms
+
+又叫 second chance algorithm，clock algorithm
+
+reference bit
+
+- 当访问到page，bit=1，周期内被访问过至少一次；bit=0，较长时间内没被访问过，替换出去
+
+second chance
+
+##### Enhanced second chance Algorithm
+
+使用引用位和修改位 (reference bit, modified bit)，引用过或者修改过置为1
+
+淘汰次序：
+
+基本思想：
+
+##### Counting-based Algorithms
+
+Keep a counter of the number of references that have been made to each page
+
+- **LFU Algorithm**: replaces page with smallest count 使用次数最少的页面置换出去
+- **MFU Algorithm(most frequently used)**: based on the argument that the page with the smallest count was probably just brought in and has yet to be used 使用次数最多的页面置换出去
+
+
+
+#####  Page Buffering Algorithm 页面缓冲算法
+
+通过被置换页面的缓冲，有机会找回刚被置换的页面
+
+被置换页面的选择和处理：用 FIFO 算法选择被置换页，把被置换的页面放入两个链表之一，如果页面未被修改，就将其归入到空闲页面链表的末尾，否则将其归入到已修改页面链表。 
+
+ 需要调入新的页面时：将新页面内容读入到空闲页面链表的第一项所指的页面，然后将第一项删除。 
+
+ 空闲页面和已修改页面，仍停留在内存中一段时间，如果这些页面被再次访问，这些页面还在内存中。
+ 当已修改页面达到一定数目后，再将它们一起调出到外存，然后将它们归入空闲页面链表。
+
+实际中，Windows 、 Linux 页面置换算法是基于页面缓冲算法
+
+### Allocation of Frames 
+
+分配：Each process needs minimum number of pages － usually determined by computer architecture
+
+#### Fixed Allocation 固定分配
+
+Equal allocation 等分
+
+Proportional allocation – Allocate according to the size of process 按进程比例分配
+
+#### Priority Allocation 优先级分配
+
+Use a proportional allocation scheme using priorities rather than size
+
+If process Pi generates a page fault,
+ select for a replacement one of its frames
+ select for replacement a frame from a process with a lower priority number
+
+#### Global vs. Local Allocation
+
+**Global replacement** – process selects a replacement frame from the set of all frames; one process can take a frame from another
+
+**Local replacement** – each process selects from only its own set of allocated frames
+
+Problem with global replacement 问题: unpredictable page-fault rate. Cannot control its own page-fault rate. More common
+Problem with local replacement: free frames are not available for others. – Low throughput
+
+### Thrashing 抖动、颠簸
+
+If a process does not have “enough” pages, the page-fault rate is very high. This leads to:
+ low CPU utilization
+ Queuing at the paging device, the ready queue becomes empty
+ operating system thinks that it needs to increase the degree of multiprogramming
+ another process added to the system 循环
+
+**Thrashing**：a process is busy swapping pages in and out 忙于页面替换，内存不够
+
+Thrashing 解决方法 : 
+
+ 增加物理内存
+ 优化页面置换算法
+ 在 cpu 调度中引入工作集算法
+ 动态调整进程的内存分配
+ 限制并发进程数
+ 内存压缩
+
+-----------------------
+
+#### Demand Paging and Thrashing
+
+Why does demand paging work?
+Locality model 局部性
+ Process migrates from one locality to another
+ Localities may overlap
+
+Why does thrashing occur?
+ size of locality > total memory size
+ To limit the effect of thrashing: local replacement algo cannot 
+steal frames from other processes. But queue in page device 
+increases effective access time. 
+ To prevent thrashing: allocate memory to accommodate its 
+locality
+
+#### Working-Set Model
+
+
+
+### Memory-Mapped Files
+
+### Allocating Kernel Memory
+
+### Other Considerations
+
+### Operating-System Examples
