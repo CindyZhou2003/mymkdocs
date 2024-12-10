@@ -5,6 +5,40 @@ repo_url: https://github.com/CindyZhou2003/mymkdocs  #存储库URL
 # edit_uri: tree/master/docs  #每个文档的顶部显示一个编辑按钮，""则隐藏
 site_description: Cindy的笔记本
 copyright: Copyright &copy; 2024 <a href="https://github.com/CindyZhou2003/mymkdocs"  target="_blank" rel="noopener">Cindy</a>'本页面的全部内容在 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA 4.0</a> 和 <a href="https://github.com/zTrix/sata-license">SATA</a> 协议之条款下提供，附加条款亦可能应用'
+
+nav:
+  - 主页🤖:
+    - index.md
+  - SE课程📝:
+    - 大一春夏:
+      - 离散数学及其应用: Courses/DM.md
+    - 大二秋冬:
+      - 面向对象程序设计: Courses/OOP.md
+      - 数据结构基础: Courses/FDS.md
+    - 大二春夏:
+      - 高级数据结构与算法分析: Courses/ADS.md
+      - 数据库系统: Courses/DB.md
+      - 机器学习（国际化）: Courses/ML.md
+      - 信息安全原理: Courses/PIS.md
+    - 大三秋冬:
+      - 操作系统: Courses/OS.md
+      - 计算机网络: Courses/CN.md
+      - 毛概: Courses/毛概.md
+      - 物联网: Courses/IoT.md
+  - 技能⚙️:
+    - 算法: skills/Algorithm.md
+    - 深度学习: skills/deeplearning.md
+  - 出国✈️:
+    - 雅思口语: abroad/IELTs_speaking.md 
+    - 雅思作文: abroad/IELTs_writing.md
+  - 其他🎊:
+    - Test: other/test.md
+    - 部署网站时的问题: other/Debug_issue.md
+  - 找工:
+    - 面试: work/Interview.md
+
+use_directory_urls: false #解决图片相对路径无法解析的问题
+
 theme: 
   name: material
   language: zh
@@ -120,37 +154,3 @@ plugins:
       timezone: Asia/Shanghai
       locale: zh
       enable_creation_date: true
-
-nav:
-  - 主页🤖:
-    - index.md
-  - SE课程📝:
-    - 大一春夏:
-      - 离散数学及其应用: Courses/DM.md
-    - 大二秋冬:
-      - 面向对象程序设计: Courses/OOP.md
-      - 数据结构基础: Courses/FDS.md
-    - 大二春夏:
-      - 高级数据结构与算法分析: Courses/ADS.md
-      - 数据库系统: Courses/DB.md
-      - 机器学习（国际化）: Courses/ML.md
-      - 信息安全原理: Courses/PIS.md
-    - 大三秋冬:
-      - 操作系统: Courses/OS.md
-      - 计算机网络: Courses/CN.md
-      - 毛概: Courses/毛概.md
-      - 物联网: Courses/IoT.md
-  - 技能⚙️:
-    - 算法: skills/Algorithm.md
-    - 深度学习: skills/deeplearning.md
-  - 出国✈️:
-    - 雅思口语: other/IELTs_speaking.md 
-    - 雅思作文: other/IELTs_writing.md
-  - 其他🎊:
-    - Test: other/test.md
-    - 部署网站时的问题: other/Debug_issue.md
-  - 找工:
-    - 面试: work/Interview.md
-   
-
-use_directory_urls: false #解决图片相对路径无法解析的问题

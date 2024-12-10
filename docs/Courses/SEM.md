@@ -22,7 +22,9 @@ EC(Exit criteria), AC(Accept criteria)
 
 $\alpha$测试
 
-$\beta$测试
+$\beta$​测试
+
+unit test 测试方法，白盒测试
 
 ## 测试提交
 

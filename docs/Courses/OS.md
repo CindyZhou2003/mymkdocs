@@ -44,7 +44,7 @@ CPU和I/O设备可以并发执行（execute concurrently），并竞争访问内
 
 #### 中断 interrupt
 
-中断是
+中断是硬件或软件产生的一种信号，用于通知CPU需要对某一事件进行处理
 
 ISR中断服务例程interrupt service routine
 
@@ -57,8 +57,7 @@ Incoming interrupts are disabled while another interrupt is being processed to p
 
 trap ：软件的中断，经常由错误或用户请求（又称 系统调用system call）导致
 
-**操作系统是由中断驱动的**
-**An operating system is interrupt-driven**
+**操作系统是由中断驱动的 An operating system is interrupt-driven**
 
 中断处理——一种软件例程处理
 
@@ -1681,7 +1680,7 @@ Using `pthread_cond_wait()` & `pthread_cond_signal()`
 
 ## 死锁 Deadlock
 
-> [!NOTE]
+> [!IMPORTANT]
 >
 > 基本概念：死锁概念，4个必要条件，资源分配图，cycle &deadlock
 > solutions：3种策略
@@ -1864,6 +1863,18 @@ Example
 
 ## 主存管理 Memory Management
 
+> [!IMPORTANT]
+>
+> 内存管理基本概念：源程序馋鬼处理流程、链接、地址绑定、逻辑地址与物理地址；内存保护
+>
+> 连续分配管理方式
+>
+> 分页管理方式
+>
+> 分段管理方式、段页管理
+
+
+
 ### Background
 
 电磁感应
@@ -1985,7 +1996,8 @@ Dynamic linking is particularly useful for libraries 共享库里的函数只用
 - 链接
   - 把编译后的目标模块与所需库函数链接在一起形成一个整体
   - 静态链接、装入时动态链接、运行时动态链接
-
+  - 形成逻辑地址
+  
 - 装入
   - 将虚拟地址映射为内存实际的物理地址
   - 绝对装入、静态重定位 ( 可重定位装入 ) 、动态重定位 ( 动态运行时装入 )
@@ -1995,6 +2007,7 @@ Dynamic linking is particularly useful for libraries 共享库里的函数只用
 ### 连续分配 Contiguous Memory Allocation
 
 Relocation register 可重定位寄存器 contains value of smallest <span style="color:#00CC00;">physical address</span>
+
 Limit register contains range of logical addresses – each logical address must be less than the limit register 
 MMU maps logical address dynamically
 
@@ -2017,7 +2030,7 @@ FF：Allocate the first hole that is big enough 按顺序第一个放得下的�
 
 NF：下一个放的下的洞
 
-BF： Allocate the smallest hole that is big enough; must search entire list, unless ordered by size 最小能放得下的洞，会产生一些小碎片（tiny leftover holes）
+BF： Allocate the smallest hole that is big enough; must search entire list, unless ordered by size 最小能放得下的洞，会产生一些小碎片（tiny leftover holes）最容易产生碎片
 
 WF：Allocate the largest hole; must also search entire list 最大的洞，会产生一些大碎片（large leftover holes）
 
@@ -2030,6 +2043,7 @@ WF：Allocate the largest hole; must also search entire list 最大的洞，会�
 #### Fragmentation
 
 **External Fragmentation 外部碎片**– total memory space exists to satisfy a request, but it is not contiguous
+
 **Internal Fragmentation 内部碎片**(refer to the textbook p287) – allocated memory may be slightly larger than requested memory; this size difference is memory internal to a partition, but not being used
 
 **Reduce external fragmentation by compaction/defragmentation** 通过压缩减少外部碎片
@@ -2153,7 +2167,7 @@ Valid-invalid bit attached to each entry in the page table
 
 ### Structure of the Page Table
 
-#### Hierarchical Paging 分级页表
+#### Hierarchical Paging 分级页表/多级页表
 
 两级页表
 
@@ -2241,9 +2255,19 @@ Global Descriptor Table contains entries of the system (OS).
 
 ## Virtual Memory
 
+> [!IMPORTANT]
+>
+> 虚拟内存基本概念：定义、好处、
+>
+> 请求页式管理：好处、逻辑地址转换、缺页中断处理过程、缺页有效访问时间、页面替换、页面替换算法（FIFO OPTIMAL LRU CLOCK ENAHNCED CLOCK）、帧的分配和置换策略、抖动、工作集
+>
+> kernel内存分配
+
+
+
 ### Background
 
-Virtual memory – separation of user logical memory from physical memory 虚拟内存不是物理对象，而是指内核提供的用于管理物理内存和虚拟地址的抽象和机制的集合
+**Virtual memory** – separation of user logical memory from physical memory 虚拟内存不是物理对象，而是指内核提供的用于管理物理内存和虚拟地址的抽象和机制的集合
 
 - Only **part** of the program needs to be in memory for execution
 - Logical address space can therefore be much **larger** than physical address space
@@ -2265,6 +2289,7 @@ Virtual memory can be implemented via 虚拟内存的实现：
 - 时间局部性 : 一条指令的一次执行和下次执行，一个数据的一次访问和下次访问都集中在一个较短时期内 ; 
 - 空间局部性 : 当前指令和邻近的几条指令，当前访问的数据和邻近的数据都集中在一个较小区域内。
 - 虚拟存储器是具有请求调入功能和置换功能，仅把进程的一部分装入内存便可运行进程的存储管理系统，它能从逻辑上对内存容量进行扩充的一种虚拟的存储管理系统。
+- 虚拟存储器只能基于非连续分配——os虚拟技术中的空分复用技术
 
 -----------------
 
@@ -2331,6 +2356,8 @@ If there is a reference to a page, first reference to that page will trap to ope
    1. 中断后恢复 block move
    2. auto increment/decrement location
 
+> 页面替换不是必须的
+
 ------------------
 
 What’s the state of the process that has page fault?
@@ -2390,11 +2417,13 @@ Want lowest page-fault rate 最低缺页率
 
 先进先出算法
 
+Belady
+
 <img src="../images/image-20241127145037198.png" alt="image-20241127145037198" style="zoom:50%;" />
 
 ##### Optimal Algorithm
 
-最佳置换算法 缺页次数最小 => optimal
+**最佳置换算法** 缺页次数最小 => optimal
 
 替换将来最长不使用的page Replace page that will not be used for longest period of time
 
@@ -2402,7 +2431,7 @@ Want lowest page-fault rate 最低缺页率
 
 ##### Least Recently Used (LRU) Algorithm
 
-最近最久未使用置换算法：选择内存中最久没有引用的页面被置换。这是局部性原理的合理近似，性能接近最佳算法。但由于需要记录页面使用时间，硬件开销太大。
+**最近最久未使用**置换算法：选择内存中最久没有引用的页面被置换。这是局部性原理的合理近似，性能接近最佳算法。但由于需要记录页面使用时间，硬件开销太大。
 
 <img src="../images/image-20241127145959957.png" alt="image-20241127145959957" style="zoom:50%;" />
 
@@ -2428,15 +2457,20 @@ second chance
 
 ##### Enhanced second chance Algorithm
 
-使用引用位和修改位 (reference bit, modified bit)，引用过或者修改过置为1
+使用引用位和修改位 (reference bit, modified bit)，引用过或者修改过置为1 记录每个页面被引用的次数
 
-淘汰次序：
+淘汰次序：(0,0) > (0,1) > (1,0) > (1,1)
 
 基本思想：
 
+第 1 轮扫描 : 查找 (0, 0) ，不做修改
+第 2 轮扫描 : 查找 (0, 1) ，修改访问位为 0 
+第 3 轮扫描 : 查找 (0, 0) ，不做修改
+第 4 轮扫描 : 查找 (0, 1)
+
 ##### Counting-based Algorithms
 
-Keep a counter of the number of references that have been made to each page
+Keep a counter of the number of references that have been made to each page 
 
 - **LFU Algorithm**: replaces page with smallest count 使用次数最少的页面置换出去
 - **MFU Algorithm(most frequently used)**: based on the argument that the page with the smallest count was probably just brought in and has yet to be used 使用次数最多的页面置换出去
@@ -2447,14 +2481,13 @@ Keep a counter of the number of references that have been made to each page
 
 通过被置换页面的缓冲，有机会找回刚被置换的页面
 
-被置换页面的选择和处理：用 FIFO 算法选择被置换页，把被置换的页面放入两个链表之一，如果页面未被修改，就将其归入到空闲页面链表的末尾，否则将其归入到已修改页面链表。 
+被置换页面的选择和处理：用 FIFO 算法选择被置换页，把被置换的页面放入两个链表之一，如果页面未被修改，就将其归入到**空闲页面链表**的末尾，否则将其归入到**已修改页面链表**。 
 
- 需要调入新的页面时：将新页面内容读入到空闲页面链表的第一项所指的页面，然后将第一项删除。 
+需要调入新的页面时：将新页面内容读入到空闲页面链表的第一项所指的页面，然后将第一项删除。 
+空闲页面和已修改页面，仍停留在内存中一段时间，如果这些页面被再次访问，这些页面还在内存中。
+当已修改页面达到一定数目后，再将它们一起调出到外存，然后将它们归入空闲页面链表。
 
- 空闲页面和已修改页面，仍停留在内存中一段时间，如果这些页面被再次访问，这些页面还在内存中。
- 当已修改页面达到一定数目后，再将它们一起调出到外存，然后将它们归入空闲页面链表。
-
-实际中，Windows 、 Linux 页面置换算法是基于页面缓冲算法
+实际中，Windows 、 Linux 页面置换算法是基于**页面缓冲算法**
 
 ### Allocation of Frames 
 
@@ -2471,17 +2504,20 @@ Proportional allocation – Allocate according to the size of process 按进程�
 Use a proportional allocation scheme using priorities rather than size
 
 If process Pi generates a page fault,
- select for a replacement one of its frames
- select for replacement a frame from a process with a lower priority number
+
+- select for a replacement one of its frames
+- select for replacement a frame from a process with a lower priority number
 
 #### Global vs. Local Allocation
 
-**Global replacement** – process selects a replacement frame from the set of all frames; one process can take a frame from another
+**Global replacement** 全局替换– process selects a replacement frame from the set of all frames; one process can take a frame from another
 
-**Local replacement** – each process selects from only its own set of allocated frames
+**Local replacement** 本地替换– each process selects from only its own set of allocated frames
 
 Problem with global replacement 问题: unpredictable page-fault rate. Cannot control its own page-fault rate. More common
 Problem with local replacement: free frames are not available for others. – Low throughput
+
+固定分配、全局置换不能组合使用
 
 ### Thrashing 抖动、颠簸
 
@@ -2519,14 +2555,532 @@ increases effective access time.
  To prevent thrashing: allocate memory to accommodate its 
 locality
 
-#### Working-Set Model
+#### Working-Set Model 工作集
 
+△ ≡ working-set window: a fixed number of page references
 
+m = total available frames
 
-### Memory-Mapped Files
+WSSi (working set size of Process Pi ) =
+
+total number of pages referenced in the most recent  (varies 
+
+in time)
+
+D =  WSSi  total demand frames for all processes in the 
+system
+
+if D > m  Thrashing
+
+Policy if D > m, then suspend one of the processes
+
+![image-20241202112051748](../images/image-20241202112051748.png)
+
+#### Page-Fault Frequency Scheme
+
+Establish “acceptable” page-fault rate for each process 调节frame数控制page fault
+
+ If actual rate too low, process loses frame
+
+ If actual rate too high, process gains frame
+
+<img src="../images/image-20241202101952067.png" alt="image-20241202101952067" style="zoom:50%;" />
+
+### 内存映射文件 Memory-Mapped Files
+
+Simplifies file access by treating file I/O through memory rather than **read() write()** system calls
+
+Also allows several processes to map the same file allowing the pages in memory to be shared
+
+<img src="../images/image-20241202102258495.png" alt="image-20241202102258495" style="zoom:50%;" />
 
 ### Allocating Kernel Memory
 
+reated differently from user memory
+
+ 
+
+Often allocated from a free-memory pool
+
+ Kernel requests memory for structures of varying sizes – needs 
+
+to reduce fragmentation
+
+ Some kernel memory needs to be contiguous (certain h/w 
+
+device interacts with contiguous physical memory)
+
+Therefore, many systems do NOT utilize paging for kernel code and 
+
+data.
+
+#### Buddy System （伙伴系统）
+
+Allocates memory from fixed-size segment consisting of physically
+
+contiguous pages
+
+Memory allocated using **power-of-2 allocator** 32 64 128 256
+
+#### Slab Allocator
+
+**Slab** is one or more physically contiguous pages-- 是一个预分配的内存池，包含多个相同大小的对象 
+
+**Cache** consists of one or more slabs
+
+Single cache for each unique kernel data structure
+
+Each cache filled with **objects** – instantiations of the data structure
+
+When cache created, filled with objects marked as **free**
+
+When structures stored, objects marked as **used**
+
+If slab is full of used objects, next object allocated from empty slab
+
+If no empty slabs, new slab allocated
+
+Benefits include no fragmentation, fast memory request satisfaction
+
+#### Other Issues – Prepaging ( 预调页 )
+
+To reduce the large number of page faults that occurs at process startup
+
+ Prepage all or some of the pages a process will need, before they are referenced
+
+#### Other Issues – Page Size
+
+Page size selection must take into consideration:
+
+ Fragmentation -> small page size
+
+ table size -> large page size
+
+ I/O times -> large page size
+
+ Locality -> small page size, accurate locality
+
+#### Other Issues – TLB Reach （ TLB 范围）
+
+TLB Reach - The amount of memory accessible from the TLB 增大TLB范围减少缺页
+
+TLB Reach = (TLB Size) ✖ (Page Size)
+
+Increase the Page Size
+
+ This may lead to an increase in fragmentation as not all applications require a large page size 
+
+Provide Multiple Page Sizes
+
+ This allows applications that require larger page sizes the opportunity to use them without an increase in fragmentation
+
+#### Other Issues – Program Structure
+
+缺页次数和程序有关
+
+EG，按列访问和按行访问
+
+<img src="../images/image-20241202103517964.png" alt="image-20241202103517964" style="zoom:50%;" />
+
 ### Other Considerations
 
+不重要 过
+
 ### Operating-System Examples
+
+不重要 过
+
+## File-System Interface
+
+> [!IMPORTANT]
+>
+> 解释文件系统的功能
+> 描述文件系统的接口
+> 讨论文件系统设计权衡，包括访问方法、文件共享、文件锁定和目录结构
+> 探索文件系统保护
+
+### File Concept
+
+#### File system
+
+什么是文件系统？The way that controls how data is stored and retrieved in a storage medium.
+
+- File naming 文件命名
+- Where files are placed 位置
+- Metadata 和文件内容相关的管理信息
+- Access rules 访问规则
+
+#### File Concept
+
+什么是文件？Contiguous logical address space. A sequence of bits, bytes, lines, or records. The meaning is defined by the creator and user. 连续的逻辑地址空间，一些位、字节、行或记录的序列
+
+文件类型：
+Types: 
+Data：numeric, character, binary
+Program：Source, Object, Executable
+
+#### File Structure
+
+- None - sequence of words, bytes
+
+- Simple record structure
+
+  - Lines 
+
+  - Fixed length
+
+  - Variable length 变长
+
+- Complex Structures
+
+  - Formatted document
+  - Relocatable load file	
+
+- Can simulate last two with first method by inserting appropriate control characters
+
+- Who decides:
+
+  - Operating system 操作系统决定文件
+  - Program
+
+#### Operations, file, file attributes
+
+File is an abstract data type 抽象数据类型
+
+**Create**
+
+**Write** – define a pointer
+
+**Read** – use the same pointer
+	Per-process current file-position pointer
+
+**Reposition within file** (**file seek**) - 文件跳转到特定位置开始读写
+
+**Delete**
+
+**Truncate** - 怎么截断文件
+
+Open(Fi) – search the directory structure on disk for entry F~i~, and move the content of entry to memory
+
+Close (Fi) – move the content of entry F~i~ in memory to directory structure on disk
+
+------------------------
+
+**Name** – only information kept in human-readable form
+
+**Identifier** 文件标识符 – unique tag (number) identifies file within file system
+
+**Type** – needed for systems that support different typesLocation – pointer to file location on device
+
+**Size** – current file size
+
+**Protection** – controls who can do reading, writing, executing
+
+**Time, date, and user identification** – data for protection, security, and usage monitoring
+
+Information about files are kept in the <span style="color:#CC0000;">directory structure</span>, which is maintained on the disk
+
+#### Open files
+
+`Open()` **system call** returns a pointer to an entry in the **open-file table**
+
+Per-process table 每个进程的table: maintained by the kernel; unique for each
+
+- Current file pointer
+- Access rights
+- …
+
+System-wide table 全局table: maintained by the kernel
+
+- Open count 计数
+- ...
+
+----------------------------------
+
+Several pieces of data are needed to manage open files:
+
+**File pointer**:  pointer to last read/write location, per process that has the file open
+
+**File-open count**: counter of number of times a file is open – to allow removal of data from open-file table when last processes closes it
+
+**Disk location of the file**: cache of data access information – system doesn’t need to read it from disk for every operation.
+
+**Access rights**: *per-process* access mode information
+
+### Access Methods
+
+<img src="../images/image-20241204151552427.png" alt="image-20241204151552427" style="zoom:50%;" />
+
+顺序访问
+
+<img src="../images/image-20241204151629460.png" alt="image-20241204151629460" style="zoom:50%;" />
+
+直接访问
+
+
+
+### Directory Structure
+
+The directory can be viewed as **a symbol table** that translates file names into their file control blocks.
+
+FCB 文件控制块
+
+A collection of nodes containing (management)  information about all files
+
+目录独立于所有文件之外的文件，有结构、每个entry就是一个FCB，每个FCB对应于一个文件
+
+Both the directory structure and the files reside on disk.
+
+#### Both the directory structure and the files reside on disk
+
+<img src="../images/image-20241204153053743.png" alt="image-20241204153053743" style="zoom:50%;" />
+
+The directory records information about the files in the system – such as name, location, size and type.
+
+#### Operations Performed on Directory
+
+<img src="../images/image-20241204153144630.png" alt="image-20241204153144630" style="zoom:50%;" />
+
+#### 目录作用
+
+**Efficiency** – locating a file quickly
+
+**Naming** – convenient to users
+
+1. Two users can have same name for different files
+2. The same file can have several different names
+
+**Grouping** – logical grouping of files by properties, (e.g., all Java programs, all games, …)
+
+#### Single-Level Directory
+
+为所有用户只提供一级目录，不方便，命名、分组问题
+
+<img src="../images/image-20241204153539634.png" alt="image-20241204153539634" style="zoom:50%;" />
+
+
+
+#### Two-Level Directory
+
+每个用户有个文件夹
+
+<img src="../images/image-20241204153630912.png" alt="image-20241204153630912" style="zoom:50%;" />
+
+还是不够高效
+
+#### Tree-Structured Directories
+
+树状目录
+
+<img src="../images/image-20241204154112574.png" alt="image-20241204154112574" style="zoom:50%;" />
+
+从一个目录到一个子目录需要一次磁盘I/O操作
+
+<img src="../images/image-20241204154200785.png" alt="image-20241204154200785" style="zoom:50%;" />
+
+#### Acyclic-Graph Directories
+
+无环目录
+
+共享子目录或文件
+
+- Requirement for file sharing
+- Have shared subdirectories and files
+
+<img src="../images/image-20241204154308896.png" alt="image-20241204154308896" style="zoom:50%;" />
+
+<img src="../images/image-20241204154716519.png" alt="image-20241204154716519" style="zoom:50%;" />
+
+如果有环的话，会有删除问题，重复找到这个文件，reference count（文件被引用次数）<>0即使没被使用过
+
+#### Soft (Symbolic) Link vs. Hard Link
+
+A **soft link** is a **separate file** that points to the original file by storing its path. 
+
+The soft link **has its own inode** (FCB), and its data contains the path to the linked file, not the file data itself.
+
+Soft links can **span file systems** since they are simply paths to other files.
+
+字符串指向路径，类似快捷方式，可以跨磁盘，可以在有引用的时候被其他用户删除（链接无效）
+
+-----------------------
+
+A **hard link** is **an additional name** for an existing file. It increases the file's *link count*, which is a count of how many names (links) a file has.
+
+Hard Link: Both the original file and the hard link point to the **same inode** (FCB).
+
+Hard links cannot span file systems; one **cannot** create a hard link for a directory to **prevent the creation of cycles**.
+
+指针指向索引块->文件，依托于FCB/inode，只能在同一个文件系统中被使用，在有引用的时候不能被其他用户删除
+
+都能解决dangling pointer的问题
+
+Summary: hard link points to the actual data on the disk, while the symbolic link points to the path of the file.
+
+### File-System Mounting
+
+A file system must be **mounted** before it can be accessed 文件系统必须先**挂载**才能访问
+
+An un-mounted file system (i.e. Fig. 10-12(b)) is mounted at a **mount point**
+
+<img src="../images/image-20241209104208477.png" alt="image-20241209104208477" style="zoom:50%;" />
+
+> 可以挂载到fred上吗？可以
+>
+> 原来fred下的内容（help）可以访问吗？访问不了但还在盘上
+
+#### Mount Point
+
+<img src="../images/image-20241209104533983.png" alt="image-20241209104533983" style="zoom:50%;" />
+
+
+
+### File Sharing
+
+Sharing of files on multi-user systems is desirable
+
+Sharing may be done through a protection scheme
+
+On distributed systems, files may be shared across a network
+
+Network File System (NFS) is a common distributed file-sharing method
+
+####  Multiple Users
+
+**User ID**s identify users, allowing permissions and protections to be per-user
+
+**Group ID**s allow users to be in groups, permitting group access rights
+
+#### Remote File Systems
+
+
+
+#### Consistency Semantics
+
+
+
+
+
+
+
+### Protection
+
+File owner/creator should be able to control:
+
+- what can be done
+- by whom
+
+Types of access：Read, Write, Execute, Append, Delete, List
+
+#### Access Lists and Groups
+
+Mode of access:  read, write, execute
+
+权限
+
+<img src="../images/image-20241209105120787.png" alt="image-20241209105120787" style="zoom:50%;" />
+
+> d指目录
+>
+> pbg指hard link的数量
+
+
+
+## File system Implementation
+
+> [!IMPORTANT]
+>
+> To describe the **details** of implementing local file systems and directory structures
+>
+> To discuss **block allocation** and **free-block algorithms** and trade-offs
+
+### File-System Structure
+
+File structure
+
+- Logical storage unit
+- Collection of related information
+
+File system resides on secondary storage (disks)
+
+File system organized into **layers**
+
+#### Layered File System 分层
+
+<img src="../images/image-20241209111207161.png" alt="image-20241209111207161" style="zoom:50%;" />
+
+#### Data Structures Used to Implement FS
+
+Disk structures
+
+- Boot control block (per volume)启动块
+- Volume control block per volume (**superblock** in Unix)
+- Directory structure per file system
+- Per-file FCB (inode in Unix)
+
+In-memory structures
+
+- In-memory mount table about each mounted volume 内存安装表
+- Directory cache
+- System-wide open-file table
+- Per-process open-file table
+
+
+
+#### FCB
+
+File control block – storage structure consisting of information about a file
+
+ACL：access control list
+
+<img src="../images/image-20241209112133801.png" alt="image-20241209112133801" style="zoom:50%;" />
+
+
+
+####  In-memory Structure
+
+open/read a file
+
+<img src="../images/image-20241209112651669.png" alt="image-20241209112651669" style="zoom:50%;" />
+
+
+
+### File-System Implementation
+
+#### Virtual File System (VFS)
+
+Virtual File Systems (VFS) provide an **object-oriented way** of implementing file systems.
+
+VFS allows the same system call interface (the API) to be used for different types of file systems.
+
+The API is to the VFS interface, rather than any specific type of file system.
+
+Defines a network-wide unique structure called **vnode**.
+
+
+
+封装
+
+<img src="../images/image-20241209113303154.png" alt="image-20241209113303154" style="zoom: 33%;" />
+
+The four primary object types of VFS:
+
+- **superblock object**: a specific mounted filesystem, corresponding to (but not equal) the superblock in the disk structure
+- **inode object**: a specific file, corresponding to (but not equal) FCB in the disk structure
+- dentry object: an individual directory entry
+- **file object**: an open file as associated with a process, existing as long as the file is opened
+
+### Directory Implementation
+
+
+
+### Allocation Methods
+
+
+
+### Free-Space Management
+
+
+
+### Efficiency and Performance
+
