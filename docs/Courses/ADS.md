@@ -684,7 +684,7 @@ All Np problems are decidable.
 
 如果A是NPC且A能在多项式时间内化成B，则A比B要难
 
-![20191204202428312](../images/20191204202428312-1731596690486-2.png)
+<img src="../images/20191204202428312-1731596690486-2.png" alt="20191204202428312" style="zoom: 33%;" />
 
 ### NPC problems
 

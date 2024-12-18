@@ -6,15 +6,15 @@
 
 > [!NOTE]
 >
-> LAB 0-7（5+15+15+15+20+20+10+10=110）
+> LAB 0-7（5+15+15+15+20+20+10+10 = 110）
 
 ## 概述 Overview
 
 ### 操作系统功能&定义
 
-从计算机角度，**操作系统**是个程序，管理电脑硬件
+从计算机角度，**操作系统** 是个程序，管理电脑硬件
 
-- resource allocator：分配资源（cpu、内存、I/O设备——硬件hardware 提供资源）
+- resource allocator：分配资源（cpu、内存、I/O 设备——硬件 hardware 提供资源）
 - control program：防止资源滥用
 
 **定义**：The operating system is the one program running at all times on the computer——namely kernel
@@ -24,48 +24,105 @@ multi-user OS: Linux ubuntu
 
 ### 计算机系统的运行
 
-计算机= CPU + 多个设备控制器（I/O devices），通过公用总线相连，该总线提供了共享内存的访问
+计算机 = CPU + 多个设备控制器（I/O devices），通过公用总线相连，该总线提供了共享内存的访问
 
-CPU和I/O设备可以并发执行（execute concurrently），并竞争访问内存，需要内存控制器协调访问内存
+CPU 和 I/O 设备可以并发执行（execute concurrently），并竞争访问内存，需要内存控制器协调访问内存
 
 每个设备控制器 device controller
 
 - 控制特定的设备（磁盘驱动器、音频、视频显示..）
-- 有本地缓冲区（local buffer），存储I/O
-- 经系统总线system bus触发中断interrupt告知CPU已完成
+- 有本地缓冲区（local buffer），存储 I/O
+- 经系统总线 system bus 触发中断 interrupt 告知 CPU 已完成
 
+#### 原语 atmic operation
 
+按层次结构设计的操作系统的底层是原语，一种程序
 
-引导程序bootstrap program在开机power-up/reboot时加载
+- 位于操作系统底层，最接近硬件
+- 运行具有原子性，操作一气呵成（不能被打断）
+- 运行时间短，调用频繁
 
-- 到ROM/EPROM上（Read-only Memory是firmware固件）
-- 初始化系统
-- bootstrap定位操作系统内核并加载到内存、开始执行
+定义原语的直接方法是关中断
 
 #### 中断 interrupt
 
-中断是硬件或软件产生的一种信号，用于通知CPU需要对某一事件进行处理
+中断是硬件或软件产生的一种信号，用于通知 CPU 需要对某一事件进行处理
 
-ISR中断服务例程interrupt service routine
+ISR 中断服务例程 interrupt service routine
 
-中断向量interrupt vector：存储中断*例程*的地址 the addresses of all the service routines
+中断向量 interrupt vector：存储中断 *例程* 的地址 the addresses of all the service routines
 
-- 寄存器（Interrupt architecture）储存被中断*指令*的地址 
+- 寄存器（Interrupt architecture）储存被中断 *指令* 的地址 
 
 有中断在处理时会停止其他未到的中断
 Incoming interrupts are disabled while another interrupt is being processed to prevent a lost interrupt.
 
-trap ：软件的中断，经常由错误或用户请求（又称 系统调用system call）导致
+-------------------
+
+外部中断：cpu 外部事件，如 I/O 设备请求、时钟信号
+
+内部中断：cpu 内部事件，如仿管指令、缺页异常
+
+trap ：软件的中断，经常由错误或用户请求（又称 系统调用 system call）导致
+
+fault：通常由指令执行引起的异常，如非法操作码、缺页故障、除数为 0、运算溢出
+
+```markmap
+---
+# 根节点默认文本（若内容存在根节点，则此选项失效）
+title: 中断
+# 配置:
+markmap:
+  # 是否允许缩放
+  zoom: false
+  # 是否允许平移
+  pan: false
+  # 节点最大长度（0则无长度限制）
+  maxWidth: 0
+  # 节点水平间距
+  spacingHorizontal: 30
+  # 节点垂直间距
+  spacingVertical: 5
+  # 节点内部边距
+  paddingX: 5
+  # 图形的窗口填充率
+  fitRatio: 0.75
+  # 展开的最大节点级别（-1则展开全部）
+  initialExpandLevel: -1
+  # 多少级开始固定分支颜色
+  colorFreezeLevel: 6
+  # 颜色
+  color: ['#4E79A7', '#F28E2C', '#E15759', '#76B7B2', '#59A14F', '#EDC949', '#AF7AA1', '#FF9DA7', '#9C755F', '#BAB0AB']
+  # 动画持续时间
+  duration: 100
+  # 图形高度
+  height: 15px
+  # 背景色
+  backgroundColor: "#f8f8f8"
+---
+
+## 内部异常Exception
+
+- 故障（Fault） 软件中断
+- 自陷（trap） 软件中断
+- 终止（abort） 硬件中断
+
+## 外部中断Interruption（硬件）
+
+- 可屏蔽中断 INTR
+- 不可屏蔽中断 NMI
+```
 
 **操作系统是由中断驱动的 An operating system is interrupt-driven**
 
 中断处理——一种软件例程处理
 
-1. 恢复CPU状态——存寄存器&程序计数器（program counter）
+1. 恢复 CPU 状态——存寄存器&程序计数器 PC（program counter）
    - 计数器：存储下一条要执行的指令的位置
-2. 确定中断类型：polling by a generic routine or vectored interrupt system
+2. 确定中断类型：通过通用例程或矢量中断系统进行轮询 polling by a generic routine or vectored interrupt system
+3. 用户态和内核态的转换：kernel -> user by OS；user --> kernel by 硬件（中断/异常）
 
-两种I/O处理方式：
+两种 I/O 处理方式：
 
 1. 要等待，处理完传回——同步 synchronous
 2. 接收到（没做完）就传回——异步 asynchronous
@@ -74,7 +131,7 @@ trap ：软件的中断，经常由错误或用户请求（又称 系统调用sy
 
 DMA：直接内存访问
 
-<img src="../images/image-20240911152146945.png" alt="image-20240911152146945" style="zoom:50%;" />
+<img src="../images/image-20240911152146945.png" alt="image-20240911152146945" style="zoom: 33%;" />
 
 每块只产生一个中断
 
@@ -86,7 +143,7 @@ DMA：直接内存访问
 
 一级二级三级是按容量分的
 
-高速缓存cache——更快的数据访问机制，主存可以认为是二级存储的最后一个cache
+高速缓存 cache——更快的数据访问机制，主存可以认为是二级存储的最后一个 cache
 
 ### 计算机体系结构
 
@@ -105,55 +162,53 @@ DMA：直接内存访问
 
 非均匀内存访问 Non-uniform memory access(NUMA architecture)
 
-- CPU通过一个共享系统连接
+- CPU 通过一个共享系统连接
 - 随着处理器的增加而更有效地扩展
 - 跨互连的远程内存速度较慢
 - 操作系统需要仔细的 CPU 调度和内存管理
 
-### 操作系统结构
+### 操作系统设计
 
 **Multiprogramming 多道程序设计** needed for efficiency (==CPU utilization==)
 
-- 组织各项任务让CPU总有工作做
+- 组织各项任务让 CPU 总有工作做
 - 加载多项任务到内存
 - 通过 job scheduling 安排选一个任务做
-- 定义：在一个cpu上并发运行多个进程
+- 定义：在一个 cpu 上 **并发** 运行多个进程；多个 cpu，每个 cpu 并发，总体并行
+- 宏观上并行，微观上串行
 
 **Timesharing (multitasking)** is logical extension in which CPU switches jobs so frequently that users can interact with each job while it is running, creating interactive computing (==interactivity==)
 
 - 响应速度足够快
-- 多任务（进程 process）并发在CPU上执行 -> CPU调度scheduling
-- 如果一个进程不能全放入内存memory -> 换入换出swapping（将没用的进程挪出）
-- 虚存virtual memory：一种技术允许CPU执行不完全在内存的进程
+- 多任务（进程 process）并发在 CPU 上执行 -> CPU 调度 scheduling
+- 如果一个进程不能全放入内存 memory -> 换入换出 swapping（将没用的进程挪出）
+- 虚存 virtual memory：一种技术允许 CPU 执行不完全在内存的进程
+
+> [!NOTE]
+>
+> 并行和并发的区别？
+>
+> - 并行：多个事件在同一时刻发生
+> - 并发：多个事件在同一时间间隔发生
+
+
 
 ### 操作系统执行 OS operations
 
-> [!IMPORTANT]
->
-> Interrupt driven by hardware
->
-> Software error or request creates exception or trap
->
-> - Division by zero, request for operating system service
->
-> Other process problems include infinite loop, processes modifying each other or the operating system
-
-**双模式dual-mode** 操作允许操作系统保护自身和其他系统组件
+**双模式 dual-mode** 操作允许操作系统保护自身和其他系统组件
 
 - 用户模式和内核模式 user mode & kernel mode
 - 硬件提供的模式位 mode bit
   - 提供区分系统何时运行用户代码或内核代码的能力
-  - 一些指令被指定为特权privileged，只能在内核模式下执行
-  - 系统调用system call将模式更改为 kernel 模式，再通过系统调用回来将其重置为 user 模式
+  - 一些指令被指定为特权指令 privileged，只能在内核模式下执行（不允许用户直接使用）
+  - 系统调用 system call 将模式更改为 kernel 模式，再通过系统调用回来将其重置为 user 模式
 
 ![image-20240914104446706](../images/image-20240914104446706.png)
 
-
-
-**Timer定时器**：防止无限循环/进程占用资源
+**Timer 定时器**：防止无限循环/进程占用资源
 
 - 在一段时间后中断进程 set interrupt
-- 操作系统将计数器counter `-1`，**到0产生中断**
+- 操作系统将计数器 counter `-1`，**到 0 产生中断**
 - 在安排流程之前进行设置，以重新获得控制权或终止超过分配时间的程序
 
 #### Process management 进程管理
@@ -162,12 +217,12 @@ DMA：直接内存访问
 
 - 需要资源去执行
 - 进程终止时将资源还给操作系统
-- **多线程进程Multi-threaded process** 每个线程都有一个计数器
-- **多路复用multiplexing**->实现并发concurrency
+- **多线程进程 Multi-threaded process** 每个线程都有一个计数器
+- **多路复用 multiplexing**-> 实现并发 concurrency
 
 <img src="../images/image-20240914111333126.png" alt="image-20240914111333126" style="zoom:50%;" />
 
-#### Memory management内存管理
+#### Memory management 内存管理
 
 <img src="../images/image-20240914110859245.png" style="zoom:50%;" />
 
@@ -192,7 +247,7 @@ I/O Subsystem 子系统
 - Abstraction 抽象： a way to hide complexity
 - Multiplex 多路复用（空间、时间）
 - Isolation 隔离（用户/核模式）
-- Sharing 共享（用户、进程 资源共享->并发）
+- Sharing 共享（用户、进程 资源共享-> 并发）
 - Security 安全（特权指令
 - Performance 性能
 - Range of uses
@@ -213,9 +268,9 @@ I/O Subsystem 子系统
 
 #### 系统调用实现
 
-API（Application program interface)：被封装过high-level的系统调用
+API（Application program interface)：被封装过 high-level 的系统调用
 
-- Mostly accessed by programs via a high-level API rather than direct system call use 主要通过高级的API接触程序而不是直接的系统调用
+- Mostly accessed by programs via a high-level API rather than direct system call use 主要通过高级的 API 接触程序而不是直接的系统调用
 
 每个系统调用有个编号，通过系统调用表 table
 
@@ -223,22 +278,28 @@ API（Application program interface)：被封装过high-level的系统调用
 
 系统调用是用户应用（软件）和硬件之间沟通的桥梁——保证了安全和有效的沟通 secure & efficient
 
+> 系统调用是 OS 提供给用户的，只能通过用户程序间接使用
+>
+> 系统调用的目的是——请求系统服务
+
 #### 参数传递
+
+保存当前 cpu 的 PSW 和 PC
 
 最简单：寄存器保存
 
-间接方式：block、table、memory，把内存中buffer地址告诉寄存器（Linux & Solaris）
+间接方式：block、table、memory，把内存中 buffer 地址告诉寄存器（Linux & Solaris）
 
-其他：栈stack，不一定支持多用户
+其他：栈 stack，不一定支持多用户
 
-- block和stack方法不限制参数的数量或长度
+- block 和 stack 方法不限制参数的数量或长度
 
-#### 系统调用分类
+#### 系统调用分类/功能
 
 Process control 进程管理
 File management 文件管理
 Device management 设备管理
-Information maintenance (e.g. time,date)信息维护
+Information maintenance (e.g. time, date) 信息维护（内存管理）
 Communications 交流
 Protection 保护
 
@@ -254,22 +315,26 @@ Protection 保护
 
 不是系统程序：web browsers、word processors（用户程序）
 
-### os设计和实现
 
-os设计和实现不是一个解决问题的过程（不是具体的问题而是创造性过程）
+
+### os 设计和实现
+
+os 设计和实现不是一个解决问题的过程（不是具体的问题而是创造性过程）
 
 1.由目标和指标出发：用户目标、系统目标
 
 2.被硬件和系统类型影响
 
-**Policy**:   What to do? 策略（确定具体做什么事，eg允许某些用户访问某些文件）
+**Policy**:   What to do? 策略（确定具体做什么事，eg 允许某些用户访问某些文件）
 **Mechanism**:  How to do it? 机制（定义做事方式）
 
-内存管理、cpu调度是机制？（算法是机制？
+内存管理、cpu 调度是机制？（算法是机制？
 
 配置文件写的是策略（policy）
 
 ==Provide mechanism rather than policy==. In particular, place user interface policy in the clients' hands. 
+
+操作系统基本类型（3）：批处理、分时、实时
 
 
 
@@ -292,13 +357,8 @@ UNIX – 受硬件功能限制，原始 UNIX 操作系统结构有限。UNIX 操
 
 #### Monolithic System Structure 宏内核架构
 
-优点：
-
-- 
-
-缺点：
-
-- 
+- 将系统的主要功能模态作为一个整体运行在内核
+- 主流操作系统都采用宏内核，如 Windows、Android、iOS、macos、Linux
 
 **UNIX System Structure** 宏内核
 
@@ -308,24 +368,26 @@ UNIX – 受硬件功能限制，原始 UNIX 操作系统结构有限。UNIX 操
 
 对应宏内核
 
-将尽可能多的内容从内核移至“用户”空间，提供一小部分服务例如进程调度
+将尽可能多的内容从内核移至“用户”空间，提供一小部分服务，例如进程调度
 
 用户模块之间使用消息传递进行通信 message passing
+
+- 基于客户/服务器模式（C/S）
+- 采用“机制与策略分离”原理
+- 采用面向对象技术
 
 优点：
 
 - 更易于扩展 extend 微内核
 - 更易于将操作系统移植 port 到新架构（flexibility）
-- 更可靠（内核模式下运行的代码更少
-- 更安全
+- 更可靠（内核模式下运行的代码更少）、安全
+- 分布式计算
 
 缺点：
 
-- 用户空间与内核空间通信的性能开销performance低（宏内核更高效）
+- 用户空间与内核空间通信的性能开销大，性能差 performance（宏内核更高效）
 - 系统服务、驱动程序的复杂性
 - 上下文切换不太有效
-
-
 
 #### Hybrid Structure——Darwin
 
@@ -335,7 +397,10 @@ Windows, MacOS, iOS——混合内核
 
 #### Layered Approach 分层方法
 
-操作系统分为多个层（级别），每层都建立在较低层之上。**最底层（第0层）是硬件；最高层（第N层）是用户界面**。
+操作系统分为多个层（级别），每层都建立在较低层之上。
+
+**最底层（第 0 层）是硬件；最高层（第 N 层）是用户界面**。
+
 通过模块化 modularity ，可以选择各层，以便每层仅使用较低层的功能（操作）和服务
 
 逻辑分层：
@@ -344,9 +409,9 @@ Windows, MacOS, iOS——混合内核
 
 逐层调用（不能跨层调用）、逐层封装——层之间通讯的效率问题
 
-优点：
+优点：便于系统调试和验证；易扩充、易维护
 
-缺点：require more overhead for iter-layer communication
+缺点：require more overhead for iter-layer communication 效率低；合理定义各层比较困难
 
 #### Modules 模块化
 
@@ -359,14 +424,15 @@ Windows, MacOS, iOS——混合内核
 
 LKMs(loadable kernel modules): extend the functionality of the kernel dynamically
 
-优点：
+优点：提高了操作系统设计的正确性、可理解性、可维护性；增强操作系统的可适应性；加速开发
 
-缺点：
+缺点：模块间接口规定很难满足对接口的实际需求；无法找到一共可靠的决定顺序
 
 #### Other Structures
 
-**Exokernel 外核** (1994)：高度简化kernel，只负责资源分配，提供了低级的硬件操作，必须通过定制library供应用使用
-高性能，但定制化library难度大，兼容性差
+**Exokernel 外核** (1994)：高度简化 kernel，只负责资源分配，提供了低级的硬件操作，必须通过定制 library 供应用使用
+
+- 高性能，但定制化 library 难度大，兼容性差
 
 Unikernel: statically linked with the OS code needed.Good for cloud service, APP boots in tens of ms.
 
@@ -374,11 +440,17 @@ Unikernel: statically linked with the OS code needed.Good for cloud service, APP
 
 ### 虚拟机 Virtual Machines
 
-A virtual machine takes the layered approach to its logical conclusion.  It treats *hardware and the operating system kernel* as though they were all **hardware** 都看作硬件
+A virtual machine takes the layered approach to its logical conclusion.  It treats *hardware and the operating system kernel* as though they were all **hardware** 虚拟机将硬件和操作系统内核都看作硬件
 
 A virtual machine provides an interface identical to the underlying bare hardware
 
 The operating system creates the illusion of multiple processes, each executing on its own processor with its own (virtual) memory
+
+#### 分类
+
+第一类 VMM 直接运行在硬盘上，最高级（内核态）
+
+第二类 VMM 运行在宿主操作系统上，普通程序（用户态）
 
 #### HyperVisor
 
@@ -386,11 +458,11 @@ TYPE1 Bare-Metal 裸金属 architecture
 
 - 更高的性能、和硬件直接接触、安全性更高
 
-TYPE2 Hosted 宿主 需要hostOS，eg VMware、Oracle
+TYPE2 Hosted 宿主 需要 hostOS，eg VMware、Oracle
 
-- 应用简单、和现有OS兼容性高、适合测试和开发环境
+- 应用简单、和现有 OS 兼容性高、适合测试和开发环境
 
-选2不选1的常见原因：easier integration with existing host OS
+选 2 不选 1 的常见原因：easier integration with existing host OS
 
 <img src="../images/image-20240923111559930.png" alt="image-20240923111559930" style="zoom:50%;" />
 
@@ -398,13 +470,24 @@ TYPE2 Hosted 宿主 需要hostOS，eg VMware、Oracle
 
 VM：更好的隔离性、灵活性，有资源消耗（复杂）的问题
 
-LC：更加轻量级，不需要加载内核os（docker）
+LC：更加轻量级，不需要加载内核 os（docker）
 
-Uk：所有东西都打包，只能允许一个app运行
+Uk：所有东西都打包，只能允许一个 app 运行
 
-### OS生成
+### OS 生成
+
+操作系统初始化时需要创建 **中断向量表**
 
 ### 系统启动 System Boot
+
+引导程序 bootstrap program 在开机 power-up/reboot 时
+
+1. 加载到 ROM/EPROM 上（Read-only Memory 是 firmware 固件）
+2. 初始化系统
+3. bootstrap 定位操作系统内核并加载到内存、开始执行
+4. OS 最终被加载到 RAM
+
+- 操作系统的引导程序位于硬盘中
 
 ## 进程 Processes
 
@@ -433,29 +516,61 @@ An operating system executes a variety of programs:
 - heap (dynamically allocated memory)
 - program counter 
 
-<img src="../images/image-20240923112853058.png" alt="image-20240923112853058" style="zoom:33%;" />stack和heap相对而生：灵活应用内存空间
+<img src="../images/image-20240923112853058.png" alt="image-20240923112853058" style="zoom:33%;" /> stack 和 heap 相对而生：灵活应用内存空间
+
+进程是一个独立的运行单位，也是操作系统进行资源分配和调度的基本单位
 
 #### Process state
 
-- new
-- running
-- ready：等待被分配给一个处理器 processor（已经被加载进内存memory
-- waiting/block
-- terminated：结束进程
+进程状态
 
 <img src="../images/image-20240923113548425.png" alt="image-20240923113548425" style="zoom: 33%;" />
 
+- **new 创建态**：正在被创建中
+  - 创建新进程的操作原语
+    - 申请一个空白 PCB，填写用于控制和管理进程的信息
+    - 分配运行所需资源
+    - 初始化 PCB
+    - 转入就绪态并插入就绪队列
+
+- **running 运行态**
+- **ready 就绪态**：等待被分配一个处理器 processor（CPU）已经被加载进内存 memory
+- **waiting/block 阻塞态**：等待某个资源可用（不包括 CPU）或者等待 I/O 完成
+  - 阻塞原语 Block 执行过程
+    - 找到被阻塞进程的标识号 PID 对应的 PCB
+    - 若该进程为运行态，则保护其线程，将其状态转为阻塞态，停止运行
+    - 将该 PCB 插入相应事件的等待队列，将 CPU 调度给其他进程
+
+- **terminated 终止态**：结束进程
+  - 终止进程的操作
+    - 根据被终止进程的标识符，检索出该进程的 PCB，从中读出该进程的状态。
+    - 若被终止进程处于运行状态，立即终止该进程的执行，将 CPU 资源分配给其他进程。
+    - 若该进程还有子孙进程，则通常需将其所有子孙进程终止（有些 OS 无此操作）
+    - 将该进程所拥有的全部资源，或归还给其父进程，或归还给操作系统
+    - 将该 PCB 从所在队列(链表)中删除
+
+
+-----------------
+
+- 进程唤醒 wakeup 原语
+
+  - 在该事件队列中找到相应进程的 PCB
+
+  - 将其从等待队列中移出，并设置状态为就绪态
+
+  - 将该 PCB 插入就绪队列，等待调度程序调度
+
 #### Process control block(PCB)
 
-- OS数据结构，用来跟踪进程和相关资源
+- OS 数据结构，用来跟踪进程和相关资源
 
-- 记录 进程状态、PC、寄存器值、CPU调度、内存管理信息、accounting信息、I/O信息
+- 记录：进程状态、PC、寄存器值、CPU 调度、内存管理信息、accounting 信息、I/O 信息
 - Process ID 是进程的独特编号
-- PCB中的PC是记录程序目前正在运行的位置
+- PCB 中的 PC 是记录程序目前正在运行的位置
 
 <img src="../images/image-20240925150055065.png" alt="image-20240925150055065" style="zoom: 33%;" />
 
-[Context Switch上下文切换](# Context Switch 上下文切换)的overhead
+[Context Switch 上下文切换](# Context Switch 上下文切换) 的 overhead
 
 > 分配设备不需要创建新进程
 >
@@ -467,26 +582,28 @@ An operating system executes a variety of programs:
 
 CPU Switch From Process to Process
 
-**Job queue** – set of all processes in the system（包括ready和正在执行的
+**Job queue** – set of all processes in the system（包括 ready 和正在执行的
 
-**Ready queue** – set of all processes residing in *main memory*, ready and waiting to execute（等待CPU
+**Ready queue** – set of all processes residing in *main memory*, ready and waiting to execute（等待 CPU
 
-**Device queues** – set of processes waiting for an I/O device 有很多设备（申请使用device——通过系统调用
+**Device queues** – set of processes waiting for an I/O device 有很多设备（申请使用 device——通过系统调用
 
 Processes migrate among the various queues
 
 > [!IMPORTANT]
 >
-> 一个PCB能不能在两个队列（device&ready）里同时排队？- 不可能
+> 一个 PCB 能不能在两个队列（device&ready）里同时排队？
+>
+> - 不可能
 
 <img src="../images/image-20240925152502875.png" alt="image-20240925152502875" style="zoom: 33%;" />
 
 
 > [!NOTE]
 > 
-> 我们是把PCB放到进程队列里；
+> 我们是把 PCB 放到进程队列里；
 >
-> CPU有四个核可以有4个队列，也可以只有1个队列
+> CPU 有四个核可以有 4 个队列，也可以只有 1 个队列
 
 #### Schedulers 调度器
 
@@ -515,19 +632,19 @@ Processes migrate among the various queues
 
 Processes can be described as either:
 
-- **I/O-bound process** I/O绑定进程 – spends more time doing I/O than computations, many short CPU bursts，eg：下载
+- **I/O-bound process** I/O 绑定进程 – spends more time doing I/O than computations, many short CPU bursts，eg：下载
 
-- **CPU-bound process** CPU绑定进程 – spends more time doing computations; few very long CPU bursts，eg：科学计算
+- **CPU-bound process** CPU 绑定进程 – spends more time doing computations; few very long CPU bursts，eg：科学计算
 
 #### Context Switch 上下文切换
 
-当CPU切换到另一个进程时，系统必须保存旧进程的状态，并为新进程加载保存的状态
+当 CPU 切换到另一个进程时，系统必须保存旧进程的状态，并为新进程加载保存的状态
 
 上下文切换的时间是开销 overhead；系统在切换时没有任何有用的工作，通常需要几毫秒
 
-时间取决于硬件支持；在SPARC架构中，提供了寄存器组
+时间取决于硬件支持；在 SPARC 架构中，提供了寄存器组
 
-- 上下文切换时PCB不必记录进程优先级，优先级是内核kernel判断的
+- 上下文切换时 PCB 不必记录进程优先级，优先级是内核 kernel 判断的
 
 ### 进程操作
 
@@ -567,16 +684,16 @@ Processes can be described as either:
 
 > [!NOTE]
 >
-> 子进程可以**继承**父进程的内容；
+> 子进程可以 **继承** 父进程的内容；
 > 需要重置 pid，cpu time，优先级，堆栈
 >
 > list of open files？？
 
-OS不是真的copy，显式copy
+OS 不是真的 copy，显式 copy
 
 > [!CAUTION]
 >
-> 创造进程的新线程不是通过fork
+> 创造进程的新线程不是通过 fork
 
 #### Process Termination
 
@@ -601,7 +718,7 @@ OS不是真的copy，显式copy
 
 <img src="../images/image-20240930110501365.png" alt="image-20240930110501365" style="zoom:40%;" />
 
-主要目的是在生产者线程和消费者线程之间进行数据的**同步**操作
+主要目的是在生产者线程和消费者线程之间进行数据的 **同步** 操作
 
 ```c
 //Shared data
@@ -639,13 +756,13 @@ while (true) {
 > How many items？
 >
 > - (in-out) % BUFFER_SIZE
-> - 或者加一个变量count
+> - 或者加一个变量 count
 
 ### 进程间通信
 
 #### Interprocess Communication (IPC)
 
-Two models for IPC: **message passing**消息队列 and **shared memory**共享内存
+Two models for IPC: **message passing** 消息队列 and **shared memory** 共享内存（文件）
 
 通信模型：
 
@@ -657,7 +774,7 @@ In IPC, minimize shared resources can reduce conflicts
 
 #### Direct Communication
 
-explictly显式的
+explictly 显式的
 
 A link is associated with exactly one pair of communicating processes
 
@@ -685,13 +802,15 @@ send 是一个系统调用
 - Non-blocking send has the sender send the message and continue
 - Non-blocking receive has the receiver receive a valid message or null
 
+> 管道 pipe 是一种文件
+
 ### Communication in Client-Server Systems
 
 #### Sockets
 
 ## 线程 Threads
 
-### overview
+### Overview
 
 程序内部隔离和调度
 
@@ -699,15 +818,19 @@ send 是一个系统调用
 
 <img src="../images/image-20241009150251297.png" alt="image-20241009150251297" style="zoom: 33%;" />
 
-cpu调度的最小（基本）单位：线程 thread
+CPU 调度的最小（基本）单位：线程 thread
 
 资源分配的最小（基本）单位：进程 process
-
-
 
 ##### 进程和线程的区别
 
 <img src="../images/cb8c649311628903e2240ebd3e73873.jpg" alt="cb8c649311628903e2240ebd3e73873" style="zoom:50%;" />
+
+线程可以在多个 CPU 上执行
+
+同一进程的线程共享地址空间和资源
+
+线程可以提高系统并发性
 
 #### Benfits
 
@@ -719,19 +842,26 @@ Economy：creating processes are more expensive.
 
 Utilization of MP Architectures 多处理器架构：multi-threading increases concurrency 可拓展性
 
-#### User Threads
+#### User Level Threads(ULT)
 
 Thread management done by user-level threads library
 
-Three primary thread libraries: POSIX Pthreads (can also be provided as system library) ，Win32 threads， Java threads —— 都可能会产生？？？
+Three primary thread libraries: 
+
+- UNIX: POSIX Pthreads (can also be provided as system library) 
+- Windows: Windows API (Java)
 
 一个用户级线程只能映射到一个内核级线程
 
 对于用户级线程，内核并不知情
 
+> 用户级线程间的切换比内核级切换效率高
+>
+> 用户级线程可以在不支持内核级线程的操作系统上实现
+>
+> 用户级线程的切换通过 **线程库**，不需要内核的支持，即线程库为用户级线程建立一个线程控制块
 
-
-#### Kernel Threads
+#### Kernel Level Threads(KLT)
 
 Almost all contemporary OS implements kernel threads.
 
@@ -741,19 +871,11 @@ User level threads：；逻辑的载体
 
 内核级线程所需要的资源是以进程为单位申请的
 
-> 用户级线程的切换通过线程库，不需要内核的支持，即线程库为用户级线程建立一个线程控制块
->
 > 内核级（系统级）线程的调度由操作系统完成
-
-
-
-> 用户级线程间的切换比内核级切换效率高
->
-> 用户级线程可以在不支持内核级线程的操作系统上实现
 
 > [!NOTE]
 >
-> 多线程的特长：提高并发性，例如矩阵乘法、web服务器响应HTTP
+> 多线程的特长：提高并发性，例如矩阵乘法、web 服务器响应 HTTP
 >
 > 多线程不共享栈指针
 >
@@ -765,13 +887,17 @@ User level threads：；逻辑的载体
 
 #### Many-to-one Model
 
+多对一模型
+
 一个用户级线程卡住了，整个进程就卡住了
 
 thread management is efficient, but will block if making system call, kernel can schedule only one thread at a time
 
+线程管理是高效的，但如果进行系统调用会阻塞，内核一次只能调度一个线程
+
 <img src="../images/image-20241009152351978.png" alt="image-20241009152351978" style="zoom:30%;" />
 
-> Q：某个分时系统采用**多对一**线程模型。内存中有10个进程并发运行，其中9个进程中只有一个线程，另外一个进程A拥有11个线程。则A获得的CPU时间占总时间的 1/10
+> Q：某个分时系统采用 **多对一** 线程模型。内存中有 10 个进程并发运行，其中 9 个进程中只有一个线程，另外一个进程 A 拥有 11 个线程。则 A 获得的 CPU 时间占总时间的 1/10
 
 #### One-to-one
 
@@ -781,11 +907,11 @@ more concurrency, but creating thread is expensive
 
 能让线程并行，每个用户级线程都有一个内核级线程
 
-> Q：某个分时系统采用**一对一**线程模型。内存中有10个进程并发运行，其中9个进程中只有一个线程，另外一个进程A拥有11个线程。则A获得的CPU时间占总时间的 11/20
+> Q：某个分时系统采用 **一对一** 线程模型。内存中有 10 个进程并发运行，其中 9 个进程中只有一个线程，另外一个进程 A 拥有 11 个线程。则 A 获得的 CPU 时间占总时间的 11/20
 
 #### Many-to-Many Model
 
-flexible，LWP ID kernel根据情况看调度
+flexible，LWP ID kernel 根据情况看调度
 
 Allows many user level threads to be mapped to many kernel threads
 
@@ -793,13 +919,13 @@ Allows the operating system to create a sufficient number of kernel threads
 
 #### Two-level Model
 
-Similar to M:M, except that it allows a user thread to be bound to kernel thread
+Similar to M: M, except that it allows a user thread to be bound to kernel thread
 
 
 
 ### Threading Issues
 
-Semantics语义 of fork() and exec(）
+Semantics 语义 of fork() and exec(）
 
 > Does fork() duplicate only the calling thread or all threads?
 >
@@ -809,9 +935,9 @@ Semantics语义 of fork() and exec(）
 
 #### Thread Cancellation
 
-**Asynchronous cancellation**异步 terminates the target thread  immediately
+**Asynchronous cancellation** 异步 terminates the target thread  immediately
 
-**Deferred cancellation**延后 allows the target thread to periodically check via a flag if it should be cancelled
+**Deferred cancellation** 延后 allows the target thread to periodically check via a flag if it should be cancelled
 
 #### Signal Handling
 
@@ -848,39 +974,50 @@ When an application thread is about to block, an upcall is triggered.
 
 ### Basic concepts
 
-scheduler dispatch
+scheduler dispatch 调度器
 
 调度资源？CPU
 
 调度目标？Processes/threads
 
-==Goal: 在multiprogramming下CPU使用率最大化==
+==Goal: 在多道程序设计 multiprogramming 下 CPU 使用率最大化==
 
-<img src="../images/image-20241014100337138.png" alt="image-20241014100337138" style="zoom:33%;" />
+<img src="../images/image-20241014100337138.png" alt="image-20241014100337138" style="zoom: 50%;" />
 
 CPU-I/O Burst Cycle：Process execution consists of a cycle of CPU execution and I/O wait
 
-进程实际运行时CPU占用时间少，I/O多
+进程实际运行时 CPU 占用时间少，I/O 多
 
-大部分CPU burst时间非常短
+大部分 CPU burst 时间非常短
+
+调度的层次：高级（作业）调度 --> 中级（内存）调度 --> 低级（进程调度）
 
 #### CPU Scheduler
 
-<img src="../images/image-20241014100627801.png" alt="image-20241014100627801" style="zoom:50%;" />
+CPU可能进行调度的情况（4种）
+
+<img src="../images/image-20241014100627801.png" alt="image-20241014100627801" style="zoom: 67%;" />
 
 nonpreemptive 非抢占式调度 1 & 4
 
 preemptive ✔️ 2 & 3
 
+---------------
+
+不能调度的情况：
+
+1. 处理中断过程中
+2. 需要完全屏蔽中断的原子操作过程中
+
 #### Dispacher
 
-dispacher latency：P1停止运行到P1运行
+dispacher latency：P1 停止运行到 P1 运行
 
 <img src="../images/image-20241014100422820.png" alt="image-20241014100422820" style="zoom:33%;" />
 
 ### scheduling criteria
 
-CPU utilization CPU利用率：**CPU 使用率= (1 - 空闲态运行时间/总运行时间) \* 100%**
+CPU utilization CPU 利用率：**CPU 使用率 = (1 - 空闲态运行时间/总运行时间) \* 100%**
 
 Throughtput 吞吐率：**进程数/总执行时间**
 
@@ -907,13 +1044,13 @@ response time 响应时间
 > Arrival order makes a difference!
 > 到达顺序很重要
 
-- FCFS是**非抢占式**算法
-- FCFS简单、公平
+- FCFS 是 **非抢占式** 算法
+- FCFS 简单、公平
 - **Convoy effect**（护航效应）: short process behind long process, the average waiting time may be longer, leading to I/O devices & CPU being idle
 
-**有利于长作业，不利于短作业；有利于CPU繁忙型，不利于I/O繁忙型**
+**有利于长作业，不利于短作业；有利于 CPU 繁忙型，不利于 I/O 繁忙型**
 
-> 短作业位于长作业后时调度时间要很长；I/O繁忙会有很多waiting，不断排队到ready queue队尾，如果排到长作业后面就要很长时间
+> 短作业位于长作业后时调度时间要很长；I/O 繁忙会有很多 waiting，不断排队到 ready queue 队尾，如果排到长作业后面就要很长时间
 
 #### SJF(Shortest-Job-First)
 
@@ -921,13 +1058,13 @@ response time 响应时间
 
 - SJF is a priority scheduling where priority is the predicted next CPU burst time
 
-- SJF既可以是抢占式也可以是非抢占式
+- SJF 既可以是抢占式也可以是非抢占式
   - nonpreemptive – once CPU given to the process it cannot be preempted until completes its CPU burst
-  - preemptive – if a new process arrives with CPU burst length less than remaining time of current executing process, preempt. This scheme is known as the **Shortest-Remaining-TimeFirst (SRTF)**最短剩余时间调度算法
+  - preemptive – if a new process arrives with CPU burst length less than remaining time of current executing process, preempt. This scheme is known as the **Shortest-Remaining-TimeFirst (SRTF)** 最短剩余时间调度算法
 - SJF is **optimal** – gives **minimum average waiting time** for a given set of processes
-- Which is better? Preemptive? Nonpreemptive? 不确定，要根据到达时间和cpu burst确定
+- Which is better? Preemptive? Nonpreemptive? 不确定，要根据到达时间和 cpu burst 确定
 - Starvation 饥饿问题，优先级低的进程一直无法运行，短作业都会发生
-- Not good for long process 不适合长进程，因为优先调度cpu burst最短的进程
+- Not good for long process 不适合长进程，因为优先调度 cpu burst 最短的进程
 
 ##### nonpreemptive
 
@@ -1051,13 +1188,13 @@ Asymmetric multiprocessing 非对称处理器：只有一个处理器可以接�
 
 实时系统一定要在规定时间内完成
 
-Hard real-time systems 硬实时系统：ddl前没运行完有严重后果
+Hard real-time systems 硬实时系统：ddl 前没运行完有严重后果
 
-Soft real-time systems 软实时系统：可以在ddl前没运行完（eg，腾讯会议
+Soft real-time systems 软实时系统：可以在 ddl 前没运行完（eg，腾讯会议
 
 - Earliest ddl First 最早截止时间优先
 - Least Laxity First 最低松弛度优先（不怎么用）
-  - A的松弛度=A必须完成的时间-A需要运行的时间-当前时间
+  - A 的松弛度 = A 必须完成的时间-A 需要运行的时间-当前时间
 - Rate Monotonic scheduling 速率单调调度
   - 基于任务的周期（一个进程多久执行一次）来分配优先级，周期越短任务优先级越高
 
@@ -1083,7 +1220,7 @@ Global scheduling 内核级
 
 > 外设是不可抢占的
 >
-> waiting time是进程等待CPU资源的时间！
+> waiting time 是进程等待 CPU 资源的时间！
 
 <img src="../images/image-20241021102905818.png" alt="image-20241021102905818" style="zoom: 33%;" />
 
@@ -1107,30 +1244,30 @@ Global scheduling 内核级
 
 Producer-consumer
 
-<img src="../images/image-20241021105641372.png" alt="image-20241021105641372" style="zoom:50%;" /><img src="../images/image-20241021110813871.png" alt="image-20241021110813871" style="zoom:50%;" />
+<img src="../images/image-20241021105641372.png" alt="image-20241021105641372" style="zoom:50%;" /> <img src="../images/image-20241021110813871.png" alt="image-20241021110813871" style="zoom:50%;" />
 
-count++和count--两步有可能出错
+count++和 count--两步有可能出错
 
 #### Race condition 竞态条件
 
-出错的example：
+出错的 example：
 
 <img src="../images/image-20241021111018744.png" alt="image-20241021111018744" style="zoom:50%;" />
 
-出错的原因：抢占式调度，多个进程对shared data进行操作
+出错的原因：抢占式调度，多个进程对 shared data 进行操作
 
 Race condition 定义：a memory location is accessed concurrently, and at least one access is a write
 
 > **对于访问共享的内核数据，非抢占式的内核是否受竞态条件的影响？**
 >
-> - 可能会受影响，当多处理器对shared data进行操作
+> - 可能会受影响，当多处理器对 shared data 进行操作
 
 ### 临界区问题 critical-section problem
 
 > **What operations/processes may have critical problems in OS kernel?**
 >
 > - cpu
-> - 用户态：一个进程的多个线程（满足shared data和并发执行）
+> - 用户态：一个进程的多个线程（满足 shared data 和并发执行）
 
 **临界资源**：多进程或多进程中被共享的资源(shared data)且一次只允许一个进程使用
 
@@ -1162,10 +1299,10 @@ Race condition 定义：a memory location is accessed concurrently, and at least
 
 ##### Bounded waiting（有限等待）
 
-在一个进程发出进入其临界区的请求之后，在该请求被批准之前，必须对允许其他进程进入其临界区的**次数**进行限制
+在一个进程发出进入其临界区的请求之后，在该请求被批准之前，必须对允许其他进程进入其临界区的 **次数** 进行限制
 
 - 假设每个进程以非零速度执行
-- 没有关于*N*个进程相对速度的假设
+- 没有关于 *N* 个进程相对速度的假设
 
 ##### 让权等待
 
@@ -1179,36 +1316,36 @@ Race condition 定义：a memory location is accessed concurrently, and at least
 
 <img src="../images/image-20241023145626698.png" alt="image-20241023145626698" style="zoom:50%;" />
 
-i和j交替执行
+i 和 j 交替执行
 
-- 满足Mutual Exclusion 和 bounded waiting
-- 不满足progess
+- 满足 Mutual Exclusion 和 bounded waiting
+- 不满足 progess
 
 ##### 双标志后检查法
 
 <img src="../images/image-20241023145544929.png" alt="image-20241023145544929" style="zoom:50%;" />
 
-- 满足Mutual Exclusion
-- 不满足Progress（存在CPU调度的一种情况，两个标志都为TRUE后一直循环下去）
-- 如果没有死循环是bounded waiting，但可能有所以总体不是
+- 满足 Mutual Exclusion
+- 不满足 Progress（存在 CPU 调度的一种情况，两个标志都为 TRUE 后一直循环下去）
+- 如果没有死循环是 bounded waiting，但可能有所以总体不是
 
 ##### 双标志先检查法
 
 <img src="../images/image-20241023150759551.png" alt="image-20241023150759551" style="zoom:50%;" />
 
-和前面两种算法相比，先while再设flag值：
+和前面两种算法相比，先 while 再设 flag 值：
 
 <img src="../images/image-20241023150932808.png" alt="image-20241023150932808" style="zoom:50%;" />
 
-- **不满足Mutual Exclusion**（存在CPU调度的一种情况，两个标志都为TRUE，并进入临界区
-- 满足Progres
+- **不满足 Mutual Exclusion**（存在 CPU 调度的一种情况，两个标志都为 TRUE，并进入临界区
+- 满足 Progres
 
 ##### Peterson’s Solution
 
 双进程解决方案
 假设 LOAD 和 STORE 指令是原子的；即不能被中断。
 两个进程共享两个变量：`int turn;Boolean flag[2];`
-变量`turn`表示轮到谁进入临界区。
+变量 `turn` 表示轮到谁进入临界区。
 flag 数组用于指示进程是否已准备好进入临界区。`flag[i] = true` 表示进程 P~i~ 已准备好
 
 基本思想：<img src="../images/image-20241023151545037.png" alt="image-20241023151545037" style="zoom:50%;" />
@@ -1235,14 +1372,14 @@ while (true) {
 }
 ```
 
-- 满足mutual exception 和 progress，不会
-- 满足bounded waiting，bound是1
+- 满足 mutual exception 和 progress，不会
+- 满足 bounded waiting，bound 是 1
 
 > [!CAUTION]
 >
 > There are no guarantees that Peterson's solution works correctly on modern computer architectures.
 >
-> Reason：计算机编译优化 -> 代码的乱序执行【先load（读），再store（赋值）】
+> Reason：计算机编译优化 -> 代码的乱序执行【先 load（读），再 store（赋值）】
 >
 > Solution：Memory barrier ( 内存栅栏 ) -- 插入这条指令后就不会乱序执行了
 
@@ -1273,8 +1410,8 @@ do{
 } while(1);
 ```
 
-- 满足mutual exception 和 progress，
-- 满足bounded waiting，bound为 n-1
+- 满足 mutual exception 和 progress，
+- 满足 bounded waiting，bound 为 n-1
 
 #### 硬件方法
 
@@ -1317,9 +1454,9 @@ while (true) {
 
 ###### 缺点
 
-- **可能影响系统效率**：滥用关中断会严重影响 CPU 执行效率，其锁住CPU可能导致原本一些短时间即可完成的需要等待开中断，影响cpu并发执行，cpu利用率下降
+- **可能影响系统效率**：滥用关中断会严重影响 CPU 执行效率，其锁住 CPU 可能导致原本一些短时间即可完成的需要等待开中断，影响 cpu 并发执行，cpu 利用率下降
 
-- **不适用于多 CPU 系统**：中断屏蔽法适用于单 CPU 系统，在多 CPU 系统中**无法有效同步**各个 CPU 的操作。 
+- **不适用于多 CPU 系统**：中断屏蔽法适用于单 CPU 系统，在多 CPU 系统中 **无法有效同步** 各个 CPU 的操作。 
 - **安全性问题**：滥用关中断权力可能导致严重后果，例如在关闭中断期间，一些重要的中断请求可能被错过，影响系统的稳定性和可靠性。
 
 ##### TestAndSet Lock Instruction（TSL）
@@ -1343,19 +1480,19 @@ while (true) {
 };
 ```
 
-- 满足mutual exclusion, progress
-- 不满足bounded waiting（进入临界区靠运气），不满足让权等待
-- 等待进入临界区的进程不会主动放弃CPU
+- 满足 mutual exclusion, progress
+- 不满足 bounded waiting（进入临界区靠运气），不满足让权等待
+- 等待进入临界区的进程不会主动放弃 CPU
 
 ##### Swap Instruction
 
 思想
 
-1. 对每个临界资源，swap设置一个全局`bool`变量`lock`(初值为false) ，每个进程设置局部变量`key`(初值为 true)
+1. 对每个临界资源，swap 设置一个全局 `bool` 变量 `lock`(初值为 false) ，每个进程设置局部变量 `key`(初值为 true)
 
-2. 进程调用`swap()`指令访问临界区，会交换key和lock的值，实现上锁，进入访问
+2. 进程调用 `swap()` 指令访问临界区，会交换 key 和 lock 的值，实现上锁，进入访问
 
-3. 退出时把`lock`重置为`false`
+3. 退出时把 `lock` 重置为 `false`
 
 ```c
 while (true) {
@@ -1376,8 +1513,8 @@ void Swap(boolean *a, boolean *b)
 }
 ```
 
-- 满足mutual exclusion, progress
-- 不满足bounded waiting（
+- 满足 mutual exclusion, progress
+- 不满足 bounded waiting（
 
 ##### The compare_and_swap (CAS) Instruction
 
@@ -1404,8 +1541,8 @@ int compare_and_swap(int *value, int expected, int new_value)
 }
 ```
 
-- 满足mutual exclusion, progress
-- 不满足bounded waiting（
+- 满足 mutual exclusion, progress
+- 不满足 bounded waiting（
 
 解决办法：排队
 
@@ -1413,11 +1550,11 @@ int compare_and_swap(int *value, int expected, int new_value)
 
 <img src="../images/image-20241028105047216.png" alt="image-20241028105047216" style="zoom:33%;" />
 
-- 满足mutual exclusion, progress和bounded waiting
+- 满足 mutual exclusion, progress 和 bounded waiting
 
 > [!CAUTION]
 >
-> 以上对TS和Swap指令的描述仅为功能描述，它们由硬件逻辑实现，不会被中断
+> 以上对 TS 和 Swap 指令的描述仅为功能描述，它们由硬件逻辑实现，不会被中断
 
 
 
@@ -1438,11 +1575,11 @@ This lock therefore called a **spinlock** **（也叫 自旋锁）**
 
 Two indivisible operations modify S: 
 
-- `wait()` and `signal()`, originally called`P()`and`V()` 
+- `wait()` and `signal()`, originally called `P()` and `V()` 
 
 - Proberen(测试)，Verhogen(增加) 
 
-- 只能在wait和signal中对信号量进行操作
+- 只能在 wait 和 signal 中对信号量进行操作
 
 - 低级的进程通信原语
 
@@ -1464,13 +1601,13 @@ Can be implemented without busy waiting --> 实现让权等待
 >
 > <img src="../images/image-20241030152700179.png" alt="image-20241030152700179" style="zoom:40%;" />
 >
-> S.value=0 已经有一个进程在临界区
+> S.value = 0 已经有一个进程在临界区
 
 信号量种类：
 
 <img src="../images/image-20241028113509355.png" alt="image-20241028113509355" style="zoom:33%;" />
 
-👆互斥访问
+👆 互斥访问
 
 同步操作：
 
@@ -1488,7 +1625,7 @@ Question：有四个房间，四个进程访问
 
 <img src="../images/image-20241030145309092.png" alt="image-20241030145309092" style="zoom:33%;" />
 
-对P不太友好
+对 P 不太友好
 
 ###### no Busy waiting 非忙等
 
@@ -1514,7 +1651,7 @@ Signal (S){
 }
 ```
 
-- S的取值可以是负的了（相比原先的wait和signal），S取负表示当前队列排队进程的个数
+- S 的取值可以是负的了（相比原先的 wait 和 signal），S 取负表示当前队列排队进程的个数
 
 <img src="../images/image-20241030151249807.png" alt="image-20241030151249807" style="zoom:33%;" />
 
@@ -1524,7 +1661,7 @@ Signal (S){
 
 > [!WARNING]
 >
-> 进程在标黄处sleep后，再次被唤醒时会从头开始执行！
+> 进程在标黄处 sleep 后，再次被唤醒时会从头开始执行！
 
 Busy waiting? No busy waiting?
 
@@ -1532,8 +1669,8 @@ Busy waiting? No busy waiting?
 
 What if one must choose busy waiting?
 
-- 电脑要多CPU
-- 上下文切换时间 > busy waiting，选择no busy waiting；<的话两者都行
+- 电脑要多 CPU
+- 上下文切换时间 > busy waiting，选择 no busy waiting；< 的话两者都行
 
 ##### Deadlock and Starvation
 
@@ -1547,7 +1684,7 @@ What if one must choose busy waiting?
 
 *N* buffers, each can hold one item
 
-- Semaphore **mutex** initialized to the value **1** 互斥信号量1个
+- Semaphore **mutex** initialized to the value **1** 互斥信号量 1 个
 - Semaphore **full** initialized to the value 0, counting full items
 - Semaphore **empty** initialized to the value **N**, counting empty items
 
@@ -1588,7 +1725,7 @@ Shared data
 
 <img src="../images/image-20241030155058113.png" alt="image-20241030155058113" style="zoom:33%;" />
 
-如果只设置一个筷子的信号量，设置为5，有什么问题？一个筷子可能被拿两次，违反互斥性
+如果只设置一个筷子的信号量，设置为 5，有什么问题？一个筷子可能被拿两次，违反互斥性
 
 #### 管程方法
 
@@ -1613,9 +1750,9 @@ monitor monitor-name
 }
 ```
 
-<img src="../images/image-20241104104332459.png" alt="image-20241104104332459" style="zoom:33%;" />函数挂起
+<img src="../images/image-20241104104332459.png" alt="image-20241104104332459" style="zoom:33%;" /> 函数挂起
 
-x.wait()阻塞该进程并将他插入到x序列
+x.wait()阻塞该进程并将他插入到 x 序列
 
 ##### 管程方法解决哲学家就餐问题
 
@@ -1650,9 +1787,9 @@ monitor DP
           } }
 ```
 
-- When the left and right philosophers, **self[(i+4)%5]** and **self[(i+1)%5]**
+- When the left and right philosophers, **self [(i+4)%5]** and **self [(i+1)%5]**
 
-  continue to eat, **self[i]** may *starve*
+  continue to eat, **self [i]** may *starve*
 
 #### 例子
 
@@ -1682,8 +1819,8 @@ Using `pthread_cond_wait()` & `pthread_cond_signal()`
 
 > [!IMPORTANT]
 >
-> 基本概念：死锁概念，4个必要条件，资源分配图，cycle &deadlock
-> solutions：3种策略
+> 基本概念：死锁概念，4 个必要条件，资源分配图，cycle &deadlock
+> solutions：3 种策略
 > 死锁预防（如何破坏四个必要条件)
 > 死锁避免（安全状态，安全状态与死锁，单实例算法，多实例算法——银行家算法）
 > 检测（单实例算法——wait for graph，多实例算法)
@@ -1711,13 +1848,13 @@ resource type & resource instances
 
 #### 资源分配图 Resource-Allocation Graph
 
-A set of vertices**顶点 V** and a set of edges**边 E**
+A set of vertices **顶点 V** and a set of edges **边 E**
 
 <img src="../images/image-20241106153033476.png" alt="image-20241106153033476" style="zoom:33%;" />
 
-顶点表示资源R或进程P
+顶点表示资源 R 或进程 P
 
-边：**P->R 等待资源**; **R->P 可以使用资源（资源R已经被P占用）**
+边：**P-> R 等待资源**; **R-> P 可以使用资源（资源 R 已经被 P 占用）**
 
 死锁一定有环，有环不一定死锁
 
@@ -1746,7 +1883,7 @@ Ignore the problem and pretend that deadlocks never occur in the system. 忽略�
 
 破坏死锁产生的四个必要条件之一 Restrain the ways request can be made.
 
-- 限制用户申请资源的顺序 -- 破坏循环等待（条件4）
+- 限制用户申请资源的顺序 -- 破坏循环等待（条件 4）
 
 1. **Prevent Mutual Exclusion 不互斥**： not required for sharable resources; must hold for nonsharable resources 不共享资源，实际中不太可行
 2. **Prevent Hold and Wait 不请求等待** ：一次分配好所有资源 must guarantee that whenever a process requests a resource, it does not hold any other resources.
@@ -1762,7 +1899,7 @@ Ignore the problem and pretend that deadlocks never occur in the system. 忽略�
 通过动态检测资源分配的安全性，确保系统不会进入不安全状态
 
 - 为实现安全性，我们需要知道
-  - 每个进程所需资源max数量 each process declares the maximum number of resources of each type that it may need
+  - 每个进程所需资源 max 数量 each process declares the maximum number of resources of each type that it may need
   - The deadlock-avoidance algorithm dynamically examines the resource-allocation state to ensure that there can never be a circular-wait condition.
   - Resource-allocation state is defined by the number of available and allocated resources, and the maximum demands of the processes.
 
@@ -1770,7 +1907,7 @@ Ignore the problem and pretend that deadlocks never occur in the system. 忽略�
 
 <P1 , P2 , …, Pn> 称为安全序列。如果系统不存在安全序列，则称系统处于不安全状态
 
-对于进程序列中的每一个进程Pi，当前系统已经分配了一些资源，还剩下一些资源。如果 **Pi前面的资源之和+系统剩下的资源 能够满足Pi执行完毕**，则这个序列是个安全状态。
+对于进程序列中的每一个进程 Pi，当前系统已经分配了一些资源，还剩下一些资源。如果 **Pi 前面的资源之和+系统剩下的资源 能够满足 Pi 执行完毕**，则这个序列是个安全状态。
 
 <img src="../images/image-20241111103432235.png" alt="image-20241111103432235" style="zoom:33%;" />
 
@@ -1823,13 +1960,13 @@ Example
 
 ##### 单实例 Single Instance of Each Resource Type
 
-检查wait for graph有没有环
+检查 wait for graph 有没有环
 
 <img src="../images/image-20241111112900123.png" alt="image-20241111112900123" style="zoom:33%;" />
 
 ##### 多实例 Several Instances of a Resource Type
 
-多实例，调用safety算法
+多实例，调用 safety 算法
 
 时间复杂度：O(m × n^2^)
 
@@ -1939,8 +2076,8 @@ Cache sits between main memory and CPU registers
 - **Compile time 编译时刻** : If memory location known a priori, absolute code can be generated; must recompile code if starting location changes
 - **Load time 装入时刻** : Must generate relocatable codeif memory location is not known at compile time
 - **Execution time 执行时刻** : Binding delayed until run time if the process can be moved during its execution from one memory segment to another. Need hardware support for address maps (e.g., base and limit registers 两个寄存器用来快速地址映射和绑定)
-  - Base register 基址寄存器 , limit register 限长寄存器<img src="../images/image-20241118102941818.png" alt="image-20241118102941818" style="zoom:25%;" />
-- Linux, Windows 系统在**执行时刻**进行地址绑定
+  - Base register 基址寄存器 , limit register 限长寄存器 <img src="../images/image-20241118102941818.png" alt="image-20241118102941818" style="zoom:25%;" />
+- Linux, Windows 系统在 **执行时刻** 进行地址绑定
 
 #### Logical vs. Physical Address Space
 
@@ -2006,7 +2143,7 @@ Dynamic linking is particularly useful for libraries 共享库里的函数只用
 
 ### 连续分配 Contiguous Memory Allocation
 
-Relocation register 可重定位寄存器 contains value of smallest <span style="color:#00CC00;">physical address</span>
+Relocation register 可重定位寄存器 contains value of smallest <span style="color:#00CC00;"> physical address </span>
 
 Limit register contains range of logical addresses – each logical address must be less than the limit register 
 MMU maps logical address dynamically
@@ -2049,8 +2186,8 @@ WF：Allocate the largest hole; must also search entire list 最大的洞，会�
 **Reduce external fragmentation by compaction/defragmentation** 通过压缩减少外部碎片
 
 - Shuffle memory contents to place all free memory together in one large block
-- Compaction is possible *only if* <span style="color:#CC0066;">relocation is dynamic</span>, and is done at execution time
-- I/O problem I/O操作时也不允许进行压缩
+- Compaction is possible *only if* <span style="color:#CC0066;"> relocation is dynamic </span>, and is done at execution time
+- I/O problem I/O 操作时也不允许进行压缩
   - Latch job in memory while it is involved in I/O
   - Do I/O only into OS buffers
   - Another solution to external frag. is non-contiguous allocation
@@ -2080,8 +2217,8 @@ To run a program of size n pages, need to find n free frames and load program
 >
 > 1. **页面大小** = $$4 \, \text{KB} = 2^{12} = 4096 \, \text{bytes}$$，页号用高 20 位，页内偏移用低 12 位表示。
 > 2. 虚地址：
->    - 2362H=9026102362H = 9026_{10}
->    - 1565H=5477101565H = 5477_{10}
+>    - 2362H = 9026102362H = 9026_{10}
+>    - 1565H = 5477101565H = 5477_{10}
 > 3. 页表：
 >    - 页号 0 → 页框号 101H
 >    - 页号 1 → 页框号 102H
@@ -2128,9 +2265,9 @@ In this scheme every data/instruction access requires **two** memory accesses. O
 
 > [!NOTE]
 >
-> Pagetable放在内存里，访问逻辑地址要访问两次内存
+> Pagetable 放在内存里，访问逻辑地址要访问两次内存
 
-The two-memory-access problem can be solved by the use of a special fast-lookup hardware cache called associative memory or translation look-aside buffers (**TLB**s 转换旁视缓冲 , 一称快表 )
+The two-memory-access problem can be solved by the use of a special fast-lookup hardware cache called associative memory or translation look-aside buffers (**TLB** s 转换旁视缓冲 , 一称快表 )
 
 #### Paging Hardware With TLB
 
@@ -2161,7 +2298,7 @@ Valid-invalid bit attached to each entry in the page table
 
 #### Shared Pages
 
-**Shared code**：One copy of <span style="color:#CC0066;">read-only</span> (reentrant) code shared among processes (i.e., text editors, compilers, window systems)；Shared code must appear in <span style="color:#CC0066;">same location in the logical address space</span> of all processes 逻辑地址一样在TLB只用存一次
+**Shared code**：One copy of <span style="color:#CC0066;"> read-only </span> (reentrant) code shared among processes (i.e., text editors, compilers, window systems)；Shared code must appear in <span style="color:#CC0066;"> same location in the logical address space </span> of all processes 逻辑地址一样在 TLB 只用存一次
 
 
 
@@ -2173,15 +2310,15 @@ Valid-invalid bit attached to each entry in the page table
 
 <img src="../images/image-20241120152043420.png" alt="image-20241120152043420" style="zoom:50%;" />
 
-p1->outer page table -- p2 -> page of page table -- d -> real physical address 
+p1-> outer page table -- p2 -> page of page table -- d -> real physical address 
 
-64=42+10+12, 32=12+10+10
+64 = 42+10+12, 32 = 12+10+10
 
 > [!NOTE]
 >
 > **Page-table base register (PTBR)** ？
 >
-> **What are the benefits of the hierarchical page**? 节省内存（pagetable的内存空间）
+> **What are the benefits of the hierarchical page**? 节省内存（pagetable 的内存空间）
 
 
 
@@ -2191,7 +2328,7 @@ Variation for 64-bit addresses is the **clustered page table**
 
 <img src="../images/image-20241120153044232.png" alt="image-20241120153044232" style="zoom:50%;" />
 
-哈希优点：快，hashtable比pagetable小
+哈希优点：快，hashtable 比 pagetable 小
 
 
 
@@ -2199,7 +2336,7 @@ Variation for 64-bit addresses is the **clustered page table**
 
 <img src="../images/image-20241120153453098.png" alt="image-20241120153453098" style="zoom:50%;" />
 
-缺点：慢；好处：只有一个pagetable
+缺点：慢；好处：只有一个 pagetable
 
 Search is slow, so put page table entries into a hash table. TLB can be used to speed up hash-table reference.
 
@@ -2248,7 +2385,7 @@ linear address: 32 offset
 
 #### Intel Pentium Segmentation
 
-根据段号找页表基址，根据分页的va（页框号）找到页号，两者拼接
+根据段号找页表基址，根据分页的 va（页框号）找到页号，两者拼接
 
 Local Descriptor Table contains entries for the segments local to each program itself; 
 Global Descriptor Table contains entries of the system (OS).
@@ -2261,7 +2398,7 @@ Global Descriptor Table contains entries of the system (OS).
 >
 > 请求页式管理：好处、逻辑地址转换、缺页中断处理过程、缺页有效访问时间、页面替换、页面替换算法（FIFO OPTIMAL LRU CLOCK ENAHNCED CLOCK）、帧的分配和置换策略、抖动、工作集
 >
-> kernel内存分配
+> kernel 内存分配
 
 
 
@@ -2289,7 +2426,7 @@ Virtual memory can be implemented via 虚拟内存的实现：
 - 时间局部性 : 一条指令的一次执行和下次执行，一个数据的一次访问和下次访问都集中在一个较短时期内 ; 
 - 空间局部性 : 当前指令和邻近的几条指令，当前访问的数据和邻近的数据都集中在一个较小区域内。
 - 虚拟存储器是具有请求调入功能和置换功能，仅把进程的一部分装入内存便可运行进程的存储管理系统，它能从逻辑上对内存容量进行扩充的一种虚拟的存储管理系统。
-- 虚拟存储器只能基于非连续分配——os虚拟技术中的空分复用技术
+- 虚拟存储器只能基于非连续分配——os 虚拟技术中的空分复用技术
 
 -----------------
 
@@ -2345,7 +2482,7 @@ With each page table entry a valid–invalid bit is associated (**v**: in-memory
 #### Page Fault
 
 If there is a reference to a page, first reference to that page will trap to operating system: **page fault**
-1. Operating system looks at <span style="color:#CC0000;">another table</span> (kept with PCB) to decide:
+1. Operating system looks at <span style="color:#CC0000;"> another table </span> (kept with PCB) to decide:
    Invalid reference => abort
    Just not in memory
 2. Get empty frame
@@ -2425,13 +2562,13 @@ Belady
 
 **最佳置换算法** 缺页次数最小 => optimal
 
-替换将来最长不使用的page Replace page that will not be used for longest period of time
+替换将来最长不使用的 page Replace page that will not be used for longest period of time
 
 <img src="../images/image-20241127145836832.png" alt="image-20241127145836832" style="zoom:50%;" />
 
 ##### Least Recently Used (LRU) Algorithm
 
-**最近最久未使用**置换算法：选择内存中最久没有引用的页面被置换。这是局部性原理的合理近似，性能接近最佳算法。但由于需要记录页面使用时间，硬件开销太大。
+**最近最久未使用** 置换算法：选择内存中最久没有引用的页面被置换。这是局部性原理的合理近似，性能接近最佳算法。但由于需要记录页面使用时间，硬件开销太大。
 
 <img src="../images/image-20241127145959957.png" alt="image-20241127145959957" style="zoom:50%;" />
 
@@ -2443,7 +2580,7 @@ Counter implementation：每次引用时钟+1
 
 Stack implementation：设置一个特殊的栈，把被访问的页面移到栈顶，于是栈底的是最久未使用页面。
 
-移位寄存器 : 被访问时左边最高位置 1 ，定期右移并且最高位补0 ，于是寄存器数值最小的是最久未使用页面。 (AdditionalReference-Bits Algorithm 附加引用位算法 )
+移位寄存器 : 被访问时左边最高位置 1 ，定期右移并且最高位补 0 ，于是寄存器数值最小的是最久未使用页面。 (AdditionalReference-Bits Algorithm 附加引用位算法 )
 
 ##### LRU Approximation Algorithms
 
@@ -2451,13 +2588,13 @@ Stack implementation：设置一个特殊的栈，把被访问的页面移到栈
 
 reference bit
 
-- 当访问到page，bit=1，周期内被访问过至少一次；bit=0，较长时间内没被访问过，替换出去
+- 当访问到 page，bit = 1，周期内被访问过至少一次；bit = 0，较长时间内没被访问过，替换出去
 
 second chance
 
 ##### Enhanced second chance Algorithm
 
-使用引用位和修改位 (reference bit, modified bit)，引用过或者修改过置为1 记录每个页面被引用的次数
+使用引用位和修改位 (reference bit, modified bit)，引用过或者修改过置为 1 记录每个页面被引用的次数
 
 淘汰次序：(0,0) > (0,1) > (1,0) > (1,1)
 
@@ -2481,13 +2618,13 @@ Keep a counter of the number of references that have been made to each page
 
 通过被置换页面的缓冲，有机会找回刚被置换的页面
 
-被置换页面的选择和处理：用 FIFO 算法选择被置换页，把被置换的页面放入两个链表之一，如果页面未被修改，就将其归入到**空闲页面链表**的末尾，否则将其归入到**已修改页面链表**。 
+被置换页面的选择和处理：用 FIFO 算法选择被置换页，把被置换的页面放入两个链表之一，如果页面未被修改，就将其归入到 **空闲页面链表** 的末尾，否则将其归入到 **已修改页面链表**。 
 
 需要调入新的页面时：将新页面内容读入到空闲页面链表的第一项所指的页面，然后将第一项删除。 
 空闲页面和已修改页面，仍停留在内存中一段时间，如果这些页面被再次访问，这些页面还在内存中。
 当已修改页面达到一定数目后，再将它们一起调出到外存，然后将它们归入空闲页面链表。
 
-实际中，Windows 、 Linux 页面置换算法是基于**页面缓冲算法**
+实际中，Windows 、 Linux 页面置换算法是基于 **页面缓冲算法**
 
 ### Allocation of Frames 
 
@@ -2578,7 +2715,7 @@ Policy if D > m, then suspend one of the processes
 
 #### Page-Fault Frequency Scheme
 
-Establish “acceptable” page-fault rate for each process 调节frame数控制page fault
+Establish “acceptable” page-fault rate for each process 调节 frame 数控制 page fault
 
  If actual rate too low, process loses frame
 
@@ -2598,8 +2735,6 @@ Also allows several processes to map the same file allowing the pages in memory 
 
 reated differently from user memory
 
- 
-
 Often allocated from a free-memory pool
 
  Kernel requests memory for structures of varying sizes – needs 
@@ -2610,9 +2745,7 @@ to reduce fragmentation
 
 device interacts with contiguous physical memory)
 
-Therefore, many systems do NOT utilize paging for kernel code and 
-
-data.
+Therefore, many systems do NOT utilize paging for kernel code and data.
 
 #### Buddy System （伙伴系统）
 
@@ -2662,7 +2795,7 @@ Page size selection must take into consideration:
 
 #### Other Issues – TLB Reach （ TLB 范围）
 
-TLB Reach - The amount of memory accessible from the TLB 增大TLB范围减少缺页
+TLB Reach - The amount of memory accessible from the TLB 增大 TLB 范围减少缺页
 
 TLB Reach = (TLB Size) ✖ (Page Size)
 
@@ -2712,7 +2845,10 @@ EG，按列访问和按行访问
 
 #### File Concept
 
-什么是文件？Contiguous logical address space. A sequence of bits, bytes, lines, or records. The meaning is defined by the creator and user. 连续的逻辑地址空间，一些位、字节、行或记录的序列
+什么是文件？
+
+- Contiguous logical address space. A sequence of bits, bytes, lines, or records. The meaning is defined by the creator and user. 连续的逻辑地址空间，一些位、字节、行或记录的序列
+- 在用户进行输入、输出中，文件是基本单位
 
 文件类型：
 Types: 
@@ -2721,56 +2857,61 @@ Program：Source, Object, Executable
 
 #### File Structure
 
-- None - sequence of words, bytes
+- None 无结构文件 - sequence of words, bytes
 
 - Simple record structure
 
   - Lines 
 
-  - Fixed length
+  - Fixed length 定长记录
 
-  - Variable length 变长
+  - Variable length 变长记录
 
 - Complex Structures
 
-  - Formatted document
+  - Formatted document：顺序文件、索引文件、索引顺序、散列
   - Relocatable load file	
 
 - Can simulate last two with first method by inserting appropriate control characters
+  通过插入适当的控制字符，可以用第一种方法模拟最后两种
 
 - Who decides:
 
   - Operating system 操作系统决定文件
-  - Program
+  - Program 程序
 
-#### Operations, file, file attributes
+#### Operations & file attributes
 
 File is an abstract data type 抽象数据类型
 
-**Create**
+**Create** – 为新文件分配外存空间 + 在目录中创建一个目录项
 
-**Write** – define a pointer
+**Write** – define a pointer，每发生写操作，更新写指针
 
 **Read** – use the same pointer
 	Per-process current file-position pointer
 
 **Reposition within file** (**file seek**) - 文件跳转到特定位置开始读写
 
-**Delete**
+**Delete** - 删除文件对应的目录项和文件控制块（FCB），回收磁盘空间和内存缓冲区
 
 **Truncate** - 怎么截断文件
 
-Open(Fi) – search the directory structure on disk for entry F~i~, and move the content of entry to memory
+**Open**(Fi) – search the directory structure on disk for entry F~i~, and move the content of entry to memory
 
-Close (Fi) – move the content of entry F~i~ in memory to directory structure on disk
+**Close** (Fi) – move the content of entry F~i~ in memory to directory structure on disk
 
 ------------------------
 
-**Name** – only information kept in human-readable form
+文件属性
+
+**Name** – only information kept in human-readable form 文件名唯一
 
 **Identifier** 文件标识符 – unique tag (number) identifies file within file system
 
-**Type** – needed for systems that support different typesLocation – pointer to file location on device
+**Type** 类型 – needed for systems that support different types
+
+**Location** – pointer to file location on device
 
 **Size** – current file size
 
@@ -2778,21 +2919,22 @@ Close (Fi) – move the content of entry F~i~ in memory to directory structure o
 
 **Time, date, and user identification** – data for protection, security, and usage monitoring
 
-Information about files are kept in the <span style="color:#CC0000;">directory structure</span>, which is maintained on the disk
+Information about files are kept in the <span style="color:#CC0000;"> directory structure </span>, which is maintained on the disk
 
 #### Open files
 
 `Open()` **system call** returns a pointer to an entry in the **open-file table**
 
-Per-process table 每个进程的table: maintained by the kernel; unique for each
+Per-process table 每个进程的打开文件表: maintained by the kernel; unique for each
 
 - Current file pointer
 - Access rights
 - …
 
-System-wide table 全局table: maintained by the kernel
+System-wide table 全局 table: maintained by the kernel
 
 - Open count 计数
+- location？文件磁盘位置
 - ...
 
 ----------------------------------
@@ -2801,11 +2943,13 @@ Several pieces of data are needed to manage open files:
 
 **File pointer**:  pointer to last read/write location, per process that has the file open
 
-**File-open count**: counter of number of times a file is open – to allow removal of data from open-file table when last processes closes it
+**File-open count**: counter of number of times a file is open – to allow removal of data from open-file table when last processes closes it 访问计数值
 
-**Disk location of the file**: cache of data access information – system doesn’t need to read it from disk for every operation.
+**Disk location of the file**: cache of data access information – system doesn’t need to read it from disk for every operation. 文件物理地址
 
 **Access rights**: *per-process* access mode information
+
+打开一个文件时，属于内存索引结点而磁盘索引结点没有的内容是 访问计数值
 
 ### Access Methods
 
@@ -2827,7 +2971,7 @@ FCB 文件控制块
 
 A collection of nodes containing (management)  information about all files
 
-目录独立于所有文件之外的文件，有结构、每个entry就是一个FCB，每个FCB对应于一个文件
+目录独立于所有文件之外的文件，有结构、每个 entry 就是一个 FCB，每个 FCB 对应于一个文件
 
 Both the directory structure and the files reside on disk.
 
@@ -2874,7 +3018,7 @@ The directory records information about the files in the system – such as name
 
 <img src="../images/image-20241204154112574.png" alt="image-20241204154112574" style="zoom:50%;" />
 
-从一个目录到一个子目录需要一次磁盘I/O操作
+从一个目录到一个子目录需要一次磁盘 I/O 操作
 
 <img src="../images/image-20241204154200785.png" alt="image-20241204154200785" style="zoom:50%;" />
 
@@ -2891,7 +3035,7 @@ The directory records information about the files in the system – such as name
 
 <img src="../images/image-20241204154716519.png" alt="image-20241204154716519" style="zoom:50%;" />
 
-如果有环的话，会有删除问题，重复找到这个文件，reference count（文件被引用次数）<>0即使没被使用过
+如果有环的话，会有删除问题，重复找到这个文件，reference count（文件被引用次数）<> 0 即使没被使用过
 
 #### Soft (Symbolic) Link vs. Hard Link
 
@@ -2911,23 +3055,23 @@ Hard Link: Both the original file and the hard link point to the **same inode** 
 
 Hard links cannot span file systems; one **cannot** create a hard link for a directory to **prevent the creation of cycles**.
 
-指针指向索引块->文件，依托于FCB/inode，只能在同一个文件系统中被使用，在有引用的时候不能被其他用户删除
+指针指向索引块-> 文件，依托于 FCB/inode，只能在同一个文件系统中被使用，在有引用的时候不能被其他用户删除
 
-都能解决dangling pointer的问题
+都能解决 dangling pointer 的问题
 
-Summary: hard link points to the actual data on the disk, while the symbolic link points to the path of the file.
+**Summary**: hard link points to the actual data on the disk, while the symbolic link points to the path of the file.
 
 ### File-System Mounting
 
-A file system must be **mounted** before it can be accessed 文件系统必须先**挂载**才能访问
+A file system must be **mounted** before it can be accessed 文件系统必须先 **挂载** 才能访问
 
 An un-mounted file system (i.e. Fig. 10-12(b)) is mounted at a **mount point**
 
 <img src="../images/image-20241209104208477.png" alt="image-20241209104208477" style="zoom:50%;" />
 
-> 可以挂载到fred上吗？可以
+> 可以挂载到 fred 上吗？可以
 >
-> 原来fred下的内容（help）可以访问吗？访问不了但还在盘上
+> 原来 fred 下的内容（help）可以访问吗？访问不了但还在盘上
 
 #### Mount Point
 
@@ -2947,19 +3091,15 @@ Network File System (NFS) is a common distributed file-sharing method
 
 ####  Multiple Users
 
-**User ID**s identify users, allowing permissions and protections to be per-user
+**User ID** s identify users, allowing permissions and protections to be per-user
 
-**Group ID**s allow users to be in groups, permitting group access rights
+**Group ID** s allow users to be in groups, permitting group access rights
 
 #### Remote File Systems
 
 
 
 #### Consistency Semantics
-
-
-
-
 
 
 
@@ -2978,15 +3118,15 @@ Mode of access:  read, write, execute
 
 权限
 
-<img src="../images/image-20241209105120787.png" alt="image-20241209105120787" style="zoom:50%;" />
+<img src="../images/image-20241209105120787.png" alt="image-20241209105120787" style="zoom: 33%;" />
 
-> d指目录
+> d 指目录
 >
-> pbg指hard link的数量
+> pbg 指 hard link 的数量
 
 
 
-## File system Implementation
+## 文件系统实现 File system Implementation
 
 > [!IMPORTANT]
 >
@@ -3005,6 +3145,10 @@ File system resides on secondary storage (disks)
 
 File system organized into **layers**
 
+文件的物理结构：连续分配链接分配
+
+物理文件的组织方式是由操作系统确定的
+
 #### Layered File System 分层
 
 <img src="../images/image-20241209111207161.png" alt="image-20241209111207161" style="zoom:50%;" />
@@ -3013,25 +3157,29 @@ File system organized into **layers**
 
 Disk structures
 
-- Boot control block (per volume)启动块
+- Boot control block (per volume) 启动卷
 - Volume control block per volume (**superblock** in Unix)
-- Directory structure per file system
-- Per-file FCB (inode in Unix)
+- Directory structure per file system 目录
+- Per-file FCB (**inode** in Unix) 文件控制块
 
 In-memory structures
 
-- In-memory mount table about each mounted volume 内存安装表
+- In-memory mount table about each mounted volume 关于每个已安装卷的内存安装表
 - Directory cache
 - System-wide open-file table
 - Per-process open-file table
 
-
-
 #### FCB
 
-File control block – storage structure consisting of information about a file
+**File control block** – storage structure consisting of information about a file
 
-ACL：access control list
+FCB 存放控制文件需要的各种信息的数据结构，以实现按名存取
+
+FCB 与文件一一对应，一个 FCB 就是一个文件目录项
+
+FCB 包含：基本信息、存取控制信息、使用信息
+
+ACL：access control list 访问控制表
 
 <img src="../images/image-20241209112133801.png" alt="image-20241209112133801" style="zoom:50%;" />
 
@@ -3063,24 +3211,361 @@ Defines a network-wide unique structure called **vnode**.
 
 <img src="../images/image-20241209113303154.png" alt="image-20241209113303154" style="zoom: 33%;" />
 
-The four primary object types of VFS:
+The four primary object types of VFS 物理结构:
 
-- **superblock object**: a specific mounted filesystem, corresponding to (but not equal) the superblock in the disk structure
-- **inode object**: a specific file, corresponding to (but not equal) FCB in the disk structure
-- dentry object: an individual directory entry
-- **file object**: an open file as associated with a process, existing as long as the file is opened
+- **superblock object** 超级块: a specific mounted filesystem, corresponding to (but not equal) the superblock in the disk structure
+- **inode object** 索引节点: a specific file, corresponding to (but not equal) FCB in the disk structure
+- **dentry object** 目录: an individual directory entry
+- **file object** 文件: an open file as associated with a process, existing as long as the file is opened
 
 ### Directory Implementation
 
+Linear list of file names with pointer to the data blocks.
 
+- simple to program
+- time-consuming to executeHash 
+
+Table – linear list with hash data structure.
+
+- decreases directory search time
+- collisions – situations where two file names hash to the same locationfixed size
+- can use chained-overflow hash table
+- Or rehashing to another larger hash table
 
 ### Allocation Methods
 
+#### Contiguous allocation 连续分配
 
+- Each file occupies a set of contiguous blocks on the disk
+- Simple – only starting location (block #) and length (number of blocks) are required
+- Random access supportedWasteful of space (dynamic storage-allocation problem)
+- Files cannot grow Mapping from logical to physical：<img src="../images/image-20241211144254975.png" alt="image-20241211144254975" style="zoom:33%;" />
+
+Block to be accessed = Q + start_no
+Displacement into block = R
+
+缺点：会有碎片，不方便文件扩展
+
+----------------------------------
+
+改进：**Extent-Based Systems**
+
+Many newer file systems (I.e. Veritas File System) use a modified contiguous allocation scheme
+
+Extent-based file systems allocate disk blocks in **extents**
+
+An extent is a contiguous block of disks
+
+- Extents are allocated for file allocation
+- A file consists of one or more extents.
+
+Extend 太多，浪费
+
+#### Linked allocation 链接分配
+
+##### 隐式链接
+
+Each file is a linked list of disk blocks: blocks may be scattered anywhere on the disk.
+
+block 最前面有个 pointer
+
+<img src="../images/image-20241211145704443.png" alt="image-20241211145704443" style="zoom:33%;" />
+
+特点
+
+- Simple – need only starting address
+- Free-space management system – no waste of space 
+- **No random access, poor reliability** 不支持随机访问
+- Mapping
+
+##### 显式链接
+
+改进：文件分配表 File-Allocation Table（FAT），以空间换时间
+
+好处：灵活，快，提高检索速度、减少访问磁盘的次数
+
+坏处：要在内存中存 FAT，占用一定空间
+
+#### Indexed allocation 索引分配
+
+Brings all pointers together into the index block，index block 存 pointer 信息
+
+<img src="../images/image-20241211145954492.png" alt="image-20241211145954492" style="zoom:33%;" />
+
+- Need index table (analogous to *page table*)
+
+- Random access
+
+- Dynamic access without external fragmentation, but have overhead of index block.
+
+- When mapping from logical to physical in a file of maximum size of 256K words and block size of 512 words.  We need only 1 block for index table.
+
+  <img src="../images/image-20241211150401806.png" alt="image-20241211150401806" style="zoom:33%;" />
+
+Mapping
+
+When mapping from logical to physical in a file of unbounded length (block size of 512 words). – more pointers are needed
+
+##### Linked scheme
+
+**Linked scheme** – Link blocks of index table (no limit on size). 链式
+
+<img src="../images/image-20241211150753298.png" alt="image-20241211150753298" style="zoom: 33%;" />
+
+<img src="../images/image-20241211150625283.png" alt="image-20241211150625283" style="zoom:50%;" />
+
+-------------------------------------
+
+##### Two-level index
+
+**Two-level index** (maximum file size is 512^3^)
+
+<img src="../images/image-20241211151259004.png" alt="image-20241211151259004" style="zoom:33%;" />
+
+<img src="../images/image-20241211151324165.png" alt="image-20241211151324165" style="zoom:50%;" />
+
+|                                          | **Two-level** **Index**                                      | **Linked** **Scheme**                                        |
+| ---------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **Scalability**                          | Supports very large files (up to 512³ words)                 | Supports dynamic file growth, but chaining may limit scalability |
+| **Random** **Access** **Efficiency**     | High: Quick locates data blocks using two-level index        | Low: Requires sequential traversal of the linked list to find the target block |
+| **Sequential** **Access** **Efficiency** | Low: Requires multiple index lookups                         | High: Linked blocks are directly connected                   |
+| **Storage** **Overhead**                 | High: Index tables consume significant space, especially for small files | Low: Only requires additional space for pointers in each block |
+| **Implementation** **Complexity**        | High: Requires management of two-level index table           | Low: Easier to implement with simple linked structure        |
+| **Reliability**                          | High: Index table corruption affects only part of the file   | Low: A broken link can make subsequent blocks inaccessible   |
+| **Disk** **Fragmentation**               | None: Blocks don’t need to be stored contiguously            | Present: Linked structure can lead to scattered data blocks  |
+| **Best** **Use** **Case**                | Suitable for random access and very large files (e.g., databases, large file systems) | Suitable for sequential access and small to medium-sized files (e.g., log files, streaming data) |
+
+##### Combined Scheme
+
+Combined Scheme:  UNIX (4K bytes per block)
+
+<img src="../images/image-20241211151641943.png" alt="image-20241211151641943" style="zoom:33%;" />
+
+#### Summary
+
+![image-20241211151709367](../images/image-20241211151709367.png)
 
 ### Free-Space Management
 
+#### Bit Map
 
+当前空闲的磁盘块记录在 super block 中
+
+<img src="../images/image-20241216100958836.png" alt="image-20241216100958836" style="zoom:50%;" />
+
+- Bit map requires extra space
+- Easy to get contiguous files 
+
+Example:		
+
+block size = 212 bytes		
+disk size = 230 bytes (1 gigabyte)		
+n = 230/212 = 218 bits (or 32K bytes)
+
+#### Linked list
+
+- Linked list (free list) – see figure
+
+  - Cannot get contiguous space easily
+
+  - But basically can work (FAT)
+
+  - No waste of space
+
+- Grouping 分组– a modification of the Linked List
+  - Addresses of the n free blocks are stored in the first block. 
+  - The first n-1 blocks are actually free. 
+  - The last block contains addresses of another n free blocks
+- Counting 计数
+  - Address of the first free block and number n contiguous blocks 
+
+#### Protect
+
+Need to protect:
+
+- Pointer to free list
+- Bit map
+  - Must be kept on disk
+  - The copy in memory and disk may differ
+  - Cannot allow for block [i] to have a situation where bit [i] = 1 in memory and bit [i] = 0 on disk
+
+Solution:
+
+- Set bit [i] = 1 in disk（1 代表空闲）
+- deallocate block [i]
+- Set bit [i] = 1 in memory
+
+先更新磁盘再更新内存，保持数据一致性，避免 crash
 
 ### Efficiency and Performance
 
+Efficiency dependent on:
+
+- **disk allocation** and **directory** algorithms
+- types of data kept in file’s directory entry (for example “last write date” is recorded in directory)
+- Generally, every data item has to be considered for its effect.
+
+Performance
+
+- **disk cache** – separate section of main memory for frequently used blocks
+- **free-behind and read-ahead** – techniques to optimize sequential access
+- improve PC performance by dedicating section of memory as virtual disk, or RAM disk
+
+#### Page Cache
+
+A page cache caches **pages** rather than disk blocks using <span style="color:#CC0000;"> virtual memory </span> techniques
+
+Memory-mapped I/O uses a page cache
+
+Routine I/O through the file system uses the buffer (disk) cache
+
+This leads to the following figure
+
+<img src="../images/image-20241216102559255.png" alt="image-20241216102559255" style="zoom:33%;" />
+
+#### Unified Buffer Cache
+
+A unified buffer cache uses the same page cache to cache both **memory-mapped** pages and ordinary **file system I/O**
+
+Avoids double caching
+
+用一个统一的 buffer cache
+
+<img src="../images/image-20241216102902616.png" alt="image-20241216102902616" style="zoom:33%;" />
+
+## Mass-Storage Systems
+
+### Overview of Mass Storage Structure
+
+#### Magnetic disks
+
+Magnetic disks provide bulk of secondary storage of modern computers
+
+Drives rotate at 60 to 200 times per secondTransfer rate is rate at which data flow between drive and computer
+
+**Positioning time** (random-access time) is time to move disk arm to desired cylinder (seek time) and time for desired sector to rotate under the disk head (rotational latency)
+
+Head crash results from disk head making contact with the disk surfaceThat’s bad
+
+每秒转速 r，实际上
+
+半径小（内圈）的和半径大的（外圈）存的数据大小一样
+
+
+
+Disks can be removable
+
+Drive attached to computer via **I/O bus**
+
+Buses vary, including EIDE, ATA, SATA, USB, Fiber Channel, SCSIHost controller in computer uses bus to talk to disk controller built into drive or storage array
+
+<img src="../images/image-20241216104144039.png" alt="image-20241216104144039" style="zoom:33%;" />
+
+#### Nonvolatile Memory Devices
+
+SSD uses NVM devices
+
+Magnetic tape
+
+### Disk
+
+#### Disk Structure
+
+Disk drives are addressed as large *1-dimensional arrays of logical blocks*, where the logical block is the smallest unit of transfer. 
+
+#### Disk Attachment
+
+磁盘接口
+
+Network-Attached Storage
+
+#### Accessing a Disk Page
+
+<img src="../images/image-20241216110137892.png" alt="image-20241216110137892" style="zoom:50%;" />
+
+transfer time 和 rotational delay 和磁盘转速有关，转速越高，开销越小
+
+- Average rotational latency (half a rotation) 平均1/2个圈的延迟
+
+减少 seek time 以提高效率
+
+#### Disk Scheduling
+
+Access time has two major components
+
+- Seek time is the time for the disk are to move the heads to the cylinder containing the desired sector.
+- Rotational latency is the additional time waiting for the disk to rotate the desired sector to the disk head.
+
+Minimize seek time
+
+Metric: Seek time ≈ seek distance
+
+
+
+Several algorithms exist to schedule the servicing of disk I/O requests. 
+
+We illustrate them with a request queue (0-199). 最外侧0，最里层199
+
+Distance = 98-45 =53 两个数相减就行
+
+##### FCFS
+
+会出现zig zag
+
+SSTF：may cause starvation of some requests.
+
+##### SCAN
+
+The disk arm starts at one end of the disk, and moves toward the other end, servicing requests until it gets to the other end of the disk, where the head movement is reversed and servicing continues.
+
+Sometimes called the elevator algorithm.
+
+##### C-SCAN
+
+Provides a more uniform wait time than SCAN.
+
+The head moves from one end of the disk to the other, servicing requests as it goes.  When it reaches the other end, however, it immediately returns to the beginning of the disk, without servicing any requests on the return trip.
+
+Treats the cylinders as a circular list that wraps around from the last cylinder to the first one.
+
+##### C - Look
+
+
+
+> Question: What scheduling algorithm is good for SSD? 
+>
+> - FCFS
+
+
+
+#### Disk Management
+
+**Low-level formatting**, or physical formatting — Dividing a disk into sectors that the disk controller can read and write.
+
+To use a disk to hold files, the operating system still needs to record its own data structures on the disk.
+
+- Partition the disk into one or more groups of cylinders.
+- Logical formatting or “making a file system”.
+
+Boot block initializes system.
+
+- The *bootstrap* is stored in ROM.
+- Bootstrap loader program.
+
+Methods such as sector sparing used to handle bad blocks.
+
+### Swap-Space Management
+
+Swap-space — Virtual memory uses disk space as an extension of main memory.
+
+Swap-space can be carved out of the normal file system,or, more commonly, it can be in a separate disk partition. 可以是文件也可以是分区
+
+<img src="../images/image-20241218151850790.png" alt="image-20241218151850790" style="zoom:33%;" />
+
+
+
+
+
+### RAID Structure
+
+### Stable-Storage Implementation
