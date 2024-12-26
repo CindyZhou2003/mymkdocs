@@ -7,9 +7,28 @@
 > [!NOTE]
 >
 > LAB 0-7（5+15+15+15+20+20+10+10 = 110）
+>
+> 考试：40选择+4填空+3问答
+>
+> 3张A4纸（可正反打印）
+
 
 ## 概述 Overview
 
+> [!IMPORTANT]
+>
+> 第一章
+>
+> - kernel
+>- 中断
+> - 同步异步I/O
+>- 设备status table
+> - storage hierarchy
+>- cache一致性
+> - os structure: multiprogramming(系统视角 cpu utilization 并发), multitasking(用户角度 time-sharing 现代os使用)
+> - os操作：用户模式、内核模式
+> - 进程、内存、储存管理
+> 
 ### 操作系统功能&定义
 
 从计算机角度，**操作系统** 是个程序，管理电脑硬件
@@ -252,8 +271,21 @@ I/O Subsystem 子系统
 - Performance 性能
 - Range of uses
 
+
 ## 结构 Operating-System Structures
 
+> [!IMPORTANT]
+>
+> 第二章
+>
+> - os 服务
+> - 系统调用 system call：api
+> - os design & implementation
+> - os structures
+>   - layed
+>   - monolithic
+>   - microkernel 微内核 优缺点(overhead)
+>   
 ### 操作系统服务
 
 操作系统提供的服务有：
@@ -489,7 +521,20 @@ Uk：所有东西都打包，只能允许一个 app 运行
 
 - 操作系统的引导程序位于硬盘中
 
+
+
 ## 进程 Processes
+
+> [!IMPORTANT]
+>
+> 第三章
+>
+> - 进程状态 status
+> - 进程控制块PCB
+> - 上下文切换
+> - 进程调度（job queue: 所有process, ready queue: 为cpu服务, device queue）
+> - 生产者-消费者模型
+>   - unbounded buffer, bounded buffer（有限buffer size）
 
 ### 进程概念
 
@@ -640,11 +685,30 @@ Processes can be described as either:
 
 当 CPU 切换到另一个进程时，系统必须保存旧进程的状态，并为新进程加载保存的状态
 
-上下文切换的时间是开销 overhead；系统在切换时没有任何有用的工作，通常需要几毫秒
+上下文切换的流程如下：
+1）挂起一个进程，将 CPU 上下文保存到 PCB ，包括程序计数器和其他寄存器。
+2）将进程的 PCB 移入相应的队列，如就绪、在某事件阻塞等队列。
+3）选择另一个进程执行，并更新其 PCB 。
+4）恢复新进程的 CPU 上下文。
+5）跳转到新进程 PCB 中的程序计数器所指向的位置执行。
+
+上下文切换的消耗：
+
+上下文切换通常是计算密集型的，即它需要相当可观的 CPU 时间，在每秒几十上百次的切换中，每次切换都需要纳秒量级的时间，所以上下文切换对系统来说意味着消耗大量的 CPU 时间。
 
 时间取决于硬件支持；在 SPARC 架构中，提供了寄存器组
 
 - 上下文切换时 PCB 不必记录进程优先级，优先级是内核 kernel 判断的
+- 上下文切换只能发生在内核态
+- 进程上下文采用进程 PCB 表示，包括 CPU 寄存器的值、进程状态和内存管理信息等。
+
+> [!NOTE]
+>
+> 调度是决策行为，切换是执行行为
+>
+> 先有资源调度，再有进程切换
+
+
 
 ### 进程操作
 
@@ -718,7 +782,7 @@ OS 不是真的 copy，显式 copy
 
 <img src="../images/image-20240930110501365.png" alt="image-20240930110501365" style="zoom:40%;" />
 
-主要目的是在生产者线程和消费者线程之间进行数据的 **同步** 操作
+主要目的是 解决 生产者线程和消费者线程之间进行数据的 **同步** 操作
 
 ```c
 //Shared data
@@ -808,7 +872,18 @@ send 是一个系统调用
 
 #### Sockets
 
+
+
 ## 线程 Threads
+
+> [!IMPORTANT]
+>
+> 第四章
+>
+> - 线程概念
+> - 线程资源：私有数据（寄存器和栈）
+> - 用户、内核线程
+> - multi-threading models 线程模型3种
 
 ### Overview
 
@@ -925,7 +1000,7 @@ Similar to M: M, except that it allows a user thread to be bound to kernel threa
 
 ### Threading Issues
 
-Semantics 语义 of fork() and exec(）
+Semantics 语义 of `fork()` and `exec(）`
 
 > Does fork() duplicate only the calling thread or all threads?
 >
@@ -968,9 +1043,19 @@ Upcalls are handled by the thread library with an **upcall handler**.
 
 This communication allows an application to maintain the correct number of kernel threads
 
-When an application thread is about to block, an upcall is triggered.
+When an application thread is about to block, an upcall is triggered. 
+
+
 
 ## 调度 CPU Scheduling
+
+> [!IMPORTANT]
+>
+> 第五章
+>
+> - 调度标准 5个
+> - 抢占、非抢占
+> - 调度算法 6个
 
 ### Basic concepts
 
@@ -994,11 +1079,11 @@ CPU-I/O Burst Cycle：Process execution consists of a cycle of CPU execution and
 
 #### CPU Scheduler
 
-CPU可能进行调度的情况（4种）
+CPU 可能进行调度的情况（4 种）
 
 <img src="../images/image-20241014100627801.png" alt="image-20241014100627801" style="zoom: 67%;" />
 
-nonpreemptive 非抢占式调度 1 & 4
+non-preemptive 非抢占式调度 1 & 4
 
 preemptive ✔️ 2 & 3
 
@@ -1017,15 +1102,15 @@ dispacher latency：P1 停止运行到 P1 运行
 
 ### scheduling criteria
 
-CPU utilization CPU 利用率：**CPU 使用率 = (1 - 空闲态运行时间/总运行时间) \* 100%**
+1. CPU utilization CPU 利用率：**CPU 使用率 = (1 - 空闲态运行时间/总运行时间) \* 100%**
 
-Throughtput 吞吐率：**进程数/总执行时间**
+2. Throughtput 吞吐率：**进程数/总执行时间**
 
-Turnaround time 周转时间 进程提交到结束
+3. Turnaround time 周转时间  = 进程完成时间 - 进程提交时间（进程提交到结束）
 
-waiting time 等待时间
+4. waiting time 等待时间
 
-response time 响应时间
+5. response time 响应时间
 
 <img src="../images/image-20241014100514354.png" alt="image-20241014100514354" style="zoom:50%;" />
 
@@ -1063,7 +1148,7 @@ response time 响应时间
   - preemptive – if a new process arrives with CPU burst length less than remaining time of current executing process, preempt. This scheme is known as the **Shortest-Remaining-TimeFirst (SRTF)** 最短剩余时间调度算法
 - SJF is **optimal** – gives **minimum average waiting time** for a given set of processes
 - Which is better? Preemptive? Nonpreemptive? 不确定，要根据到达时间和 cpu burst 确定
-- Starvation 饥饿问题，优先级低的进程一直无法运行，短作业都会发生
+- **Starvation 饥饿问题**，优先级低的进程一直无法运行，短作业都会发生
 - Not good for long process 不适合长进程，因为优先调度 cpu burst 最短的进程
 
 ##### nonpreemptive
@@ -1086,7 +1171,7 @@ The CPU is allocated to the process with the highest priority (smallest integer 
 
 **Static Priority**: determine when processes is created; do not change 静态优先
 
-Problem：**Starvation** – low priority processes may never execute
+Problem：**Starvation 饥饿** – low priority processes may never execute
 
 Solution：**Aging** （老化）– as time progresses increase the priority of the process——**Dynamic Priority** 提高优先级
 
@@ -1124,7 +1209,7 @@ Larger Response Ratio, higher priority
 时间片轮转算法
 
 - Origin from signature method
-- Each process gets a small unit of CPU time (time quantum), usually 10-100 milliseconds. After this time has elapsed, the process is preempted and added to the end of the ready queue. 提高系统交互性
+- Each process gets a small unit of CPU time (time quantum), usually 10-100 milliseconds. After this time has elapsed, the process is preempted and added to the end of the ready queue. 提高系统交互性（人机交互）
 - Application: Time-sharing system, Multi-tasking system
 - 当前进程的时间片用完后，该进程的状态由执行态变成就绪态
 
@@ -1214,6 +1299,8 @@ Global scheduling 内核级
 >
 > 实时系统
 
+![6be3c0221860c7866993492f536cac5](../images/6be3c0221860c7866993492f536cac5.jpg)
+
 ### Q
 
 <img src="../images/image-20241021100841358.png" alt="image-20241021100841358" style="zoom: 33%;" />
@@ -1226,25 +1313,27 @@ Global scheduling 内核级
 
 ## 进程同步 Process synchronization
 
-> [!NOTE]
+> [!IMPORTANT]
 >
-> 基本概念：syn，race，critical，four requirements（忙则等待、、、）
+> 基本概念：syn，race，critical section，four requirements（互斥/忙则等待、空闲让进、优先等待、）
 >
 > 软件实现方法：单标志，双标志、、、
 >
-> 硬件实现方法：原理、关中断、Test、Swap、CAS、mutex lock
+> 硬件实现方法：原理、关中断、Test and Set、Swap、CAS、mutex lock
 >
-> 信号量机制：信号量基本概念（形式、类型、用法、实现、缺点）三个经典问题（有界缓冲区、读写者、哲学家）
+> 信号量机制：信号量基本概念（形式、类型、用法、实现、缺点）、三个经典问题（有界缓冲区、读写者、哲学家）
+>
+> - 非忙等/阻塞信号量
 >
 > 管程：基本概念（形式、特点、条件变量）、应用
 
 ### 背景 background
 
-共享数据的并发访问可能导致数据不一致性
+共享数据的并发访问可能导致数据不一致性；并发进程是异步的，所以需要同步
 
-Producer-consumer
+Producer-consumer 生产者消费者问题：解决多个进程间的同步和异步问题
 
-<img src="../images/image-20241021105641372.png" alt="image-20241021105641372" style="zoom:50%;" /> <img src="../images/image-20241021110813871.png" alt="image-20241021110813871" style="zoom:50%;" />
+<img src="../images/image-20241021105641372.png" alt="image-20241021105641372" style="zoom:50%;" /> <img src="../images/image-20241021110813871.png" alt="image-20241021110813871" style="zoom: 67%;" />
 
 count++和 count--两步有可能出错
 
@@ -1326,7 +1415,7 @@ i 和 j 交替执行
 <img src="../images/image-20241023145544929.png" alt="image-20241023145544929" style="zoom:50%;" />
 
 - 满足 Mutual Exclusion
-- 不满足 Progress（存在 CPU 调度的一种情况，两个标志都为 TRUE 后一直循环下去）
+- 不满足 Progress，违背空闲让进准则，存在 CPU 调度的一种情况，两个标志都为 TRUE 后一直循环下去）
 - 如果没有死循环是 bounded waiting，但可能有所以总体不是
 
 ##### 双标志先检查法
@@ -1339,6 +1428,7 @@ i 和 j 交替执行
 
 - **不满足 Mutual Exclusion**（存在 CPU 调度的一种情况，两个标志都为 TRUE，并进入临界区
 - 满足 Progres
+- 优点：不用交替进入，可连续使用
 
 ##### Peterson’s Solution
 
@@ -1372,8 +1462,9 @@ while (true) {
 }
 ```
 
-- 满足 mutual exception 和 progress，不会
+- 满足 mutual exception 和 progress
 - 满足 bounded waiting，bound 是 1
+- 但还是不满足让权等待
 
 > [!CAUTION]
 >
@@ -1692,6 +1783,8 @@ What if one must choose busy waiting?
 
 ###### Readers and Writers Problem
 
+**读者写者问题**
+
 A data set is shared among a number of concurrent processes
 
 - Readers – only read the data set; they do not perform any updates
@@ -1715,7 +1808,7 @@ Shared Data
 
 ###### Dining-Philosophers Problem
 
-哲学家就餐问题
+**哲学家就餐问题**
 
 Shared data 
 
@@ -1727,7 +1820,7 @@ Shared data
 
 如果只设置一个筷子的信号量，设置为 5，有什么问题？一个筷子可能被拿两次，违反互斥性
 
-#### 管程方法
+#### 管程方法 monitor
 
 实现互斥和同步
 
@@ -1735,7 +1828,7 @@ Shared data
 
 A high-level abstraction that provides a convenient and effective mechanism for process synchronization. 
 
-Only one process may be active within the monitor at a time. (hint: the other processes may be sleeping within the monitor)
+Only **one** process may be active within the monitor at a time. (hint: the other processes may be sleeping within the monitor)
 
 ```c
 //管程变量只有内部函数可以访问
@@ -1752,7 +1845,9 @@ monitor monitor-name
 
 <img src="../images/image-20241104104332459.png" alt="image-20241104104332459" style="zoom:33%;" /> 函数挂起
 
-x.wait()阻塞该进程并将他插入到 x 序列
+`x.wait()` 作用：阻塞该进程并将他插入到 x 序列
+
+管程中的 signal 操作和信号量的 V 操作不同：V 一定会改变信号量的值 S = S+1，但是 signal 是针对某个条件变量的，若不存在因该条件而阻塞的进程，则 signal 不会产生任何影响
 
 ##### 管程方法解决哲学家就餐问题
 
@@ -1822,17 +1917,15 @@ Using `pthread_cond_wait()` & `pthread_cond_signal()`
 > 基本概念：死锁概念，4 个必要条件，资源分配图，cycle &deadlock
 > solutions：3 种策略
 > 死锁预防（如何破坏四个必要条件)
-> 死锁避免（安全状态，安全状态与死锁，单实例算法，多实例算法——银行家算法）
+> 死锁避免（安全状态，安全状态与死锁，单实例算法，多实例算法——**银行家算法**）
 > 检测（单实例算法——wait for graph，多实例算法)
 > 恢复
 
-
-
 ### The Deadlock Problem
 
-**死锁**：多个进程因竞争共享资源而造成相互等待的一种僵局，使得各个进程都被阻塞，若无外
+**死锁**：多个进程因竞争共享资源而造成相互等待的一种僵局，使得各个进程都被阻塞，若无外力作用，这些进程都将永远不能再向前推进
 
-力作用，这些进程都将永远不能再向前推进
+发生死锁的进程必定处于阻塞态
 
 #### 产生死锁的四个必要条件
 
@@ -1927,7 +2020,7 @@ Ignore the problem and pretend that deadlocks never occur in the system. 忽略�
 
 **Multiple** instances of a resource type. Use the banker’s algorithm
 
-###### Resource-Allocation Graph Algorithm 资源分配图算法
+##### Resource-Allocation Graph Algorithm 资源分配图算法
 
 Claim edge Pi -> Rj indicated that process Pi may request resource Rj
 
@@ -1935,7 +2028,7 @@ Claim edge Pi -> Rj indicated that process Pi may request resource Rj
 
 ？
 
-###### Banker’s Algorithm 银行家算法:fire:
+##### Banker’s Algorithm 银行家算法:fire:
 
 <img src="../images/image-20241111110516636.png" alt="image-20241111110516636" style="zoom:33%;" />
 
@@ -1948,6 +2041,8 @@ Example
 <img src="../images/image-20241111111754885.png" alt="image-20241111111754885" style="zoom:33%;" />
 
 <img src="../images/image-20241111112228808.png" alt="image-20241111112228808" style="zoom:33%;" />
+
+- 实际上很多操作系统都不是使用银行家算法进行死锁避免
 
 ##### Safety Algorithm
 
@@ -1970,7 +2065,7 @@ Example
 
 时间复杂度：O(m × n^2^)
 
-###### Completely Reducible Graph 可完全化简图
+##### Completely Reducible Graph 可完全化简图
 
 能消去图中所有边，能则称为可完全化简图
 
@@ -1994,23 +2089,40 @@ Example
 
 #### Resource Preemption
 
- Selecting a victim – minimize cost.
- Rollback – return to some safe state, restart process for that state.
- Starvation – same process may always be picked as victim, include number of rollback in cost factor
+Selecting a victim – minimize cost.
+Rollback – return to some safe state, restart process for that state.
+Starvation – same process may always be picked as victim, include number of rollback in cost factor
 
 ## 主存管理 Memory Management
 
 > [!IMPORTANT]
 >
-> 内存管理基本概念：源程序馋鬼处理流程、链接、地址绑定、逻辑地址与物理地址；内存保护
+> 内存管理基本概念：
+>
+> - 源程序处理流程、链接
+> - 地址绑定binding
+>   - 编译、装入、执行时刻
+> - 逻辑地址与物理地址
+>   - MMU
+>
+> variable-partition scheme
+>
+> - 内存分配算法 FF best worst
+> - 外部、内部碎片
+>
+> 内存保护
 >
 > 连续分配管理方式
 >
-> 分页管理方式
+> Paging分页管理方式
+>
+> - page table、TLB、分级页表、索引页表
+> - TLB effective access time
 >
 > 分段管理方式、段页管理
-
-
+>
+> - segment table
+> - 分配方式更灵活
 
 ### Background
 
@@ -2288,7 +2400,7 @@ Hit ratio – percentage of times that a page number is found in the associative
 
 Hit ratio = $\alpha$​
 
-例子：<img src="../images/image-20241120150846991.png" alt="image-20241120150846991" style="zoom:50%;" />
+例子：<img src="../images/image-20241120150846991.png" alt="image-20241120150846991" style="zoom:50%;" />![image-20241223171556159](../images/image-20241223171556159.png)
 
 #### Memory Protection in Paged Scheme
 
@@ -2394,13 +2506,21 @@ Global Descriptor Table contains entries of the system (OS).
 
 > [!IMPORTANT]
 >
-> 虚拟内存基本概念：定义、好处、
+> 虚拟内存基本概念：定义、好处
 >
-> 请求页式管理：好处、逻辑地址转换、缺页中断处理过程、缺页有效访问时间、页面替换、页面替换算法（FIFO OPTIMAL LRU CLOCK ENAHNCED CLOCK）、帧的分配和置换策略、抖动、工作集
+> - 按需分页、分段
+>
+> 请求页式管理：
+>
+> - 好处
+> - 逻辑地址转换
+> - page fault 缺页中断处理
+>   - 缺页有效访问时间
+> - 页面替换
+>   - 页面替换算法（FIFO OPTIMAL LRU CLOCK ENAHNCED CLOCK）
+> - 帧的分配和置换策略、抖动、工作集
 >
 > kernel 内存分配
-
-
 
 ### Background
 
@@ -2413,9 +2533,9 @@ Global Descriptor Table contains entries of the system (OS).
 
 Virtual memory can be implemented via 虚拟内存的实现：
 
-- Demand paging 请求式分页
+- **Demand paging 请求式分页**
 
-- Demand segmentation 请求式分段
+- **Demand segmentation 请求式分段**
 
 ----------------------------------
 
@@ -2477,7 +2597,7 @@ With each page table entry a valid–invalid bit is associated (**v**: in-memory
 * Initially valid–invalid bit is set to i on all entries
 * During address translation, if valid–invalid bit in page table entry is **i** => **page fault** (a trap to the OS 缺页中断)
 
-<img src="../images/image-20241125112104401.png" alt="image-20241125112104401" style="zoom:50%;" />
+<img src="../images/image-20241125112104401.png" alt="image-20241125112104401" style="zoom: 33%;" />
 
 #### Page Fault
 
@@ -2538,7 +2658,7 @@ EAT = (1 – p) x memory access + p (page fault overhead + swap page out + swap 
 
 实际上不是等到没有空闲帧的时候进行替换，操作系统会提前做
 
-<img src="../images/image-20241127143706318.png" alt="image-20241127143706318" style="zoom:50%;" />
+<img src="../images/image-20241127143706318.png" alt="image-20241127143706318" style="zoom: 33%;" />
 
 #### Page Replacement Algorithms
 
@@ -2556,7 +2676,7 @@ Want lowest page-fault rate 最低缺页率
 
 Belady
 
-<img src="../images/image-20241127145037198.png" alt="image-20241127145037198" style="zoom:50%;" />
+<img src="../images/image-20241127145037198.png" alt="image-20241127145037198" style="zoom: 40%;" />
 
 ##### Optimal Algorithm
 
@@ -2564,13 +2684,13 @@ Belady
 
 替换将来最长不使用的 page Replace page that will not be used for longest period of time
 
-<img src="../images/image-20241127145836832.png" alt="image-20241127145836832" style="zoom:50%;" />
+<img src="../images/image-20241127145836832.png" alt="image-20241127145836832" style="zoom:40%;" />
 
 ##### Least Recently Used (LRU) Algorithm
 
 **最近最久未使用** 置换算法：选择内存中最久没有引用的页面被置换。这是局部性原理的合理近似，性能接近最佳算法。但由于需要记录页面使用时间，硬件开销太大。
 
-<img src="../images/image-20241127145959957.png" alt="image-20241127145959957" style="zoom:50%;" />
+<img src="../images/image-20241127145959957.png" alt="image-20241127145959957" style="zoom:40%;" />
 
 ##### LRU Algorithm
 
@@ -3133,6 +3253,12 @@ Mode of access:  read, write, execute
 > To describe the **details** of implementing local file systems and directory structures
 >
 > To discuss **block allocation** and **free-block algorithms** and trade-offs
+>
+> 磁盘结构
+>
+> 内存结构
+>
+> 
 
 ### File-System Structure
 
@@ -3155,14 +3281,14 @@ File system organized into **layers**
 
 #### Data Structures Used to Implement FS
 
-Disk structures
+**Disk structures**
 
 - Boot control block (per volume) 启动卷
 - Volume control block per volume (**superblock** in Unix)
 - Directory structure per file system 目录
 - Per-file FCB (**inode** in Unix) 文件控制块
 
-In-memory structures
+**In-memory structures**
 
 - In-memory mount table about each mounted volume 关于每个已安装卷的内存安装表
 - Directory cache
@@ -3435,6 +3561,18 @@ Avoids double caching
 
 ## Mass-Storage Systems
 
+> [!IMPORTANT]
+>
+> Time to access a disk block
+>
+> - seek time, rotational delay, transfer time
+>
+> 磁盘调度算法
+>
+> RAID concept
+
+
+
 ### Overview of Mass Storage Structure
 
 #### Magnetic disks
@@ -3485,9 +3623,9 @@ Network-Attached Storage
 
 transfer time 和 rotational delay 和磁盘转速有关，转速越高，开销越小
 
-- Average rotational latency (half a rotation) 平均1/2个圈的延迟
+- Average rotational latency (half a rotation) 平均 1/2 个圈的延迟
 
-减少 seek time 以提高效率
+- 减少 seek time 以提高效率
 
 #### Disk Scheduling
 
@@ -3500,17 +3638,15 @@ Minimize seek time
 
 Metric: Seek time ≈ seek distance
 
-
-
 Several algorithms exist to schedule the servicing of disk I/O requests. 
 
-We illustrate them with a request queue (0-199). 最外侧0，最里层199
+We illustrate them with a request queue (0-199). 最外侧 0，最里层 199
 
-Distance = 98-45 =53 两个数相减就行
+Distance = 98-45 = 53 两个数相减就行
 
 ##### FCFS
 
-会出现zig zag
+会出现 zig zag
 
 SSTF：may cause starvation of some requests.
 
@@ -3528,7 +3664,7 @@ The head moves from one end of the disk to the other, servicing requests as it g
 
 Treats the cylinders as a circular list that wraps around from the last cylinder to the first one.
 
-##### C - Look
+##### C-Look
 
 
 
@@ -3558,14 +3694,248 @@ Methods such as sector sparing used to handle bad blocks.
 
 Swap-space — Virtual memory uses disk space as an extension of main memory.
 
-Swap-space can be carved out of the normal file system,or, more commonly, it can be in a separate disk partition. 可以是文件也可以是分区
+Swap-space can be carved out of the normal file system, or, more commonly, it can be in a separate disk partition. 可以是文件也可以是分区
 
 <img src="../images/image-20241218151850790.png" alt="image-20241218151850790" style="zoom:33%;" />
 
 
 
-
-
 ### RAID Structure
 
+RAID：Redundant Arrays of Independent Disks 独立磁盘冗余阵列
+
+RAID – multiple disk drives provides reliability via redundancy.
+
+RAID is arranged into six different levels.
+
+
+
+Disk **striping** uses a group of disks as one storage unit.
+
+- Bit-level StripingBlock-level Striping 
+- different blocks of a file are striped
+
+
+
 ### Stable-Storage Implementation
+
+
+
+## I/O Systems
+
+> [!IMPORTANT]
+>
+> Explore the structure of an operating system’s I/O subsystem
+>
+> Discuss the principles of I/O hardware and its complexity
+>
+> Provide details of the performance aspects of I/O hardware and software
+>
+> Interrupts, DMA,
+>
+> 
+
+### I/O Hardware Application 
+
+Common concepts
+
+- **Port** 端口
+  - port addresses, used by Special I/O instructions & **Memory-mapped** I/O
+  - Device control registers mapped into processor address space.
+- **Bus** 总线 (daisy chain or shared direct access)
+- **Controller** (host adapter) 控制器
+
+<img src="../images/image-20241223102241700.png" alt="image-20241223102241700" style="zoom:50%;" />
+
+#### I/O Port Registers
+
+**Data-in**: read by the host to get input
+
+**Data-out**: written by the host to send output
+
+- data in/out 是相对于CPU而言，从外部设备读取是in，输出是out
+
+**Status**: device status read by the host
+
+**Control**: written by the host to start a command or change the mode of a device
+
+#### Polling
+
+轮循
+
+Repeated for each byte:
+
+<img src="../images/image-20241223103025651.png" alt="image-20241223103025651" style="zoom:50%;" />
+
+Determines state of device 
+
+- command-ready
+- busy
+- Error
+
+Busy-wait cycle in Step 1 to wait for I/O from device
+
+> [!CAUTION]
+>
+> Repeatedly reading the status register until the busy bit becomes clear. <span style="color:#CC0000;">Can be inefficient!!</span>
+
+#### Interrupts
+
+**CPU Interrupt-request line** triggered by I/O device
+
+**Interrupt handler** 中断处理 receives interrupts
+
+**Maskable** to ignore or delay some interrupts
+
+Interrupt vector to dispatch interrupt to correct handler
+
+- Based on priority
+- Some nonmaskable
+- Interrupt chaining: To handle more devices than interrupt vector elements. Handlers on each list are called one by one.
+
+Interrupt mechanism also used for exceptions
+
+##### Various Interrupt Processing
+
+**Page fault**: saves the state of the process, moves it to the waiting queue, schedules another process to resume execution, then returns.
+
+**Trap** (s/w interrupt): saves the state of user code, switches to supervisor mode. Low priority低优先级
+
+Low priority interrupt can be preempted by high priority ones. 低优先级中断能被高优先级中断抢占
+
+Example usage: 
+
+- high-priority handler records the I/O status, clears the device interrupt, starts the next pending I/O, and raises a low-priority interrupt to complete the work
+- Later, the low-priority handlercompletes the user-level I/O by copying data from kernel buffers to the application space and calling the scheduler to place the application on the ready queue
+
+#### Direct Memory Access
+
+DMA直接内存访问
+
+Used to avoid programmed I/O (可编程I/O) for large data movement 
+
+Requires DMA controller
+
+Bypasses CPU to transfer data directly between I/O device and memory 绕过CPU，直接在I/O设备和内存之间传输数据
+
+<img src="../images/image-20241223105154629.png" alt="image-20241223105154629" style="zoom:50%;" />
+
+#### Application I/O Interface
+
+Devices vary in many dimensions
+
+- Character-stream or block
+- Sequential or random-access
+- Sharable or dedicated
+- Speed of operation
+- read-write, read only, or write only
+
+<img src="../images/image-20241223105355845.png" alt="image-20241223105355845" style="zoom:50%;" />
+
+Permissions  Owner  Group  Major Device Number  Minor Device Number  Timestamp  Device  Name
+
+<img src="../images/image-20241223105509629.png" alt="image-20241223105509629" style="zoom:50%;" />
+
+#### I/O Devices
+
+**Block devices** include disk drives
+
+- Commands include read, write, seek 
+- Raw I/O or file-system access
+- Memory-mapped file access possible
+
+**Character devices** include keyboards, mice, serial ports
+
+- Commands include get, put
+- Libraries layered on top allow line editing
+
+Clocks and Timers
+
+
+
+#### Blocking and Nonblocking I/O
+
+Blocking - process suspended until I/O completed
+
+- Easy to use and understand
+- Insufficient for some needs
+
+Nonblocking - I/O call returns as much as available
+
+- User interface, data copy (buffered I/O)
+- Implemented via multi-threading
+- Returns quickly with count of bytes read or written
+
+Asynchronous - process runs while I/O executes
+
+- Difficult to use
+- I/O subsystem signals process when I/O completed
+
+
+
+<img src="../images/image-20241223112145908.png" alt="image-20241223112145908" style="zoom:50%;" />
+
+### Kernel I/O Interface 
+
+#### Kernel I/O Subsystem
+
+**Scheduling** 调度
+
+- Some I/O request ordering via per-device queue
+  - E.g. disk scheduling
+- Some OSs try fairness
+
+**Buffering** 缓存- store data in memory while transferring *between devices*
+
+- To cope with device *speed mismatch*, e.g. receiving data from  modem to disk.
+  - Double buffering
+- To cope with device transfer *size mismatch*, e.g. network packet
+- To maintain “copy semantics” (when a write() system call specifies a buffer for storing the data, and modifies its contents after the system call)
+
+**Caching** - fast memory holding copy of data
+
+- Always just *a copy*
+- Key to performance
+
+**Spooling** 假脱机- hold output for a device
+
+- If device can serve only one request at a time i.e., Printing
+
+**Device reservation** - provides exclusive access to a device
+
+- System calls for allocation and deallocation
+- Watch out for deadlock
+
+### I/O SubsystemTransforming 
+
+
+
+### I/O Requests to Hardware Operations
+
+
+
+### Performance
+
+
+
+## Quiz & LAB
+
+### quiz
+
+make install  Linux /boot
+
+~ home directory
+
+struct task_struct
+
+h✖ 10+200(1-h)=（1+0.5）✖100 
+
+### lab
+
+Linux 指令：ls, cp, ln, mv, echo, ....
+
+实验指导书
+
+trap和系统调用
+
+Linux文件系统：FCB, inode, VFS structure
