@@ -32,7 +32,7 @@ From GPT: <br />A reference to an object in C++ is an alternative name for an ob
 - no reference/pointer to reference 
 - reference to pointer is ok
 - No arrays of references
-- **万能引用：**`**auto &&**`
+- **万能引用：**`auto &&`
 ```c
 char c = 'A';
 char &r = c;
