@@ -1297,8 +1297,11 @@ Remove 1 edge, every 2 nodes will lose 1 degrees, so we lose** 10 edges**
 
 1. Among the following **threaded binary trees** (the threads are represented by dotted curves), which one is the **postorde**r threaded tree?
 
-![Figure 1](../images/fds_m1.png){width="200"}
-<br />线索二叉树中，**左线索为上一个结点，右线索为下一个结点**<br />后序：左右根<br />中序：左根右<br />前序：根左右
+<img src="./assets/fds_m1.png" alt="Figure 1" style="zoom:33%;" />
+
+线索二叉树中，**左线索为上一个结点，右线索为下一个结点**
+
+后序：左右根<br />中序：左根右<br />前序：根左右
 
 1. Suppose that an array of size 6 is used to store a circular queue, and the values of front and rear are 0 and 4, respectively. Now after 2 dequeues and 2 enqueues, what will the values of front and rear be?
    1. 2 and 0

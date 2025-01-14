@@ -63,9 +63,9 @@ eg，智慧家居 共享单车
 
 #### 典型的物联网架构
 
-![image-20240911165849827](../images/image-20240911165849827.png)
+<img src="./assets/image-20240911165849827.png" alt="image-20240911165849827" style="zoom:50%;" />
 
-![image-20240911165925980](../images/image-20240911165925980.png)
+<img src="./assets/image-20240911165925980.png" alt="image-20240911165925980" style="zoom:50%;" />
 
 ### 物联网应用开发构建面临的挑战与机遇
 
@@ -96,20 +96,20 @@ Gartner预测，到2024年，75％的应用程序将在低代码平台中开发�
 
 空气质量检测 Mosaic
 
-<img src="../images/image-20241022192031647.png" alt="image-20241022192031647" style="zoom:60%;" />
+<img src="./assets/image-20241022192031647.png" alt="image-20241022192031647" style="zoom:60%;" />
 
 > 
 >
 
-<img src="../images/image-20241022192004609.png" alt="image-20241022192004609" style="zoom:60%;" />
+<img src="./assets/image-20241022192004609.png" alt="image-20241022192004609" style="zoom:60%;" />
 
 ### 思考题
 
 #### 思考题1
 
-<img src="../images/image-20241022191938848.png" alt="image-20241022191938848" style="zoom:60%;" />
+<img src="./assets/image-20241022191938848.png" alt="image-20241022191938848" style="zoom:60%;" />
 
-> <img src="../images/2e678d1941c47aa97a4bdfead704add.jpg" alt="2e678d1941c47aa97a4bdfead704add" style="zoom:40%;" />
+> <img src="./assets/2e678d1941c47aa97a4bdfead704add.jpg" alt="2e678d1941c47aa97a4bdfead704add" style="zoom:40%;" />
 
 无源后向散射通信技术
 
@@ -118,7 +118,7 @@ Gartner预测，到2024年，75％的应用程序将在低代码平台中开发�
 
 #### 思考题2
 
-<img src="../images/image-20241022191544201.png" alt="image-20241022191544201" style="zoom:50%;" />
+<img src="./assets/image-20241022191544201.png" alt="image-20241022191544201" style="zoom:50%;" />
 
 > **典型物联网（IoT）应用架构的组成部分**
 >
@@ -174,7 +174,7 @@ Gartner预测，到2024年，75％的应用程序将在低代码平台中开发�
 
 **占空比x%**：工作时间占总时间的x%
 
-<img src="../images/image-20241023103158695.png" alt="image-20241023103158695" style="zoom:50%;" />
+<img src="./assets/image-20241023103158695.png" alt="image-20241023103158695" style="zoom:50%;" />
 
 >  $P = CV^2FT$
 >
@@ -192,7 +192,7 @@ Gartner预测，到2024年，75％的应用程序将在低代码平台中开发�
 >
 > 因此，提升运算速度（提高主频）和降低能耗之间是一个权衡过程。
 
-<img src="../images/image-20240919150336015.png" alt="image-20240919150336015" style="zoom:50%;" />
+<img src="./assets/image-20240919150336015.png" alt="image-20240919150336015" style="zoom:50%;" />
 
 **波特率**（Baud rate）：每秒钟传输的符号数或比特数（bit per second, bps）
 
@@ -213,7 +213,7 @@ Gartner预测，到2024年，75％的应用程序将在低代码平台中开发�
 
 #### 思考题1
 
-<img src="../images/image-20240919150303259.png" alt="image-20240919150303259" style="zoom: 50%;" />
+<img src="./assets/image-20240919150303259.png" alt="image-20240919150303259" style="zoom: 50%;" />
 
 > **第一个问题：选择哪块MCU以支持代码片段？**
 >
@@ -270,9 +270,9 @@ Gartner预测，到2024年，75％的应用程序将在低代码平台中开发�
 
 #### 思考题2
 
-<img src="../images/image-20241023105401709.png" alt="image-20241023105401709" style="zoom:50%;" />
+<img src="./assets/image-20241023105401709.png" alt="image-20241023105401709" style="zoom:50%;" />
 
-> <img src="../images/a2e31a267700c5ff213f64718a85b5a.jpg" alt="a2e31a267700c5ff213f64718a85b5a" style="zoom:50%;" />
+> <img src="./assets/a2e31a267700c5ff213f64718a85b5a.jpg" alt="a2e31a267700c5ff213f64718a85b5a" style="zoom:50%;" />
 >
 > - 数据位为8位，8 bits = 1 byte，最后向上取整
 
@@ -364,7 +364,7 @@ ESP32 可以同时支持多种无线协议，但不同协议的共存能力有�
 
 #### 编程模型
 
-<img src="../images/image-20241024165557867.png" alt="image-20241024165557867" style="zoom:50%;" />
+<img src="./assets/image-20241024165557867.png" alt="image-20241024165557867" style="zoom:50%;" />
 
 #### 调度方式:fire:
 
@@ -386,11 +386,11 @@ ESP32 可以同时支持多种无线协议，但不同协议的共存能力有�
 
 #### I/O操作方式
 
-<img src="../images/image-20241024171241006.png" alt="image-20241024171241006" style="zoom:40%;" />
+<img src="./assets/image-20241024171241006.png" alt="image-20241024171241006" style="zoom:40%;" />
 
 #### 内存分配
 
-<img src="../images/image-20241024171314200.png" alt="image-20241024171314200" style="zoom:50%;" />
+<img src="./assets/image-20241024171314200.png" alt="image-20241024171314200" style="zoom:50%;" />
 
 #### 软件更新
 
@@ -402,7 +402,7 @@ ESP32 可以同时支持多种无线协议，但不同协议的共存能力有�
 
 ##### 差分:fire:
 
-<img src="../images/image-20241024173625078.png" alt="image-20241024173625078" style="zoom:50%;" />
+<img src="./assets/image-20241024173625078.png" alt="image-20241024173625078" style="zoom:50%;" />
 
 #### 网络服务
 
@@ -426,7 +426,7 @@ AliOS Things
 
 #### 思考题1
 
-<img src="../images/image-20241022192958563.png" alt="image-20241022192958563" style="zoom:50%;" />
+<img src="./assets/image-20241022192958563.png" alt="image-20241022192958563" style="zoom:50%;" />
 
 > **(1) 非抢占式调度**
 >
@@ -490,13 +490,13 @@ AliOS Things
 
 #### 思考题2
 
-<img src="../images/image-20241024173706020.png" alt="image-20241024173706020" style="zoom:50%;" />
+<img src="./assets/image-20241024173706020.png" alt="image-20241024173706020" style="zoom:50%;" />
 
 > 在程序**头部**插入函数差分升级包**占用空间比较大**。因为若在头部插入函数，则在此之后的函数跳转地址都需要做相应修改，因此所需要修改的内容更多，整体程序转化后形成的二进制文件与源文件的差距可能会特别大，而在尾部插入函数可能仅仅是后面与源文件有差距，前面二进制文件都一样，差距不是很大。
 
 #### 思考题3
 
-<img src="../images/image-20241024232624666.png" alt="image-20241024232624666" style="zoom:50%;" />
+<img src="./assets/image-20241024232624666.png" alt="image-20241024232624666" style="zoom:50%;" />
 
 > 基于协作式的调度模式、使用单个堆栈实现、不能使用局部变量
 >
@@ -536,21 +536,21 @@ AliOS Things
 
 #### 通信距离
 
-<img src="../images/image-20241021210559284.png" alt="image-20241021210559284" style="zoom:50%;" />
+<img src="./assets/image-20241021210559284.png" alt="image-20241021210559284" style="zoom:50%;" />
 
 ##### 书后习题
 
-<img src="../images/image-20241025150043180.png" alt="image-20241025150043180" style="zoom:40%;" />
+<img src="./assets/image-20241025150043180.png" alt="image-20241025150043180" style="zoom:40%;" />
 
 **多跳网络——获得更大的通信距离**
 
 #### 频带和数据率
 
-<img src="../images/image-20241021210438331.png" alt="image-20241021210438331" style="zoom:50%;" />
+<img src="./assets/image-20241021210438331.png" alt="image-20241021210438331" style="zoom:50%;" />
 
 ##### 课后习题
 
-<img src="../images/image-20241025154248093.png" alt="image-20241025154248093" style="zoom:50%;" />
+<img src="./assets/image-20241025154248093.png" alt="image-20241025154248093" style="zoom:50%;" />
 
 #### 安全性
 
@@ -566,7 +566,7 @@ AliOS Things
 
 每4bit数据转化为32位码片(chips)，按下图转换
 
-<img src="../images/image-20241021213919534.png" alt="image-20241021213919534" style="zoom:50%;" />
+<img src="./assets/image-20241021213919534.png" alt="image-20241021213919534" style="zoom:50%;" />
 
 ##### **O-QPSK调制**
 
@@ -582,7 +582,7 @@ AliOS Things
 
 #### 思考题
 
-<img src="../images/image-20241022100520430.png" alt="image-20241022100520430" style="zoom:50%;" />
+<img src="./assets/image-20241022100520430.png" alt="image-20241022100520430" style="zoom:50%;" />
 
 > IEEE 802.15.4 物理层使用**O-QPSK（Offset Quadrature Phase Shift Keying）**调制技术来传输数据。它工作在2.4GHz频段时采用的速率为250kbps，并且将每个字节映射为32个伪随机序列码元。这是通过将每4位的符号映射到一个32个片（chip）的码元序列来完成的。具体的调制步骤如下：
 >
@@ -617,7 +617,7 @@ AliOS Things
 - 偷听：传感器节点接收不是发给自己的数据包
 - 控制开销：包头和其他类型的数据包开销
 
-<img src="../images/image-20241022110132100.png" alt="image-20241022110132100" style="zoom:50%;" />
+<img src="./assets/image-20241022110132100.png" alt="image-20241022110132100" style="zoom:50%;" />
 
 ##### 同步MAC：S-MAC
 
@@ -631,17 +631,17 @@ CCA(Clear Channel Assessment)：对无线信道进行简短的采样以检测信
 
 CS(Carrier Sensing)：
 
-<img src="../images/image-20241022114701657.png" alt="image-20241022114701657" style="zoom:50%;" />
+<img src="./assets/image-20241022114701657.png" alt="image-20241022114701657" style="zoom:50%;" />
 
 ##### 课后习题
 
-<img src="../images/image-20241031232848780.png" alt="image-20241031232848780" style="zoom:50%;" />
+<img src="./assets/image-20241031232848780.png" alt="image-20241031232848780" style="zoom:50%;" />
 
 #### **链路质量估计**:fire:
 
 ##### **接收信号强度(Radio Signal Strength Indicator, RSSI)**
 
-<img src="../images/image-20241025132952329.png" alt="image-20241025132952329" style="zoom:50%;" />
+<img src="./assets/image-20241025132952329.png" alt="image-20241025132952329" style="zoom:50%;" />
 
 ##### **信噪比(Signal to Noise Ratio，SNR)**
 
@@ -663,9 +663,9 @@ CS(Carrier Sensing)：
 - 数据包成功接收率 （不考虑重传）
 - 衡量链路质量的最终指标
 
-<img src="../images/image-20241025150913021.png" alt="image-20241025150913021" style="zoom:50%;" />
+<img src="./assets/image-20241025150913021.png" alt="image-20241025150913021" style="zoom:50%;" />
 
-<img src="../images/image-20241025142741908.png" alt="image-20241025142741908" style="zoom:50%;" />
+<img src="./assets/image-20241025142741908.png" alt="image-20241025142741908" style="zoom:50%;" />
 
 #### CTP&RPL
 
@@ -741,11 +741,11 @@ CTP 协议的工作流程总结：
 
 ###### 课后习题
 
-<img src="../images/image-20241025154017500.png" alt="image-20241025154017500" style="zoom:50%;" />
+<img src="./assets/image-20241025154017500.png" alt="image-20241025154017500" style="zoom:50%;" />
 
 #### 思考题
 
-<img src="../images/image-20241025144818874.png" alt="image-20241025144818874" style="zoom:50%;" />
+<img src="./assets/image-20241025144818874.png" alt="image-20241025144818874" style="zoom:50%;" />
 
 > 一条路径的ETX表示在这条路径上成功传输一个数据包所需要的传输次数。一个数据包在一条路径上传输成功，则需要在每一跳的链路上传输成功。数据包在第一跳的链路<img src="../images/clip_image002-1729838839229-1.png" alt="img" style="zoom: 67%;" />上需要传输<img src="../images/clip_image004.png" alt="img" style="zoom:67%;" />次，然后数据包继续在第二跳链路上传输，需要传输<img src="../images/clip_image006.png" alt="img" style="zoom:67%;" />次。以此类推，直到传输到第n跳链路，在第n跳链路上需要传输<img src="../images/clip_image008.png" alt="img" style="zoom:67%;" />次。因此在链路P上总共需要传输的次数为<img src="../images/clip_image010.png" alt="img" style="zoom:67%;" />。
 >
@@ -768,7 +768,7 @@ piconet的slave或者master
 
 **mesh**组网（多跳）：网络中节点不同的角色
 
-<img src="../images/image-20241025131255832.png" alt="image-20241025131255832" style="zoom:50%;" />
+<img src="./assets/image-20241025131255832.png" alt="image-20241025131255832" style="zoom:50%;" />
 
 **组网：四种链路类型**
 
@@ -780,7 +780,7 @@ piconet的slave或者master
 
 (4) GATT Bearer：用于没有mesh能力的传统节点也能参与MESH网络
 
-<img src="../images/image-20241022121612151.png" alt="image-20241022121612151" style="zoom:50%;" />
+<img src="./assets/image-20241022121612151.png" alt="image-20241022121612151" style="zoom:50%;" />
 
 > 1)	节点**E**发送数据包给节点**R**。
 > 2)	转发节点**Q**和**R**收到收据包，**N**也收到数据包。其中，转发节点**Q**和**R**将**TTL**修改为2，广播该数据包。**N**也收到该数据包，但是由于其朋友特性未启用，因此不会转发该数据包。
@@ -814,13 +814,13 @@ GATT(Generic Attribute Profile)：定义了服务存储的**数据结构**
 >
 > 掌握**LoRaWAN的覆盖增强计算方式**
 
-![](../images/image-20241030172932627.png)
+![](./assets/image-20241030172932627.png)
 
 ### 概述
 
 **LPWAN**(Low-power WAN):**低功耗广域网**
 
-<img src="../images/image-20241021193945814.png" alt="image-20241021193945814" style="zoom:50%;" />
+<img src="./assets/image-20241021193945814.png" alt="image-20241021193945814" style="zoom:50%;" />
 
 特点：长距离、网路性能要求较低
 
@@ -924,13 +924,13 @@ NB-IoT闭源，LoRaWAN开源
 
 ##### 物理层
 
-<img src="../images/image-20241025104802220.png" alt="image-20241025104802220" style="zoom:50%;" />
+<img src="./assets/image-20241025104802220.png" alt="image-20241025104802220" style="zoom:50%;" />
 
 ##### 链路层(卷积码:fire:
 
 异或：不同出1
 
-<img src="../images/image-20241025111302018.png" alt="image-20241025111302018" style="zoom:50%;" />
+<img src="./assets/image-20241025111302018.png" alt="image-20241025111302018" style="zoom:50%;" />
 
 #### LoRaWAN
 
@@ -952,7 +952,7 @@ Long Range (LoRa)：长距离广域网技术
 
 #### 思考题1
 
-![image-20241025104211320](../images/image-20241025104211320.png)
+![image-20241025104211320](./assets/image-20241025104211320.png)
 
 > 详见 [增加通信距离的关键](# 增加通信距离的关键)
 >
@@ -982,7 +982,7 @@ Long Range (LoRa)：长距离广域网技术
 
 #### 思考题2
 
-<img src="../images/image-20241025111416726.png" alt="image-20241025111416726" style="zoom:50%;" />
+<img src="./assets/image-20241025111416726.png" alt="image-20241025111416726" style="zoom:50%;" />
 
 > 结果：00 11 01 01
 >
@@ -990,7 +990,7 @@ Long Range (LoRa)：长距离广域网技术
 
 #### 思考题3
 
-<img src="../images/image-20241025113422847.png" alt="image-20241025113422847" style="zoom:50%;" />
+<img src="./assets/image-20241025113422847.png" alt="image-20241025113422847" style="zoom:50%;" />
 
 > 虽然LoRa能同时接受正交的6个SF，但受限于解调器数目，SX1301最多只能同时解调8个用户发来的数据，而非48个。由于ADR机制的存在，使得网关容量能提高232.6%。因此最终SX1301相较于SX1276/8能提升的容量为：<img src="../images/clip_image002.png" alt="img" style="zoom:50%;" />
 >
@@ -1030,9 +1030,9 @@ Long Range (LoRa)：长距离广域网技术
 
 ##### HTTP
 
-<img src="../images/image-20241023164234710.png" alt="image-20241023164234710" style="zoom:50%;" />
+<img src="./assets/image-20241023164234710.png" alt="image-20241023164234710" style="zoom:50%;" />
 
-<img src="../images/image-20241023164204605.png" alt="image-20241023164204605" style="zoom:50%;" />
+<img src="./assets/image-20241023164204605.png" alt="image-20241023164204605" style="zoom:50%;" />
 
 协议包太长
 
@@ -1042,7 +1042,7 @@ Long Range (LoRa)：长距离广域网技术
 
 CoAP（Constrained Application Protocol）是一种M2M（machine-to-machine）数据传输协议，主要用于物联网中资源受限的节点和网络应用。
 
-<img src="../images/image-20241023164440100.png" alt="image-20241023164440100" style="zoom:50%;" />
+<img src="./assets/image-20241023164440100.png" alt="image-20241023164440100" style="zoom:50%;" />
 
 ###### 报文格式
 
@@ -1068,7 +1068,7 @@ request-response形式
 
 MQTT（Message Queuing Telemetry Transport）是一种M2M（machine-to-machine）数据传输协议，它被设计为极其轻量的发布/订阅消息传送模型
 
-<img src="../images/image-20241023164910621.png" alt="image-20241023164910621" style="zoom:40%;" />
+<img src="./assets/image-20241023164910621.png" alt="image-20241023164910621" style="zoom:40%;" />
 
 ###### 特点
 
@@ -1098,7 +1098,7 @@ MQTT（Message Queuing Telemetry Transport）是一种M2M（machine-to-machine�
 
 ###### 报文格式
 
-<img src="../images/image-20241023165623754.png" alt="image-20241023165623754" style="zoom:50%;" />
+<img src="./assets/image-20241023165623754.png" alt="image-20241023165623754" style="zoom:50%;" />
 
 例子:上传一个温度25度到云
 
@@ -1122,7 +1122,7 @@ IFTTT: If This Then That
 
 ##### 规则冲突:fire:
 
-<img src="../images/image-20241025160313604.png" alt="image-20241025160313604" style="zoom:50%;" />
+<img src="./assets/image-20241025160313604.png" alt="image-20241025160313604" style="zoom:50%;" />
 
 布尔可满足性问题 (SAT)
 
@@ -1142,13 +1142,13 @@ IFTTT: If This Then That
 
 - 能耗小，但实时性低
 
-<img src="../images/image-20241025160427912.png" alt="image-20241025160427912" style="zoom:40%;" />
+<img src="./assets/image-20241025160427912.png" alt="image-20241025160427912" style="zoom:40%;" />
 
 #### 时序数据库与流计算
 
 时序数据（Time Series Data）: 带有timestamp的数据
 
-<img src="../images/image-20241025161018942.png" alt="image-20241025161018942" style="zoom:33%;" />
+<img src="./assets/image-20241025161018942.png" alt="image-20241025161018942" style="zoom:33%;" />
 
 ##### 流计算
 
@@ -1182,7 +1182,7 @@ IBC
 
 无服务器计算(Serverless Computing) 是一种全托管计算服务，免去人工管理、运维，例如管理服务器等基础设施的麻烦，用户唯一需要做的只是编写代码上传
 
-<img src="../images/image-20241024145839945.png" alt="image-20241024145839945" style="zoom:50%;" />
+<img src="./assets/image-20241024145839945.png" alt="image-20241024145839945" style="zoom:50%;" />
 
 ##### 无服务器计算优势
 
@@ -1226,7 +1226,7 @@ IBC
 | **HomeAssistant**开源的家庭自动化物联网平台 | 本地控制、隐私保护、适合在Raspberry Pi 或本地服务器上运行、设备通信、个性化管理 | Home Control负责收集信息和控制设备。<br />Home Automation根据用户配置触发命令。<br />Smart Home会根据之前的行为触发命令。 |
 | **ThingsBoard**                             | 平台集成处理数据、规则引擎、                                 | 可扩展性、容错性和高效性、开源免费、自主部署、社区支持       |
 
-<img src="../images/image-20241024153102311.png" alt="image-20241024153102311" style="zoom:50%;" />
+<img src="./assets/image-20241024153102311.png" alt="image-20241024153102311" style="zoom:50%;" />
 
 ### 思考题
 
@@ -1247,7 +1247,7 @@ IBC
 
 #### 思考题2
 
-<img src="../images/image-20241025161303844.png" alt="image-20241025161303844" style="zoom:50%;" />
+<img src="./assets/image-20241025161303844.png" alt="image-20241025161303844" style="zoom:50%;" />
 
 > 通过平方和、以及总和求解
 

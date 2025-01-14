@@ -10,7 +10,6 @@ nav:
   - 主页🤖:
     - index.md
   - SE课程📝:
-    - 声明: Courses/note.md
     - 大一春夏:
       - 离散数学及其应用: Courses/DM.md
     - 大二秋冬:
@@ -30,7 +29,9 @@ nav:
     - 算法: skills/Algorithm.md
     - 深度学习: skills/deeplearning.md
   - 出国✈️:
-    - 雅思口语: abroad/IELTs_speaking.md 
+    - 雅思口语:
+      - 第一次: abroad/IELTs_speaking1.md
+      - 第二次:  abroad/IELTs_speaking2.md
     - 雅思作文: abroad/IELTs_writing.md
   - 其他🎊:
     - Test: other/test.md
@@ -38,7 +39,7 @@ nav:
   - 找工:
     - 面试: work/Interview.md
 
-use_directory_urls: false #解决图片相对路径无法解析的问题
+use_directory_urls: false # 解决图片相对路径无法解析的问题
 
 theme: 
   name: material

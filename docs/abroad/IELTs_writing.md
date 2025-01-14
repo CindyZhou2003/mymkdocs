@@ -76,11 +76,11 @@ In conclusion, while improving human lives is a vital goal of scientific endeavo
 
 ------------------------------
 
-
+2.
 
 ### 好/坏
 
-**In many countries around the world, rural people are moving to cities, so the population in the countryside is decreasing. Do you think this is a positive or a negative development?**
+**1. In many countries around the world, rural people are moving to cities, so the population in the countryside is decreasing. Do you think this is a positive or a negative development?**
 
 In numerous nations worldwide, the trend of rural populations migrating to urban areas is prominent, leading to a dwindling number of inhabitants in the countryside. This shift, in my opinion, embodies a double-edged sword, reflecting the complex dynamics of societal evolution.
 
@@ -94,7 +94,7 @@ Hence, viewing rural-to-urban migration through a binary lens of positive or neg
 
 -----------------------------
 
-**In many countries, people are now living longer than ever before. Some people say an ageing population creates problems for governments. Other people think there are benefits if society has more elderly people. To what extent do the advantages of having an ageing population outweigh the disadvantages?**
+**2. In many countries, people are now living longer than ever before. Some people say an ageing population creates problems for governments. Other people think there are benefits if society has more elderly people. To what extent do the advantages of having an ageing population outweigh the disadvantages?**
 
 efore. While some people suggest the ageing population leads to problems for the government, others maitain it's beneficial to have more elderly poeple.
 On one hand, a vast number of elderly people create a significant financial burden for the government and the young. The government has to impose more taxes on young people mainly due to the social security for the elderly including pensions and healthcare fees to ensure their life quality. Meanwhile, the ageing population may lead to a lack of labor because the base population doesn;t change a lot but the proportion of the young is relatively low. Therefore, there're plenty of vacant positions in the workforce. This may contribute to the decline of the economy and the stagnancy of development, which the government has to introduce policies such as encouraging migrants to deter from getting worse.
@@ -103,7 +103,7 @@ On the other hand, the increasing life span does imply that people have a better
 
 ### 两问
 
-**Many countries believe that international tourism has harmful effects. Why do they think so? What can be done to change their views?**
+**1. Many countries believe that international tourism has harmful effects. Why do they think so? What can be done to change their views?**
 
 In recent years, concerns have grown among some countries about the negative impacts of international tourism. From my perspective, overburdened infrastructure and harmful environmental practices are key reasons for these concerns, but targeted solutions can help change these views.
 
@@ -116,3 +116,4 @@ To **mitigate** these negative effects of international tourism, several measure
 Moreover, **fostering a culture** of responsible tourism through educational campaigns can encourage visitors to respect local traditions and the environment. If visitors demonstrate respect and cultural sensitivity, locals are likely to feel more positively about their presence.
 
 In conclusion, while it is understandable that some countries are wary of international tourism, improving infrastructure, enforcing rules, and fostering responsible behavior can help mitigate its negative effects. This approach could allow countries to benefit economically from tourism while preserving their cultural and environmental integrity.
+

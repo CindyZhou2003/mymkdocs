@@ -125,7 +125,7 @@ having 子句在 group by 后，针对 group by 每个分组，可以在 having 
 
 **some() **某一个；=some 等价于 in，≠some不等价于 not in<br />**all() **所有；≠all等价于 not in，=all 不等价于 in
 
-![image-20240618195519958](../images/image-20240618195519958.png)
+<img src="./assets/image-20240618195519958.png" alt="image-20240618195519958" style="zoom:50%;" />
 
 ```sql
 select eID
@@ -325,15 +325,15 @@ Grant, revoke 详见 [4.7](#4.7 授权 Authorization)
 
 选择、投影、并、交、差、笛卡尔积、重命名、自然连接、除
 
-![image-20240619140954313](../images/image-20240619140954313.png)
+<img src="./assets/image-20240619140954313.png" alt="image-20240619140954313" style="zoom:50%;" />
 
-![image-20240619141017399](../images/image-20240619141017399.png)
+<img src="./assets/image-20240619141017399.png" alt="image-20240619141017399" style="zoom:50%;" />
 
 
 
-<img src="../images/image-20240618204426768.png" alt="image-20240618204426768" style="zoom:50%;" />
+<img src="./assets/image-20240618204426768.png" alt="image-20240618204426768" style="zoom:50%;" />
 
-<img src="../images/image-20240618204444579.png" alt="image-20240618204444579" style="zoom:50%;" />
+<img src="./assets/image-20240618204444579.png" alt="image-20240618204444579" style="zoom:50%;" />
 
 
 
@@ -890,7 +890,7 @@ E-R模型由实体entities和关系relation组成
 实体集(entity set)：共享相同性质、具有相同类型的实体的集合
 
 - 实体集是矩形，属性是由直线连接的椭圆形
-- <img src="../images/image-20240618210650947.png" alt="image-20240618210650947" style="zoom:50%;" />
+- <img src="assets/image-20240618210650947.png" alt="image-20240618210650947" style="zoom:50%;" />
 
 联系(relationship)：多个实体之间相互关联
 
@@ -898,7 +898,7 @@ E-R模型由实体entities和关系relation组成
 
 - **联系集**在E-R图中用**菱形**表示，菱形通过**线条**连接都多个不同的**实体集**（**矩形**）
 
-<img src="./../images/image-20240328111049334.png" alt="image-20240328111049334" style="zoom:33%;" />
+<img src="assets/image-20240328111049334.png" alt="image-20240328111049334" style="zoom:33%;" />
 
 - 联系集的**度**(degree)：参与联系集的实体集的数目（二元联系集的度为2）
 - 联系集的**属性**是未分割的矩阵，用**虚线与联系集的菱形相连**
@@ -928,7 +928,7 @@ E-R模型由实体entities和关系relation组成
 
 `l..h`：l表示最小基数，h表示最大基数
 
-<img src="../images/image-20240415112629928.png" alt="image-20240415112629928" style="zoom:50%;" />
+<img src="assets/image-20240415112629928.png" alt="image-20240415112629928" style="zoom:50%;" />
 
 ​	一位教师可以有0或多名学生，每名学生必须有且只有一位导师
 
@@ -1011,7 +1011,7 @@ $F^{+}$表示集合F的闭包，即能从给定的集合F 推导出所有函数�
 
 **平凡trivial函数依赖**：函数依赖被所有关系满足。一般来说，如果β ⊆ α，则形如α → β的函数依赖是平凡的
 
-![image-20240618211157918](../images/image-20240618211157918.png)
+![image-20240618211157918](assets/image-20240618211157918.png)
 
 #### 7.2.3 无损分解
 
@@ -1049,11 +1049,11 @@ A relation schema R is in BCNF with respect to a set F of functional dependencie
 
 算法：如果左边(α)和右边(β)有公共属性，把右边的公共属性去掉；
 
-<img src="../images/image-20240422091745854.png" alt="image-20240422091745854" style="zoom:50%;" />
+<img src="assets/image-20240422091745854.png" alt="image-20240422091745854" style="zoom:50%;" />
 
 **依赖保持dependency preserving**：如果通过检验单一关系上的函数依赖，就能确保所有的函数依赖成立，那么这样的分解时依赖保持的；或者原来关系R上的每一个函数依赖，都可以在分解后的单一关系上得到检验或者推导得到。
 
-<img src="../images/image-20240422163022929.png" alt="image-20240422163022929" style="zoom:50%;" />
+<img src="assets/image-20240422163022929.png" alt="image-20240422163022929" style="zoom:50%;" />
 
 令$F_1∪F_2∪……∪F_n=F'$, $F'^+=F^+$的分解为**保持依赖的分解**(dependency-preserving decomposition)
 
@@ -1075,7 +1075,7 @@ BCNF和函数依赖可能不能同时满足，所以出现了第三范式——�
 
 R=(A,B,C), F={A->B, B->C}, KEY={A}
 
-R不是BCNF，因为B不是key，但可以通过分解R使之满足BCNF![image-20240618213324084](../images/image-20240618213324084.png)
+R不是BCNF，因为B不是key，但可以通过分解R使之满足BCNF![image-20240618213324084](assets/image-20240618213324084.png)
 
 ##### Example2
 
@@ -1090,7 +1090,7 @@ R不是BCNF，因为B不是key，但可以通过分解R使之满足BCNF![image-2
 
 R=(A,B,C), F={A->B,B->C) 无损分解
 
-![image-20240618212324239](../images/image-20240618212324239.png)![image-20240618212339084](../images/image-20240618212339084.png)
+![image-20240618212324239](assets/image-20240618212324239.png)![image-20240618212339084](assets/image-20240618212339084.png)
 
 
 
@@ -1140,13 +1140,13 @@ $$\alpha\beta=\alpha∪\beta$$
 
 **无关属性** extraneous：去除也不改变该函数依赖集的闭包
 
-![image-20240618212622526](../images/image-20240618212622526.png)
+![image-20240618212622526](assets/image-20240618212622526.png)
 
 从右侧移除一个属性可以使之变成更强的约束：If A ∈ β, to check if A is extraneous, consider the set `F′ = (F−{α→β}) ∪ {α→(β−A)}`and check if α → A can be inferred from F ′. To do so, compute α+ (the closure of α) under F ′; if α+ includes A, then A is extraneous in β.
 
 从左侧移除一个属性可以使之变成更弱的约束：To test if attribute A∈a is extraneous in a. Let `y=a-{A}`. Check if y→β can be inferred from F. Compute y* using the dependencies in F. If y* includes all attributes in β then, A is extraneous in a.
 
-![image-20240618212805358](../images/image-20240618212805358.png)
+![image-20240618212805358](assets/image-20240618212805358.png)
 
 ##### 正则覆盖$F_c$​​的性质
 
@@ -1172,7 +1172,7 @@ $$\alpha\beta=\alpha∪\beta$$
 
    分解从叶子（末尾）更可能保持依赖
 
-<img src="../images/image-20240515232527840.png" alt="image-20240515232527840" style="zoom:50%;" />
+<img src="assets/image-20240515232527840.png" alt="image-20240515232527840" style="zoom:50%;" />
 
 ### 7.6 使用多值依赖的分解
 
@@ -1205,9 +1205,9 @@ eg，一位教师与其地址的联系独立于该教师与系之间的联系
 
 ##### Example
 
-![image-20240518152501514](../images/image-20240518152501514.png)
+![image-20240518152501514](assets/image-20240518152501514.png)
 
-![image-20240518154733998](../images/image-20240518154733998.png)
+![image-20240518154733998](assets/image-20240518154733998.png)
 
 ### 7.7 第一范式
 
@@ -1278,7 +1278,7 @@ eg，如果职员的编号组成为“系+号码”（CS0010），则这个属�
 
 ### 8.1 物理存储概述
 
-<img src="../images/image-20240505135247810.png" alt="image-20240505135247810" style="zoom: 40%;" />
+<img src="assets/image-20240505135247810.png" alt="image-20240505135247810" style="zoom: 40%;" />
 
 高速缓存cache：最快最昂贵
 主存 main memory
@@ -1297,7 +1297,7 @@ eg，如果职员的编号组成为“系+号码”（CS0010），则这个属�
 
 磁盘和高速缓存的速度差大约7个数量级
 
-![image-20240618214456461](../images/image-20240618214456461.png)
+![image-20240618214456461](assets/image-20240618214456461.png)
 
 ### 8.2 磁盘
 
@@ -1356,11 +1356,11 @@ SSD固态硬盘，和磁盘相比具有更低的数据访问延迟和更高的�
 
 空位图(null bitmap)
 
-![image-20240524172058812](../images/image-20240524172058812.png)
+![image-20240524172058812](assets/image-20240524172058812.png)
 
 分槽的页slotted page结构，记录从末尾处开始**连续**分配空间
 
-![image-20240524172113339](../images/image-20240524172113339.png)
+![image-20240524172113339](assets/image-20240524172113339.png)
 
 Block Header内容
 
@@ -1372,7 +1372,7 @@ Block Header内容
 
 #### 8.4.3 列式存储
 
-<img src="../images/image-20240618215950904.png" alt="image-20240618215950904" style="zoom:50%;" />
+<img src="assets/image-20240618215950904.png" alt="image-20240618215950904" style="zoom:50%;" />
 
 优点：
 
@@ -1481,7 +1481,7 @@ https://chatgpt.com/share/29bc8b7e-8a42-44d6-a99b-45d5d77d95cb
 
 性质：
 
-![image-20240618220709646](../images/image-20240618220709646.png)
+![image-20240618220709646](assets/image-20240618220709646.png)
 
 B+树计算：<img src="../images/image-20240511122251045.png" alt="image-20240511122251045" style="zoom:40%;" />
 
@@ -1538,7 +1538,7 @@ Buffer trees：给B+树每个内部节点一个buffer
 
 1. Considering a B+ tree for indexing, Each node can fit **three pointers** and **two key values**, denoted as $<A_1, K_1, A_2, K_2, A_3>$, Within each node, the keys satisfy K1 < K2, For all search field values X in the sub-tree pointed by Ai, we have:  $K_{i-1} ≤ X<K_i$; for 1<i<3; $X<K_i$ , for i=1; $K_{i-1}≤X$, for i=3; Construct a B+ tree for the following set of key values:(2, 3, 6, 4, 5, 1, 8, 7), assuming that values are inserted one by one, and the number of key values in internal nodes and leaf nodes are both 2. When we split a node, one value remains in the left node and the other two are split out to the newly created right one.  
 
-   <img src="../images/43be641ec390918b2522107f7ba9bd6.jpg" alt="43be641ec390918b2522107f7ba9bd6" style="zoom:67%;" />
+   <img src="assets/43be641ec390918b2522107f7ba9bd6.jpg" alt="43be641ec390918b2522107f7ba9bd6" style="zoom:67%;" />
 
    
 
@@ -1648,7 +1648,7 @@ Buffer trees：给B+树每个内部节点一个buffer
 
 ### 10.1 概述
 
-<img src="../images/image-20240516103920015.png" alt="image-20240516103920015" style="zoom:50%;" />
+<img src="assets/image-20240516103920015.png" alt="image-20240516103920015" style="zoom:50%;" />
 
 ### 10.2 查询代价
 
@@ -1667,7 +1667,7 @@ $b_r$​：文件中的块数量
 $t_T$：一个块的传输时间
 $t_s$：一个块的寻道时间
 
-<img src="../images/image-20240516110142366.png" alt="image-20240516110142366"  />
+<img src="assets/image-20240516110142366.png" alt="image-20240516110142366"  />
 
 ##### 文件扫描
 
@@ -1709,7 +1709,7 @@ M：主存缓冲区可以用来排序的块数
 
 Example
 
-<img src="../images/image-20240601130228616.png" alt="image-20240601130228616" style="zoom:50%;" />
+<img src="assets/image-20240601130228616.png" alt="image-20240601130228616" style="zoom:50%;" />
 
 块传输总数：$b_b=1, b_r=12, M=3$​，12 ∗ (2*2 + 1) = 60 
 
@@ -1740,7 +1740,7 @@ best case 缓冲区能同时容纳两个关系（或一个能完全放在内存�
 
 - 如果两个关系都不能放进内存中，则**小关系作为外层关系**连接效率更高
 
-Improved: ![image-20240527105826975](../images/image-20240527105826975.png)M为块数
+Improved: ![image-20240527105826975](assets/image-20240527105826975.png)M为块数
 
 
 
@@ -1762,11 +1762,11 @@ worst cost = $b_r(t_T+t_S)+n_r*c$​
 
 设为每个关系分配$b_b$个缓冲块，假设排序好的（没排序还要算上排序代价）
 
-<img src="../images/image-20240523101143163.png" alt="image-20240523101143163" style="zoom:50%;" />
+<img src="assets/image-20240523101143163.png" alt="image-20240523101143163" style="zoom:50%;" />
 
 ##### 哈希-连接（Hash-join）
 
-<img src="../images/image-20240616170454659.png" alt="image-20240616170454659" style="zoom:40%;" />
+<img src="assets/image-20240616170454659.png" alt="image-20240616170454659" style="zoom:40%;" />
 
 为了使右边si个东西存进内存，n is chosen as $⌈b_s/M⌉ * f$​ where f is a “fudge factor”, typically around 1.2
 
@@ -1775,21 +1775,21 @@ n: number of partitions
 
 当$M>(b_s/M)+1$，其中$b_s/M=n_h$分区的规模，则关系不需要递归分区
 
-![image-20240616170636536](../images/image-20240616170636536.png)
+![image-20240616170636536](assets/image-20240616170636536.png)
 
 $b_b=\lfloor\frac{M}{n+1}\rfloor=\lfloor\frac{M}{b_s/M+1}\rfloor$ 每次能传输的buffer数
 
 如果需要递归分区（M>$\sqrt{b_s}$）
 
-![image-20240616170754986](../images/image-20240616170754986.png)
+![image-20240616170754986](assets/image-20240616170754986.png)
 
 散列具有随机性和均匀性
 
 ##### Example
 
-![image-20240527112154059](../images/image-20240527112154059.png)
+![image-20240527112154059](assets/image-20240527112154059.png)
 
-![image-20240616171020696](../images/image-20240616171020696.png)
+![image-20240616171020696](assets/image-20240616171020696.png)
 
 ### 10.4 表达式执行
 
@@ -1836,17 +1836,17 @@ $σ_{A≤v}(r)$：假设最大最小储存在目录中，值均匀分布，则<i
 
 **复杂选择**
 
-<img src="../images/image-20240619104910755.png" alt="image-20240619104910755" style="zoom:50%;" />
+<img src="assets/image-20240619104910755.png" alt="image-20240619104910755" style="zoom:50%;" />
 
 连接规模估计：
 
-![image-20240619105008753](../images/image-20240619105008753.png)
+![image-20240619105008753](assets/image-20240619105008753.png)
 
 #### 10.5.4 执行优化
 
 ### Exercises
 
-1. ![image-20240602153039717](../images/image-20240602153039717.png)
+1. ![image-20240602153039717](assets/image-20240602153039717.png)
 
    a. 
 
@@ -1892,7 +1892,7 @@ ACID：原子性一致性隔离性持久性
 
 #### Example
 
-![image-20240530102647913](../images/image-20240530102647913.png)
+![image-20240530102647913](assets/image-20240530102647913.png)
 
 视图可串行化（view serializability
 
@@ -1900,7 +1900,7 @@ ACID：原子性一致性隔离性持久性
 
 每个冲突可串行化的调度也是视图~；反之不对
 
-![image-20240530103459073](../images/image-20240530103459073.png)
+![image-20240530103459073](assets/image-20240530103459073.png)
 
 - 每个不是冲突串行化的视图可串行化调度都有盲写
 
@@ -1930,7 +1930,7 @@ concurrency-control
 
 ### 12.1 锁
 
-<img src="../images/image-20240614184748441.png" alt="image-20240614184748441" style="zoom:50%;" />
+<img src="assets/image-20240614184748441.png" alt="image-20240614184748441" style="zoom:50%;" />
 
 
 
@@ -1958,7 +1958,7 @@ tree protocol 树协议
 
 死锁举例：
 
-<img src="../images/image-20240616172318172.png" alt="image-20240616172318172" style="zoom:33%;" /> 
+<img src="assets/image-20240616172318172.png" alt="image-20240616172318172" style="zoom:33%;" /> 
 Neither T3 nor T4 can make progress — executing  lock-S(B) causes T4 to wait for T3 to release its lock on B, while executing  lock-X(A) causes T3  to wait for T4 to release its lock on A.
 
 
@@ -2031,7 +2031,7 @@ granularity
 
 **重做redo**：日志中包括$<T_i start>$记录以及$<T_i commit>$或$<T_i abort>$​记录，哪里开始出错从哪里开始重做
 
-![image-20240616190910326](../images/image-20240616190910326.png)
+![image-20240616190910326](assets/image-20240616190910326.png)
 
 ##### 单个事务回滚
 
@@ -2050,11 +2050,11 @@ granularity
 
 - All updates are stopped while doing checkpointing!!!
 
-![image-20240616191956910](../images/image-20240616191956910.png)
+![image-20240616191956910](assets/image-20240616191956910.png)
 
 模糊检查点（fuzzy checkpoint）
 
-![image-20240616195539201](../images/image-20240616195539201.png)
+![image-20240616195539201](assets/image-20240616195539201.png)
 
 Write-Ahead Logging 日志先写原则：在checkpoint记录日志后，修改过的缓冲块写到磁盘前开始更新日志
 
@@ -2108,7 +2108,7 @@ Dirty page table：
   already been applied to the page version on the disk
 - 使用脏页表(dirty page table) 来避免不必要的redo
 
-<img src="../images/image-20240619124202440.png" alt="image-20240619124202440" style="zoom:50%;" />
+<img src="assets/image-20240619124202440.png" alt="image-20240619124202440" style="zoom:50%;" />
 
 ARIES recovers from a system crash in three passes——三轮遍历
 
@@ -2116,7 +2116,7 @@ ARIES recovers from a system crash in three passes——三轮遍历
 - Redo pass: This pass starts from a position determined during analysis and performs a redo, repeating history, to bring the database to a state it was in before the crash.
 - Undo pass: This pass rolls back all transactions that were incomplete at the time of crash. 
 
-![image-20240617201838038](../images/image-20240617201838038.png)
+![image-20240617201838038](assets/image-20240617201838038.png)
 
 **分析阶段**
 

@@ -144,17 +144,17 @@ markmap:
 1. 要等待，处理完传回——同步 synchronous
 2. 接收到（没做完）就传回——异步 asynchronous
 
-<img src="../images/image-20240911152005368.png" alt="image-20240911152005368" style="zoom:50%;" />
+<img src="./assets/image-20240911152005368.png" alt="image-20240911152005368" style="zoom:50%;" />
 
 DMA：直接内存访问
 
-<img src="../images/image-20240911152146945.png" alt="image-20240911152146945" style="zoom: 33%;" />
+<img src="./assets/image-20240911152146945.png" alt="image-20240911152146945" style="zoom: 33%;" />
 
 每块只产生一个中断
 
 ### 存储
 
-<img src="../images/image-20240911152243818.png" alt="image-20240911152243818" style="zoom:50%;" />
+<img src="./assets/image-20240911152243818.png" alt="image-20240911152243818" style="zoom:50%;" />
 
 速度、花销、易失性
 
@@ -220,7 +220,7 @@ DMA：直接内存访问
   - 一些指令被指定为特权指令 privileged，只能在内核模式下执行（不允许用户直接使用）
   - 系统调用 system call 将模式更改为 kernel 模式，再通过系统调用回来将其重置为 user 模式
 
-![image-20240914104446706](../images/image-20240914104446706.png)
+![image-20240914104446706](./assets/image-20240914104446706.png)
 
 **Timer 定时器**：防止无限循环/进程占用资源
 
@@ -237,17 +237,17 @@ DMA：直接内存访问
 - **多线程进程 Multi-threaded process** 每个线程都有一个计数器
 - **多路复用 multiplexing**-> 实现并发 concurrency
 
-<img src="../images/image-20240914111333126.png" alt="image-20240914111333126" style="zoom:50%;" />
+<img src="./assets/image-20240914111333126.png" alt="image-20240914111333126" style="zoom:50%;" />
 
 #### Memory management 内存管理
 
-<img src="../images/image-20240914110859245.png" style="zoom:50%;" />
+<img src="./assets/image-20240914110859245.png" style="zoom:50%;" />
 
 #### File management 文件管理
 
 文件管理：创建、删除、加密
 
-<img src="../images/image-20240914111350634.png" alt="image-20240914111350634" style="zoom:50%;" />
+<img src="./assets/image-20240914111350634.png" alt="image-20240914111350634" style="zoom:50%;" />
 
 管道 pipe 是一种文件
 
@@ -255,11 +255,11 @@ DMA：直接内存访问
 
 Mass-Storage Management
 
-<img src="../images/image-20240914111610391.png" alt="image-20240914111610391" style="zoom:40%;" />
+<img src="./assets/image-20240914111610391.png" alt="image-20240914111610391" style="zoom:40%;" />
 
 I/O Subsystem 子系统
 
-<img src="../images/image-20240914112031690.png" alt="image-20240914112031690" style="zoom: 40%;" />
+<img src="./assets/image-20240914112031690.png" alt="image-20240914112031690" style="zoom: 40%;" />
 
 ### 总结 OS purposes
 
@@ -335,7 +335,7 @@ Information maintenance (e.g. time, date) 信息维护（内存管理）
 Communications 交流
 Protection 保护
 
-<img src="../images/image-20240918150058573.png" alt="image-20240918150058573" style="zoom:50%;" />
+<img src="./assets/image-20240918150058573.png" alt="image-20240918150058573" style="zoom:50%;" />
 
 
 
@@ -394,7 +394,7 @@ UNIX – 受硬件功能限制，原始 UNIX 操作系统结构有限。UNIX 操
 
 **UNIX System Structure** 宏内核
 
-<img src="../images/image-20240918154609215.png" alt="image-20240918154609215" style="zoom:50%;" />
+<img src="./assets/image-20240918154609215.png" alt="image-20240918154609215" style="zoom:50%;" />
 
 #### Microkernel System Structure 微内核
 
@@ -437,7 +437,7 @@ Windows, MacOS, iOS——混合内核
 
 逻辑分层：
 
-<img src="../images/image-20240923104411850.png" alt="image-20240923104411850" style="zoom: 33%;" />
+<img src="./assets/image-20240923104411850.png" alt="image-20240923104411850" style="zoom: 33%;" />
 
 逐层调用（不能跨层调用）、逐层封装——层之间通讯的效率问题
 
@@ -496,7 +496,7 @@ TYPE2 Hosted 宿主 需要 hostOS，eg VMware、Oracle
 
 选 2 不选 1 的常见原因：easier integration with existing host OS
 
-<img src="../images/image-20240923111559930.png" alt="image-20240923111559930" style="zoom:50%;" />
+<img src="./assets/image-20240923111559930.png" alt="image-20240923111559930" style="zoom:50%;" />
 
 三种技术：
 
@@ -562,7 +562,7 @@ An operating system executes a variety of programs:
 - heap (dynamically allocated memory)
 - program counter 
 
-<img src="../images/image-20240923112853058.png" alt="image-20240923112853058" style="zoom:33%;" /> stack 和 heap 相对而生：灵活应用内存空间
+<img src="./assets/image-20240923112853058.png" alt="image-20240923112853058" style="zoom:33%;" /> stack 和 heap 相对而生：灵活应用内存空间
 
 进程是一个独立的运行单位，也是操作系统进行资源分配和调度的基本单位
 
@@ -570,7 +570,7 @@ An operating system executes a variety of programs:
 
 进程状态
 
-<img src="../images/image-20240923113548425.png" alt="image-20240923113548425" style="zoom: 33%;" />
+<img src="./assets/image-20240923113548425.png" alt="image-20240923113548425" style="zoom: 33%;" />
 
 - **new 创建态**：正在被创建中
   - 创建新进程的操作原语
@@ -614,7 +614,7 @@ An operating system executes a variety of programs:
 - Process ID 是进程的独特编号
 - PCB 中的 PC 是记录程序目前正在运行的位置
 
-<img src="../images/image-20240925150055065.png" alt="image-20240925150055065" style="zoom: 33%;" />
+<img src="./assets/image-20240925150055065.png" alt="image-20240925150055065" style="zoom: 33%;" />
 
 [Context Switch 上下文切换](# Context Switch 上下文切换) 的 overhead
 
@@ -642,7 +642,7 @@ Processes migrate among the various queues
 >
 > - 不可能
 
-<img src="../images/image-20240925152502875.png" alt="image-20240925152502875" style="zoom: 33%;" />
+<img src="./assets/image-20240925152502875.png" alt="image-20240925152502875" style="zoom: 33%;" />
 
 
 > [!NOTE]
@@ -672,7 +672,7 @@ Processes migrate among the various queues
 
 交换运行程序到磁盘（....？
 
-<img src="../images/image-20240925153235578.png" alt="image-20240925153235578" style="zoom:33%;" />
+<img src="./assets/image-20240925153235578.png" alt="image-20240925153235578" style="zoom:33%;" />
 
 
 
@@ -744,7 +744,7 @@ Processes can be described as either:
 >
 > 父进程和子进程不能同时使用
 
-<img src="../images/image-20240930103721294.png" alt="image-20240930103721294" style="zoom:30%;" />
+<img src="./assets/image-20240930103721294.png" alt="image-20240930103721294" style="zoom:30%;" />
 
 > [!NOTE]
 >
@@ -780,7 +780,7 @@ OS 不是真的 copy，显式 copy
 
 #### Producer-consumer
 
-<img src="../images/image-20240930110501365.png" alt="image-20240930110501365" style="zoom: 50%;" />
+<img src="./assets/image-20240930110501365.png" alt="image-20240930110501365" style="zoom: 50%;" />
 
 主要目的是 解决 生产者线程和消费者线程之间进行数据的 **同步** 操作
 
@@ -830,7 +830,7 @@ Two models for IPC: **message passing** 消息队列 and **shared memory** 共�
 
 通信模型：
 
-<img src="../images/image-20240930111506403.png" alt="image-20240930111506403" style="zoom: 33%;" />
+<img src="./assets/image-20240930111506403.png" alt="image-20240930111506403" style="zoom: 33%;" />
 
 共享内存的主要优点：数据一致性
 
@@ -899,7 +899,7 @@ CPU 调度 schedule/dispatch 的最小（基本）单位：线程 thread
 
 ##### 进程和线程的区别
 
-<img src="../images/cb8c649311628903e2240ebd3e73873.jpg" alt="cb8c649311628903e2240ebd3e73873" style="zoom:50%;" />
+<img src="./assets/cb8c649311628903e2240ebd3e73873.jpg" alt="cb8c649311628903e2240ebd3e73873" style="zoom:50%;" />
 
 线程可以在多个 CPU 上执行
 
@@ -970,7 +970,7 @@ thread management is efficient, but will block if making system call, kernel can
 
 线程管理是高效的，但如果进行系统调用会阻塞，内核一次只能调度一个线程
 
-<img src="../images/image-20241009152351978.png" alt="image-20241009152351978" style="zoom:30%;" />
+<img src="./assets/image-20241009152351978.png" alt="image-20241009152351978" style="zoom:30%;" />
 
 > Q：某个分时系统采用 **多对一** 线程模型。内存中有 10 个进程并发运行，其中 9 个进程中只有一个线程，另外一个进程 A 拥有 11 个线程。则 A 获得的 CPU 时间占总时间的 1/10
 
@@ -1067,7 +1067,7 @@ scheduler dispatch 调度器
 
 ==Goal: 在多道程序设计 multiprogramming 下 CPU 使用率最大化==
 
-<img src="../images/image-20241014100337138.png" alt="image-20241014100337138" style="zoom: 50%;" />
+<img src="./assets/image-20241014100337138.png" alt="image-20241014100337138" style="zoom: 50%;" />
 
 CPU-I/O Burst Cycle：Process execution consists of a cycle of CPU execution and I/O wait
 
@@ -1081,7 +1081,7 @@ CPU-I/O Burst Cycle：Process execution consists of a cycle of CPU execution and
 
 CPU 可能进行调度的情况（4 种）
 
-<img src="../images/image-20241014100627801.png" alt="image-20241014100627801" style="zoom: 67%;" />
+<img src="./assets/image-20241014100627801.png" alt="image-20241014100627801" style="zoom: 67%;" />
 
 non-preemptive 非抢占式调度 1 & 4
 
@@ -1098,7 +1098,7 @@ preemptive ✔️ 2 & 3
 
 dispacher latency：P0 停止运行到 P1 运行
 
-<img src="../images/image-20241014100422820.png" alt="image-20241014100422820" style="zoom:33%;" />
+<img src="./assets/image-20241014100422820.png" alt="image-20241014100422820" style="zoom:33%;" />
 
 ### scheduling criteria
 
@@ -1112,7 +1112,7 @@ dispacher latency：P0 停止运行到 P1 运行
 
 5. response time 响应时间
 
-<img src="../images/image-20241014100514354.png" alt="image-20241014100514354" style="zoom:50%;" />
+<img src="./assets/image-20241014100514354.png" alt="image-20241014100514354" style="zoom:50%;" />
 
 ### 调度算法 scheduling algorithms
 
@@ -1120,9 +1120,9 @@ dispacher latency：P0 停止运行到 P1 运行
 
 先来先服务算法
 
-<img src="../images/image-20241014100837396.png" alt="image-20241014100837396" style="zoom:50%;" />
+<img src="./assets/image-20241014100837396.png" alt="image-20241014100837396" style="zoom:50%;" />
 
-<img src="../images/image-20241014100934593.png" alt="image-20241014100934593" style="zoom:50%;" />
+<img src="./assets/image-20241014100934593.png" alt="image-20241014100934593" style="zoom:50%;" />
 
 > [!IMPORTANT]
 >
@@ -1153,11 +1153,11 @@ dispacher latency：P0 停止运行到 P1 运行
 
 ##### nonpreemptive
 
-<img src="../images/image-20241014103433736.png" alt="image-20241014103433736" style="zoom:50%;" />
+<img src="./assets/image-20241014103433736.png" alt="image-20241014103433736" style="zoom:50%;" />
 
 ##### preemptive
 
-<img src="../images/image-20241014104442138.png" alt="image-20241014104442138" style="zoom:50%;" />
+<img src="./assets/image-20241014104442138.png" alt="image-20241014104442138" style="zoom:50%;" />
 
 #### Priority Scheduling
 
@@ -1213,9 +1213,9 @@ Larger Response Ratio, higher priority
 - Application: Time-sharing system, Multi-tasking system
 - 当前进程的时间片用完后，该进程的状态由执行态变成就绪态
 
-<img src="../images/image-20241014112933209.png" alt="image-20241014112933209" style="zoom:50%;" />
+<img src="./assets/image-20241014112933209.png" alt="image-20241014112933209" style="zoom:50%;" />
 
-<img src="../images/image-20241014113016699.png" alt="image-20241014113016699" style="zoom:50%;" />
+<img src="./assets/image-20241014113016699.png" alt="image-20241014113016699" style="zoom:50%;" />
 
 #### Multilevel Queue
 
@@ -1299,17 +1299,17 @@ Global scheduling 内核级
 >
 > 实时系统
 
-![6be3c0221860c7866993492f536cac5](../images/6be3c0221860c7866993492f536cac5.jpg)
+![6be3c0221860c7866993492f536cac5](./assets/6be3c0221860c7866993492f536cac5.jpg)
 
 ### Q
 
-<img src="../images/image-20241021100841358.png" alt="image-20241021100841358" style="zoom: 33%;" />
+<img src="./assets/image-20241021100841358.png" alt="image-20241021100841358" style="zoom: 33%;" />
 
 > 外设是不可抢占的
 >
 > waiting time 是进程等待 CPU 资源的时间！
 
-<img src="../images/image-20241021102905818.png" alt="image-20241021102905818" style="zoom: 33%;" />
+<img src="./assets/image-20241021102905818.png" alt="image-20241021102905818" style="zoom: 33%;" />
 
 ## 进程同步 Process synchronization
 
@@ -1333,7 +1333,7 @@ Global scheduling 内核级
 
 Producer-consumer 生产者消费者问题：解决多个进程间的同步和异步问题
 
-<img src="../images/image-20241021105641372.png" alt="image-20241021105641372" style="zoom:50%;" /> <img src="../images/image-20241021110813871.png" alt="image-20241021110813871" style="zoom: 67%;" />
+<img src="./assets/image-20241021105641372.png" alt="image-20241021105641372" style="zoom:50%;" /> <img src="./assets/image-20241021110813871.png" alt="image-20241021110813871" style="zoom: 67%;" />
 
 count++和 count--两步有可能出错
 
@@ -1341,7 +1341,7 @@ count++和 count--两步有可能出错
 
 出错的 example：
 
-<img src="../images/image-20241021111018744.png" alt="image-20241021111018744" style="zoom:50%;" />
+<img src="./assets/image-20241021111018744.png" alt="image-20241021111018744" style="zoom:50%;" />
 
 出错的原因：抢占式调度，多个进程对 shared data 进行操作
 
@@ -1401,7 +1401,7 @@ Race condition 定义：a memory location is accessed concurrently, and at least
 
 ##### 单标志法
 
-<img src="../images/image-20241023145626698.png" alt="image-20241023145626698" style="zoom:50%;" />
+<img src="./assets/image-20241023145626698.png" alt="image-20241023145626698" style="zoom:50%;" />
 
 i 和 j 交替执行
 
@@ -1410,7 +1410,7 @@ i 和 j 交替执行
 
 ##### 双标志后检查法
 
-<img src="../images/image-20241023145544929.png" alt="image-20241023145544929" style="zoom:50%;" />
+<img src="./assets/image-20241023145544929.png" alt="image-20241023145544929" style="zoom:50%;" />
 
 - 满足 Mutual Exclusion
 - 不满足 Progress，违背空闲让进准则，存在 CPU 调度的一种情况，两个标志都为 TRUE 后一直循环下去）
@@ -1418,11 +1418,11 @@ i 和 j 交替执行
 
 ##### 双标志先检查法
 
-<img src="../images/image-20241023150759551.png" alt="image-20241023150759551" style="zoom:50%;" />
+<img src="./assets/image-20241023150759551.png" alt="image-20241023150759551" style="zoom:50%;" />
 
 和前面两种算法相比，先 while 再设 flag 值：
 
-<img src="../images/image-20241023150932808.png" alt="image-20241023150932808" style="zoom:50%;" />
+<img src="./assets/image-20241023150932808.png" alt="image-20241023150932808" style="zoom:50%;" />
 
 - **不满足 Mutual Exclusion**（存在 CPU 调度的一种情况，两个标志都为 TRUE，并进入临界区
 - 满足 Progres
@@ -1637,7 +1637,7 @@ int compare_and_swap(int *value, int expected, int new_value)
 
 ##### Bounded-waiting with compare-and-swap
 
-<img src="../images/image-20241028105047216.png" alt="image-20241028105047216" style="zoom:33%;" />
+<img src="./assets/image-20241028105047216.png" alt="image-20241028105047216" style="zoom:33%;" />
 
 - 满足 mutual exclusion, progress 和 bounded waiting
 
@@ -1649,7 +1649,7 @@ int compare_and_swap(int *value, int expected, int new_value)
 
 #### 互斥锁 Mutex locks
 
-<img src="../images/image-20241028112035245.png" alt="image-20241028112035245" style="zoom:33%;" />
+<img src="./assets/image-20241028112035245.png" alt="image-20241028112035245" style="zoom:33%;" />
 
 But this solution requires **busy waiting** **（不停空循环）**
 
@@ -1688,37 +1688,37 @@ Can be implemented without busy waiting --> 实现让权等待
 
 > [!IMPORTANT]
 >
-> <img src="../images/image-20241030152700179.png" alt="image-20241030152700179" style="zoom: 33%;" />
+> <img src="./assets/image-20241030152700179.png" alt="image-20241030152700179" style="zoom: 33%;" />
 >
 > S.value = 0 已经有一个进程在临界区
 
 信号量种类：
 
-<img src="../images/image-20241028113509355.png" alt="image-20241028113509355" style="zoom:33%;" />
+<img src="./assets/image-20241028113509355.png" alt="image-20241028113509355" style="zoom:33%;" />
 
 👆 互斥访问
 
 同步操作：
 
-<img src="../images/image-20241030143820461.png" alt="image-20241030143820461" style="zoom:33%;" />
+<img src="./assets/image-20241030143820461.png" alt="image-20241030143820461" style="zoom:33%;" />
 
 Question：有四个房间，四个进程访问
 
-<img src="../images/image-20241030144512191.png" alt="image-20241030144512191" style="zoom: 33%;" />
+<img src="./assets/image-20241030144512191.png" alt="image-20241030144512191" style="zoom: 33%;" />
 
 ##### 实现 Semaphore Implementation
 
 ###### Busy waiting
 
-<img src="../images/image-20241030144747181.png" alt="image-20241030144747181" style="zoom:33%;" />
+<img src="./assets/image-20241030144747181.png" alt="image-20241030144747181" style="zoom:33%;" />
 
-<img src="../images/image-20241030145309092.png" alt="image-20241030145309092" style="zoom:33%;" />
+<img src="./assets/image-20241030145309092.png" alt="image-20241030145309092" style="zoom:33%;" />
 
 对 P 不太友好
 
 ###### no Busy waiting 非忙等
 
-<img src="../images/image-20241030145617397.png" alt="image-20241030145617397" style="zoom:33%;" />
+<img src="./assets/image-20241030145617397.png" alt="image-20241030145617397" style="zoom:33%;" />
 
 ```c
 /*Implementation of wait*/
@@ -1742,11 +1742,11 @@ Signal (S){
 
 - S 的取值可以是负的了（相比原先的 wait 和 signal），S 取负表示当前队列排队进程的个数
 
-<img src="../images/image-20241030151249807.png" alt="image-20241030151249807" style="zoom: 33%;" />
+<img src="./assets/image-20241030151249807.png" alt="image-20241030151249807" style="zoom: 33%;" />
 
-<img src="../images/image-20241030151458384.png" alt="image-20241030151458384" style="zoom: 33%;" />
+<img src="./assets/image-20241030151458384.png" alt="image-20241030151458384" style="zoom: 33%;" />
 
-<img src="../images/image-20241030151550913.png" alt="image-20241030151550913" style="zoom: 33%;" />
+<img src="./assets/image-20241030151550913.png" alt="image-20241030151550913" style="zoom: 33%;" />
 
 > [!WARNING]
 >
@@ -1777,7 +1777,7 @@ What if one must choose busy waiting?
 - Semaphore **full** initialized to the value 0, counting full items
 - Semaphore **empty** initialized to the value **N**, counting empty items
 
-<img src="../images/image-20241030153449418.png" alt="image-20241030153449418" style="zoom:33%;" />
+<img src="./assets/image-20241030153449418.png" alt="image-20241030153449418" style="zoom:33%;" />
 
 ###### Readers and Writers Problem
 
@@ -1802,7 +1802,7 @@ Shared Data
 
 - Integer **readcount** initialized to 0 读者的数量
 
-<img src="../images/image-20241030154705621.png" alt="image-20241030154705621" style="zoom:33%;" />
+<img src="./assets/image-20241030154705621.png" alt="image-20241030154705621" style="zoom:33%;" />
 
 ###### Dining-Philosophers Problem
 
@@ -1814,7 +1814,7 @@ Shared data
 
 - Semaphore `chopstick [5]` initialized to 1
 
-<img src="../images/image-20241030155058113.png" alt="image-20241030155058113" style="zoom:33%;" />
+<img src="./assets/image-20241030155058113.png" alt="image-20241030155058113" style="zoom:33%;" />
 
 如果只设置一个筷子的信号量，设置为 5，有什么问题？一个筷子可能被拿两次，违反互斥性
 
@@ -1841,7 +1841,7 @@ monitor monitor-name
 }
 ```
 
-<img src="../images/image-20241104104332459.png" alt="image-20241104104332459" style="zoom:33%;" /> 函数挂起
+<img src="./assets/image-20241104104332459.png" alt="image-20241104104332459" style="zoom:33%;" /> 函数挂起
 
 `x.wait()` 作用：阻塞该进程并将他插入到 x 序列
 
@@ -1923,7 +1923,7 @@ Using `pthread_cond_wait()` & `pthread_cond_signal()`
 
 #### 产生死锁的四个必要条件
 
-<img src="../images/image-20241106152044852.png" alt="image-20241106152044852" style="zoom:33%;" />
+<img src="./assets/image-20241106152044852.png" alt="image-20241106152044852" style="zoom:33%;" />
 
 > 
 
@@ -1939,7 +1939,7 @@ resource type & resource instances
 
 A set of vertices **顶点 V** and a set of edges **边 E**
 
-<img src="../images/image-20241106153033476.png" alt="image-20241106153033476" style="zoom:33%;" />
+<img src="./assets/image-20241106153033476.png" alt="image-20241106153033476" style="zoom:33%;" />
 
 顶点表示资源 R 或进程 P
 
@@ -2006,7 +2006,7 @@ Ignore the problem and pretend that deadlocks never occur in the system. 忽略�
 
 对于进程序列中的每一个进程 Pi，当前系统已经分配了一些资源，还剩下一些资源。如果 **Pi 前面的资源之和+系统剩下的资源 能够满足 Pi 执行完毕**，则这个序列是个安全状态。
 
-<img src="../images/image-20241111103432235.png" alt="image-20241111103432235" style="zoom:33%;" />
+<img src="./assets/image-20241111103432235.png" alt="image-20241111103432235" style="zoom:33%;" />
 
 > [!NOTE]
 >
@@ -2016,7 +2016,7 @@ Ignore the problem and pretend that deadlocks never occur in the system. 忽略�
 >
 > Avoidance => ensure that a system will never enter an unsafe state.
 
-<img src="../images/image-20241111104223355.png" alt="image-20241111104223355" style="zoom:33%;" />
+<img src="./assets/image-20241111104223355.png" alt="image-20241111104223355" style="zoom:33%;" />
 
 ##### Avoidance algorithms
 
@@ -2034,23 +2034,23 @@ Claim edge Pi -> Rj indicated that process Pi may request resource Rj
 
 ##### Banker’s Algorithm 银行家算法:fire:
 
-<img src="../images/image-20241111110516636.png" alt="image-20241111110516636" style="zoom:33%;" />
+<img src="./assets/image-20241111110516636.png" alt="image-20241111110516636" style="zoom:33%;" />
 
 数据结构
 
-<img src="../images/image-20241111110607001.png" alt="image-20241111110607001" style="zoom:33%;" />
+<img src="./assets/image-20241111110607001.png" alt="image-20241111110607001" style="zoom:33%;" />
 
 Example
 
-<img src="../images/image-20241111111754885.png" alt="image-20241111111754885" style="zoom:33%;" />
+<img src="./assets/image-20241111111754885.png" alt="image-20241111111754885" style="zoom:33%;" />
 
-<img src="../images/image-20241111112228808.png" alt="image-20241111112228808" style="zoom:33%;" />
+<img src="./assets/image-20241111112228808.png" alt="image-20241111112228808" style="zoom:33%;" />
 
 - 实际上很多操作系统都不是使用银行家算法进行死锁避免
 
 ##### Safety Algorithm
 
-<img src="../images/image-20241111111035473.png" alt="image-20241111111035473" style="zoom:33%;" />
+<img src="./assets/image-20241111111035473.png" alt="image-20241111111035473" style="zoom:33%;" />
 
 
 #### Deadlock Detection ( 检测 ) 
@@ -2061,7 +2061,7 @@ Example
 
 检查 wait-for graph 有没有环
 
-<img src="../images/image-20241111112900123.png" alt="image-20241111112900123" style="zoom:33%;" />
+<img src="./assets/image-20241111112900123.png" alt="image-20241111112900123" style="zoom:33%;" />
 
 ##### 多实例 Several Instances of a Resource Type
 
@@ -2173,7 +2173,7 @@ Cache sits between main memory and CPU registers
 
 #### Cache Hierarchy
 
-<img src="../images/image-20241118100926438.png" alt="image-20241118100926438" style="zoom: 33%;" />
+<img src="./assets/image-20241118100926438.png" alt="image-20241118100926438" style="zoom: 33%;" />
 
 #### Multistep Processing of a User Program
 
@@ -2358,13 +2358,13 @@ To run a program of size n pages, need to find n free frames and load program
 
 #### Address Translation Scheme
 
-<img src="../images/image-20241120144532930.png" alt="image-20241120144532930" style="zoom: 33%;" />
+<img src="./assets/image-20241120144532930.png" alt="image-20241120144532930" style="zoom: 33%;" />
 
 页号、页面偏移
 
 地址转换
 
-<img src="../images/image-20241125100730054.png" alt="image-20241125100730054" style="zoom: 33%;" />
+<img src="./assets/image-20241125100730054.png" alt="image-20241125100730054" style="zoom: 33%;" />
 
 > 为了将虚拟地址转换为物理地址，需要结合虚拟地址的页号和页内偏移，以及页表中页号与页框号的映射关系。以下是计算步骤：
 >
@@ -2427,7 +2427,7 @@ The two-memory-access problem can be solved by the use of a special fast-lookup 
 
 #### Paging Hardware With TLB
 
-<img src="../images/image-20241120150234672.png" alt="image-20241120150234672" style="zoom:50%;" />
+<img src="./assets/image-20241120150234672.png" alt="image-20241120150234672" style="zoom:50%;" />
 
 #### Effective Access Time
 
@@ -2468,7 +2468,7 @@ Shared code must appear in <span style="color:#CC0066;"> same location in the lo
 
 两级页表
 
-<img src="../images/image-20241120152043420.png" alt="image-20241120152043420" style="zoom:50%;" />
+<img src="./assets/image-20241120152043420.png" alt="image-20241120152043420" style="zoom:50%;" />
 
 p1-> outer page table -- p2 -> page of page table -- d -> real physical address 
 
@@ -2486,7 +2486,7 @@ p1-> outer page table -- p2 -> page of page table -- d -> real physical address
 
 Variation for 64-bit addresses is the **clustered page table**
 
-<img src="../images/image-20241120153044232.png" alt="image-20241120153044232" style="zoom:50%;" />
+<img src="./assets/image-20241120153044232.png" alt="image-20241120153044232" style="zoom:50%;" />
 
 哈希优点：快，hashtable 比 pagetable 小
 
@@ -2494,7 +2494,7 @@ Variation for 64-bit addresses is the **clustered page table**
 
 #### 倒排页表 Inverted Page Tables
 
-<img src="../images/image-20241120153453098.png" alt="image-20241120153453098" style="zoom:50%;" />
+<img src="./assets/image-20241120153453098.png" alt="image-20241120153453098" style="zoom:50%;" />
 
 缺点：慢；好处：只有一个 pagetable
 
@@ -2502,7 +2502,7 @@ Search is slow, so put page table entries into a hash table. TLB can be used to 
 
 #### 页表项计算
 
-<img src="./assets/image-20241229131108605.png" alt="image-20241229131108605" style="zoom:50%;" />
+<img src="././assets/image-20241229131108605.png" alt="image-20241229131108605" style="zoom:50%;" />
 
 
 
@@ -2511,7 +2511,7 @@ Search is slow, so put page table entries into a hash table. TLB can be used to 
 A process can be swapped temporarily out of memory to a backing store, and then brought back into memory for continued execution 进程可以暂时从内存交换到备用存储器，然后再返回到内存中继续执行
 **Backing store 交换区** – fast disk large enough to accommodate copies of all memory images for all users; must provide direct access to these memory images 足够大的快速磁盘，可以容纳所有用户的所有内存映像的副本；必须提供对这些内存映像的直接访问
 
-<img src="../images/image-20241120154044395.png" alt="image-20241120154044395" style="zoom:50%;" />
+<img src="./assets/image-20241120154044395.png" alt="image-20241120154044395" style="zoom:50%;" />
 
 
 
@@ -2537,7 +2537,7 @@ Memory-management scheme that supports user view of memory
 
 - 方便编程、分段共享、分段保护、动态链接和动态增长
 
-<img src="../images/image-20241120154721954.png" alt="image-20241120154721954" style="zoom:50%;" />
+<img src="./assets/image-20241120154721954.png" alt="image-20241120154721954" style="zoom:50%;" />
 
 非连续分配
 
@@ -2562,7 +2562,7 @@ Supports both segmentation and segmentation with paging 段页混合，先分段
 
 linear address: 32 offset
 
-<img src="../images/image-20241125104027505.png" alt="image-20241125104027505" style="zoom:50%;" />
+<img src="./assets/image-20241125104027505.png" alt="image-20241125104027505" style="zoom:50%;" />
 
 #### Intel Pentium Segmentation
 
@@ -2680,7 +2680,7 @@ With each page table entry a valid–invalid bit is associated (**v**: in-memory
 * Initially valid–invalid bit is set to i on all entries
 * During address translation, if valid–invalid bit in page table entry is **i** => **page fault** (a trap to the OS 缺页中断)
 
-<img src="../images/image-20241125112104401.png" alt="image-20241125112104401" style="zoom: 33%;" />
+<img src="./assets/image-20241125112104401.png" alt="image-20241125112104401" style="zoom: 33%;" />
 
 #### Page Fault
 
@@ -2718,7 +2718,7 @@ EAT = (1 – p) × memory access + p (page fault overhead + swap page out + swap
 
 例子：
 
-<img src="../images/image-20241125113529011.png" alt="image-20241125113529011" style="zoom: 33%;" />
+<img src="./assets/image-20241125113529011.png" alt="image-20241125113529011" style="zoom: 33%;" />
 
 > [!NOTE]
 >
@@ -2758,7 +2758,7 @@ CoW 的主要目的是减少内存使用和提高性能，通过延迟实际的�
 
 实际上不是等到没有空闲帧的时候进行替换，操作系统会提前做
 
-<img src="../images/image-20241127143706318.png" alt="image-20241127143706318" style="zoom: 33%;" />
+<img src="./assets/image-20241127143706318.png" alt="image-20241127143706318" style="zoom: 33%;" />
 
 #### Page Replacement Algorithms
 
@@ -2776,7 +2776,7 @@ Want lowest page-fault rate 最低缺页率
 
 Belady
 
-<img src="../images/image-20241127145037198.png" alt="image-20241127145037198" style="zoom: 40%;" />
+<img src="./assets/image-20241127145037198.png" alt="image-20241127145037198" style="zoom: 40%;" />
 
 ##### Optimal Algorithm
 
@@ -2784,13 +2784,13 @@ Belady
 
 替换将来最长不使用的 page Replace page that will not be used for longest period of time
 
-<img src="../images/image-20241127145836832.png" alt="image-20241127145836832" style="zoom:40%;" />
+<img src="./assets/image-20241127145836832.png" alt="image-20241127145836832" style="zoom:40%;" />
 
 ##### Least Recently Used (LRU) Algorithm
 
 **最近最久未使用** 置换算法：选择内存中最久没有引用的页面被置换。这是局部性原理的合理近似，性能接近最佳算法。但由于需要记录页面使用时间，硬件开销太大。
 
-<img src="../images/image-20241127145959957.png" alt="image-20241127145959957" style="zoom:40%;" />
+<img src="./assets/image-20241127145959957.png" alt="image-20241127145959957" style="zoom:40%;" />
 
 ##### LRU Algorithm
 
@@ -2933,7 +2933,7 @@ if D > m，Thrashing
 
 Policy if D > m, then suspend one of the processes
 
-![image-20241202112051748](../images/image-20241202112051748.png)
+![image-20241202112051748](./assets/image-20241202112051748.png)
 
 #### Page-Fault Frequency Scheme
 
@@ -2943,7 +2943,7 @@ Establish “acceptable” page-fault rate for each process 调节 frame 数控�
 
 - If actual rate too high, process gains frame
 
-<img src="../images/image-20241202101952067.png" alt="image-20241202101952067" style="zoom:50%;" />
+<img src="./assets/image-20241202101952067.png" alt="image-20241202101952067" style="zoom:50%;" />
 
 ### 内存映射文件 Memory-Mapped Files
 
@@ -2951,7 +2951,7 @@ Simplifies file access by treating file I/O through memory rather than **read() 
 
 Also allows several processes to map the same file allowing the pages in memory to be shared
 
-<img src="../images/image-20241202102258495.png" alt="image-20241202102258495" style="zoom:50%;" />
+<img src="./assets/image-20241202102258495.png" alt="image-20241202102258495" style="zoom:50%;" />
 
 内存映射文件可以通过修改内存中的数据来实现对文件的写操作
 
@@ -3037,7 +3037,7 @@ Provide Multiple Page Sizes
 
 EG，按列访问和按行访问
 
-<img src="../images/image-20241202103517964.png" alt="image-20241202103517964" style="zoom: 33%;" />
+<img src="./assets/image-20241202103517964.png" alt="image-20241202103517964" style="zoom: 33%;" />
 
 ### Other Considerations
 
@@ -3203,11 +3203,11 @@ Several pieces of data are needed to manage open files:
 
 ### Access Methods
 
-<img src="../images/image-20241204151552427.png" alt="image-20241204151552427" style="zoom:50%;" />
+<img src="./assets/image-20241204151552427.png" alt="image-20241204151552427" style="zoom:50%;" />
 
 顺序访问
 
-<img src="../images/image-20241204151629460.png" alt="image-20241204151629460" style="zoom:50%;" />
+<img src="./assets/image-20241204151629460.png" alt="image-20241204151629460" style="zoom:50%;" />
 
 直接访问
 
@@ -3227,13 +3227,13 @@ Both the directory structure and the files reside on disk.
 
 #### Both the directory structure and the files reside on disk
 
-<img src="../images/image-20241204153053743.png" alt="image-20241204153053743" style="zoom:50%;" />
+<img src="./assets/image-20241204153053743.png" alt="image-20241204153053743" style="zoom:50%;" />
 
 The directory records information about the files in the system – such as name, location, size and type.
 
 #### Operations Performed on Directory
 
-<img src="../images/image-20241204153144630.png" alt="image-20241204153144630" style="zoom:50%;" />
+<img src="./assets/image-20241204153144630.png" alt="image-20241204153144630" style="zoom:50%;" />
 
 #### 目录作用
 
@@ -3250,7 +3250,7 @@ The directory records information about the files in the system – such as name
 
 为所有用户只提供一级目录，不方便，命名、分组问题
 
-<img src="../images/image-20241204153539634.png" alt="image-20241204153539634" style="zoom:50%;" />
+<img src="./assets/image-20241204153539634.png" alt="image-20241204153539634" style="zoom:50%;" />
 
 
 
@@ -3258,7 +3258,7 @@ The directory records information about the files in the system – such as name
 
 每个用户有个文件夹
 
-<img src="../images/image-20241204153630912.png" alt="image-20241204153630912" style="zoom:50%;" />
+<img src="./assets/image-20241204153630912.png" alt="image-20241204153630912" style="zoom:50%;" />
 
 还是不够高效
 
@@ -3266,11 +3266,11 @@ The directory records information about the files in the system – such as name
 
 树状目录
 
-<img src="../images/image-20241204154112574.png" alt="image-20241204154112574" style="zoom:50%;" />
+<img src="./assets/image-20241204154112574.png" alt="image-20241204154112574" style="zoom:50%;" />
 
 从一个目录到一个子目录需要一次磁盘 I/O 操作
 
-<img src="../images/image-20241204154200785.png" alt="image-20241204154200785" style="zoom:50%;" />
+<img src="./assets/image-20241204154200785.png" alt="image-20241204154200785" style="zoom:50%;" />
 
 #### Acyclic-Graph Directories
 
@@ -3281,9 +3281,9 @@ The directory records information about the files in the system – such as name
 - Requirement for file sharing
 - Have shared subdirectories and files
 
-<img src="../images/image-20241204154308896.png" alt="image-20241204154308896" style="zoom:50%;" />
+<img src="./assets/image-20241204154308896.png" alt="image-20241204154308896" style="zoom:50%;" />
 
-<img src="../images/image-20241204154716519.png" alt="image-20241204154716519" style="zoom:50%;" />
+<img src="./assets/image-20241204154716519.png" alt="image-20241204154716519" style="zoom:50%;" />
 
 如果有环的话，会有删除问题，重复找到这个文件，reference count（文件被引用次数）<> 0 即使没被使用过
 
@@ -3322,7 +3322,7 @@ A file system must be **mounted** before it can be accessed 文件系统必须�
 
 An un-mounted file system is mounted at a **mount point**
 
-<img src="../images/image-20241209104208477.png" alt="image-20241209104208477" style="zoom:50%;" />
+<img src="./assets/image-20241209104208477.png" alt="image-20241209104208477" style="zoom:50%;" />
 
 > 可以挂载到 fred 上吗？可以
 >
@@ -3330,7 +3330,7 @@ An un-mounted file system is mounted at a **mount point**
 
 #### Mount Point
 
-<img src="../images/image-20241209104533983.png" alt="image-20241209104533983" style="zoom:50%;" />
+<img src="./assets/image-20241209104533983.png" alt="image-20241209104533983" style="zoom:50%;" />
 
 
 
@@ -3373,7 +3373,7 @@ Mode of access:  read, write, execute
 
 权限
 
-<img src="../images/image-20241209105120787.png" alt="image-20241209105120787" style="zoom: 33%;" />
+<img src="./assets/image-20241209105120787.png" alt="image-20241209105120787" style="zoom: 33%;" />
 
 > d 指目录
 >
@@ -3414,7 +3414,7 @@ File system organized into **layers**
 
 #### Layered File System 分层
 
-<img src="../images/image-20241209111207161.png" alt="image-20241209111207161" style="zoom:50%;" />
+<img src="./assets/image-20241209111207161.png" alt="image-20241209111207161" style="zoom:50%;" />
 
 #### Data Structures Used to Implement FS
 
@@ -3451,7 +3451,7 @@ FCB 包含：基本信息、存取控制信息、使用信息
 
 ACL：access control list 访问控制表
 
-<img src="../images/image-20241209112133801.png" alt="image-20241209112133801" style="zoom:50%;" />
+<img src="./assets/image-20241209112133801.png" alt="image-20241209112133801" style="zoom:50%;" />
 
 
 
@@ -3459,7 +3459,7 @@ ACL：access control list 访问控制表
 
 open/read a file
 
-<img src="../images/image-20241209112651669.png" alt="image-20241209112651669" style="zoom:50%;" />
+<img src="./assets/image-20241209112651669.png" alt="image-20241209112651669" style="zoom:50%;" />
 
 
 ### Virtual File System (VFS) 虚拟文件系统
@@ -3476,7 +3476,7 @@ Defines a network-wide unique structure called **vnode**.
 
 封装
 
-<img src="../images/image-20241209113303154.png" alt="image-20241209113303154" style="zoom: 33%;" />
+<img src="./assets/image-20241209113303154.png" alt="image-20241209113303154" style="zoom: 33%;" />
 
 The four primary object types of VFS 虚拟文件系统的物理结构:
 
@@ -3540,7 +3540,7 @@ Each file is a linked list of disk blocks: blocks may be scattered anywhere on t
 
 block 最前面有个 pointer
 
-<img src="../images/image-20241211145704443.png" alt="image-20241211145704443" style="zoom:33%;" />
+<img src="./assets/image-20241211145704443.png" alt="image-20241211145704443" style="zoom:33%;" />
 
 特点
 
@@ -3561,7 +3561,7 @@ block 最前面有个 pointer
 
 Brings all pointers together into the index block，index block 存 pointer 信息
 
-<img src="../images/image-20241211145954492.png" alt="image-20241211145954492" style="zoom:33%;" />
+<img src="./assets/image-20241211145954492.png" alt="image-20241211145954492" style="zoom:33%;" />
 
 - Need index table (analogous to *page table*)
 
@@ -3571,7 +3571,7 @@ Brings all pointers together into the index block，index block 存 pointer 信�
 
 - When mapping from logical to physical in a file of maximum size of 256K words and block size of 512 words.  We need only 1 block for index table.
 
-  <img src="../images/image-20241211150401806.png" alt="image-20241211150401806" style="zoom:33%;" />
+  <img src="./assets/image-20241211150401806.png" alt="image-20241211150401806" style="zoom:33%;" />
 
 Mapping
 
@@ -3581,9 +3581,9 @@ When mapping from logical to physical in a file of unbounded length (block size 
 
 **Linked scheme** – Link blocks of index table (no limit on size). 链式
 
-<img src="../images/image-20241211150753298.png" alt="image-20241211150753298" style="zoom: 33%;" />
+<img src="./assets/image-20241211150753298.png" alt="image-20241211150753298" style="zoom: 33%;" />
 
-<img src="../images/image-20241211150625283.png" alt="image-20241211150625283" style="zoom:50%;" />
+<img src="./assets/image-20241211150625283.png" alt="image-20241211150625283" style="zoom:50%;" />
 
 -------------------------------------
 
@@ -3591,9 +3591,9 @@ When mapping from logical to physical in a file of unbounded length (block size 
 
 **Two-level index** (maximum file size is 512^3^)
 
-<img src="../images/image-20241211151259004.png" alt="image-20241211151259004" style="zoom:33%;" />
+<img src="./assets/image-20241211151259004.png" alt="image-20241211151259004" style="zoom:33%;" />
 
-<img src="../images/image-20241211151324165.png" alt="image-20241211151324165" style="zoom:50%;" />
+<img src="./assets/image-20241211151324165.png" alt="image-20241211151324165" style="zoom:50%;" />
 
 |                                          | **Two-level** **Index**                                      | **Linked** **Scheme**                                        |
 | ---------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -3610,11 +3610,11 @@ When mapping from logical to physical in a file of unbounded length (block size 
 
 Combined Scheme:  UNIX (4K bytes per block)
 
-<img src="../images/image-20241211151641943.png" alt="image-20241211151641943" style="zoom:33%;" />
+<img src="./assets/image-20241211151641943.png" alt="image-20241211151641943" style="zoom:33%;" />
 
 #### Summary
 
-![image-20241211151709367](../images/image-20241211151709367.png)
+![image-20241211151709367](./assets/image-20241211151709367.png)
 
 ### Free-Space Management 磁盘空闲空间管理
 
@@ -3630,7 +3630,7 @@ Combined Scheme:  UNIX (4K bytes per block)
 
 当前空闲的磁盘块记录在 super block 中
 
-<img src="../images/image-20241216100958836.png" alt="image-20241216100958836" style="zoom:50%;" />
+<img src="./assets/image-20241216100958836.png" alt="image-20241216100958836" style="zoom:50%;" />
 
 - 缺点
   - Bit map requires extra space
@@ -3705,7 +3705,7 @@ Routine I/O through the file system uses the buffer (disk) cache
 
 This leads to the following figure
 
-<img src="../images/image-20241216102559255.png" alt="image-20241216102559255" style="zoom:33%;" />
+<img src="./assets/image-20241216102559255.png" alt="image-20241216102559255" style="zoom:33%;" />
 
 #### Unified Buffer Cache
 
@@ -3715,7 +3715,7 @@ Avoids double caching
 
 用一个统一的 buffer cache
 
-<img src="../images/image-20241216102902616.png" alt="image-20241216102902616" style="zoom:33%;" />
+<img src="./assets/image-20241216102902616.png" alt="image-20241216102902616" style="zoom:33%;" />
 
 ## Mass-Storage Systems
 
@@ -3755,7 +3755,7 @@ Drive attached to computer via **I/O bus**
 
 Buses vary, including EIDE, ATA, SATA, USB, Fiber Channel, SCSIHost controller in computer uses bus to talk to disk controller built into drive or storage array
 
-<img src="../images/image-20241216104144039.png" alt="image-20241216104144039" style="zoom:33%;" />
+<img src="./assets/image-20241216104144039.png" alt="image-20241216104144039" style="zoom:33%;" />
 
 #### Nonvolatile Memory Devices
 
@@ -3799,7 +3799,7 @@ Network-Attached Storage
 
 #### Accessing a Disk Page
 
-<img src="../images/image-20241216110137892.png" alt="image-20241216110137892" style="zoom:50%;" />
+<img src="./assets/image-20241216110137892.png" alt="image-20241216110137892" style="zoom:50%;" />
 
 transfer time 和 rotational delay 和磁盘转速有关，转速越高，开销越小
 
@@ -3878,7 +3878,7 @@ Sometimes called the elevator algorithm 电梯调度算法
 
   - EG, [0, 200] 100, 160, 200, 90, 10
 
-    <img src="./assets/image-20250104161909559.png" alt="image-20250104161909559" style="zoom:40%;" />
+    <img src="././assets/image-20250104161909559.png" alt="image-20250104161909559" style="zoom:40%;" />
 
 - 对最近扫描过的区域不公平，因此它在局部性方面不如 FCFS 和 SSTF
 
@@ -3894,19 +3894,19 @@ Treats the cylinders as a circular list that wraps around from the last cylinder
 
 - EG, [0, 200] 100, 160, 200, 0, 10, 90
 
-  <img src="./assets/image-20250104161926401.png" alt="image-20250104161926401" style="zoom: 33%;" />
+  <img src="././assets/image-20250104161926401.png" alt="image-20250104161926401" style="zoom: 33%;" />
 
 ##### C-Look
 
 改进 SCAN 和 C-SCAN，磁头只需要移动到最远端的一个请求即可返回，不需要到达磁盘端点
 
-<img src="./assets/image-20250104161951659.png" alt="image-20250104161951659" style="zoom:40%;" />
+<img src="././assets/image-20250104161951659.png" alt="image-20250104161951659" style="zoom:40%;" />
 
 > Question: What scheduling algorithm is good for SSD（solid state disk，固态硬盘）? 
 >
 > - FCFS
 
-<img src="./assets/image-20250104162015836.png" alt="image-20250104162015836" style="zoom:50%;" />
+<img src="././assets/image-20250104162015836.png" alt="image-20250104162015836" style="zoom:50%;" />
 
 #### Disk Management
 
@@ -3935,7 +3935,7 @@ Swap-space — Virtual memory uses disk space as an extension of main memory.
 
 Swap-space can be carved out of the normal file system, or, more commonly, it can be in a separate disk partition. 可以是文件也可以是分区
 
-<img src="../images/image-20241218151850790.png" alt="image-20241218151850790" style="zoom:33%;" />
+<img src="./assets/image-20241218151850790.png" alt="image-20241218151850790" style="zoom:33%;" />
 
 
 
@@ -3988,7 +3988,7 @@ Common concepts
 - **Bus** 总线 (daisy chain or shared direct access)
 - **Controller** (host adapter) 控制器
 
-<img src="../images/image-20241223102241700.png" alt="image-20241223102241700" style="zoom:50%;" />
+<img src="./assets/image-20241223102241700.png" alt="image-20241223102241700" style="zoom:50%;" />
 
 #### I/O Port Registers
 
@@ -4010,7 +4010,7 @@ Common concepts
 
 Repeated for each byte:
 
-<img src="../images/image-20241223103025651.png" alt="image-20241223103025651" style="zoom:50%;" />
+<img src="./assets/image-20241223103025651.png" alt="image-20241223103025651" style="zoom:50%;" />
 
 Determines state of device 
 
@@ -4074,7 +4074,7 @@ Requires DMA controller
 - Bypasses CPU to transfer data directly between I/O device and memory 绕过 CPU，直接在 I/O 设备和内存之间传输数据 --> CPU 和设备并行操作程度得到提升
 - 数据传输以块为单位，CPU 介入的频率进一步降低
 
-<img src="../images/image-20241223105154629.png" alt="image-20241223105154629" style="zoom:50%;" />
+<img src="./assets/image-20241223105154629.png" alt="image-20241223105154629" style="zoom:50%;" />
 
 需要 4 类寄存器
 
@@ -4093,11 +4093,11 @@ Devices vary in many dimensions
 - Speed of operation
 - read-write, read only, or write only
 
-<img src="../images/image-20241223105355845.png" alt="image-20241223105355845" style="zoom:50%;" />
+<img src="./assets/image-20241223105355845.png" alt="image-20241223105355845" style="zoom:50%;" />
 
 Permissions  Owner  Group  Major Device Number  Minor Device Number  Timestamp  Device  Name
 
-<img src="../images/image-20241223105509629.png" alt="image-20241223105509629" style="zoom:50%;" />
+<img src="./assets/image-20241223105509629.png" alt="image-20241223105509629" style="zoom:50%;" />
 
 用户程序对 I/O 设备的请求采用逻辑设备名。而程序执行时使用物理设备名，它们之间的转换是设备无关软件层完成的。主设备和从设备是总线仲裁中的概念。
 
@@ -4156,7 +4156,7 @@ Asynchronous - process runs while I/O executes
 
 
 
-<img src="../images/image-20241223112145908.png" alt="image-20241223112145908" style="zoom:50%;" />
+<img src="./assets/image-20241223112145908.png" alt="image-20241223112145908" style="zoom:50%;" />
 
 ### Kernel I/O Interface 
 
@@ -4211,7 +4211,7 @@ C：CPU 对数据的处理时间
 
 高速缓存和缓冲区的对比
 
-<img src="./assets/image-20250104154338116.png" alt="image-20250104154338116" style="zoom:50%;" />
+<img src="././assets/image-20250104154338116.png" alt="image-20250104154338116" style="zoom:50%;" />
 
 ##### Spooling
 

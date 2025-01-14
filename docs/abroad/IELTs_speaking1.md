@@ -1,16 +1,18 @@
 # IELTS Speaking
 
-[TOC]
+> 2024.9-12题目+10.30新题
 
-## 衔接词
-
-首先想到的：off the top of my head
-
-关于：when it comes to/regarding/in terms of/as for..
-
-除了：apart from
-
-句型：what I appreciate/admire/love most is, what intrigues me most is, what makes .. so .. is
+> [!NOTE]
+>
+> **衔接词**
+>
+> 首先想到的：off the top of my head
+>
+> 关于：when it comes to/regarding/in terms of/as for..
+>
+> 除了：apart from
+>
+> 句型：what I appreciate/admire/love most is, what intrigues me most is, what makes .. so .. is
 
 ## Part 1
 
@@ -20,8 +22,6 @@
     Is there anything you could do to make your bills cheaper?
 
 ## Part 2
-
-### 题目总览
 
 > [!NOTE]
 >
@@ -58,8 +58,6 @@
 > [老友又见](# Remeet old friend) [令你自信的事](# Competition/Reward) [获奖](# Competition/Reward) [学到新东西的网络视频](# Video)
 >
 > [对社会有贡献的人](# Contributor) [向小辈展示新东西](# Show something new to young)
-
-
 
 ### 人物 person
 

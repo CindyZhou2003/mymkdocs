@@ -256,7 +256,7 @@ Where:
 
    ​	In Bayesian data analysis, if the prior distribution for a parameter **0** is Beta(2, 2), and after observing data, the posterior distribution is Beta(5, 3), what is the **maximum a posteriori (MAP)** estimate for 0?
 
-<img src="../images/image-20240414172044383.png" alt="image-20240414172044383" style="zoom: 50%;" />
+<img src="./assets/image-20240414172044383.png" alt="image-20240414172044383" style="zoom: 50%;" />
 
 ​	Given a posterior distribution Beta(5, 3), let's plug in the values α=5 and β=3 into the formula to calculate the MAP estimate. The maximum a posteriori (MAP) estimate for the parameter x is approximately 0.67.
 

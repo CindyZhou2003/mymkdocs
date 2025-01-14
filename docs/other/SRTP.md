@@ -79,7 +79,7 @@ CNN-RNN：验证连续帧之间的连续性，主要由用于处理帧序列的�
 
 根据发布时间和合成算法，我们将UADFV、DF-TIMIT和FF-DF归类为第一代DeepFake数据集，而DFD、DFDC和拟议的Celeb-DF数据集则是第二代。一般来说，第二代数据集在数量和质量上都比第一代有所提高。
 
-![image-20240702160240983](../images/image-20240702160240983.png)
+![image-20240702160240983](./assets/image-20240702160240983.png)
 
 
 
@@ -93,10 +93,10 @@ CNN-RNN：验证连续帧之间的连续性，主要由用于处理帧序列的�
 #### benchmark信息
 
 FaceForensics++的自动化基准：[基准测试结果 - FaceForensics Benchmark --- Benchmark Results - FaceForensics Benchmark (tum.de)](https://kaldir.vc.in.tum.de/faceforensics_benchmark/)
-<img src="../images/image-20240702121717721.png" alt="image-20240702121717721" style="zoom:50%;" />
+<img src="./assets/image-20240702121717721.png" alt="image-20240702121717721" style="zoom:50%;" />
 
 DFDC：
-<img src="../images/image-20240702154847637.png" alt="image-20240702154847637" style="zoom:50%;" />
+<img src="./assets/image-20240702154847637.png" alt="image-20240702154847637" style="zoom:50%;" />
 
 ## 中期
 

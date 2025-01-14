@@ -40,7 +40,7 @@
 - 城域网 MAN（Metropolitan Area Network ）：范围覆盖一个城市的网络
 - 广域网 WAN（Wide Area Network）：覆盖很大地理区域，乃至覆盖地区和国家
 
-<img src="../images/image-20240912103015928.png" alt="image-20240912103015928" style="zoom: 33%;" />
+<img src="./assets/image-20240912103015928.png" alt="image-20240912103015928" style="zoom: 33%;" />
 
 ISP：Internet 服务商
 
@@ -96,7 +96,7 @@ IXP 或 IX：互联网交换点
 
 **网络核心两大功能**
 
-<img src="../images/image-20240912104651823.png" alt="image-20240912104651823" style="zoom:33%;" />
+<img src="./assets/image-20240912104651823.png" alt="image-20240912104651823" style="zoom:33%;" />
 
 #### 数据交换方式
 
@@ -122,7 +122,7 @@ IXP 或 IX：互联网交换点
 - 有传输延迟，不适合实时通信！
 - 同一报文的不同分组可以经过不同的传输路径通过通信子网
 
-<img src="../images/image-20240912110029010.png" alt="image-20240912110029010" style="zoom:33%;" />
+<img src="./assets/image-20240912110029010.png" alt="image-20240912110029010" style="zoom:33%;" />
 
 总结：**分组交换在实际应用率最高**
 
@@ -150,13 +150,13 @@ IXP 或 IX：互联网交换点
 
 不同机器上的同一层称为对等层，同一层的实体称为对等实体
 
-<img src="../images/image-20240912111717713.png" alt="image-20240912111717713" style="zoom:33%;" />
+<img src="./assets/image-20240912111717713.png" alt="image-20240912111717713" style="zoom:33%;" />
 
 发送端：层层封装；接收端：层层解封装
 
 不同层对应协议数据单元（PDU Protocol Data Unit）
 
-<img src="../images/image-20240912112646001.png" alt="image-20240912112646001" style="zoom:50%;" />
+<img src="./assets/image-20240912112646001.png" alt="image-20240912112646001" style="zoom:50%;" />
 
 从顶层到底层，每一层 Header 往前加，后面（前一层的 header 等）都是数据
 
@@ -166,7 +166,7 @@ IXP 或 IX：互联网交换点
 
 - 面向连接（电话系统）/无连接（邮政系统）
 
-<img src="../images/image-20240912113244482.png" alt="image-20240912113244482" style="zoom:50%;" />
+<img src="./assets/image-20240912113244482.png" alt="image-20240912113244482" style="zoom:50%;" />
 
 
 
@@ -317,9 +317,9 @@ OSI：Open Systems Interconnection
 - OSI 模型网络层能够支持无连接和面向连接通信
 - TCP/IP 模型的网络层仅支持无连接通信（IP） 
 
-<img src="../images/image-20241214171139246.png" alt="image-20241214171139246" style="zoom: 33%;" />
+<img src="./assets/image-20241214171139246.png" alt="image-20241214171139246" style="zoom: 33%;" />
 
-<img src="../images/image-20241214171202790.png" alt="image-20241214171202790" style="zoom:33%;" />
+<img src="./assets/image-20241214171202790.png" alt="image-20241214171202790" style="zoom:33%;" />
 
 > [!IMPORTANT]
 >
@@ -327,7 +327,7 @@ OSI：Open Systems Interconnection
 
 #### 模型与网络实例
 
-<img src="../images/image-20240912120815348.png" alt="image-20240912120815348" style="zoom:50%;" />
+<img src="./assets/image-20240912120815348.png" alt="image-20240912120815348" style="zoom:50%;" />
 
 Host 上每个层都有
 
@@ -383,7 +383,7 @@ $$
 - **处理时延(processing delay)**：主机或路由器在收到分组时，为处理分组（例如分析首部、提取数据、差错检验或查找路由）所花费的时间
 - **排队时延(queueing delay)**：分组在路由器输入输出队列中排队等待处理所经历的时延 -> queue 不长不短最好
 
-<img src="../images/image-20240912122025795.png" alt="image-20240912122025795" style="zoom:50%;" />
+<img src="./assets/image-20240912122025795.png" alt="image-20240912122025795" style="zoom:50%;" />
 
 #### 往返时延 RTT(Round-Trip Time)
 
@@ -410,15 +410,15 @@ EG: 传播时延为 20ms，带宽为 10Mb/s，则：时延带宽积 = 20/1000 ×
 
 EG1：
 
-<img src="../images/image-20241215155634421.png" alt="image-20241215155634421" style="zoom:50%;" />
+<img src="./assets/image-20241215155634421.png" alt="image-20241215155634421" style="zoom:50%;" />
 
-<img src="../images/image-20241215155619479.png" alt="image-20241215155619479" style="zoom: 33%;" />
+<img src="./assets/image-20241215155619479.png" alt="image-20241215155619479" style="zoom: 33%;" />
 
 EG2：
 
-<img src="../images/image-20241215155811533.png" alt="image-20241215155811533" style="zoom:50%;" />
+<img src="./assets/image-20241215155811533.png" alt="image-20241215155811533" style="zoom:50%;" />
 
-<img src="../images/image-20241215155835560.png" alt="image-20241215155835560" style="zoom: 33%;" /> <img src="../images/image-20241215155853639.png" alt="image-20241215155853639" style="zoom: 33%;" />
+<img src="./assets/image-20241215155835560.png" alt="image-20241215155835560" style="zoom: 33%;" /> <img src="./assets/image-20241215155853639.png" alt="image-20241215155853639" style="zoom: 33%;" />
 
 ### 网络安全威胁
 
@@ -604,7 +604,7 @@ EG：无噪声理想信道带宽 4MHz，QAM 调制，信道最大数据传输速
    - 原理：每一位中间都有一个跳变，每位开始时有跳变表示“0”，无跳变表示“1”。位中间跳变表示时钟，位前跳变表示数据
    - 优点：时钟、数据分离，便于提取
 
-<img src="../images/image-20240919115358181.png" alt="image-20240919115358181" style="zoom:50%;" />
+<img src="./assets/image-20240919115358181.png" alt="image-20240919115358181" style="zoom:50%;" />
 
 - 曼彻斯特编码和差分曼彻斯特编码在每个码元的中间都发生电平跳变，相当于将一个码元一分为二，编码速率是码元速率的 2 倍，二者所占的频带宽度是原始基带宽度的 2 倍。
 
@@ -749,7 +749,7 @@ QAM（Quadrature Amplitude Modulation）：正交幅度调制是是一种数字�
 
 **无线电波**：指在自由空间（包括空气和真空）传播的射频频段的电磁波
 
-<img src="../images/image-20240926111831530.png" alt="image-20240926111831530" style="zoom: 67%;" />
+<img src="./assets/image-20240926111831530.png" alt="image-20240926111831530" style="zoom: 67%;" />
 
 #### 卫星通信（不做很高的要求）
 
@@ -862,7 +862,7 @@ QAM（Quadrature Amplitude Modulation）：正交幅度调制是是一种数字�
 
 向上：向网络层提供明确的 (well-defined) 服务接口
 
-<img src="../images/image-20240926120633253.png" alt="image-20240926120633253" style="zoom:50%;" />
+<img src="./assets/image-20240926120633253.png" alt="image-20240926120633253" style="zoom:50%;" />
 
 #### 数据链路层的功能
 
@@ -909,13 +909,13 @@ QAM（Quadrature Amplitude Modulation）：正交幅度调制是是一种数字�
 
 在数据前后都添加首部和尾部，构成帧，帧是数据链路层的传输单元
 
-<img src="../images/image-20241010094050531.png" alt="image-20241010094050531" style="zoom: 33%;" />
+<img src="./assets/image-20241010094050531.png" alt="image-20241010094050531" style="zoom: 33%;" />
 
 **定界符** 标识一个帧的开始
 
 - **字节计数法**（ Byte count ） ：无差错传输的情形，现实中很少用（多米诺骨牌式错误
 
-  - <img src="../images/image-20241027153503965.png" alt="image-20241027153503965" style="zoom:50%;" />
+  - <img src="./assets/image-20241027153503965.png" alt="image-20241027153503965" style="zoom:50%;" />
 
 - **带字节填充的定界符法**（ **Flag bytes** with **byte stuffing**）
 
@@ -1018,17 +1018,17 @@ QAM（Quadrature Amplitude Modulation）：正交幅度调制是是一种数字�
 
 - 该编码方案中 **任意** 两个 **合法** 码字的 **最小** 海明距离
 
-<img src="../images/image-20241010101507783.png" alt="image-20241010101507783" style="zoom:50%;" />
+<img src="./assets/image-20241010101507783.png" alt="image-20241010101507783" style="zoom:50%;" />
 
 ==The error-detection and error-correcting properties of a code depend on its Hamming distance.== 代码的错误检测和纠错特性取决于其海明距离
 
-<img src="../images/image-20241010101647584.png" alt="image-20241010101647584" style="zoom:50%;" />
+<img src="./assets/image-20241010101647584.png" alt="image-20241010101647584" style="zoom:50%;" />
 
 To use Hamming distance to correct *d* errors: you need *2d*+1 Hamming distance code. 用海明距离 **纠正 d 个错误需要 2d+1 个距离码**
 
 -----------------
 
-<img src="../../../note/docs/images/image-20241026190950023.png" alt="image-20241026190950023" style="zoom:50%;" />
+<img src="./assets/image-20241026190950023.png" alt="image-20241026190950023" style="zoom:50%;" />
 
 图 3-6 纠正 1 位错误的海明码：海明距离为 3，可以纠正 1 个错误或者检测两个错误
 
@@ -1052,7 +1052,7 @@ To use Hamming distance to correct *d* errors: you need *2d*+1 Hamming distance 
 
 ##### 校验和
 
-<img src="../images/image-20241010103018514.png" alt="image-20241010103018514" style="zoom:50%;" />
+<img src="./assets/image-20241010103018514.png" alt="image-20241010103018514" style="zoom:50%;" />
 
 对首部的每个 16bit 按反码运算求和再取反码
 
@@ -1060,9 +1060,9 @@ To use Hamming distance to correct *d* errors: you need *2d*+1 Hamming distance 
 
 cyclic redundancy code
 
-<img src="../images/image-20241010103456548.png" alt="image-20241010103456548" style="zoom:50%;" />
+<img src="./assets/image-20241010103456548.png" alt="image-20241010103456548" style="zoom:50%;" />
 
-<img src="../images/image-20241010103759787.png" alt="image-20241010103759787" style="zoom:50%;" />
+<img src="./assets/image-20241010103759787.png" alt="image-20241010103759787" style="zoom:50%;" />
 
 余数 R，作为 FCS
 
@@ -1070,7 +1070,7 @@ CRC 有纠错功能，但是数据链路层只用了它的检错功能
 
 > [!NOTE]
 >
-> <img src="../images/image-20241010104633476.png" alt="image-20241010104633476" style="zoom:50%;" />
+> <img src="./assets/image-20241010104633476.png" alt="image-20241010104633476" style="zoom:50%;" />
 
 #### 海明码 hamming code
 
@@ -1080,15 +1080,15 @@ CRC 有纠错功能，但是数据链路层只用了它的检错功能
 
 
 
-<img src="../images/image-20241010104906952.png" alt="image-20241010104906952" style="zoom:50%;" />
+<img src="./assets/image-20241010104906952.png" alt="image-20241010104906952" style="zoom:50%;" />
 
-<img src="../images/image-20241010105010202.png" alt="image-20241010105010202" style="zoom:50%;" />
+<img src="./assets/image-20241010105010202.png" alt="image-20241010105010202" style="zoom:50%;" />
 
 纠正
 
-<img src="../images/image-20241010105806099.png" alt="image-20241010105806099" style="zoom:50%;" /> <img src="../images/image-20241010105834666.png" alt="image-20241010105834666" style="zoom:50%;" />
+<img src="./assets/image-20241010105806099.png" alt="image-20241010105806099" style="zoom:50%;" /> <img src="./assets/image-20241010105834666.png" alt="image-20241010105834666" style="zoom:50%;" />
 
-<img src="../images/image-20241010105936347.png" alt="image-20241010105936347" style="zoom:50%;" />
+<img src="./assets/image-20241010105936347.png" alt="image-20241010105936347" style="zoom:50%;" />
 
 按列发，每行最多错一位，可以纠正
 
@@ -1102,9 +1102,9 @@ CRC 有纠错功能，但是数据链路层只用了它的检错功能
 
 #### Trellis diagram
 
-<img src="../images/image-20241010112646389.png" alt="image-20241010112646389" style="zoom:40%;" />
+<img src="./assets/image-20241010112646389.png" alt="image-20241010112646389" style="zoom:40%;" />
 
-> <img src="../images/image-20241010113409601.png" alt="image-20241010113409601" style="zoom:50%;" />
+> <img src="./assets/image-20241010113409601.png" alt="image-20241010113409601" style="zoom:50%;" />
 >
 > S0-> S2-> S3-> S1 输出 state 00 11 01 01 原始数据：0 1 1 0
 
@@ -1132,7 +1132,7 @@ CRC 有纠错功能，但是数据链路层只用了它的检错功能
 
 #### 基本的协议定义
 
-![image-20241010114039440](../images/image-20241010114039440.png)
+![image-20241010114039440](assets/image-20241010114039440.png)
 
 #### 乌托邦式单工协议
 
@@ -1170,7 +1170,7 @@ CRC 有纠错功能，但是数据链路层只用了它的检错功能
 
 - 数据传输保持单向, 但是需要双向传输链路（半双工物理信道）
 
-<img src="../images/image-20241010114532082.png" alt="image-20241010114532082" style="zoom:50%;" />
+<img src="./assets/image-20241010114532082.png" alt="image-20241010114532082" style="zoom:50%;" />
 
 
 
@@ -1190,9 +1190,9 @@ CRC 有纠错功能，但是数据链路层只用了它的检错功能
 
 stop and wait
 
-<img src="../images/image-20241010115024755.png" alt="image-20241010115024755" style="zoom:50%;" />
+<img src="./assets/image-20241010115024755.png" alt="image-20241010115024755" style="zoom:50%;" />
 
-![image-20241010115505791](../images/image-20241010115505791.png)
+![image-20241010115505791](assets/image-20241010115505791.png)
 
 **效率的评估**
 
@@ -1246,7 +1246,7 @@ I = propagation delay + processor service time (second)
 
 ✋🏻 **累计确认**：不必对收到的分组逐个发送确认，而是对按序到达的最后一个分组发送确认
 
-<img src="../images/image-20241010121042703.png" alt="image-20241010121042703" style="zoom:50%;" />
+<img src="./assets/image-20241010121042703.png" alt="image-20241010121042703" style="zoom:50%;" />
 
 收到，前窗口后移，后窗口不动；发出确认后，后窗口才后移
 
@@ -1287,11 +1287,11 @@ $$
 
 - 缺点：按序接收，出错后即便有正确帧到达也丢弃重传
 
-<img src="../images/image-20241010121610811.png" alt="image-20241010121610811" style="zoom:50%;" />
+<img src="./assets/image-20241010121610811.png" alt="image-20241010121610811" style="zoom:50%;" />
 
 ##### 协议的实现分析
 
-<img src="../images/image-20241010122334745.png" alt="image-20241010122334745" style="zoom:50%;" />
+<img src="./assets/image-20241010122334745.png" alt="image-20241010122334745" style="zoom:50%;" />
 
 #### 选择重传协议 select and repeat(SR)（协议 6）
 
@@ -1325,9 +1325,9 @@ $$
 - 收到 ACK：如果收到的是最小序号的 ACK，窗口滑动。如果收到其他序号的 ACK，进行标记
 - 超时事件：每个 PDU 都有定时器，哪个超时重传哪个
 
-<img src="../images/image-20241017101807227.png" alt="image-20241017101807227" style="zoom:33%;" />
+<img src="./assets/image-20241017101807227.png" alt="image-20241017101807227" style="zoom:33%;" />
 
-<img src="../images/image-20241017101844229.png" alt="image-20241017101844229" style="zoom:33%;" />
+<img src="./assets/image-20241017101844229.png" alt="image-20241017101844229" style="zoom:33%;" />
 
 - 超时重传时间 RTO应略大于加权平均往返时间 RTT~S~
   - 新的 RTT~S~  =(1- α) ×(旧的 RTT~S~)  + α× (新的 RTT 样本) ，α =0.125（推荐值）
@@ -1431,7 +1431,7 @@ PPP 优点：
 - 实现基于用户的访问控制、计费、业务类型分类等，运营商广泛支持
 - PPPoE 使用 Client/Server 模型，服务器通常是接入服务器
 
-<img src="../images/image-20241017104019543.png" alt="image-20241017104019543" style="zoom: 33%;" />
+<img src="./assets/image-20241017104019543.png" alt="image-20241017104019543" style="zoom: 33%;" />
 
 ## 介质访问子层 MAC
 
@@ -1524,13 +1524,13 @@ For example：10MHz --> 100 subcarriers --> symbol time 10µs --> 10µs >> delay
 - 各用户使用经过特殊挑选的不同码型，因此彼此不会造成干扰
 - 这种系统发送的信号有很强的抗干扰能力，其频谱类似于白噪声，不易被敌人发现
 
-<img src="../images/image-20240926113349556-1727322379769-1.png" alt="image-20240926113349556" style="zoom:50%;" />
+<img src="./assets/image-20240926113349556-1727322379769-1.png" alt="image-20240926113349556" style="zoom:50%;" />
 
 **码片序列的正交关系**
 
 正交就是向量 S 和 T 的规格化内积 (inner product) 等于 0
 
-<img src="../images/image-20240926114344682.png" alt="image-20240926114344682" style="zoom:50%;" />
+<img src="./assets/image-20240926114344682.png" alt="image-20240926114344682" style="zoom:50%;" />
 
 **码片序列实现了扩频(spread spectrum)**
 
@@ -1671,7 +1671,7 @@ CSMA：Carrier Sense Multiple Access
 
 - 明确的使用权，避免了冲突
 
-<img src="../images/image-20241017114756997.png" alt="image-20241017114756997" style="zoom:33%;" />
+<img src="./assets/image-20241017114756997.png" alt="image-20241017114756997" style="zoom:33%;" />
 
 ##### 信道利用率分析
 
@@ -1715,7 +1715,7 @@ CSMA：Carrier Sense Multiple Access
 
 特点：==高序号站点优先==
 
-<img src="../images/image-20241017115104833.png" alt="image-20241017115104833" style="zoom:30%;" />
+<img src="./assets/image-20241017115104833.png" alt="image-20241017115104833" style="zoom:30%;" />
 
 > **防止低序号站点一直抢不到发送权，可以怎样办？**
 >
@@ -1735,7 +1735,7 @@ N 个站的二进制编码所需位数是 $$log_2N$$ 位
 
 ##### 自适应树搜索协议(Adaptive Tree Walk Protocol)
 
-<img src="../images/image-20241017120328802.png" alt="image-20241017120328802" style="zoom:33%;" />
+<img src="./assets/image-20241017120328802.png" alt="image-20241017120328802" style="zoom:33%;" />
 
 #### 无线 LAN 协议
 
@@ -1777,11 +1777,11 @@ MACA
 
 
 
-<img src="../images/image-20241107105937823.png" alt="image-20241107105937823" style="zoom:33%;" />
+<img src="./assets/image-20241107105937823.png" alt="image-20241107105937823" style="zoom:33%;" />
 
 ##### 二进制指数后退( Binary exponential backoff )的 CSMA/CD
 
-<img src="../images/image-20241024101500636.png" alt="image-20241024101500636" style="zoom: 67%;" />
+<img src="./assets/image-20241024101500636.png" alt="image-20241024101500636" style="zoom: 67%;" />
 
 - 这一算法考虑了网络负载对冲突的影响
 
@@ -1861,7 +1861,7 @@ $$
 - **网桥或交换机**
 - 网桥/交换机分隔了冲突域，但不隔离广播域；集线器都不隔离
 
-<img src="../images/image-20241024103923745.png" alt="image-20241024103923745" style="zoom:50%;" />
+<img src="./assets/image-20241024103923745.png" alt="image-20241024103923745" style="zoom:50%;" />
 
 ----------------------
 
@@ -1896,15 +1896,15 @@ MAC 地址表的构建
 
 1. **Forwarding（转发）**
 
-<img src="../images/image-20241024105113384.png" alt="image-20241024105113384" style="zoom:50%;" />
+<img src="./assets/image-20241024105113384.png" alt="image-20241024105113384" style="zoom:50%;" />
 
 2. **Filtering（过滤）**
 
-<img src="../images/image-20241024105132959.png" alt="image-20241024105132959" style="zoom:50%;" />
+<img src="./assets/image-20241024105132959.png" alt="image-20241024105132959" style="zoom:50%;" />
 
 3. **Flooding（泛洪）**
 
-<img src="../images/image-20241024105225876.png" alt="image-20241024105225876" style="zoom:50%;" />
+<img src="./assets/image-20241024105225876.png" alt="image-20241024105225876" style="zoom:50%;" />
 
 两种目的地址的帧，**需要泛洪**：
 
@@ -1942,7 +1942,7 @@ MAC 地址表的构建
 - 缺点：延迟大
 - 优点：不转发出错帧、支持非对称交换
 
-<img src="../images/image-20241024105907162.png" alt="image-20241024105907162" style="zoom:50%;" />
+<img src="./assets/image-20241024105907162.png" alt="image-20241024105907162" style="zoom:50%;" />
 
 **直通模式**（Cut-through）
 
@@ -1950,7 +1950,7 @@ MAC 地址表的构建
 - 缺点：可能转发错误帧、不支持非对称交换
 - 优点：延迟非常小，可以边入边出
 
-<img src="../images/image-20241024105917949.png" alt="image-20241024105917949" style="zoom:50%;" />
+<img src="./assets/image-20241024105917949.png" alt="image-20241024105917949" style="zoom:50%;" />
 
 **无碎片模式**（Fragment-free）
 
@@ -1958,13 +1958,13 @@ MAC 地址表的构建
 - 缺点：仍可能转发错误帧，不支持非对称交换
 - 优点：过滤了冲突碎片，延迟和转发错帧介于存储转发和直通交换之间
 
-<img src="../images/image-20241024105956561.png" alt="image-20241024105956561" style="zoom:50%;" />
+<img src="./assets/image-20241024105956561.png" alt="image-20241024105956561" style="zoom:50%;" />
 
 > [!NOTE]
 >
 > 小于 64 字节的帧一定是以太网中冲突导致的
 
-<img src="../images/image-20241024110130021.png" alt="image-20241024110130021" style="zoom:50%;" />
+<img src="./assets/image-20241024110130021.png" alt="image-20241024110130021" style="zoom:50%;" />
 
 #### 生成树协议
 
@@ -1982,13 +1982,13 @@ MAC 地址表的构建
 
 参与的交换机（网桥）：收发桥协议数据单元 BPDU
 
-<img src="../images/image-20241024112556684.png" alt="image-20241024112556684" style="zoom:50%;" />
+<img src="./assets/image-20241024112556684.png" alt="image-20241024112556684" style="zoom:50%;" />
 
 **生成树的三个选举过程**：
 
 (1) 选举 **根桥**(Root Bridge)
 
-<img src="../images/image-20241024112854497.png" alt="image-20241024112854497" style="zoom:40%;" />
+<img src="./assets/image-20241024112854497.png" alt="image-20241024112854497" style="zoom:40%;" />
 
 > [!NOTE]
 >
@@ -2000,25 +2000,25 @@ MAC 地址表的构建
 
 (2) 为每个非根桥选出一个 **根端口**（Root Port）
 
-<img src="../images/image-20241024113139715.png" alt="image-20241024113139715" style="zoom:40%;" />
+<img src="./assets/image-20241024113139715.png" alt="image-20241024113139715" style="zoom:40%;" />
 
 根路径开销
 
-<img src="../images/image-20241024113235643.png" alt="image-20241024113235643" style="zoom:40%;" />
+<img src="./assets/image-20241024113235643.png" alt="image-20241024113235643" style="zoom:40%;" />
 
-<img src="../images/image-20241024113445982.png" alt="image-20241024113445982" style="zoom:50%;" />
+<img src="./assets/image-20241024113445982.png" alt="image-20241024113445982" style="zoom:50%;" />
 
 (3) 为每个网段确定一个 **指定端口**（Designated Port）
 
-<img src="../images/image-20241024114010549.png" alt="image-20241024114010549" style="zoom:50%;" />
+<img src="./assets/image-20241024114010549.png" alt="image-20241024114010549" style="zoom:50%;" />
 
-<img src="../images/image-20241024114400977.png" alt="image-20241024114400977" style="zoom:50%;" />
+<img src="./assets/image-20241024114400977.png" alt="image-20241024114400977" style="zoom:50%;" />
 
-<img src="../images/image-20241024114343556.png" alt="image-20241024114343556" style="zoom:50%;" />
+<img src="./assets/image-20241024114343556.png" alt="image-20241024114343556" style="zoom:50%;" />
 
 **重构生成树**
 
-<img src="../images/image-20241024114713414.png" alt="image-20241024114713414" style="zoom:50%;" />
+<img src="./assets/image-20241024114713414.png" alt="image-20241024114713414" style="zoom:50%;" />
 
 重新构建生成树太慢了，怎么办？
 
@@ -2033,7 +2033,7 @@ MAC 地址表的构建
 - 缺省情况下，交换机所有端口同属于一个广播域，无法隔离广播域； 
 - 广播帧在广播域中传播，占用资源，降低性能，且具有安全隐患
 
-<img src="../images/image-20241024115039941.png" alt="image-20241024115039941" style="zoom:50%;" />
+<img src="./assets/image-20241024115039941.png" alt="image-20241024115039941" style="zoom:50%;" />
 
 --------------------
 
@@ -2052,11 +2052,11 @@ MAC 地址表的构建
 
 ##### 基于端口的 VLAN（最常见） 
 
-<img src="../images/image-20241024115555906.png" alt="image-20241024115555906" style="zoom:33%;" />
+<img src="./assets/image-20241024115555906.png" alt="image-20241024115555906" style="zoom:33%;" />
 
 ##### 基于 MAC 地址的 VLAN
 
-<img src="../images/image-20241024115706445.png" alt="image-20241024115706445" style="zoom:33%;" />
+<img src="./assets/image-20241024115706445.png" alt="image-20241024115706445" style="zoom:33%;" />
 
 ##### 基于协议的 VLAN
 
@@ -2075,7 +2075,7 @@ MAC 地址表的构建
 
 **标记帧（Tagged Frame）** 
 
-<img src="../images/image-20241024120021204.png" alt="image-20241024120021204" style="zoom:50%;" />
+<img src="./assets/image-20241024120021204.png" alt="image-20241024120021204" style="zoom:50%;" />
 
 ##### VLAN 优点
 
@@ -2125,7 +2125,7 @@ MAC 地址表的构建
 
 ##### 802.11 物理层
 
-<img src="../images/image-20241024121425302.png" alt="image-20241024121425302" style="zoom:50%;" />
+<img src="./assets/image-20241024121425302.png" alt="image-20241024121425302" style="zoom:50%;" />
 
 
 
@@ -2135,9 +2135,9 @@ MAC 地址表的构建
 
 
 
-<img src="../images/image-20241024121805095.png" alt="image-20241024121805095" style="zoom:50%;" />
+<img src="./assets/image-20241024121805095.png" alt="image-20241024121805095" style="zoom:50%;" />
 
-<img src="../images/image-20241024121920372.png" alt="image-20241024121920372" style="zoom:50%;" />
+<img src="./assets/image-20241024121920372.png" alt="image-20241024121920372" style="zoom:50%;" />
 
 ##### CSMA/CA
 
@@ -2161,7 +2161,7 @@ MAC 地址表的构建
 
 WIFI 采用停等机制
 
-<img src="../images/image-20241031100250426.png" alt="image-20241031100250426" style="zoom:33%;" />
+<img src="./assets/image-20241031100250426.png" alt="image-20241031100250426" style="zoom:33%;" />
 
 - 越短的帧间隙，越能抢到信道
 
@@ -2191,9 +2191,9 @@ WIFI 采用停等机制
 
 #### 802.11 帧结构
 
-<img src="../images/image-20241031101636008.png" alt="image-20241031101636008" style="zoom:33%;" />
+<img src="./assets/image-20241031101636008.png" alt="image-20241031101636008" style="zoom:33%;" />
 
-<img src="../images/image-20241031101656527.png" alt="image-20241031101656527" style="zoom:33%;" />
+<img src="./assets/image-20241031101656527.png" alt="image-20241031101656527" style="zoom:33%;" />
 
 802.11 帧首部地址
 
@@ -2201,7 +2201,7 @@ WIFI 采用停等机制
 
 #### 无线局域网的构建与管理
 
-<img src="../images/image-20241031101837370.png" alt="image-20241031101837370" style="zoom:33%;" />
+<img src="./assets/image-20241031101837370.png" alt="image-20241031101837370" style="zoom:33%;" />
 
 **被动扫描**
 
@@ -2211,7 +2211,7 @@ WIFI 采用停等机制
 
 - 站点依次在每个可用的通道上发出包含 SSID 的 Probe Request 帧，具有被请求 SSID 的 AP 返回 Probe Response 帧 
 
-<img src="../images/image-20241031102303959.png" alt="image-20241031102303959" style="zoom:33%;" />
+<img src="./assets/image-20241031102303959.png" alt="image-20241031102303959" style="zoom:33%;" />
 
 **关联过程**
 
@@ -2222,7 +2222,7 @@ WIFI 采用停等机制
   - 包含：Capability, Status Code, Station ID, Supported Rates
 - AP 维护站点关联表，并记录站点的能力（如能够支持的速率等）
 
-<img src="../images/image-20241031102736894.png" alt="image-20241031102736894" style="zoom:33%;" />
+<img src="./assets/image-20241031102736894.png" alt="image-20241031102736894" style="zoom:33%;" />
 
 **站点睡眠管理**
 
@@ -2384,7 +2384,7 @@ EG，假设不考虑 A 的发送时延和链路传播时延，在上图 3 个转
 
 每个字段的含义必须知道
 
-<img src="../images/image-20241031110942582.png" alt="image-20241031110942582" style="zoom: 50%;" />
+<img src="./assets/image-20241031110942582.png" alt="image-20241031110942582" style="zoom: 50%;" />
 
 1. **版本**：占 4 位。指 IP 的版本，IPv4 数据报中该字段值是 4。
 2. **首部长度**：占 4 位。以 4B 为单位，最大可表示的首部长度为 60B(15x4B)。最常用的首部长度是 $20B$(5x4B)，该字段值是 5，此时不使用任何可选字段。
@@ -2419,14 +2419,14 @@ EG，假设不考虑 A 的发送时延和链路传播时延，在上图 3 个转
 
 - 重组所需信息：原始数据报编号、分片偏移量、是否收集所有分片
 
-<img src="../images/image-20241031111725581.png" alt="image-20241031111725581" style="zoom:33%;" />
+<img src="./assets/image-20241031111725581.png" alt="image-20241031111725581" style="zoom:33%;" />
 
 DF（Don't Fragment），MF（More Fragment）
 
 - DF = 0，该 IP 数据报才可以被分片
 - MF = 1，相应原始数据包还有后续的片；MF = 0，最后一个片
 
-<img src="../images/image-20241031111937627.png" alt="image-20241031111937627" style="zoom:33%;" />
+<img src="./assets/image-20241031111937627.png" alt="image-20241031111937627" style="zoom:33%;" />
 
 ##### IP 地址
 
@@ -2444,9 +2444,9 @@ IP 地址::={<网络号>, <主机号>}
 
 **特殊地址**
 
-<img src="../images/image-20241031112328743.png" alt="image-20241031112328743" style="zoom:33%;" />
+<img src="./assets/image-20241031112328743.png" alt="image-20241031112328743" style="zoom:33%;" />
 
-<img src="../images/image-20241031115827906.png" alt="image-20241031115827906" style="zoom:33%;" />
+<img src="./assets/image-20241031115827906.png" alt="image-20241031115827906" style="zoom:33%;" />
 
 - C 类网络最多有 $2^8-2(\text{主机位全0和全1两种情况})=254$ 台主机/路由器，同理 A 类 B 类
 
@@ -2478,7 +2478,7 @@ IP 地址::={<网络号>, <主机号>}
 
 > **Question**
 >
-> <img src="../images/image-20241031114850271.png" alt="image-20241031114850271" style="zoom:33%;" />
+> <img src="./assets/image-20241031114850271.png" alt="image-20241031114850271" style="zoom:33%;" />
 >
 > 1. **Organization A:** 1024 addresses → 2^10^
 >    - Subnet size: /22 (1024 addresses)
@@ -2517,7 +2517,7 @@ IP 地址::={<网络号>, <主机号>}
 
 ✋🏻 IP 地址与 IP 前缀匹配时，总是选取 ==子网掩码最长的匹配项==
 
-<img src="../images/image-20241031115520686.png" style="zoom:33%;" />
+<img src="./assets/image-20241031115520686.png" style="zoom:33%;" />
 
 
 
@@ -2525,7 +2525,7 @@ IP 地址::={<网络号>, <主机号>}
 
 ##### IPv4 地址如何获取
 
-<img src="../images/image-20241031115914570.png" alt="image-20241031115914570" style="zoom:33%;" />
+<img src="./assets/image-20241031115914570.png" alt="image-20241031115914570" style="zoom:33%;" />
 
 #### DHCP 动态主机配置协议
 
@@ -2538,7 +2538,7 @@ DHCP（Dynamic Host Configuration Protocol）：**动态主机配置协议**
 
 - **基于 UDP 工作**，服务器运行在 67 号端口，客户端运行在 68 号端口
 
-<img src="../images/image-20241031120346786.png" alt="image-20241031120346786" style="zoom:33%;" />
+<img src="./assets/image-20241031120346786.png" alt="image-20241031120346786" style="zoom:33%;" />
 
 1. DHCP 客户从 UDP **端口 68** 以 **广播** 形式向服务器发送发现报文（`DHCPDISCOVER`） 
 
@@ -2547,7 +2547,7 @@ DHCP（Dynamic Host Configuration Protocol）：**动态主机配置协议**
 3. DHCP 客户从多个 DHCP 服务器中选择一个，并向其以 **广播** 形式发送 DHCP 请求报文（`DHCPREQUEST`） 
 4. 被选择的 DHCP 服务器单播发送确认报文（`DHCPACK`）
 
-<img src="../images/image-20241031121548464.png" alt="image-20241031121548464" style="zoom:33%;" />
+<img src="./assets/image-20241031121548464.png" alt="image-20241031121548464" style="zoom:33%;" />
 
 #### IP 与 MAC 地址
 
@@ -2596,9 +2596,9 @@ A 已知 B 的 IP 地址，需要获得 B 的 MAC 地址（物理地址）
 
 普通路由器在转发 IP 分组时，其源 IP 地址和目的 IP 地址都不会改变。而 NAT 路由器在转发 IP 分组时，一定要 **更换其 IP 地址**（转换源 IP 地址或目的 IP 地址)。普通路由器仅工作在网络层，而 NAT 路由器转发数据报时需要查看和转换传输层的端口号。
 
-<img src="../images/image-20241107101548196.png" alt="image-20241107101548196" style="zoom:33%;" />
+<img src="./assets/image-20241107101548196.png" alt="image-20241107101548196" style="zoom:33%;" />
 
-<img src="../images/image-20241107102147921.png" alt="image-20241107102147921" style="zoom:33%;" />
+<img src="./assets/image-20241107102147921.png" alt="image-20241107102147921" style="zoom:33%;" />
 
 > [!NOTE]
 >
@@ -2630,7 +2630,7 @@ NAT 的优势
 
 外网的 client 要连内网的 host？relaying
 
-<img src="../images/image-20241107103147155.png" alt="image-20241107103147155" style="zoom:33%;" />
+<img src="./assets/image-20241107103147155.png" alt="image-20241107103147155" style="zoom:33%;" />
 
 #### ICMP（Internet 控制报文协议）
 
@@ -2730,7 +2730,7 @@ Attempts to solve **Count-to-infinity** problem —— **Poisoned reverse** (毒
 
 5. 计算到其他路由器的最短路径（Dijkstra 最短路径算法）。
 
-<img src="../images/image-20241107115807540.png" alt="image-20241107115807540" style="zoom:33%;" />
+<img src="./assets/image-20241107115807540.png" alt="image-20241107115807540" style="zoom:33%;" />
 
 #### 层次路由
 
@@ -2754,7 +2754,7 @@ Attempts to solve **Count-to-infinity** problem —— **Poisoned reverse** (毒
 
 自治系统之间之间使 **用外部网关路由协议 Exterior Gateway Protocols (EGP)**
 
-<img src="../images/image-20241107122126259.png" alt="image-20241107122126259" style="zoom:33%;" />
+<img src="./assets/image-20241107122126259.png" alt="image-20241107122126259" style="zoom:33%;" />
 
 
 
@@ -2792,11 +2792,11 @@ Attempts to solve **Count-to-infinity** problem —— **Poisoned reverse** (毒
 
   - 序号控制泛洪（sequence-number-controlled flooding） 
     - 记录每个来源的广播序号
-    - <img src="../images/image-20241114100855009.png" alt="image-20241114100855009" style="zoom:33%;" />
+    - <img src="./assets/image-20241114100855009.png" alt="image-20241114100855009" style="zoom:33%;" />
   - 逆向路径转发（reverse path forwarding, RPF） 
-    - <img src="../images/image-20241114100921015.png" alt="image-20241114100921015" style="zoom:33%;" />
+    - <img src="./assets/image-20241114100921015.png" alt="image-20241114100921015" style="zoom:33%;" />
 
-  <img src="../images/image-20241114101745045.png" alt="image-20241114101745045" style="zoom:33%;" />
+  <img src="./assets/image-20241114101745045.png" alt="image-20241114101745045" style="zoom:33%;" />
 
 方法 4：**生成树（spanning tree）**
 
@@ -2822,7 +2822,7 @@ Attempts to solve **Count-to-infinity** problem —— **Poisoned reverse** (毒
 
   - 密集分布，基于源点树（source-based trees） 
 
-    <img src="../images/image-20241114102551036.png" alt="image-20241114102551036" style="zoom:33%;" />
+    <img src="./assets/image-20241114102551036.png" alt="image-20241114102551036" style="zoom:33%;" />
 
     - 存在的问题：
       - 大型网络中，组播源很多时，路由器需生成多颗棵树，工作量巨大
@@ -2830,7 +2830,7 @@ Attempts to solve **Count-to-infinity** problem —— **Poisoned reverse** (毒
 
   - 稀疏分布，基于核心树（core-based trees） 
 
-    <img src="../images/image-20241114102709672.png" alt="image-20241114102709672" style="zoom:33%;" />
+    <img src="./assets/image-20241114102709672.png" alt="image-20241114102709672" style="zoom:33%;" />
 
     - 基于核心树（core-based trees）存在的问题：
       - 可能无法达到最优
@@ -2840,7 +2840,7 @@ Attempts to solve **Count-to-infinity** problem —— **Poisoned reverse** (毒
 
 常用组播地址段（D类地址）：224.0.0.0/24（即 224.0.0.0~239.255.255.255）
 
-<img src="../images/image-20241114102242154.png" alt="image-20241114102242154" style="zoom:33%;" />
+<img src="./assets/image-20241114102242154.png" alt="image-20241114102242154" style="zoom:33%;" />
 
 
 
@@ -2851,7 +2851,7 @@ Attempts to solve **Count-to-infinity** problem —— **Poisoned reverse** (毒
 - 将数据包传送给最近的一个组成员
 - 在有多个服务器的情况下，用户希望快速获得正确信息，而不在乎从哪个服务器获得
 
-<img src="../images/image-20241114103115444.png" alt="image-20241114103115444" style="zoom:33%;" />
+<img src="./assets/image-20241114103115444.png" alt="image-20241114103115444" style="zoom:33%;" />
 
 选播的典型应用：DNS
 
@@ -2922,7 +2922,7 @@ OSPF 支持将一组网段组合在一起，称为一个区域
 
 非主干区域之间不允许直接发布区域间路由信息
 
-<img src="../images/image-20241114104229921.png" alt="image-20241114104229921" style="zoom:40%;" />
+<img src="./assets/image-20241114104229921.png" alt="image-20241114104229921" style="zoom:40%;" />
 
 有三类路由器：ASBR 自治系统边界路由器，IR 内部路由器，ABR 区域边界路由器
 
@@ -2930,7 +2930,7 @@ OSPF 支持将一组网段组合在一起，称为一个区域
 
 ##### 小结
 
-<img src="../images/image-20241114104450190.png" alt="image-20241114104450190" style="zoom:40%;" />
+<img src="./assets/image-20241114104450190.png" alt="image-20241114104450190" style="zoom:40%;" />
 
 “路由收敛”是指网络设备路由表和网络拓扑结构保持一致
 
@@ -2969,7 +2969,7 @@ RIP 协议的基本思想
 
 **小结**
 
-<img src="../images/image-20241114105310291.png" alt="image-20241114105310291" style="zoom:33%;" />
+<img src="./assets/image-20241114105310291.png" alt="image-20241114105310291" style="zoom:33%;" />
 
 #### BGP 边界网关协议(EGP)
 
@@ -2984,7 +2984,7 @@ BGP 功能
 - iBGP： 将网络可达信息传播给 AS 内的路由器
 - 基于网络可达信息和策略决定到其他网络的“最优”路由
 
-<img src="../images/image-20241114105911720.png" alt="image-20241114105911720" style="zoom:33%;" />
+<img src="./assets/image-20241114105911720.png" alt="image-20241114105911720" style="zoom:33%;" />
 
 **BGP 会话**: 两个 BGP 路由器通过 TCP 连接交换 BGP 报文
 
@@ -2994,7 +2994,7 @@ BGP 功能
 
 - 路由 = [前缀, AS-PATH, NEXT-HOP]
 
-<img src="../images/image-20241114110331336.png" alt="image-20241114110331336" style="zoom:33%;" />
+<img src="./assets/image-20241114110331336.png" alt="image-20241114110331336" style="zoom:33%;" />
 
 路由器可能会学到多条到目的网络的路径
 
@@ -3049,7 +3049,7 @@ MPLS 域
 
 **工作过程**：
 
-<img src="../images/image-20241114112540755.png" alt="image-20241114112540755" style="zoom:50%;" />
+<img src="./assets/image-20241114112540755.png" alt="image-20241114112540755" style="zoom:50%;" />
 
 ### 路由器
 
@@ -3094,11 +3094,11 @@ MPLS 域
 
 - 若存在多个“去往同一目的 IP 前缀”的不同类型路由，路由器根据优先级选择最佳路由
   - 优先级数值越小，优先级越高
-  - <img src="../images/image-20241114112803318.png" alt="image-20241114112803318" style="zoom:33%;" />
+  - <img src="./assets/image-20241114112803318.png" alt="image-20241114112803318" style="zoom:33%;" />
 
 #### 数据层
 
-<img src="../images/image-20241114112938001.png" alt="image-20241114112938001" style="zoom:40%;" />
+<img src="./assets/image-20241114112938001.png" alt="image-20241114112938001" style="zoom:40%;" />
 
 ### 拥塞控制算法
 
@@ -3164,23 +3164,23 @@ VPN 的设计原则
 
 初始动机：应付“32-bit 地址空间耗尽”问题（CIDR 和 NAT 都无法从根本上解决地址短缺问题），增加地址空间
 
-<img src="../images/image-20241114114800138.png" alt="image-20241114114800138" style="zoom: 33%;" />
+<img src="./assets/image-20241114114800138.png" alt="image-20241114114800138" style="zoom: 33%;" />
 
 #### IPV6 头部
 
-<img src="../images/image-20241114115641311.png" alt="image-20241114115641311" style="zoom: 33%;" />
+<img src="./assets/image-20241114115641311.png" alt="image-20241114115641311" style="zoom: 33%;" />
 
-<img src="../images/image-20241114115658061.png" alt="image-20241114115658061" style="zoom:33%;" />
+<img src="./assets/image-20241114115658061.png" alt="image-20241114115658061" style="zoom:33%;" />
 
 **IPv6 头部字段分析**
 
-<img src="../images/image-20241114115736513.png" alt="image-20241114115736513" style="zoom:33%;" />
+<img src="./assets/image-20241114115736513.png" alt="image-20241114115736513" style="zoom:33%;" />
 
 - IPv6 不允许分片
 
 #### IPv6 扩展头
 
-<img src="../images/image-20241114115917551.png" alt="image-20241114115917551" style="zoom:33%;" />
+<img src="./assets/image-20241114115917551.png" alt="image-20241114115917551" style="zoom:33%;" />
 
 #### 邻居发现
 
@@ -3188,7 +3188,7 @@ VPN 的设计原则
 
 #### IPv6 地址及配置
 
-<img src="../images/image-20241114120240881.png" alt="image-20241114120240881" style="zoom:33%;" />
+<img src="./assets/image-20241114120240881.png" alt="image-20241114120240881" style="zoom:33%;" />
 
 
 
@@ -3202,7 +3202,7 @@ VPN 的设计原则
 
 - 将 A 协议数据包封装在 B 协议中传输
 
-<img src="../images/image-20241114121200236.png" alt="image-20241114121200236" style="zoom:33%;" />
+<img src="./assets/image-20241114121200236.png" alt="image-20241114121200236" style="zoom:33%;" />
 
 ##### 翻译技术
 
@@ -3241,7 +3241,7 @@ VPN 的设计原则
 - 传输层可以通过差错恢复、重排序等手段提供 **可靠、按序** 的交付服务
 - 但传输层无法提供延迟保证、带宽保证等服务
 
-<img src="../images/image-20241121101238998.png" alt="image-20241121101238998" style="zoom: 33%;" />
+<img src="./assets/image-20241121101238998.png" alt="image-20241121101238998" style="zoom: 33%;" />
 
 ### 套接字编程
 
@@ -3272,11 +3272,11 @@ VPN 的设计原则
 
 #### 创建套接字：socket()
 
-<img src="../images/image-20241121101815974.png" alt="image-20241121101815974" style="zoom:33%;" />
+<img src="./assets/image-20241121101815974.png" alt="image-20241121101815974" style="zoom:33%;" />
 
 #### 套接字描述符
 
-<img src="../images/image-20241121101912511.png" alt="image-20241121101912511" style="zoom:33%;" />
+<img src="./assets/image-20241121101912511.png" alt="image-20241121101912511" style="zoom:33%;" />
 
 #### 使用 UDP 套接字实现回音服务
 
@@ -3286,7 +3286,7 @@ VPN 的设计原则
 
 ##### 通信流程
 
-<img src="../images/image-20241121102356020.png" alt="image-20241121102356020" style="zoom:33%;" />
+<img src="./assets/image-20241121102356020.png" alt="image-20241121102356020" style="zoom:33%;" />
 
 ```c
 // UDP服务端代码
@@ -3355,7 +3355,7 @@ TCP 套接字系统调用：connect() -- 客户端
 
 ##### 基于 TCP 的套接字通信流程
 
-<img src="../images/image-20241121103558076.png" alt="image-20241121103558076" style="zoom:33%;" />
+<img src="./assets/image-20241121103558076.png" alt="image-20241121103558076" style="zoom:33%;" />
 
 ```c
 // TCP回音服务端
@@ -3483,7 +3483,7 @@ UDP 只在 IP 的数据报服务之上增加了两个功能：
 
 #### UDP 报文段结构
 
-<img src="../images/image-20241121105714048.png" alt="image-20241121105714048" style="zoom:33%;" />
+<img src="./assets/image-20241121105714048.png" alt="image-20241121105714048" style="zoom:33%;" />
 
 UDP 首部大小为 8B，由 4 个字段组成，每个字段的长度都是 2B
 
@@ -3496,7 +3496,7 @@ UDP 首部大小为 8B，由 4 个字段组成，每个字段的长度都是 2B
 
 #### 校验和计算
 
-<img src="../images/image-20241121110110364.png" alt="image-20241121110110364" style="zoom:33%;" />
+<img src="./assets/image-20241121110110364.png" alt="image-20241121110110364" style="zoom:33%;" />
 
 伪首部是源IP+目的IP+0+17+UDP长度
 
@@ -3570,7 +3570,7 @@ TCP 适用于可靠性更重要的场合，如文件传输协议 FTP、超文本
 
 #### TCP 报文段结构
 
-<img src="../images/image-20241121112208877.png" alt="image-20241121112208877" style="zoom:33%;" />
+<img src="./assets/image-20241121112208877.png" alt="image-20241121112208877" style="zoom:33%;" />
 
 - **源端口(source port)和目的端口(destination port)**：各占 2B
 - **发送序号（Seq number）**：数据载荷中第一个字节在字节流中的序号，范围为 0~2^32^-1，共 2^32^个序号
@@ -3613,7 +3613,7 @@ TCP 报文长度根据接收方给出的窗口和当前网络拥塞程度来决�
 
 
 
-<img src="../images/image-20241121112530950.png" alt="image-20241121112530950" style="zoom: 33%;" />
+<img src="./assets/image-20241121112530950.png" alt="image-20241121112530950" style="zoom: 33%;" />
 
 #### TCP 可靠数据传输
 
@@ -3633,7 +3633,7 @@ TCP 在不可靠的 IP 服务上建立可靠的数据传输
 
 **仅考虑可靠传输机制，且数据仅在一个方向上传输**
 
-<img src="../images/image-20241121113415248.png" alt="image-20241121113415248" style="zoom:40%;" />
+<img src="./assets/image-20241121113415248.png" alt="image-20241121113415248" style="zoom:40%;" />
 
 ##### TCP 发送方要处理的事件
 
@@ -3692,7 +3692,7 @@ TCP 协议规定： 当发送方收到对同一序号的 3 次重复确认时，
 
 ##### 小结
 
-<img src="../images/image-20241121115947561.png" alt="image-20241121115947561" style="zoom: 33%;" />
+<img src="./assets/image-20241121115947561.png" alt="image-20241121115947561" style="zoom: 33%;" />
 
 ##### TCP 使用 GBN 还是 SR
 
@@ -3789,7 +3789,7 @@ TCP 协议规定：
 >
 > ==> delayed duplicates problem
 
-<img src="../images/image-20241128101520034.png" alt="image-20241128101520034" style="zoom: 33%;" />
+<img src="./assets/image-20241128101520034.png" alt="image-20241128101520034" style="zoom: 33%;" />
 
 Problems：There are two problems which complicates the scenario:
 - Possible wrap around of seqno
@@ -3849,9 +3849,9 @@ The clocks at different hosts need **not** be synchronized.
 
 ##### Forbidden region of seqno
 
-<img src="../images/image-20241128102832279.png" alt="image-20241128102832279" style="zoom: 33%;" />
+<img src="./assets/image-20241128102832279.png" alt="image-20241128102832279" style="zoom: 33%;" />
 
-<img src="../images/image-20241128103527044.png" alt="image-20241128103527044" style="zoom:33%;" />
+<img src="./assets/image-20241128103527044.png" alt="image-20241128103527044" style="zoom:33%;" />
 
 The increments of seqno cannot be **too fast or too slow**
 
@@ -3862,9 +3862,9 @@ Solution for the delayed duplicates：
 
 ##### TCP 三次握手建立连接
 
-<img src="../images/image-20241128103834658.png" alt="image-20241128103834658" style="zoom: 33%;" />
+<img src="./assets/image-20241128103834658.png" alt="image-20241128103834658" style="zoom: 33%;" />
 
-<img src="../images/image-20241128105458546.png" alt="image-20241128105458546" style="zoom:50%;" />
+<img src="./assets/image-20241128105458546.png" alt="image-20241128105458546" style="zoom:50%;" />
 
 TCP 标准规定：ACK 报文段可以携带数据。但如果不携带数据，则不消耗序号。下一个数据报文段的序号仍是 seq = x + 1。
 
@@ -3883,7 +3883,7 @@ Symmetric release 对称
 
 SYMMETRIC EXAMPLE：
 
-<img src="../images/image-20241128104959324.png" alt="image-20241128104959324" style="zoom: 33%;" />
+<img src="./assets/image-20241128104959324.png" alt="image-20241128104959324" style="zoom: 33%;" />
 
 **Two army-problem**：A white army is encamped in a valley. On both of the surrounding hillsides are blue armies. 
 
@@ -3909,7 +3909,7 @@ FIN位用来释放一个连接，它表示本方已没有数据要传输。然�
 
 ##### 客户/服务器经历的 TCP 状态序列
 
-<img src="../images/image-20241128105703887.png" alt="image-20241128105703887" style="zoom:50%;" />
+<img src="./assets/image-20241128105703887.png" alt="image-20241128105703887" style="zoom:50%;" />
 
 ##### SYN 洪泛攻击
 
@@ -3985,7 +3985,7 @@ Multiplicative Decrease & Additive Increase
 
 拥塞窗口是发送端根据网络拥塞情况确定的窗口值
 
-<img src="../images/image-20241128112144283.png" alt="image-20241128112144283" style="zoom: 33%;" />
+<img src="./assets/image-20241128112144283.png" alt="image-20241128112144283" style="zoom: 33%;" />
 
 #### TCP 慢启动
 
@@ -4019,7 +4019,7 @@ Multiplicative Decrease & Additive Increase
 
 ##### 区分不同的丢包事件
 
-<img src="../images/image-20241128112853377.png" alt="image-20241128112853377" style="zoom: 33%;" />
+<img src="./assets/image-20241128112853377.png" alt="image-20241128112853377" style="zoom: 33%;" />
 
 ##### TCP 发送端的事件与动作
 
@@ -4041,9 +4041,9 @@ Multiplicative Decrease & Additive Increase
 
 - TCP Tahoe 实现：cwnd = 1✖MSS，慢启动
 
-<img src="../images/image-20241128113502853.png" alt="image-20241128113502853" style="zoom:33%;" />
+<img src="./assets/image-20241128113502853.png" alt="image-20241128113502853" style="zoom:33%;" />
 
-<img src="../images/image-20241128113715827.png" alt="image-20241128113715827" style="zoom: 33%;" />
+<img src="./assets/image-20241128113715827.png" alt="image-20241128113715827" style="zoom: 33%;" />
 
 > [!NOTE]
 >
@@ -4053,13 +4053,13 @@ Multiplicative Decrease & Additive Increase
 
 ##### TCP 连接的吞吐量
 
-<img src="../images/image-20241128114412311.png" alt="image-20241128114412311" style="zoom: 33%;" />
+<img src="./assets/image-20241128114412311.png" alt="image-20241128114412311" style="zoom: 33%;" />
 
 ##### TCP 的公平性
 
 公平性目标: 如果 K 条 TCP 连接共享某条带宽为 R 的瓶颈链路，每条连接应具有平均速度 R/K
 
-<img src="../images/image-20241128115004736.png" alt="image-20241128115004736" style="zoom: 33%;" />
+<img src="./assets/image-20241128115004736.png" alt="image-20241128115004736" style="zoom: 33%;" />
 
 
 
@@ -4073,7 +4073,7 @@ Multiplicative Decrease & Additive Increase
 
 TCP Reno 线性增大拥塞窗口，探测当前可用网络带宽，即每经过一个 RTT，拥塞窗口增加一个 MSS；当端到端时延带宽乘积（BDP）较大时，拥塞窗口增长过慢，导致信道无法满载
 
-<img src="../images/image-20241205100447852.png" alt="image-20241205100447852" style="zoom:50%;" />
+<img src="./assets/image-20241205100447852.png" alt="image-20241205100447852" style="zoom:50%;" />
 
 ##### TCP-BIC
 
@@ -4095,7 +4095,7 @@ BIC 算法对满载窗口进行二分查找：
 
 - 如窗口再次达到 *W* 1 而没有丢包，说明满载窗口大于 *W* 1 ，则以逼近 *W* 1 的镜像过程增大拥塞窗口
 
-<img src="../images/image-20241205100545655.png" alt="image-20241205100545655" style="zoom:50%;" />
+<img src="./assets/image-20241205100545655.png" alt="image-20241205100545655" style="zoom:50%;" />
 
 BIC 存在带宽 **不公平性问题**：BIC 以 ACK 时钟驱动拥塞窗口的更新，RTT 较短的连接会更快到达满载窗口，占据
 
@@ -4107,13 +4107,13 @@ CUBIC 将 BIC 算法连续化，用三次函数拟合 BIC 算法曲线
 
  拥塞窗口成为距上次丢包的时间 *t* 的函数，*t* 取值位于两次丢包之间，不再根据 RTT 间隔来确定调整窗口的时机，**避免了 RTT 不公平问题**
 
-<img src="../images/image-20241205100721189.png" alt="image-20241205100721189" style="zoom:50%;" />
+<img src="./assets/image-20241205100721189.png" alt="image-20241205100721189" style="zoom:50%;" />
 
 #### Google BBR
 
 ##### 拥塞与瓶颈链路带宽
 
-<img src="../images/image-20241205101159820.png" alt="image-20241205101159820" style="zoom:50%;" />
+<img src="./assets/image-20241205101159820.png" alt="image-20241205101159820" style="zoom:50%;" />
 
 **BBR**: Bottleneck Bandwidth and Round-trip propagation time
 
@@ -4125,13 +4125,13 @@ BDP = BtlBw x RTprop
 
 用过去 10 秒内的最小 RTT（min RTT）和最大投递率（max BW），分别近似 RTprop 和 BtlBw，并依据这两个值估算当前 BDP
 
-<img src="../images/image-20241205101516975.png" alt="image-20241205101516975" style="zoom:50%;" />
+<img src="./assets/image-20241205101516975.png" alt="image-20241205101516975" style="zoom:50%;" />
 
 > [!CAUTION]
 >
 > Max BW 和 min RTT 不能同时被测得！
 
-<img src="../images/image-20241205101638431.png" alt="image-20241205101638431" style="zoom:50%;" />
+<img src="./assets/image-20241205101638431.png" alt="image-20241205101638431" style="zoom:50%;" />
 
 ##### BDP 检测阶段
 
@@ -4147,11 +4147,11 @@ BDP = BtlBw x RTprop
 
 **瓶颈带宽探测（PROBE_BW）**
 
-<img src="../images/image-20241205102010135.png" alt="image-20241205102010135" style="zoom:50%;" />
+<img src="./assets/image-20241205102010135.png" alt="image-20241205102010135" style="zoom:50%;" />
 
 **时延探测（PROBE_RTT）**
 
-<img src="../images/image-20241205102025072.png" alt="image-20241205102025072" style="zoom:50%;" />
+<img src="./assets/image-20241205102025072.png" alt="image-20241205102025072" style="zoom:50%;" />
 
 #### Data Center TCP
 
@@ -4253,7 +4253,7 @@ DCCP = UDP+拥塞控制
 
 MPTCP 位于套接字和 TCP 之间
 
-<img src="../images/image-20241205103137769.png" alt="image-20241205103137769" style="zoom:50%;" />
+<img src="./assets/image-20241205103137769.png" alt="image-20241205103137769" style="zoom:50%;" />
 
 
 
@@ -4279,7 +4279,7 @@ TCP 传输需要保持有序性：出现丢包时，后面的数据需要等丢�
 
 ##### QUIC 在网络体系结构中的位置
 
-<img src="../images/image-20241205103839331.png" alt="image-20241205103839331" style="zoom:50%;" />
+<img src="./assets/image-20241205103839331.png" alt="image-20241205103839331" style="zoom:50%;" />
 
 QUIC 替代 TCP、TLS 和部分 HTTP 的功能
 
@@ -4379,7 +4379,7 @@ DNS 组成包括：域名空间、域名服务器、分布式数据库
 
 ##### 层级结构
 
-<img src="../images/image-20241205105348705.png" alt="image-20241205105348705" style="zoom: 33%;" />
+<img src="./assets/image-20241205105348705.png" alt="image-20241205105348705" style="zoom: 33%;" />
 
 edu 可以时顶级域名也可以是二级域名，美国的大学的 edu 就是顶级域名
 
@@ -4395,7 +4395,7 @@ edu 可以时顶级域名也可以是二级域名，美国的大学的 edu 就�
 
 ##### 顶级域名
 
-<img src="../images/image-20241205105622639.png" alt="image-20241205105622639" style="zoom: 33%;" />
+<img src="./assets/image-20241205105622639.png" alt="image-20241205105622639" style="zoom: 33%;" />
 
 
 
@@ -4464,7 +4464,7 @@ edu 可以时顶级域名也可以是二级域名，美国的大学的 edu 就�
 - 主机向递归解析器/本地域名字服务器的查询一般采用 *递归查询*
 - 递归解析器/本地域名字服务器向根服务器可以采用递归查询，但一般优先采用 *迭代查询*
 
-<img src="../images/image-20241205112956349.png" alt="image-20241205112956349" style="zoom:33%;" /> <img src="../images/image-20241205113024376.png" alt="image-20241205113024376" style="zoom:33%;" />
+<img src="./assets/image-20241205112956349.png" alt="image-20241205112956349" style="zoom:33%;" /> <img src="./assets/image-20241205113024376.png" alt="image-20241205113024376" style="zoom:33%;" />
 
 ##### 题目
 
@@ -4480,9 +4480,9 @@ edu 可以时顶级域名也可以是二级域名，美国的大学的 edu 就�
 
 #### 域名系统查询和响应
 
-<img src="../images/image-20241205113339272.png" alt="image-20241205113339272" style="zoom: 33%;" />
+<img src="./assets/image-20241205113339272.png" alt="image-20241205113339272" style="zoom: 33%;" />
 
-<img src="../images/image-20241205113535556.png" alt="image-20241205113535556" style="zoom: 33%;" />
+<img src="./assets/image-20241205113535556.png" alt="image-20241205113535556" style="zoom: 33%;" />
 
 **资源记录部分** 是 DNS 报文格式的最后 3 个字段，只有在 DNS 响应报文中才出现 ，包括 回答问题区域字段、权威名字服务器区域字段、附加信息区域字段。这 3 个字段都采用资源记录的格式
 
@@ -4594,11 +4594,11 @@ WWW 性能提升方法
 
 #### 静态 Web（对象）
 
-<img src="../images/image-20241205122218678.png" alt="image-20241205122218678" style="zoom:50%;" />
+<img src="./assets/image-20241205122218678.png" alt="image-20241205122218678" style="zoom:50%;" />
 
 HTML 和 XML
 
-![image-20241212100737916](../images/image-20241212100737916.png)
+![image-20241212100737916](assets/image-20241212100737916.png)
 
 #### 动态 Web 和 Web 应用
 
@@ -4662,7 +4662,7 @@ ASP.NET (Active Server Pages .NET)
 
 
 
-<img src="../images/image-20241212102520898.png" alt="image-20241212102520898" style="zoom: 33%;" />
+<img src="./assets/image-20241212102520898.png" alt="image-20241212102520898" style="zoom: 33%;" />
 
 ##### HTTP 连接
 
@@ -4694,11 +4694,11 @@ ASP.NET (Active Server Pages .NET)
 
 - 降低响应时间
 
-<img src="../images/image-20241212103108554.png" alt="image-20241212103108554" style="zoom:50%;" />
+<img src="./assets/image-20241212103108554.png" alt="image-20241212103108554" style="zoom:50%;" />
 
 ##### 思考题
 
-<img src="../images/image-20241212104235149.png" alt="image-20241212104235149" style="zoom:40%;" />
+<img src="./assets/image-20241212104235149.png" alt="image-20241212104235149" style="zoom:40%;" />
 
 ##### HTTP报文结构
 
@@ -4718,7 +4718,7 @@ ASP.NET (Active Server Pages .NET)
 
 - 目标：再次访问缓存在浏览器主机中的 Web 页副本，不必从原始服务器读取
 
-<img src="../images/image-20241212104929914.png" alt="image-20241212104929914" style="zoom: 33%;" />
+<img src="./assets/image-20241212104929914.png" alt="image-20241212104929914" style="zoom: 33%;" />
 
 ##### Web 代理服务器缓存
 
@@ -4736,9 +4736,9 @@ ASP.NET (Active Server Pages .NET)
 
 ##### Web 代理服务器缓存性能分析
 
-<img src="../images/image-20241212105412878.png" alt="image-20241212105412878" style="zoom: 33%;" />
+<img src="./assets/image-20241212105412878.png" alt="image-20241212105412878" style="zoom: 33%;" />
 
-<img src="../images/image-20241212105429447.png" alt="image-20241212105429447" style="zoom:50%;" />
+<img src="./assets/image-20241212105429447.png" alt="image-20241212105429447" style="zoom:50%;" />
 
 Web 缓存存在的困难，即 Web 缓存与原始服务器 Web 页一致性问题
 
@@ -5135,7 +5135,7 @@ To achieve security, the cryptographer should be conservative and make sure that
 
 ##### Transposition Ciphers 换位密码
 
-<img src="../images/image-20241219105144977.png" alt="image-20241219105144977" style="zoom:50%;" />
+<img src="./assets/image-20241219105144977.png" alt="image-20241219105144977" style="zoom:50%;" />
 
 ##### One-Time Pads
 
@@ -5229,7 +5229,7 @@ To achieve security, the cryptographer should be conservative and make sure that
 - X.509 是一种公钥证书生成和交换的标准规范
 - CA 签名后不可更改
 
-<img src="../images/image-20241219121619227.png" alt="image-20241219121619227" style="zoom:33%;" />
+<img src="./assets/image-20241219121619227.png" alt="image-20241219121619227" style="zoom:33%;" />
 
 #### 认证协议
 
@@ -5237,7 +5237,7 @@ Shared Secret Key：Two-way authentication using a **challenge-response** protoc
 
 **The reflection attack 反射攻击**
 
-<img src="../images/image-20241226100804059.png" alt="image-20241226100804059" style="zoom:50%;" />
+<img src="./assets/image-20241226100804059.png" alt="image-20241226100804059" style="zoom:50%;" />
 
 **Authentication using HMACs. (CORRECT)** (Hashed Message Authentication Code)
 
@@ -5259,7 +5259,7 @@ PGP(Pretty Good Privacy)  是一个完整的电子邮件安全软件包，提供
 
 PGP 综合应用了现有的 MD5，RSA 和 IDEA 等密码算法
 
-<img src="../images/image-20241226102313133.png" alt="image-20241226102313133" style="zoom:50%;" />
+<img src="./assets/image-20241226102313133.png" alt="image-20241226102313133" style="zoom:50%;" />
 
 #### 安全多功能互联网邮件扩展 S/MIME
 
@@ -5322,7 +5322,7 @@ PGP 综合应用了现有的 MD5，RSA 和 IDEA 等密码算法
    - 不仅仅是一次性交易
 4. 连接关闭：关闭 TLS 连接之前，A 或 B 应当先发送关闭 TLS 的记录，以防止截断攻击 (truncation attack)
 
-<img src="../images/image-20241226104127414.png" alt="image-20241226104127414" style="zoom: 33%;" />
+<img src="./assets/image-20241226104127414.png" alt="image-20241226104127414" style="zoom: 33%;" />
 
 ##### 超文本传输协议安全 HTTPS
 
@@ -5338,7 +5338,7 @@ HTTPS 是以安全为目标的 HTTP 通道，是 HTTP 的安全版，在 HTTP �
 
 IP Sec 是在 IP 层提供互联网通信安全的协议族和安全框架
 
-<img src="../images/image-20241226104329819.png" alt="image-20241226104329819" style="zoom:50%;" />
+<img src="./assets/image-20241226104329819.png" alt="image-20241226104329819" style="zoom:50%;" />
 
 IP 安全数据报有两种工作模式：传输模式(transport mode)和隧道模式(tunnel mode)
 
