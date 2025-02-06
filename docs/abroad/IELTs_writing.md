@@ -26,6 +26,22 @@ Regarding the production of damaging gases, Freon initially experienced an upwar
 
 Similarly, H₂O₂ production began at zero in 1980 but showed a gradual increase to approximately 18,000 metric tons by 1990. From this point onwards, it surged significantly, ending the period at 80,000 metric tons.
 
+**3. numbers of participants for different activities**
+
+<img src="./assets/image-20250114162125458.png" alt="image-20250114162125458" style="zoom:50%;" />
+
+The line graph illustrates the number of participants involved in five activities—film club, martial arts, amateur dramatics, table tennis, and musical performances—at a social center in Melbourne, Australia, from 2000 to 2020.
+
+**Overall**, the film club consistently had the highest participation throughout the period, while amateur dramatics saw a steady decline. Musical performances, on the other hand, experienced a significant increase in participants, overtaking other activities except for the film club by 2020.
+
+The film club started at around 63 in 2000, and then fluctuated slightly before rising to nearly 65 by 2020. Martial arts had the second-largest participation initially, with about 35 attendees, and remained relatively stable over the period, with minor fluctuations.
+
+Amateur dramatics started with approximately 26 participants in 2000 but **experienced a gradual decline**, reaching less than 10 by 2020. In contrast, table tennis saw a remarkable growth over the years, surpassing amateur dramatics and martial arts in 2015 and climbing to over 50 participants by 2020.
+
+Musical performances showed a dramatic increase in popularity. Starting with no participants in 2000 and 2005, it rose rapidly, surpassing amateur dramatics around 2010. By 2020, it had reached nearly 20 participants.
+
+
+
 ### 饼图
 
 The three pie charts illustrate the proportion of four types of vehicles used in the UK in 1965, 1985, and 2005.

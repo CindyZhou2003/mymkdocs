@@ -33,6 +33,7 @@ nav:
       - 第一次: abroad/IELTs_speaking1.md
       - 第二次:  abroad/IELTs_speaking2.md
     - 雅思作文: abroad/IELTs_writing.md
+    - GRE: abroad/GRE.md
   - 其他🎊:
     - Test: other/test.md
     - 部署网站时的问题: other/Debug_issue.md
@@ -155,4 +156,4 @@ plugins:
       type: datetime
       timezone: Asia/Shanghai
       locale: zh
-      enable_creation_date: true
+      enable_creation_date: false
