@@ -44,17 +44,19 @@ Describe a village that you visited
 
 1. Have you ever borrowed books from others?
 
+   > Yes, I’ve borrowed books from others, especially when I was in school or university. It’s a great way to access resources without having to buy them, and I’ve always made sure to return the books in good condition. Borrowing books also gives me a chance to explore new topics or authors that I might not have considered otherwise.
+
 2. Have you ever borrowed money from others?
+
+   > No, I’ve never borrowed money from others. I prefer to manage my finances carefully and avoid situations where I might need to rely on someone else for financial help. If I ever face a financial challenge, I’d try to find a solution on my own first, like cutting expenses or saving more.
 
 3. Do you like to lend things to others?
 
-   > willing to lend a hand
+   > Yes, I’m generally willing to lend things to others, especially if it’s something they genuinely need. I believe in helping people out when I can, whether it’s lending a book, a tool, or even offering advice. However, I do expect the person to return the item in good condition and within a reasonable time frame.
 
 4. How do you feel when people don't return things they borrowed from you?
 
-   > small things, forgive and let it go
-   >
-   > big things, rush to their home, demand them to give it back, will never get anything from me ever again
+   > It depends on what they borrowed. If it’s something small, like a pen or a notebook, I’d probably just let it go and not make a big deal. But if it’s something more valuable or important, I’d be quite upset and might even go to their home to demand it back. In such cases, I’d also think twice before lending them anything again in the future.
 
 #### （3）Hats/ Caps（1.9）
 
@@ -150,7 +152,7 @@ Describe a village that you visited
 
 2. Do you see a lot of advertising on trains or other transport?
 
-   > Yes, I see a lot of advertising on public transport, especially on subways. There are posters and digital screens everywhere, and sometimes even small TVs that play commercials repeatedly. It’s hard to miss them because they’re strategically placed in high-traffic areas, like inside the train cars or on the platform walls. While some ads are creative, others can feel a bit overwhelming due to their sheer volume.
+   > Yes, I see a lot of advertising on public transport, especially on subways. There are posters and digital screens everywhere. It’s hard to miss them because they’re strategically placed in high-traffic areas, like inside the train cars or on the platform walls. While some ads are creative, others can feel a bit overwhelming due to their sheer volume.
 
 3. Do you like advertisements?
 
@@ -158,11 +160,13 @@ Describe a village that you visited
 
 4. What kind of advertising do you like?
 
+   > I prefer storytelling ads that don’t directly promote a specific product. These ads often use creative narratives or emotional themes to engage the audience, making them more memorable and enjoyable to watch. For example, I’ve seen ads that tell a heartwarming story or showcase a unique concept, and only at the end do they subtly introduce the product. I find this approach much more appealing than traditional ads that simply push a product in your face.
+
 #### （5）Computers
 
 1. In what conditions would you use a computer?
 
-   > I use a computer mainly for studying and programming since I’m majoring in software engineering. It’s an essential tool for completing assignments, writing code, and running simulations. I also use it for research, online classes, and sometimes for entertainment, like watching videos or playing games. Without a computer, it would be almost impossible to keep up with my coursework.
+   > I use a computer mainly for studying and programming since I’m majoring in software engineering. It’s an essential tool for completing assignments and writing code. I also use it for research, online classes, and sometimes for entertainment, like watching videos or playing games. Without a computer, it would be almost impossible to keep up with my coursework.
 
 2. When was the first time you used a computer?
 
@@ -214,11 +218,11 @@ Describe a village that you visited
 
 1. What will you do if you find something lost by others?
 
-   > If I find something lost by others, I would take it to the lost and found office. I think it’s the most practical and responsible way to handle the situation, as it increases the chances of the item being returned to its owner. If there’s no lost and found office nearby, I might hand it over to the manager or staff of the place where I found it.
+   > If I find something lost by others, I would take it to the lost and found office. I think it’s the most practical and responsible way to handle the situation, as it increases the chances of the item being returned to its owner. If there’s no lost and found office nearby, I might **hand it over** to the manager or staff of the place where I found it.
 
 2. Do you report to the police when finding something lost by others? Why?
 
-   > I usually don’t report to the police immediately when I find something lost. Instead, I’d first take it to the lost and found office or inform the manager of the place where I found it. Reporting to the police would be my last resort, especially if the lost item is very expensive or valuable, like a wallet or a phone. I think this approach is more efficient and avoids unnecessary complications.
+   > I usually don’t report to the police immediately when I find something lost. Instead, I’d first take it to the lost and found office or inform the manager of the place where I found it. Reporting to the police would be **my last resort**, especially if the lost item is very expensive or valuable, like a wallet or a phone. I think this approach is more efficient and avoids unnecessary complications.
 
 3. Have you ever lost things?
 
@@ -232,214 +236,269 @@ Describe a village that you visited
 
 1. Do you have a talent or something you are good at?
 
-   > Making things, DIY?
+   > Yes, I’m good at making things and DIY projects. I enjoy creating or repairing things with my hands, whether it’s assembling puzzles, crafting decorations, or even fixing small household items. It’s a skill that I find both practical and satisfying.
 
 2. Was it mastered recently or when you were young?
 
-   > I think I mastered it when i was young.
+   > I think I developed this talent when I was young. I’ve always been curious about how things work and loved tinkering with tools or materials. Over time, I’ve improved my skills through practice and experience, but the foundation was definitely laid during my childhood.
 
 3. Do you think your talent can be useful for your future work? Why?
 
-   > Creativity may be useful
+   > Yes, I believe my creativity and DIY skills can be useful for my future work. In many fields, especially those related to design, engineering, or even problem-solving, creativity is highly valued. Being able to **think outside the box** and create practical solutions could **give me an edge** in my career.
 
 4. Do you think anyone in your family has the same talent?
+
+   > Yes, my mother also has a similar talent. She’s very ingenious and often comes up with creative solutions for everyday problems. Whether it’s repurposing old items or finding clever ways to organize our home, her creativity has definitely inspired me and influenced my own skills.
 
 #### （10）Evening time
 
 1. Do you like the morning or evening?
 
-   > Morning, it has sunshine
+   > I prefer the morning because it’s filled with sunshine and a sense of freshness. I feel more energetic and productive during this time, and it’s a great way to start the day. The quiet and calm atmosphere in the morning also helps me focus better.
 
 2. What do you usually do in the evening?
 
-   > Do my homework or review my classes.
+   > In the evening, I usually do my homework or review my classes. It’s a time when I can reflect on what I’ve learned during the day and make sure I’m prepared for the next. Sometimes, I also relax by watching a show or reading a book to unwind after a busy day.
 
 3. What did you do in the evening when you were little? Why?
 
-   > I cycled in the neighborhood or watched TV at home. There was little homework to do and classes ended at 3 pm, so I could relax myself.
+   > When I was little, I used to cycle around the neighborhood or watch TV at home in the evening. **Back then**那时, I didn’t have much homework, and classes ended early, around 3 pm, so I had plenty of free time to relax and enjoy myself. It was a carefree and fun part of my childhood.
 
 4. Are there any differences between what you do in the evening now and what you did in the past?
+
+   > Yes, there’s a big difference. When I was younger, evenings were all about playing and relaxing, like cycling or watching TV. Now, evenings are more about being productive—completing homework, reviewing lessons, or preparing for the next day. I have less free time, but I still try to balance work with some relaxation.
 
 #### （11）Dreams
 
 1. Do you often remember your dreams?
 
-   > No
+   > No, I don’t often remember my dreams. Most of the time, I wake up with only a vague impression of what I dreamed about, if anything at all. Occasionally, I’ll remember a particularly vivid or strange dream, but those instances are rare.
 
 2. Do you share your dreams with others? (or Are you interested in others' dreams? )
 
-   > Sometimes. If some people were engaged in my dreams
+   > Sometimes, I share my dreams with others, especially if someone I know was in the dream. It can be amusing or interesting to talk about. However, I’m not particularly interested in hearing about other people’s dreams unless they’re really unique or funny.
 
 3. Do you think dreams have special meanings?
 
-   > No. I don't believe that, I'm a materialist.
+   > No, I don’t believe dreams have special meanings. I’m more of a materialist, so I see dreams as random brain activity during sleep rather than something symbolic or prophetic 预言性的. While they can be entertaining or thought-provoking, I don’t take them seriously.
 
 4. Do you want to make your dreams come true?
 
-   > No, most of them are ridiculous
+   > No, I don’t want to make my dreams come true because most of them are ridiculous or unrealistic. For example, I’ve had dreams where I’m flying or doing something completely illogical. While they’re fun to think about, they’re not something I’d want to pursue in real life.
 
 #### （12）Street Market
 
 1. What do people usually buy on the street market?
 
-   > 
+   > People usually buy small gadgets and street food at street markets. These markets are known for their affordable and unique items, like accessories, household tools, or handmade crafts. Street food is also a big attraction, offering a variety of local snacks and dishes that you can’t always find in regular stores.
 
 2. Do you prefer to go shopping in the shopping mall or on the street market?
 
+   > I prefer shopping in a shopping mall because it’s more organized and comfortable. Malls have a wide range of products, from clothing to electronics, all under one roof, and they often provide amenities like air conditioning and clean restrooms. Street markets, while lively and colorful, can be crowded and chaotic, which I find less enjoyable.
+
 3. When was the last time you went to a street market?
 
+   > I don’t remember the last time I went to a street market because I rarely visit them. I tend to avoid them unless there’s something specific I’m looking for, like a unique item or a particular type of street food. Most of my shopping is done in malls or online.
+
 4. Are there many street markets in China?
+
+   > Yes, there are many street markets in China, especially in larger cities and towns. They are an important part of the local culture and economy, offering everything from fresh produce to handmade goods. While they might not be as popular as they once were due to the rise of shopping malls and online shopping, they still thrive in many areas.
 
 #### （13）Watch
 
 1. Do you wear a watch?
 
-   > I wear an electronic watch made by HUAWEI
+   > Yes, I wear an electronic watch made by HUAWEI. It’s not just a watch but also a smart device that helps me track my fitness, receive notifications, and manage my daily schedule. I find it very convenient and practical for both timekeeping and staying organized.
 
 2. Have you ever got a watch as a gift?
 
-   > No
+   > No, I’ve never received a watch as a gift. Most of the watches I’ve owned were purchased by myself, as I like to choose ones that suit my style and needs. However, I think a watch would make a thoughtful and meaningful gift for someone.
 
 3. Why do some people wear expensive watches?
 
-   > To show their status
+   > Some people wear expensive watches to show their status or wealth. Luxury watches are often seen as a symbol of success and sophistication, and they can make a strong impression in social or professional settings. For many, it’s not just about telling time but also about making a statement.
 
 4. Do you think it is important to wear a watch? Why?
 
-   > Yes, to get to know the time immediately
+   > Yes, I think wearing a watch is important because it allows you to check the time immediately and conveniently. Unlike pulling out a phone, a quick glance at your wrist is much faster and more discreet, especially in situations where using a phone might be inappropriate. Additionally, watches can be stylish accessories that complement your outfit.
 
 #### （14）Swimming
 
 1. Do you like swimming?
 
-   > No, I don't like the water in the swimming pool, it has bad smell
+   > No, I don’t like swimming very much, mainly because I don’t enjoy the water in swimming pools. I find that the water often has a strong chemical smell, which makes the experience unpleasant for me. I prefer other forms of exercise that don’t involve being in water.
 
 2. Is it difficult to learn how to swim?
 
-   > Yes, I learned swimming 3 times,
+   > Yes, I think learning to swim can be quite difficult. Personally, I’ve tried to learn swimming three times, but I still haven’t mastered it. It requires a lot of coordination, confidence in the water, and practice, which can be challenging for beginners like me.
 
 3. Where do people in your country like to go swimming?
 
-   > Swimming pools and along the seaside.
+   > In my country, people usually go swimming in swimming pools or along the seaside. Swimming pools are popular because they’re accessible and safe, especially for families with children. On the other hand, the seaside is a favorite spot during the summer, as it offers a more natural and scenic environment for swimming.
 
 4. What are the differences between swimming in the pool and swimming in the sea?
 
-   > 
+   > There are several differences between swimming in a pool and swimming in the sea. In a pool, the water is clean, controlled, and usually calm, making it safer and more predictable. However, the sea offers a more dynamic experience with waves, currents, and natural surroundings, which can be both exciting and challenging. Additionally, the saltwater in the sea feels different on the skin and can be more buoyant /ˈbɔɪ.ənt/有浮力的 compared to pool water.
 
 #### （15）Websites
 
 1. What kinds of websites do you often visit?
 
-   > Maybe some AI model website like chatgpt or deepseek, as they are clever and can help me a lot.
+   > I often visit AI model websites like ChatGPT or DeepSeek because they’re incredibly useful and intelligent. They help me with a variety of tasks, from answering questions to generating ideas, and I find them to be valuable tools for both learning and problem-solving.
 
 2. What is your favorite website?
 
+   > My favorite website is probably one of the AI platforms I mentioned, like ChatGPT or DeepSeek. These websites are not only functional but also fascinating because they showcase the advancements in technology. They’ve become an essential part of my daily routine, whether I’m studying, working, or just exploring new ideas.
+
 3. Are there any changes to the websites you often visit?
 
-   > Yes. At college, I often visit some
+   > Yes, there have been changes in the websites I visit. For example, I used to visit academic and research-related websites to complete assignments or gather information. Now, I tend to visit more practical and productivity-focused websites, like AI tools or professional platforms, as my needs have shifted over time.
 
 4. What kinds of websites are popular in your country?
 
-   > Some video websites like bilibili, some social media websites like weibo, and some shopping websites like taobao.
+   > In my country, popular websites include video platforms like Bilibili, social media sites like Weibo, and shopping websites like Taobao. Bilibili is great for entertainment and educational content, Weibo is widely used for news and social networking, and Taobao is the **go-to platform** for online shopping. These websites cater to a wide range of interests and needs, making them extremely popular.
 
 #### （16）Friends
 
 1. How important are friends to you?
 
-   > 
+   > Friends are very important to me. They provide emotional support, companionship, and a sense of belonging. Whether I’m going through a tough time or celebrating a success, having friends to share those moments with makes life more meaningful and enjoyable.
 
 2. Do you often go out with your friends?
 
+   > Yes, I go out with my friends several times a year, especially during holidays or special occasions. It’s a great way to **catch up**, relax, and create lasting memories together. While we might not meet as often as we’d like due to busy schedules, we always make the most of our time together.
+
 3. Where do you often meet each other?
+
+   > We often meet at interesting sites, like parks or tourist spots, or at shopping malls. These places offer a variety of activities, from dining and shopping to simply walking around and chatting. It’s a nice way to combine fun and relaxation while spending time together.
 
 4. What do you usually do with your friends?
 
-5. How important are friends to you?
+   > When I’m with my friends, we usually eat out, play games, or watch movies. These activities are enjoyable and allow us to bond over shared experiences. Sometimes, we also try new activities together, like hiking or attending events, to keep things fresh and exciting.
 
-6. Do you prefer to spend time with one friend or with a group of friends?
+5. Do you prefer to spend time with one friend or with a group of friends?
 
-7. Would you invite friends to your home?
+   > I prefer spending time with a group of friends because it’s more dynamic and fun. Being in a group allows for more diverse conversations and activities, and it’s always interesting to see how everyone interacts. However, one-on-one time with a close friend can also be special for deeper conversations.
+
+6. Would you invite friends to your home?
+
+   > Yes, I would definitely invite friends to my home. I’m always glad when they visit, as it’s a more personal and comfortable setting to spend time together. Whether it’s for a meal, a movie night, or just hanging out, having friends over creates a warm and welcoming atmosphere.
 
 #### （17）Books and reading habits
 
 1. Do you often read books? When?
+
+   > Yes, I often read books in my spare time, usually in the evening or at night. It’s a relaxing way to unwind after a busy day, and I enjoy immersing myself in a good story or learning something new from non-fiction books.
+
 2. Are your reading habits now different than before?
+
+   > Yes, my reading habits have changed over time. Now, I mostly read electronic books rather than physical ones. E-books are more convenient because I can carry multiple books on my device and read them anytime, anywhere. However, I still appreciate the feel of a physical book occasionally. 
+
 3. Have you ever read a novel that has been adapted into a film?
+
+   > Yes, I’ve read *The Wandering Earth*, which was adapted into a film. Interestingly, I watched the movie first and then read the book. While the movie was visually stunning, the book provided more depth and detail, which made the story even more engaging.
+
 4. Which do you prefer, reading books or watching movies?
+
+   > I prefer reading books because they allow me to use my imagination and engage more deeply with the story. Books often provide more details and insights into the characters and plot, which I find more satisfying than the condensed version typically presented in movies.
+
 5. Do you read more or less now than when you were younger?
+
+   > I think I read less now than when I was younger. Back then, I had more free time and fewer responsibilities, so I could spend hours reading. Now, with schoolwork and other daily commitments, it’s harder to find time to read as much as I’d like. However, I still try to make reading a regular part of my routine.
 
 #### （18）Sitting down
 
 1. Where is your favorite place to sit?
 
-   > Sofa! soft and comfortable
+   > My favorite place to sit is definitely the sofa. It’s soft, comfortable, and perfect for relaxing after a long day. Whether I’m watching TV, reading a book, or just chatting with friends, the sofa is my go-to spot for comfort.
 
 2. Do you always sit down for a long time?
 
-   > Sitting for a long time is unhealthy so I don't want to sit for a long time.
+   > No, I try not to sit for long periods because I know it’s unhealthy. Prolonged sitting can lead to back pain and other health issues, so I make an effort to stand up, stretch, or take short walks throughout the day. It’s important to stay active, even if I’m working or studying.
 
 3. Do you feel sleepy when you are sitting down?
 
-   > Sometimes, when I'm lack of sleep
+   > Sometimes, I do feel sleepy when sitting down, especially if I haven’t had enough sleep the night before. The comfort of the sofa or a cozy chair can make it tempting to doze off, but I try to stay awake and focused if I have tasks to complete.
 
 4. When you were a kid, did you usually sit on the floor?
 
-   > In my memory, no.
+   > In my memory, I didn’t usually sit on the floor as a kid. I preferred sitting on chairs or sofas, as they were more comfortable. However, I do remember sitting on the floor occasionally while playing with toys or games, but it wasn’t a regular habit.
 
 5. Do you find it easy to fall asleep when sitting on a sofa?
 
-   > I rarely sleep in a sofa, as I can sleep in bed instead. 
+   > I rarely sleep on the sofa because I prefer sleeping in bed. While the sofa is comfortable, it’s not ideal for a proper nap or a good night’s sleep. If I’m really tired, I might doze off on the sofa for a short while, but I always try to move to my bed for a more restful sleep.
 
 #### （19）Collecting things
 
 1. Do you collect things?
+
+   > Yes, I enjoy collecting cards and badges of my favorite characters. It’s a fun hobby that allows me to express my interests and keep a piece of the things I love. Each item in my collection holds sentimental value and reminds me of the stories or memories associated with it.
+
 2. Are there any things you have kept from your childhood?
+
+   > Yes, I’ve kept some dolls from my childhood. They hold a lot of sentimental value because they remind me of my younger days and the joy they brought me. Even though I don’t play with them anymore, I still keep them as a nostalgic reminder of my past.
+
 3. Would you keep old things for a long time? Why?
+
+   > Yes, I tend to keep old things for a long time, especially if they have sentimental value or have been with me for many years. It feels like a waste to throw them away because they’ve been a part of my life and hold memories that I don’t want to lose. Keeping them is a way to preserve those moments.
+
 4. Where do you usually keep things you need?
+
+   > I usually keep things I need within hand’s reach or in obvious places, like on my desk or in a drawer. This way, I can easily find them when I need them without wasting time searching. It’s a practical way to stay organized and ensure that important items are always accessible.
 
 #### （20）Mobile phone
 
 1. What was your first mobile phone?
 
-   > Maybe in my junior high school. My parents gave me an old mobile phone they used before to me, it was Sumsang.
+   > My first mobile phone was an old Samsung phone that my parents gave me when I was in junior high school. It was one they had used before, and while it wasn’t the latest model, it was still exciting to have my own phone. It allowed me to stay in touch with my family and friends, which felt like a big step toward independence.
 
 2. Do you often use your mobile phone for texting or calls?
 
-   > Yes, it's really convenient and mobile phones are now indispensable in our daily life.
+   > Yes, I always use my mobile phone for texting and calls. It’s incredibly convenient and has become an indispensable part of my daily life. Whether it’s staying in touch with friends, coordinating plans, or communicating with classmates, my phone is my go-to tool for staying connected.
 
 3. Will you buy a new one in the future?
 
-   > If my current phone doesn't work well, I will buy a new one.
+   > If my current phone stops working well or becomes outdated, I’ll definitely buy a new one. Mobile phones are essential for both personal and professional life, so having a reliable device is important to me. However, I don’t upgrade frequently unless it’s necessary, as I prefer to use my phone for as long as it functions properly.
 
 4. How has your mobile phone changed your life?
 
-   > 
+   > My mobile phone has changed my life in many ways. It has made communication faster and more convenient, allowing me to stay connected with people no matter where I am. It’s also a powerful tool for learning, entertainment, and productivity, as I can access information, watch videos, or manage tasks on the go. Overall, it has made life more efficient and interconnected.
 
 #### （21）Time management
 
 1. How do you plan your time in a day?
 
-   > First check what work I have to finish in the day. Then prioritize them one by one. Leave some breaks between each job,
+   > I start by checking what tasks I need to finish during the day. Then, I prioritize them based on urgency and importance, tackling the most critical ones first. I also make sure to leave short breaks between tasks to rest and recharge. This helps me stay organized and productive throughout the day.
 
 2. Is it easy to manage time for you?
 
+   > Not really. While I try to stick to a schedule, I sometimes find it hard to follow, especially when unexpected tasks or distractions come up. I’m still working on improving my time management skills to make sure I can complete everything I plan to do.
+
 3. When do you find it hard to allocate time?
 
+   > I find it hard to allocate time when I have too many tasks or when unexpected things happen, like last-minute assignments or urgent requests. In such situations, it becomes challenging to balance everything, and I often have to adjust my schedule or sacrifice some personal time to meet deadlines.
+
 4. Do you like being busy?
+
+   > Yes, I do like being busy because it gives me a sense of fulfillment and purpose. When I’m busy, I feel like I’m making progress and achieving something meaningful. However, I also believe it’s important to find a balance and take time to relax, so I don’t get overwhelmed.
 
 #### （22）Art
 
 1. Do you like drawing？
 
+   > Yes, I enjoy drawing. It’s a creative outlet that allows me to express my thoughts and ideas visually. Even though I’m not a professional artist, I find the process relaxing and fulfilling, especially when I can see my progress over time.
+
 2. Do you like to go to the gallery?
 
-   > No. I think I don't have the knack for appreciating works of art.
+   > No, I don’t usually go to galleries because I feel like I don’t have the knack for appreciating works of art. While I admire the talent and effort behind art, I often struggle to understand the deeper meanings or techniques, which makes the experience less enjoyable for me.
 
 3. Do you want to learn more about art?
 
+   > No, I’m not particularly interested in learning more about art. While I respect artists and their work, it’s not something I feel passionate about exploring further. I prefer focusing on hobbies and activities that align more closely with my interests, like drawing for fun.
+
 4. Did you learn drawing when you were a kid?
 
-   > Yes. But I gave up because the institution moved to another place far away from my home.
+   > Yes, I did take drawing lessons when I was a kid. However, I had to give up because the institution moved to a location that was too far from my home. It was disappointing at the time, but I still enjoy drawing as a casual hobby whenever I have the chance.
 
 #### （23）Taking photos
 
@@ -533,10 +592,6 @@ Describe a village that you visited
 4. Do you always laugh at funny things?
 5. Are you a person who often makes others laugh?
 
-
-
- 
-
 #### （5）Fishing
 
 1. ls fishing popular in your country?
@@ -571,13 +626,9 @@ Describe a village that you visited
 
 1. Do you prefer to study at home or in a library?
 
-   > 
-
 2. What is your favourite place to study?
 
 3. What part of your school do you like the most?
-
-   > 
 
 4. Do you prefer to work at home or in the workplace?
 
@@ -589,15 +640,10 @@ Describe a village that you visited
 
 2. Have you worked with a team of someone else before?
 
-   > 
-
 3. What do you learn from working in a team?
-
-   > 
 
 4. What do you dislike about teamwork?
 
-   > 
 
 #### （11）Meeting new friends/people
 
@@ -617,15 +663,10 @@ Describe a village that you visited
 
 6. Where can you meet new people?
 
-   > 
-
 7. Do you enjoy talking to new people?
-
-   > 
 
 8. Do you meet new people more often now than in the past? 
 
-   > 
 
 ### 【9月保留题】（26道）
 
@@ -913,7 +954,7 @@ Describe a village that you visited
 
 ### 【1月新题】（10道）
 
-#### （1）精力充沛的人（1.15）
+#### （1）精力充沛的人
 
 Describe an energetic person that you know
 
@@ -965,7 +1006,7 @@ Yes, I consider myself an energetic person. I’m always eager to take on new ch
 **6. Do you think there was more physical labor in the past than there is now?**
 Absolutely. In the past, physical labor was much more common because many tasks had to be done manually due to the lack of technology. For example, farming, construction, and manufacturing relied heavily on human effort. However, with the advancement of technology and automation, many of these tasks are now performed by machines, reducing the need for physical labor. While physical work still exists, it’s less prevalent than it used to be, and more people are now engaged in mental or service-oriented jobs.
 
-#### （2）近期日常改变（1.6）
+#### （2）近期日常改变
 
 Describe a positive change that you have made recently in your daily routine
 
@@ -1069,7 +1110,7 @@ I usually get scientific news from reliable online sources, such as science-focu
 **6. Should scientists explain the research process to the public?**
 Yes, I think scientists should explain their research process to the public because it helps build trust and understanding. Many scientific concepts can be complex, and without clear explanations, people might misunderstand or distrust scientific findings. For example, during the COVID-19 pandemic, clear communication about vaccine development was crucial to address public concerns and encourage vaccination. By explaining the research process in simple terms, scientists can make their work more accessible and demonstrate its relevance to everyday life. This also encourages public support for scientific endeavors and fosters a culture of curiosity and learning.
 
-#### （4）想去的外国（1.13）
+#### （4）想去的外国
 
 Describe a foreign country you would like to visit in the future
 
@@ -1123,7 +1164,7 @@ Yes, I think reading is an excellent way to learn about other countries because 
 **6. What do you think makes countries different?**
 Countries differ in many ways, including their cultures, traditions, languages, and histories. For example, customs like food, festivals, and social norms vary widely from one country to another. Additionally, geographical factors, such as climate and natural resources, influence how people live and interact with their environment. Political systems and economic conditions also play a role in shaping a country’s identity and development. These differences make each country unique and contribute to the rich diversity of the world, which is something to be celebrated and respected.
 
-#### （5）做过的重要决定（1.13）
+#### （5）做过的重要决定
 
 Describe an important decision that you made
 
@@ -1253,7 +1294,7 @@ and whether you would like to have this job in the future
 
 Part 3 待更新
 
-#### （8）许下的承诺（1.22疑似新题）
+#### （8）许下的承诺
 
 Describe a time you made a promise to someone
 
@@ -1295,7 +1336,7 @@ Yes, parents in China, like parents everywhere, often make promises to their chi
 **4. What kinds of promises do people often make?**
 People make a wide variety of promises depending on the context. In personal relationships, promises often revolve around emotional commitments, such as being supportive or staying loyal. In professional settings, promises might include meeting deadlines, delivering quality work, or fulfilling contractual obligations. On a daily basis, people might make smaller promises, like showing up on time or helping a friend with a task. Additionally, people often make promises to themselves, such as committing to a healthier lifestyle or learning a new skill. These promises reflect the values and priorities of individuals in different aspects of life.
 
-#### （9）诗句/歌词 （1.22疑似新题）
+#### （9）诗句/歌词
 
 Describe a line (or a few words) that you remember from a poem or song
 
@@ -1342,7 +1383,7 @@ People can learn a great deal from songs and poems, as they often convey emotion
 
  
 
-#### （10）近期改变的计划（1.22疑似新题）
+#### （10）近期改变的计划
 
 Describe a plan that you had to change recently
 
@@ -1356,11 +1397,167 @@ What the new plan was
 
 And how you felt about the change
 
- 
+> I’d like to talk about a recent change in my plans regarding my future career and education. This happened just last month when I was faced with a big decision about my next steps after graduating from college.
+>
+> Originally, my plan was to start looking for a job right after graduation. I had already begun preparing my resume and researching companies in my field. However, last month, I attended a seminar about studying abroad, and it completely changed my perspective. The speaker shared their experiences of studying overseas, and I realized how much it could broaden my horizons, both academically and personally. After giving it some serious thought, I decided to change my plan and pursue a master’s degree abroad instead of entering the job market immediately.
+>
+> The new plan involves applying to universities in countries like the UK or Canada, which are known for their excellent programs in my field. I’ve started preparing for language tests like IELTS and researching scholarships to fund my studies. It’s a big shift from my original plan, but I feel it’s the right decision for my long-term growth.
+>
+> At first, I felt a bit anxious about the change because it meant stepping out of my comfort zone and delaying my entry into the workforce. However, as I started researching and talking to people who had studied abroad, I became more excited and confident about this new direction. I believe this change will open up more opportunities for me in the future, and I’m looking forward to the challenges and experiences that come with studying in a different country.
 
-Part 3 待更新
+**1. Do people often change their plans?**
+Yes, people often change their plans due to various reasons. Sometimes, unexpected circumstances like bad weather, illness, or work emergencies can force them to adjust their schedules. Other times, people might change their plans because they find better alternatives or simply change their minds. For example, someone might decide to stay home instead of going out if they feel tired or if a more appealing opportunity arises. Flexibility is a natural part of life, and adapting to changes is essential for managing priorities effectively.
 
- 
+------
+
+**2. Would you tell others if you change your plan?**
+Yes, but only to those who are directly affected by the change or are important to me. For instance, if I cancel a meeting with a friend, I would inform them immediately to avoid inconvenience. Similarly, if I change plans that involve family or colleagues, I would let them know as soon as possible. However, for plans that don’t impact others, I might not feel the need to share the change. Communication is key to maintaining trust and ensuring that everyone is on the same page.
+
+------
+
+**3. Why do you think parents still make plans for their children nowadays?**
+Parents often make plans for their children because they want to ensure their well-being and success. For example, they might plan their education, extracurricular activities, or even future careers to provide them with the best opportunities. Parents also make plans to instill discipline and structure in their children’s lives, which they believe will help them grow into responsible adults. Additionally, some parents might feel that their experience and knowledge can guide their children in making better decisions, especially in a competitive and fast-changing world.
+
+------
+
+**4. How does technology help people make plans?**
+Technology plays a significant role in helping people make and manage plans efficiently. For instance, calendar apps and reminder tools allow individuals to organize their schedules, set deadlines, and receive notifications about upcoming events. Communication platforms like email or messaging apps make it easy to coordinate plans with others, even across long distances. Additionally, travel and booking apps help people plan trips, accommodations, and activities seamlessly. Overall, technology simplifies the planning process and ensures that people can stay organized and informed.
+
+
+
+#### 家庭重要设备
+
+Describe a piece of equipment that is important in your home
+
+You should say:
+What it is
+How often you use it
+With whom you use it
+And explain why it is important
+
+> I’d like to talk about the air conditioner in my home, which is one of the most important pieces of equipment for me and my family. It’s a modern, energy-efficient unit that we installed a couple of years ago, and it has become an essential part of our daily lives.
+>
+> We use the air conditioner almost every day, especially during the summer months when the temperature can get extremely high. Even in other seasons, we sometimes use it to maintain a comfortable indoor environment, particularly during humid or stuffy days. I’d say we rely on it heavily, especially during heatwaves when it’s almost impossible to stay indoors without it.
+>
+> I usually use the air conditioner with my family. For example, in the evenings, we all gather in the living room, and the air conditioner helps us relax and enjoy our time together without feeling uncomfortable due to the heat. My parents and younger brother also appreciate having it in their rooms, as it allows them to sleep better at night.
+>
+> The air conditioner is important to us for several reasons. First, it significantly improves our quality of life by keeping our home cool and comfortable, especially during extreme weather. Second, it helps us stay productive, as it’s difficult to focus on work or studies when it’s too hot. Lastly, it contributes to our health by reducing the risk of heat-related illnesses, which is particularly important for my grandparents, who live with us and are more sensitive to temperature changes.
+>
+> Overall, the air conditioner is more than just a convenience—it’s a necessity for us, and we can’t imagine living without it.
+
+Part 3待更新
+
+#### （12）有趣的建筑
+
+Describe an interesting building
+
+You should say:
+Where it is
+What it looks like
+What function it has
+And explain why you think it is interesting
+
+> **Describe an interesting building**
+>
+> I’d like to talk about the Oriental Pearl TV Tower in Shanghai, which is one of the most iconic landmarks in China. Located in the Pudong district of Shanghai, it stands along the Huangpu River and is surrounded by other impressive skyscrapers, making it a central part of the city’s stunning skyline.
+>
+> The Oriental Pearl TV Tower is a unique and futuristic-looking building. It’s incredibly tall, standing at 468 meters, and its design is inspired by a poem about pearls falling onto a jade plate. The tower consists of several large spheres at different levels, connected by vertical columns, which give it a distinctive and elegant appearance. At night, the tower is illuminated with colorful lights, making it even more striking and visually appealing.
+>
+> The tower serves multiple functions. Primarily, it’s a TV and radio broadcasting tower, but it has also become a major tourist attraction. Inside, there are observation decks that offer breathtaking views of Shanghai, as well as a revolving restaurant where visitors can enjoy a meal while taking in the panoramic scenery. Additionally, the tower houses a museum dedicated to the history of Shanghai, which adds an educational element to its appeal.
+>
+> What makes the Oriental Pearl TV Tower so interesting to me is its combination of architectural innovation, cultural significance, and functionality. It’s not just a building; it’s a symbol of Shanghai’s rapid development and modernization. Every time I visit, I’m amazed by how it blends art, technology, and history into one structure. It’s a must-see for anyone visiting Shanghai, and it never fails to leave a lasting impression.
+
+**1. What types of buildings are popular in your country? (China ancient building)**
+In China, ancient buildings are highly popular and admired for their cultural and historical significance. Traditional Chinese architecture, such as palaces, temples, and courtyard homes, reflects the country’s rich heritage. For example, the Forbidden City in Beijing and the ancient water towns in Suzhou are iconic examples of Chinese architecture, featuring intricate designs, wooden structures, and symbolic elements like curved roofs and dragon motifs. These buildings are not only tourist attractions but also serve as a reminder of China’s artistic and engineering achievements throughout history.
+
+------
+
+**2. Is it worth spending a lot of money on the exterior appearance of a building?**
+Spending money on the exterior appearance of a building can be worth it, depending on the purpose and context. For iconic structures like museums, government buildings, or cultural landmarks, an impressive exterior can enhance their significance and attract visitors. However, for residential or functional buildings, it’s more important to balance aesthetics with practicality and cost-effectiveness. While a visually appealing exterior can create a positive impression, the focus should also be on durability, sustainability, and the building’s overall functionality.
+
+------
+
+**3. Is it more important for a building to look good on the outside or on the inside?**
+I believe the inside of a building is more important than the outside because it directly impacts the comfort and usability of the space. A well-designed interior ensures that the building meets the needs of its occupants, whether it’s for living, working, or leisure. For example, good lighting, ventilation, and layout are essential for creating a functional and pleasant environment. That said, the exterior appearance is also important, as it contributes to the building’s identity and can influence people’s perceptions. Ideally, a balance between the two should be achieved.
+
+------
+
+**4. Why do people like to visit historical sites?**
+People visit historical sites for various reasons. Firstly, these sites offer a glimpse into the past, allowing visitors to learn about history, culture, and traditions. For example, exploring ancient ruins or castles can provide insights into how people lived centuries ago. Secondly, historical sites often have unique architectural and artistic value, making them visually captivating. Additionally, visiting such places can evoke a sense of connection to one’s heritage or inspire awe at human achievements. Lastly, historical sites are often surrounded by stories and legends, which add an element of intrigue and fascination.
+
+
+
+#### （13）喜欢的电视剧
+
+Describe a TV series you like
+You should say:
+What is the name of the TV series
+When you watched it
+What it is about
+And explain why you like it
+
+> Mysterious lotus casebook（莲花楼，武装古侠悬疑剧）
+>
+> I’d like to talk about a TV series called *Mysterious Lotus Casebook*, which is a Chinese historical mystery drama. I watched it earlier this year, and it quickly became one of my favorite shows because of its intriguing plot and well-developed characters.
+>
+> The series is set in ancient China and follows the story of a brilliant but enigmatic detective who solves complex cases while uncovering secrets from his own past. Each episode features a new mystery, often involving martial arts, political intrigue, and unexpected twists. The main character, who is both a skilled martial artist and a sharp-minded investigator, is accompanied by a group of loyal friends who help him navigate the challenges he faces. The show combines elements of action, suspense, and emotional depth, making it highly engaging.
+>
+> I like this series for several reasons. First, the storytelling is excellent—each case is carefully crafted, and the pacing keeps you hooked from start to finish. Second, the characters are very relatable and multi-dimensional, which makes it easy to connect with their struggles and triumphs. I particularly admire the main character’s intelligence and resilience, as well as the strong bonds he shares with his companions. Finally, the production quality is outstanding, with beautiful costumes, stunning cinematography, and well-choreographed fight scenes that add to the overall appeal.
+>
+> What makes *Mysterious Lotus Casebook* stand out to me is its ability to blend mystery, action, and emotional storytelling seamlessly. It’s not just about solving cases; it’s also about exploring themes like friendship, loyalty, and redemption. Watching this series feels like going on an adventure, and I always look forward to the next episode.
+
+**1. Is it beneficial to insert advertisements within a TV series?**
+Inserting advertisements within a TV series can be beneficial for broadcasters and advertisers, but it often disrupts the viewing experience for the audience. For broadcasters, ads generate revenue, which helps fund the production of high-quality content. Advertisers also benefit by reaching a large and engaged audience. However, for viewers, frequent ad breaks can be frustrating, especially during intense or emotional scenes. While ads are necessary for the industry, finding a balance between commercial interests and viewer satisfaction is crucial.
+
+------
+
+**2. Do you think that parents should limit their children from watching television?**
+Yes, I believe parents should limit their children’s television time to ensure a healthy balance between screen time and other activities. Excessive TV watching can lead to issues like reduced physical activity, poor sleep quality, and exposure to inappropriate content. However, television can also be educational if children watch age-appropriate programs that stimulate their curiosity and learning. Parents should set reasonable limits and encourage alternative activities, such as reading, playing outdoors, or engaging in creative hobbies, to promote overall development.
+
+------
+
+**3. Would your family watch TV together?**
+Yes, my family occasionally watches TV together, especially during special occasions or when there’s a program that interests everyone. For example, we might watch a popular reality show, a sports event, or a movie during weekends or holidays. Watching TV together provides an opportunity for bonding and shared enjoyment. However, due to busy schedules and differing preferences, it’s not something we do every day. When we do, it’s a relaxing and enjoyable way to spend quality time as a family.
+
+------
+
+**4. What are the differences in television viewing habits between the elderly and young people?**
+There are significant differences in television viewing habits between the elderly and young people. Elderly individuals often prefer traditional TV channels and watch programs like news, dramas, or documentaries at scheduled times. They tend to value the routine and familiarity of linear TV. On the other hand, young people are more likely to use streaming platforms like Netflix or YouTube, where they can watch content on demand and binge-watch entire series. They also prefer genres like reality shows, comedies, or online videos, reflecting their desire for convenience and entertainment tailored to their interests.
+
+------
+
+**5. How has technology changed the way people watch television?**
+Technology has revolutionized the way people watch television by introducing on-demand streaming, personalized content, and multi-device accessibility. Platforms like Netflix, Hulu, and Disney+ allow viewers to watch their favorite shows anytime, anywhere, without being tied to a TV schedule. Smart TVs and devices like Roku or Chromecast have made it easier to access a wide range of content. Additionally, social media and recommendation algorithms help users discover new shows based on their preferences. Overall, technology has made television viewing more flexible, interactive, and user-centric.
+
+#### （14）和你分享东西的人
+
+Describe someone who is willing to openly share things with you
+You should say:
+Who this person is
+How you knew this person
+What this person openly shares
+And how you feel about the sharing
+
+> I’d like to talk about my friend Annie, who is one of the most open and generous people I know. She’s always willing to share her thoughts, experiences, and even personal belongings with me, which makes our friendship very special.
+>
+> I first met Annie in high school. We were in the same class and quickly became close because of our shared interests in music and books. Over time, we developed a strong bond, and I realized that Annie is someone who values honesty and openness in relationships. She’s the kind of person who doesn’t hold back when it comes to sharing her feelings or opinions, and I really admire that about her.
+>
+> Annie openly shares a lot of things with me. For example, she often talks about her personal experiences, including her struggles and achievements, which has helped me understand her better and learn from her life lessons. She’s also very generous with her time and resources—whether it’s lending me her favorite books, sharing her notes when I miss a class, or even offering advice when I’m going through a tough time. Her willingness to share extends beyond material things; she’s always there to listen and provide emotional support whenever I need it.
+>
+> I feel incredibly grateful for Annie’s openness and generosity. Her willingness to share has not only strengthened our friendship but also taught me the importance of being open and supportive in return. It’s rare to find someone who is so genuine and selfless, and I truly value the trust and connection we’ve built over the years. Annie’s sharing has made a positive impact on my life, and I’m lucky to have her as a friend.
+
+**1. What kinds of emotional support do people need at work?**
+People need various types of emotional support at work to maintain their well-being and productivity. For example, they might need encouragement and recognition for their efforts, especially during challenging projects or stressful periods. A supportive work environment where colleagues and managers listen to their concerns and offer constructive feedback is also crucial. Additionally, flexibility and understanding during personal difficulties, such as family issues or health problems, can make a significant difference. Emotional support helps employees feel valued, motivated, and less overwhelmed, which ultimately benefits both the individual and the organization.
+
+------
+
+**2. Would you share your feelings with your coworkers?**
+It depends on the situation and the level of trust I have with my coworkers. If I’m close to them and feel comfortable, I might share my feelings, especially if it’s related to work stress or a collaborative project. However, I would be cautious about oversharing personal emotions, as maintaining professionalism is important in the workplace. In general, I believe open communication can strengthen teamwork and create a supportive atmosphere, but it’s essential to strike a balance and respect boundaries.
+
+------
+
+**3. Is it possible to know a job applicant's emotional resilience through the recruiting process?**
+Yes, to some extent, it is possible to assess a job applicant’s emotional resilience during the recruiting process. For example, behavioral interview questions that ask about past challenges and how they were handled can provide insights into their ability to cope with stress and adversity. Additionally, situational judgment tests or role-playing exercises can reveal how candidates manage pressure and solve problems in real-time. However, emotional resilience is complex and may not be fully understood until the person is actually in the role and facing day-to-day challenges.
 
 ### 2024.10/11月更新（51道）
 
@@ -1378,7 +1575,8 @@ Why you think the discussion was interesting
 
 And how you felt about it
 
- 
+>  
+>
 
 1. When do children normally form their own views?
 2. Do children have strong opinions?
