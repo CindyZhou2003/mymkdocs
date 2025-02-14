@@ -1,29 +1,42 @@
-name: Build GitHub Pages
+name: Build and Deploy GitHub Pages
 
 on:
   push:
     branches:
-      - master 
+      - master  # 触发条件：当 master 分支有 push 时
+
 permissions:
-  contents: write
+  contents: write  # 允许写入仓库
+
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # 使用 Ubuntu 最新版本
+
     steps:
+      # 1. 检出代码
       - uses: actions/checkout@v3
+
+      # 2. 设置 Python 环境
       - uses: actions/setup-python@v4
         with:
-          python-version: 3.x
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+          python-version: 3.x  # 使用 Python 3.x
+
+      # 3. 安装系统依赖（如 texlive-xetex）
       - run: sudo apt-get update
-      - run: sudo apt-get install texlive-xetex
-      - uses: actions/cache@v3
+      - run: sudo apt-get install -y texlive-xetex
+
+      # 4. 缓存依赖（可选）
+      - name: Cache dependencies
+        uses: actions/cache@v3
         with:
           key: mkdocs-material-${{ env.cache_id }}
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material mkdocs-git-revision-date-localized-plugin mkdocs-statistics-plugin 
-      # - run: git clone https://github.com/TonyCrane/mkdocs-toolchain.git
-      # - run: mkdir cache
-      - run: mkdocs gh-deploy --force
+
+      # 5. 安装 MkDocs 和相关插件
+      - run: pip install mkdocs-material mkdocs-git-revision-date-localized-plugin mkdocs-statistics-plugin
+
+      # 6. 构建并部署到 gh-pages 分支
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force

@@ -76,7 +76,7 @@ Describe a village that you visited
 
    > not a big fan of hats, wear hats for its practical value
 
-#### （4）Stories （1.22疑似新题）
+#### （4）Stories
 
 1. What stories did you like when you were young?
 
@@ -85,6 +85,42 @@ Describe a village that you visited
 2. Do you prefer listening to stories or reading them?
 
    > I definitely prefer reading stories over listening to them. When I read, I can take my time to understand the plot and characters at my own pace, and I enjoy the tactile experience of holding a book or flipping through pages. It feels more personal and immersive. On the other hand, while listening to stories is easier and more convenient, especially when multitasking, I find it harder to fully engage with the story compared to reading.
+
+#### （5）Gifts
+
+1. Have you ever sent handmade gifts to others?
+
+   > handmade cards
+
+2. Have you ever received a great gift?
+
+   > 
+
+3. What do you consider when choosing a gift?
+
+   > The receiver's personality and hobbies
+
+4. Do you think you are good at choosing gifts?
+
+   > Yes
+
+5. What gift have you received recently?
+
+   > 一件羽绒服
+
+#### （6）Party
+
+1. Do you like parties?
+
+   > no
+
+2. How often did you have a party when you were a kid?
+
+   > never
+
+3. Have you ever organized a party?
+
+   > no
 
 ### 2024.10/11月更新（24道）
 
@@ -556,7 +592,7 @@ Describe a village that you visited
 
 4. Do you have the same hobbies as your family members?
 
-   > No, my hobbies are quite different from those of my family members. As the only child, I’ve developed my own interests, while my parents enjoy gardening and walking our pet dog. Although we don’t share the same hobbies, I think it’s nice that we each have our own ways to relax and enjoy our free time.
+   > No, my hobbies are quite different from those of my family members. As the only child, I’ve developed my own interests, while my parents enjoy gardening and raising a pet dog. Although we don’t share the same hobbies, I think it’s nice that we each have our own ways to relax and enjoy our free time.
 
 ### 【9月新题】（11道）
 
@@ -968,9 +1004,9 @@ Why you think this person is energetic
 
 And explain how you feel about this person
 
->  An energetic person I know is my cousin, who is five years younger than me. He’s a lively and enthusiastic boy who always seems to have endless energy. One of his favorite activities is playing basketball. He spends hours on the court, whether it’s practicing his shots, playing with his parents, or just enjoying the game.
+>  An energetic person I know is my cousin, who is five years younger than me. He’s a lively and enthusiastic boy who always seems to have endless energy. One of his favorite activities is playing basketball. He spends hours on the court, whether it’s practicing his shots, playing with his friends, or just enjoying the game.
 >
-> Apart from basketball, he loves going out with his parents to explore new places or try different activities. He’s the kind of person who’s always on the move, whether it’s walking his dog in the park or organizing group outings. What’s really impressive is how he manages to keep up his energy even after a busy day.
+> Apart from basketball, he loves going out with his friends to explore new places or try different activities. He’s the kind of person who’s always on the move, whether it’s walking his dog in the park or organizing group outings. What’s really impressive is how he manages to keep up his energy even after a busy day.
 >
 > I think what makes him so energetic is his positive attitude. He’s always cheerful and looks for the fun side of things, which inspires others around him. Spending time with him is never boring because his energy is so contagious.
 >
@@ -999,7 +1035,7 @@ Yes, to some extent, machines are already replacing human workers, especially in
 ------
 
 **5. Do you think you are an energetic person?**
-Yes, I consider myself an energetic person. I’m always eager to take on new challenges and stay active, whether it’s at work, during exercise, or in my personal life. I find that being energetic helps me stay motivated and productive, and I enjoy pushing myself to achieve my goals. However, I also make sure to balance my energy with proper rest and relaxation to avoid burnout.
+Yes, I consider myself an energetic person. I’m always eager to ==take on new challenges== and stay active, whether it’s at work, during exercise, or in my personal life. I find that being energetic helps me stay motivated and productive, and I enjoy pushing myself to achieve my goals. However, I also make sure to balance my energy with proper rest and relaxation to avoid burnout.
 
 ------
 
@@ -1022,15 +1058,15 @@ And explain how you feel about the change
 
 >  A positive change I recently made to my daily routine is adjusting my sleep schedule. I used to stay up late almost every night, spending hours browsing apps like Red Book to entertain myself. While it was fun at the time, I realized it left me feeling tired and unproductive the next day.
 >
-> Now, I’ve set my mind to getting up early and sleeping early. At first, it was challenging to break the habit, but I started by setting a strict bedtime and avoiding using my phone before bed. Instead, I read a book or listen to relaxing music to wind down.
+>  Now, I’ve set my mind to getting up early and sleeping early. At first, it was challenging to break the habit, but I started by setting a strict bedtime and avoiding using my phone before bed. Instead, I read a book or listen to relaxing music to ==wind down==.
 >
-> This change has made a big difference in my life. Waking up early gives me extra time in the morning to prepare for the day, whether it’s exercising, eating a proper breakfast, or planning my tasks. I also feel more energized and focused throughout the day, which has improved my productivity and overall mood.
+>  This change has made a big difference in my life. Waking up early gives me extra time in the morning to prepare for the day, whether it’s exercising, eating a proper breakfast, or planning my tasks. I also feel more energized and focused throughout the day, which has improved my productivity and overall mood.
 >
-> Looking back, I’m glad I made this change. It’s a small adjustment, but it has had a positive impact on both my physical and mental health. I now feel more in control of my time and enjoy my days much more.
+>  Looking back, I’m glad I made this change. It’s a small adjustment, but it has had a positive impact on both my physical and mental health. I now feel more in control of my time and enjoy my days much  
+>
+>  more.
 
--------------------
-
-**1. What do people normally plan in their daily lives?**
+ **1. What do people normally plan in their daily lives?**
 People usually plan a variety of activities in their daily lives, such as work or study schedules, household chores, exercise routines, and social engagements. For example, many people plan their work tasks to meet deadlines, schedule time for grocery shopping or cooking, and allocate time for hobbies or relaxation. Additionally, some people plan their commutes or childcare arrangements to ensure everything runs smoothly. Planning helps individuals stay organized and manage their time effectively, especially when balancing multiple responsibilities.
 
 ------
@@ -1079,8 +1115,6 @@ And explain why you are interested in this area/subject
 > What excites me the most about AI is its potential to solve complex problems and improve efficiency in ways we never thought possible. At the same time, it raises ethical questions, such as data privacy and bias, which I believe are important to address as we continue to develop this technology.
 >
 > I’d like to dive deeper into machine learning algorithms and understand how they work behind the scenes. I also want to explore how AI can be applied responsibly to benefit society. Overall, studying AI would not only align with my major but also prepare me for a field that’s shaping the future.
-
----------
 
 **1. Why do some children not like learning science at school?**
 Some children might not enjoy learning science because they find it too abstract or difficult to understand. Science often involves complex concepts, formulas, and theories that can be challenging to grasp, especially if the teaching methods are not engaging. Additionally, if students don’t see the practical applications of science in their daily lives, they might lose interest. For example, learning about chemical reactions or physics principles might seem irrelevant to them if they can’t connect it to real-world scenarios. A lack of hands-on experiments or interactive activities in the classroom can also make science seem boring or intimidating.
@@ -1425,7 +1459,7 @@ Technology plays a significant role in helping people make and manage plans effi
 
 
 
-#### 家庭重要设备
+#### （11）家庭重要设备
 
 Describe a piece of equipment that is important in your home
 
@@ -1558,6 +1592,48 @@ It depends on the situation and the level of trust I have with my coworkers. If 
 
 **3. Is it possible to know a job applicant's emotional resilience through the recruiting process?**
 Yes, to some extent, it is possible to assess a job applicant’s emotional resilience during the recruiting process. For example, behavioral interview questions that ask about past challenges and how they were handled can provide insights into their ability to cope with stress and adversity. Additionally, situational judgment tests or role-playing exercises can reveal how candidates manage pressure and solve problems in real-time. However, emotional resilience is complex and may not be fully understood until the person is actually in the role and facing day-to-day challenges.
+
+#### （15）智力游戏（2.11疑似新题）
+
+Describe a (jigsaw, crossword, etc) puzzle you have played
+
+You should say:
+
+What it is like
+
+How easy or difficult it is
+
+How long it takes you to solve
+
+And how you feel about it
+
+>  
+
+1. Which do you think is better? A detective movie or its original novel?
+2. Why are detective stories attractive to people?
+3. What kinds of puzzles improve people's intelligence?
+4. Why do parents let their children play puzzles?
+5. How can technology and intellectual games be combined better?
+6. Does the government need to take steps to boost the development of intellectual games?
+
+#### （16）最喜欢的运动（2.10疑似新题）
+
+Describe a sport that you really like
+
+You should say:
+
+What it is 
+
+How often you do it
+
+How you learned to do it
+
+And explain why you like it
+
+>  
+
+1. Is sports important for children?
+2. How can we make children aware of the importance of sports?
 
 ### 2024.10/11月更新（51道）
 
