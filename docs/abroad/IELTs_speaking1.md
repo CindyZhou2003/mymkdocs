@@ -16,11 +16,6 @@
 
 ## Part 1
 
-**1. Paying bills**
-    What kind of bills do you have to pay?
-    How do you usually pay your bills? Why?
-    Is there anything you could do to make your bills cheaper?
-
 ## Part 2
 
 > [!NOTE]
@@ -338,7 +333,6 @@ To sum up, Zhang Guimei is a true inspiration and a shining example of how one p
 
 > 介绍：
 >
-> 
 
 I’d like to talk about a girl I met recently at my friend’s dinner party. It was a gathering where I got the chance to meet a lot of new people, and this particular girl, who sat next to me, really stood out. We started talking almost immediately, and from the very first conversation, I could tell that we clicked. She was incredibly friendly, outgoing, and easy to talk to, and it felt like we were on the same wavelength. We just “got” each other, and the conversation flowed effortlessly.
 
@@ -627,8 +621,6 @@ I honestly love hanging out in her room way more than in mine. My room is small 
 
 能看到野生动物的地方; 安静的地方
 
-> 
-
 Ok, so today I’d like to talk about a place in my city where I can see some wildlife. It’s a mountainous area on the outskirts of my city called Laohe Shan. I first went there a few years ago when I was feeling pretty stressed with schoolwork and just needed to clear my head（清空大脑）. Since then, it’s become my go-to spot（首选地点）whenever I need a break from the hustle and bustle of daily life（需要从日常的喧嚣与繁忙之中抽空休息一下）.
 
 Laohe Shan is not a well-known tourist destination（不是一个知名的旅游地点）. It’s peaceful, with only a few tourists or locals during the week. The reason I love going to this place is **the sense of tranquility**（宁静之感） it gives me. It’s the perfect spot for unwinding and recharging（放松与充电）. 
@@ -674,10 +666,6 @@ What’s more, I would love to have a big yard where I could grow some plants an
 So yeh, I would love to live in a nice place like what I’ve just described. It would be in a great location and everything would be designed to my liking（按照我的喜好）. It would be my sanctuary/ my retreat（我的内心疗养基地）where I could enjoy the tranquility in life and quality time with my family. 
 
 #### City
-
-an interesting city
-
-> 
 
 Today, I’d like to talk about an **interesting city** worth visiting — **Shanghai**. It is located on the eastern coast of China. Shanghai is not only one of the largest cities in the world but also one of the most vibrant and diverse. It seamlessly blends **traditional Chinese culture** with modern, cutting-edge development, making it a truly fascinating place to explore.
 
@@ -815,7 +803,7 @@ Now, she often tells me how grateful she is for my advice. She feels much lighte
 >
 > 感受：thrilled，accomplishment
 
-" I’d like to talk about a time when the **kitchen tap** in our home broke, and I managed to fix it on my own. It wasn’t anything too complicated, but it was definitely a challenge at first, especially since I had never attempted any plumbing repairs before.
+I’d like to talk about a time when the **kitchen tap** in our home broke, and I managed to fix it on my own. It wasn’t anything too complicated, but it was definitely a challenge at first, especially since I had never attempted any plumbing repairs before.
 
 One day, while I was washing dishes, I noticed that the tap was leaking, and water kept dripping even after turning it off completely. This was not only wasteful but also pretty annoying, so I decided to take matters into my own hands. At first, I thought about asking my parents to call a plumber, but then I figured it would be a good learning experience to try and fix it myself.
 
@@ -910,11 +898,6 @@ Overall, visiting the countryside near St. Petersburg was a truly unforgettable 
 
 #### Traffic jam
 
-traffic jam
-
-> 
->
-
 I’d like to talk about a time when I was stuck in a traffic jam, but it wasn’t the typical car traffic you might imagine. This happened on my university campus, and it involved bikes rather than cars. Since I'm a student, I commute to different classes on my electric bike every day because our campus is quite large. There’s a long break between classes, and during this time, many students, including myself, need to move between buildings. Unfortunately, this often leads to a chaotic situation.
 
 The main issue is that there’s only one main road connecting the east and west sides of the campus, and it's the shortest route. Taking any other path would be three times longer, so naturally, everyone prefers using this route. One day, I had a class in a building on the west side, and I had just finished a class in the east. The teacher delayed the class for 5 minutes, so as soon as the class was over, I jumped on my bike and headed towards the other building.
@@ -928,8 +911,6 @@ Looking back, it was a stressful experience, but it also taught me to plan my co
 #### Advice about study
 
 学习中的积极建议
-
-> 
 
 I’d like to talk about a time when I received some very helpful advice regarding my studies during high school. Back then, I was under a lot of pressure to perform well academically, and I often found myself feeling overwhelmed and distracted whenever I tried to study. So, I decided to visit the school’s counseling office to seek some guidance.
 
@@ -946,8 +927,6 @@ Overall, this experience taught me that sometimes, the right advice can complete
 #### Busy time
 
 一次非常忙碌的经历
-
-> 
 
 I’d like to talk about a time when I was extremely busy, which happened during the exams week in college last semester. It was one of the most **stressful periods** I’ve ever experienced because I had to prepare for nine exams, and I only had a week to do it. To be honest, I got myself into that situation because I had procrastinated on my review schedule and left everything until the last minute.
 
@@ -1110,9 +1089,6 @@ The feedback I received afterward was overwhelmingly positive. Many members told
 
 向长者学习技能
 
-> 
->
-
 One skill that I learned from an older person is **how to make rice dumplings**, which I learned from my grandmother. In my culture, rice dumplings, or "zongzi" as we call them, are traditionally made to celebrate the Dragon Boat Festival, and it's a skill that's been passed down through generations.
 
 I first learned this skill a few years ago when I visited my grandmother during one of my school holidays. Growing up, I had always been fascinated by how she would so effortlessly wrap the dumplings with bamboo leaves, filling them with sticky rice, red beans, and pieces of marinated meat. So, one day, I asked her to teach me how to make them, and she was more than happy to pass on her knowledge.
@@ -1175,7 +1151,6 @@ Now, I wouldn’t say we’re super close friends, but we do stay in touch（保
 
 > 主题：predicting the future
 >
-> 
 
 One interesting discussion I had with my best friend took place in secondary school. It was a spontaneous conversation we had one afternoon while we were walking around the playground, just enjoying the fresh air and chatting. The topic of our discussion was “predicting the future”, which might sound a bit strange, but at the time, it felt like such a thought-provoking subject that we’d never really discussed before.
 
@@ -1209,7 +1184,6 @@ At the end, when I was paying for the dress, Lili offered to wrap it up（包装
 
 > 介绍：military training
 >
-> 
 
 The longest walk I’ve ever had was during my senior high school **military training**, which was **an intense and memorable experience**. It was part of a mandatory program designed to build endurance, discipline, and teamwork among students. The walk was about 10 kilometers, and we had to **march** from our school to an outdoor tourist attraction called the **Oriental Oasis**, which is a well-known park and scenic area.
 

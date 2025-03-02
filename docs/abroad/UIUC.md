@@ -18,9 +18,9 @@ During the learning process, the interdisciplinary nature of my studies has also
 
 **How the UIUC ECE M.Eng Program Will Help Achieve My Goals**
 
-I learned about the 3+2 program through the university's official website. From my perspective, the UIUC ECE M.Eng program stands out for its rigorous curriculum, emphasis on applied learning, and access to world-class faculty and resources. Such an academic platform resonates with my aspiration to master the practical application of engineering principles while enhancing my technical expertise. The program’s flexibility in allowing students to tailor their coursework to specific interests is particularly appealing, as it will enable me to explore deeper into areas like machine learning, and hardware-software co-design—fields that are integral to my study and career goals.
+I learned about the 3+2 program through the university's official website. From my perspective, the UIUC ECE M.Eng program stands out for its rigorous curriculum, emphasis on applied learning, and access to world-class faculty and resources. Such an academic platform resonates with my aspiration to master the practical application of engineering principles while enhancing my technical expertise. The program's flexibility in allowing students to tailor their coursework to specific interests is particularly appealing, as it will enable me to explore deeper into areas like machine learning, and hardware-software co-design—fields that are integral to my study and career goals.
 
-UIUC’s reputation for fostering innovation and its close ties to the tech industry offer unparalleled opportunities for professional development. This program’s hands-on approach to learning will allow me to refine my skills while addressing real-world issues, ensuring that I'll become not only a well-rounded engineer but also a confident problem-solver prepared to make meaningful contributions to the society.
+UIUC's reputation for fostering innovation and its close ties to the tech industry offer unparalleled opportunities for professional development. This program's hands-on approach to learning will allow me to refine my skills while addressing real-world issues, ensuring that I'll become not only a well-rounded engineer but also a confident problem-solver prepared to make meaningful contributions to the society.
 
 **Academic Interests and Motivation**
 
@@ -52,7 +52,7 @@ These experiences have profoundly influenced my educational and professional dev
 
 ---------------------------
 
-2. At Illinois, we value a student’s ability to contribute to a community of inclusion, belonging, and respect where our graduate students can learn and collaborate productively and positively. Please provide an example of how you contributed to or engaged with a community of students or colleagues with different perspectives, abilities, and experiences to achieve a positive outcome and reflect on what you learned from this experience. (*250 words max*)
+2. At Illinois, we value a student's ability to contribute to a community of inclusion, belonging, and respect where our graduate students can learn and collaborate productively and positively. Please provide an example of how you contributed to or engaged with a community of students or colleagues with different perspectives, abilities, and experiences to achieve a positive outcome and reflect on what you learned from this experience. (*250 words max*)
 
 In my Fundamentals of Software Engineering course last semester, I was the leader of a group of 5 students. While we shared a common goal, my team members had distinct perspectives, personalities, and working habits. Thus, it was really a challenge for me as thoughtful coordination was required to ensure a productive and inclusive collaboration.
 
@@ -61,4 +61,6 @@ In the group, I found some team members were always readily sharing their ideas,
 However, during the teamwork, one team member was initially disengaged, falling behind on his responsibilities. Regardless of the frustrating fact, I tried to iron out the issue with patience and understanding. Through open communication with my teammate, I sought to understand his perspectives, reset the goals to be more clear, and reschedule the deadlines to leave him enough time to finish his part. This proactive approach eventually worked a lot, making the whole project progress smoothly.
 
 This experience taught me the importance of empathy, adaptability, and effective communication in collaboration among individuals with different strengths and working styles. By creating a united and inclusive atmosphere and addressing problems constructively, I not only helped our team succeed but also mastered practical skills that I will bring to future academic and professional communities.
+
+
 
