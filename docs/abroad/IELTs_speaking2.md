@@ -6,7 +6,7 @@
 
 ## Part1
 
-### 【1月新题】
+### 【1 月新题】
 
 #### （1）Colors（1.6）
 
@@ -156,7 +156,71 @@
 
    > Frankly, I don't really enjoy housework at all. I find tasks like washing dishes or cleaning the floors a bit tedious. If I had to choose, I suppose I don't mind doing some light organizing or wiping down surfaces, but anything that requires too much effort isn't something I look forward to.
 
-### 2024.10/11月更新（24道）
+#### Quiet/Noisy Places
+
+1. Do you like quiet or noisy places?
+
+  > I prefer quiet places because they help me relax and focus. For example, I enjoy reading or studying in a quiet environment where I can concentrate without distractions. However, I don’t mind noisy places occasionally, especially if I’m with friends or at a social event.
+
+2. Would you like to go to quiet or noisy places on weekends when you are free?
+
+  > On weekends, I usually prefer quiet places, like a park or a café, where I can unwind and recharge after a busy week. However, if I’m in the mood for something lively, I might go to a noisy place, like a concert or a busy market, for a change of pace.
+
+#### Young People
+
+1. What activities do young people like to do in your country?
+
+  > Young people in my country enjoy a variety of activities, such as playing video games, watching movies, and hanging out with friends. Many also like outdoor activities like hiking, cycling, or playing sports. Social media and online platforms are also popular for staying connected and sharing experiences.
+
+2. Do you know what the fashion trend among young people is like in your country?
+
+  > Yes, the current fashion trend among young people in my country leans towards casual and comfortable styles, like oversized clothing, sneakers, and streetwear. Many young people also follow global trends through social media, so you’ll see a mix of local and international influences.
+
+#### Electronic Devices/Technology
+
+1. Which technology do you use more often, computers or cellphones?
+
+  > I use my cellphone more often because it’s portable and convenient for everyday tasks like messaging, browsing, and taking photos. However, I rely on my computer for more complex tasks, like studying or working on projects.
+
+2. What electronic devices have you bought lately?
+
+  > Recently, I bought a pair of wireless earbuds. They’re very convenient for listening to music or podcasts while on the go, and I appreciate how they eliminate the hassle of tangled wires.
+
+3. Is there any new technology you want to buy?
+
+  > Yes, I’d like to buy a smartwatch in the future. It seems like a useful device for tracking fitness, managing notifications, and staying organized, which would fit well with my lifestyle.
+
+4. Is technology important in your life?
+
+  > Yes, technology is very important in my life. It helps me stay connected, learn new things, and manage daily tasks efficiently. From studying to entertainment, technology plays a key role in almost every aspect of my routine.
+
+5. Is there any technology you don't like?
+
+  > I don’t particularly like overly complicated gadgets that are hard to use or require constant updates. For example, some smart home devices can be frustrating if they don’t work seamlessly or require too much setup.
+
+6. How do you think technology trends today compare to when you were young?
+
+  > Technology has advanced significantly since I was young. Back then, devices were simpler and less connected, like basic mobile phones and desktop computers. Now, everything is more integrated and portable, like smartphones and wearable tech, which makes life more convenient but also more fast-paced.
+
+#### Public Gardens and Parks
+
+1. Would you like to spend time in a public garden or park?
+
+  > Yes, I enjoy spending time in public gardens or parks. They’re great for relaxing, taking a walk, or simply enjoying nature. It’s a nice escape from the busy city life and helps me clear my mind.
+
+2. What do you like to do when visiting a park?
+
+  > When visiting a park, I like to take a walk, sit on a bench and read, or have a picnic with friends. Sometimes, I also enjoy people-watching or taking photos of the scenery.
+
+3. How are the parks today different from those you visited as a kid?
+
+  > Parks today are more modern and well-maintained compared to when I was a kid. Many now have better facilities, like playgrounds, fitness equipment, and even Wi-Fi. However, I feel like they’re also more crowded now, which can take away from the peaceful atmosphere I remember from childhood.
+
+4. Would you prefer to spend time in a private garden or a public garden?
+
+  > I would prefer a private garden because it offers more privacy and tranquility. However, public gardens are also nice because they’re more spacious and often have a lively atmosphere, which can be enjoyable when I’m in the mood for socializing.
+
+### 2024.10/11 月更新（24 道）
 
 #### （1）Cars
 
@@ -332,7 +396,7 @@
 
 3. What did you do in the evening when you were little? Why?
 
-   > When I was little, I used to cycle around the neighborhood or watch TV at home in the evening. **Back then**那时, I didn't have much homework, and classes ended early, around 3 pm, so I had plenty of free time to relax and enjoy myself. It was a carefree and fun part of my childhood.
+   > When I was little, I used to cycle around the neighborhood or watch TV at home in the evening. **Back then** 那时, I didn't have much homework, and classes ended early, around 3 pm, so I had plenty of free time to relax and enjoy myself. It was a carefree and fun part of my childhood.
 
 4. Are there any differences between what you do in the evening now and what you did in the past?
 
@@ -628,7 +692,7 @@
 
    > No, my hobbies are quite different from those of my family members. As the only child, I've developed my own interests, while my parents enjoy gardening and raising a pet dog. Although we don't share the same hobbies, I think it's nice that we each have our own ways to relax and enjoy our free time.
 
-### 【9月新题】（11道）
+### 【9 月新题】（11 道）
 
 #### （1）Bike
 
@@ -738,7 +802,7 @@
 8. Do you meet new people more often now than in the past? 
 
 
-### 【9月保留题】（26道）
+### 【9 月保留题】（26 道）
 
 #### （1）Plants
 
@@ -962,7 +1026,7 @@
 5. Is this city your permanent residence?
 6. Are there people of different ages living in this city?
 
-### 【Part1必考题】（4道）
+### 【Part1 必考题】（4 道）
 
 #### （1）Work/ Study
 
@@ -1018,11 +1082,11 @@
 7. Would you like to change anything about your area? Why/ Why not?
 8. Would you like to continue living there in the future? Why/ Why not?
 
-[Tara素材P1](D:\File\College\出国\IELTS\1.+Tara老师雅思口语2024年9-12月part1素材.pdf)
+[Tara 素材 P1](D:\File\College\出国\IELTS\1.+Tara老师雅思口语2024年9-12月part1素材.pdf)
 
 ## Part 2&Part 3
 
-### 【1月新题】（19道）
+### 【1 月新题】
 
 #### （1）精力充沛的人
 
@@ -1038,11 +1102,11 @@ Why you think this person is energetic
 
 And explain how you feel about this person
 
->  An energetic person I know is my cousin, who is five years younger than me. He's a lively and enthusiastic boy who always seems to have endless energy. One of his favorite activities is playing basketball. He spends hours on the court, whether it's practicing his shots, playing with his friends, or just enjoying the game.
+>  An energetic person I know is my cousin, who is five years younger than me. He's a ==lively and enthusiastic== boy who always seems to have endless energy. One of his favorite activities is playing basketball. He spends hours on the court, whether it's practicing his shots, playing with his friends, or just enjoying the game.
 >
-> Apart from basketball, he loves going out with his friends to explore new places or try different activities. He's the kind of person who's always on the move, whether it's walking his dog in the park or organizing group outings. What's really impressive is how he manages to keep up his energy even after a busy day.
+> Apart from basketball, he loves going out with his friends to explore new places or try different activities. He's the kind of person who's always ==on the move==, whether it's walking the dog in the park or organizing group outings. What really impressed me is how he manages to ==keep up his energy== even after a busy day.
 >
-> I think what makes him so energetic is his positive attitude. He's always cheerful and looks for the fun side of things, which inspires others around him. Spending time with him is never boring because his energy is so contagious.
+> I think what makes him so energetic is his positive attitude. He's always ==cheerful and looks for the fun side of things,== which inspires others around him. Spending time with him is never boring because his energy is so ==contagious==.
 >
 > Overall, my cousin's lively personality and active lifestyle make him stand out. He motivates me to stay active and enjoy life more, which is why I admire his energetic spirit so much.
 
@@ -1078,15 +1142,14 @@ Why you think it is a positive change
 
 And explain how you feel about the change
 
->  A positive change I recently made to my daily routine is adjusting my sleep schedule. I used to stay up late almost every night, spending hours browsing apps like Red Book to entertain myself. While it was fun at the time, I realized it left me feeling tired and unproductive the next day.
+>  A positive change I recently made to my daily routine is ==adjusting my sleep schedule==. I used to stay up late almost every night, spending hours browsing apps like Red Book to entertain myself. While it was fun at the time, I realized it ==left me feeling tired and unproductive== the next day.
 >
 >  Now, I've set my mind to getting up early and sleeping early. At first, it was challenging to break the habit, but I started by setting a strict bedtime and avoiding using my phone before bed. Instead, I read a book or listen to relaxing music to ==wind down==.
 >
->  This change has made a big difference in my life. Waking up early gives me extra time in the morning to prepare for the day, whether it's exercising, eating a proper breakfast, or planning my tasks. I also feel more energized and focused throughout the day, which has improved my productivity and overall mood.
+>  This change has made a big difference in my life. Waking up early gives me extra time in the morning to prepare for the day, whether it's exercising, eating a proper breakfast, or planning my tasks. I also feel more energized and focused throughout the day, which has ==improved my productivity and overall mood==.
 >
->  Looking back, I'm glad I made this change. It's a small adjustment, but it has had a positive impact on both my physical and mental health. I now feel more in control of my time and enjoy my days much  
+>  Looking back, I'm glad I made this change. It's a small adjustment, but it has had a positive impact on both my physical and mental health. I now feel more in control of my time and enjoy my days much more.
 >
->  more.
 
  **1. What do people normally plan in their daily lives?**
 People usually plan a variety of activities in their daily lives, such as work or study schedules, household chores, exercise routines, and social engagements. For example, many people plan their work tasks to meet deadlines, schedule time for grocery shopping or cooking, and allocate time for hobbies or relaxation. Additionally, some people plan their commutes or childcare arrangements to ensure everything runs smoothly. Planning helps individuals stay organized and manage their time effectively, especially when balancing multiple responsibilities.
@@ -1108,7 +1171,7 @@ I believe both young and older people should have equal opportunities for promot
 
 #### （3）感兴趣的科学学科/领域（1.13）
 
-Describe an area/subject of science (biology,robotics, etc.) that you are interested in and would like to learn more about
+Describe an area/subject of science (biology, robotics, etc.) that you are interested in and would like to learn more about
 
 You should say:
 
@@ -1120,13 +1183,13 @@ How you get information about this area/subject
 
 And explain why you are interested in this area/subject
 
->  An area of science that I'm really interested in and would like to learn more about is artificial intelligence, particularly machine learning. My interest in AI grew even stronger after the 2024 Nobel Prize in Physics was awarded to advancements in AI, which shows how impactful this field has become.
+>  An area of science that I'm really interested in and would like to learn more about is ==artificial intelligence==, particularly machine learning. My interest in AI grew even stronger after the 2024 Nobel Prize in Physics was awarded to advancements in AI, which shows how impactful this field has become.
 >
 > As a Software Engineering major, I already have some background knowledge about computers and programming, which makes AI even more fascinating to me. I'm amazed by how AI technologies, like natural language processing and computer vision, are transforming various aspects of our lives. For example, AI is used in virtual assistants, healthcare, and even in autonomous vehicles.
 >
 > What excites me the most about AI is its potential to solve complex problems and improve efficiency in ways we never thought possible. At the same time, it raises ethical questions, such as data privacy and bias, which I believe are important to address as we continue to develop this technology.
 >
-> I'd like to dive deeper into machine learning algorithms and understand how they work behind the scenes. I also want to explore how AI can be applied responsibly to benefit society. Overall, studying AI would not only align with my major but also prepare me for a field that's shaping the future.
+> I'd like to dive deeper into machine learning algorithms and ==understand how they work behind the scenes==. I also want to explore how AI can be applied responsibly to benefit society. Overall, studying AI would not only align with my major but also prepare me for a field that's shaping the future.
 
 **1. Why do some children not like learning science at school?**
 Some children might not enjoy learning science because they find it too abstract or difficult to understand. Science often involves complex concepts, formulas, and theories that can be challenging to grasp, especially if the teaching methods are not engaging. Additionally, if students don't see the practical applications of science in their daily lives, they might lose interest. For example, learning about chemical reactions or physics principles might seem irrelevant to them if they can't connect it to real-world scenarios. A lack of hands-on experiments or interactive activities in the classroom can also make science seem boring or intimidating.
@@ -1160,11 +1223,11 @@ Who you would like to go there with
 
 And explain why you would like to visit it
 
->  One foreign country I would like to visit in the future is France. It has always fascinated me because of its rich history, stunning architecture, and world-renowned culture. Paris, in particular, is at the top of my list. I've heard so much about the Eiffel Tower, the Louvre Museum, and the charming streets of Montmartre. I'd love to walk along the Seine River and experience the city's romantic atmosphere.
+>  One foreign country I would like to visit in the future is France. It has always fascinated me because of its rich history, stunning architecture, and world-renowned culture. Paris, in particular, is ==at the top of my list==. I've heard so much about the Eiffel Tower, the Louvre Museum, and the charming streets. I'd love to walk along the Seine River and experience the city's romantic atmosphere.
 >
-> Aside from Paris, I'm also interested in exploring other regions of France, like Provence, with its beautiful lavender fields, and the French Riviera, which I've seen in movies. I imagine it would be incredible to relax on the beaches there and enjoy the Mediterranean vibe.
+> Aside from Paris, I'm also interested in exploring other regions of France, like Provence(普罗旺斯), with its beautiful lavender(薰衣草) fields, which I've seen in movies. I imagine it would be incredible to relax on the beaches there and enjoy the Mediterranean vibe(地中海氛围).
 >
-> Another reason I want to visit France is to try authentic French cuisine. Tasting freshly baked croissants, macarons, and traditional dishes like ratatouille and escargot is something I'm really excited about.
+> Another reason I want to visit France is to try authentic French cuisine. Tasting freshly baked croissants 羊角面包, macarons 马克龙, and traditional dishes like ratatouille/rɑ: tɑ: ˈtu: i/蔬菜杂烩 is something I'm really excited about.
 >
 > Overall, France has so much to offer, from art and fashion to natural beauty and fine dining. Visiting this country would be like stepping into a dream, and I hope I can make this trip a reality someday.
 
@@ -1201,10 +1264,13 @@ What the results of the decision were
 And explain why it was important
 
 >  Last year, I made a very hard decision of breaking up with（提分手） my boyfriend. Now he's my ex-boyfriend. Coming to think of it, it turned out to be an important decision in my life and it was definitely the right thing to do/ it was a good call（是正确的选择）.
-> We had been together for about three years, and during that period of time, I was in two minds（犹豫，纠结） all the time. *On one hand*, he was funny and charming. He could really make me laugh. I loved his sense of humor （我喜欢他的幽默感） and his charisma. *On the other hand*, he was a control freak. He always wanted me to listen to him, and say yes to him. He really put a lot of pressure on me. I mean, I'm an independent person with an independent mind, so I couldn't just blindly follow his commands（跟随他的指令）. He was very bossy（霸道的） and macho（大男子主义的）.
-> I **was torn between**（很纠结） leaving and staying. I didn't want to rush into the decision（匆忙做决定）, so I waited long enough because I wanted to give it a chance. After being together for three years, I was very unhappy, so I finally made up my mind（彻底下决定） to leave him. I told him about my decision. It wasn't easy for me. I was crying and having a meltdown when I saw him for the last time. And he refused to take it. We were not **on the same page** at all（意见不一致，他不想分手）.
-> After the breakup, in the beginning, he was still trying to influence my decision by constantly calling me and trying to see me. It was extremely difficult for me to not pick up the phone. But I pulled myself together（振作起来）. I didn't give him any chances to talk to me. And eventually, after 6 months, he gave up.
-> I'm now feeling so much better without him. ==Everything is water under the bridge==（事情都过去了）. Even though I still miss him sometimes, I know it will all be over one day. Time will heal everything（时间会治愈一切）. It was a tough decision to make, but it was the right thing to do.
+>
+>  We had been together for about three years, and during that period of time, I was in two minds（犹豫，纠结） all the time. *On one hand*, he was funny and charming. He could really make me laugh. I loved his sense of humor （我喜欢他的幽默感） and his charisma. *On the other hand*, he was a control freak. He always wanted me to listen to him, and say yes to him. He really put a lot of pressure on me. I mean, I'm an independent person with an independent mind, so I couldn't just blindly follow his commands（跟随他的指令）. He was very bossy（霸道的） and macho（大男子主义的）.
+>
+>  I **was torn between**（很纠结） leaving and staying. I didn't want to rush into the decision（匆忙做决定）, so I waited long enough because I wanted to give it a chance. After being together for three years, I was very unhappy, so I finally made up my mind（彻底下决定） to leave him. I told him about my decision. It wasn't easy for me. I was crying and having a meltdown when I saw him for the last time. And he refused to take it. We were not **on the same page** at all（意见不一致，他不想分手）.
+>
+>  After the breakup, in the beginning, he was still trying to influence my decision by constantly calling me and trying to see me. It was extremely difficult for me to not pick up the phone. But I pulled myself together（振作起来）. I didn't give him any chances to talk to me. And eventually, after 6 months, he gave up.
+>  I'm now feeling so much better without him. ==Everything is water under the bridge==（事情都过去了）. Even though I still miss him sometimes, I know it will all be over one day. Time will heal everything（时间会治愈一切）. It was a tough decision to make, but it was the right thing to do.
 
 **1. Do you think children sometimes have to make important decisions?**
 Yes, I believe children sometimes have to make important decisions, although these decisions might not seem as significant from an adult's perspective. For example, children might need to decide which extracurricular activities to join, how to manage their time between schoolwork and hobbies, or how to handle conflicts with friends. These decisions can shape their personal development and teach them valuable life skills like responsibility and problem-solving. While adults often guide them, children still play a key role in making choices that affect their daily lives.
@@ -1240,9 +1306,9 @@ And explain how you feel about the rule
 
 >  One important rule in my school is that students are not allowed to use mobile phones during class. This rule is meant to ensure that everyone stays focused on their studies instead of getting distracted by social media, games, or chatting with friends.
 >
-> If someone breaks this rule, the teacher usually confiscates their phone for the rest of the day. In more serious cases, the school might inform the student's parents or even impose a temporary ban on bringing phones to school. This is quite an effective way to enforce discipline, as no one wants to lose access to their phones.
+> If someone breaks this rule, the teacher usually ==confiscates== their phone for the rest of the day. In more serious cases, the school might inform the student's parents or even ==impose a temporary ban on bringing phones to school==. This is quite an effective way to enforce discipline, as no one wants to lose access to their phones.
 >
-> I believe this rule is essential because it helps maintain a good learning environment. Nowadays, mobile phones can be very distracting, and once a student starts scrolling through social media or texting, it's hard to pay attention to the lesson. Also, banning phones in class encourages students to interact with each other face-to-face rather than relying on digital communication all the time.
+> I believe this rule is essential because it helps maintain ==a good learning environment==. Nowadays, mobile phones can be very distracting, and once a student starts scrolling through social media or texting, it's hard to pay attention to the lesson. Also, banning phones in class encourages students to ==interact with each other== face-to-face rather than relying on digital communication all the time.
 >
 > Personally, I have mixed feelings about this rule. On one hand, I understand its purpose and agree that it helps us concentrate better. On the other hand, there are times when I need my phone to check something important, like a dictionary or study materials. However, overall, I think it is a reasonable rule that benefits most students in the long run.
 
@@ -1259,7 +1325,7 @@ When using public transport, people should follow several rules to ensure safety
 In public places, people need to follow rules that promote safety, cleanliness, and respect for others. For example, they should avoid littering, respect noise restrictions, and follow designated smoking areas. In places like parks or museums, people are expected to stay on marked paths, avoid damaging property, and follow instructions from staff. Additionally, social etiquette, such as being polite and considerate of others, is important in maintaining a harmonious environment. These rules ensure that public spaces remain enjoyable and accessible for everyone.
 
 **5. What are the reasons that cause people to break rules?**
-People might break rules for various reasons, such as lack of awareness, convenience, or rebellion. For instance, someone might not know about a specific rule or misunderstand its importance. Others might break rules to save time or effort, like jaywalking 乱穿马路 to avoid a long detour. In some cases, people might intentionally break rules as a form of protest or to challenge authority. Stress or emotional distress can also lead to rule-breaking, as individuals might act impulsively without considering the consequences. Understanding these reasons can help address the root causes of rule violations.
+People might break rules for various reasons, such as lack of awareness, convenience, or rebellion. For instance, someone might not know about a specific rule or misunderstand its importance. Others might break rules to save time or effort, like jaywalking (乱穿马路) to avoid a long detour. In some cases, people might intentionally break rules as a form of protest or to challenge authority. Stress or emotional distress can also lead to rule-breaking, as individuals might act impulsively without considering the consequences. Understanding these reasons can help address the root causes of rule violations.
 
 **6. When people break rules, how would they be punished in your country?**
 In my country, the punishment for breaking rules depends on the severity of the violation. For minor offenses, such as littering or noise complaints, people might receive a warning or a fine. More serious violations, like breaking traffic laws or damaging public property, can result in heavier fines, community service, or even legal action. In schools or workplaces, rule-breakers might face disciplinary measures like suspension or loss of privileges. The goal of these punishments is to discourage rule-breaking and encourage individuals to act responsibly.
@@ -1282,11 +1348,11 @@ and whether you would like to have this job in the future
 
 >  I'd like to talk about my grandmother, who was a farmer for most of her life. She worked in agriculture, growing crops like rice, wheat, and vegetables on a small family farm in the countryside. She had this job for over 40 years, starting when she was very young and continuing until she retired in her late 60s.
 >
-> My grandmother got into farming because it was a family tradition. Her parents were also farmers, so she learned the skills and knowledge from them from a very early age. She didn't have a formal education in agriculture, but she had a lot of practical experience and understood the land, the seasons, and how to grow different crops.
+> My grandmother got into farming because it was a family tradition. Her parents were also farmers, so she learned the skills and knowledge from them from a very early age. She didn't ==have a formal education in agriculture==, but she had a lot of ==practical experience and understood the land==, the seasons, and how to grow different crops.
 >
-> Being a farmer requires a wide range of skills. For example, you need to be physically strong because farming involves a lot of manual labor, like planting, harvesting, and carrying heavy loads. You also need to be patient and resilient because farming depends heavily on the weather, and sometimes crops can fail due to droughts or floods. Additionally, my grandmother had to be very resourceful and creative in solving problems, like finding ways to protect crops from pests or managing limited resources.
+> Being a farmer requires a wide range of skills. For example, you need to be physically strong because farming involves a lot of manual labor, like planting, harvesting, and ==carrying heavy loads==. You also need to be patient and resilient because farming depends heavily on the weather, and sometimes crops can fail due to droughts or floods. Additionally, my grandmother had to be very ==resourceful and creative in solving problems==, like finding ways to protect crops from pests or managing limited resources.
 >
-> As for whether I'd like to have this job in the future, I don't think so. While I deeply respect my grandmother's hard work and dedication, farming is a very demanding job, both physically and mentally. I also think it's quite unpredictable because of factors like climate change, which makes it even more challenging. However, I do admire the connection to nature and the sense of independence that comes with farming. It's just not the right career path for me personally.
+> As for whether I'd like to have this job in the future, I don't think so. While I deeply respect my grandmother's hard work and dedication, farming is a very ==demanding== job, both physically and mentally. I also think it's quite unpredictable because of factors like climate change, which makes it even more challenging. However, I do admire the connection to nature and the sense of independence that comes with farming. ==It's just not the right career path for me personally.==
 
 Part 3 待更新
 
@@ -1304,13 +1370,13 @@ Whether it was easy or difficult to keep
 
 And explain why you made it
 
->  I'd like to talk about a promise I made to my cousin a few years ago. At the time, she was preparing for her final high school exams, and she was feeling extremely stressed and overwhelmed. She had always struggled with math, and she was worried that she wouldn't be able to pass the exam. One evening, she came to me, almost in tears, and asked for my help. I promised her that I would tutor her every day until her exams and help her improve her math skills.
+>  I'd like to talk about a promise I made to my cousin a few years ago. At the time, she was preparing for her final high school exams, and she was feeling extremely ==stressed and overwhelmed==. She had always struggled with math, and she was worried that she wouldn't be able to pass the exam. One evening, she came to me, almost in tears, and asked for my help. I promised her that I would tutor her every day until her exams and help her improve her math skills.
 >
-> After I made the promise, I felt a strong sense of responsibility to keep it. At first, I thought it would be easy because I was confident in my own math abilities, but it turned out to be more challenging than I expected. I had to sacrifice a lot of my free time to sit with her, explain concepts, and practice problems. There were moments when I felt frustrated because she didn't grasp things as quickly as I hoped, but I reminded myself of the promise I had made and pushed through.
+> After I made the promise, I felt ==a strong sense of responsibility== to keep it. At first, I thought it would be easy because I was confident in my own math abilities, but it turned out to be more challenging than I expected. I had to sacrifice a lot of my free time to sit with her, explain concepts, and practice problems. There were moments when I felt frustrated because she didn't grasp things as quickly as I hoped, but I reminded myself of the promise I had made and pushed through.
 >
-> The reason I made this promise was because I could see how much it meant to her. She trusted me to help her, and I didn't want to let her down. I also knew how important these exams were for her future, and I wanted to do everything I could to support her. In the end, she managed to pass her math exam with a decent grade, and she was incredibly grateful for my help. Seeing her relief and happiness made all the effort worthwhile.
+> The reason I made this promise was because ==I could see how much it meant to her==. She trusted me to help her, and I didn't want to let her down. I also knew how important these exams were for her future, and I wanted to do everything I could to support her. In the end, she managed to pass her math exam with a decent grade, and she was incredibly grateful for my help. Seeing her relief and happiness made all the effort worthwhile.
 >
-> This experience taught me the importance of keeping promises, especially when they involve someone who depends on you. It also strengthened my relationship with my cousin, as she knew she could count on me when she needed help the most.
+> This experience taught me the importance of keeping promises, especially when they involve someone who depends on you. It also ==strengthened my relationship== with my cousin, as she knew she could count on me when she needed help the most.
 
 **1. Why do some people fail to keep their promises?**
 There are several reasons why people might fail to keep their promises. Sometimes, it's due to unforeseen circumstances, such as sudden illness or emergencies, which make it impossible to follow through. Other times, people might overcommit themselves and realize they don't have the time or resources to fulfill their promises. In some cases, a lack of sincerity or responsibility can also lead to broken promises, as individuals might make commitments without intending to keep them. Additionally, poor communication or misunderstandings can result in promises being unintentionally broken.
@@ -1338,11 +1404,11 @@ How you knew it
 
 And explain how you feel about it
 
-> One line that has always stayed with me is from Shakespeare's *Sonnet 18*. The line is, **“Shall I compare thee to a summer's day?”** It's the opening line of the sonnet, and it's one of the most famous lines in English literature. The poem itself is a beautiful tribute to the timeless beauty of a loved one, and this line sets the tone for the entire piece.
+> One line that has always stayed with me is from Shakespeare's *Sonnet 18*. The line is, **“Shall I compare thee to a summer's day?”** It's the opening line of the sonnet, and it's one of the most famous lines in English literature. The poem itself is a beautiful tribute(致敬) to the timeless beauty of a loved one, and this line sets the tone for the entire piece.
 >
-> I first came across this poem in high school during an English literature class. We were studying Shakespeare, and our teacher had us analyze several of his sonnets. This one stood out to me because of its romantic and poetic language. I remember being struck by how simple yet profound the opening line was. It immediately draws you in and makes you curious about what the comparison will be.
+> I first came across this poem in high school during an English literature class. We were studying Shakespeare, and our teacher had us analyze several of his sonnets. This one stood out to me because of its ==romantic and poetic language==. I remember being struck by how simple yet profound the opening line was. It immediately draws you in and makes you curious about what the comparison will be.
 >
-> The reason this line resonates with me so much is because of its elegance and universality. It's a question that feels both personal and timeless, as if Shakespeare is speaking directly to the reader. I also love how it captures the fleeting beauty of summer and contrasts it with the eternal beauty of the person he's describing. It's a reminder of how powerful words can be in expressing emotions and ideas.
+> The reason this line resonates with me so much is because of its ==elegance and universality==. It's a question that feels both personal and timeless as if Shakespeare is speaking directly to the reader. ==I also love how it captures the fleeting beauty of summer and contrasts it with the eternal beauty of the person he's describing==. It's a reminder of how powerful words can be in expressing emotions and ideas.
 >
 > Whenever I think of this line, I feel a sense of admiration for Shakespeare's ability to convey such deep feelings in just a few words. It also makes me appreciate the beauty of poetry and how it can connect people across time and cultures. Even though the poem was written centuries ago, its message still feels relevant and moving today.
 
@@ -1374,11 +1440,11 @@ And how you felt about the change
 
 > I'd like to talk about a recent change in my plans regarding my future career and education. This happened just last month when I was faced with a big decision about my next steps after graduating from college.
 >
-> Originally, my plan was to start looking for a job right after graduation. I had already begun preparing my resume and researching companies in my field. However, last month, I attended a seminar about studying abroad, and it completely changed my perspective. The speaker shared their experiences of studying overseas, and I realized how much it could broaden my horizons, both academically and personally. After giving it some serious thought, I decided to change my plan and pursue a master's degree abroad instead of entering the job market immediately.
+> ==Originally==, my plan was to start looking for a job right after graduation. I had already begun preparing my resume and researching companies in my field. However, last month, I attended a seminar about studying abroad, and it completely changed my perspective. The speaker shared their experiences of studying overseas, and I realized how much it could ==broaden my horizons, both academically and personally==. After giving it some serious thought, I decided to change my plan and ==pursue a master's degree abroad== instead of entering the job market immediately.
 >
 > The new plan involves applying to universities in countries like the UK or Canada, which are known for their excellent programs in my field. I've started preparing for language tests like IELTS and researching scholarships to fund my studies. It's a big shift from my original plan, but I feel it's the right decision for my long-term growth.
 >
-> At first, I felt a bit anxious about the change because it meant stepping out of my comfort zone and delaying my entry into the workforce. However, as I started researching and talking to people who had studied abroad, I became more excited and confident about this new direction. I believe this change will open up more opportunities for me in the future, and I'm looking forward to the challenges and experiences that come with studying in a different country.
+> At first, I felt a bit ==anxious== about the change because it meant ==stepping out of my comfort zone and delaying my entry into the workforce==. However, as I started researching and talking to people who had studied abroad, I became more ==excited and confident== about this new direction. I believe this change will ==open up more opportunities== for me in the future, and I'm looking forward to the challenges and experiences that come with studying in a different country.
 
 **1. Do people often change their plans?**
 Yes, people often change their plans due to various reasons. Sometimes, unexpected circumstances like bad weather, illness, or work emergencies can force them to adjust their schedules. Other times, people might change their plans because they find better alternatives or simply change their minds. For example, someone might decide to stay home instead of going out if they feel tired or if a more appealing opportunity arises. Flexibility is a natural part of life, and adapting to changes is essential for managing priorities effectively.
@@ -1402,17 +1468,15 @@ How often you use it
 With whom you use it
 And explain why it is important
 
-> I'd like to talk about the air conditioner in my home, which is one of the most important pieces of equipment for me and my family. It's a modern, ==energy-efficient unit== that we installed a couple of years ago, and it has become an essential part of our daily lives.
+> I’d like to talk about the air conditioner in my home, which is one of the most important pieces of equipment for me and my family. It’s a ==modern, energy-efficient unit== that we installed a couple of years ago, and while we don’t use it every day, it has become an essential part of our lives, especially during extreme weather.
 >
-> We use the air conditioner almost every day, especially during the summer months when the temperature can get extremely high. Even in other seasons, we sometimes use it to maintain a comfortable indoor environment, particularly during humid or stuffy 闷热的 days. I'd say we rely on it heavily, especially during heatwaves when it's almost impossible to stay indoors without it.
+> We primarily rely on the air conditioner during the summer and winter months. In the summer, when the temperature can get extremely high, the air conditioner is a ==lifesaver==. It keeps our home cool and comfortable, making it possible to ==relax and sleep without feeling overwhelmed by the heat==. Similarly, during the winter, when it gets uncomfortably cold, we use the air conditioner to maintain a warm and cozy indoor environment. Even though we don’t use it year-round, it’s during these seasons that we truly appreciate its value.
 >
-> I usually use the air conditioner with my family. For example, in the evenings, we all gather in the living room, and the air conditioner helps us relax and enjoy our time together without feeling uncomfortable due to the heat. My parents and younger brother also appreciate having it in their rooms, as it allows them to sleep better at night.
+> The air conditioner is important to us for several reasons. First, it significantly ==improves our quality of life== by keeping our home at a comfortable temperature during extreme weather. Second, it helps us ==stay productive==, as it’s difficult to focus on work or studies when it’s too hot or too cold. Lastly, it contributes to our health by reducing the risk of heat-related illnesses in the summer and keeping us warm during the winter, which is particularly important for my grandparents, who live with us and are more sensitive to temperature changes.
 >
-> The air conditioner is important to us for several reasons. First, it significantly improves our quality of life by keeping our home cool and comfortable, especially during extreme weather. Second, it helps us stay productive, as it's difficult to focus on work or studies when it's too hot. Lastly, it contributes to our health by reducing the risk of heat-related illnesses, which is particularly important for my grandparents, who live with us and are more sensitive to temperature changes.
->
-> Overall, the air conditioner is more than just a convenience—it's a necessity for us, and we can't imagine living without it.
+> Overall, the air conditioner is more than just a convenience—it’s a ==necessity== for us during certain times of the year, and we can’t imagine living without it.
 
-Part 3待更新
+Part 3 待更新
 
 #### （12）有趣的建筑
 
@@ -1424,15 +1488,13 @@ What it looks like
 What function it has
 And explain why you think it is interesting
 
-> **Describe an interesting building**
->
-> I'd like to talk about the Oriental Pearl TV Tower in Shanghai, which is one of the most iconic landmarks in China. Located in the Pudong district of Shanghai, it stands along the Huangpu River and is surrounded by other impressive skyscrapers, making it a central part of the city's stunning skyline.
+> I'd like to talk about the Oriental Pearl TV Tower in Shanghai, which is one of the most ==iconic landmarks== in China. Located in the Pudong district of Shanghai, it stands along the Huangpu River and is surrounded by other impressive skyscrapers, making it a central part of the city's stunning skyline.
 >
 > The Oriental Pearl TV Tower is a unique and futuristic-looking building. It's incredibly tall, standing at 468 meters, and its design is inspired by a poem about pearls falling onto a jade plate. The tower consists of several large spheres at different levels, connected by vertical columns, which give it a distinctive and elegant appearance. At night, the tower is illuminated with colorful lights, making it even more striking and visually appealing.
 >
-> The tower serves multiple functions. Primarily, it's a TV and radio broadcasting tower, but it has also become a major tourist attraction. Inside, there are observation decks that offer breathtaking views of Shanghai, as well as a revolving restaurant where visitors can enjoy a meal while taking in the panoramic 全景的  scenery. Additionally, the tower houses a museum dedicated to the history of Shanghai, which adds an educational element to its appeal.
+> The tower serves multiple functions. Primarily, it's a TV and radio broadcasting tower, but it has also become a major tourist attraction. Inside, there are observation decks that offer ==breathtaking views of Shanghai==, as well as a revolving restaurant where visitors can enjoy a meal while taking in the ==panoramic(全景的)  scenery==. Additionally, the tower houses a museum dedicated to the history of Shanghai, which adds an educational element to its appeal.
 >
-> What makes the Oriental Pearl TV Tower so interesting to me is its combination of architectural innovation, cultural significance, and functionality. It's not just a building; it's a symbol of Shanghai's rapid development and modernization. Every time I visit, I'm amazed by how it blends art, technology, and history into one structure. It's a must-see for anyone visiting Shanghai, and it never fails to leave a lasting impression.
+> What makes the Oriental Pearl TV Tower so interesting to me is its ==combination of architectural innovation, cultural significance, and functionality==. It's not just a building; it's a symbol of Shanghai's rapid development and modernization. Every time I visit, I'm amazed by how it blends art, technology, and history into one structure. It's a must-see for anyone visiting Shanghai, and it never fails to leave a lasting impression.
 
 **1. What types of buildings are popular in your country? **
 In China, ancient buildings are highly popular and admired for their cultural and historical significance. Traditional Chinese architecture, such as palaces, temples, and courtyard homes, reflects the country's rich heritage. For example, the Forbidden City in Beijing and the ancient water towns in Suzhou are iconic examples of Chinese architecture, featuring intricate designs, wooden structures, and symbolic elements like curved roofs and dragon motifs. These buildings are not only tourist attractions but also serve as a reminder of China's artistic and engineering achievements throughout history.
@@ -1457,13 +1519,13 @@ And explain why you like it
 
 > Mysterious lotus casebook（莲花楼，武装古侠悬疑剧）
 >
-> I'd like to talk about a TV series called *Mysterious Lotus Casebook*, which is a Chinese historical mystery drama. I watched it last year, and it quickly became one of my favorite shows because of its intriguing plot and well-developed characters.
+> I'd like to talk about a TV series called *Mysterious Lotus Casebook*, which is a Chinese historical mystery drama. I watched it last year, and it quickly became one of my favorite shows because of its ==intriguing plot and well-developed characters.==
 >
-> The series is set in ancient China and follows the story of a brilliant but enigmatic detective who solves complex cases while uncovering secrets from his own past. Each episode features a new mystery, often involving martial arts, political intrigue, and unexpected twists. The main character, who is both a skilled martial artist and a sharp-minded investigator, is accompanied by a group of loyal friends who help him navigate the challenges he faces. The show combines elements of action, suspense, and emotional depth, making it highly engaging.
+> The series is set in fictional ancient China and follows the story of a ==brilliant but enigmatic== detective who solves complex cases while uncovering secrets from his own past. Each episode features a new mystery, often involving martial arts, political intrigue, and unexpected twists. The main character, who is both a skilled martial artist and a sharp-minded investigator, is accompanied by a group of loyal friends who help him navigate the challenges he faces. The show combines elements of action, suspense, and emotional depth, making it highly engaging.
 >
-> I like this series for several reasons. First, the storytelling is excellent—each case is carefully crafted, and the pacing ==keeps you hooked from start to finish==. Second, the characters are very relatable and multi-dimensional, which makes it easy to connect with their struggles and triumphs. I particularly admire the main character's intelligence and resilience, as well as the strong bonds he shares with his companions. Finally, the production quality is outstanding, with beautiful costumes, stunning cinematography, and well-choreographed fight scenes that add to the overall appeal.
+> I like this series for several reasons. First, the storytelling is excellent—each case is carefully crafted, and ==the pacing keeps you hooked from start to finish==. Second, the characters are very relatable and multi-dimensional, which makes it easy to connect with their struggles and triumphs. I particularly admire the main character's intelligence and resilience, as well as the strong bonds he shares with his companions. Finally, the production quality is outstanding, with beautiful costumes, stunning cinematography, and well-choreographed /ˈkɒriəɡrɑːft/(事先编排的) fight scenes that add to the overall appeal.
 >
-> What makes *Mysterious Lotus Casebook* stand out to me is its ability to blend mystery, action, and emotional storytelling seamlessly. It's not just about solving cases; it's also about exploring themes like friendship, loyalty, and redemption. Watching this series feels like going on an adventure, and I always look forward to the next episode.
+> What makes *Mysterious Lotus Casebook* stand out to me is its ability to ==blend mystery, action, and emotional storytelling seamlessly==. It's not just about solving cases; it's also about exploring themes like friendship, loyalty, and redemption(救赎). Watching this series feels like going on an adventure, and I always look forward to the next episode.
 
 **1. Is it beneficial to insert advertisements within a TV series?**
 Inserting advertisements within a TV series can be beneficial for broadcasters and advertisers, but it often disrupts the viewing experience for the audience. For broadcasters, ads generate revenue, which helps fund the production of high-quality content. Advertisers also benefit by reaching a large and engaged audience. However, for viewers, frequent ad breaks can be frustrating, especially during intense or emotional scenes. While ads are necessary for the industry, finding a balance between commercial interests and viewer satisfaction is crucial.
@@ -1491,11 +1553,11 @@ And how you feel about the sharing
 
 > I'd like to talk about my friend Annie, who is one of the most open and generous people I know. She's always willing to share her thoughts, experiences, and even personal belongings with me, which makes our friendship very special.
 >
-> I first met Annie in high school. We were in the same class and quickly became close because of our shared interests in music and books. Over time, we developed a strong bond, and I realized that Annie is someone who values honesty and openness in relationships. She's the kind of person who doesn't hold back when it comes to sharing her feelings or opinions, and I really admire that about her.
+> I first met Annie in high school. We were in the same class and quickly became close because of our shared interests in music and books. Over time, we ==developed a strong bond==, and I realized that Annie is someone who values honesty and openness in relationships. She's the kind of person who doesn't hold back when it comes to sharing her feelings or opinions, and I really admire that about her.
 >
 > Annie openly shares a lot of things with me. For example, she often talks about her personal experiences, including her struggles and achievements, which has helped me understand her better and learn from her life lessons. She's also very generous with her time and resources—whether it's lending me her favorite books, sharing her notes when I miss a class, or even offering advice when I'm going through a tough time. Her willingness to share extends beyond material things; **she's always there to listen and provide emotional support** whenever I need it.
 >
-> I feel incredibly grateful for Annie's openness and generosity. Her willingness to share has not only strengthened our friendship but also taught me the importance of being open and supportive in return. It's rare to find someone who is so genuine and selfless, and I truly value the trust and connection we've built over the years. Annie's sharing has made a positive impact on my life, and I'm lucky to have her as a friend.
+> I feel incredibly grateful for Annie's ==openness and generosity==. Her willingness to share has not only strengthened our friendship but also taught me the importance of being open and supportive in return. It's rare to find someone who is so genuine and selfless, and I truly value the trust and connection we've built over the years. Annie's sharing has made a positive impact on my life, and I'm lucky to have her as a friend.
 
 **1. What kinds of emotional support do people need at work?**
 People need various types of emotional support at work to maintain their well-being and productivity. For example, they might need encouragement and recognition for their efforts, especially during challenging projects or stressful periods. A supportive work environment where colleagues and managers listen to their concerns and offer constructive feedback is also crucial. Additionally, flexibility and understanding during personal difficulties, such as family issues or health problems, can make a significant difference. Emotional support helps employees feel valued, motivated, and less overwhelmed, which ultimately benefits both the individual and the organization.
@@ -1520,15 +1582,11 @@ How long it takes you to solve
 
 And how you feel about it
 
->  **One puzzle I've played a lot is Sudoku.** 9宫格
+>  **One puzzle I've played a lot is Sudoku. Sudoku** is a number puzzle that consists of a 9x9 grid, and the goal is to fill in the grid with numbers from 1 to 9 in such a way that each row, each column, and each of the nine 3x3 subgrids contain all the numbers from 1 to 9 without repetition. It's a logic-based puzzle, so you can't guess the numbers, and it requires a lot of careful ==thinking and reasoning==.
 >
->  **Sudoku** is a number puzzle that consists of a 9x9 grid, and the goal is to fill in the grid with numbers from 1 to 9 in such a way that each row, each column, and each of the nine 3x3 subgrids contain all the numbers from 1 to 9 without repetition. It's a logic-based puzzle, so you can't guess the numbers, and it requires a lot of careful thinking and reasoning.
+>  In terms of difficulty, I'd say **it can vary**. Some Sudoku puzzles are relatively easy, especially the ones labeled as "easy" in newspapers or apps, and you can solve them in about 10 to 20 minutes. But others, especially the more advanced ones, can be quite challenging, requiring an hour or more. For those hard ones, I might take my time, sometimes even revisiting the puzzle later if I get stuck.
 >
->  In terms of difficulty, I'd say **it can vary**. Some Sudoku puzzles are relatively easy, especially the ones labeled as "easy" in newspapers or apps, and you can solve them in about 10 to 20 minutes. But others, especially the more advanced ones, can be quite challenging, requiring an hour or more. The more difficult ones sometimes involve advanced techniques like looking for hidden pairs or triples, or using strategies like the "X-Wing" method, which I find fascinating.
->
->  Usually, it takes me anywhere from **15 minutes to an hour** to finish a puzzle, depending on the level of difficulty. For easier puzzles, I can usually finish them in under 20 minutes, but for more complex ones, I might take my time, sometimes even revisiting the puzzle later if I get stuck.
->
->  I really enjoy playing Sudoku because it gives me a sense of accomplishment when I finish a puzzle. It's very satisfying to see the grid fill up correctly, and I feel a great sense of relief when I finally figure out the right number for a tricky spot. It's also a great exercise for the brain, as it keeps me sharp and improves my logical thinking. However, I do find it can be a bit frustrating when I get stuck, but that's part of the fun too – it's a challenge that really makes me think critically. So overall, I feel a lot of satisfaction from solving Sudoku puzzles, and it's a good way to unwind after a busy day.
+>  I really enjoy playing Sudoku because it gives me a sense of accomplishment when I finish a puzzle. It's very ==satisfying== to see the grid fill up correctly, and I feel a great sense of relief when I finally figure out the right number for a tricky spot. It's also a great exercise for the brain, as ==it keeps me sharp and improves my logical thinking==. However, I do find it can be a bit frustrating when I get stuck, but that's part of the fun too – it's a challenge that really makes me think critically. So overall, I feel a lot of satisfaction from solving Sudoku puzzles, and it's a good way to unwind after a busy day.
 
 **1. Which do you think is better? A detective movie or its original novel?**
 I think it depends on personal preference, but I would argue that the original novel is often better. Novels allow readers to immerse themselves in the story, explore the characters'  thoughts and motivations, and use their imagination to visualize the scenes. Detective novels, in particular, often include intricate details and clues that can be more engaging when read at one's own pace. However, detective movies can also be enjoyable because they bring the story to life with visuals, sound, and acting, making the experience more dynamic and accessible.
@@ -1562,15 +1620,13 @@ How you learned to do it
 
 And explain why you like it
 
->  **One sport that I really enjoy is badminton.**
+>  **One sport that I really enjoy is badminton.** Badminton is one of the most popular sports in the world. Badminton can be played indoors or outdoors, but I usually play it indoors, especially when the weather isn't ideal for outdoor sports.
 >
->  Badminton is a fast-paced sport where players use rackets to hit a shuttlecock back and forth over a net. The shuttlecock is lightweight and has a unique flight pattern, which makes the game exciting and unpredictable. Badminton can be played indoors or outdoors, but I usually play it indoors, especially when the weather isn't ideal for outdoor sports.
->
->  I play badminton **at least two or three times a week**. I often play with friends at the court in school. It's one of my go-to activities to stay active and also have fun.
+>  I play badminton **at least two or three times a week**. I often play with friends at the court in school. It's one of my ==go-to activities== to stay active and also have fun.
 >
 >  I first learned to play badminton when I was **in primary school**, around 10 years old. Initially, I wasn't very good at it, but I joined a school club where we had a coach who taught us the fundamentals, like how to serve, how to hold the racket, and how to move around the court. Over the years, I improved by practicing with friends and watching professional matches, which helped me understand the techniques and strategies better.
 >
->  There are several reasons why I enjoy badminton so much. **First, it's a great workout**. It's a very dynamic sport, requiring quick movements, jumps, and fast reflexes. Playing regularly has helped me improve my stamina and agility. **Second, it's a very social sport**. Whether I'm playing doubles with friends or participating in a friendly competition, it's always fun to connect with others while being active. Lastly, I find badminton to be a sport that requires a lot of concentration and skill, so it's challenging in a good way, and the more I play, the better I get at it. It's very rewarding to see progress and to be able to pull off tricky shots.
+>  There are several reasons why I enjoy badminton so much. **First, it's a great workout**. It's a very dynamic sport, requiring quick movements, jumps, and fast reflexes. Playing regularly has helped me ==improve my stamina and agility==. **Second, it's a very social sport**. Whether I'm playing doubles with friends or participating in a friendly competition, it's always fun to connect with others while being active. Lastly, I find badminton to be a sport that requires a lot of concentration and skill, so it's challenging in a good way, and the more I play, the better I get at it. It's very rewarding to see progress and to be able to pull off tricky shots.
 >
 >  Overall, badminton is not only fun but also a great way for me to stay fit, sharpen my mind, and spend time with friends. That's why I really like playing it.
 
@@ -1596,17 +1652,15 @@ What has the person done
 
 And explain why you think this person does this
 
-> **A person who really helps to protect the environment is my uncle.**
+> I’d like to talk about my uncle, who is really passionate about protecting the environment. He’s an environmental engineer, so he’s always thinking about ways to make the world greener. But what’s really cool is that he doesn’t just talk about it—he actually lives it every day.
 >
-> My uncle is someone who is very passionate about environmental issues. He works as an environmental engineer, and in his daily life, he actively practices sustainable habits to reduce his carbon footprint. He's also involved in several community projects focused on environmental conservation.
+> For example, he volunteers a lot in our community. He joins beach clean-ups and tree-planting events, and he even gets other people to come along. He also visits local schools to teach kids about recycling and how to waste less. Another thing he’s done is help set up solar panels on some public buildings in our town, which is a great way to use clean energy.
 >
-> One of the things he does is **volunteering in local clean-up efforts**. He often participates in beach clean-ups and tree-planting events, and he encourages others to join as well. He also works with local schools to raise awareness about recycling and waste reduction. In addition, he's been involved in setting up **solar panels on rooftops** of public buildings in our town, helping to promote renewable energy.
+> I think my uncle cares so much about the environment because he’s really worried about climate change. He always says that ==even small actions can make a big difference if everyone pitches in==. He loves nature and wants to make sure the planet stays healthy for future generations, especially for his own kids.
 >
-> I think my uncle is motivated to protect the environment because he's deeply concerned about **climate change** and the future of the planet. He believes that if everyone does their part, even in small ways, it can have a significant impact on reducing pollution and preserving natural resources for future generations. He's always been very passionate about nature and wildlife, and I think that his work and volunteer efforts stem from a desire to make the world a better place for future generations, especially for his own children.
+> What I admire most about him is ==how he leads by example==. He doesn’t force his ideas on anyone, but just by living his life in an eco-friendly way, he inspires others to do the same. He’s made a real impact in our community, and I think that’s amazing.
 >
-> What impresses me most is his ability to balance his professional work with his personal commitment to the environment. He never pushes his ideas onto others but leads by example, which has inspired many people in our community to take action as well.
->
-> In conclusion, my uncle's efforts to protect the environment are something I really admire. His actions have made a noticeable difference, and he continues to be a role model in both his personal and professional life.
+> In short, my uncle is someone who truly cares about the environment, and I really ==look up to him== for that.
 
 **1. Why can recycling help the environment?**
 
@@ -1638,17 +1692,13 @@ Which part you want to change
 
 And explain why you want to change the part
 
->  **A newly enacted law that I like but would like to see some changes to is the plastic ban law.**
+>  I’d like to talk about a new law in my country that bans single-use plastics, like plastic bags and straws. I think it’s a great law because it helps reduce plastic waste, which is a huge problem for the environment.
 >
->  This law was **recently enacted last year** in my country to tackle the growing environmental issue of plastic waste. The law aims to reduce the use of single-use plastic bags and other plastic products like straws and utensils. Businesses are now required to use eco-friendly alternatives, and individuals are encouraged to bring their own reusable bags when shopping. The law has been widely welcomed because it's seen as a significant step toward reducing plastic pollution, which has been causing harm to marine life and the environment for decades.
+>  The law requires businesses to stop using single-use plastics and switch to more eco-friendly alternatives, like paper or ==reusable materials==. This is fantastic because it encourages people to ==be more mindful of== their waste and helps protect oceans and wildlife from plastic pollution. I’ve already noticed fewer plastic bags in stores, and it feels good to see people using reusable bags instead.
 >
->  While I think the plastic ban is a fantastic initiative and I fully support it, there is one part of the law that I would like to change, and that is **the exemption for certain types of plastic products used in food packaging**. For example, many takeaway restaurants are still allowed to use plastic containers and packaging for food delivery, which seems like a contradiction. These types of plastic, although essential for food safety, still contribute significantly to pollution, especially since many of them are not recyclable.
+>  However, there’s one part of the law I’d like to change. Right now, the alternatives to plastic, like paper straws or reusable bags, are more expensive for small businesses and customers. This can be a problem for people with lower incomes or small shops that can’t afford the switch. I think the government should provide ==subsidies or discounts== to help businesses and individuals ==make the transition== easier. That way, everyone can afford to follow the law without feeling the financial pressure.
 >
->  I believe this part of the law should be revised to **encourage the use of biodegradable or recyclable materials** in food packaging as well. It would be better if the government provided incentives for businesses to switch to environmentally friendly alternatives in food packaging, much like they did with plastic bags. This would create a more comprehensive approach to reducing plastic pollution, as the food industry is one of the biggest contributors to plastic waste.
->
->  I think the reason I want this change is because **plastic pollution is a huge problem that requires all sectors to play a role**, not just retail businesses. By addressing food packaging, we can tackle a significant portion of the problem and make sure the law has a lasting and widespread impact on the environment.
->
->  Overall, while the plastic ban law is a great step forward, I feel that improving the rules around food packaging would make it even more effective in reducing plastic waste.
+>  Overall, I really support this law because ==it’s a big step toward a cleaner environment==. But if they could make it more affordable for everyone, I think it would be even better and more effective.
 
 **1. Why is law important?**
 
@@ -1672,15 +1722,15 @@ When you watched it
 
 And explain why you enjoyed watching it
 
-> I'd like to talk about a live performance of the musical *Romeo and Juliet* that I had the chance to watch last year. It was an unforgettable experience, and I still think about it often.
+> I’d like to talk about a live performance of the musical *Romeo and Juliet* that I watched last year. It was an amazing experience, and I still remember it clearly.
 >
-> The performance was staged by a renowned international theater company, and the cast included incredibly talented actors and singers. The lead roles of Romeo and Juliet were played by two performers ==with powerful voices and exceptional acting skills==, which brought the characters to life in a way that was both moving and captivating. The supporting cast was equally impressive, and the chemistry between all the actors made the performance feel ==authentic and engaging==.
+> The performance was ==put on== by a famous international theater company, and the actors were incredibly talented. The two leads who played Romeo and Juliet had such ==powerful voices and great acting skills==—they really made the characters ==come alive==. The rest of the cast was fantastic too, and everyone worked so well together that the whole performance felt ==real and emotional==.
 >
-> The musical was a modern ==adaptation== of Shakespeare's classic tragedy, ==blending traditional elements with contemporary music and staging==. The songs were beautifully composed, ranging from emotional ballads（情歌） to energetic ensemble（乐团全体成员） numbers, and the choreography（编舞） was stunning. The set design and lighting were also remarkable, creating a visually immersive experience that transported the audience to the world of Verona.
+> The musical was a modern version of Shakespeare’s classic story, mixing old and new styles. The songs were beautiful, with some slow, emotional ones and others that were full of energy. The dancing was also really impressive, and the stage design and lighting made it feel like we were actually in Verona, the setting of the story.
 >
-> I watched this performance during a weekend trip to a major city with my friends. We had been looking forward to it for weeks, and it definitely lived up to our expectations. The combination of the music, acting, and production quality made it a truly memorable evening.
+> I went to see it with my friends during a weekend. We’d been excited about it for weeks, and it didn’t disappoint. The music, acting, and overall production were so good that it made the whole evening unforgettable.
 >
-> What I enjoyed most about this performance was how it managed to convey the timeless themes of love, conflict, and fate in a way that felt fresh and relevant. The emotional depth of the story, combined with the incredible talent of the performers, left a lasting impression on me. It was one of those rare experiences where everything—the music, the acting, and the atmosphere—came together perfectly, and I left the theater feeling both inspired and deeply moved.
+> What I loved most was how the performance made the story’s themes of love, conflict, and fate feel so modern and relatable. The actors were so talented, and the whole experience was so well put together that it left a deep impression on me. It was one of those rare moments where everything—the music, the acting, and the atmosphere—just clicked, and I left the theater feeling inspired and moved.
 
 **1. What kind of party have you had so far?**
 So far, I've had a few birthday parties, which were quite memorable. For example, on my 18th birthday, my friends and family organized a surprise party for me, complete with decorations, cake, and games. It was a mix of laughter, music, and heartfelt moments. I've also attended graduation parties and casual get-togethers with friends, but birthday parties stand out because they are personal and celebratory, ==marking special milestones in life==.
@@ -1697,7 +1747,92 @@ The cost of watching a live performance in my country varies ==depending on the 
 **5. Why do many people prefer to watch a live performance rather than watch it on TV?**
 Many people prefer live performances because they ==offer a unique and immersive experience== that can't be replicated on TV. The energy of the crowd, the interaction with performers, and the spontaneity of live events create a sense of excitement and connection. For example, at a concert, the music feels more powerful, and you can see the artists'  emotions and efforts up close. Additionally, live performances often feel more ==authentic and memorable==, making them a special experience that people are willing to pay for and cherish.
 
-### 2024.10/11月更新（51道）
+#### （20）仰慕的运动员/体育队
+
+Describe an athlete/sports team you admire
+You should say:
+Who/what the athlete/sports team is
+Where/how you got to know the athlete/sports team
+How often you watch their sports games
+And explain why you admire the athlete/sports team
+
+> I’d like to talk about Sun Yingsha, a Chinese table tennis player who is one of the most talented and inspiring athletes I know. She has achieved remarkable success at a young age, and I truly ==admire her dedication and skill==.
+>
+> I first got to know about Sun Yingsha through watching international table tennis tournaments on TV. She ==caught my attention== because of her ==aggressive playing style and her ability to stay calm under pressure==. Over time, I started following her career more closely, reading about her achievements and watching her matches whenever I could.
+>
+> Sun Yingsha competes in both national and international competitions, so I get to watch her games quite often, especially during major events like the World Table Tennis Championships or the Olympics. Her matches are always ==exciting and full of intense moments==. Her performances are consistently impressive, and she has a way of making even the most challenging matches look effortless.
+>
+> What I admire most about Sun Yingsha is her ==determination and work ethic==. Despite her young age, she has already become one of the top players in the world, and she continues to improve with every tournament. I also respect her ==sportsmanship==—she always competes with grace and humility, whether she wins or loses.  She often ==credits her coaches and teammates for her success==. Her passion for table tennis is evident in every match she plays, and she serves as a great role model for aspiring athletes.
+
+**1. Do you think it is very important for students to do sports?**
+Yes, I believe it is very important for students to participate in sports. Engaging in physical activities not only improves their physical health but also enhances mental well-being. For example, sports help reduce stress, boost concentration, and promote teamwork and leadership skills. Additionally, ==regular exercise can instill discipline and time management==, as students learn to balance academics and extracurricular activities. Overall, sports play a vital role in the holistic development of students, preparing them for challenges both inside and outside the classroom.
+
+**2. Does winning in a sports game make students feel proud?**
+Yes, winning in a sports game often makes students feel proud because it ==validates their hard work, skills, and teamwork==. The sense of achievement and recognition they receive from winning can ==boost their confidence and motivation==. For example, scoring the winning goal or leading a team to victory can create lasting memories and a sense of accomplishment. However, it’s important to emphasize that participation and effort are equally valuable, as they teach resilience and sportsmanship, regardless of the outcome.
+
+**3. Do you think winning is everything in sports competitions?**
+No, I don’t think winning is everything in sports competitions. While winning can be rewarding, the true value of sports lies in ==the lessons learned through participation==, such as teamwork, perseverance, and discipline. For instance, losing a game can teach students how to handle failure gracefully and strive for improvement. Additionally, sports foster friendships, physical fitness, and a sense of community, which are equally important. Focusing solely on winning can lead to unnecessary pressure and detract from the enjoyment and personal growth that sports offer.
+
+#### （21）不用工作或学习的一天（2.27 疑似新题）
+
+Describe a time you enjoyed a free day off work or school
+You should say:
+Where you were
+What you did
+Who you were with
+And how you felt about it
+
+> I’d like to talk about last weekend when I had a free day off from school and decided to spend it visiting West Lake, which is conveniently located near my campus. It was a relaxing and memorable afternoon, and I really enjoyed the break from my usual routine.
+>
+> Since West Lake is just a short metro ride away, my roommate and I didn’t need to wake up early or rush. We left in the early afternoon and arrived at the lake in no time. The weather was perfect—sunny with a cool breeze—and the atmosphere around the lake was peaceful and inviting. We spent the first part of the afternoon strolling along the lakeside, taking in the stunning views of the water, willow trees, and distant mountains. The scenery was so beautiful that we couldn’t resist taking lots of photos to capture the moment.
+>
+> As the sun began to set, we found a quiet spot by the lake to sit and watch the sunset. The sky turned into a mix of orange, pink, and purple hues, reflecting on the water, and it was truly breathtaking. It felt like a scene from a painting, and I remember feeling completely at peace while enjoying the view. My roommate and I chatted about life, school, and our future plans, which made the experience even more special.
+>
+> After the sunset, we explored the nearby shopping area, which is a blend of traditional and modern styles. We wandered through some local shops, bought a few souvenirs, and even tried some famous Hangzhou snacks, like *dongpo pork* and *longjing tea*. It was a leisurely way to end the day, and we didn’t feel rushed at all.
+>
+> What made this day so enjoyable was the combination of natural beauty, good food, and great company. Spending time with my roommate in such a serene setting helped me unwind and forget about the stress of schoolwork. By the end of the day, I felt refreshed and grateful for the simple yet meaningful experience. It reminded me how important it is to take breaks and appreciate the little things in life.
+
+**1. Do people nowadays have more free time than in the past?** 
+It’s ==debatable== whether people today have more free time than in the past. On one hand, advancements in technology and automation have reduced the time needed for many tasks, such as household chores or commuting. On the other hand, the fast-paced nature of modern life, with its demanding work schedules and constant connectivity, often leaves people feeling busier than ever. While some may have more free time in theory, they might struggle to use it effectively due to stress or distractions like social media.
+
+**2. Do you think most people are able to manage their free time well?** 
+I think many people struggle to manage their free time effectively. With so many distractions, such as smartphones, social media, and streaming platforms, it’s easy to waste time without realizing it. Additionally, some people find it hard to balance work, family, and personal interests, leading to poor time management. However, those who prioritize planning and self-discipline, such as setting goals or using time management tools, are often more successful in making the most of their free time.
+
+**3. What do people like to do when they are free in your country?** 
+In my country, people enjoy a variety of activities during their free time. Many prefer relaxing at home, watching TV shows, or browsing social media. Others engage in outdoor activities like hiking, playing sports, or visiting parks. Socializing with friends and family over meals or coffee is also popular. Additionally, some people use their free time for hobbies like reading, painting, or gardening. Younger generations often spend time playing video games or exploring new trends online.
+
+**4. What's the difference between the things people did in their free time in the past and the things they do nowadays?** 
+In the past, people’s free time activities were often more ==community-oriented and physically engaging==. For example, they might gather for local festivals, play traditional games, or spend time outdoors. Nowadays, technology has transformed how people spend their free time, with many opting for ==screen-based activities== like watching movies, playing video games, or scrolling through social media. While these activities are convenient, they are often more solitary and less physically active compared to the past.
+
+**5. Why is working extra hours common nowadays?** 
+Working extra hours has become common due to several factors. Firstly, the competitive job market pushes employees to work harder to secure their positions or advance their careers. Secondly, the rise of technology means people are constantly connected to their work, making it harder to “switch off.” Additionally, some industries have ==high workloads or tight deadlines==, requiring employees to put in extra hours. Lastly, financial pressures, such as rising living costs, often force people to take on more work to make ends meet.
+
+**6. What can we do to stop working long hours?** 
+To reduce long working hours, both individuals and organizations need to take action. Employers can promote a healthier work-life balance by setting clear boundaries, encouraging breaks, and offering flexible work arrangements. Employees should prioritize time management, set realistic goals, and learn to say no to excessive demands. Governments can also play a role by ==enforcing labor laws== that limit working hours and protect employees’ rights. Ultimately, fostering a culture that values productivity over long hours is key to addressing this issue.
+
+#### （22）想去的多树之地（2.27 疑似新题）
+
+Describe a place with a lot of trees that you would like to visit (e.g. a forest, oasis)
+You should say:
+Where it is
+How you knew this place
+What it is like
+And explain why you would like to visit it
+
+> I’d like to talk about the Amazon Rainforest, which is one of the most fascinating and biodiverse places on Earth. Located primarily in Brazil, the Amazon spans across several South American countries and is often referred to as the "lungs of the planet" because of its vast number of trees and its role in producing oxygen.
+>
+> I first learned about the Amazon Rainforest in school during a geography class. We studied its importance to the global ecosystem, its incredible variety of plant and animal species, and the challenges it faces due to deforestation. Since then, I’ve been intrigued by this place and have watched documentaries and read articles about it, which have deepened my interest.
+>
+> The Amazon Rainforest is a lush, green paradise filled with towering trees, dense vegetation, and winding rivers. It’s home to millions of species, including exotic birds, monkeys, jaguars 美洲虎, and countless insects. The sheer scale of the forest is overwhelming—it’s so vast that it feels like an entirely different world. The sounds of wildlife, the fresh, earthy scent of the forest, and the sight of sunlight filtering through the canopy create a magical atmosphere.
+>
+> I would love to visit the Amazon Rainforest because it offers a unique opportunity to connect with nature on a profound level. It’s a place where you can truly escape the hustle and bustle of modern life and immerse yourself in the beauty and tranquility of the natural world. I’m also passionate about environmental conservation, and visiting the Amazon would allow me to witness firsthand the importance of protecting such a vital ecosystem. Additionally, I’d love to learn about the indigenous communities that live there and understand their way of life, as they have a deep connection to the forest.
+>
+> Overall, the Amazon Rainforest represents both the beauty and fragility of our planet, and visiting it would be an unforgettable experience that combines adventure, learning, and a deeper appreciation for nature.
+
+**1. Why do people like visiting places with trees or forests?**
+People enjoy visiting places with trees or forests because these environments offer a sense of peace, relaxation, and connection to nature. Forests provide a break from the noise and stress of urban life, allowing visitors to unwind and recharge. The fresh air, natural beauty, and soothing sounds of rustling leaves or birdsong create a calming atmosphere. Additionally, forests often offer opportunities for outdoor activities like hiking, camping, or birdwatching, which promote physical health and mental well-being. For many, being surrounded by trees also evokes a sense of wonder and appreciation for the natural world.
+
+### 2024.10/11 月更新（51 道）
 
 #### （1）有趣的谈话
 
@@ -2325,7 +2460,7 @@ And explain how you feel about the day
 >
 > On the day of the picnic, we headed to a large park near our university. The weather was perfect—it was sunny but not too hot, with a gentle breeze that made it really pleasant to sit outside. We found a nice shady spot under a big tree where we could spread out our blankets. We spent hours just chatting, laughing, and enjoying each other's company. It felt so refreshing to be away from the usual hustle and bustle of daily life.
 >
-> What made the day even more special was that we brought along some **game**s. One of my friends brought a deck of cards, and we ended up playing card games. It was so much fun, and we were all laughing so hard that we completely lost track of time. At one point, we even took a short walk around the park, enjoying the beautiful scenery and the blooming flowers.
+> What made the day even more special was that we brought along some **game** s. One of my friends brought a deck of cards, and we ended up playing card games. It was so much fun, and we were all laughing so hard that we completely lost track of time. At one point, we even took a short walk around the park, enjoying the beautiful scenery and the blooming flowers.
 >
 > The best part about that day was that it didn't cost us much at all. Apart from the small cost of the ingredients we used to make the food, everything else was completely free. It made me realize that sometimes, you don't need to spend a lot of money to have a great time. *What truly matters is the people you're with and the quality of the time you spend together*.
 >
@@ -2823,7 +2958,7 @@ And explain how you feel about the place
 >
 > In terms of wildlife, there's a lot to see. You can find/ spot（发现） all sorts of birds, from colorful songbirds（鸣禽） to bigger ones like owls and hawks（猫头鹰和山鹰）. One time, I even saw a wild squirrel running across the trail（横穿小路）, which was a nice surprise. There are also tons of insects, especially butterflies in the spring and summer. The area is full of plant life too, with lots of different types of trees and wildflowers（野花）.
 >
-> 安静的地方替换上面wildlife一段：(As I walk along the mountain's shaded paths, I can hear nothing but the rustle of leaves and birds chirping. The air is incredibly fresh, and the scent of pine trees and wildflowers is everywhere. On the top of the mountain, I can overlook a remote lake, surrounded by willow trees reflected in the calm, mirror-like water. It feels like I am stepping back in time to a simpler, more relaxed era.)
+> 安静的地方替换上面 wildlife 一段：(As I walk along the mountain's shaded paths, I can hear nothing but the rustle of leaves and birds chirping. The air is incredibly fresh, and the scent of pine trees and wildflowers is everywhere. On the top of the mountain, I can overlook a remote lake, surrounded by willow trees reflected in the calm, mirror-like water. It feels like I am stepping back in time to a simpler, more relaxed era.)
 >
 > The best part for me is just how connected I feel to nature when I'm there. I love sitting under the shade of a tree（坐在树荫下）, watching the birds or even reading a good book. Sometimes, I'll just close my eyes and take in（感受、吸收） the sounds of the forest; it's incredibly calming. I love this place. Thank you!
 
@@ -3017,7 +3152,7 @@ And explain why it impressed you a lot
 
 1. Why do some people have a better memory than others？
 2. Do people like things of memorial significance?
-3. Which can help people remember things better,words or photos？
+3. Which can help people remember things better, words or photos？
 4. Can technology help people remember things better? How?
 5. What do people need to remember in their daily lives?
 6. What can we learn form history?
@@ -3305,9 +3440,7 @@ And explain how it changed people's lives
 3. What kinds of inventions can be used at school?
 4. Do you think Al will replace human teachers? Why?
 
-
-
-### 【9月新题】（25道）
+### 【9 月新题】（25 道）
 
 #### （1）学到新东西的网络视频
 
@@ -3346,7 +3479,7 @@ What kinds of strong opinions this person has
 
 And explain why you think he/ she is a person who has strong opinions
 
- 
+
 
 1. What do young people have strong opinions about?
 2. What do old people have strong opinions about?
@@ -3935,7 +4068,7 @@ And explain how you felt about it
 5. How can young people be motivated to learn new things?
 6. ls it possible for a person to achieve something without motivation?
 
-### 【9月保留题】（28道）
+### 【9 月保留题】（28 道）
 
 #### （1）年轻人的偶像
 
@@ -4046,7 +4179,7 @@ And explain why this person likes cheap goods
  
 
 1. What are the differences between shopping in a shopping mall and in a street market?
-2. Which is more commonly visited in China,shopping malls or street markets?
+2. Which is more commonly visited in China, shopping malls or street markets?
 3. ls advertising important?
 4. What are the disadvantages of shopping at a street market?
 5. How do you buy cheap products?

@@ -2,9 +2,24 @@
 
 ## Task 1
 
+> [!NOTE]
+>
+> Introduction: paraphrase the question
+>
+> Overview: main, general things(2 sentences, 2 main points)
+>
+> Details
+>
+> Details
 
+### 折线图 line graphs
 
-### 折线图
+> [!NOTE]
+>
+> P2: make general comparison(summary/overview) 最普遍的特点
+>
+> P3-4: compare lines at specific points, every line is compared
+>
 
 **1. Percentage of population in living cities**
 
@@ -42,7 +57,17 @@ Amateur dramatics started with approximately 26 participants in 2000 but **exper
 
 Musical performances showed a dramatic increase in popularity. Starting with no participants in 2000 and 2005, it rose rapidly, surpassing amateur dramatics around 2010. By 2020, it had reached nearly 20 participants.
 
+**5. the percentage of the population living in cities**
 
+<img src="https://deepseek-api-files.obs.cn-east-3.myhuaweicloud.com/raw/2025/03/09/file-afe57bc2-cb18-4566-9f82-c196abc9ffc4?response-content-disposition=attachment%3B+filename%3D%22image.png%22&AccessKeyId=OD83TSXECLFQNNSZ3IF6&Expires=1741614500&Signature=uDW7G%2BY9TVvNanSAUwNyL%2FBgQEQ%3D" alt="img" style="zoom:33%;" />
+
+The line graph illustrates the percentage of the population living in cities in four Asian countries—Philippines, Malaysia, Thailand, and Indonesia—from 1970 to 2020, with projections for 2030 and 2040.
+
+It is clear that urbanization has increased in all four countries, with Malaysia having the highest *proportion* of urban residents, while Indonesia started with the lowest percentage.
+
+In 1970, both the Philippines and Malaysia had urban populations of around 30%. However, Malaysia's urbanization rate surged after 1990, reaching approximately 75% in 2020 and is *projected* to exceed 80% by 2040. In contrast, the Philippines experienced a slight decline between 1990 and 2010 before continuing its *upward trend*.
+
+Indonesia began with the lowest percentage (around 13%) but *witnessed rapid urban growth*, *surpassing* Thailand in 2000 and the Philippines in 2010. By 2040, it is expected to be the second most urbanized country among the four. Meanwhile, Thailand's urban population increased steadily from below 20% in 1970 to around 30% in 2020 and is *predicted* to reach approximately 45% by 2040.
 
 ### 饼图
 
@@ -115,7 +140,7 @@ Hence, viewing rural-to-urban migration through a binary lens of positive or neg
 **2. In many countries, people are now living longer than ever before. Some people say an ageing population creates problems for governments. Other people think there are benefits if society has more elderly people. To what extent do the advantages of having an ageing population outweigh the disadvantages?**
 
 efore. While some people suggest the ageing population leads to problems for the government, others maitain it's beneficial to have more elderly poeple.
-On one hand, a vast number of elderly people create a significant financial burden for the government and the young. The government has to impose more taxes on young people mainly due to the social security for the elderly including pensions and healthcare fees to ensure their life quality. Meanwhile, the ageing population may lead to a lack of labor because the base population doesn;t change a lot but the proportion of the young is relatively low. Therefore, there're plenty of vacant positions in the workforce. This may contribute to the decline of the economy and the stagnancy of development, which the government has to introduce policies such as encouraging migrants to deter from getting worse.
+On one hand, a vast number of elderly people create a significant financial burden for the government and the young. The government has to impose more taxes on young people mainly due to the social security for the elderly including pensions and healthcare fees to ensure their life quality. Meanwhile, the ageing population may lead to a lack of labor because the base population doesn; t change a lot but the proportion of the young is relatively low. Therefore, there're plenty of vacant positions in the workforce. This may contribute to the decline of the economy and the stagnancy of development, which the government has to introduce policies such as encouraging migrants to deter from getting worse.
 On the other hand, the increasing life span does imply that people have a better life in the modern world thanks to the advanced medical technology and social welfares. The aging population may greatly promote the medical industry, as there's a large demand in inventing more efficient drugs and finding treatments of some rare diseases which haven't been cured. On top of that, the elder may boost the local tourism as some of them are reluctant to stay at home after retirement. They can pay a visit to a number of attractions they haven't gone in their young ages or have anticipated for a long time.
  In conclusion, from my perspective, the benefits of an increasingly older population are kinds of limited, only conducive to medical industry and tourism while the harmful effects potencially impacting the whole society can't be neglected, which is really a headache for the government.
 
