@@ -8,13 +8,15 @@
 >
 > 首先想到的：off the top of my head
 >
-> 关于：when it comes to/regarding/in terms of/as for..
+> 关于：when it comes to/regarding/in terms of/as for/speaking of..
 >
 > 除了：apart from
 >
 > 句型：what I appreciate/admire/love most is, what intrigues me most is, what makes .. so .. is
 
 ## Part 1
+
+
 
 ## Part 2
 

@@ -1620,13 +1620,13 @@ How you learned to do it
 
 And explain why you like it
 
->  **One sport that I really enjoy is badminton.** Badminton is one of the most popular sports in the world. Badminton can be played indoors or outdoors, but I usually play it indoors, especially when the weather isn't ideal for outdoor sports.
+>  **One sport that I really enjoy is badminton.** Badminton is one of the most popular sports in the world.  I usually play it indoors, especially when the weather isn't ideal for outdoor sports.
 >
 >  I play badminton **at least two or three times a week**. I often play with friends at the court in school. It's one of my ==go-to activities== to stay active and also have fun.
 >
 >  I first learned to play badminton when I was **in primary school**, around 10 years old. Initially, I wasn't very good at it, but I joined a school club where we had a coach who taught us the fundamentals, like how to serve, how to hold the racket, and how to move around the court. Over the years, I improved by practicing with friends and watching professional matches, which helped me understand the techniques and strategies better.
 >
->  There are several reasons why I enjoy badminton so much. **First, it's a great workout**. It's a very dynamic sport, requiring quick movements, jumps, and fast reflexes. Playing regularly has helped me ==improve my stamina and agility==. **Second, it's a very social sport**. Whether I'm playing doubles with friends or participating in a friendly competition, it's always fun to connect with others while being active. Lastly, I find badminton to be a sport that requires a lot of concentration and skill, so it's challenging in a good way, and the more I play, the better I get at it. It's very rewarding to see progress and to be able to pull off tricky shots.
+>  There are several reasons why I enjoy badminton so much. **First, it's a great workout**. It's a very dynamic sport, requiring quick movements, jumps, and fast reflexes. Playing regularly has helped me ==improve my stamina and agility==. **Second, it's a very social sport**. Whether I'm playing doubles with friends or participating in a friendly competition, it's always fun to connect with others while being active. Lastly, I find badminton to be a sport that requires a lot of concentration and skill, so it's challenging in a good way, and the more I play, the better I get at it. It's very rewarding to see progress and to be able to ==pull off tricky shots==.
 >
 >  Overall, badminton is not only fun but also a great way for me to stay fit, sharpen my mind, and spend time with friends. That's why I really like playing it.
 
@@ -1782,15 +1782,15 @@ What you did
 Who you were with
 And how you felt about it
 
-> I’d like to talk about last weekend when I had a free day off from school and decided to spend it visiting West Lake, which is conveniently located near my campus. It was a relaxing and memorable afternoon, and I really enjoyed the break from my usual routine.
+> I’d like to talk about last weekend when I had a free day off from school and decided to visit West Lake with my roommate. It’s really close to our campus, just a short metro ride away, so we didn’t have to wake up early or rush. It was such a relaxing and fun day, and I really needed the break.
 >
-> Since West Lake is just a short metro ride away, my roommate and I didn’t need to wake up early or rush. We left in the early afternoon and arrived at the lake in no time. The weather was perfect—sunny with a cool breeze—and the atmosphere around the lake was peaceful and inviting. We spent the first part of the afternoon strolling along the lakeside, taking in the stunning views of the water, willow trees, and distant mountains. The scenery was so beautiful that we couldn’t resist taking lots of photos to capture the moment.
+> We left in the early afternoon, and the weather was perfect—sunny but not too hot, with a nice breeze. When we got to the lake, the atmosphere was so peaceful. We spent the first part of the day walking around the lake, enjoying the ==beautiful views of the water, willow trees, and mountains in the distance==. The scenery was so pretty that we took lots of photos to remember it.
 >
-> As the sun began to set, we found a quiet spot by the lake to sit and watch the sunset. The sky turned into a mix of orange, pink, and purple hues, reflecting on the water, and it was truly breathtaking. It felt like a scene from a painting, and I remember feeling completely at peace while enjoying the view. My roommate and I chatted about life, school, and our future plans, which made the experience even more special.
+> Later, we found a quiet spot by the lake to watch the sunset. The sky turned into amazing shades of orange, pink, and purple, and it reflected on the water, making it look like a painting. It was so peaceful, and I felt completely relaxed. My roommate and I talked about life, school, and our plans for the future, which made the moment even more special.
 >
-> After the sunset, we explored the nearby shopping area, which is a blend of traditional and modern styles. We wandered through some local shops, bought a few souvenirs, and even tried some famous Hangzhou snacks, like *dongpo pork* and *longjing tea*. It was a leisurely way to end the day, and we didn’t feel rushed at all.
+> After the sunset, we ==checked out== the nearby shopping area, which has a mix of traditional and modern shops. We bought some souvenirs and tried some local snacks, like *dongpo pork* and *longjing tea*. It was a really chill way to end the day, and we didn’t feel rushed at all.
 >
-> What made this day so enjoyable was the combination of natural beauty, good food, and great company. Spending time with my roommate in such a serene setting helped me unwind and forget about the stress of schoolwork. By the end of the day, I felt refreshed and grateful for the simple yet meaningful experience. It reminded me how important it is to take breaks and appreciate the little things in life.
+> What made this day so great was the combination of beautiful nature, good food, and spending time with my roommate. It helped me forget about school stress and just enjoy the moment. By the end of the day, I felt ==refreshed== and happy. It reminded me how important it is to take breaks and appreciate the little things in life.
 
 **1. Do people nowadays have more free time than in the past?** 
 It’s ==debatable== whether people today have more free time than in the past. On one hand, advancements in technology and automation have reduced the time needed for many tasks, such as household chores or commuting. On the other hand, the fast-paced nature of modern life, with its demanding work schedules and constant connectivity, often leaves people feeling busier than ever. While some may have more free time in theory, they might struggle to use it effectively due to stress or distractions like social media.
@@ -1819,13 +1819,13 @@ How you knew this place
 What it is like
 And explain why you would like to visit it
 
-> I’d like to talk about the Amazon Rainforest, which is one of the most fascinating and biodiverse places on Earth. Located primarily in Brazil, the Amazon spans across several South American countries and is often referred to as the "lungs of the planet" because of its vast number of trees and its role in producing oxygen.
+> I’d like to talk about the Amazon Rainforest, which is one of the most fascinating and biodiverse places on Earth. Located primarily in Brazil, the Amazon ==spans across== several South American countries and is often referred to as the "lungs of the planet" because of its vast number of trees and its role in producing oxygen.
 >
 > I first learned about the Amazon Rainforest in school during a geography class. We studied its importance to the global ecosystem, its incredible variety of plant and animal species, and the challenges it faces due to deforestation. Since then, I’ve been intrigued by this place and have watched documentaries and read articles about it, which have deepened my interest.
 >
-> The Amazon Rainforest is a lush, green paradise filled with towering trees, dense vegetation, and winding rivers. It’s home to millions of species, including exotic birds, monkeys, jaguars 美洲虎, and countless insects. The sheer scale of the forest is overwhelming—it’s so vast that it feels like an entirely different world. The sounds of wildlife, the fresh, earthy scent of the forest, and the sight of sunlight filtering through the canopy create a magical atmosphere.
+> The Amazon Rainforest is a ==lush, green paradise filled with towering trees, dense vegetation, and winding rivers==. It’s home to millions of species, including exotic birds, monkeys, jaguars 美洲虎, and countless insects. The sheer scale of the forest is overwhelming—it’s so vast that it feels like an entirely different world. The sounds of wildlife, the fresh, earthy scent of the forest, and the sight of sunlight filtering through the canopy(森林里天篷似的树荫) create a magical atmosphere.
 >
-> I would love to visit the Amazon Rainforest because it offers a unique opportunity to connect with nature on a profound level. It’s a place where you can truly escape the hustle and bustle of modern life and immerse yourself in the beauty and tranquility of the natural world. I’m also passionate about environmental conservation, and visiting the Amazon would allow me to witness firsthand the importance of protecting such a vital ecosystem. Additionally, I’d love to learn about the indigenous communities that live there and understand their way of life, as they have a deep connection to the forest.
+> I would love to visit the Amazon Rainforest because it offers a unique opportunity to ==connect with nature on a profound level==. It’s a place where you can truly ==escape the hustle and bustle of modern life and immerse yourself in the beauty and tranquility of the natural world==. I’m also passionate about ==environmental conservation==, and visiting the Amazon would allow me to witness firsthand the importance of protecting such a vital ecosystem. Additionally, I’d love to learn about the indigenous communities that live there and understand their way of life, as they have a deep connection to the forest.
 >
 > Overall, the Amazon Rainforest represents both the beauty and fragility of our planet, and visiting it would be an unforgettable experience that combines adventure, learning, and a deeper appreciation for nature.
 
@@ -1848,17 +1848,17 @@ Why you think the discussion was interesting
 
 And how you felt about it
 
->  One interesting discussion I had with my best friend took place in secondary school. It was a spontaneous conversation we had one afternoon while we were walking around the playground, just enjoying the fresh air and chatting. The topic of our discussion was “predicting the future”, which might sound a bit strange, but at the time, it felt like such a thought-provoking subject that we'd never really discussed before.
+>  I’d like to talk about a really interesting conversation I had with my best friend back in secondary school. It happened one afternoon while we were walking around the playground, just chatting and enjoying the fresh air. The topic we ended up discussing was “predicting the future,” which might sound a bit unusual, but it turned out to be a really ==thought-provoking== conversation.
 >
->  The conversation started when I casually mentioned that I thought I had the ability to predict my own future, at least in the short term. This might seem a bit odd, but what I meant was that I had a clear idea of what was going to happen on a daily basis. I knew my class schedule, when I would have breaks, what homework I needed to do, and even which teacher would be teaching each subject. To me, this gave me a sense of predicting the flow of my day, almost as if I could foresee every detail of the next few hours.
+>  It all started when I casually mentioned that I felt like I could predict my own future, at least in the short term. What I meant was that I had a clear idea of what my day would look like—like my class schedule, when I’d have breaks, and what homework I needed to do. To me, that felt like predicting the future because I knew exactly what was coming next.
 >
->  However, my best friend didn't agree with me at all. She argued that true prediction had to **go beyond just routine events** and needed to involve a deeper understanding of life, people, and the world around us. To her, predicting the future meant understanding things like global events, personal relationships, or even life-changing decisions—things that weren't just a matter of knowing a schedule or plan.
+>  But my friend didn’t agree at all. She said that real prediction had to ==go beyond just knowing routines==. To her, it meant understanding bigger things, like global events, relationships, or life-changing decisions. She thought true prediction required intuition and insight, not just logical thinking.
 >
->  As we continued our discussion, I found it really interesting to hear her point of view. She started to tell me that some people, like scientists or philosophers, might be able to predict things based on data and research, but she felt that true prediction required more than just logical reasoning. It had to involve a kind of intuition or foresight that went beyond the rational understanding of the present. Though we had very different ideas about what it meant to predict the future, we recognized that both views could be valid in their way.
+>  As we kept talking, I found her perspective really fascinating. She even ==brought up==(提出) how scientists and philosophers might predict things based on data, but she believed there was more to it than just facts and research. Even though we had different views, we both realized that our ideas could be valid in their own way.
 >
->  What made this discussion so fascinating was that we both tried to make sense of something that seemed very abstract. We didn't come to any conclusions, but the conversation **sparked a deeper interest in how we think about time, destiny, and control over our lives**. It made me realize that predicting the future is not as simple as I once thought—it involves many layers of thinking, from knowing our routines to trying to understand bigger life events.
+>  What made this discussion so interesting was that it made me think about time, destiny, and how much control we really have over our lives. We didn’t ==come to any conclusions==, but it definitely sparked my curiosity about the future and how we understand it.
 >
->  After that day, I found myself thinking a lot about how we define the future and whether we have control over it, or if it's something entirely beyond our understanding. We still talk about similar topics now, but that walk around the playground remains one of the most interesting and thought-provoking conversations we've had.
+>  Even now, I still think about that conversation sometimes. It was one of the most thought-provoking discussions I’ve ever had, and it’s something I’ll always remember.
 
 **1. When do children normally form their own views?**
 
@@ -1900,7 +1900,7 @@ And how you felt about it
 
 >  One toy I absolutely loved as a child was a dragon doll. I can still remember how excited I was when I first got it, as I had always been fascinated by dragons ever since I was little. I think my love for dragons started from reading fairy tales and watching animated movies where these mythical creatures were portrayed as **powerful and majestic beings**. So, when I got the dragon doll, it felt like I finally had my own little piece of the fantasy world.
 >
-> The dragon doll itself was quite special. It was a vibrant green color, with golden wings that shimmered when the light hit them. The body was **soft and plush**, but the wings and tail had a slightly stiffer texture, which made them stand out. It also had bright, sparkling eyes that gave it a very lifelike appearance, almost as though ==it could come to life at any moment==. I used to spend hours playing with it, imagining all sorts of adventures where my dragon would fly through the skies and protect me from imaginary villains（坏人）.
+> The dragon doll itself was quite special. It had a vibrant green color, with golden wings that shimmered when the light hit them. The body was **soft and plush**, but the wings and tail had a slightly stiffer texture, which made them stand out. It also had ==bright, sparkling eyes== that gave it a very lifelike appearance, almost as though ==it could come to life at any moment==. I used to spend hours playing with it, imagining all sorts of adventures where my dragon would fly through the skies and protect me from imaginary villains（坏人）.
 >
 > What made this toy even more memorable for me was **the sense of wonder and creativity it sparked**. I didn't just play with it as a regular doll. I created entire worlds and stories around it, and it became a companion during many of my childhood games. It helped me develop my imagination and storytelling skills, as I would invent elaborate scenarios and scenarios involving my dragon. It also made me feel like I could escape into a fantasy realm whenever I wanted, which was something I really valued as a child.
 >
@@ -1977,9 +1977,9 @@ And explain how you feel about it
 >
 > What I find particularly effective about this method is that it helps me maintain a **high level of focus** during those short bursts of time. I often turn off my phone and eliminate any distractions during each session. Surprisingly, I can accomplish much more in those concentrated intervals than when I try to study for hours on end without a clear structure. The breaks also prevent me from feeling burnt out, allowing me to sustain my energy levels throughout the day.
 >
-> Besides, the Pomodoro Technique helps me **stay motivated** because it adds a sense of urgency. I try to challenge myself to complete a specific task before the timer runs out, which keeps me engaged. Additionally, after a few cycles, I reward myself with something small, like a cup of coffee or some snacks, which helps me stay refreshed and ready to continue.
+> Besides, the Pomodoro Technique helps me **stay motivated** because ==it adds a sense of urgency==. I try to challenge myself to complete a specific task before the timer runs out, which keeps me engaged. Additionally, after a few cycles, I reward myself with something small, like a cup of coffee or some snacks, which helps me stay refreshed and ready to continue.
 >
-> In conclusion, this simple yet effective technique has greatly improved my ability to concentrate and manage my time efficiently. It's definitely something I would recommend to anyone struggling to stay focused, whether it's for studying or even working on other projects.
+> In conclusion, this ==simple yet effective== technique has greatly improved my ability to concentrate and manage my time efficiently. It's definitely something I would recommend to anyone struggling to stay focused, whether it's for studying or even working on other projects.
 
 1. Why is it more difficult for children to concentrate nowadays than in the past?
 2. Do you think technology will harm children's ability to concentrate?
@@ -2002,15 +2002,14 @@ What it looks like
 
 And explain why it is important
 
-> Yangtze River
+> I’d like to talk about the Yangtze River, which is one of the most important rivers in my country, China. It’s located in the eastern part of the country, stretching over 6,300 kilometers from the Qinghai-Tibet Plateau in the west to the East China Sea in the east. It’s the longest river in Asia and the third-longest in the world, so its size alone makes it remarkable.
 >
-> 特点：stretching over 6,300 kilometers, originates in the Qinghai-Tibet Plateau,   flows eastward to East China Sea
+> The Yangtze River is incredibly diverse in terms of its landscape. In the upper reaches, near its source, the river flows through steep mountains and deep valleys, creating breathtaking scenery. As it moves eastward, it passes through lush plains, bustling cities, and fertile farmlands. The river itself is wide and powerful, especially in the middle and lower sections, where it carries a huge volume of water. One of the most famous parts of the river is the Three Gorges, a stunning area with towering cliffs and dramatic views.
 >
-> 重要性：holds significant historical, cultural, and economic importance
+> The Yangtze River is not just a natural wonder—it’s also a lifeline for millions of people. Historically and culturally, it has played a central role in Chinese civilization, often referred to as the “Mother River.” Many ancient cities and cultural sites are located along its banks, making it a symbol of China’s rich heritage.
 >
-> support the livelihoods of people, hydroelectric project -- the Three Gorges Dam
+> Economically, the river is vital. It supports the livelihoods of people through agriculture, fishing, and transportation. The Yangtze River Basin is one of the most productive regions in China, contributing significantly to the country’s economy. Additionally, the river is home to the Three Gorges Dam, the world’s largest hydroelectric power station, which generates clean energy and helps control flooding.
 >
-> 结论：not just a natural wonder, but also a lifeline for millions of people 
 
 1. How can rivers/lakes benefit local people?
 2. Do you think rivers/lakes attract tourists?
@@ -2033,19 +2032,13 @@ What it is made of
 
 And explain how you feel about it
 
->  介绍：**Gu Zheng** = Chinese zither, long history, a long, wooden instrument with typically 21 strings, played by plucking the strings using one's fingers, often with the help of finger picks made of plastic or even tortoiseshell
+>  I’d like to talk about the **Gu Zheng**, which is a traditional Chinese musical instrument. It’s a type of zither with a long history, dating back over 2,500 years. The Gu Zheng is a long, wooden instrument with 21 strings, and it’s played by plucking the strings using fingers, often with the help of ==finger picks== made of plastic or tortoiseshell.
 >
-> I: bring me a sense of calm and relaxation. There's something almost meditative about running my fingers along the strings and producing those flowing, melodic sounds.
+> One of the things I love about the Gu Zheng is its unique sound. It has a very distinct timbre—delicate yet powerful—and it can mimic the sound of flowing water. This is why it’s often used in traditional Chinese music to ==evoke（引起） the beauty of nature==. Listening to or playing the Gu Zheng brings me a sense of calm and relaxation. There’s something almost meditative about the flowing, melodic sounds it produces.
 >
-> 特点：
+> The Gu Zheng is deeply intertwined with Chinese culture and history. It’s often played during festivals and special occasions, and it can convey a wide range of emotions, from joy to sadness. For me, learning to play the Gu Zheng has been both challenging and rewarding. It requires a lot of precision and control, especially when using techniques like vibrato and glissando to express different moods. But the effort is worth it because it has helped me connect with my cultural heritage and develop a deeper appreciation for traditional Chinese music.
 >
-> 1. The instrument has a very distinct timbre, often described as both delicate and powerful. It can mimic the sound of flowing water, which is why it's commonly used in traditional Chinese music to evoke the beauty of nature.
->
-> 2. deeply intertwined with Chinese culture and history, played during festivals, convey a wide range of emotions
->
-> (For me, mastering the Gu Zheng has been both a challenging and rewarding journey. It requires a lot of precision and control, especially when it comes to finger movements and using techniques like vibrato and glissando to express different moods. However, the effort is definitely worth it because, beyond the technical skills, it has helped me connect with my cultural heritage and develop a deeper appreciation for traditional Chinese music.)
->
-> 总结：not just an instrument, a bridge that connects the past with the present and has enriched my life both musically and culturally
+> In conclusion, the Gu Zheng is not just an instrument—it’s a bridge that connects the past with the present. It has enriched my life both musically and culturally, and I think it’s a beautiful representation of China’s artistic traditions.
 
 1. Why are traditional products important?
 2. Do you think traditions are important for a country? why?
@@ -2068,17 +2061,13 @@ Whether the song is popular
 
 And explain why you think it is interesting
 
->  One song that I find particularly interesting is **PPAP**, which stands for *Pen-Pineapple-Apple-Pen*. It was released by a Japanese artist named **Pikotaro** in 2016 and became an unexpected viral sensation. The song itself is quite simple, both in terms of its lyrics and its melody, but it's the quirky and absurd nature of it that makes it so interesting.
+>  I’d like to talk about a song called **PPAP**, which stands for *Pen-Pineapple-Apple-Pen*. It’s a super catchy and quirky song by a Japanese artist named **Pikotaro**, and it went viral back in 2016. What makes it so interesting is how simple and silly it is, but also how addictive it became.
 >
-> The song's lyrics are ridiculously catchy and repetitive, consisting mostly of the words "Pen," "Pineapple," "Apple," and "Pen" being paired together in a way that doesn't make any logical sense. For example, Pikotaro sings "I have a pen, I have an apple, uh! Apple pen!" It sounds almost childish, but that's what makes it so entertaining. The repetitive nature of the song, combined with its simple but energetic beat, creates a sense of fun and lightheartedness that's hard not to smile at when you hear it.
+> The lyrics are basically just the words “pen,” “pineapple,” and “apple” repeated in different combinations, like “I have a pen, I have an apple, uh! Apple pen!” It doesn’t make much sense, but it’s so fun and easy to remember. The beat is really upbeat and energetic, and there’s a simple dance that goes with it, where you pretend to hold a pen and an apple. It’s so easy that people all over the world started copying it and sharing their own versions online.
 >
-> What really grabbed people's attention, though, was the **dance** that goes along with the song. It's very simple, just a few hand gestures mimicking the action of holding a pen and an apple, but it became so iconic that people from all over the world started making their own versions of the dance, adding to its viral appeal. I think that's why it became such a huge hit globally, even though it's not a serious or traditional song. It has this kind of **silly charm** that makes it hard to forget.
+> What I find fascinating about this song is how it became ==a global phenomenon==. It’s not a serious or deep song at all, but its humor and absurdity made it go viral on social media. It even appeared on TV shows and became a meme. For me, it’s a great example of how something simple and fun can capture everyone’s attention and bring people together.
 >
-> Despite the song's simplicity, I find it interesting because of how **infectious** it is. You can hear it just once, and it'll stay stuck in your head for hours, which is a sign of a very successful and memorable song. Even though it's not a song with deep lyrics or complex composition, its charm comes from how it plays with absurdity and humor, and how it reflects the way people in today's world are drawn to quirky, offbeat content.
->
-> What I also find fascinating about **PPAP** is how it became a **cultural phenomenon**. The song was widely shared on social media and even appeared on various TV shows and in memes. It became a symbol of internet culture, and even though Pikotaro is a relatively unknown artist, he gained worldwide recognition because of it. So, for me, **PPAP** is a great example of how the Internet and social media can turn something unexpected into a global trend.
->
-> In conclusion, I find **PPAP** interesting not just because of the catchy tune and the silly dance, but because it represents a unique moment in pop culture where something simple, quirky, and unexpected can capture the attention of millions and go viral. It's a fun song that always makes me smile whenever I hear it.
+> In short, **PPAP** is a song that always makes me smile because of its silly charm and how it became such a big part of internet culture.
 
 1. Why are many music competitions popular in China?
 2. What kinds of music do young people like?
@@ -2101,19 +2090,15 @@ Who helped you to organize it
 
 And explain why you think it was a successful event
 
->  One event that I organized successfully was an **icebreaker activity** for a student society that I'm part of. This took place last semester when our society was welcoming new members, and we wanted to create a warm and friendly atmosphere where everyone could get to know each other better.
+>  One successful event I organized was an **icebreaker activity** for my student society last semester. The goal was to help new members feel more comfortable and connected.
 >
-> The idea of organizing this event came to me because I noticed that new members often felt a bit **shy and hesitant** to interact with others during our meetings. Since I was in charge of member engagement, I decided to hold an icebreaker activity to help everyone feel more comfortable and connected.
+> I prepared by researching fun games like "Two Truths and a Lie" and a scavenger hunt, which were interactive and easy to run. I also reserved a room, arranged snacks, and created a schedule to keep things on track. A few friends helped me set up and manage the activities on the day.
 >
-> To organize the event, I first spent some time **researching fun and engaging icebreaker games** that would be suitable for a group of around 30 people. I eventually settled on a mix of activities, such as "Two Truths and a Lie" and a team-based scavenger hunt. These games were interactive, easy to participate in, and didn't require any special equipment, which made it practical given our limited resources.
+> At first, people were a bit shy, but once the games started, everyone began laughing and interacting. The "Two Truths and a Lie" game was especially effective because it encouraged people to share interesting facts about themselves, sparking lively conversations.
 >
-> Next, I planned out the logistics. I reserved a spacious room on campus, made sure we had all the necessary materials like notepads and small prizes for the winners and even arranged for some **snacks and refreshments**. I also created a schedule to ensure that everything ran smoothly, starting with a quick introduction, followed by the games, and ending with some free time for everyone to chat.
+> Afterward, I received a lot of positive feedback. Many members said they felt more at ease and excited about future events. This made me proud because I had achieved my goal of creating a welcoming atmosphere.
 >
-> On the day of the event, I was a bit nervous about whether everything would go as planned. However, to my relief, the activities turned out to be a **huge success**. The new members were **initially a bit reserved**, but once the games began, everyone started laughing, interacting, and forming new friendships. The "Two Truths and a Lie" game was particularly effective because it encouraged people to share interesting facts about themselves, which led to some lively discussions.
->
-> The feedback I received afterward was overwhelmingly positive. Many members told me that the icebreaker activities helped them feel **more at ease** and excited to participate in future societal events. This made me feel incredibly proud because I had achieved my goal of fostering a welcoming and inclusive environment.
->
-> **In hindsight**（事后回想）, organizing this event taught me a lot about **planning and time management**. It also boosted my confidence in my organizational skills, and I felt a great sense of accomplishment knowing that I had brought people together and helped create a sense of community. It's definitely an experience I would love to repeat, and I'm already thinking of ways to make the next event even more engaging.
+> Overall, the event taught me about planning and teamwork, and I felt a great sense of accomplishment. It’s definitely an experience I’d love to repeat.
 
 1. How can parents help children to be organized?
 2. On what occasions do people need to be organized?
@@ -2172,8 +2157,8 @@ And how you felt about it
 >  So, my little cousin was only 8 or 9 years old at that time, and he just got a new puzzle for his birthday. It was a big one, probably 200 pieces. So, obviously, it was a bit of a challenge for him.
 > My uncle and his wife were cooking in the kitchen, and they left me and my cousin in the living room. In the beginning, the little boy was trying to show off（显摆） by putting the puzzle together all by himself. But very soon, he realized that it was a “mission impossible”（不可能的任务）. So, he turned to（求助于我） me. I saw those puppy eyes（狗狗眼，可怜巴巴的），I couldn't say NO, and I decided to give him a hand（帮一把） and teach him the logic behind ==assembling a puzzle==.
 > In terms of how I helped him, basically, I helped him by teaching him the logic of doing a puzzle. I told him to always start from finding the corner pieces（四角的块块） and the edge pieces（四条边线上的块块）. That would set the stage（铺垫前景） and make things much easier（让事情变得简单）. 
-> So, together, we picked out the four corner pieces first, and, bit by bit, we hunted down（找到） all the edge pieces, lining them up（连成一条直线） to frame the whole picture. My cousin got the hang of it（找到感觉，上手）pretty quick, his little hands moving faster with each piece he placed. I was just there to tell him in the right direction from time to time. Then, piece by piece, the image started to come alive（呈现出来）, and you could tell he was really proud of what he was achieving. By the time we put in the last piece, the whole picture looked awesome. It put a big smile on his smile（让他很开心）.
-> He couldn't thank me enough（非常感谢）. I felt quite happy that I helped him and taught him some new skills. I enjoyed the feeling of “imparting knowledge”（传输知识） and also being the super hero for my little cousin.
+> So, together, we picked out the four corner pieces first, and, bit by bit, we ==hunted down==（找到） all the edge pieces, lining them up（连成一条直线） to frame the whole picture. My cousin got the hang of it（找到感觉，上手）pretty quick, his little hands moving faster with each piece he placed. I was just there to tell him in the right direction from time to time. Then, piece by piece, the image started to come alive（呈现出来）, and you could tell he was really proud of what he was achieving. By the time we put in the last piece, the whole picture looked awesome. It put a big smile on his smile（让他很开心）.
+> He couldn't thank me enough（非常感谢）. I felt quite happy that I helped him and taught him some new skills. I enjoyed the feeling of “==imparting knowledge==”（传输知识） and also being the super hero for my little cousin.
 
 1. Do you often help kids? How?
 2. Why is it necessary to do volunteer services?
@@ -2194,11 +2179,11 @@ What he/she posts on social media
 
 And explain why you follow him/her on social media
 
->  I’d like to talk about Zhou Shen, a Chinese singer whom I follow on social media. Zhou Shen is widely known for his exceptional vocal range and his ability to sing in various styles, from pop to classical music.
+>  I’d like to talk about Zhou Shen, a Chinese singer whom I follow on social media. Zhou Shen is widely known for his ==exceptional vocal range== and his ability to sing in various styles, from pop to classical music.
 >
 >  I first discovered him a few years ago when I heard one of his songs featured in a popular TV drama called "The Voice of China." His voice immediately caught my attention – it has this **ethereal**（超凡的）, almost **otherworldly** quality. Since then, I’ve followed his updates on platforms like Weibo and NetEase Music.
 >
->  What really attracts me to follow Zhou Shen on social media is **his authenticity and his connection with fans**. Despite his fame, he’s always been very humble and down-to-earth. His posts often feature behind-the-scenes glimpses of his life, from rehearsals to casual moments in his life. He shares his thoughts on music and life, and this personal touch makes him more relatable. I also admire how he interacts with his fans; for example, he often responds to comments and occasionally holds live-streaming sessions where he chats with his followers, which helps him build a closer relationship with his audience.
+>  What really attracts me to follow Zhou Shen on social media is **his authenticity and his connection with fans**. Despite his fame, he’s always been very humble and down-to-earth. His posts often ==feature== behind-the-scenes glimpses of his life, from rehearsals to casual moments in his life. He shares his thoughts on music and life, and this personal touch makes him more ==relatable==. I also admire how he interacts with his fans; for example, he often responds to comments and occasionally holds live-streaming sessions where he chats with his followers, which helps him build a closer relationship with his audience.
 >
 >  Apart from his music, Zhou Shen is also quite **involved in charitable activities**, and he uses his platform to raise awareness about important social issues. On his social media, he often posts about his involvement in fundraising campaigns, environmental causes, and other initiatives to help those in need. I really appreciate that he doesn’t just use his fame for personal gain, but also for the greater good, which makes me respect him even more.
 >
@@ -2225,13 +2210,13 @@ How difficult it is
 
 And explain how you feel about the way/change
 
-> One change that has significantly helped me save time and increase my productivity is using the Pomodoro Technique. This is a time-management method that involves working in focused bursts of 25 minutes, followed by a 5-minute break. After completing four ‘Pomodoros' , you take a longer break of 15-30 minutes. I first came across the Pomodoro Technique during university when I was struggling to balance studying with other commitments.
+> One change that has significantly helped me save time and increase my productivity is using the Pomodoro Technique. This is a ==time-management method== that involves working in focused bursts of 25 minutes, followed by a 5-minute break. After completing four ‘Pomodoros' , you take a longer break of 15-30 minutes. I first came across the Pomodoro Technique during university when I was struggling to balance studying with other commitments.
 >
-> Before I started using it, I would often **find myself procrastinating or working inefficiently** for long hours without getting much done. The Pomodoro Technique has completely transformed the way I approach tasks. It breaks down the work into manageable chunks, so I never feel overwhelmed, and the short breaks allow me to recharge before diving back into the task.
+> Before I started using it, I would often **find myself procrastinating or working inefficiently** for long hours without getting much done. The Pomodoro Technique has completely transformed the way I approach tasks. It breaks down the work into manageable chunks, so I never ==feel overwhelmed==, and the short breaks allow me to recharge before diving back into the task.
 >
 > One of the major advantages is that it helps me stay **highly focused**. Knowing that I only need to work for a short, set period means that I'm less likely to get distracted or lose motivation. I find that I'm able to maintain a higher level of concentration compared to when I try to work for several hours straight. Over time, I've found that I'm able to complete tasks much faster, without compromising the quality of my work.
 >
-> In addition, the Pomodoro Technique also encourages me to be more mindful about how I use my time. Because I have these short breaks, I've become more conscious of my productivity patterns and can adjust my workflow if I feel I'm not being as efficient as I could be. Overall, adopting the Pomodoro Technique has saved me a lot of time by helping me **work more effectively, stay organized, and reduce burnout**. 
+> In addition, the Pomodoro Technique also encourages me to be more mindful about how I use my time. Because I have these short breaks, I've become more ==conscious of== my productivity patterns and can ==adjust my workflow== if I feel I'm not being as efficient as I could be. Overall, adopting the Pomodoro Technique has saved me a lot of time by helping me **work more effectively, stay organized, and reduce burnout**. 
 >
 
 1. What can people do to save time?
@@ -2306,7 +2291,7 @@ Both governments and private companies have roles to play in supporting inventor
 An area for improvement is plastic materials. While plastic is versatile and durable, its non-biodegradable nature has led to environmental crises. Developing eco-friendly alternatives or better recycling methods is essential.
 
 **5. Do you think only scientists can invent new things?**
-No, I don’t think only scientists can invent new things. While scientists often play a key role in technological and medical advancements, ==inventors come from all walks of life==. For example, entrepreneurs, engineers, artists, and even everyday individuals can come up with innovative ideas or solutions to problems. Many inventions arise from practical needs or creative thinking rather than formal scientific research. Collaboration across different fields and perspectives often leads to the most groundbreaking innovations.
+No, I don’t think only scientists can invent new things. While scientists often play a key role in technological and medical advancements, ==inventors come from all walks of life==. For example, entrepreneurs, engineers, artists, and even everyday individuals can come up with innovative ideas or solutions to problems. Many inventions arise from practical needs or creative thinking rather than formal scientific research. Collaboration across different fields and perspectives often leads to the most ==groundbreaking innovations==.
 
 **6. Are there any other inventions that make the world better?**
 Yes, there are countless inventions that have made the world better. For instance, the internet has revolutionized communication, education, and access to information, connecting people across the globe. Medical inventions like vaccines and antibiotics have saved millions of lives and improved public health. Renewable energy technologies, such as solar panels and wind turbines, are helping to combat climate change by providing cleaner alternatives to fossil fuels. These inventions demonstrate how creativity and innovation can address global challenges and improve quality of life.
@@ -2325,9 +2310,9 @@ What you did
 
 And explain why you were busy
 
->  I'd like to talk about a time when I was extremely busy, which happened during the exams week in college last semester. It was one of the most **stressful periods** I've ever experienced because I had to prepare for nine exams, and I only had a week to do it. To be honest, I got myself into that situation because I had ==procrastinated on my review schedule== and left everything until the last minute.
+>  I'd like to talk about a time when I was extremely busy, which happened during ==the exams week== in college last semester. It was one of the most **stressful periods** I've ever experienced because I had to prepare for nine exams, and I only had a week to do it. To be honest, I got myself into that situation because I had ==procrastinated on my review schedule== and left everything until the last minute.
 >
->  At the start of that week, I realized how much I needed to catch up on. Each subject required intensive preparation, and the topics were quite challenging. I was ==overwhelmed==, but there was no time to waste, so I quickly created a strict study plan. I divided my time into blocks, dedicating several hours each day to each subject, and even sacrificed sleep to make more time for studying. There were days when I was up until 3 or 4 in the morning, only to wake up a few hours later and continue revising.
+>  At the start of that week, I realized how much I needed to ==catch up on==. Each subject required intensive preparation, and the topics were quite challenging. I was ==overwhelmed==, but there was no time to waste, so I quickly created a strict study plan. I divided my time into blocks, dedicating several hours each day to each subject, and even sacrificed sleep to make more time for studying. There were days when I was up until 3 or 4 in the morning, only to wake up a few hours later and continue revising.
 >
 >  To make things even more stressful, all the exams were **back-to-back with no breaks in between**. I remember one particular day when I had two exams, one in the morning and another in the afternoon. As soon as I finished the first exam, I rushed to the library to cram for the next one. I had to juggle multiple textbooks, class notes, and online resources, trying to digest as much information as possible in a short time.
 >
@@ -2335,7 +2320,6 @@ And explain why you were busy
 >
 >  In the end, it was an exhausting week, but it paid off. I managed to ==get through== all nine exams, and although I didn't get perfect scores, I was able to pass them all with decent grades. The experience taught me a valuable lesson about **time management** and the importance of starting my preparation early. I realized that the stress and sleepless nights could have been avoided if I had been more disciplined with my study schedule from the beginning.
 >
->  Looking back, it was definitely one of the busiest and most intense weeks of my college life. But it also showed me that when pushed to the limit, I'm capable of focusing and working hard under pressure. Now, I always try to plan ahead to avoid getting into such stressful situations again.
 
 1. Are you often busy? 
 
@@ -2374,7 +2358,7 @@ And explain why it surprised you and made you happy
 >
 > What made this surprise so special was the effort he put into it. It wasn't just any store-bought cake—it was **handcrafted and customized** with my favorite flavors and decorations. Apparently, he had **coordinated with** a local bakery near my school. The cake had a small note attached, expressing how much he missed me and wished he could be there to celebrate with me in person.
 >
-> Receiving that cake was incredibly heartwarming and truly made my day. At that moment, I felt a surge of **happiness and appreciation** because I realized just how much he cared. It **wasn't** just the cake itself **but** the thoughtfulness behind the gesture that made it so memorable. To be honest, I was almost moved to tears because it was the last thing I was expecting.
+> Receiving that cake was incredibly heartwarming and truly ==made my day==. At that moment, I felt a surge of **happiness and appreciation** because I realized just how much he cared. It **wasn't** just the cake itself **but** the thoughtfulness behind the gesture that made it so memorable. To be honest, I was almost moved to tears because it was the last thing I was expecting.
 >
 > Sadly, we eventually **broke up** due to the challenges of maintaining a long-distance relationship. However, looking back, that surprise is still one of the **fondest memories** I have. It not only made me happy but also reminded me that even small gestures can have a significant impact on someone's emotions.
 
@@ -2399,10 +2383,10 @@ Why you like to talk with him/her
 
 And explain how you feel about him/her
 
->  I'd like to talk about my friend Anna, who I absolutely love talking to. We've known each other for about 3 years now, ever since we met in university, and over time, she's become one of the people I cherish the most in my life. Whenever I need someone to talk to, whether it's about something serious or just a lighthearted chat, Anna is always my go-to person.
-> One of the main reasons I enjoy talking to her is because she's such an attentive listener. No matter what I'm talking about, she always gives me her full attention, which is quite rare these days when people are often distracted by their phones. She doesn't just listen passively either—she asks thoughtful questions and offers insightful advice. For example, there was a time when I was really struggling with making an academic decision, and she helped me weigh the pros and cons without being pushy or judgmental. Her ability to understand my perspective and give me advice that's actually helpful is something I truly appreciate.
+>  I'd like to talk about my friend Anna, who I absolutely love talking to. We've known each other for about 3 years now, ever since we met in university, and over time, she's become one of the people I cherish the most in my life. Whenever I need someone to talk to, whether it's about ==something serious or just a lighthearted chat==, Anna is always my ==go-to person==.
+> One of the main reasons I enjoy talking to her is because she's such an attentive listener. No matter what I'm talking about, she always gives me her full attention, which is quite rare these days when people are often distracted by their phones. She doesn't just listen passively either—she ==asks thoughtful questions and offers insightful advice==. For example, there was a time when I was really struggling with making an academic decision, and she helped me weigh the pros and cons without being pushy or judgmental. Her ability to understand my perspective and give me advice that's actually helpful is something I truly appreciate.
 > Another reason I love our conversations is because we share similar interests, especially when it comes to books, movies, and current events. We often end up having deep discussions about the latest book we've read or a thought-provoking documentary we've watched. These conversations can sometimes last for hours, but it never feels like a waste of time because I always come away feeling inspired or having learned something new.
-> What I admire most about Anna is her sense of humor. Even when we're talking about serious topics, she has this amazing ability to make me laugh. It's not that she makes light of serious matters, but rather, she knows how to add a touch of humor that lightens the mood. This is especially comforting when I'm feeling stressed or overwhelmed—she just has a way of turning my day around with her jokes and witty comments.
+> What I admire most about Anna is her sense of humor. Even when we're talking about serious topics, she has this amazing ability to make me laugh. It's not that she makes light of serious matters, but rather, she knows how to ==add a touch of humor that lightens the mood==. This is especially comforting when I'm feeling stressed or overwhelmed—she just has a way of turning my day around with her jokes and witty comments.
 > All in all, talking to Anna is something I genuinely look forward to because it's not only enjoyable but also meaningful. I always feel understood, supported, and uplifted after our conversations. It's a rare thing to have someone in your life with whom you can talk about almost anything, and I consider myself lucky to have a friend like her.
 
 1. Where do young people like to meet?
@@ -2426,11 +2410,11 @@ Why he/she is popular
 
 And explain how you feel about this person
 
->  I'd like to talk about Sun Yingsha, who is one of the most well-known athletes in China today. She's a phenomenal table tennis player, and she's gained widespread recognition, especially after her impressive performance in the 2024 Paris Olympics. Sun Yingsha has become a household name in China, not just because of her exceptional skills, but also because of her dedication, sportsmanship, and relentless pursuit of excellence.
+>  I'd like to talk about Sun Yingsha, who is one of the most well-known athletes in China today. She's a phenomenal table tennis player, and she's gained ==widespread recognition==, especially after her impressive performance in the 2024 Paris Olympics. Sun Yingsha has become a household name in China, not just because of her ==exceptional skills==, but also because of her ==dedication, sportsmanship, and relentless pursuit of excellence==.
 > At the Paris Olympics, Sun Yingsha had a remarkable run. She won several medals, among which the mixed doubles gold was particularly significant because it was the first-ever mixed doubles gold medal for the Chinese table tennis team. 
 > What really impresses me about Sun Yingsha is her determination and focus on the game.(She's known for her incredible agility, quick reflexes, and powerful shots.) Watching her play is truly inspiring because she always gives it her all, whether it's a national competition or the Olympic finals. Despite being under immense pressure, she maintains a calm demeanor, which is something I really admire.
-> Beyond her skills on the table, Sun Yingsha is also admired for her humility. Despite her numerous achievements, she remains grounded and always credits her teammates and coaches for her success. This attitude has won her a lot of fans, not just in China but around the world. 
-> Her popularity in China goes beyond just sports enthusiasts. She has become a symbol of perseverance and excellence, especially for the younger generation. Many young athletes look up to her as a role model because she shows that with hard work, anything is possible. 
+> Beyond her skills on the table, Sun Yingsha is also admired for her humility. Despite her numerous achievements, she remains ==grounded== and always credits her teammates and coaches for her success. This attitude has won her a lot of fans, not just in China but around the world. 
+> Her popularity in China goes beyond just sports enthusiasts. She has become a symbol of ==perseverance and excellence==, especially for the younger generation. Many young athletes look up to her as a role model because she shows that with hard work, anything is possible. 
 > All in all, Sun Yingsha is a true sports icon in China. I believe she will continue to inspire future generations with her incredible talent and unwavering dedication to the sport.
 
 1. What kinds of people are popular at work?
@@ -2454,17 +2438,9 @@ How much you spent
 
 And explain how you feel about the day
 
->  I'd like to talk about a special day I had recently that cost me almost nothing, but it was truly memorable. This happened a few months ago when my friends and I decided to have a picnic at a nearby park. We were all feeling a bit overwhelmed with our studies and assignments, so we thought it would be a great idea to take a break and relax outdoors. Since we were all on a tight budget, we wanted to do something fun without spending much money.
+>  改不用工作或学习的一天
 >
-> We planned it quite simply. Each of us brought some **homemade food**, like sandwiches, fruit, and snacks. I took a batch of cookies from ingredients I already had at home, so it didn't cost me anything extra. One of my friends brought a bottle of homemade iced tea, while another brought some fruits that were already in season. It was **a perfect potluck-style picnic** where everyone contributed something small.
->
-> On the day of the picnic, we headed to a large park near our university. The weather was perfect—it was sunny but not too hot, with a gentle breeze that made it really pleasant to sit outside. We found a nice shady spot under a big tree where we could spread out our blankets. We spent hours just chatting, laughing, and enjoying each other's company. It felt so refreshing to be away from the usual hustle and bustle of daily life.
->
-> What made the day even more special was that we brought along some **game** s. One of my friends brought a deck of cards, and we ended up playing card games. It was so much fun, and we were all laughing so hard that we completely lost track of time. At one point, we even took a short walk around the park, enjoying the beautiful scenery and the blooming flowers.
->
-> The best part about that day was that it didn't cost us much at all. Apart from the small cost of the ingredients we used to make the food, everything else was completely free. It made me realize that sometimes, you don't need to spend a lot of money to have a great time. *What truly matters is the people you're with and the quality of the time you spend together*.
->
-> Looking back, it was one of the most enjoyable and relaxing days I've had in a long time. It reminded me that sometimes, the simplest things in life can bring the most joy. I think that's a lesson I've carried with me ever since—that you can create beautiful memories without needing to splurge.
+>  
 
 1. Do people like to spend their leisure time out in your country?
 2. How do people spend their leisure time in your country?
@@ -2503,10 +2479,10 @@ Working with family members can be both ==beneficial and challenging==. On the p
 People are drawn to family businesses for several reasons. Firstly, it allows them to continue a legacy and preserve traditions, which can be deeply meaningful. Secondly, family businesses often provide ==a sense of security and stability==, as family members are more likely to support each other during tough times. Additionally, working with family can create a flexible and supportive work environment, where personal and professional lives are more integrated. Lastly, it offers the opportunity to build wealth and assets that benefit the entire family.
 
 **4. What benefits are there when working for big companies?**
-Working for big companies offers several benefits, such as job stability, competitive salaries, and opportunities for career growth. Large organizations often provide comprehensive training programs, professional development resources, and clear career progression paths. Employees also benefit from access to advanced technology, diverse teams, and global networks. Additionally, big companies usually offer attractive perks, such as health insurance, retirement plans, and paid leave, which contribute to a better work-life balance and overall job satisfaction.
+Working for big companies offers several benefits, such as job stability, competitive salaries, and opportunities for career growth. Large organizations often provide comprehensive training programs, professional development resources, and clear career progression paths. Employees also benefit from access to advanced technology, diverse teams, and global networks. Additionally, big companies usually offer ==attractive perks==, such as health insurance, retirement plans, and paid leave, which contribute to a better work-life balance and overall ==job satisfaction==.
 
 **5. Why do people want to change their jobs?**
-People change jobs for various reasons, including ==seeking better career opportunities, higher salaries, or improved work-life balance==. Some may feel stagnant in their current roles and look for new challenges to grow professionally. Others might leave due to dissatisfaction with their workplace environment, such as poor management or lack of recognition. Personal reasons, like relocating to a new city or pursuing a passion, can also drive job changes. Ultimately, people want to find roles that align with their goals, values, and lifestyle.
+People change jobs for various reasons, including ==seeking better career opportunities, higher salaries, or improved work-life balance==. Some may feel ==stagnant== in their current roles and look for new challenges to grow professionally. Others might leave due to dissatisfaction with their workplace environment, such as poor management or lack of recognition. Personal reasons, like relocating to a new city or pursuing a passion, can also drive job changes. Ultimately, people want to find roles that align with their goals, values, and lifestyle.
 
 **6. What do people need to do to change their jobs?**
 To change jobs, people need to take several steps. First, they should assess their skills, interests, and career goals to identify suitable opportunities. Next, they need to update their resume and LinkedIn profile to reflect their qualifications and achievements. Networking is also crucial, as many job openings are filled through referrals or connections. Additionally, preparing for interviews by researching the company and practicing common questions is essential. Finally, it’s important to give proper notice to their current employer and ensure a smooth transition.
@@ -2529,11 +2505,11 @@ And explain how you feel about this long walk
 >
 > The walk itself was part of a larger training activity, so we had to follow a strict schedule and walk in formation with a large group of fellow students. I remember the morning we set off – it was very early, and the air was cool and fresh. At first, it seemed manageable. But later, as we walked further from the school and into the countryside, the distance started to feel longer and the landscape began to change.
 >
-> The route wasn't particularly difficult, but **the challenge was maintaining a steady pace**. Such a long walk was very demanding physically, and after a while, my legs started to feel sore. However, there was a sense of camaraderie among my classmates, and we encouraged each other to keep going. We would sing songs or share jokes from time to time to distract ourselves from the exhaustion, and that definitely helped keep our spirits up.
+> The route wasn't particularly difficult, but **the challenge was maintaining a steady pace**. Such a long walk was very demanding physically, and after a while, my legs started to feel sore. However, there was ==a sense of camaraderie== among my classmates, and we encouraged each other to keep going. We would sing songs or share jokes from time to time to distract ourselves from the exhaustion, and that definitely helped ==keep our spirits up==.
 >
 > When we finally reached the **Oriental Oasis**, it felt like a huge accomplishment. No one straggled. The sense of relief was overwhelming, and we were able to relax and enjoy the beautiful surroundings. 
 >
-> In retrospect, that 10-kilometer walk was one of the most challenging yet rewarding experiences of my life. It taught me a lot about physical endurance, teamwork, and the importance of perseverance. Even though it was tough at times, I'm glad I had the chance to do it, as it not only built my stamina but also gave me a sense of achievement that I still carry with me today.
+> In retrospect, that 10-kilometer walk was one of the most challenging yet rewarding experiences of my life. It taught me a lot about physical endurance, teamwork, and the importance of perseverance. Even though it was tough at times, I'm glad I had the chance to do it, as it not only ==built my stamina== but also gave me a sense of achievement that I still carry with me today.
 
 1. What outdoor activities do people like?
 2. What are the differences between the outdoor activities children did in the past and now?
@@ -2556,17 +2532,15 @@ How it helps you in your life
 
 And explain why you can't live without it 
 
-> phone 
+> One thing I absolutely can’t live without is my **notebook**. It’s not just a place to ==jot down my thoughts==; it’s a tool for organizing my life, processing emotions, and even setting goals.
 >
-> 特点：not just jot down my thoughts; a tool for organizing my life, processing emotions, and even setting goals
+> I use my notebook for a variety of purposes. One of the most important things I do with it is to have conversations with myself. I write down my thoughts, reflect on my day, and track my progress over time. This practice feels like a form of self-therapy, as it helps me process my emotions and gain clarity about my feelings. For example, when I’m feeling overwhelmed, writing everything down helps me break things into smaller, manageable steps, which instantly reduces my stress.
 >
-> 1. having a conversation with myself, track my progress -- a form of self-therapy -- emotional benefits
+> In addition to its emotional benefits, my notebook is ==invaluable== for its practicality. I use it to brainstorm new ideas, draft plans for upcoming events, or list things I need to accomplish. The physical act of writing helps me transform vague thoughts into concrete actions, which is something I find much more satisfying than typing on a phone or computer. While apps can be convenient, they don’t give me the same ==sense of connection and focus== that writing on paper does.
 >
-> 2. invaluable for its practicality -- brainstorm new ideas, draft plans for upcoming events, or list things I need to accomplish -- transform vague thoughts into concrete actions
+> What makes my notebook so essential is that it’s more than just a tool—it’s a companion that helps me ==stay grounded, creative, and reflective==. It’s a space where I can be completely honest with myself, whether I’m setting goals, working through challenges, or simply capturing moments of inspiration. Without it, I’d feel disorganized and disconnected from my own thoughts.
 >
-> ==> 对比 app, the physical act of writing to be far more satisfying
->
-> 总结：more than just a notebook: a companion that helps me stay grounded, creative, and reflective
+> In short, my notebook is something I can’t live without because it plays such a central role in both my emotional well-being and my daily productivity. It’s a simple yet powerful tool that helps me navigate life with clarity and purpose.
 
 1. Why are children attracted to new things (such as electronics)?
 2. Why do some grown-ups hate to throw out old things (such as clothes)?
@@ -2591,7 +2565,7 @@ And how you felt about it
 
 >  One effective thing I did to learn English was to immerse myself in the language by **watching movies and TV shows in English**. I started doing this a few years ago, as I felt that my reading and writing skills were improving, but my listening and speaking abilities were still not at the level I wanted.
 >
-> At first, I watched with subtitles in Chinese to understand the context and storyline, but gradually, I switched to English subtitles. This helped me connect the spoken words with their written form, and it also allowed me to learn new vocabulary and expressions. The great thing about watching movies and TV shows is that they expose you to various accents and colloquial language, which is often not covered in traditional language lessons.
+> At first, I watched with subtitles in Chinese to understand the context and storyline, but gradually, I switched to English subtitles. This helped me ==connect the spoken words with their written form==, and it also allowed me to learn new vocabulary and expressions. The great thing about watching movies and TV shows is that they expose you to various accents and colloquial（口语的） language, which is often not covered in traditional language lessons.
 >
 > I chose to watch **a variety of genres**, from dramas to comedies, and even documentaries. I wanted to get used to different tones, speeds of speaking, and formal versus informal language. For example, I watched 2 Broke Girls. They use everyday, conversational English, which helped me sound more natural in casual conversations. Additionally, watching documentaries or news programs helped me improve my formal language and understanding of more complex vocabulary.
 >
@@ -2620,13 +2594,13 @@ When you got it
 
 And explain why this person gave you the clothing
 
->  One item of clothing that I received as a gift and have cherished for years is a handmade sweater from my grandma. She gave it to me as a birthday present several years ago, and it holds a lot of sentimental value for me.
+>  One item of clothing that I received as a gift and have cherished for years is a handmade sweater from my grandma. She gave it to me as a birthday present several years ago, and it ==holds a lot of sentimental value== for me.
 >
 > The sweater is really special not just because it's a gift from my grandma, but also because she made it herself. My grandma **has been knitting for** as long as I can remember, and she's always crafted beautiful, intricate pieces for her family. When I opened the package and saw the sweater, I was immediately **struck by the craftsmanship**. It's made of soft wool, and the pattern is quite unique – a combination of subtle colors and geometric shapes that give it a cozy yet stylish look. The fit was perfect at the time, and it was incredibly comfortable to wear.
 >
-> What makes this sweater even more meaningful is the thought and time my grandma put into making it. She spent weeks working on it, knitting each section carefully, and I know that she poured a lot of love and attention into every stitch. Every time I wore it, I felt a deep connection to her and a sense of warmth, both physically and emotionally.
+> What makes this sweater even more meaningful is the thought and time my grandma put into making it. She spent weeks working on it, knitting each section carefully, and I know that she ==poured a lot of love and attention into every stitch==. Every time I wore it, I felt a deep connection to her and a sense of warmth, both physically and emotionally.
 >
-> However, now that I've grown up, I've outgrown the sweater. It no longer fits me as it once did, which is a bit bittersweet. Still, I can't bring myself to part with it because it holds so many memories. Even though I can't wear it anymore, I keep it tucked away in my wardrobe as a reminder of my grandma's affection and the special bond we share. Sometimes, when I'm feeling nostalgic, I take it out just to feel close to her.
+> However, now that I've grown up, I've outgrown the sweater. It no longer fits me as it once did, which is a bit ==bittersweet==. Still, I can't bring myself to part with it because it holds so many memories. Even though I can't wear it anymore, I keep it ==tucked away== in my wardrobe as a reminder of my grandma's affection and the special bond we share. Sometimes, when I'm feeling nostalgic, I take it out just to feel close to her.
 >
 > Overall, this handmade sweater is one of the most meaningful gifts I've ever received. It's not just about the sweater itself, but the love, effort, and thought behind it. That's why it will always hold a special place in my heart, even if I can no longer wear it.
 
@@ -2651,11 +2625,11 @@ Why you went there
 And explain how you feel about the place
 
 > Ok, so, today I want to talk about our new dog park（狗狗公园） in the city.
-> So, this dog park is located in the city suburbs. It was just built a few months ago, and it's been a hit（潮流） from day one（从第一天起）. It's become a local sensation（当地的潮流） for not just dog owners（狗主人）, but also dog lovers（爱狗人士）. I walk my dog（遛狗） in that park when I am at home as it's just a stone's throw away（很近） from where I live. 
+> So, this dog park is located in the city suburbs. It was just built a few months ago, and it's been a hit（潮流） from day one（从第一天起）. It's become ==a local sensation==（当地的潮流） for not just dog owners（狗主人）, but also dog lovers（爱狗人士）. I walk my dog（遛狗） in that park when I am at home as it's just a stone's throw away（很近） from where I live. 
 >
-> Moving on to how I feel about it, well, first off, I feel happy for all the dog owners（狗主人） like me. I can't tell you how much this dog park has changed my life. There're so many things we can do in this park. We can walk our dogs on the winding walking trails（蜿蜒的步行小路）. Or we can just let them run around in the open areas（开场地带）. And there are benches and picnic spots（长椅长凳和野餐地点） for the owners, so it's not just fun for the dogs. It's a nice hangout spot（聚点） for us too.
+> Moving on to how I feel about it, well, first off, I feel happy for all the dog owners（狗主人） like me. I can't tell you how much this dog park has changed my life. There're so many things we can do in this park. We can walk our dogs on the winding walking trails（蜿蜒的步行小路）. Or we can just let them run around in the open areas（开场地带）. And there are benches and picnic spots（长椅长凳和野餐地点） for the owners, so it's not just fun for the dogs. It's a nice ==hangout spot==（聚点） for us too.
 >
-> And then, I love the impacts of this new park. It brings dog owners together（把人带到一起）, creating a sense of community. It's like a social hub where people meet, chat, and share their dog-raising experiences（分享养狗经验）. It's also beneficial for people who don't like dogs or even are afraid of dogs, because this dog park **keeps dogs off the streets**（让狗狗远离大街）, giving those dogs, especially bigger ones, a specific place to be.
+> And then, I love the ==impacts== of this new park. It brings dog owners together（把人带到一起）, creating a sense of community. It's like a social hub where people meet, chat, and share their dog-raising experiences（分享养狗经验）. It's also beneficial for people who don't like dogs or even are afraid of dogs, because this dog park **keeps dogs off the streets**（让狗狗远离大街）, giving those dogs, especially bigger ones, a specific place to be.
 > So, yeah, that's the park. Thank you for your time.
 
 1. Which do you prefer, living in a city or only visiting it as a tourist?
@@ -2680,9 +2654,9 @@ Why it was difficult to make
 And explain how you felt about the good result
 
 >  Last year, I made a very hard decision of breaking up with（提分手） my boyfriend. Now he's my ex-boyfriend, and, come to think of it, even though it was really hard, still it was the right thing to do/ it was a good call（是正确的选择）.
-> We had been together for about three years, and during that period of time, I was in two minds（犹豫，纠结） all the time. *On one hand*, he was funny and charming. He could really make me laugh. I loved his sense of humor （我喜欢他的幽默感） and his charisma. *On the other hand*, he was a control freak. He always wanted me to listen to him, and say yes to him. He really put a lot of pressure on me. I mean, I'm an independent person with an independent mind, so I couldn't just blindly follow his commands（跟随他的指令）. He was very bossy（霸道的） and macho（大男子主义的）.
+> We had been together for about three years, and during that period of time, I was ==in two minds==（犹豫，纠结） all the time. *On one hand*, he was funny and charming. He could really make me laugh. I loved his sense of humor （我喜欢他的幽默感） and his charisma. *On the other hand*, he was a control freak. He always wanted me to listen to him, and say yes to him. He really put a lot of pressure on me. I mean, I'm an independent person with an independent mind, so I couldn't just blindly follow his commands（跟随他的指令）. He was very bossy（霸道的） and macho（大男子主义的）.
 > I **was torn between**（很纠结） leaving and staying. I didn't want to rush into the decision（匆忙做决定）, so I waited long enough because I wanted to give it a chance. After being together for three years, I was very unhappy, so I finally made up my mind（彻底下决定） to leave him. I told him about my decision. It wasn't easy for me. I was crying and having a meltdown when I saw him for the last time. And he refused to take it. We were not **on the same page** at all（意见不一致，他不想分手）.
-> After the breakup, in the beginning, he was still trying to influence my decision by constantly calling me and trying to see me. It was extremely difficult for me to not pick up the phone. But I pulled myself together（振作起来）. I didn't give him any chances to talk to me. And eventually, after 6 months, he gave up.
+> After the breakup, in the beginning, he was still trying to influence my decision by constantly calling me and trying to see me. It was extremely difficult for me to not pick up the phone. But I ==pulled myself together==（振作起来）. I didn't give him any chances to talk to me. And eventually, after 6 months, he gave up.
 > I'm now feeling so much better without him. Everything is water under the bridge（事情都过去了）. Even though I still miss him sometimes, I know it will all be over one day. Time will heal everything（时间会治愈一切）. It was a tough decision to make, but it was the right thing to do.
 
 1. What kinds of decisions do young people have to make?
@@ -2706,15 +2680,15 @@ What opinion you gave
 
 And explain how you felt when he/she asked for your opinion 
 
->  I'd like to talk about a time when one of my close friends came to me for advice about a difficult decision she was facing. It happened last year when she was really struggling in her relationship and was torn about whether to break up with her boyfriend or not. She asked me for my honest opinion, and after hearing her out, I suggested that she end the relationship.
+>  I'd like to talk about a time when one of my close friends came to me for advice about a difficult decision she was facing. It happened last year when she was really struggling in her relationship and was torn about whether to break up with her boyfriend or not. She asked me for my honest opinion, and after hearing her out, I suggested that she ==end the relationship==.
 >
 > My friend had been with her boyfriend for nearly three years, but during that time, she often felt conflicted. On one hand, she told me he was funny, charming, and could always make her laugh. She appreciated his sense of humor and charisma, which had initially drawn her to him. But on the other hand, she described him as controlling and overly domineering. He constantly wanted things to go his way and pressured her to always agree with him. It was clear that he was quite bossy and had a very macho attitude.
 >
-> As my friend shared all this with me, she was obviously distressed. She explained that she felt suffocated in the relationship because he expected her to follow his commands, which didn't align with her independent nature. I could see how this was affecting her mental and emotional well-being. She was hesitant about making a decision because they had been together for so long, and she felt that ending things might be too drastic. But at the same time, she was unhappy and didn't feel like she could truly be herself around him.
+> As my friend shared all this with me, she was obviously ==distressed==. She explained that she felt suffocated in the relationship because he expected her to follow his commands, which didn't align with her independent nature. I could see how this was affecting her mental and emotional well-being. She was hesitant about making a decision because they had been together for so long, and she felt that ending things might be too drastic. But at the same time, she was unhappy and didn't feel like she could truly be herself around him.
 >
 > After listening to her, I told her that if the relationship was making her miserable, it was probably better for her to walk away. I reminded her that staying in a relationship out of fear of being alone is never a good reason. She needed to prioritize her own happiness and mental health. Although it was a tough suggestion to make, I believed it was the right call.
 >
-> In the end, she decided to take my advice and broke up with him. The breakup was really hard on her at first because her ex-boyfriend kept trying to reach out, calling her and asking to meet. I remember she had a hard time resisting the urge to answer his calls, but she stayed strong and eventually cut off all communication. After several months, he finally stopped contacting her, and she began to heal.
+> In the end, she decided to take my advice and broke up with him. The breakup was really hard on her at first because her ex-boyfriend kept trying to reach out, calling her and asking to meet. I remember she had a hard time resisting the urge to answer his calls, but she stayed strong and eventually ==cut off all communication==. After several months, he finally stopped contacting her, and she began to heal.
 >
 > Now, she often tells me how grateful she is for my advice. She feels much lighter and happier without the constant stress he brought into her life. While it wasn't easy for her to go through, she now realizes it was the right thing to do. Seeing her in a much better place now confirms that sometimes, giving difficult advice is necessary, even if it's hard for someone to hear.
 
@@ -2743,7 +2717,7 @@ And explain how you felt in the traffic jam
 >
 > The main issue is that there's only one main road connecting the east and west sides of the campus, and it's the shortest route. Taking any other path would be three times longer, so naturally, everyone prefers using this route. One day, I had a class in a building on the west side, and I had just finished a class in the east. The teacher delayed the class for 5 minutes, so as soon as the class was over, I jumped on my bike and headed towards the other building.
 >
-> However, as soon as I reached the main road, I found myself stuck in a bike traffic jam. There were dozens, if not hundreds, of students on electric bikes, all trying to use the same road at the same time. The university guard was trying to manage the flow, but many students were impatient and didn't listen to his instructions. This only made the situation worse, as everyone was trying to squeeze through, making the road even more congested.
+> However, as soon as I reached the main road, I found myself stuck in a bike traffic jam. There were dozens, if not hundreds, of students on electric bikes, all trying to use the same road at the same time. The university guard was trying to manage the flow, but many students were impatient and didn't listen to his instructions. This only made the situation worse, as everyone was trying to squeeze through, making the road even more ==congested==.
 >
 > I was frustrated because I knew I was running late. At one point, we were all **at a standstill**, unable to move forward or backward. When the traffic finally started moving again, I still had to struggle to find a parking spot near my class building. Most of the parking spaces were already full, so I ended up circling around, wasting even more time. In the end, I arrived five minutes late for my class, which was quite embarrassing.
 >
@@ -2772,7 +2746,7 @@ And explain why you would like to participate in it
 
 >  One competition I would really like to participate in is the **bicycle slow-riding contest** held at my school. This competition is quite unique because it challenges participants to ride their bicycles as slowly as possible without losing balance or touching the ground. I first got interested in this competition when my roommate participated in it last year and ended up winning first place. I was really impressed by how skillfully she managed to maintain her balance while riding at such a slow pace, and it inspired me to give it a try myself.
 >
-> What makes this competition so **intriguing** to me is that it's not about speed or endurance, but rather about balance, control, and patience. The riders are required to pedal slowly and steadily, and if you stop or put your feet on the ground, you're **disqualified**. It's a real test of your ability to stay focused and maintain steady control of the bike, which I think is a fun and challenging way to compete.
+> What makes this competition so **intriguing** to me is that it's ==not about speed or endurance, but rather about balance, control, and patience==. The riders are required to pedal slowly and steadily, and if you stop or put your feet on the ground, you're **disqualified**. It's a real test of your ability to stay focused and maintain steady control of the bike, which I think is a fun and challenging way to compete.
 >
 > I believe I would be able to do well in this competition because I have a good sense of balance. I've been riding bicycles since I was quite young, and over the years, I've developed a pretty solid skill set for balancing and controlling my bike in different situations.
 >
@@ -2805,7 +2779,7 @@ And explain why it's a special cake
 >
 > What made this surprise so special was the effort he put into it. It wasn't just any store-bought cake—it was **handcrafted and customized** with my favorite flavors and decorations. Apparently, he had **coordinated with** a local bakery near my school. The cake had a small note attached, expressing how much he missed me and wished he could be there to celebrate with me in person.
 >
-> Receiving that cake was incredibly heartwarming and truly made my day. At that moment, I felt a surge of **happiness and appreciation** because I realized just how much he cared. It **wasn't** just the cake itself **but** the thoughtfulness behind the gesture that made it so memorable. To be honest, I was almost moved to tears because it was the last thing I was expecting.
+> Receiving that cake was incredibly ==heartwarming and truly made my day==. At that moment, I felt a surge of **happiness and appreciation** because I realized just how much he cared. It **wasn't** just the cake itself **but** the thoughtfulness behind the gesture that made it so memorable. To be honest, I was almost moved to tears because it was the last thing I was expecting.
 >
 > Sadly, we eventually **broke up** due to the challenges of maintaining a long-distance relationship. However, looking back, that surprise is still one of the **fondest memories** I have. It not only made me happy but also reminded me that even small gestures can have a significant impact on someone's emotions.
 
@@ -2854,17 +2828,17 @@ How the advice/suggestion affected you
 
 And explain how you felt about the advice/suggestions 
 
->  I'd like to talk about a time when I received some very helpful advice regarding my studies during high school. Back then, I was under a lot of pressure to perform well academically, and I often found myself feeling overwhelmed and distracted whenever I tried to study. So, I decided to visit the school's counseling office to seek some guidance.
+>  I'd like to talk about a time when I received some very helpful advice regarding my studies during high school. Back then, I was under a lot of pressure to perform well academically, and I often found myself feeling overwhelmed and distracted whenever I tried to study. So, I decided to visit the school's ==counseling office to seek some guidance==.
 >
-> When I explained my situation to the counselor, I told her that my biggest struggle was maintaining concentration. I would often start studying with good intentions, but within minutes, my mind would wander off, and I'd end up procrastinating or getting distracted by my phone. That's when she suggested a technique called the Pomodoro Technique, which was something I had never heard of before.
+> When I explained my situation to the counselor, I told her that my biggest struggle was ==maintaining concentration==. I would often start studying with good intentions, but within minutes, my mind would ==wander off==, and I'd end up procrastinating or getting distracted by my phone. That's when she suggested a technique called the Pomodoro Technique, which was something I had never heard of before.
 >
-> The Pomodoro Technique involves breaking your study time into 25-minute intervals, called "pomodoros," followed by a short 5-minute break. After completing four of these intervals, you can take a longer break of about 15 to 30 minutes. The counselor explained that this method helps improve focus and productivity by giving the brain regular breaks, which prevents burnout and keeps you refreshed. She advised me to try it out, especially since I was struggling with staying on task for long periods.
+> The Pomodoro Technique involves breaking your study time into 25-minute intervals, called "pomodoros," followed by a short 5-minute break. After completing four of these intervals, you can take a longer break of about 15 to 30 minutes. The counselor explained that this method helps improve focus and productivity by giving the brain regular breaks, which ==prevents burnout and keeps you refreshed==. She advised me to try it out, especially since I was struggling with staying on task for long periods.
 >
-> I decided to follow her advice, and to my surprise, it made a significant difference. I started using a timer on my phone to break my study sessions into 25-minute chunks, and I noticed that my concentration improved dramatically. Knowing that a break was coming made it easier to stay focused during each interval. I also felt less stressed because instead of trying to force myself to study for hours on end, I was working in manageable bursts. It made my study sessions much more efficient and even enjoyable.
+> I decided to follow her advice, and to my surprise, it made a significant difference. I started using a timer on my phone to break my study sessions into 25-minute chunks, and I noticed that my concentration improved dramatically. Knowing that a break was coming made it easier to stay focused during each interval. I also felt less stressed because instead of trying to force myself to study for hours on end, I was ==working in manageable bursts==. It made my study sessions much more efficient and even enjoyable.
 >
-> What I appreciated most about this advice was that it was **practical and easy to implement**, yet it had a profound impact on my productivity. This simple technique helped me manage my study stress better and made a noticeable difference in my performance. To this day, I still use the Pomodoro Technique whenever I need to focus on a challenging task, and I'm grateful to that counselor for introducing me to it.
+> What I appreciated most about this advice was that it was **practical and easy to implement**, yet it had ==a profound impact on my productivity==. This simple technique helped me manage my study stress better and made a noticeable difference in my performance. To this day, I still use the Pomodoro Technique whenever I need to focus on a challenging task, and I'm grateful to that counselor for introducing me to it.
 >
-> Overall, this experience taught me that sometimes, the right advice can completely change the way you approach your studies. The Pomodoro Technique was a game-changer for me, and it's something that continues to benefit me even now.
+> Overall, this experience taught me that sometimes, the right advice can completely change the way you approach your studies. The Pomodoro Technique was a ==game-changer== for me, and it's something that continues to benefit me even now.
 
 1. When should parents encourage their children?
 2. Should parents always encourage their children?
@@ -2891,10 +2865,10 @@ And explain how you felt about it
 >
 > It was my dear iPad. Last year, I took the train back home. And in order to kill the time on my way, I took out my iPad. In the beginning, I was watching a movie. And then, I started feeling very sleepy and wanted to take a nap（打个盹）.
 >
-> I felt lazy（犯懒） to put the iPad back into my suitcase, as I knew later, I would use it again after the nap. So, I put the iPad in the pocket in front of me. You know, there's always a thin pocket behind the seat in front of you（你前面座位的后方的薄薄的口袋）? So, yeh, I put it there. The pocket was not big, so I could still see the tip of my ipad（平板电脑的上方一角）. I thought that would remind me that there was my tablet in the pocket. But NO! I completely forgot my iPad after the nap. Like it was never there. I just removed the memory out of my brain（从记忆力删除了这个信息）. 
+> I felt lazy（犯懒） to put the iPad back into my suitcase, as I knew later, I would use it again after the nap. So, I put the iPad in the pocket in front of me. You know, there's always a thin pocket behind the seat in front of you（你前面座位的后方的薄薄的口袋）? So, yeh, I put it there. The pocket was not big, so I could still see the tip of my ipad（平板电脑的上方一角）. I thought that would remind me that there was my ipad in the pocket. But NO! I completely forgot my iPad after the nap. Like it was never there. I just removed the memory out of my brain（从记忆力删除了这个信息）. 
 >
 > After I got off the train, several hours passed by, and suddenly **I jumped out of my skin**（跳出我的皮肤，吓得灵魂出窍）. “Where is my iPad?! ”And that was when I remembered it was still on the train!! I called the lost and found office（失物招领办公室） at the train station, told them about my tragedy（悲剧）. The customer service representative（客服代表）comforted me（安抚了我）, and helped me call the head of  the conductor of the train（一个意思，车长）, anyway, he said he would search it for me.
-> Several hours later, I got a phone call from him and was told that he found the iPad. I felt so lucky and grateful to get my baby back. And at the same time, I felt very guilty for being so unmindful. I hate troubling people（我讨厌麻烦别人）. So, yeh, that was the story. 
+> Several hours later, I got a phone call from him and was told that he found the iPad. I felt so lucky and grateful to get my baby back. And at the same time, I felt very guilty for being so ==unmindful==. I hate troubling people（我讨厌麻烦别人）. So, yeh, that was the story. 
 
 1. What kinds of things do people usually lose?
 2. What do people often do when losing things?
@@ -2919,15 +2893,15 @@ Why it is important to keep fit and healthy
 
 And explain why it can help you keep fit and healthy
 
->  One activity I regularly do to stay fit is **following an online streamer for exercise routines**. I started this habit around a year ago when I realized I needed to improve my fitness level but didn't have the motivation to go to a gym or fitness class. The convenience of exercising at home with the guidance of a live streamer was a game-changer for me.
+>  One activity I regularly do to stay fit is **following an online streamer for exercise routines**. I started this habit around a year ago when I realized I needed to ==improve my fitness level== but didn't have the motivation to go to a gym or fitness class. The convenience of exercising at home with the guidance of a live streamer was a ==game-changer== for me.
 >
-> The streamer I follow specializes in **HIIT workouts**, which stand for **High-Intensity Interval Training**. These sessions typically last about 30 to 45 minutes and combine cardio exercises with strength training, which helps me not only burn calories but also build muscle. What I find particularly motivating is that the streamer often **interacts with viewers**, offering words of encouragement and answering questions in real-time. This interactive aspect makes the experience much more engaging than simply following a pre-recorded video.
+>  The streamer I follow specializes in **HIIT workouts**, which stand for **High-Intensity Interval Training**. These sessions typically last about 30 to 45 minutes and combine cardio exercises with strength training, which helps me not only burn calories but also build muscle. What I find particularly motivating is that the streamer often **interacts with viewers**, offering words of encouragement and answering questions in real-time. This interactive aspect makes the experience much more ==engaging== than simply following a pre-recorded video.
 >
-> One of the main reasons I enjoy exercising this way is that it fits easily into my schedule. I can join the live stream whenever it's convenient for me, and if I miss a session, I can always watch the recording later. Plus, the **variety of workouts** keeps things interesting. The streamer mixes things up by incorporating different types of exercises, like yoga stretches or core workouts, so it never feels monotonous.
+>  One of the main reasons I enjoy exercising this way is that it ==fits easily into my schedule==. I can join the live stream whenever it's convenient for me, and if I miss a session, I can always watch the recording later. Plus, the **variety of workouts** keeps things interesting. The streamer mixes things up by incorporating different types of exercises, like yoga stretches or core workouts, so it never feels monotonous.
 >
-> I've noticed significant benefits since I started these workouts. I've become more **energetic**, and my **endurance** has improved considerably. Additionally, it's been great for my **mental health**, especially when I've had a long, stressful day. Following along with someone who's both knowledgeable and enthusiastic really helps me stay consistent and motivated.
+>  I've noticed significant benefits since I started these workouts. I've become more **energetic**, and my **endurance** has improved considerably. Additionally, it's been great for my **mental health**, especially when I've had a long, stressful day. Following along with someone who's both knowledgeable and enthusiastic really helps me stay consistent and motivated.
 >
-> In the future, I'd like to explore other fitness routines, but for now, **following this online streamer** is definitely my favorite way to stay fit. It's practical, effective, and, most importantly, enjoyable.
+>  In the future, I'd like to explore other fitness routines, but for now, **following this online streamer** is definitely my favorite way to stay fit. It's practical, effective, and, most importantly, enjoyable.
 
 1. How do children and old people keep fit and healthy?
 2. What do people normally do to keep fit and healthy in your country?
@@ -2952,15 +2926,15 @@ What you do there
 
 And explain how you feel about the place
 
->  Ok, so today I'd like to talk about a place in my city where I can see some wildlife. It's a mountainous area on the outskirts of my city called Laohe Shan. I first went there a few years ago when I was feeling pretty stressed with schoolwork and just needed to clear my head（清空大脑）. Since then, it's become my go-to spot（首选地点）whenever I need a break from the hustle and bustle of daily life（需要从日常的喧嚣与繁忙之中抽空休息一下）.
+>  A quiet place I love to go to is my **university library**. It’s a modern, six-story building that was completed two years ago, and it’s one of my favorite spots on campus because of its ==peaceful atmosphere and convenient facilities==.
 >
-> Laohe Shan is not a well-known tourist destination（不是一个知名的旅游地点）. It's peaceful, with only a few tourists or locals during the week. The reason I love going to this place is **the sense of tranquility**（宁静之感） it gives me. It's the perfect spot for unwinding and recharging（放松与充电）. 
+>  I first discovered the library when I started my second year at university. It’s located near the school canteen, and there’s even a coffee shop on the ground floor, which makes it easy to grab a drink before settling in. The library is incredibly well-designed—each study space is equipped with a power outlet and a desk lamp, and you need to reserve a seat in advance through a smart booking system, which ensures it’s never overcrowded.
 >
-> In terms of wildlife, there's a lot to see. You can find/ spot（发现） all sorts of birds, from colorful songbirds（鸣禽） to bigger ones like owls and hawks（猫头鹰和山鹰）. One time, I even saw a wild squirrel running across the trail（横穿小路）, which was a nice surprise. There are also tons of insects, especially butterflies in the spring and summer. The area is full of plant life too, with lots of different types of trees and wildflowers（野花）.
+>  I go there almost every day, especially when I need to focus on my studies or complete assignments. The quiet environment helps me concentrate, and I often spend hours reading, writing, or preparing for exams. Sometimes, I also use the library to relax with a book or just enjoy the calm atmosphere.
 >
-> 安静的地方替换上面 wildlife 一段：(As I walk along the mountain's shaded paths, I can hear nothing but the rustle of leaves and birds chirping. The air is incredibly fresh, and the scent of pine trees and wildflowers is everywhere. On the top of the mountain, I can overlook a remote lake, surrounded by willow trees reflected in the calm, mirror-like water. It feels like I am stepping back in time to a simpler, more relaxed era.)
+>  What I love most about this place is how it combines functionality with comfort. The advanced facilities, like the smart booking system and ample charging points, make studying much more efficient. At the same time, the peaceful ambiance and the convenience of having a coffee shop nearby make it a perfect place to unwind.
 >
-> The best part for me is just how connected I feel to nature when I'm there. I love sitting under the shade of a tree（坐在树荫下）, watching the birds or even reading a good book. Sometimes, I'll just close my eyes and take in（感受、吸收） the sounds of the forest; it's incredibly calming. I love this place. Thank you!
+>  Overall, the library is more than just a study space for me—it’s a ==sanctuary== where I can focus, recharge, and feel productive. It’s definitely one of the best places on campus, and I’m grateful to have such a quiet and well-equipped space to go to.
 
 1. Is it easy to find quiet places in your country? Why?
 2. How do people spend their leisure time in your country?
@@ -2985,7 +2959,7 @@ And how you felt about it
 
 >  I'd like to talk about a time when the **kitchen tap** in our home broke, and I managed to fix it on my own. It wasn't anything too complicated, but it was definitely a challenge at first, especially since I had never attempted any plumbing repairs before.
 >
-> One day, while I was washing dishes, I noticed that the tap was leaking, and water kept dripping even after turning it off completely. This was not only wasteful but also pretty annoying, so I decided to take matters into my own hands. At first, I thought about asking my parents to call a plumber, but then I figured it would be a good learning experience to try and fix it myself.
+> One day, while I was washing dishes, I noticed that the tap was leaking, and water kept dripping even after turning it off completely. This was not only wasteful but also pretty annoying, so I decided to ==take matters into my own hands==. At first, I thought about asking my parents to call a plumber, but then I figured it would be a good learning experience to try and fix it myself.
 >
 > The first thing I did was watch a couple of **tutorial videos** online to understand the basics of how a tap works and what might be causing the issue. After some research, I realized that the problem was most likely a **worn-out washer** inside the tap. Luckily, we had a set of basic tools and some spare washers at home.
 >
@@ -3016,11 +2990,10 @@ Why you don't like it
 
 And explain why you would like to change it
 
->  One rule that I strongly disagree with and would love to change is the annual physical fitness test that all students in Chinese universities are required to take, except for those with physical disabilities. This rule mandates that every student must meet a certain fitness standard in order to graduate, and I find it not only unreasonable but also counterproductive in some ways.
-> First of all, the idea of having a unified fitness standard for all students is simply unrealistic. Every individual's health condition and fitness level are different, and this rule fails to take that into account. For example, I myself am not particularly good at physical activities due to issues with my respiratory system. During physical exercises, I often experience significant pain and discomfort, especially when I engage in endurance activities like running. This makes it extremely hard for me to meet the required fitness benchmarks. On the other hand, there are students who are naturally more athletic and enthusiastic about sports, and for them, this test might even feel like a fun challenge. The idea of applying the same standard to everyone is, in my opinion, unscientific and unfair.
-> Furthermore, I believe that this physical fitness test erodes students'quality of life and freedom. University life should be about personal growth and exploration, but the pressure to meet an arbitrary fitness standard can lead to unnecessary stress. Instead of encouraging a healthy lifestyle, it often forces students into routines that may not be suitable for their individual needs. For students like me, who may have physical discomfort during strenuous activities, this rule can lead to feelings of inadequacy or even worsen their health problems. In the long run, it may also contribute to the development of negative attitudes towards fitness.
-> The rule also seems outdated in today's world, where universities are increasingly focusing on personalized education and promoting mental well-being alongside physical health. Instead of imposing a one-size-fits-all fitness test, I believe universities should take a more individualized approach. For instance, students could be given a choice to take fitness assessments that align with their personal health conditions or interests, such as offering alternative activities like yoga, swimming, or even mental health workshops for those who struggle with physical challenges.
-> In conclusion, I strongly feel that the fitness test rule in Chinese universities needs to be reformed or replaced with a more flexible and personalized approach that considers students'  unique needs and capabilities. This would not only improve the students'physical and mental well-being but also allow them to focus more on their academic goals and overall development.
+>  One rule that I strongly disagree with and would love to change is the annual physical fitness test that all students in Chinese universities are required to take, except for those with physical disabilities. This rule ==mandates== that every student must meet a certain fitness standard in order to graduate, and I find it ==not only unreasonable but also counterproductive in some ways==.
+> First of all, the idea of having a unified fitness standard for all students is simply unrealistic. Every individual's health condition and fitness level are different, and this rule fails to take that into account. For example, I myself am not particularly good at physical activities due to issues with my respiratory system. During physical exercises, I often experience significant pain and discomfort, especially when I engage in endurance activities like running. This makes it extremely hard for me to ==meet the required fitness benchmarks==. On the other hand, there are students who are naturally more athletic and enthusiastic about sports, and for them, this test might even feel like a fun challenge. The idea of applying the same standard to everyone is, in my opinion, unscientific and unfair.
+> Furthermore, I believe that this physical fitness test erodes students'quality of life and freedom. University life should be about personal growth and exploration, but the pressure to meet an arbitrary fitness standard can lead to unnecessary stress. Instead of encouraging a healthy lifestyle, it often forces students into routines that may not be suitable for their individual needs. For students like me, who may have physical discomfort during ==strenuous== activities, this rule can lead to feelings of inadequacy or even worsen their health problems. In the long run, it may also contribute to the development of negative attitudes towards fitness.
+> The rule also seems outdated in today's world, where universities are increasingly focusing on personalized education and promoting mental well-being alongside physical health. Instead of ==imposing a one-size-fits-all fitness test==, I believe universities should take a more individualized approach. For instance, students could be given a choice to take fitness assessments that align with their personal health conditions or interests, such as offering alternative activities like yoga, swimming, or even mental health workshops for those who struggle with physical challenges.
 
 1. What are the rules students should follow at school?
 2. Are the rules at school good or bad? Why?
@@ -3043,15 +3016,13 @@ How you knew this city
 
 And explain why you think it is very interesting
 
->  Today, I'd like to talk about an **interesting city** worth visiting — **Shanghai**. It is located on the eastern coast of China. Shanghai is not only one of the largest cities in the world but also one of the most vibrant and diverse. It seamlessly blends **traditional Chinese culture** with modern, cutting-edge development, making it a truly fascinating place to explore.
+>  Today, I'd like to talk about an **interesting city** worth visiting — **Shanghai**. It is located on the eastern coast of China. Shanghai is not only one of the largest cities in the world but also one of the most ==vibrant and diverse==. It seamlessly blends **traditional Chinese culture** with modern, cutting-edge development, making it a truly fascinating place to explore.
 >
 > One of the things that immediately struck me about Shanghai is its **iconic skyline**, especially the area known as the **Bund**. On one side, you have historic colonial-era buildings, and on the other, the futuristic skyscrapers of **Pudong**, like the **Oriental Pearl Tower** and the **Shanghai Tower**, which is one of the tallest buildings in the world. At night, the cityscape lights up with colorful displays, creating a breathtaking view.
 >
-> What I find most interesting about Shanghai is its unique blend of **old and new**. For instance, you can visit the ancient **Yu Garden**, which dates back to the Ming Dynasty, and within minutes, you can find yourself in the bustling, high-tech shopping district of **Nanjing Road**. It's a city where tradition and modernity coexist harmoniously, offering a rich cultural experience.
+> What I find most interesting about Shanghai is its unique blend of **old and new**. For instance, you can visit the ancient **Yu Garden**, which dates back to the Ming Dynasty, and within minutes, you can find yourself in the bustling, high-tech shopping district of **Nanjing Road**. It's a city where tradition and modernity ==coexist harmoniously==, offering a rich cultural experience.
 >
 > Another thing I absolutely love about Shanghai is its **diverse food scene**. Whether you're sampling street food like the famous **xiaolongbao**, which are juicy soup dumplings, or dining at upscale restaurants, there's something for every *palate*. The city is also known for its vibrant nightlife, with trendy bars and rooftop lounges that offer stunning views of the cityscape.
->
-> Beyond its sights and cuisine, what makes Shanghai truly captivating is its **dynamic energy**. The city never seems to sleep, and there's always something happening, whether it's a cultural festival, an art exhibition, or a live music performance. It's a place that attracts people from all over the world, making it a melting pot of different cultures and ideas.
 >
 > Personally, I find Shanghai inspiring because it's constantly evolving while still preserving its rich cultural heritage. It's a city that reflects China's rapid modernization but also honors its past. It's a place that leaves a lasting impression and makes you want to return again and again. For anyone looking to experience the best of what a modern metropolis can offer, Shanghai is definitely a must-visit destination.
 
@@ -3078,15 +3049,15 @@ And how you feel about it
 
 > Today, I'd like to share a story that my mom told me while I was away at school. It's about our **French Bulldog**, Gama, and his funny encounters with the neighborhood **cats**. It was really funny that I couldn't stop laughing when hearing it!
 >
-> So, here's what happened. Gama is a curious little guy—full of energy and always eager to explore. One day, my mom took him out for his usual walk around our neighborhood. As they were strolling down a street, they came across a group of **three or four cats** lounging in the sun.
+> So, here's what happened. Gama is a curious little guy—full of energy and always eager to explore. One day, my mom took him out for his usual walk around our neighborhood. As they were strolling down a street, they came across a group of three or four cats ==lounging== in the sun.
 >
-> Now, Gama, being his usual friendly self, decided to approach them. He perked up（振奋） his little **stubby tail**, wiggling 扭动 his entire backside in excitement as he tried to greet them. However, the cats, being aloof 冷淡的 as they often are, weren't too impressed with Gama's enthusiasm. According to my mom, one of the cats even **gave a warning hiss**. But instead of getting scared, Gama just tilted his head, almost like he was trying to figure out why they weren't as happy to see him.
+> Now, Gama, being his usual friendly self, decided to approach them. He perked up（振奋） his little **stubby tail**, wiggling 扭动 his entire backside in excitement as he tried to greet them. However, the cats, being ==aloof== 冷淡的 as they often are, weren't too impressed with Gama's enthusiasm. According to my mom, one of the cats even **gave a warning hiss**. But instead of getting scared, Gama just tilted his head, almost like he was trying to figure out why they weren't as happy to see him.
 >
-> My mom was a bit nervous that the situation might **escalate**, but instead of attacking, the cats just stared at Gama, clearly perplexed. Eventually, one of the cats, probably the leader, cautiously approached him, gave him a quick sniff, and then walked off as if to say, "You're not worth my time."
+> My mom was a bit nervous that the situation might **escalate**, but instead of attacking, the cats just stared at Gama, clearly ==perplexed.== Eventually, one of the cats, probably the leader, cautiously approached him, gave him a quick sniff, and then walked off as if to say, "You're not worth my time."
 >
-> What I found most **hilarious** 极其滑稽的 about this story is that Gama, despite his confident attitude, ended up looking so puzzled when the cats ignored him. My mom described how he kept tilting his head from side to side with his big watery eyes, trying to make sense of what had just happened. It was like he was expecting some sort of grand interaction, but got a cold shoulder.
+> What I found most **hilarious**（极其滑稽的 ）about this story is that Gama, despite his confident attitude, ended up looking so puzzled when the cats ignored him. My mom described how he kept tilting his head from side to side with his big watery eyes, trying to make sense of what had just happened. It was like he was ==expecting some sort of grand interaction, but got a cold shoulder==.
 >
-> This story really stuck with me because it perfectly captures Gama's personality—he's always so enthusiastic and eager to make friends, even if the other animals don't quite reciprocate. Hearing my mom describe it so vividly made me feel like I was right there with them, and it reminded me of how much I miss those little moments with Gama when I'm away. 
+> This story really stuck with me because it perfectly captures Gama's personality—he's always so enthusiastic and eager to make friends, even if the other animals don't quite reciprocate（回应）. Hearing my mom describe it so vividly made me feel like I was right there with them, and it reminded me of how much I miss those little moments with Gama when I'm away. 
 
 1. Do young children like the same stories as older children?
 2. How has technology changed story telling？
@@ -3109,15 +3080,15 @@ Why you want to know more about him/her
 
 And explain how you feel about him/her
 
->  I'd like to talk about a girl I met recently at my friend's dinner party. It was a gathering where I got the chance to meet a lot of new people, and this particular girl, who sat next to me, really stood out. We started talking almost immediately, and from the very first conversation, I could tell that we clicked. She was incredibly friendly, outgoing, and easy to talk to, and it felt like we were on the same wavelength. We just “got” each other, and the conversation flowed effortlessly.
+>  I'd like to talk about a girl I met recently at my friend's dinner party. It was a gathering where I got the chance to meet a lot of new people, and this particular girl, who sat next to me, really stood out. We started talking almost immediately, and from the very first conversation, I could tell that ==we clicked.== She was incredibly friendly, outgoing, and easy to talk to, and it felt like we were on the same wavelength. We just “got” each other, and the conversation flowed effortlessly.
 >
-> What really intrigued me about her was that she was a professional traveler, and at the time, she had already traveled to over 40 different countries. She shared some of the most fascinating travel stories I'd ever heard. I could tell she was a great storyteller because I was completely captivated by everything she said. Her stories weren't just about the places she visited; they were filled with details about the people she met, the cultures she experienced, and the unique moments that made each trip memorable. I was absolutely engaged throughout our conversation, and I couldn't help but feel inspired by her adventures.
+>  What really intrigued me about her was that she was a professional traveler, and at the time, she had already traveled to over 40 different countries. She shared some of fascinating travel stories I'd ever heard. I could tell she was a great storyteller because I was completely ==captivated== by everything she said. Her stories weren't just about the places she visited; they were filled with details about the people she met, the cultures she experienced, and the unique moments that made each trip memorable. I was absolutely engaged throughout our conversation, and I couldn't help but feel inspired by her adventures.
 >
-> I really enjoyed talking to her because, first of all, I'm someone who loves traveling too, so we had that in common. I found her experiences both exciting and educational. She was also incredibly knowledgeable about the world in general, not just travel. It was clear that she had a deep understanding of different cultures, global issues, and various ways of life. This made her very charismatic, as she didn't just talk about herself, but also shared insights and interesting facts about the world.
+>  I really enjoyed talking to her because, first of all, I'm someone who loves traveling too, so we had that in common. I found her experiences both exciting and educational. She was also incredibly knowledgeable about the world in general, not just travel. It was clear that she had a deep understanding of different cultures, global issues, and various ways of life. This made her very ==charismatic==, as she didn't just talk about herself, but also shared insights and interesting facts about the world.
 >
-> What I appreciated the most about her, though, was how humble she was. Despite having traveled so much and experienced so many things, she didn't **come across as** pretentious or self-centered at all. It's common to meet people who have had extensive life experiences and for them to be a bit arrogant or always turn the conversation back to themselves. But she was the complete opposite. She was a great listener and was genuinely interested in what I had to say. I felt like she cared about my stories, too, and that made me admire her even more.
+>  What I appreciated the most about her, though, was how humble she was. Despite having traveled so much and experienced so many things, she didn't **come across as** pretentious or self-centered at all. It's common to meet people who have had extensive life experiences and for them to be a bit arrogant or always turn the conversation back to themselves. But she was the complete opposite. She was a great listener and was genuinely interested in what I had to say. I felt like she cared about my stories, too, and that made me admire her even more.
 >
-> Since we only met that once, I've been really curious to get to know her better. I would love to hear more about her travels and learn from her perspectives on life, as she seemed so open-minded and wise. I also think she could teach me a lot about staying humble and grounded, despite achieving so much. So, I definitely hope to see her again and continue our conversation.
+>  Since we only met that once, I've been really curious to get to know her better. I would love to hear more about her travels and learn from her perspectives on life, as she seemed so open-minded and wise. I also think she could teach me a lot about staying humble and grounded, despite achieving so much. So, I definitely hope to see her again and continue our conversation.
 
 1. How do people make friends in China?
 2. On what occasions do people like to make friends?
@@ -3138,17 +3109,16 @@ Where you took the course
 
 And explain why it impressed you a lot
 
->  One course that left a lasting impression on me was actually a **physical education class** I took a while ago, rather than a traditional academic lesson. It was a team-building exercise that was both fun and incredibly insightful. The highlight of this class was a game called "**Tongxin Drum**," which translates to "United Drum." This activity was designed to enhance our teamwork and collaboration skills.
+>  One course that left a lasting impression on me was actually a **physical education class** I took a while ago, rather than a traditional academic lesson. It was a team-building exercise that was both fun and incredibly insightful. The highlight of this class was a game called "**Tongxin Drum**," which translates to "United Drum." This activity was designed to ==enhance our teamwork and collaboration skills==.
 >
-> The setup was quite **simple yet challenging**. We were divided into groups of eight, with each person positioned at a different point around a large, circular drum. The drum was suspended in the air by eight ropes, each held by one of us. In the middle of the drum, there was a ball, and our task was to move together in perfect coordination to bounce the ball continuously without letting it fall off. The goal was to see how many times we could bounce the ball in a row.
+> The setup was quite **simple yet challenging**. We were divided into groups of eight, with each person positioned at a different point around a large, circular drum. The drum was suspended in the air by eight ropes, each held by one of us. In the middle of the drum, there was a ball, and our task was to ==move together in perfect coordination== to bounce the ball continuously without letting it fall off. The goal was to see how many times we could bounce the ball in a row.
 >
 > What impressed me the most about this class was how it forced us to **work together seamlessly**. At first, it seemed like a straightforward task, but it turned out to be much more challenging than we expected. Each of us had to maintain just the right amount of tension on our ropes, and even the slightest movement by one person would affect the entire drum. We quickly realized that in order to succeed, we needed to **communicate clearly and synchronize our movements**. It was an excellent way to understand the importance of teamwork because if even one person was out of sync, the ball would fall off almost immediately.
 >
-> This course not only improved our physical coordination but also taught us valuable lessons about collaboration and trust. I remember feeling a great **sense of accomplishment** when we finally managed to keep the ball bouncing for more than 30 times in a row. It required **patience, quick thinking, and a lot of encouragement** from each other. The experience was both fun and rewarding, and it brought us closer as a group.
+> This course not only improved our physical coordination but also taught us valuable lessons about ==collaboration and trust==. I remember feeling a great **sense of accomplishment** when we finally managed to keep the ball bouncing for more than 30 times in a row. It required **patience, quick thinking, and a lot of encouragement** from each other. The experience was both fun and rewarding, and it brought us closer as a group.
 >
 > What made this class particularly memorable was how it combined physical exercise with practical life skills. It was **a refreshing break from the usual sports activities**, and it showed me that even something as simple as moving in sync with others can teach us a lot about teamwork, trust, and communication. To this day, I remember that lesson whenever I'm working in a group setting because it reminded me how crucial it is to listen, adapt, and support each other.
 >
-> Overall, the "Tongxin Drum" game during that PE class was a unique and impactful experience. It was not only a great workout but also a valuable lesson in how to collaborate effectively with others, making it one of the most impressive courses I've ever attended.
 
 1. Why do some people have a better memory than others？
 2. Do people like things of memorial significance?
@@ -3172,9 +3142,9 @@ What you usually do together
 And explain why you like to spend time with him/her
 
 >  Ok, so, today I'd like to talk about an interesting old person I met at my grandma's dinner party. She's my grandma's good friend, Mrs. Li.
-> At that dinner, Mrs. Li was sitting right next to me, therefore, naturally we started talking to each other. Surprisingly, despite the age difference, we had a lot of things in common（尽管年龄不同，有很多共同之处）. For example, we both loved traveling, watercolour painting and yoga! That's why we hit it off（投机） right away, which was incredible.
+> At that dinner, Mrs. Li was sitting right next to me, therefore, naturally we started talking to each other. Surprisingly, despite the age difference, we had a lot of things in common（尽管年龄不同，有很多共同之处）. For example, we both loved traveling, watercolour painting and yoga! That's why we ==hit it off==（投机） right away, which was incredible.
 > She was a professional traveler（职业旅行家）, and she had traveled to more than 40 different countries at that time. She shared with me a lot of fascinating stories. She was indeed a great story teller. I was so engaged（听故事时被深深吸引）. 
-> I really enjoyed the conversation with her, because, first off, I love traveling. I loved listening to her traveling stories. She was a very open, chatty and charismatic person, at the same time, very knowledgeable with the world（对全世界的知识很博学多闻）. So, I really admired her. And secondly, she was 0 pretentious（装逼的） or self-centred（自我为中心）. You know how sometimes people who have seen and done a lot in life tend to be very arrogant and ego-centric（傲慢且自我）, and they make everything about themselves（一切话题都是关于他们的）? Mrs. Li was not like that at all. On the contrary, she was a great listener（善于倾听）, and she cared about my stories. She was humble and down-to-earth. 
+> I really enjoyed the conversation with her, because, first off, I love traveling. I loved listening to her traveling stories. She was a very ==open, chatty and charismatic== person, at the same time, very knowledgeable with the world（对全世界的知识很博学多闻）. So, I really admired her. And secondly, she was 0 pretentious（装逼的） or self-centred（自我为中心）. You know how sometimes people who have seen and done a lot in life tend to be very arrogant and ego-centric（傲慢且自我）, and they make everything about themselves（一切话题都是关于他们的）? Mrs. Li was not like that at all. On the contrary, she was a great listener（善于倾听）, and she cared about my stories. She was humble and down-to-earth. 
 > So, yeh, that's the person I met at a dinner party. Thank you!
 
 1. What kinds of people are easy to get along with?
@@ -3229,17 +3199,17 @@ What type of work he/ she does
 
 And explain why you think he/ she contributes to the society
 
->  Today, I'd like to talk about **Zhang Guimei**, a truly inspiring individual who has made a remarkable impact on society. Zhang is a Chinese educator and the founder of the **Huaping High School for Girls**, which was the first free high school exclusively for girls in China. Her dedication to education, especially for underprivileged girls in rural areas, is nothing short of extraordinary.
+>  Today, I'd like to talk about **Zhang Guimei**, a truly inspiring individual who has made a remarkable impact on society. Zhang is a Chinese educator and the founder of the **Huaping High School for Girls**, which was the first free high school exclusively for girls in China. Her dedication to education, especially for underprivileged girls in rural areas, ==is nothing short of extraordinary==.
 >
-> Zhang Guimei has spent **over two decades** working tirelessly in the remote, mountainous regions of Yunnan province, where many families face economic difficulties. The area she chose to work in is incredibly impoverished, and girls there are often forced to drop out of school due to financial constraints or societal expectations. What's truly commendable about her work is that she not only focuses on providing free education but also **personally visits** families to persuade them to allow their daughters to attend school. In some cases, she even uses her own limited income to help pay for students'expenses.
+> Zhang Guimei has spent **over two decades** working tirelessly in the remote, mountainous regions of Yunnan province, where many families face economic difficulties. The area she chose to work in is incredibly ==impoverished==, and girls there are often forced to drop out of school due to financial constraints or societal expectations. What's truly commendable about her work is that she not only focuses on providing free education but also **personally visits** families to persuade them to allow their daughters to attend school. In some cases, she even uses her own limited income to help pay for students' expenses.
 >
-> Her efforts have **transformed countless lives**. Many of her students, who would have otherwise been confined to a life of hardship, have gone on to pursue higher education and secure stable careers. Zhang's selflessness has not only empowered individual girls but also uplifted entire families and communities.
+> Her efforts have **transformed countless lives**. Many of her students, who would have otherwise been confined to a life of hardship, have gone on to pursue higher education and secure stable careers. Zhang's selflessness has not only ==empowered individual girls== but also ==uplifted entire families and communities==.
 >
 > What I find most inspiring about Zhang Guimei is her relentless **commitment to social equality**. Despite battling health issues, including cancer, she continues to devote her life to ensuring that girls from impoverished backgrounds have access to education. She firmly believes that education is the key to breaking the cycle of poverty, and her actions reflect that belief.
 >
 > In recognition of her contributions, she has received numerous national awards, including being named one of the “**People's Role Models**” in China. However, I think what truly sets her apart is her genuine compassion and her willingness to **sacrifice her own well-being for the greater good**.
 >
-> To sum up, Zhang Guimei is a true inspiration and a shining example of how one person's dedication and hard work can change society for the better. Her story reminds us that, with enough passion and determination, we can all make a positive difference in the world.
+> To sum up, Zhang Guimei is a true inspiration and a shining example of how one person's dedication and hard work can change society for the better. Her story reminds us that, with enough passion and determination, we can all ==make a positive difference== in the world.
 
 1. What jobs are well-paid?
 2. What are the changes in working conditions?
@@ -3264,7 +3234,7 @@ And explain how you felt about the experience
 
 >  I'd like to talk about a time when I used my smartphone to do something really important. This happened just a few months ago during a offline academic lecture. It was an important session for one of my courses, and I was relying on my laptop to take notes. But, unfortunately, halfway through the lecture, my laptop suddenly ran out of battery. I hadn't realized it was so low, and I didn't have my charger with me at that moment.
 >
-> At first, I panicked because I didn't want to miss any critical information from the lecture. It was a session led by a guest lecturer, so I knew it wasn't something that would be easily repeated. That's when I decided to use my smartphone to salvage the situation. I quickly took out my phone, using the notes app to jot down key points.
+> At first, I panicked because I didn't want to miss any ==critical information== from the lecture. It was a session led by a guest lecturer, so I knew it wasn't something that would be easily repeated. That's when I decided to use my smartphone to ==salvage the situation==. I quickly took out my phone, using the notes app to ==jot down key points==.
 >
 > What really surprised me was how effective my phone turned out to be for taking notes. Of course, the screen was much smaller than my laptop's, but the phone's keyboard was responsive, and I was able to type relatively quickly. I even found it convenient to use voice typing for some parts, which allowed me to capture information even faster. Additionally, I could switch between apps seamlessly to check references and details the lecturer mentioned during the talk.
 >
@@ -3295,9 +3265,9 @@ And how you feel about it
 
 >  One skill that I learned from an older person is **how to make rice dumplings**, which I learned from my grandmother. In my culture, rice dumplings, or "zongzi" as we call them, are traditionally made to celebrate the Dragon Boat Festival, and it's a skill that's been passed down through generations.
 >
-> I first learned this skill a few years ago when I visited my grandmother during one of my school holidays. Growing up, I had always been fascinated by how she would so effortlessly wrap the dumplings with bamboo leaves, filling them with sticky rice, red beans, and pieces of marinated meat. So, one day, I asked her to teach me how to make them, and she was more than happy to pass on her knowledge.
+> I first learned this skill a few years ago when I visited my grandmother during one of my school holidays. Growing up, I had always been fascinated by how she would so effortlessly wrap the dumplings with bamboo leaves, filling them with sticky rice, red beans, and pieces of marinated meat（腌肉）. So, one day, I asked her to teach me how to make them, and she was more than happy to ==pass on her knowledge==.
 >
-> The process was much more **challenging** than I had anticipated. First, my grandmother showed me how to **soak the sticky rice overnight**（将糯米浸泡一夜） and prepare the fillings, making sure they were well-seasoned（把馅料调味好）. The most difficult part, though, was **folding the bamboo leaves into a neat triangular shape** and securing them with string. My initial attempts were clumsy; the leaves would slip, and the filling would **spill out.** However, my grandmother was very patient. She guided me step by step, demonstrating how to fold the leaves tightly and tie the string so that the dumplings wouldn't fall apart during boiling.
+> The process was much more **challenging** than I had anticipated. First, my grandmother showed me how to **soak the sticky rice overnight**（将糯米浸泡一夜） and prepare the fillings, making sure they were ==well-seasoned==（把馅料调味好）. The most difficult part, though, was **folding the bamboo leaves into a neat triangular shape** and securing them with string. My initial attempts were clumsy; the leaves would slip, and the filling would **spill out.** However, my grandmother was very patient. She guided me step by step, demonstrating how to fold the leaves tightly and tie the string so that the dumplings wouldn't fall apart during boiling.
 >
 > What I really appreciated about learning this skill from my grandmother was not just mastering the technique but also hearing the **stories and traditions** behind it. She shared how her mother taught her, and how, back in the day, families would gather to make these dumplings together, turning it into a cherished tradition. It made me realize that making rice dumplings isn't just about the food itself, but also about **family bonding and preserving cultural heritage**.
 >
@@ -3326,15 +3296,15 @@ Who you went there with
 
 And explain how you felt about it
 
->  I'd like to talk about a trip I once took to the countryside outside of St. Petersburg, Russia. It was during the summer a few years ago when I had the opportunity to visit this serene and picturesque area. 
+>  I'd like to talk about a trip I once took to the countryside outside of St. Petersburg, Russia. It was during the summer a few years ago when I had the opportunity to visit this ==serene and picturesque area==. 
 >
-> The place I visited was a small village called Pavlovsk. It's famous for its stunning imperial park and palace, which were once the summer residence of the Russian Tsars. The village itself had an old-world charm, with quaint wooden houses, gardens bursting with colorful flowers, and narrow, winding roads. It was such a refreshing change from the busy and bustling city life of St. Petersburg.
+> The place I visited was a small village called Pavlovsk. It's famous for its ==stunning imperial park and palace==, which were once the summer residence of the Russian Tsars. The village itself had an old-world charm, with quaint（古色古乡的） wooden houses, gardens bursting with colorful flowers, and narrow, winding roads. It was such a refreshing change from the busy and bustling city life of St. Petersburg.
 >
-> What struck me most about the countryside there was how peaceful and quiet it was. As I walked along the park's shaded paths, I could hear nothing but the rustle of leaves and birds chirping. The air was incredibly fresh, and the scent of pine trees and wildflowers was everywhere. A lake in the park is surrounded by tall birch trees reflected in the calm, mirror-like water. It felt like I was stepping back in time to a simpler, more relaxed era.
+> What struck me most about the countryside there was how peaceful and quiet it was. As I walked along the park's shaded paths, I could hear nothing but ==the rustle of leaves and birds chirping==. The air was incredibly fresh, and the scent of pine trees and wildflowers was everywhere. A lake in the park is surrounded by tall birch trees reflected in the calm, mirror-like water. It felt like I was stepping back in time to a simpler, more relaxed era.
 >
 > I also had the chance to interact with some of the locals, who were warm and welcoming. They even invited me to try some traditional Russian dishes, like blini and borscht, made from fresh ingredients grown in their gardens. This experience made the trip even more memorable because it gave me a glimpse into their way of life, which is so deeply connected to nature.
 >
-> Overall, visiting the countryside near St. Petersburg was a truly unforgettable experience. It gave me a much-needed break from the city's fast-paced environment and allowed me to immerse myself in the natural beauty and history of the area. I would love to go back one day, especially in autumn when the leaves change color, as I imagine it would be even more breathtaking.
+> Overall, visiting the countryside near St. Petersburg was a truly unforgettable experience. It gave me a much-needed break from the city's fast-paced environment and allowed me to ==immerse myself in the natural beauty and history of the area==. I would love to go back one day, especially in autumn when the leaves change color, as I imagine it would be even more breathtaking.
 
 1. Do people in your country like to go hiking?
 2. Do most people prefer to live in big cities or in the countryside?
@@ -3357,8 +3327,13 @@ Where you received it
 
 And how you felt about it
 
->  
+>  Last week, I received something for free that was both meaningful and practical. It was a **souvenir** given to me during a company visit organized by my university. The company was celebrating its 30th anniversary, and as part of the event, they gifted each of us a small package containing a **fridge magnet** and a **notebook**, both featuring the company’s logo and anniversary design.
 >
+>  I received this gift from the company’s staff during the visit. The event took place at their headquarters, which was an ==impressive modern building== with a lot of innovative displays about their history and achievements. After the tour and a brief presentation, the staff handed out the souvenirs as ==a token of appreciation for our visit==.
+>
+>  I felt really touched and grateful for the gift. The fridge magnet was a cute and creative keepsake, while the notebook was something I could actually use in my daily life. What made it special was that it wasn’t just a random item—it was tied to the company’s milestone, which made it feel more significant. It also reminded me of the visit itself, which was a great learning experience.
+>
+>  Overall, I was very happy with the gift. It was a thoughtful gesture that left a positive impression of the company, and it’s something I’ll keep as a memory of that day.
 
 1. Why do customers like to receive free gifts from companies?
 2. Is it good or bad for people to have free education in the future?
@@ -3381,8 +3356,15 @@ What types of people do this job
 
 And explain why you think this job is useful to the society
 
->  
+>  One job that I believe is incredibly useful to society is that of a **teacher**. Teachers play a vital role in shaping the future by educating and guiding young minds, and their impact extends far beyond the classroom.
 >
+>  Teachers come from diverse backgrounds, but they generally share certain qualities, such as patience, dedication, and a passion for helping others. They work with students of all ages, from young children in primary schools to adults in universities or vocational training programs. Regardless of the level they teach, their primary goal is to ==impart knowledge, foster critical thinking, and inspire their students to reach their full potential==.
+>
+>  I think this job is extremely useful to society because ==education is the foundation of progress==. Teachers not only teach academic subjects but also help students develop essential life skills, such as problem-solving, communication, and teamwork. They also play a key role in shaping values and attitudes, which contributes to building a more informed, responsible, and compassionate society.
+>
+>  Moreover, teachers often go beyond their job description by acting as mentors and role models. For example, during my high school years, one of my teachers noticed I was struggling with confidence and took the time to encourage me. Her support had a lasting impact on me, and it’s something I’ll always remember.
+>
+>  In conclusion, I believe teachers are ==indispensable== to society because they ==empower== individuals and, in turn, contribute to the overall development of communities and nations. Their work may not always be ==glamorous==, but its long-term impact is ==immeasurable==.
 
 1. What kind of jobs are well-paid in your country?
 2. What kind of jobs receive a low income?
@@ -3407,9 +3389,15 @@ Who you went there with
 
 And explain why you would recommend this place to others
 
->  Hangzhou
+>  One place I’d highly recommend others to live in is **Hangzhou**, a beautiful city in eastern China. I’ve been living here for the past few years as it’s where my university is located, and it has truly become a second home to me.
 >
-> 
+>  Hangzhou is known for its stunning natural scenery, rich history, and modern amenities. The city is famous for **West Lake**, a UNESCO World Heritage Site, which is surrounded by picturesque mountains, ancient temples, and lush gardens. The lake area is perfect for leisurely walks, cycling, or simply relaxing while enjoying the view. Beyond West Lake, Hangzhou also has a vibrant urban area with shopping malls, cafes, and tech hubs, making it a perfect blend of tradition and modernity.
+>
+>  I first visited Hangzhou when I started university, and I’ve explored the city extensively since then. I’ve been to West Lake countless times, often with my classmates or friends. We’ve also visited nearby attractions like **Lingyin Temple** and **Xixi National Wetland Park**, which are equally breathtaking. One of my favorite memories is taking a boat ride on West Lake during sunset—the scenery was absolutely magical.
+>
+>  I would recommend Hangzhou to others because ==it offers an exceptional quality of life==. The city is clean, safe, and well-organized, with excellent public transportation. It’s also a great place for both work and leisure, as it’s a major tech and innovation hub while still maintaining its natural beauty and cultural charm. Additionally, the people here are friendly and welcoming, which makes it easy to feel at home.
+>
+>  In short, Hangzhou is a city that has something for everyone—whether you’re a nature lover, a history enthusiast, or someone looking for a dynamic urban lifestyle. It’s a place I’ve grown to love, and I’m sure others would too.
 
 1. Why do people move form one place to another?
 2. What should people prepare before they move to a different city?
@@ -3432,8 +3420,15 @@ How it influences people of different ages
 
 And explain how it changed people's lives
 
->  
+>  One invention that has undoubtedly changed the world in a positive way is the **electric light bulb**, famously developed by Thomas Edison. This invention ==revolutionized== the way people live and work, and its impact is still felt today.
 >
+>  The electric light bulb brought countless benefits to society. Before its invention, people relied on candles, oil lamps, or gas lights, which were ==not only dim but also hazardous and inconvenient==. The light bulb provided a safer, brighter, and more reliable source of light, allowing people to extend their productive hours well into the night. This was particularly transformative for industries, as factories could operate around the clock, boosting productivity and economic growth.
+>
+>  The influence of the light bulb spans across all age groups. For children, it means being able to study or read at night, which has greatly improved education and literacy rates. For working adults, it has enabled longer working hours and more efficient workspaces. Even for the elderly, it has improved safety and comfort at home, reducing the risks associated with older lighting methods like open flames.
+>
+>  ==On a broader scale==, the electric light bulb has fundamentally changed people’s lives. It has made cities brighter and safer at night, contributing to the development of modern urban life. It has also ==paved the way for other electrical inventions==, as it was one of the first practical applications of electricity. Without the light bulb, the world as we know it—with its 24/7 activity and technological advancements—would not be possible.
+>
+>  In conclusion, the electric light bulb is an invention that has had a profound and lasting impact on humanity. It has improved safety, productivity, and quality of life for people of all ages, and its legacy continues to shine brightly in our modern world.
 
 1. What is the most helpful innovation at home?
 2. What household appliances make us lazy?
@@ -3456,7 +3451,15 @@ Why you watched it
 
 And explain what you have learned from it
 
- 
+> Ok, off the top of my head（首先想到的）, I’m thinking about my experience of learning how to bake a cake through an online video on social media. 
+>
+> I’m not much of a baker, but I had a very good friend’s birthday coming up, and I thought, why not give it a try（为什么不试试呢）?  I found this short tutorial （教程）on TikTok, maybe around 10 minutes long, where the chef explained everything step by step（一步步）in such a clear and easy way. I watched it at home on my phone and decided to follow the steps.
+>
+> The video covered everything（包含了所有事情）, from how to properly whisk the eggs（打鸡蛋） to how to fold in the flour without overmixing（掺水和面，避免比例失衡）, which is super important for getting that light, fluffy texture（轻盈、松软的质地）. I also learned how to decorate the cake once it’s done. I learned lot of things. Thank God it was easy to follow.
+>
+> I followed the recipe step by step religiously（虔诚地一步步跟下来）, and to my surprise（让我惊喜的是）, the cake turned out great! It was light, soft, airy（轻盈、绵软、透气的）, and most importantly, delicious. Honestly, I didn’t build/ get my hopes up（没有把期待设高） too much because it was my first time baking a cake from scratch（从头开始）, but the video made it feel pretty easy. It gave me confidence to try baking more in the future.
+>
+> So yeah, I was really proud of the result. And, my friend/ girlfriend loved it, which made me over the moon（开心坏了）! Thank you!
 
 1. What kinds of videos are most popular in your country?
 2. Are there many people who watch online videos a lot?
@@ -3479,7 +3482,8 @@ What kinds of strong opinions this person has
 
 And explain why you think he/ she is a person who has strong opinions
 
-
+> 
+>
 
 1. What do young people have strong opinions about?
 2. What do old people have strong opinions about?
@@ -3488,7 +3492,7 @@ And explain why you think he/ she is a person who has strong opinions
 5. Do you think we should only say something after thinking it through?
 6. Do you think it is good to have strong opinions?
 
-#### （3）在公共场所接陌生人电话
+#### （3）在公共场所接陌生人电话*
 
 Describe a time when you answered a phone call from someone you didn't know in a public place
 
@@ -3504,7 +3508,8 @@ How you corresponded
 
 And explain how you felt about the experience
 
- 
+>  
+>
 
 1. Do most people mind others talking on the phone in public places?
 2. What are the differences between sitting next to someone who talks on the phone and sitting next to people who talk to each other while traveling by train?
@@ -3513,7 +3518,7 @@ And explain how you felt about the experience
 5. Is it acceptable to talk on the phone in public?
 6. Should people be banned from talking aloud in public places?
 
-#### （4）重新联络的老朋友 
+#### （4）重新联络的老朋友*
 
 Describe an old friend you had lost touch with and got in contact with again
 
@@ -3538,7 +3543,7 @@ And explain how you felt after getting in contact again
 5. Why do people need to make new friends?
 6. Why do we have to give up some old friends?
 
-#### （5）文化之地 
+#### （5）文化之地*
 
 Describe a cultural place that you would like to learn the culture there (e.g. a library, museum, theatre)
 
@@ -3561,7 +3566,7 @@ And explain how the place is related to culture
 5. Which is more important in terms of culture, literature or music?
 6. Does the culture of the past have an impact on today's culture?
 
-#### （6）给建议的人
+#### （6）给建议的人*
 
 Describe a person from whom others like to ask for advice
 
@@ -3588,7 +3593,7 @@ And explain how you felt about the person
 
  
 
-#### （7）拥挤地方
+#### （7）拥挤地方*
 
 Describe a crowded place you went to
 
@@ -3613,7 +3618,7 @@ And how you felt about it
 5. Do you think there are some people who enjoy crowded places?
 6. Do you think it is a good trend to have more big cities?
 
-#### （8）理想房屋 
+#### （8）理想房屋*
 
 Describe an ideal and perfect place where you would like to stay, e.g. a house or an apartment
 
@@ -3638,7 +3643,7 @@ And explain why it would be an ideal place for you
 5. Why do some people choose to live in the city center?
 6. What do you think buildings will be like in the future?
 
-#### （9）近期观影 
+#### （9）近期观影*
 
 Describe a movie you watched and enjoyed recently
 
@@ -3661,7 +3666,7 @@ And explain why you watched this movie
 5. What are the factors that make a successful movie?
 6. Do you think successful movies should have well-known actors or actresses in leading roles?
 
-#### （10）帮助亲人
+#### （10）帮助亲人*
 
 Describe an occasion when you helped a family member/ relative with something
 
@@ -3688,7 +3693,7 @@ And explain how you felt about the experience
 
  
 
-#### （11）医疗人士 
+#### （11）医疗人士*
 
 Describe a person you know who has chosen a career in the medical field (e.g. a doctor, a nurse)
 
@@ -3711,7 +3716,7 @@ And explain how you feel about him/ her
 5. What are the differences between the work of a doctor and a nurse?
 6. Can a hospital function effectively without nurses?
 
-#### （12）丢失的贵重物品 
+#### （12）丢失的贵重物品*
 
 Describe a time when you lost a valuable item
 
@@ -3740,7 +3745,7 @@ And explain how you felt about the experience
 
  
 
-#### （13）令你自信的事
+#### （13）令你自信的事*
 
 Describe something in your study/ work that has made you feel confident
 
@@ -3763,7 +3768,7 @@ And explain how you felt about it
 5. Why do so many people lack confidence these days?
 6. How can a person become more confident?
 
-#### （14）获奖
+#### （14）获奖*
 
 Describe a prize you have received recently (e.g.money, something valuable, a medal)
 
@@ -3790,7 +3795,7 @@ And explain how you felt about it
 
  
 
-#### （15）遇到困难挑战
+#### （15）遇到困难挑战*
 
 Describe a challenge you faced that you thought was rather difficult
 
@@ -3813,7 +3818,7 @@ And explain how you felt at the time
 5. What challenges would people face when learning new sports?
 6. Why do some people enjoy doing extreme sports?
 
-#### （16）读书迷
+#### （16）读书迷*
 
 Describe a person who likes to read a lot
 
@@ -3827,7 +3832,11 @@ What he/ she likes to read
 
 And explain why you think he/ she likes to read a lot
 
- 
+> Ok, so I’d like to talk about my cousin. She’s a few years older than me, and ever since we were kids, I’ve always seen her with a book in hand. She’s what people would call a real bookworm（书虫）. I mean, even when we 
+> were all outside playing, she’d be sitting in a corner with her nose buried in some novel（鼻子埋在某一部小说里）.
+> I first noticed this when I was around 10, and she was already reading these thick books from cover to cover（从头到尾）, like 300-400 pages long. That was quite impressive for me at that age. I was still reading comic books（漫画书） at that time, haha!
+> And in terms of what she likes to read, well, over the years, I’ve gotten to know her taste in books a bit better. She’s really into a mix of things, from classic literature（经典名著） to more modern stuff like sci-fi, fantasy and crime（科幻、魔幻、犯罪）. But she’s not picky（挑剔的）. She’ll read anything, as long as it’s well-written and thoughprovoking（写得很好且 惹人深思）. 
+> Finally, speaking of the reason she is so well-read（饱读诗书）, I think she’s just naturally curious and knowledge-driven（向往知识）. She’s always looking to learn new things, and books are her way of exploring different ideas and worlds. Additionally, I guess it’s her way of relaxing, you know? Some people watch TV or scroll through their phones; she just dives into a book and can spend hours in there. And more she reads, the easier it is for her to finish a book with full concentration. I guess it’s like training. She’s been training her “reading muscles” her whole life, haha!
 
 1. Why are many people so keen on reading?
 2. Do you think parents should help their children develop the reading habit from an early age？
@@ -3840,7 +3849,7 @@ And explain why you think he/ she likes to read a lot
 
  
 
-#### （17）喜欢做手工的人
+#### （17）喜欢做手工的人*
 
 Describe a person who likes to make things by hand (e.g. toys, furniture)
 
@@ -3863,7 +3872,7 @@ And explain how you feel about the person
 5. How does modern technology change the handicraft industry?
 6. Are there any traditional handicrafts in your hometown?
 
-#### （18）喜欢和亲友去的地方
+#### （18）喜欢和亲友去的地方*
 
 Describe a place in your hometown/ city that is different from other places and that you enjoy visiting with your parents/ friends
 
@@ -3888,7 +3897,7 @@ And explain why you think it is different
 5. Do you think it is necessary to visit the same place many times?
 6. What factors attract people to go to visit other places other than their hometown?
 
-#### （19）公园/花园
+#### （19）公园/花园*
 
 Describe a public park or garden
 
@@ -3913,7 +3922,7 @@ And explain how you feel about it
 5. What tourist attractions are popular in China?
 6. How can we encourage young people to go to parks more often?
 
-#### （20）传统节日的食物
+#### （20）传统节日的食物*
 
 Describe your favourite food at a traditional festival or a special event in your country
 
@@ -3940,7 +3949,7 @@ And explain why you like it
 
  
 
-#### （21）别人家的房间
+#### （21）别人家的房间*
 
 Describe someone else's room you enjoy spending time in
 
@@ -3965,7 +3974,7 @@ And explain why you enjoy spending time there
 5. Do most people visit other people's houses during the Spring Festival?
 6. What are the most enjoyable parts of having a meal together with your family?
 
-#### （22）看到野生动物的地方
+#### （22）看到野生动物的地方*
 
 Describe a place in your city you have been to where you can see wildlife (e.g. animals, birds, insects)
 
@@ -4070,7 +4079,7 @@ And explain how you felt about it
 
 ### 【9 月保留题】（28 道）
 
-#### （1）年轻人的偶像
+#### （1）年轻人的偶像*
 
 Describe someone (a famous person) that you think is a good role model for young people
 
@@ -4084,7 +4093,8 @@ What he/ she has done
 
 And explain why he/ she is a good role model for young people
 
- 
+>  
+>
 
 1. What kinds of people are likely to be the role models for teenagers?
 2. ls it important for children to have a role model?
