@@ -25,6 +25,8 @@ nav:
       - 计算机网络: Courses/CN.md
       - 毛概: Courses/毛概.md
       - 物联网技术基础与应用开发: Courses/IoT.md
+    - 大三春夏:
+      - 数字逻辑设计: Courses/CLDF.md
   - 技能⚙️:
     - 算法: skills/Algorithm.md
     - 深度学习: skills/deeplearning.md
