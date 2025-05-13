@@ -38,12 +38,12 @@ left-right 是zjg-zag双旋转
 
 #### Questions
 
-![image-20240622113521194](../images/image-20240622113521194.png)
+![image-20240622113521194](./assets/image-20240622113521194.png)
 
 ### Splay trees 伸展树
 性能类 AVL 树，但不关心是否平衡<br />每访问一个节点 X，从这个节点向上对树进行一系列旋转，使这个节点变成根<br />如果 X 的父节点是根，单旋转 X 和树根；如果 X 有父亲 P 和祖父 G，双旋转（zigzig 或 zigzag）
 
-<img src="../images/image-20240420150207786.png" alt="image-20240420150207786" style="zoom: 33%;" />
+<img src="./assets/image-20240420150207786.png" alt="image-20240420150207786" style="zoom: 33%;" />
 
 All of the Zig, Zig-zig, and Zig-zag rotations not only move the accessed node to the root, but also roughly half the depth of most nodes **on the path**.
 
@@ -64,7 +64,7 @@ All of the Zig, Zig-zig, and Zig-zag rotations not only move the accessed node t
 - 每个操作的平摊时间可能不同
 - 困难是要猜对每个操作的 credit，所以引入第三种方法
 #### Potential method 势能法
-定义：<img src="../images/ads_1.png" style="zoom:40%;" />
+定义：<img src="./assets/ads_1.png" style="zoom:40%;" />
 
 $D_{i-1}$是在本次操作前的结构；$D_i$是本次操作后的结构<br />potential function 将当前问题的结构映射成一个数字——结构的势能<br />credit = 两个势能函数 potential function 的值的差——这个操作把问题的结构改变了多少
 
@@ -93,7 +93,7 @@ $D_{i-1}$是在本次操作前的结构；$D_i$是本次操作后的结构<br />
 - 对于任何一个节点 x，$sizeof(x)≥2^{blackheight(x)}-1$，即 the number of internal nodes in the subtree rooted at x is more than bh(x) 子树内点数量大于等于2^bh(x)^-1
 -  $blackheight(T)>=h(T)/2$
 
-<img src="../images/ads_2.png" style="zoom: 33%;" />
+<img src="./assets/ads_2.png" style="zoom: 33%;" />
 
 2 和 3 是旋转次数
 
@@ -221,13 +221,13 @@ The leftist heap property is that for every node X in the heap, the **null path 
 #### Merge
 ##### recursive
 
-<img src="../images/image-20240420160748947.png" alt="image-20240420160748947" style="zoom:33%;" />
+<img src="./assets/image-20240420160748947.png" alt="image-20240420160748947" style="zoom:33%;" />
 
 step1 `Merge(H1->Right,H2)`; step2 `Attach(H2,H1->Right)`
 
 大的根值的堆 和 小的根值的堆的右子堆 合并
 
-<img src="../images/image-20240420160811151.png" alt="image-20240420160811151" style="zoom:33%;" />						<img src="../images/image-20240420160825942.png" alt="image-20240420160825942" style="zoom: 33%;" />      
+<img src="./assets/image-20240420160811151.png" alt="image-20240420160811151" style="zoom:33%;" />						<img src="./assets/image-20240420160825942.png" alt="image-20240420160825942" style="zoom: 33%;" />      
 
 step3 `Swap(H1->Right,H1->Left)` if necessary
 
@@ -292,7 +292,7 @@ $T_{amoritized}=O(logN)$
 
 $ϕ(D_i)=$number of heavy nodes
 
-【Definition】 A node p is _heavy_ if the number of descendants of p's _right_ subtree is **at least half** of the number of descendants of p, and light otherwise. Note that the number of descendants of a node includes the node itself.<br />只有在原来右路径上的节点 heavy/light 状态会改变<br />h-heavy nodes；l-light nodes<br /><img src="./../images/1710306364781-fc21bc6d-963d-4e08-8d3c-56a6965909a3.png" alt="image.png" style="zoom: 67%;" /><br />为什么 light node 的复杂度是$log(N)$​：每一个 light node 的右子树 node 数量都要减半（≤(n-1)/2)
+【Definition】 A node p is _heavy_ if the number of descendants of p's _right_ subtree is **at least half** of the number of descendants of p, and light otherwise. Note that the number of descendants of a node includes the node itself.<br />只有在原来右路径上的节点 heavy/light 状态会改变<br />h-heavy nodes；l-light nodes<br /><img src="././assets/1710306364781-fc21bc6d-963d-4e08-8d3c-56a6965909a3.png" alt="image.png" style="zoom: 67%;" /><br />为什么 light node 的复杂度是$log(N)$​：每一个 light node 的右子树 node 数量都要减半（≤(n-1)/2)
 
 ### Questions
 
@@ -415,7 +415,7 @@ ElementType DeleteMin( BinQueue H ){
 
 ### Analysis
 
-<img src="./../images/image-20240326102837435.png" alt="image-20240326102837435" style="zoom: 33%;" />
+<img src="././assets/image-20240326102837435.png" alt="image-20240326102837435" style="zoom: 33%;" />
 
 - 一个 N 个元素的二项队列可以由 N 次连续的插入在$O(N)$时间内实现（最坏情况$O(N)$ 
 
@@ -541,21 +541,21 @@ eg, $T(N)=3T(N/4)+Θ(N^2)$
 
 3. #### master theorem
 
-<img src="../images/image-20240420114033231.png" alt="image-20240420114033231" style="zoom:40%;" />
+<img src="./assets/image-20240420114033231.png" alt="image-20240420114033231" style="zoom:40%;" />
 
-<img src="../images/image-20240403133416478.png" alt="image-20240403133416478" style="zoom: 33%;" />
+<img src="./assets/image-20240403133416478.png" alt="image-20240403133416478" style="zoom: 33%;" />
 
-![image-20240409102545096](../images/image-20240409102545096.png)
+![image-20240409102545096](./assets/image-20240409102545096.png)
 
 ### Questions
 
 快排quick sort和归并merge用了divide and conquer算法
 
-<img src="../images/image-20240409102929419.png" alt="image-20240409102929419" style="zoom:50%;" />
+<img src="./assets/image-20240409102929419.png" alt="image-20240409102929419" style="zoom:50%;" />
 
 [数据结构错题整理（二）_for the recurrence equation t(n)=at(n/b)+f(n), if -CSDN博客](https://blog.csdn.net/FUNNYQian123/article/details/113482627)
 
-<img src="../images/image-20240412161300240.png" alt="image-20240412161300240" style="zoom: 50%;" />
+<img src="./assets/image-20240412161300240.png" alt="image-20240412161300240" style="zoom: 50%;" />
 
 ## 7 Dynamic programming
 
@@ -748,7 +748,7 @@ co
 
 An **approximation** algorithm guarantees to seek out high accuracy and top quality solution (say within 1% of optimum) Approximation algorithms are used to get an answer near the (optimal) solution of an optimization problem in polynomial time
 
-approximation ratio: $\rho(n)$，<img src="../images/image-20240515165626455.png" alt="image-20240515165626455" style="zoom:33%;" />
+approximation ratio: $\rho(n)$，<img src="./assets/image-20240515165626455.png" alt="image-20240515165626455" style="zoom:33%;" />
 
 PTAS：polynomial time approximation schema
 
@@ -911,9 +911,9 @@ state-flipping algorithm
 
 greedy&local search 最小生成树问题
 
-2. ![image-20240528103745269](../images/image-20240528103745269.png)
+2. ![image-20240528103745269](./assets/image-20240528103745269.png)
 
-![image-20240528103809662](../images/image-20240528103809662.png)
+![image-20240528103809662](./assets/image-20240528103809662.png)
 
 ## 12 Randomize
 
@@ -1106,7 +1106,7 @@ Huffman哈夫曼 tree can get minimum merge times.
 
 提高内存利用率，升级硬盘，提升I/O速度
 
-![image-20240611110444351](../images/image-20240611110444351.png)
+![image-20240611110444351](./assets/image-20240611110444351.png)
 
 > A.  T(N, k) is O(N log k) for a fixed N
 

@@ -117,8 +117,6 @@ Musical performances showed a dramatic increase in popularity. Starting with no 
 
 **5. the percentage of the population living in cities**
 
-<img src="https://deepseek-api-files.obs.cn-east-3.myhuaweicloud.com/raw/2025/03/09/file-afe57bc2-cb18-4566-9f82-c196abc9ffc4?response-content-disposition=attachment%3B+filename%3D%22image.png%22&AccessKeyId=OD83TSXECLFQNNSZ3IF6&Expires=1741614500&Signature=uDW7G%2BY9TVvNanSAUwNyL%2FBgQEQ%3D" alt="img" style="zoom:33%;" />
-
 The line graph illustrates the percentage of the population living in cities in four Asian countries—Philippines, Malaysia, Thailand, and Indonesia—from 1970 to 2020, with projections for 2030 and 2040.
 
 It is clear that urbanization has increased in all four countries, with Malaysia having the highest *proportion* of urban residents, while Indonesia started with the lowest percentage.

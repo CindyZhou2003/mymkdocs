@@ -1001,7 +1001,7 @@ $r(R)$​：具有模式R的关系r
 
 K：R的一个超码
 
-函数依赖：<img src="../images/image-20240418101657389.png" alt="image-20240418101657389" style="zoom:33%;" />
+函数依赖：<img src="./assets/image-20240418101657389.png" alt="image-20240418101657389" style="zoom:33%;" />
 
 如果$R_1∩R_2$ 构成$R_1$ 或$R_2$​​ 的超码，那么R的该分解就是一个无损分解。
 
@@ -1122,7 +1122,7 @@ $$\alpha\beta=\alpha∪\beta$$
 
 **阿姆斯特朗公理** Armstrong's axiom：用来寻找被逻辑蕴含的函数依赖
 
-<img src="../images/image-20240421170133734.png" alt="image-20240421170133734" style="zoom:40%;" /><img src="../images/image-20240421171748126.png" alt="image-20240421171748126" style="zoom: 33%;" />
+<img src="./assets/image-20240421170133734.png" alt="image-20240421170133734" style="zoom:40%;" /><img src="./assets/image-20240421171748126.png" alt="image-20240421171748126" style="zoom: 33%;" />
 
 #### 7.4.2 属性集的闭包
 
@@ -1241,7 +1241,7 @@ eg，如果职员的编号组成为“系+号码”（CS0010），则这个属�
 > 1. AB, BC
 > 2. Since there are dependencies (A→C and C→A) where the left-hand side is not a superkey, **R is not in BCNF**
 
-3. ![微信图片_20240526163330](../images/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240526163330.jpg)
+3. ![微信图片_20240526163330](./assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240526163330.jpg)
 
 > a. Functional Dependencies:
 >
@@ -1393,7 +1393,7 @@ Block Header内容
 
 #### 8.5.1 堆文件组织
 
-自由空间图（free-space map）<img src="../images/image-20240524173906364.png" alt="image-20240524173906364" style="zoom:50%;" />
+自由空间图（free-space map）<img src="./assets/image-20240524173906364.png" alt="image-20240524173906364" style="zoom:50%;" />
 
 每个项表示一个比例f，即块中有至少比例为f的空间是自由的
 
@@ -1483,7 +1483,7 @@ https://chatgpt.com/share/29bc8b7e-8a42-44d6-a99b-45d5d77d95cb
 
 ![image-20240618220709646](assets/image-20240618220709646.png)
 
-B+树计算：<img src="../images/image-20240511122251045.png" alt="image-20240511122251045" style="zoom:40%;" />
+B+树计算：<img src="./assets/image-20240511122251045.png" alt="image-20240511122251045" style="zoom:40%;" />
 
 n：B+树每个节点的指针数量
 
@@ -1681,11 +1681,11 @@ A6 非聚集索引+比较
 
 ##### 复杂选择
 
-合取∧：<img src="../images/image-20240601112121918.png" alt="image-20240601112121918" style="zoom: 50%;" />
+合取∧：<img src="./assets/image-20240601112121918.png" alt="image-20240601112121918" style="zoom: 50%;" />
 
-析取∨：<img src="../images/image-20240601112158194.png" alt="image-20240601112158194" style="zoom:50%;" />
+析取∨：<img src="./assets/image-20240601112158194.png" alt="image-20240601112158194" style="zoom:50%;" />
 
-否定-：<img src="../images/image-20240601112311253.png" alt="image-20240601112311253" style="zoom:50%;" />
+否定-：<img src="./assets/image-20240601112311253.png" alt="image-20240601112311253" style="zoom:50%;" />
 
 A7 使用一个索引的合取选择
 A8 使用组合索引的合区选择
@@ -1717,7 +1717,7 @@ Example
 
 #### 10.3.3 连接运算
 
-等值连接（equal-join）表示形如<img src="../images/image-20240601130658577.png" alt="image-20240601130658577" style="zoom:50%;" />的连接
+等值连接（equal-join）表示形如<img src="./assets/image-20240601130658577.png" alt="image-20240601130658577" style="zoom:50%;" />的连接
 
 ##### 嵌套-循环 连接（Nested-loop join）
 
@@ -1803,17 +1803,17 @@ $b_b=\lfloor\frac{M}{n+1}\rfloor=\lfloor\frac{M}{b_s/M+1}\rfloor$ 每次能传�
 
 #### 10.5.1 等价关系
 
-1. Conjuctive合取选择可分为单个选择运算的级联 <img src="../images/image-20240601161500529.png" alt="image-20240601161500529" style="zoom:50%;" />
+1. Conjuctive合取选择可分为单个选择运算的级联 <img src="./assets/image-20240601161500529.png" alt="image-20240601161500529" style="zoom:50%;" />
 
-2. 选择运算满足交换律commutative <img src="../images/image-20240601161536805.png" alt="image-20240601161536805" style="zoom:50%;" />
+2. 选择运算满足交换律commutative <img src="./assets/image-20240601161536805.png" alt="image-20240601161536805" style="zoom:50%;" />
 
-3. 一系列投影运算中只有最后一个是必须的 <img src="../images/image-20240601161618179.png" alt="image-20240601161618179" style="zoom:50%;" />
+3. 一系列投影运算中只有最后一个是必须的 <img src="./assets/image-20240601161618179.png" alt="image-20240601161618179" style="zoom:50%;" />
 
-4. 选择运算可与笛卡尔积以及θ连接相结合<img src="../images/image-20240601162140969.png" alt="image-20240601162140969" style="zoom:50%;" />
+4. 选择运算可与笛卡尔积以及θ连接相结合<img src="./assets/image-20240601162140969.png" alt="image-20240601162140969" style="zoom:50%;" />
 
-5. θ连接运算满足交换律 <img src="../images/image-20240601162250594.png" alt="image-20240601162250594" style="zoom:50%;" />
-6. 自然连接结合律<img src="../images/image-20240619104722242.png" alt="image-20240619104722242" style="zoom:50%;" />
-7. θ连接结合律<img src="../images/image-20240619104808091.png" alt="image-20240619104808091" style="zoom:50%;" />
+5. θ连接运算满足交换律 <img src="./assets/image-20240601162250594.png" alt="image-20240601162250594" style="zoom:50%;" />
+6. 自然连接结合律<img src="./assets/image-20240619104722242.png" alt="image-20240619104722242" style="zoom:50%;" />
+7. θ连接结合律<img src="./assets/image-20240619104808091.png" alt="image-20240619104808091" style="zoom:50%;" />
 
 #### 10.5.3 查询规模估计
 
@@ -1832,7 +1832,7 @@ blocks of r = $n_r$/record number per block of r（向上取整）
 
 $σ_{A=\alpha}(r)$：$\alpha$是频繁出现的值；否则，没有可用的直方图，假设取值是均匀分布的，估计为$n_r/V(A,r)$个元组
 
-$σ_{A≤v}(r)$：假设最大最小储存在目录中，值均匀分布，则<img src="../images/image-20240601164333077.png" alt="image-20240601164333077" style="zoom:50%;" />
+$σ_{A≤v}(r)$：假设最大最小储存在目录中，值均匀分布，则<img src="./assets/image-20240601164333077.png" alt="image-20240601164333077" style="zoom:50%;" />
 
 **复杂选择**
 
@@ -1952,7 +1952,7 @@ tree protocol 树协议
 
 保证冲突可串行化，且不会有死锁
 
-![数据库锁](../images/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%94%81.png)
+![数据库锁](./assets/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%94%81.png)
 
 ### 12.2 死锁处理
 

@@ -248,8 +248,6 @@ Four variable maps can have rectangles corresponding to:
 
 - 包含无关最小项的矩阵划分结果可能不唯一
 
-
-
 #### Multiple-Level Optimization
 
 不好用卡诺图
@@ -265,7 +263,8 @@ Four variable maps can have rectangles corresponding to:
 primitive gate: 一次操作 AND, OR + an inversion
 
 complex gate: 不止一次操作
-• High-Impedance Outputs
+
+High-Impedance Outputs
 
 #### Propagation Delay
 
@@ -305,9 +304,24 @@ XNOR 同或（异或非）：复杂门，相同出 1、不同出 0
 
 Hierarchical Design 分层设计
 
+
+
+> [!NOTE]
+>
+> 真值表推导出逻辑表达式的步骤：
+>
+> 1. **确定输出为1的行**：对于每个输出信号（如 S0, S1, ..., S5），找出所有输出为1的行
+> 2. **写出对应的乘积项**：对于每个输出为1的行，根据输入变量（A, B, C）的值写出一个乘积项。如果变量值为1，则直接写变量；如果为0，则写变量的非
+> 3. **将所有乘积项相加**：将这些乘积项用逻辑或（+）连接起来，得到该输出的逻辑表达式
+> 4. **可能的化简**：使用卡诺图
+
 #### Combinational Logic
 
 宽线
+
+#### Enable 使能
+
+使能 EN：允许/阻止输入 X 到达输出
 
 ### Decoder 译码
 
@@ -315,15 +329,31 @@ the conversion of an n-bit input code to an m-bit output code with n ≤ m ≤ 2
 
 译码就是将一个 n 位的输入码转化成一个 m 位的输出码，decoder 出来是最小项
 
+2-4 译码器：
+
+<img src="./assets/image-20250502201602364.png" alt="image-20250502201602364" style="zoom:33%;" />
+
 #### n-m 译码器
 
 <img src="./assets/image-20250326095612149.png" alt="image-20250326095612149" style="zoom: 33%;" />
 
-3-8 译码器 = 1 个 2-4 译码器+1 个 1-2 译码器；1 个 2-4 译码器 = 2 个 1-2 译码器
+3-8 译码器 = 1 个 2-4 译码器+1 个 1-2 译码器
+
+- 门输入成本 = 3 + 2×4 + 2×8 = 27
+
+1 个 2-4 译码器 = 2 个 1-2 译码器
+
+- 门输入成本 = 2 + 2×4 = 10
 
 如何构造译码器？
 
-- 
+1. 使 k = n。
+2. 如果 k 是偶数，则将 k = k/2，并使用 $2^k$ 个与门，这些门被两个译码器驱动，每个译码器有 $2^k/2$ 个输出。如果 k 是奇数，计算出(k+1)/2 和(k-1)/2，并使用 2 个与门，这些与门被两个译码器驱动，其中一个译码器有 $2^{(k+1)/2}$ 个输出，另一个译码器有 $2^{(k-1)/2}$ 个输出。
+3. 对于由步骤 2)得到的每一个译码器，使用由步骤 2)得到的 k，重复步骤 2)，直到 k = 1。如果 k = 1，则使用一个 1-2 译码器。
+
+Eg,6-64 译码器：两个 3-8 译码器 <img src="./assets/image-20250503201219507.png" alt="image-20250503201219507" style="zoom: 25%;" />
+
+门输入成本 = 6+2(2×4)+2(2×8)+2×64 = 182
 
 #### Decoder with Enable
 
@@ -349,21 +379,28 @@ combinational logic implementation - Decoder and OR gates
 
 ### Selection
 
-多路复用器：从多条输入中选择一个输入，并将信息直接传输到输出
+多路复用器：组合电路从多条输入中选择一个输入，并将信息直接传输到输出
 
-2-to-1-line multiplexer：1 个 1-2 decoder + 两个使能电路 EN + 1 个两输入或门
+<img src="./assets/image-20250503200610850.png" alt="image-20250503200610850" style="zoom:33%;" />
 
-64-to-1-line multiplexer：2 个 3-8 decoder（4+8 个与门）+64 个与门+1 个或门 --> cost =？
+**2-to-1**-line multiplexer：
 
+- 1 个 1-2 decoder + 两个使能电路 EN + 1 个两输入或门
+- $Y=\overline{S}I_0+S\overline{I_1}$（S 是选择输入，I 是输出）
 
+**4-to-1**-line multiplexer：
 
-4-to-1-line multiplexer：1 个 2-4 decoder + 4 个 4×2 与或门 --> cost = 10+32+16 = 58
+- 1 个 2-4 decoder + 4 个 与门 + 1 个四输入或门（1 个 4×2 与或门） --> cost = 2 + 2(4×2)+ 4 = 22
+- $Y=\overline{S_1}\overline{S_0}I_0+\overline{S_1}{S_0}I_1+S_1\overline{S_0}I_2+S_1S_0I_3$
+- <img src="./assets/image-20250503203127290.png" alt="image-20250503203127290" style="display: block; margin-left: 0px; margin-right: auto; zoom: 33%;"/>
 
-<img src="./assets/image-20250326112944693.png" alt="image-20250326112944693" style="zoom:33%;" />
+**64-to-1**-line multiplexer：1 个 6-64 译码器+1 个 64×2 的与或门 --> cost = 182 + 128 + 64 = 374
+
+<img src="./assets/image-20250326112944693.png" alt="image-20250326112944693" style="zoom: 50%;" />
 
 若有 n 个变量，找到 Truth tables 的最小项，
 
-
+BCD 码转化为 7 段码的译码器，用 8-1 多路复用器
 
 ### Arithmetic Functions
 
@@ -381,21 +418,21 @@ $S=X\oplus Y$
 
 $C=XY$
 
+半加器由一个异或门，一个与门组成
+
 <img src="./assets/image-20250402102352545.png" alt="image-20250402102352545" style="zoom:33%;" />
 
 ##### 全加器（三个输入、两个输出）
 
-<img src="./assets/image-20250402103914231.png" alt="image-20250402103914231" style="zoom:33%;" />
+$S = X\oplus Y\oplus Z = \overline{XY}Z+ \overline{X}Y\overline{Z} + X\overline{YZ} + XYZ$
 
-$S = X\oplus Y\oplus Z$
+$C = XY+ (X\oplus Y)Z = XY + XZ + YZ$
 
-$C = XY+ (X\oplus Y)Z$
-
-$X·Y$   is carry generate(G), $X\oplus Y$  is carry propagate(P)
+$X·Y$ is carry generate(G), $X\oplus Y$ is carry propagate(P)
 
 <img src="./assets/image-20250402104446010.png" alt="image-20250402104446010" style="zoom:33%;" />
 
-全加器由两个半加器+一个或门组成
+全加器由两个半加器 + 一个或门组成
 
 ##### Carry Lookahead Adder
 
@@ -415,13 +452,19 @@ C4 = G3 + P3G2 + P3P2G1+ P3P2P1G0 + P3P2P1P0 C0 = G0~3+ P0~3C0
 
 补码再求一次补码就是源码
 
-
+#### Overflow
 
 overflow 检查符号位，和第一个操作数一致则没有溢出
 
+用 V 表示溢出
+
 Extension
 
-#### ALU
+#### ALU 全加器
+
+$S_i = A_i\oplus B_i\oplus C_i$
+
+
 
 ## Sequential Circuits
 
@@ -437,9 +480,9 @@ Extension
 
 next state = f(input, state)
 
-outputs(Mealy) = g(inputs, state) 显示表达 inputs，即使 state 不变 inputs 变化就会变化
+**outputs(Mealy 米利模型) = g(inputs, state)** 显示表达 inputs，即使 state 不变， inputs 变化就会变化
 
-outputs(Moore)= h(state) 隐含 inputs，只有状态变化才输出变化
+**outputs(Moore 摩尔模型)= h(state)** 隐含 inputs，只有状态变化才输出变化
 
 - 计算机大多采用 Moore 形式
 
@@ -451,9 +494,9 @@ outputs(Moore)= h(state) 隐含 inputs，只有状态变化才输出变化
 
 gate delay
 
-<img src="./assets/image-20250416102759553.png" alt="image-20250416102759553" style="zoom:50%;" />
+<img src="./assets/image-20250416102759553.png" alt="image-20250416102759553" style="zoom: 25%;" />
 
-> Based on the provided image, the glitch in the output signal Y of the 2-input multiplexer occurs because of the **propagation delay of the inverter (NOT gate)**.
+> **Glitch 的形成原因**：非门的延迟 propagation delay of the inverter (NOT gate)
 >
 > Here's a breakdown of why:
 >
@@ -469,11 +512,11 @@ gate delay
 >
 >     When S goes from 1 to 0:
 >
->    - The signal S=0 arrives quickly at the input of the top AND gate, disabling it.
+>    - The signal S = 0 arrives quickly at the input of the top AND gate, disabling it.
 >    - The signal Sˉ remains 0 for a short time (0.2 units) due to the inverter's delay before it becomes 1.
 >    - During this short delay period, *both* S and Sˉ are effectively 0 at the inputs of their respective AND gates.
 >
-> 6. **Output Drops:** With both AND gates receiving a 0 on their select inputs (S=0 for the top, Sˉ=0 temporarily for the bottom), both AND gates output 0.
+> 6. **Output Drops:** With both AND gates receiving a 0 on their select inputs (S = 0 for the top, Sˉ = 0 temporarily for the bottom), both AND gates output 0.
 >
 > 7. **Glitch Formation:** Since both inputs to the final OR gate are 0, its output Y drops to 0. This creates the brief low pulse, known as a glitch.
 >
@@ -481,33 +524,33 @@ gate delay
 >
 > In summary, the delay in the inverter causes a brief period where neither input A nor B is selected, leading to the temporary incorrect low output (the glitch).
 
-震荡电路 oscillator，不稳定unstable
+震荡电路 oscillator，不稳定 unstable
 
 ### Storage elements
 
 #### Latches 锁存器
 
-保持输出输入端不变
+锁存器是构造触发器的基本元件；只要输入信号不变化，保持输出不变，即锁存器是透明的
 
 Triggers 触发器可以当锁存器用，反之不行
 
-SR和$\overline{S}\overline{R}$
+SR 和 $\overline{S}\overline{R}$ 锁存器
 
-##### SR低有效(NAND)
+##### SR 低有效(NAND)
 
 两个交叉耦合的与非门 NAND
 
-<img src="./assets/image-20250416103550170.png" alt="image-20250416103550170" style="zoom:33%;" /><img src="./assets/image-20250416104333422.png" alt="image-20250416104333422" style="zoom:33%;" />
+<img src="./assets/image-20250416103550170.png" alt="image-20250416103550170" style="zoom:33%;" /> <img src="./assets/image-20250416104333422.png" alt="image-20250416104333422" style="zoom:33%;" />
 
-输出Q=1且$\overline{Q}$=0，置位状态 set state
+输出 Q = 1 且 $\overline{Q}$ = 0，置位状态 set state
 
-输出Q=0且$\overline{Q}$=1，复位状态 reset state
+输出 Q = 0 且 $\overline{Q}$ = 1，复位状态 reset state
 
-两个输入S=R=0，输出=1，禁止
+两个输入 S = R = 0，输出 = 1，禁止
 
-两个输入S=R=1，输出=0，未定义状态
+两个输入 S = R = 1，输出 = 0，未定义状态
 
-##### SR高有效(NOR)
+##### SR 高有效(NOR)
 
 两个交叉耦合的或非门 NOR
 
@@ -519,15 +562,38 @@ SR和$\overline{S}\overline{R}$
 
 ##### 门控制 Clocked S - R Latch
 
+增加时钟控制锁存器何时对输入敏感
+
+<img src="./assets/image-20250506115701075.png" alt="image-20250506115701075" style="zoom:40%;" />
 
 
-D Latch
 
-#### 主从触发器 Flip-flop
+##### D Latch
 
-S-R Master-Slave：两个CSR
+D 锁存器：确保输入输入信号永远不会同时取 1 以消除未定义状态，只有两个输入 D（数据信号）和 C（控制信号）
 
-https://g.co/gemini/share/dfbd4526995a
+<img src="./assets/image-20250506120928984.png" alt="image-20250506120928984" style="zoom: 40%;" />
+
+#### 触发器 Flip-flop
+
+触发器是一个能够储存 1 位信息的二进制储存元件，在最简单的时钟控制的时序电路中使用
+
+- 触发器消除了透明性，在输出信号改变之前，输入信号和输出信号之间的通路被断开；触发器的状态只取决于前面一个瞬间的状态，不会发生多次状态改变的现象
+
+S-R Master-Slave 主从触发器
+
+##### edge-triggered 边沿触发器
+
+边沿触发器只在时钟信号跳变时触发（忽略保持阶段的时钟脉冲）
+
+正边沿（0->1），负边沿（1->0）
+
+| <img src="./assets/image-20250506143101129.png" alt="image-20250506143101129" style="zoom:50%;" /> | <img src="./assets/image-20250506143121054.png" alt="image-20250506143121054" style="zoom: 50%;" /> |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+
+标准图形符号
+
+<img src="./assets/image-20250506143727638.png" alt="image-20250506143727638" style="zoom:50%;" />
 
 ##### Flip-Flop Timing Parameters
 
@@ -535,26 +601,28 @@ https://g.co/gemini/share/dfbd4526995a
 
 a) 主从触发器：$传播延迟>t_{hold}$，$t_{setup}=t_w$
 
-b)边缘触发器（负）：$t_{setup}<t_w$
+b) 边缘触发器（负）：$t_{setup}<t_w$
 
-> ts - setup time 
+> $t_s$ - setup time 
 >
 > - Master-slave - Equal to the width of the triggering pulse
 > - Edge-triggered - Equal to a time interval that is generally much less than the width of the the triggering pulse
 >
-> th - hold time - Often equal to zero
-> tpx - propagation delay
+> $t_h$ - hold time - Often equal to zero
+> $t_{px}$ - propagation delay
 >
 > - Same parameters as for gates except
 > - Measured from clock edge that triggers the output change to the output change
 
 If the **clock period is too short**, some data changes will not propagate through the circuit to flip-flop  inputs before the setup time interval begins
 
-触发器需要setup时间，$t_{pd,FF}$触发器延迟，$t_{pd,COMB}$组合逻辑电路总延迟时间（触发器输入-输出），$t_{slack}$是extra time in the clock period in addition to the sum of the delays and setup time on a path，$t_p$(clock period=1/clock frequency)是所有这些时间之和
+触发器需要 setup 时间，$t_{pd,FF}$ 触发器延迟，$t_{pd,COMB}$ 组合逻辑电路总延迟时间（触发器输入-输出），$t_{slack}$ 是 extra time in the clock period in addition to the sum of the delays and setup time on a path，$t_p$(clock period = 1/clock frequency)是所有这些时间之和
 
 <img src="./assets/image-20250423104255934.png" alt="image-20250423104255934" style="zoom: 33%;" />
 
-计算可允许的$t_{pd,COMB}$：主从触发器可允许的gates要少于边缘触发器
+计算可允许的 $t_{pd,COMB}$：主从触发器可允许的 gates 要少于边缘触发器
+
+
 
 ### Sequential circuit analysis
 
@@ -566,7 +634,7 @@ Two states are **equivalent** if their response for each possible input sequence
 
 Alternatively, two states are **equivalent** if their outputs produced for each input symbol is identical and their next states for each input symbol are the same or equivalent.
 
-弧线上是输入/输出，如果输出在里面（moore模型），说明输入不会改变输出的值
+弧线上是输入/输出，如果输出在里面（moore 模型），说明输入不会改变输出的值
 
 #### Moore and Mealy Models
 
@@ -586,7 +654,9 @@ Mealy Model 米利模型
 
 #### State tables 状态表
 
+当前状态、输入、下一状态、输出
 
+一个包含m个触发器和n个输入的时序电路的状态表有$2^{m+n}$行
 
 ### Sequential Circuit Design
 
@@ -597,7 +667,7 @@ Mealy Model 米利模型
 
 **状态简化**：获得一个最小化的状态表。这个表不仅能正确地反映设计的全部要求，而且状态的数目最少
 
-**状态等效**：状态S1和S2是完全确定状态表中的两个状态，对于所有可能的输入序列，输出出响应序列完全相同
+**状态等效（equivalent）**：状态 S1 和 S2 是完全确定状态表中的两个状态，对于所有可能的输入序列，输出响应序列完全相同
 
 - 或次态相同
   或次态交错
@@ -606,6 +676,29 @@ Mealy Model 米利模型
 完全确定状态表： 状态表中的次态和输出都有确定的状态和确定的输出值
 
 ##### 隐含表化简
+
+<img src="./assets/image-20250430100331304.png" alt="image-20250430100331304" style="zoom:33%;" />
+
+## Digital Hardware Implementation
+
+### The Design Space
+
+### Programmable Implementation Technologies
+
+## Register and Register Transfers
+
+### Register, Microoperations and Implementations
+
+Load-Controlled Feedback
+
+- load = 0, hold current values
+- load = 1, load input values
+
+Conditionl Transfer
+
+
+
+### Counter, Register cells, Buses & Serial operations
 
 
 

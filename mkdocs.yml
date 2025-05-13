@@ -25,6 +25,7 @@ nav:
       - 计算机网络: Courses/CN.md
       - 毛概: Courses/毛概.md
       - 物联网技术基础与应用开发: Courses/IoT.md
+      - 软件质量与保证测试: Courses/SQAT.md
     - 大三春夏:
       - 数字逻辑设计: Courses/CLDF.md
   - 技能⚙️:
@@ -35,7 +36,6 @@ nav:
       - 第一次: abroad/IELTs_speaking1.md
       - 第二次:  abroad/IELTs_speaking2.md
     - 雅思作文: abroad/IELTs_writing.md
-    - GRE: abroad/GRE.md
   - 其他🎊:
     - Test: other/test.md
     - 部署网站时的问题: other/Debug_issue.md
