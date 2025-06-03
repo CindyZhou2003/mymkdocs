@@ -17,9 +17,7 @@ Thanks for stopping by my corner of the internet! 💫\\ ^ ~ ^ /
 详见 其他-部署网站时的问题
 
 ## ✨ Attribute
-The icons are attributed By Freepik.
-
-文档模板参考了咸鱼暄(https://github.com/xuan-insr/xuan-insr.github.io)
-
+- 图标来源：[Freepik](https://www.freepik.com)
+- 文档模板参考：[咸鱼暄](https://github.com/xuan-insr/xuan-insr.github.io)
 
 

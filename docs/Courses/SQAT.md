@@ -19,7 +19,7 @@
 >
 > - 区别
 >
->   - 不一定在一张PPT上
+>   - 不一定在一张 PPT 上
 >
 >   - 核心区别
 >
@@ -44,7 +44,7 @@
 > | 功能性   | 第一部分 概念与框架               | 第三部分 单元测试 |
 > | 非功能性 | 第二部分 自动化测试与非功能性测试 |                   |
 >
-> unit test第一个判断会改变第二个判断的值
+> unit test 第一个判断会改变第二个判断的值
 >
 > 总+测试计划+报告
 >
@@ -60,9 +60,9 @@
 >
 > 白盒测试——方法
 
-#### QA（quality assurance）和test（QC）的区别？
+#### QA（quality assurance）和 test（QC）的区别？
 
-> QA是目标，test是实现目标最重要的方法
+> QA 是目标，test 是实现目标最重要的方法
 
 Quality Assurance (QA) and Testing are closely related but distinct concepts in the software development process. While both aim to ensure the quality of the software, they differ in scope, focus, and approach.
 
@@ -114,33 +114,33 @@ In short, QA focuse on the objective, and Testing is the most important means to
 
 #### 灰盒测试 gray-box testing
 
-In software engineering, the term **"gray-box testing"灰盒测试** is often considered to lack a strict definition because it is not a completely distinct or formal testing methodology. Instead, it is a hybrid approach that lies somewhere between black-box testing and white-box testing. Here are several reasons why "gray-box testing" is often said to lack a strict meaning:
+In software engineering, the term **"gray-box testing" 灰盒测试** is often considered to lack a strict definition because it is not a completely distinct or formal testing methodology. Instead, it is a hybrid approach that lies somewhere between black-box testing and white-box testing. Here are several reasons why "gray-box testing" is often said to lack a strict meaning:
 
  1. **Ambiguous Definition**:
-   
+
    - Black-box testing focuses on testing the software's inputs and outputs, without considering the internal implementation details of the software. Testers design test cases based solely on functional requirements and specifications.
    - White-box testing focuses on testing the internal logic and structure of the software. Testers need to have knowledge of the source code and test paths, branches, and internal structures.
-   
+
    Gray-box testing does not have a clear, universally accepted definition. It typically refers to testing in which the tester has partial knowledge of the internal architecture or code (such as API or database structure) but does not need to fully understand the code itself. This definition is somewhat vague and lacks clear boundaries, which is why it is not considered a strict or formal testing type.
-   
+
  2. **Fusion of Black-box and White-box Testing** 黑盒与白盒测试的融合:
-   Gray-box testing essentially combines features of both black-box and white-box testing. Testers generally design test cases based on some internal information of the system, such as architecture or APIs, but without fully understanding the source code. Thus, gray-box testing cannot be strictly categorized as either white-box or black-box testing; it is a blend of both.
+      Gray-box testing essentially combines features of both black-box and white-box testing. Testers generally design test cases based on some internal information of the system, such as architecture or APIs, but without fully understanding the source code. Thus, gray-box testing cannot be strictly categorized as either white-box or black-box testing; it is a blend of both.
 
  3. **Execution-Level Hybrid**:
-   
+
    - In practice, gray-box testing is often carried out by testers who have some knowledge of the internal system design, like APIs, databases, or system architecture, while still focusing on the external functionality of the software. This makes it a compromise between having no knowledge of the system and having full knowledge of the code.
    - However, strictly speaking, black-box testing and white-box testing have well-defined boundaries: black-box testing disregards internal details, while white-box testing requires full understanding of internal implementation. Gray-box testing cannot clearly specify "how much internal information is enough," which makes it harder to define strictly.
-   
+
  4. **Confusion with Different Definitions**:
-   Different organizations or industries may use the term "gray-box testing" with varying interpretations, adding to the confusion. In some contexts, gray-box testing may refer to having some understanding of external interfaces or database structures, while in other cases, it may imply a deeper understanding of system architecture. This lack of consistency leads to a blurred line of what constitutes gray-box testing.
+      Different organizations or industries may use the term "gray-box testing" with varying interpretations, adding to the confusion. In some contexts, gray-box testing may refer to having some understanding of external interfaces or database structures, while in other cases, it may imply a deeper understanding of system architecture. This lack of consistency leads to a blurred line of what constitutes gray-box testing.
 
  5. **Flexibility in Testing Approach**:
-   Since gray-box testing emphasizes partial knowledge of the system’s internal structure while combining aspects of black-box and white-box testing, it is highly flexible in practical scenarios. Due to the absence of a standardized definition, many testing teams view it more as a methodological compromise or flexible application rather than a strictly defined, formal testing type.
+      Since gray-box testing emphasizes partial knowledge of the system’s internal structure while combining aspects of black-box and white-box testing, it is highly flexible in practical scenarios. Due to the absence of a standardized definition, many testing teams view it more as a methodological compromise or flexible application rather than a strictly defined, formal testing type.
 
 
 ----------------------
 
-#### Acceptance test（用户验收测试）和 system test（系统测试）粒度granularity区别
+#### Acceptance test（用户验收测试）和 system test（系统测试）粒度 granularity 区别
 
 From a granularity perspective, UAT (User Acceptance Testing) and System Testing are not of the same granularity. They differ in terms of scope, focus, and depth. Here are the main differences:
 
@@ -218,7 +218,7 @@ From a granularity perspective, UAT (User Acceptance Testing) and System Testing
 
 **Example**: After deploying a new version of a web application, smoke testing would check if users can log in, view basic pages, and perform simple tasks (such as navigating to the homepage) without errors.
 
-#### α测试和β测试
+#### α 测试和 β 测试
 
 Alpha Testing and Beta Testing are two different phases of software testing that are performed before a software product is officially released to the public. They are both important in ensuring the quality and reliability of the software, but they have distinct purposes, approaches, and target audiences. Below is a detailed comparison of Alpha Testing and Beta Testing:
 
@@ -261,7 +261,7 @@ Both require systematic reporting of issues found during testing, which are then
 | **Advantages**      | Early identification of issues, improves code quality, can catch issues that dynamic testing may miss. | Validates the actual behavior, detects runtime issues, ensures the software meets functional requirements. |
 | **Disadvantages**   | Cannot detect runtime issues like performance and memory leaks. | Requires more resources and may not detect structural or design flaws. |
 
-#### Traceability可追溯性
+#### Traceability 可追溯性
 
 **Definition**: Traceability in software testing refers to the ability to link or map test cases to specific requirements, design elements, or code components. It ensures that every requirement has a corresponding test case and that the test results can be traced back to the original requirement or feature being tested.
 
@@ -315,7 +315,7 @@ Goals Driving Condition Improvement: Setting ambitious goals can push teams to i
 
 Gradual Improvement of Conditions: Over time, as goals are met in each iteration, the development team can improve the conditions. For instance, lessons learned from previous iterations might lead to better code quality, enhanced testing practices, or more effective team collaboration. These incremental improvements can make the next iteration smoother and more efficient.
 
-#### 需求阶段QA的核心工作
+#### 需求阶段 QA 的核心工作
 
 In the Requirements Analysis phase, the main tasks of the QA team are to answer two key questions:
 
@@ -432,68 +432,68 @@ No critical issues are preventing the start of testing.
 Here is the translation and explanation of the software quality factors and their corresponding metrics:
 
  1. **Lines of Code (LOC)**  
-   Translation: Lines of Code (LOC)  
-   Explanation: LOC is a fundamental unit for measuring the size of a software application. It counts the total number of lines of code in a program, including both executable code and comments. While it can give an indication of software size and complexity, it does not account for code quality or functionality, which makes it an imperfect metric for measuring software quality on its own.
+      Translation: Lines of Code (LOC)  
+      Explanation: LOC is a fundamental unit for measuring the size of a software application. It counts the total number of lines of code in a program, including both executable code and comments. While it can give an indication of software size and complexity, it does not account for code quality or functionality, which makes it an imperfect metric for measuring software quality on its own.
 
  2. **Function Points (FP)**  
-   Translation: Function Points (FP)  
-   Explanation: Function Points are used to evaluate the size of software based on its functional requirements from the user's perspective. Unlike LOC, which measures the physical size of the code, function points focus on the software's functionality. They are calculated based on factors like the number of inputs, outputs, user interactions, files, and interfaces. Function Points are particularly useful for measuring software size in a more abstract, user-oriented way, which is independent of the programming language or technology used.
+      Translation: Function Points (FP)  
+      Explanation: Function Points are used to evaluate the size of software based on its functional requirements from the user's perspective. Unlike LOC, which measures the physical size of the code, function points focus on the software's functionality. They are calculated based on factors like the number of inputs, outputs, user interactions, files, and interfaces. Function Points are particularly useful for measuring software size in a more abstract, user-oriented way, which is independent of the programming language or technology used.
 
  3. **Defect Density**  
-   Translation: Defect Density  
-   Explanation: Defect density is a measure of the number of defects (bugs or issues) found per unit of software size. It is often calculated as the number of defects per thousand lines of code (KLOC) or per function point. This metric is important because it helps identify the quality of the codebase. A higher defect density may indicate that the software is error-prone, while a lower defect density suggests a more stable and well-tested system.
+      Translation: Defect Density  
+      Explanation: Defect density is a measure of the number of defects (bugs or issues) found per unit of software size. It is often calculated as the number of defects per thousand lines of code (KLOC) or per function point. This metric is important because it helps identify the quality of the codebase. A higher defect density may indicate that the software is error-prone, while a lower defect density suggests a more stable and well-tested system.
 
  4. **Reliability**  
-   Translation: Reliability  
-   Explanation: Reliability refers to the software's ability to function without failure under specified conditions for a specified period of time. It is often measured using metrics like Mean Time To Failure (MTTF), which calculates the average time between failures in a system. A highly reliable system ensures minimal downtime and consistent performance, which is essential for critical applications like banking, healthcare, and aerospace.
+      Translation: Reliability  
+      Explanation: Reliability refers to the software's ability to function without failure under specified conditions for a specified period of time. It is often measured using metrics like Mean Time To Failure (MTTF), which calculates the average time between failures in a system. A highly reliable system ensures minimal downtime and consistent performance, which is essential for critical applications like banking, healthcare, and aerospace.
 
  5. **Maintainability**  
-   Translation: Maintainability  
-   Explanation: Maintainability is the ease with which software can be modified to correct defects, fulfill new requirements, or adapt to changes in the environment. High maintainability is crucial for long-term success because software systems often need updates or adjustments. Metrics for maintainability may include code modularity, complexity, and how well-documented the code is. Tools like Cyclomatic Complexity can also help assess maintainability.
+      Translation: Maintainability  
+      Explanation: Maintainability is the ease with which software can be modified to correct defects, fulfill new requirements, or adapt to changes in the environment. High maintainability is crucial for long-term success because software systems often need updates or adjustments. Metrics for maintainability may include code modularity, complexity, and how well-documented the code is. Tools like Cyclomatic Complexity can also help assess maintainability.
 
  6. **Testability**  
-   Translation: Testability  
-   Explanation: Testability is the degree to which a software system can be tested effectively. This includes factors such as the availability of test cases, ease of automation, and how well the software can be verified against its specifications. Testability can be improved by designing software with clear interfaces, consistent behavior, and appropriate levels of abstraction. Automation coverage is a common metric for testability.
+      Translation: Testability  
+      Explanation: Testability is the degree to which a software system can be tested effectively. This includes factors such as the availability of test cases, ease of automation, and how well the software can be verified against its specifications. Testability can be improved by designing software with clear interfaces, consistent behavior, and appropriate levels of abstraction. Automation coverage is a common metric for testability.
 
  7. **Schedule Variance**  
-   Translation: Schedule Variance  
-   Explanation: Schedule variance measures the difference between the planned project timeline and the actual progress. It is a critical metric for tracking project performance. Positive schedule variance indicates that the project is ahead of schedule, while negative variance suggests that the project is delayed. Keeping schedule variance under control is essential for meeting deadlines and avoiding scope creep.
+      Translation: Schedule Variance  
+      Explanation: Schedule variance measures the difference between the planned project timeline and the actual progress. It is a critical metric for tracking project performance. Positive schedule variance indicates that the project is ahead of schedule, while negative variance suggests that the project is delayed. Keeping schedule variance under control is essential for meeting deadlines and avoiding scope creep.
 
  8. **Critical Path Completion Rate**  
-   Translation: Critical Path Completion Rate  
-   Explanation: This metric tracks the percentage of critical tasks completed on time. The critical path in project management refers to the sequence of tasks that determine the minimum project duration. If tasks on the critical path are delayed, the entire project will be delayed. Monitoring the completion rate helps ensure that essential tasks are completed according to the project schedule.
+      Translation: Critical Path Completion Rate  
+      Explanation: This metric tracks the percentage of critical tasks completed on time. The critical path in project management refers to the sequence of tasks that determine the minimum project duration. If tasks on the critical path are delayed, the entire project will be delayed. Monitoring the completion rate helps ensure that essential tasks are completed according to the project schedule.
 
  9. **Cost Variance**  
-   Translation: Cost Variance  
-   Explanation: Cost variance measures the difference between the actual cost incurred in a project and the budgeted cost. Positive cost variance indicates that the project is under budget, while negative variance shows overspending. Managing cost variance is crucial for maintaining financial control over a project and ensuring its profitability.
+      Translation: Cost Variance  
+      Explanation: Cost variance measures the difference between the actual cost incurred in a project and the budgeted cost. Positive cost variance indicates that the project is under budget, while negative variance shows overspending. Managing cost variance is crucial for maintaining financial control over a project and ensuring its profitability.
 
  10. **Return on Investment (ROI)**  
-   Translation: Return on Investment (ROI)  
-   Explanation: ROI is a measure of the profitability of an investment. It compares the benefits (returns) gained from a software project to the costs incurred during its development. A high ROI indicates that the project is delivering good value for the money spent, while a low ROI suggests that the project may not be financially viable or sustainable.
+      Translation: Return on Investment (ROI)  
+      Explanation: ROI is a measure of the profitability of an investment. It compares the benefits (returns) gained from a software project to the costs incurred during its development. A high ROI indicates that the project is delivering good value for the money spent, while a low ROI suggests that the project may not be financially viable or sustainable.
 
  11. **Productivity**  
-   Translation: Productivity  
-   Explanation: Productivity is often measured as the amount of output (usually in terms of function points) produced per unit of input (typically measured in developer hours or work hours). A higher productivity rate indicates that the team is producing more functionality with fewer resources, suggesting better efficiency and performance. Productivity can be influenced by factors like team experience, tool support, and project management practices.
+      Translation: Productivity  
+      Explanation: Productivity is often measured as the amount of output (usually in terms of function points) produced per unit of input (typically measured in developer hours or work hours). A higher productivity rate indicates that the team is producing more functionality with fewer resources, suggesting better efficiency and performance. Productivity can be influenced by factors like team experience, tool support, and project management practices.
 
  12. **Review Efficiency**  
-   Translation: Review Efficiency  
-   Explanation: Review efficiency is the ratio of the number of issues or defects found during the review process to the total number of items checked. A higher ratio indicates that the review process is effective at identifying potential problems early, which helps improve software quality. Efficient reviews can significantly reduce the number of defects in the final product.
+      Translation: Review Efficiency  
+      Explanation: Review efficiency is the ratio of the number of issues or defects found during the review process to the total number of items checked. A higher ratio indicates that the review process is effective at identifying potential problems early, which helps improve software quality. Efficient reviews can significantly reduce the number of defects in the final product.
 
  13. **Team Morale**  
-   Translation: Team Morale  
-   Explanation: Team morale is a measure of the overall motivation, satisfaction, and enthusiasm of the team members. High morale often leads to better productivity, collaboration, and quality. Team morale can be gauged through surveys, interviews, or informal feedback sessions. Factors like workload, leadership, work-life balance, and recognition play a significant role in influencing morale.
+      Translation: Team Morale  
+      Explanation: Team morale is a measure of the overall motivation, satisfaction, and enthusiasm of the team members. High morale often leads to better productivity, collaboration, and quality. Team morale can be gauged through surveys, interviews, or informal feedback sessions. Factors like workload, leadership, work-life balance, and recognition play a significant role in influencing morale.
 
  14. **Communication Effectiveness**  
-   Translation: Communication Effectiveness  
-   Explanation: Communication effectiveness refers to how accurately and promptly information is exchanged within the team and between stakeholders. Effective communication ensures that all team members are aligned, reducing misunderstandings and errors. It also plays a critical role in decision-making, problem-solving, and maintaining project focus.
+      Translation: Communication Effectiveness  
+      Explanation: Communication effectiveness refers to how accurately and promptly information is exchanged within the team and between stakeholders. Effective communication ensures that all team members are aligned, reducing misunderstandings and errors. It also plays a critical role in decision-making, problem-solving, and maintaining project focus.
 
  15. **User Feedback**  
-   Translation: User Feedback  
-   Explanation: User feedback is direct input from users about their experience with the software. It includes comments, suggestions, complaints, and feature requests. Regular collection of user feedback helps in improving the product by aligning it with user needs and expectations. This feedback is crucial for continuous improvement and ensuring that the software meets the target audience's requirements.
+      Translation: User Feedback  
+      Explanation: User feedback is direct input from users about their experience with the software. It includes comments, suggestions, complaints, and feature requests. Regular collection of user feedback helps in improving the product by aligning it with user needs and expectations. This feedback is crucial for continuous improvement and ensuring that the software meets the target audience's requirements.
 
  16. **Net Promoter Score (NPS)**  
-   Translation: Net Promoter Score (NPS)  
-   Explanation: NPS is a metric used to measure customer loyalty. It is calculated based on the likelihood of users recommending the software to others. Users are typically asked how likely they are to recommend the product on a scale from 0 to 10. Based on their score, users are categorized as promoters, passives, or detractors. A high NPS indicates strong user loyalty and satisfaction, which can lead to increased customer retention and word-of-mouth promotion.
+      Translation: Net Promoter Score (NPS)  
+      Explanation: NPS is a metric used to measure customer loyalty. It is calculated based on the likelihood of users recommending the software to others. Users are typically asked how likely they are to recommend the product on a scale from 0 to 10. Based on their score, users are categorized as promoters, passives, or detractors. A high NPS indicates strong user loyalty and satisfaction, which can lead to increased customer retention and word-of-mouth promotion.
 
 These metrics are essential for evaluating and improving software quality, ensuring that projects meet both functional and non-functional requirements while delivering value to users and stakeholders.
 
@@ -694,27 +694,27 @@ Principles
 In Scrum software development, at the end of each Sprint, a Potentially Shippable Product Increment (PSPI) is created. This increment is the most important outcome of the Sprint and must meet specific criteria to ensure it's potentially ready for release. Here's what the Potentially Shippable Product Increment typically includes:
 
 1. **Completed and Fully Developed Features**
-  The Product Increment must include all the user stories or features planned for that Sprint. These user stories should be completed, meaning all the tasks within them have been finished and accepted by the Product Owner (PO).
-  The features are considered "done" according to the team's Definition of Done (DoD). This includes not only the development of the feature but also any associated tasks like testing, documentation, and code reviews.
+    The Product Increment must include all the user stories or features planned for that Sprint. These user stories should be completed, meaning all the tasks within them have been finished and accepted by the Product Owner (PO).
+    The features are considered "done" according to the team's Definition of Done (DoD). This includes not only the development of the feature but also any associated tasks like testing, documentation, and code reviews.
 2. **Fully Tested**
-  The increment must pass all types of testing defined by the team, such as unit tests, integration tests, and user acceptance tests (UAT).
-  Testing must include both manual testing (if applicable) and automated tests to ensure that the new code works as expected and does not introduce regressions.
-  The tests should be completed with no major defects outstanding. If defects are found, they should be documented and ideally resolved within the same Sprint.
+    The increment must pass all types of testing defined by the team, such as unit tests, integration tests, and user acceptance tests (UAT).
+    Testing must include both manual testing (if applicable) and automated tests to ensure that the new code works as expected and does not introduce regressions.
+    The tests should be completed with no major defects outstanding. If defects are found, they should be documented and ideally resolved within the same Sprint.
 3. **Integrated with Existing System**
-  The new features or improvements are integrated with the existing system. This ensures that the new code works well with the previously developed features and doesn’t break anything in the existing product.
-  Any conflicts with previous functionality should be addressed and resolved, meaning that the product should be functionally stable at the end of the Sprint.
+    The new features or improvements are integrated with the existing system. This ensures that the new code works well with the previously developed features and doesn’t break anything in the existing product.
+    Any conflicts with previous functionality should be addressed and resolved, meaning that the product should be functionally stable at the end of the Sprint.
 4. **Buildable and Deployable**
-  The Product Increment must be in a buildable state (meaning no major build or integration issues) and deployable to a production-like environment. It should be possible to deploy the product increment at any time without requiring major changes.
-  This implies that all code, configurations, and dependencies are packaged in a way that the development team or operations team can push it to production if needed.
+    The Product Increment must be in a buildable state (meaning no major build or integration issues) and deployable to a production-like environment. It should be possible to deploy the product increment at any time without requiring major changes.
+    This implies that all code, configurations, and dependencies are packaged in a way that the development team or operations team can push it to production if needed.
 5. **Meets Product Owner's Acceptance Criteria**
-  The increment must meet the acceptance criteria defined by the Product Owner for each user story or feature. The PO will review the functionality and verify that it aligns with the business needs and the goals of the Sprint.
-  The increment should also be aligned with the overall product vision and roadmap, providing value to the end users or stakeholders.
+    The increment must meet the acceptance criteria defined by the Product Owner for each user story or feature. The PO will review the functionality and verify that it aligns with the business needs and the goals of the Sprint.
+    The increment should also be aligned with the overall product vision and roadmap, providing value to the end users or stakeholders.
 6. **Documentation (if applicable)**
-  While Scrum emphasizes working software over comprehensive documentation, any necessary documentation (like API documentation, deployment guides, etc.) should be updated as part of the increment.
-  The goal is to ensure that the product can be maintained, operated, and enhanced by both the development team and future teams working on it.
+    While Scrum emphasizes working software over comprehensive documentation, any necessary documentation (like API documentation, deployment guides, etc.) should be updated as part of the increment.
+    The goal is to ensure that the product can be maintained, operated, and enhanced by both the development team and future teams working on it.
 7. **Ready for Release (if necessary)**
-  The term Potentially Shippable means that the increment is ready to be released to the customer or end users, if the decision is made to do so. However, this doesn't necessarily mean it will be released at the end of every Sprint.
-  In some cases, the product may not be released immediately, but it must be in a state where it could be deployed to production without further work required.
+    The term Potentially Shippable means that the increment is ready to be released to the customer or end users, if the decision is made to do so. However, this doesn't necessarily mean it will be released at the end of every Sprint.
+    In some cases, the product may not be released immediately, but it must be in a state where it could be deployed to production without further work required.
 
 ----------------
 
@@ -901,7 +901,7 @@ Unit test best practice:
 
 回归测试
 
-冒烟测试smoke test：和准入准出有关
+冒烟测试 smoke test：和准入准出有关
 
 EC(Exit criteria), AC(Accept criteria)
 
@@ -941,7 +941,7 @@ unit test 测试方法，白盒测试
 
 一盏灯，T ( on / off )，C ( color，有三种颜色），A ( brightness，三档亮度 ）
 
-画一个XY坐标轴的图，和设计测试用例（填表）
+画一个 XY 坐标轴的图，和设计测试用例（填表）
 
 | ID   | 等价类 | initial state | operation | expect result |
 | ---- | ------ | ------------- | --------- | ------------- |
@@ -953,7 +953,7 @@ unit test 测试方法，白盒测试
 
 > 以下通过一个简单的代码示例来给出反例否定“statement coverage < branch coverage < condition coverage”这一通常认为的关系：
 >
-> 考虑如下一段简单的 `if - else` 结构的代码（使用Python语言示例，其他语言原理类似）： ```python def check_value(x):    if x > 5 and x < 10:        return "In range"    else:        return "Out of range" ```  
+> 考虑如下一段简单的 `if - else` 结构的代码（使用 Python 语言示例，其他语言原理类似）： ```python def check_value(x):    if x > 5 and x < 10:        return "In range"    else:        return "Out of range" ```  
 >
 > 分析 
 >

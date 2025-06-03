@@ -75,6 +75,8 @@ To convert from one base to another:
 
 <img src="./assets/image-20250219122335274.png" alt="image-20250219122335274" style="zoom:33%;" />
 
+错开一位异或可得
+
 ## Combinational Logic Circuits
 
 组合逻辑电路
@@ -177,6 +179,12 @@ Example: Complement F = <span style="text-decoration:overline;"> x </span> y <sp
 <img src="./assets/image-20250226122319500.png" alt="image-20250226122319500" style="zoom:25%;" />
 
 - POS 最外面是乘法，括号里面+连起来的单项不能是两项
+
+> [!NOTE]
+>
+> SOP 化简得
+>
+> POS 计算反函数（求其非），再用德摩根
 
 ### Circuit Optimization
 
@@ -310,8 +318,8 @@ Hierarchical Design 分层设计
 >
 > 真值表推导出逻辑表达式的步骤：
 >
-> 1. **确定输出为1的行**：对于每个输出信号（如 S0, S1, ..., S5），找出所有输出为1的行
-> 2. **写出对应的乘积项**：对于每个输出为1的行，根据输入变量（A, B, C）的值写出一个乘积项。如果变量值为1，则直接写变量；如果为0，则写变量的非
+> 1. **确定输出为 1 的行**：对于每个输出信号（如 S0, S1, ..., S5），找出所有输出为 1 的行
+> 2. **写出对应的乘积项**：对于每个输出为 1 的行，根据输入变量（A, B, C）的值写出一个乘积项。如果变量值为 1，则直接写变量；如果为 0，则写变量的非
 > 3. **将所有乘积项相加**：将这些乘积项用逻辑或（+）连接起来，得到该输出的逻辑表达式
 > 4. **可能的化简**：使用卡诺图
 
@@ -354,6 +362,8 @@ the conversion of an n-bit input code to an m-bit output code with n ≤ m ≤ 2
 Eg,6-64 译码器：两个 3-8 译码器 <img src="./assets/image-20250503201219507.png" alt="image-20250503201219507" style="zoom: 25%;" />
 
 门输入成本 = 6+2(2×4)+2(2×8)+2×64 = 182
+
+4-16 译码器？。 = 4+ 2(2×4) + 2×16 =
 
 #### Decoder with Enable
 
@@ -586,7 +596,7 @@ S-R Master-Slave 主从触发器
 
 边沿触发器只在时钟信号跳变时触发（忽略保持阶段的时钟脉冲）
 
-正边沿（0->1），负边沿（1->0）
+正边沿（0-> 1），负边沿（1-> 0）
 
 | <img src="./assets/image-20250506143101129.png" alt="image-20250506143101129" style="zoom:50%;" /> | <img src="./assets/image-20250506143121054.png" alt="image-20250506143121054" style="zoom: 50%;" /> |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -656,7 +666,7 @@ Mealy Model 米利模型
 
 当前状态、输入、下一状态、输出
 
-一个包含m个触发器和n个输入的时序电路的状态表有$2^{m+n}$行
+一个包含 m 个触发器和 n 个输入的时序电路的状态表有 $2^{m+n}$ 行
 
 ### Sequential Circuit Design
 
@@ -689,6 +699,8 @@ Mealy Model 米利模型
 
 ### Register, Microoperations and Implementations
 
+
+
 Load-Controlled Feedback
 
 - load = 0, hold current values
@@ -696,9 +708,59 @@ Load-Controlled Feedback
 
 Conditionl Transfer
 
+#### Microoperations
 
+算术微操作
+
+<img src="./assets/image-20250514103114783.png" alt="image-20250514103114783" style="zoom:33%;" />
+
+传输微操作
+
+逻辑微操作
+
+移位微操作
 
 ### Counter, Register cells, Buses & Serial operations
 
+基于多路复用器的传输
 
+<img src="./assets/image-20250514104544254.png" alt="image-20250514104544254" style="zoom:50%;" />
+
+3-1 多路复用器实际上用的是 4-1（1 个位弃用）
+
+有总线的多路复用器多寄存器传输相比只用多路复用器更加便宜（gate input cost 低）
+
+three-state bus 三态总线
+
+
+
+Shift Register 移位寄存器
+
+
+
+Ripple Counter 行波计数器
+
+
+
+Synchornous Counter 同步计数器
+
+
+
+Serial Adder 串行加法器
+
+### Control of Register Transfers
+
+
+
+## Memory Basics
+
+### Definition
+
+**Random Access Memory (RAM)**
+
+内存大小 12bit to 4096 12bit = 12×4096/8 = 6k
+
+静态 RAM(SRAM)由储存二进制信息的内部锁存器构成，信息会一直被存储直到断电
+
+动态 RAM(DRAM)以电荷电容的形式存储信息，易于使用，读写周期短，且不需要刷新
 

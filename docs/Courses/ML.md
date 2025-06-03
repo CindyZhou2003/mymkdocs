@@ -30,8 +30,6 @@ Interval
 
 Ratio 比率
 
-![]()
-
 ### Algorithm / Model
 
 discriminative vs. generative
@@ -336,8 +334,6 @@ https://chat.openai.com/share/0cd19f6f-30c4-47c1-8506-70572dfead58
 Clustering
 
 K-means
-
-
 
 anomly
 

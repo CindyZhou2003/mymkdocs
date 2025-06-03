@@ -1,5 +1,9 @@
-错题集：<br />[https://k5ms77k0o1.feishu.cn/wiki/wikcnH7YKB6KFCwCXgRdXk2MZAf](https://k5ms77k0o1.feishu.cn/wiki/wikcnH7YKB6KFCwCXgRdXk2MZAf)<br />笔记：<br />[https://note.hobbitqia.cc/OOP/](https://note.hobbitqia.cc/OOP/)
-# 面向对象编程 
+# 面向对象编程
+
+> [!TIP]
+>
+> 错题集：<br />[https://k5ms77k0o1.feishu.cn/wiki/wikcnH7YKB6KFCwCXgRdXk2MZAf](https://k5ms77k0o1.feishu.cn/wiki/wikcnH7YKB6KFCwCXgRdXk2MZAf)<br />笔记：<br />[https://note.hobbitqia.cc/OOP/](https://note.hobbitqia.cc/OOP/) 
+
 ## 函数
 函数声明可以不写参数名，也可以设置参数默认值 default arguments
 

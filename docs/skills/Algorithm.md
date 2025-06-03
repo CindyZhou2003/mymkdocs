@@ -1,9 +1,5 @@
 # Leetcode
 
-
-
-[TOC]
-
 $解答来自Leetcode$
 
 ## 按题号

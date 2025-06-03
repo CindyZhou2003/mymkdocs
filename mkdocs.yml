@@ -28,6 +28,7 @@ nav:
       - 软件质量与保证测试: Courses/SQAT.md
     - 大三春夏:
       - 数字逻辑设计: Courses/CLDF.md
+      - 习概: Courses/习概.md
   - 技能⚙️:
     - 算法: skills/Algorithm.md
     - 深度学习: skills/deeplearning.md
@@ -118,6 +119,12 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: true  - pymdownx.highlight:
+      anchor_linenums: true    # 为行号添加锚点
+      line_spans: __span       # 允许为行添加自定义类名
+      pygments_lang_class: true # 添加语言类名
+      linenums: true           # 启用行号
+      linenums_style: table    # 使用表格样式显示行号
   - pymdownx.arithmatex:
       generic: true
 
