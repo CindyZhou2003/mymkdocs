@@ -118,8 +118,6 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: true  - pymdownx.highlight:
       anchor_linenums: true    # 为行号添加锚点
       line_spans: __span       # 允许为行添加自定义类名
       pygments_lang_class: true # 添加语言类名
