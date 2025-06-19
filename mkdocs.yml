@@ -4,7 +4,7 @@ repo_name: Cindy's notebook
 repo_url: https://github.com/CindyZhou2003/mymkdocs  #存储库URL
 # edit_uri: tree/master/docs  #每个文档的顶部显示一个编辑按钮，""则隐藏
 site_description: Cindy的笔记本
-copyright: Copyright &copy; 2024 <a href="https://github.com/CindyZhou2003/mymkdocs"  target="_blank" rel="noopener">Cindy</a>'本页面的全部内容在 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA 4.0</a>协议之条款下提供，附加条款亦可能应用'
+copyright: Copyright &copy; 2024-2025 <a href="https://github.com/CindyZhou2003/mymkdocs"  target="_blank" rel="noopener">Cindy</a>
 
 nav:
   - 主页🤖:
@@ -163,4 +163,3 @@ plugins:
       type: datetime
       timezone: Asia/Shanghai
       locale: zh
-      enable_creation_date: false
