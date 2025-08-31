@@ -29,6 +29,11 @@ nav:
     - 大三春夏:
       - 数字逻辑设计: ZJU/CLDF.md
       - 习概: ZJU/习概.md
+  - UIUC-MEng courses📚:
+    - Fall 2025:
+      - ECE408/CS483 Applied Parallel Programming: UIUC/ECE408.md
+      - ECE448/CS440 Artificial Intelligence: UIUC/ECE448.md
+      - ECE498/598 Deep Generative Models: UIUC/ECE598.md
   - 技能⚙️:
     - 算法: skills/Algorithm.md
     - 深度学习: skills/deeplearning.md
@@ -37,11 +42,11 @@ nav:
       - 第一次: abroad/IELTs_speaking1.md
       - 第二次:  abroad/IELTs_speaking2.md
     - 雅思作文: abroad/IELTs_writing.md
+  - 找工:
+    - 面试: work/Interview.md
   - 其他🎊:
     - Test: other/test.md
     - 部署网站时的问题: other/Debug_issue.md
-  - 找工:
-    - 面试: work/Interview.md
 
 use_directory_urls: false # 解决图片相对路径无法解析的问题
 

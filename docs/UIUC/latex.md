@@ -10,3 +10,5 @@ $$
 \Lambda\Xi\Pi\Sigma\Upsilon\Phi\Psi\Omega
 $$
 
+$\prod_{i=1}^{n}$连乘
+

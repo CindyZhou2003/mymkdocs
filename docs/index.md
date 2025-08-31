@@ -1,6 +1,6 @@
 # Welcome to Cindy's site
 ## 🌈 About this site
-Some notes about courses I've taken during my years in ZJU-SE.
+Some notes about courses I've taken during my years in ZJU-SE and UIUC ECE.
 
 PDF version of some of the notes can be found in the repo.
 
@@ -17,7 +17,7 @@ Thanks for stopping by my corner of the internet! 💫\\ ^ ~ ^ /
 详见 其他-部署网站时的问题
 
 ## ✨ Attribute
-- 图标来源：[Freepik](https://www.freepik.com)
-- 文档模板参考：[咸鱼暄](https://github.com/xuan-insr/xuan-insr.github.io)
+- Icon：[Freepik](https://www.freepik.com)
+- Doc mode：[咸鱼暄](https://github.com/xuan-insr/xuan-insr.github.io)
 
 
