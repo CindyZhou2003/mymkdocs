@@ -4,7 +4,7 @@ Stay connected with us for the latest updates & career opportunities 🎉 📍Fa
 
 <img src="./assets/image-20250801111122346.png" alt="image-20250801111122346" style="zoom: 33%;" />
 
-## Alumni
+## ECE MEng Alumni
 
 <img src="./assets/image-20250822103525915.png" alt="image-20250822103525915" style="zoom:50%;" /><img src="./assets/image-20250822110114614.png" alt="image-20250822110114614" style="zoom:50%;" />
 
