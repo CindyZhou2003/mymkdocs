@@ -34,6 +34,10 @@ nav:
       - ECE408/CS483 Applied Parallel Programming: UIUC/ECE408.md
       - ECE448/CS440 Artificial Intelligence: UIUC/ECE448.md
       - ECE498/598 Deep Generative Models: UIUC/ECE598.md
+    - Spring 2026:
+      - CS498 Machine Learning Systems: UIUC/CS498.md
+      - CS477/ECE478 Formal Software Development Methods: UIUC/ECE478.md
+      - ECE544 Pattern Recognition: UIUC/ECE544.md
   - 技能⚙️:
     - 算法: skills/Algorithm.md
     - 深度学习: skills/deeplearning.md

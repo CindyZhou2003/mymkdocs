@@ -161,8 +161,6 @@ grammar = """ start: month " " day
 
 
 
-
-
 ## IterGen
 
 [IterGen: Iterative Structured LLM Generation](https://ar5iv.labs.arxiv.org/html/2410.07295?_immersive_translate_auto_translate=1)
@@ -230,4 +228,8 @@ IterGen 的作用： IterGen 就像给 AI 装了一个 “Ctrl+Z (撤销键)” 
 **Q4: "KVCache 在 IterGen 里有什么特殊作用？（读档）"**
 
 “KV Cache 存储的是 Transformer 注意力层中**前序 Token 的 Key 和 Value 向量**。 它的作用是**以空间换时间**，避免在每一步生成时重复计算历史 Token 的注意力特征。 在 IterGen 中，通过对 KV Cache 的**切片管理（Cropping）**，实现了低成本的生成回溯，无需重新处理整个上下文。”
+
+
+
+
 
