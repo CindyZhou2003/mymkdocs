@@ -51,7 +51,7 @@ CPU 和 I/O 设备可以并发执行（execute concurrently），并竞争访问
 - 有本地缓冲区（local buffer），存储 I/O
 - 经系统总线 system bus 触发中断 interrupt 告知 CPU 已完成
 
-#### 原语 atmic operation
+#### 原语 atomic operation
 
 按层次结构设计的操作系统的底层是原语，一种程序
 
@@ -84,51 +84,7 @@ trap ：软件的中断，经常由错误或用户请求（又称 系统调用 s
 
 fault：通常由指令执行引起的异常，如非法操作码、缺页故障、除数为 0、运算溢出
 
-```markmap
----
-# 根节点默认文本（若内容存在根节点，则此选项失效）
-title: 中断
-# 配置:
-markmap:
-  # 是否允许缩放
-  zoom: false
-  # 是否允许平移
-  pan: false
-  # 节点最大长度（0则无长度限制）
-  maxWidth: 0
-  # 节点水平间距
-  spacingHorizontal: 30
-  # 节点垂直间距
-  spacingVertical: 5
-  # 节点内部边距
-  paddingX: 5
-  # 图形的窗口填充率
-  fitRatio: 0.75
-  # 展开的最大节点级别（-1则展开全部）
-  initialExpandLevel: -1
-  # 多少级开始固定分支颜色
-  colorFreezeLevel: 6
-  # 颜色
-  color: ['#4E79A7', '#F28E2C', '#E15759', '#76B7B2', '#59A14F', '#EDC949', '#AF7AA1', '#FF9DA7', '#9C755F', '#BAB0AB']
-  # 动画持续时间
-  duration: 100
-  # 图形高度
-  height: 100px
-  # 背景色
-  backgroundColor: "#f8f8f8"
----
-
-## 内部异常Exception
-
-- 故障（Fault） 软件中断
-- 自陷（trap） 软件中断
-- 终止（abort） 硬件中断
-
-## 外部中断Interruption（硬件）
-
-- 可屏蔽中断 INTR
-- 不可屏蔽中断 NMI
-```
+<img src="./assets/image-20260202165414681.png" alt="image-20260202165414681" style="zoom:33%;" />
 
 **操作系统是由中断驱动的 An operating system is interrupt-driven**
 
