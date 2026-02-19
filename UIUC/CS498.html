@@ -1,0 +1,3585 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Cindy的笔记本">
+      
+      
+      
+        <link rel="canonical" href="https://cindyzhou2003.github.io/mymkdocs/UIUC/CS498.html">
+      
+      
+        <link rel="prev" href="ECE598.html">
+      
+      
+        <link rel="next" href="ECE478.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favcion.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>CS498 Machine Learning Systems - Cindy的笔记本</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=LXGW+WenKai:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"LXGW WenKai";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css">
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+      <link rel="stylesheet" href="../css/neoteroi-mkdocs.css">
+    
+      <link rel="stylesheet" href="../css/style.css">
+    
+      <link rel="stylesheet" href="../css/font.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="forest" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cs-498-machine-learning-system" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="Cindy的笔记本" class="md-header__button md-logo" aria-label="Cindy的笔记本" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M384 512H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h304c26.5 0 48 21.5 48 48v288c0 20.9-13.4 38.7-32 45.3V448c17.7 0 32 14.3 32 32s-14.3 32-32 32zM96 384c-17.7 0-32 14.3-32 32s14.3 32 32 32h256v-64zm32-232c0 13.3 10.7 24 24 24h176c13.3 0 24-10.7 24-24s-10.7-24-24-24H152c-13.3 0-24 10.7-24 24m24 72c-13.3 0-24 10.7-24 24s10.7 24 24 24h176c13.3 0 24-10.7 24-24s-10.7-24-24-24z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cindy的笔记本
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              CS498 Machine Learning Systems
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="forest" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="forest-dark" data-md-color-primary="Brown" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/CindyZhou2003/mymkdocs" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Cindy's notebook
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../index.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  主页🤖
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../ZJU/DM.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  ZJU-SE课程📝
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="ECE408.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  UIUC-MEng courses📚
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../skills/Algorithm.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  技能⚙️
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../abroad/IELTs_speaking1.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  出国✈️
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../work/Interview.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  找工
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../other/test.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  其他🎊
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Cindy的笔记本" class="md-nav__button md-logo" aria-label="Cindy的笔记本" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M384 512H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h304c26.5 0 48 21.5 48 48v288c0 20.9-13.4 38.7-32 45.3V448c17.7 0 32 14.3 32 32s-14.3 32-32 32zM96 384c-17.7 0-32 14.3-32 32s14.3 32 32 32h256v-64zm32-232c0 13.3 10.7 24 24 24h176c13.3 0 24-10.7 24-24s-10.7-24-24-24H152c-13.3 0-24 10.7-24 24m24 72c-13.3 0-24 10.7-24 24s10.7 24 24 24h176c13.3 0 24-10.7 24-24s-10.7-24-24-24z"/></svg>
+
+    </a>
+    Cindy的笔记本
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/CindyZhou2003/mymkdocs" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Cindy's notebook
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    主页🤖
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    主页🤖
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ZJU-SE课程📝
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ZJU-SE课程📝
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    大一春夏
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    大一春夏
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/DM.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    离散数学及其应用
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    大二秋冬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    大二秋冬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/OOP.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    面向对象程序设计
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/FDS.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据结构基础
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    大二春夏
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    大二春夏
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/ADS.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    高级数据结构与算法分析
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/DB.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据库系统
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/ML.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    机器学习（国际化）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/PIS.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    信息安全原理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    大三秋冬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    大三秋冬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/OS.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    操作系统
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/CN.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    计算机网络
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/%E6%AF%9B%E6%A6%82.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    毛概
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/IoT.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    物联网技术基础与应用开发
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/SQAT.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    软件质量与保证测试
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    大三春夏
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    大三春夏
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/CLDF.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数字逻辑设计
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/%E4%B9%A0%E6%A6%82.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    习概
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UIUC-MEng courses📚
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    UIUC-MEng courses📚
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fall 2025
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fall 2025
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ECE408.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ECE408/CS483 Applied Parallel Programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ECE448.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ECE448/CS440 Artificial Intelligence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ECE598.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ECE498/598 Deep Generative Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spring 2026
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Spring 2026
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CS498 Machine Learning Systems
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="CS498.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CS498 Machine Learning Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#deep-learning-workload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deep Learning Workload
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deep Learning Workload">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-ingredients-of-deep-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The "Ingredients" of Deep Learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-architectures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Architectures
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Model Architectures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-convolutional-neural-networks-cnns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Convolutional Neural Networks (CNNs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-recurrent-neural-networks-rnns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Recurrent Neural Networks (RNNs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-transformers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Transformers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-graph-neural-networks-gnns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Graph Neural Networks (GNNs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-mixture-of-experts-moe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Mixture-of-Experts (MoE) 专家混合
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optimization-how-the-model-learns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optimization (How the Model Learns)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frameworks-the-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frameworks (The Software)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transformers-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transformers AI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Transformers AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#self-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Self-Attention
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encoder-vs-decoder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encoder vs. Decoder
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arithmetic-intensity-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arithmetic Intensity &amp; Performance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transformer-performance-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transformer Performance Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distributed-traning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distributed Traning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tensor-slicing-model-parallelism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tensor Slicing Model Parallelism
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tensor Slicing Model Parallelism">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tensor-parallelism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tensor Parallelism
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#megatron-lm-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Megatron-LM Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#communication-efficiency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Communication Efficiency
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pipeline-parallelism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pipeline Parallelism
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pipeline Parallelism">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inter-layer-model-parallelism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inter-Layer Model Parallelism
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simple-inter-layer-parallelism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simple Inter-Layer Parallelism
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pipeline-parallelism-with-1f1b-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pipeline Parallelism with 1F1B Schedule
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combined-parallesim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combined Parallesim
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Combined Parallesim">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-parallesim-vs-tensor-parallesim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Parallesim vs Tensor Parallesim
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dp-vs-pp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DP vs PP
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ECE478.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CS477/ECE478 Formal Software Development Methods
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ECE544.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ECE544 Pattern Recognition
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    技能⚙️
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    技能⚙️
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../skills/Algorithm.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    算法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../skills/deeplearning.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    深度学习
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    出国✈️
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    出国✈️
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    雅思口语
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    雅思口语
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abroad/IELTs_speaking1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第一次
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abroad/IELTs_speaking2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第二次
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abroad/IELTs_writing.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    雅思作文
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    找工
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    找工
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../work/Interview.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    面试
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    其他🎊
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    其他🎊
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../other/test.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Test
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../other/Debug_issue.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    部署网站时的问题
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#deep-learning-workload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deep Learning Workload
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deep Learning Workload">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-ingredients-of-deep-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The "Ingredients" of Deep Learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-architectures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Architectures
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Model Architectures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-convolutional-neural-networks-cnns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Convolutional Neural Networks (CNNs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-recurrent-neural-networks-rnns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Recurrent Neural Networks (RNNs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-transformers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Transformers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-graph-neural-networks-gnns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Graph Neural Networks (GNNs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-mixture-of-experts-moe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Mixture-of-Experts (MoE) 专家混合
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optimization-how-the-model-learns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optimization (How the Model Learns)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frameworks-the-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frameworks (The Software)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transformers-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transformers AI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Transformers AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#self-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Self-Attention
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encoder-vs-decoder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encoder vs. Decoder
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arithmetic-intensity-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arithmetic Intensity &amp; Performance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transformer-performance-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transformer Performance Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distributed-traning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distributed Traning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tensor-slicing-model-parallelism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tensor Slicing Model Parallelism
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tensor Slicing Model Parallelism">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tensor-parallelism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tensor Parallelism
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#megatron-lm-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Megatron-LM Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#communication-efficiency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Communication Efficiency
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pipeline-parallelism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pipeline Parallelism
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pipeline Parallelism">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inter-layer-model-parallelism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inter-Layer Model Parallelism
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simple-inter-layer-parallelism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simple Inter-Layer Parallelism
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pipeline-parallelism-with-1f1b-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pipeline Parallelism with 1F1B Schedule
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combined-parallesim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combined Parallesim
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Combined Parallesim">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-parallesim-vs-tensor-parallesim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Parallesim vs Tensor Parallesim
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dp-vs-pp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DP vs PP
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="cs-498-machine-learning-system">CS 498 Machine Learning System<a class="headerlink" href="#cs-498-machine-learning-system" title="Permanent link">&para;</a></h1>
+<div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 2206 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"/></svg></span> 10 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 7 分钟</p>
+</div>
+<blockquote>
+<p>[!NOTE]</p>
+<p>TA: <img src="./assets/image-20260127153611443.png" alt="image-20260127153611443" style="zoom: 33%;" /></p>
+</blockquote>
+<p>DL computation</p>
+<p><img src="./assets/image-20260122153534052.png" alt="image-20260122153534052" style="zoom:33%;" /></p>
+<p>Transformer=attention+ MLPs</p>
+<p>Recurrent Neural Networks</p>
+<ul>
+<li>LSTM</li>
+</ul>
+<p>Two Key Problems of RNNs</p>
+<ul>
+<li></li>
+</ul>
+<p>Attention: </p>
+<p>GNN Architecture</p>
+<p>MoE</p>
+<p>Stochastic Gradient Descent (SGD)</p>
+<p>These slides function as an introductory roadmap for a course on <strong>Machine Learning Systems</strong>. Since you are new to this, think of this field as the intersection of "math" (the models) and "computer engineering" (how to run that math efficiently on hardware).</p>
+<p>The content is divided into three main pillars: <strong>Models</strong> (the workloads), <strong>Optimization</strong> (how they learn), and <strong>Frameworks</strong> (the software tools like PyTorch) .</p>
+<h2 id="deep-learning-workload">Deep Learning Workload<a class="headerlink" href="#deep-learning-workload" title="Permanent link">&para;</a></h2>
+<h3 id="the-ingredients-of-deep-learning">The "Ingredients" of Deep Learning<a class="headerlink" href="#the-ingredients-of-deep-learning" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Data:</strong> The examples you teach the computer with (Images, Text, Audio, etc.).</li>
+<li><strong>Model:</strong> The mathematical structure that learns patterns (CNNs, Transformers, etc.).</li>
+<li><strong>Compute:</strong> The hardware that does the math (CPUs, GPUs).</li>
+</ol>
+<p><strong>The Learning Process (Propagation 传播)</strong> :</p>
+<ul>
+<li><strong>Forward Propagation:</strong> The data goes <em>into</em> the model, passes through layers, and the model makes a guess (e.g., "Is this a Cat or a dog?").</li>
+<li><strong>Backward Propagation:</strong> The system checks if the guess was wrong (Loss). It then sends a signal <em>backward</em> through the model to adjust the internal dials (parameters/weights) so it makes a better guess next time.</li>
+</ul>
+<h3 id="model-architectures">Model Architectures<a class="headerlink" href="#model-architectures" title="Permanent link">&para;</a></h3>
+<h4 id="1-convolutional-neural-networks-cnns">1. Convolutional Neural Networks (CNNs)<a class="headerlink" href="#1-convolutional-neural-networks-cnns" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Best for:</strong> Images (Computer Vision).</li>
+<li><strong>How they work:</strong> Imagine looking at a picture through a small square window (a filter) and sliding it across the image. This enables the model to identify local features, such as edges, corners, or textures.</li>
+<li><strong>Key Models mentioned:</strong><ul>
+<li><strong>ResNet:</strong> Uses "identity connections" (shortcuts) to help train very deep networks without getting stuck.</li>
+<li><strong>U-Net:</strong> Used for "segmentation"分割 (outlining exactly where an object is in an image).</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-recurrent-neural-networks-rnns">2. Recurrent Neural Networks (RNNs)<a class="headerlink" href="#2-recurrent-neural-networks-rnns" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Best for:</strong> Sequences 序列 (Text, Audio) where order matters.</li>
+<li><strong>How they work:</strong> They process data one step at a time (like reading a sentence word-by-word), keeping an internal "memory" or state of what they have seen so far.</li>
+<li><strong>The Problem:</strong> They are <em>slow</em> because they can't do everything at once (lack of parallelizability), and they tend to forget things if the sequence is too long.</li>
+<li><strong>Key Models:</strong> <strong>LSTM</strong> and <strong>GRU</strong> were invented to help fix the "forgetting" problem. 解决遗忘问题</li>
+</ul>
+<h4 id="3-transformers">3. Transformers<a class="headerlink" href="#3-transformers" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Best for:</strong> Modern Text processing 文本处理 (e.g., ChatGPT, BERT).</li>
+<li><strong>The Big Idea ("Attention"):</strong> Instead of reading word-by-word like an RNN, Transformers use <strong>Attention</strong>. This allows the model to look at <em>all</em> words in a sentence simultaneously and figure out which words relate to each other (e.g., connecting "it" to "the cat").</li>
+<li><strong>System Benefit:</strong> Because they look at everything at once, they are "massively parallelizable," meaning they run very fast on modern hardware (GPUs) compared to RNNs.</li>
+</ul>
+<h4 id="4-graph-neural-networks-gnns">4. Graph Neural Networks (GNNs)<a class="headerlink" href="#4-graph-neural-networks-gnns" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Best for:</strong> Network data (Social networks, molecular structures).</li>
+<li><strong>How they work:</strong> They predict properties of a node (e.g., a person) by aggregating information from their neighbors (e.g., their friends).</li>
+</ul>
+<h4 id="5-mixture-of-experts-moe">5. Mixture-of-Experts (MoE) 专家混合<a class="headerlink" href="#5-mixture-of-experts-moe" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>The Idea:</strong> Instead of one giant model doing everything, you have many smaller "expert" models. For every input, a "Router" decides which experts are best suited to handle the problem.</li>
+</ul>
+<h3 id="optimization-how-the-model-learns">Optimization (How the Model Learns)<a class="headerlink" href="#optimization-how-the-model-learns" title="Permanent link">&para;</a></h3>
+<p>Optimization is the math used to minimize the model's errors (Loss).</p>
+<p><strong>1. Gradient Descent (The Basic Way)</strong>: Imagine you are standing on a misty mountain and want to get to the bottom. You look at the slope under your feet and take a step downhill. This is <strong>Stochastic Gradient Descent (SGD)</strong>. 随机梯度下降</p>
+<ul>
+<li><strong>Problem:</strong> If you use small batches of data, your path is "noisy" (jittery), and you might get stuck in small valleys (local minima).</li>
+</ul>
+<p><strong>2. Momentum</strong> 动量: To fix the jitter, you add "Momentum." Just like a heavy ball rolling down a hill builds up speed and isn't easily deflected by small bumps, this method remembers the direction it was going and keeps moving that way.</p>
+<p>SGD+Momentum</p>
+<p><strong>3. Adaptive Methods 自适应方法 (RMSProp &amp; Adam)</strong></p>
+<p>Sometimes you need to take big steps, and sometimes small steps.</p>
+<ul>
+<li><strong>RMSProp:</strong> Adapts the step size (learning rate) based on how steep the terrain is.</li>
+<li><strong>Adam:</strong> The "gold standard" today. It combines Momentum (velocity) and RMSProp (adaptive steps) to learn very efficiently. Adam is a kind of optimizer.</li>
+</ul>
+<p>learning rate: decay over time</p>
+<p>Dataflow graph representation</p>
+<h3 id="frameworks-the-software">Frameworks (The Software)<a class="headerlink" href="#frameworks-the-software" title="Permanent link">&para;</a></h3>
+<p>Finally, the slides discuss the tools we use to program these models, like <strong>TensorFlow</strong> and <strong>PyTorch</strong>.</p>
+<p><strong>Computational Graphs</strong>: Deep Learning frameworks represent your code as a "graph" where circles are math operations (add, multiply) and arrows are data flowing between them.</p>
+<p><strong>TensorFlow vs. PyTorch</strong></p>
+<ul>
+<li><strong>Symbolic 符号化 (TensorFlow v1):</strong> You define the <em>entire</em> graph structure first, then run it. It's harder to debug but easier for the computer to optimize (make faster) .</li>
+<li><strong>Imperative 命令式 (PyTorch):</strong> You run the math line by line, just like Python. It is flexible and easy to debug, but historically harder to optimize automatically.</li>
+</ul>
+<p><strong>The Modern Solution: Just-in-Time (JIT) Compilation,</strong> New tools like <code>Torch. compile</code> (PyTorch 2.0), try to give you the best of both worlds: the ease of Python with the speed of optimized graphs.</p>
+<h2 id="transformers-ai">Transformers AI<a class="headerlink" href="#transformers-ai" title="Permanent link">&para;</a></h2>
+<h3 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h3>
+<p><strong>Tokenization &amp; Embeddings:</strong> The process starts by splitting text into individual pieces (tokens) and converting them into vector representations (embeddings) .</p>
+<p><strong>Positional Encodings 位置编码:</strong> Since Transformers process words in parallel rather than sequentially, they require "positional encodings" to understand word order.</p>
+<ul>
+<li>
+<p>The token embeddings and the absolute position embedding are added together element-wise.</p>
+</li>
+<li>
+<p><strong>Absolute Positional Encoding:</strong> The original method adds a fixed vector to the embedding to represent position.</p>
+</li>
+<li><strong>Relative Position Encoding:</strong> A more modern approach that focuses on the distance between words (e.g., "my dog" matters more than where "dog" appears in the sentence).</li>
+<li><strong>Rotary Position Embedding (RoPE):</strong> A standard in recent large language models (LLMs) that uses rotation matrices to encode position.</li>
+</ul>
+<h3 id="self-attention">Self-Attention<a class="headerlink" href="#self-attention" title="Permanent link">&para;</a></h3>
+<p><strong>Query, Key, Value (Q, K, V):</strong> The lecture uses a database analogy where a <strong>Query</strong> searches for information, <strong>Keys</strong> identify objects, and <strong>Values</strong> contain the actual content.</p>
+<p>Self-Attention Steps:</p>
+<ul>
+<li>Step 1: compute “key, value, query” embedding for each input token</li>
+<li>Step 2: compute scores between pairs of tokens(dot product of Q and K)</li>
+<li>Step 3: compute normalized attention scores(Softmax)</li>
+<li>Step 4: get a new representation by the weighted sum of values</li>
+</ul>
+<p><strong>Multi-Head Attention:</strong> Running multiple attention calculations in parallel allows the model to capture different types of relationships between words simultaneously.</p>
+<h3 id="encoder-vs-decoder">Encoder vs. Decoder<a class="headerlink" href="#encoder-vs-decoder" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Encoder:</strong> Its goal is to "add context" to the input embeddings, transforming them into contextually rich representations.</li>
+<li><strong>Decoder:</strong> Used for generation (like translation or text completion). It uses masked attention to ensure it generates one token at a time without "cheating" by looking ahead.</li>
+</ul>
+<h3 id="arithmetic-intensity-performance">Arithmetic Intensity &amp; Performance<a class="headerlink" href="#arithmetic-intensity-performance" title="Permanent link">&para;</a></h3>
+<p>A significant portion of the lecture focuses on analyzing the hardware efficiency of these models.</p>
+<ul>
+<li><strong>Arithmetic Intensity (AI):</strong> Defined as the ratio of floating-point operations (FLOPs) to memory operations (Bytes). It measures how much "work" the processor does for every byte of data it moves.<ul>
+<li>Formula: <span class="arithmatex">\(AI = \frac{\#ops\text{(compute)}}{\#bytes\text{(memory bandwidth)}}\)</span>.</li>
+</ul>
+</li>
+<li><strong>The Roofline Model:</strong> A visual model used to identify if a program is <strong>Compute-bound</strong> (limited by processor speed) or <strong>Memory Bandwidth-bound</strong> (limited by data transfer speed) .<ul>
+<li>High AI leads to compute-bound performance (good).</li>
+<li>Low AI leads to bandwidth-bound performance (bad, processor sits idle waiting for data).</li>
+</ul>
+</li>
+<li><strong>Optimization Example:</strong> The slides demonstrate that "fusing" operations 融合运算 (combining addition and multiplication into one loop 加法乘法合并) increases Arithmetic Intensity by reducing the number of memory reads/writes required for the same amount of math.</li>
+</ul>
+<h3 id="transformer-performance-analysis">Transformer Performance Analysis<a class="headerlink" href="#transformer-performance-analysis" title="Permanent link">&para;</a></h3>
+<p>The lecture concludes by applying Arithmetic Intensity calculations specifically to Transformers.</p>
+<ul>
+<li>
+<p><strong>Memory vs. Compute:</strong> Different layers (Linear vs. Attention) have different costs. For example, the Feed-Forward Network involves significantly more FLOPs (<span class="arithmatex">\(16bsh^2\)</span>) compared to other operations.</p>
+<p><strong>Batch Size Impact:</strong> Increasing batch size generally improves throughput (tokens/second) by moving the workload from being memory-bound to compute-bound . 批处理将内存受限转化为计算受限</p>
+</li>
+</ul>
+<p>Multi-query attention</p>
+<p><img alt="image-20260203154458519" src="assets/image-20260203154458519.png" /></p>
+<p>MA/MQA/GQA</p>
+<p>native sparse attention</p>
+<ul>
+<li>better quality, compute and memory footprint</li>
+<li>sparse matrix don't save memory(COO)</li>
+</ul>
+<h3 id="distributed-traning">Distributed Traning<a class="headerlink" href="#distributed-traning" title="Permanent link">&para;</a></h3>
+<p>Data Parallelism (DP)</p>
+<p><img src="./assets/image-20260203162536688.png" alt="image-20260203162536688" style="zoom:50%;" /></p>
+<p>Data Parallelism with All-Reduce</p>
+<p>Data Parallelism assumes hosting the full model within a unit</p>
+<p>Stragglers</p>
+<p>Unbounded stalensess</p>
+<p>DDP</p>
+<p>In all-reduce, computation and communication can overlap</p>
+<p><img alt="image-20260205155839977" src="assets/image-20260205155839977.png" /></p>
+<ul>
+<li></li>
+</ul>
+<p>Question: why do we have these data dependency edges?</p>
+<p>collective</p>
+<p>Ring All-Reduce</p>
+<ul>
+<li>reduce scatter</li>
+<li>all gather</li>
+</ul>
+<p>p: GPU</p>
+<p>n: Data</p>
+<p>The Problem: Limitations of Data Parallelism</p>
+<ul>
+<li><strong>Data Parallelism (DP):</strong> In DP, the entire model is replicated on every GPU, and only the data (minibatch) is split.</li>
+<li><strong>The Bottleneck:</strong> This works well until the model itself is too large to fit into the memory of a single GPU. Large models (like GPT-2 or Llama) require massive memory for parameters, gradients, and optimizer states .</li>
+<li><strong>The Solution:</strong> We need <strong>Model Parallelism</strong>, specifically <strong>Tensor Parallelism</strong>, where individual layers are split across multiple devices .</li>
+</ul>
+<h3 id="tensor-slicing-model-parallelism">Tensor Slicing Model Parallelism<a class="headerlink" href="#tensor-slicing-model-parallelism" title="Permanent link">&para;</a></h3>
+<p>Inter-layer (Pipeline) parallelism</p>
+<p>- Split sets of layers across multiple devices</p>
+<p>- Layer 0, 1, 2 and layer 3, 4, 5 are on different devices</p>
+<p>Intra-layer (Tensor) parallelism</p>
+<p>- Split individual layers across multiple devices</p>
+<p>- Both devices compute different parts of layer 0, 1, 2, 3, 4, 5</p>
+<p>Tensor Parallel: Parallel GeMM</p>
+<ul>
+<li>all reduce</li>
+</ul>
+<p><img alt="image-20260210161050804" src="assets/image-20260210161050804.png" /></p>
+<h4 id="tensor-parallelism">Tensor Parallelism<a class="headerlink" href="#tensor-parallelism" title="Permanent link">&para;</a></h4>
+<p>The core concept is splitting the matrix multiplication operations (<span class="arithmatex">\(Y = XA\)</span>) across GPUs. The slides present two ways to do this:</p>
+<ul>
+<li><strong>Row Parallelism:</strong> The weight matrix <span class="arithmatex">\(A\)</span> is split horizontally (by rows). The input <span class="arithmatex">\(X\)</span> must be split by columns.<ul>
+<li><em>Constraint:</em> This requires an <strong>All-Reduce</strong> operation (synchronization) immediately after the multiplication to sum the partial results (<span class="arithmatex">\(Y_1 + Y_2\)</span>) .</li>
+</ul>
+</li>
+<li><strong>Column Parallelism:</strong> The weight matrix <span class="arithmatex">\(A\)</span> is split vertically (by columns). The input <span class="arithmatex">\(X\)</span> is broadcast to all GPUs.<ul>
+<li><em>Advantage:</em> The output <span class="arithmatex">\(Y\)</span> is split by columns, so no immediate synchronization is needed .</li>
+</ul>
+</li>
+</ul>
+<p>Reduce communication cost is curcial as TP is communication-intensive</p>
+<h4 id="megatron-lm-architecture">Megatron-LM Architecture<a class="headerlink" href="#megatron-lm-architecture" title="Permanent link">&para;</a></h4>
+<p>NVIDIA's Megatron-LM framework efficiently applies these concepts to Transformer models (like BERT and GPT) to minimize communication costs.</p>
+<p><strong>Optimization Strategy:</strong> Instead of synchronizing after every layer, Megatron-LM combines Column and Row parallelism to create a specific pattern that reduces communication :</p>
+<ul>
+<li>
+<p><strong>MLP Block:</strong></p>
+<ol>
+<li><strong>First Layer (Column Parallel):</strong> Splits the weight matrix column-wise. No sync needed.</li>
+<li><strong>Activation (GeLU):</strong> Performed locally on each GPU's partial data.</li>
+<li><strong>Second Layer (Row Parallel):</strong> Splits the weight matrix row-wise.</li>
+<li><strong>Result:</strong> Synchronization (All-Reduce) is only needed <em>after</em> the second layer .</li>
+</ol>
+</li>
+<li>
+<p><strong>Self-Attention Block:</strong></p>
+<ol>
+<li><strong>Q, K, V Projections (Column Parallel):</strong> Each "Attention Head" is assigned to a specific GPU.</li>
+<li><strong>Output Projection (Row Parallel):</strong> The results are combined using a row-parallel linear layer.</li>
+<li><strong>Result:</strong> Similar to the MLP block, this requires only one All-Reduce at the end of the block .</li>
+</ol>
+<blockquote>
+<p>[!NOTE]</p>
+<p>Question: What if we have more GPUs than the number </p>
+<p>of heads?</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="communication-efficiency">Communication Efficiency<a class="headerlink" href="#communication-efficiency" title="Permanent link">&para;</a></h4>
+<p>The architecture is designed so that there are only <strong>4 communication operations</strong> (All-Reduce) per Transformer layer in a full training step (Forward + Backward pass):</p>
+<ul>
+<li><strong>Forward Pass:</strong> 2 All-Reduces (one after Attention, one after MLP).</li>
+<li><strong>Backward Pass:</strong> 2 All-Reduces (corresponding to the forward splits) .</li>
+</ul>
+<ol start="5">
+<li>Performance &amp; Experiments</li>
+</ol>
+<ul>
+<li>
+<p><strong>Scaling:</strong> The approach demonstrates high efficiency (Weak Scaling), maintaining ~74-82% efficiency even when scaling up to 512 GPUs .</p>
+</li>
+<li>
+<p><strong>Model Size:</strong> This technique allowed for training very large models (e.g., 8.3B parameter GPT-2 and 3.9B parameter BERT) that were previously impossible with standard Data Parallelism .</p>
+</li>
+<li>
+<p><strong>Stability:</strong> The lecture notes that reordering LayerNorm (moving it to the input of the sub-blocks) is crucial for stabilizing the training of these massive models.</p>
+<h3 id="pipeline-parallelism">Pipeline Parallelism<a class="headerlink" href="#pipeline-parallelism" title="Permanent link">&para;</a></h3>
+</li>
+</ul>
+<p>Question: How to achieve high training throughput through inter-layer model parallelism?</p>
+<h4 id="inter-layer-model-parallelism">Inter-Layer Model Parallelism<a class="headerlink" href="#inter-layer-model-parallelism" title="Permanent link">&para;</a></h4>
+<h4 id="simple-inter-layer-parallelism">Simple Inter-Layer Parallelism<a class="headerlink" href="#simple-inter-layer-parallelism" title="Permanent link">&para;</a></h4>
+<p>DNN training involves a bi-directional execution</p>
+<p>- The forward pass for a minibatch starts at the input layer </p>
+<p>- The backward pass ends at the input layer</p>
+<p><img alt="image-20260212154654015" src="assets/image-20260212154654015.png" /></p>
+<blockquote>
+<p>How to improve the utilization and let multiple workers work simultaneously?</p>
+<ul>
+<li>Divide a mini-batch into multiple smaller micro-batches</li>
+</ul>
+</blockquote>
+<p><img alt="image-20260212160520059" src="assets/image-20260212160520059.png" /></p>
+<p>Question: Can we improve the pipeline schedule to reduce memory requirements?</p>
+<h4 id="pipeline-parallelism-with-1f1b-schedule">Pipeline Parallelism with 1F1B Schedule<a class="headerlink" href="#pipeline-parallelism-with-1f1b-schedule" title="Permanent link">&para;</a></h4>
+<p><img alt="image-20260212161940391" src="assets/image-20260212161940391.png" /></p>
+<p>One-forward-one-bakend in steady state</p>
+<ul>
+<li>Reduce memory footprint of pipeline parallelism</li>
+<li>Doesn't reduce pipeline bubble</li>
+</ul>
+<p>Reduce bubble time at the cost of increased communication</p>
+<ul>
+<li><span class="arithmatex">\(bubblefraction=\frac{p-1}{m}\)</span></li>
+</ul>
+<p>interleaved</p>
+<ul>
+<li><span class="arithmatex">\(bubblefraction=\frac1v\times\frac{p-1}{m}\)</span></li>
+</ul>
+<h3 id="combined-parallesim">Combined Parallesim<a class="headerlink" href="#combined-parallesim" title="Permanent link">&para;</a></h3>
+<p>Model Parallelism=Tensor * pipeline</p>
+<p><img alt="image-20260217153717211" src="assets/image-20260217153717211.png" /></p>
+<p>(p, t, d): pipeline-para size, tensor-model-para size, data-para size</p>
+<p>n: Number of GPUs, ptd=n</p>
+<p>n=p*t, t↑ pipeline bubble↓</p>
+<p>B: batchsize, b: microbatch size</p>
+<p>m=B/(d*b) number of microbatches per pipeline</p>
+<p><strong>Takeaway #1</strong>: Use tensor model parallelism within a server and pipeline modelparallelism to scale to multiple servers.</p>
+<p>communication overhead</p>
+<ul>
+<li>all reduce communicationf or tensor model para is expensive</li>
+<li>Especially when cross servers</li>
+</ul>
+<p>t &gt; 8, expensive crossserver allreduce
+t &lt; 8, bubble fraction increase</p>
+<h4 id="data-parallesim-vs-tensor-parallesim">Data Parallesim vs Tensor Parallesim<a class="headerlink" href="#data-parallesim-vs-tensor-parallesim" title="Permanent link">&para;</a></h4>
+<ul>
+<li>DP is less communication heavy than TP</li>
+<li>All-reduce once per batch vs all-reduce once per microbatch</li>
+<li>
+<p>TP can lead to hardware underutilization</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{p-1}{m}=\frac{n/d-1}{b'/d}=\frac{n-d}{b'(=B/b)}\)</span></p>
+</li>
+</ul>
+<p><strong>Takeaway #2</strong>: Decide tensor-parallel size and pipeline-parallel size based on theGPU memory size; data parallelism can be used to scale to more GPUs.</p>
+<h4 id="dp-vs-pp">DP vs PP<a class="headerlink" href="#dp-vs-pp" title="Permanent link">&para;</a></h4>
+<p>The throughput (performance per GPU) </p>
+<ul>
+<li>decreases as the <strong>Pipeline Parallel size increases</strong> primarily due to the <strong>Pipeline Bubble</strong></li>
+<li>
+<p>Decreases as tensor-parallel size increases</p>
+</li>
+<li>
+<p>Larger batch size scale better</p>
+</li>
+</ul>
+<p>Summary</p>
+<p>Use tp within a node and pp to scale to multiple nodes</p>
+<p>Decide TP size and PP size based in GPU memory size</p>
+<p>DP can be used to scale to more GPUs</p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2026年2月20日 01:15:29 CST">2026年2月20日 01:15:29</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+<div id="__comments">
+  
+    <h2 ><!-- 评论 -->评论区~</h2>
+    
+    有用的话请给我个赞和 star => <a href="https://cindyzhou2003.github.io/mymkdocs/">
+        <img alt="GitHub stars" src="https://img.shields.io/github/stars/CindyZhou2003/mymkdocs.svg?style=plastic&amp;label=Stars"></a>
+    
+    
+    </div>
+    <script src="https://giscus.app/client.js"
+        data-repo="CindyZhou2003/mymkdocs"
+        data-repo-id="R_kgDOJHRt5g"
+        data-category="General"
+        data-category-id="DIC_kwDOJHRt5s4Cge0r"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+
+        updateScheme();
+
+    </script>
+    
+    
+    <!-- Synchronize Giscus theme with palette -->
+    <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+    
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+        var theme = palette.color.scheme === "slate" ? "dark" : "light"
+        giscus.setAttribute("data-theme", theme) 
+    }
+    
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+        var ref = document.querySelector("[data-md-component=palette]")
+        ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+            var theme = palette.color.scheme === "slate" ? "dark" : "light"
+            localStorage.setItem("data-md-color-scheme", palette.color.scheme === "slate" ? "slate" : "default");
+            /* Instruct Giscus to change theme */
+            var frame = document.querySelector(".giscus-frame")
+            frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+            )
+        }
+        })
+    })
+    </script>
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="ECE598.html" class="md-footer__link md-footer__link--prev" aria-label="上一页: ECE498/598 Deep Generative Models">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                ECE498/598 Deep Generative Models
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="ECE478.html" class="md-footer__link md-footer__link--next" aria-label="下一页: CS477/ECE478 Formal Software Development Methods">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                CS477/ECE478 Formal Software Development Methods
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024-2025 <a href="https://github.com/CindyZhou2003/mymkdocs"  target="_blank" rel="noopener">Cindy</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/CindyZhou2003/mymkdocs" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.annotate", "navigation.indexes", "navigation.expand", "toc.follow", "navigation.top", "search.suggest", "navigation.footer", "navigation.tabs", "navigation.tracking", "navigation.instant.progress", "content.code.copy", "search.highlight", "search.share", "content.code.annotate", "navigation.tabs"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://gcore.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+      
+        <script src="../js/katex.js"></script>
+      
+        <script src="../js/tablesort.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

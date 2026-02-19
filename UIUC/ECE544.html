@@ -1,0 +1,3424 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Cindy的笔记本">
+      
+      
+      
+        <link rel="canonical" href="https://cindyzhou2003.github.io/mymkdocs/UIUC/ECE544.html">
+      
+      
+        <link rel="prev" href="ECE478.html">
+      
+      
+        <link rel="next" href="../skills/Algorithm.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favcion.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>ECE544 Pattern Recognition - Cindy的笔记本</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=LXGW+WenKai:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"LXGW WenKai";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css">
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+      <link rel="stylesheet" href="../css/neoteroi-mkdocs.css">
+    
+      <link rel="stylesheet" href="../css/style.css">
+    
+      <link rel="stylesheet" href="../css/font.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="forest" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ece-544-pattern-recognition" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="Cindy的笔记本" class="md-header__button md-logo" aria-label="Cindy的笔记本" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M384 512H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h304c26.5 0 48 21.5 48 48v288c0 20.9-13.4 38.7-32 45.3V448c17.7 0 32 14.3 32 32s-14.3 32-32 32zM96 384c-17.7 0-32 14.3-32 32s14.3 32 32 32h256v-64zm32-232c0 13.3 10.7 24 24 24h176c13.3 0 24-10.7 24-24s-10.7-24-24-24H152c-13.3 0-24 10.7-24 24m24 72c-13.3 0-24 10.7-24 24s10.7 24 24 24h176c13.3 0 24-10.7 24-24s-10.7-24-24-24z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cindy的笔记本
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ECE544 Pattern Recognition
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="forest" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="forest-dark" data-md-color-primary="Brown" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/CindyZhou2003/mymkdocs" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Cindy's notebook
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../index.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  主页🤖
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../ZJU/DM.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  ZJU-SE课程📝
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="ECE408.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  UIUC-MEng courses📚
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../skills/Algorithm.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  技能⚙️
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../abroad/IELTs_speaking1.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  出国✈️
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../work/Interview.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  找工
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../other/test.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  其他🎊
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Cindy的笔记本" class="md-nav__button md-logo" aria-label="Cindy的笔记本" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M384 512H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h304c26.5 0 48 21.5 48 48v288c0 20.9-13.4 38.7-32 45.3V448c17.7 0 32 14.3 32 32s-14.3 32-32 32zM96 384c-17.7 0-32 14.3-32 32s14.3 32 32 32h256v-64zm32-232c0 13.3 10.7 24 24 24h176c13.3 0 24-10.7 24-24s-10.7-24-24-24H152c-13.3 0-24 10.7-24 24m24 72c-13.3 0-24 10.7-24 24s10.7 24 24 24h176c13.3 0 24-10.7 24-24s-10.7-24-24-24z"/></svg>
+
+    </a>
+    Cindy的笔记本
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/CindyZhou2003/mymkdocs" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Cindy's notebook
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    主页🤖
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    主页🤖
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ZJU-SE课程📝
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ZJU-SE课程📝
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    大一春夏
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    大一春夏
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/DM.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    离散数学及其应用
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    大二秋冬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    大二秋冬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/OOP.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    面向对象程序设计
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/FDS.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据结构基础
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    大二春夏
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    大二春夏
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/ADS.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    高级数据结构与算法分析
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/DB.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据库系统
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/ML.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    机器学习（国际化）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/PIS.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    信息安全原理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    大三秋冬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    大三秋冬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/OS.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    操作系统
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/CN.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    计算机网络
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/%E6%AF%9B%E6%A6%82.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    毛概
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/IoT.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    物联网技术基础与应用开发
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/SQAT.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    软件质量与保证测试
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    大三春夏
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    大三春夏
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/CLDF.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数字逻辑设计
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ZJU/%E4%B9%A0%E6%A6%82.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    习概
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UIUC-MEng courses📚
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    UIUC-MEng courses📚
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fall 2025
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fall 2025
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ECE408.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ECE408/CS483 Applied Parallel Programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ECE448.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ECE448/CS440 Artificial Intelligence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ECE598.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ECE498/598 Deep Generative Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spring 2026
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Spring 2026
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CS498.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CS498 Machine Learning Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ECE478.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CS477/ECE478 Formal Software Development Methods
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ECE544 Pattern Recognition
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="ECE544.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ECE544 Pattern Recognition
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pattern-recognition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pattern Recognition
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linear-regression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linear Regression
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logistic-regression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logistic Regression
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optimization-primal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optimization Primal
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Optimization Primal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#optimization-dual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optimization Dual
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support-vector-machines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Support Vector Machines
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Support Vector Machines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#multiclass-classification-and-kernel-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multiclass Classification and Kernel Methods
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Multiclass Classification and Kernel Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#multiclass-svm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multiclass SVM
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kernels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kernels
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kernels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-prediction-with-dual-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 预测公式 (Prediction with dual variables)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-dual-of-svm-logistic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 对偶问题公式 (Dual of SVM / Logistic)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-observation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 观察到的现象 (Observation)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-kernel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 为什么要用 Kernel？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 总结
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deep-nets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deep Nets
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deep Nets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fully-connected-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fully connected layer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    技能⚙️
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    技能⚙️
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../skills/Algorithm.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    算法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../skills/deeplearning.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    深度学习
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    出国✈️
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    出国✈️
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    雅思口语
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    雅思口语
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abroad/IELTs_speaking1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第一次
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abroad/IELTs_speaking2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第二次
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abroad/IELTs_writing.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    雅思作文
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    找工
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    找工
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../work/Interview.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    面试
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    其他🎊
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    其他🎊
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../other/test.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Test
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../other/Debug_issue.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    部署网站时的问题
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pattern-recognition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pattern Recognition
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linear-regression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linear Regression
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logistic-regression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logistic Regression
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optimization-primal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optimization Primal
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Optimization Primal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#optimization-dual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optimization Dual
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support-vector-machines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Support Vector Machines
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Support Vector Machines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#multiclass-classification-and-kernel-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multiclass Classification and Kernel Methods
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Multiclass Classification and Kernel Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#multiclass-svm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multiclass SVM
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kernels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kernels
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kernels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-prediction-with-dual-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 预测公式 (Prediction with dual variables)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-dual-of-svm-logistic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 对偶问题公式 (Dual of SVM / Logistic)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-observation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 观察到的现象 (Observation)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-kernel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 为什么要用 Kernel？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 总结
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deep-nets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deep Nets
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deep Nets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fully-connected-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fully connected layer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="ece-544-pattern-recognition">ECE 544 Pattern Recognition<a class="headerlink" href="#ece-544-pattern-recognition" title="Permanent link">&para;</a></h1>
+<div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 4022 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"/></svg></span> 5 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 13 分钟</p>
+</div>
+<h2 id="pattern-recognition">Pattern Recognition<a class="headerlink" href="#pattern-recognition" title="Permanent link">&para;</a></h2>
+<p>Pattern recoginition</p>
+<ul>
+<li>input data: x</li>
+<li>Label/output: y</li>
+<li>x^(i)^ -&gt; model/algorithm -&gt; y^(i)^ ---inference/prediction</li>
+<li>y=y^(k)^ where k= arg min || x(i)-x||^2=argmin d(x(i)-x)</li>
+</ul>
+<p><code>argmin</code> (argument of the minimum) finds the input value(s) that produce the minimum output of a function, rather than the minimum output itself</p>
+<p>K Nearest Neighbor</p>
+<h2 id="linear-regression">Linear Regression<a class="headerlink" href="#linear-regression" title="Permanent link">&para;</a></h2>
+<p>线性回归</p>
+<p>norm</p>
+<p>transpose</p>
+<p>Expectation: <span class="arithmatex">\(E_{p(y)[f(y)]}=\sum_{y_i}p(y)f(y)\)</span></p>
+<p>arg min</p>
+<p>Model: y=w_1\times x+w_2</p>
+<p>Error: vertical lines</p>
+<p>Set the derivative to zero</p>
+<p>Regularization</p>
+<div class="arithmatex">\[\mathbf{X}\mathbf{X}^T \mathbf{w} + C\mathbf{w} - \mathbf{X}\mathbf{Y} = 0\]</div>
+<p>w ∗ = XX ⊤ + CI <em>−</em>1 XY</p>
+<p>Higher Po</p>
+<p>Maximize the likelihood of the given dataset <span class="arithmatex">\(D = \{(x(i) , y(i) )\}\)</span> assuming</p>
+<p>samples to be drawn independently from an identical distribution</p>
+<p>(i.i.d.).</p>
+<p>IID? independent identical d</p>
+<p>Joint distribution = product of individual distributions</p>
+<ul>
+<li>not good for classification</li>
+</ul>
+<h2 id="logistic-regression">Logistic Regression<a class="headerlink" href="#logistic-regression" title="Permanent link">&para;</a></h2>
+<p>empirical risk minimization</p>
+<p><img src="./assets/image-20260129110818218.png" alt="image-20260129110818218" style="zoom:50%;" /></p>
+<p>Log(1)</p>
+<p>Edge/Boundary detection</p>
+<blockquote>
+<p>[!NOTE]</p>
+<p>Which loss is used for logistic regression?</p>
+<p>What is the difference between logistic and linear regression?</p>
+<p>How to optimize linear and logistic regression?</p>
+</blockquote>
+<h2 id="optimization-primal">Optimization Primal<a class="headerlink" href="#optimization-primal" title="Permanent link">&para;</a></h2>
+<p>When can we find the optimum?</p>
+<ul>
+<li>
+<p>Least squares, linear, and convex programs can be solved</p>
+<p>efficiently and reliably</p>
+</li>
+</ul>
+<p>Convex set: A set is convex if for any two points w1, w2 in the set, the line segment <span class="arithmatex">\(λw_1 + (1 − λ)w_2\)</span> for λ ∈ [0, 1] also lies in the set.</p>
+<p>Convex function
+A function f is convex if its domain is a convex set, and for any points w1, w2 in the domain and any λ ∈ [0, 1]
+<span class="arithmatex">\(f((1 − λ)w1 + λw2) ≤ (1 − λ)f(w1) + λf(w2)\)</span></p>
+<p>Show that <span class="arithmatex">\(log(1 + e^x)\)</span> is convex for x ∈ R</p>
+<p>convex optimization</p>
+<p>Gradient descent</p>
+<blockquote>
+<p>[!NOTE]</p>
+<p>Stepsize/Learning rate rules?</p>
+<p>Descent directions?</p>
+<p>Properties of convex functions?</p>
+<p>Convergence rates?</p>
+<p>Improvements?</p>
+</blockquote>
+<p><strong>Important topics of this lecture</strong></p>
+<p>Convex optimization basics</p>
+<p>Algorithm choices</p>
+<p>Rates</p>
+<h3 id="optimization-dual">Optimization Dual<a class="headerlink" href="#optimization-dual" title="Permanent link">&para;</a></h3>
+<p><strong>Lagrangian</strong></p>
+<p><strong>Recipe for computing dual program:</strong></p>
+<ul>
+<li>
+<p>Bring primal program into standard form</p>
+</li>
+<li>
+<p>Assign Lagrange multipliers to a suitable set of constraints</p>
+</li>
+<li>Subsume all other constrains in <em>W</em></li>
+<li>Write down the Lagrangian <em>L</em></li>
+<li>Minimize Lagrangian w.r.t. primal variables s.t. <em>w ∈ W</em></li>
+</ul>
+<p>Karush-Kuhn-Tucker (KKT) conditions</p>
+<ul>
+<li></li>
+</ul>
+<p>The Relationship: Primal vs. Dual</p>
+<p>The relationship is built on the inequality you saw earlier:</p>
+<div class="arithmatex">\[\min_{\mathbf{w}} L(\mathbf{w}, \lambda) \le f_0(\mathbf{w}^*)\]</div>
+<ul>
+<li><strong>The Primal Program</strong> minimizes the cost directly (finding the lowest valley).</li>
+<li><strong>The Dual Function</strong> <span class="arithmatex">\(g(\lambda)\)</span> finds a <strong>lower bound</strong> for that cost (finding the highest possible "floor" beneath the valley).</li>
+<li><strong>The Dual Program</strong> is simply the search for the <strong>best (highest) lower bound</strong>. It asks: <em>"What is the largest possible value for this floor?"</em></li>
+</ul>
+<p>Walkthrough: The Linear Program Example</p>
+<p>Let's trace the steps in the slide to see how we get from the Primal to the Dual.</p>
+<p>Step 1: The Primal Problem</p>
+<p>We start with a standard linear minimization:</p>
+<div class="arithmatex">\[\min_{\mathbf{w}} \mathbf{c}^T \mathbf{w} \quad \text{s.t.} \quad \mathbf{A}\mathbf{w} \le \mathbf{b}\]</div>
+<p>Step 2: The Lagrangian</p>
+<p>We add the constraint to the objective using a Lagrange multiplier <span class="arithmatex">\(\lambda\)</span> (where <span class="arithmatex">\(\lambda \ge 0\)</span>).</p>
+<div class="arithmatex">\[L(\mathbf{w}, \lambda) = \mathbf{c}^T \mathbf{w} + \lambda^T (\mathbf{A}\mathbf{w} - \mathbf{b})\]</div>
+<p>Step 3: Regroup terms by <span class="arithmatex">\(\mathbf{w}\)</span></p>
+<p>To find the minimum with respect to <span class="arithmatex">\(\mathbf{w}\)</span>, we need to group all terms containing <span class="arithmatex">\(\mathbf{w}\)</span> together.</p>
+<div class="arithmatex">\[L(\mathbf{w}, \lambda) = (\mathbf{c} + \mathbf{A}^T \lambda)^T \mathbf{w} - \mathbf{b}^T \lambda\]</div>
+<ul>
+<li>Here, <span class="arithmatex">\((\mathbf{c} + \mathbf{A}^T \lambda)\)</span> acts like the <strong>slope</strong> of a line.</li>
+<li><span class="arithmatex">\(-\mathbf{b}^T \lambda\)</span> acts like the <strong>intercept</strong> (constant with respect to <span class="arithmatex">\(\mathbf{w}\)</span>).</li>
+</ul>
+<p>Step 4: Minimize <span class="arithmatex">\(L\)</span> to find <span class="arithmatex">\(g(\lambda)\)</span></p>
+<p>We need to find <span class="arithmatex">\(\min_{\mathbf{w}} L(\mathbf{w}, \lambda)\)</span>. This is the tricky part shown in the middle of the slide.</p>
+<p>Think of this as minimizing a simple line <span class="arithmatex">\(y = mx + b\)</span>.</p>
+<ul>
+<li><strong>Case A:</strong> If the slope <span class="arithmatex">\(m\)</span> is <strong>not zero</strong> (i.e., <span class="arithmatex">\(\mathbf{c} + \mathbf{A}^T \lambda \neq 0\)</span>), we can choose <span class="arithmatex">\(\mathbf{w}\)</span> to be huge and negative (or positive), making the total value go to <span class="arithmatex">\(-\infty\)</span>.</li>
+<li><strong>Case B:</strong> If the slope <span class="arithmatex">\(m\)</span> <strong>is zero</strong> (i.e., <span class="arithmatex">\(\mathbf{c} + \mathbf{A}^T \lambda = 0\)</span>), the <span class="arithmatex">\(\mathbf{w}\)</span> term disappears completely. The value is just the intercept: <span class="arithmatex">\(-\mathbf{b}^T \lambda\)</span>.</li>
+</ul>
+<p>So, the dual function <span class="arithmatex">\(g(\lambda)\)</span> is:</p>
+<div class="arithmatex">\[g(\lambda) = \begin{cases} -\mathbf{b}^T \lambda &amp; \text{if } \mathbf{A}^T \lambda + \mathbf{c} = 0 \\ -\infty &amp; \text{otherwise} \end{cases}\]</div>
+<p>Step 5: The Dual Program</p>
+<p>The Dual Program tries to <strong>maximize</strong> <span class="arithmatex">\(g(\lambda)\)</span>.</p>
+<p>Since we want to maximize something, we can ignore the case where it equals <span class="arithmatex">\(-\infty\)</span> (that's definitely not the maximum!). We only care about the case where the slope is zero.</p>
+<p>Thus, the Dual Program becomes:</p>
+<div class="arithmatex">\[\max_{\lambda \ge 0} -\mathbf{b}^T \lambda \quad \text{subject to} \quad \mathbf{A}^T \lambda + \mathbf{c} = 0\]</div>
+<p>Summary</p>
+<p>The Lagrangian allowed us to convert a minimization problem over <span class="arithmatex">\(\mathbf{w}\)</span> (Primal) into a maximization problem over <span class="arithmatex">\(\lambda\)</span> (Dual).</p>
+<ul>
+<li><strong>Primal:</strong> Constraints were on <span class="arithmatex">\(\mathbf{w}\)</span> (<span class="arithmatex">\(\mathbf{Aw} \le \mathbf{b}\)</span>).</li>
+<li><strong>Dual:</strong> Constraints are on the "slope" being zero (<span class="arithmatex">\(\mathbf{A}^T \lambda + \mathbf{c} = 0\)</span>).</li>
+</ul>
+<blockquote>
+<p>[!NOTE]</p>
+<p>What to do before computing the Lagrangian?</p>
+<p>How to obtain the dual program?</p>
+<p>Why duality</p>
+</blockquote>
+<h2 id="support-vector-machines">Support Vector Machines<a class="headerlink" href="#support-vector-machines" title="Permanent link">&para;</a></h2>
+<p>SVMs</p>
+<p><strong>SVM:</strong> Finds the <strong>optimal</strong> line (hyperplane) that separates the classes with the <strong>maximum margin</strong>.</p>
+<div class="arithmatex">\[y_i(\mathbf{w}^T \mathbf{x}_i + b) \ge 1\]</div>
+<p><img alt="image-20260210112829949" src="assets/image-20260210112829949.png" /></p>
+<p>The graph shows data points from two classes (crosses <span class="arithmatex">\(\times\)</span> and circles <span class="arithmatex">\(\circ\)</span>) in a 2D feature space (<span class="arithmatex">\(\phi_1, \phi_2\)</span>).</p>
+<ul>
+<li><strong>The Solid Line (<span class="arithmatex">\(\mathbf{w}^T \phi = 0\)</span>):</strong> This is the <strong>Decision Boundary</strong>. It effectively separates the two classes.</li>
+<li><strong>The Dashed Lines (<span class="arithmatex">\(\mathbf{w}^T \phi = 1\)</span> and <span class="arithmatex">\(-1\)</span>):</strong> These represent the edges of the "street" (or margin). The SVM requires all data points to be <em>outside</em> these lines.</li>
+<li><strong>The Support Vectors:</strong> Notice that only a few points (two crosses and one circle) actually touch the dashed lines. These are the "Support Vectors" that define the model.</li>
+<li><strong>The Margin Width (<span class="arithmatex">\(\frac{2}{\|\mathbf{w}\|}\)</span>):</strong> The diagram labels the distance between the two dashed lines as <span class="arithmatex">\(\frac{2}{\|\mathbf{w}\|}\)</span>. This is the "safety gap" between the classes.</li>
+</ul>
+<p>The Mathematical Goal</p>
+<p>The goal of SVM is to make this safety gap (margin) as <strong>wide</strong> as possible.</p>
+<ul>
+<li>
+<p><strong>Maximize Margin:</strong> We want to maximize <span class="arithmatex">\(\frac{2}{\|\mathbf{w}\|}\)</span>.</p>
+</li>
+<li>
+<p><strong>Minimize Norm:</strong> Mathematically, maximizing <span class="arithmatex">\(\frac{2}{\|\mathbf{w}\|}\)</span> is the same as minimizing <span class="arithmatex">\(\|\mathbf{w}\|\)</span> (the length of the weight vector).</p>
+</li>
+<li>
+<p><strong>The Formula:</strong> To make the calculus easier, we square it and add a fraction. So, the objective becomes:</p>
+<div class="arithmatex">\[\min_{\mathbf{w}} \frac{1}{2} \|\mathbf{w}\|_2^2\]</div>
+<p>This is what you see in the "Maximize margin" section of the slide.</p>
+</li>
+</ul>
+<p>The Constraints (The Rules)</p>
+<p>We can't just minimize <span class="arithmatex">\(\|\mathbf{w}\|\)</span> to zero (which would make the margin infinite but classify nothing). We must respect the data.</p>
+<div class="arithmatex">\[y^{(i)} \mathbf{w}^T \phi(x^{(i)}) \ge 1\]</div>
+<p>This inequality (labeled "Taskloss: <span class="arithmatex">\(L\)</span>") enforces two things:</p>
+<ol>
+<li><strong>Correct Classification:</strong> The prediction must have the same sign as the label <span class="arithmatex">\(y\)</span>.</li>
+<li><strong>Safety Distance:</strong> The prediction value must be at least <strong>1</strong> (or <span class="arithmatex">\(-1\)</span>). This ensures points don't just "barely" cross the line, but stay completely off the "street."</li>
+</ol>
+<blockquote>
+<p>[!NOTE]</p>
+<p><strong>"Issue: what if data not linearly separable?"</strong>.</p>
+<ul>
+<li>The model shown here (Hard Margin SVM) <em>crashes</em> if you have a single data point in the wrong crowd (e.g., a blue circle in the middle of the black crosses).</li>
+<li>This hints at the next topic in your course: <strong>Soft Margin SVM</strong>, which introduces "slack variables" to allow for some errors.</li>
+</ul>
+</blockquote>
+<p>Slack</p>
+<p><img alt="image-20260210114139828" src="assets/image-20260210114139828.png" /></p>
+<p>Maximum and constraints</p>
+<p>Dual variables <span class="arithmatex">\(α (i) ≥ 0\)</span> for each inequality constraint</p>
+<p>Step 1: Minimize w.r.t. the Weights (<span class="arithmatex">\(\mathbf{w}\)</span>) 第一步：减少权重 <span class="arithmatex">\(\mathbf{w}\)</span></p>
+<p>We want to find the <span class="arithmatex">\(\mathbf{w}\)</span> that minimizes <span class="arithmatex">\(L\)</span>. We take the derivative with respect to <span class="arithmatex">\(\mathbf{w}\)</span> and set it to zero.
+我们想找到 <span class="arithmatex">\(\mathbf{w}\)</span> 使 <span class="arithmatex">\(L\)</span> 最小化的 。我们取导数， <span class="arithmatex">\(\mathbf{w}\)</span> 并将其设为零。</p>
+<ul>
+<li>
+<p><strong>Lagrangian terms with <span class="arithmatex">\(\mathbf{w}\)</span>:</strong> <span class="arithmatex">\(\frac{C}{2}\|\mathbf{w}\|_2^2 - \mathbf{w}^T \sum_i \alpha^{(i)} y^{(i)} \phi(x^{(i)})\)</span>
+    <strong>拉格朗日项为 <span class="arithmatex">\(\mathbf{w}\)</span> ：</strong> <span class="arithmatex">\(\frac{C}{2}\|\mathbf{w}\|_2^2 - \mathbf{w}^T \sum_i \alpha^{(i)} y^{(i)} \phi(x^{(i)})\)</span> </p>
+</li>
+<li>
+<p><strong>Derivative: 衍生品：</strong></p>
+<div class="arithmatex">\[\frac{\partial L}{\partial \mathbf{w}} = C\mathbf{w} - \sum_{i} \alpha^{(i)} y^{(i)} \phi(x^{(i)}) = 0\]</div>
+</li>
+<li>
+<p><strong>Result (Solution for <span class="arithmatex">\(\mathbf{w}\)</span>):
+    结果（解 ）： <span class="arithmatex">\(\mathbf{w}\)</span></strong> </p>
+<div class="arithmatex">\[\mathbf{w} = \frac{1}{C} \sum_{i} \alpha^{(i)} y^{(i)} \phi(x^{(i)})\]</div>
+<p><em>(This tells us that the weight vector is just a linear combination of the data points.)
+（这告诉我们权重矢量只是数据点的线性组合。）</em></p>
+</li>
+</ul>
+<p>Step 2: Minimize w.r.t. the Slack Variables (<span class="arithmatex">\(\xi\)</span>) 步骤 2：最小化松弛变量 <span class="arithmatex">\(\xi\)</span> </p>
+<p>Now we look at the terms involving <span class="arithmatex">\(\xi^{(i)}\)</span>.
+现在我们来看涉及 <span class="arithmatex">\(\xi^{(i)}\)</span> 的项。</p>
+<ul>
+<li>
+<p><strong>Lagrangian term:</strong> <span class="arithmatex">\(\sum_i \xi^{(i)} (1 - \alpha^{(i)})\)</span>
+    <strong>拉格朗日项：</strong> <span class="arithmatex">\(\sum_i \xi^{(i)} (1 - \alpha^{(i)})\)</span> </p>
+</li>
+<li>
+<p><strong>Analysis:</strong> Since <span class="arithmatex">\(\xi^{(i)} \ge 0\)</span> (from the primal constraints), we need to be careful.
+    <strong>分析：</strong> 由于 <span class="arithmatex">\(\xi^{(i)} \ge 0\)</span> （从原始约束中），我们需要谨慎。</p>
+<ul>
+<li>
+<p>If the coefficient <span class="arithmatex">\((1 - \alpha^{(i)})\)</span> is negative, we could make <span class="arithmatex">\(\xi^{(i)}\)</span> huge and drive <span class="arithmatex">\(L\)</span> to <span class="arithmatex">\(-\infty\)</span>. Since we want a valid minimum, this is not allowed.
+    如果系数 <span class="arithmatex">\((1 - \alpha^{(i)})\)</span> 为负，我们可以将 变 <span class="arithmatex">\(\xi^{(i)}\)</span> 为巨大并驱动 <span class="arithmatex">\(L\)</span> 到 <span class="arithmatex">\(-\infty\)</span> 。因为我们想要一个有效的最低值，所以这是不允许的。</p>
+</li>
+<li>
+<p>Therefore, we get a <strong>constraint</strong> on <span class="arithmatex">\(\alpha\)</span>:
+    因此，我们得到 的 <span class="arithmatex">\(\alpha\)</span> <strong>约束</strong> ：</p>
+<div class="arithmatex">\[1 - \alpha^{(i)} \ge 0 \implies \alpha^{(i)} \le 1\]</div>
+</li>
+<li>
+<p>Combined with <span class="arithmatex">\(\alpha^{(i)} \ge 0\)</span> (standard dual constraint), we get the "Box Constraint": <strong><span class="arithmatex">\(0 \le \alpha^{(i)} \le 1\)</span></strong>.
+    结合 <span class="arithmatex">\(\alpha^{(i)} \ge 0\)</span> （标准对偶约束），我们得到“盒子约束”：  <strong><span class="arithmatex">\(0 \le \alpha^{(i)} \le 1\)</span></strong> 。</p>
+</li>
+<li>
+<p>At the optimal point, this term <span class="arithmatex">\(\xi^{(i)}(1-\alpha^{(i)})\)</span> will vanish (be zero).
+    在最优点，该项 <span class="arithmatex">\(\xi^{(i)}(1-\alpha^{(i)})\)</span> 将消失（为零）。</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Step 3: Substitute Back (The "Dual Objective") 第三步：回归替代（“双重目标”）</p>
+<p>Now, plug the solution for <span class="arithmatex">\(\mathbf{w}\)</span> (from Step 1) back into the Lagrangian equation to eliminate <span class="arithmatex">\(\mathbf{w}\)</span>.
+现在，将（步骤 1 中的）解 <span class="arithmatex">\(\mathbf{w}\)</span> 代入拉格朗日方程以消除 <span class="arithmatex">\(\mathbf{w}\)</span> 。</p>
+<div class="arithmatex">\[\begin{aligned} g(\alpha) &amp;= \underbrace{\frac{C}{2} \left\| \frac{1}{C} \sum \alpha y \phi \right\|^2}_{\text{First term}} - \underbrace{\left( \frac{1}{C} \sum \alpha y \phi \right)^T \sum \alpha y \phi}_{\text{Second term}} + \sum \alpha^{(i)} \\ &amp;= \frac{1}{2C} \sum_{i,j} \alpha^{(i)}\alpha^{(j)}y^{(i)}y^{(j)}\phi(x^{(i)})^T\phi(x^{(j)}) - \frac{1}{C} \sum_{i,j} \alpha^{(i)}\alpha^{(j)}y^{(i)}y^{(j)}\phi(x^{(i)})^T\phi(x^{(j)}) + \sum \alpha^{(i)} \end{aligned}\]</div>
+<p>Combine the squared terms (<span class="arithmatex">\(\frac{1}{2C} - \frac{1}{C} = -\frac{1}{2C}\)</span>):
+将平方项（2C）组合 1 ​ − C 1 ​ =− 2C 1 ​ ):</p>
+<div class="arithmatex">\[\text{Dual Objective:} \sum_{i} \alpha^{(i)} - \frac{1}{2C} \sum_{i,j} \alpha^{(i)} \alpha^{(j)} y^{(i)} y^{(j)} \underbrace{\phi(x^{(i)})^T \phi(x^{(j)})}_{\text{Kernel } K(x^{(i)}, x^{(j)})}\]</div>
+<p>Final Result 最终结果</p>
+<p>The problem reduces to maximizing this new formula solely with respect to <span class="arithmatex">\(\alpha\)</span>:
+问题简化为仅对 最大化 <span class="arithmatex">\(\alpha\)</span> 该新公式：</p>
+<div class="arithmatex">\[\max_{\alpha} \sum_{i} \alpha^{(i)} - \frac{1}{2C} \sum_{i,j} \alpha^{(i)} \alpha^{(j)} y^{(i)} y^{(j)} K(x^{(i)}, x^{(j)})\]</div>
+<p><strong>Subject to: 受限于：</strong></p>
+<ol>
+<li><span class="arithmatex">\(0 \le \alpha^{(i)} \le 1\)</span></li>
+<li><span class="arithmatex">\(\sum \alpha^{(i)} y^{(i)} = 0\)</span> (This usually comes from optimizing the bias <span class="arithmatex">\(b\)</span>, though implicit in your specific slide formulation).
+     <span class="arithmatex">\(\sum \alpha^{(i)} y^{(i)} = 0\)</span> （这通常通过优化偏置 <span class="arithmatex">\(b\)</span> ，尽管在你的具体幻灯片表述中隐含了这一点。）</li>
+</ol>
+<p><img alt="image-20260210120823720" src="assets/image-20260210120823720.png" /></p>
+<blockquote>
+<p>[!NOTE]</p>
+<p>What are convenient properties of the SVM dual program?</p>
+<p>Relationship between logistic regression and binary SVM?</p>
+<p>How to extend all discussed formulations to more than two classes?</p>
+</blockquote>
+<p><img alt="image-20260212110752051" src="assets/image-20260212110752051.png" /></p>
+<p>SVM as 0-temperature limit of logistic regression</p>
+<h3 id="multiclass-classification-and-kernel-methods">Multiclass Classification and Kernel Methods<a class="headerlink" href="#multiclass-classification-and-kernel-methods" title="Permanent link">&para;</a></h3>
+<p><strong>Multiclass classification</strong>: How to classify between <em>K</em> classes?</p>
+<ol>
+<li><strong>1 vs all</strong> or <strong>1 vs rest</strong> classifier: Use <em>K − 1</em> classifiers, each solving a two class problem whichseparates a point in class <em>k</em> from point not in this class ==&gt; more than one good answer or no good answer</li>
+<li><strong>1 vs 1</strong> classifier: Use <em>K(K − 1)/2</em> two-way classifiers, one for each possible pair of classes ==&gt; two-way preferences need not be transitive</li>
+</ol>
+<p><strong>Tie-breaking</strong> is difficult, neither of the methods are good</p>
+<ol start="3">
+<li>
+<p>Use a multinomial distribution over y ∈ {0, 1, . . . , K − 1}. Use K weight vectors w(y)</p>
+<p><span class="arithmatex">\(p(y=k|x^{(i)})=\frac{exp(w^{T}_{(k)}\sigma(x^{(i)}))}{\sum_{j ∈ {0, 1, . . . , K − 1}}exp(w^{T}_{(j)}\sigma(x^{(i)}))}\)</span></p>
+</li>
+</ol>
+<blockquote>
+<p>flow matching on MNIST</p>
+<p>Discrete flow matching</p>
+<p>Binary logistic regression class 0 and 1 with guassian mean -2 and 2</p>
+</blockquote>
+<p>SVM: support vector machine</p>
+<h4 id="multiclass-svm">Multiclass SVM<a class="headerlink" href="#multiclass-svm" title="Permanent link">&para;</a></h4>
+<p>linear decision boundary
+$$
+\min_{\mathbf{w}} \frac{C}{2} |\mathbf{w}|<em _in="\in" _mathcal_D="\mathcal{D" i="i">2^2 + \sum</em>)
+$$
+}} \epsilon \ln \sum_{\hat{y}} \exp \left( \frac{L(y^{(i)}, \hat{y}) + \mathbf{w}^T \psi(x^{(i)}, \hat{y})}{\epsilon} \right) - \mathbf{w}^T \psi(x^{(i)}, y^{(i)<span class="arithmatex">\(\mathbf{w}\)</span>：权重向量。</p>
+<p><span class="arithmatex">\(C\)</span>：正则化参数。</p>
+<p><span class="arithmatex">\(\mathcal{D}\)</span>：数据集。</p>
+<p><span class="arithmatex">\(\epsilon\)</span>：温度参数 (Temperature)。</p>
+<p><span class="arithmatex">\(L(y^{(i)}, \hat{y})\)</span>：损失函数（Task Loss）</p>
+<p><span class="arithmatex">\(\psi(x, y)\)</span>：特征映射函数</p>
+<ol>
+<li>公式的核心：Softmax 平滑近似</li>
+</ol>
+<p>公式中最复杂的那一部分（<span class="arithmatex">\(\epsilon \ln \sum \exp \dots\)</span>）其实是一个数学上非常有名的函数，叫做 <strong>Log-Sum-Exp</strong>。</p>
+<div class="arithmatex">\[f(x) = \epsilon \ln \left( \sum \exp(x_i / \epsilon) \right)\]</div>
+<p>在物理学和机器学习中，<span class="arithmatex">\(\epsilon\)</span> 被称为<strong>温度 (Temperature)</strong>。它的作用是控制函数的“硬度”：</p>
+<ul>
+<li><strong>当 <span class="arithmatex">\(\epsilon \to 0\)</span>（温度趋近于 0）时</strong>：Log-Sum-Exp 会变成 <strong>Max (最大值)</strong> 函数。<ul>
+<li>就好比水结冰了，变成了硬邦邦的固体（Hard Max）。</li>
+</ul>
+</li>
+<li><strong>当 <span class="arithmatex">\(\epsilon = 1\)</span>（温度较高）时</strong>：它保持平滑，保留了所有可能性的概率分布（Soft Max）。</li>
+</ul>
+<hr />
+<ol start="2">
+<li>推导一：变身成 SVM (<span class="arithmatex">\(\epsilon \to 0\)</span>)</li>
+</ol>
+<p>让我们看看当温度 <span class="arithmatex">\(\epsilon\)</span> 变得非常非常小（趋近于 0）时，公式会发生什么。</p>
+<ul>
+<li>
+<p><strong>原理</strong>：<span class="arithmatex">\(\lim_{\epsilon \to 0} \epsilon \ln \sum \exp(\frac{A}{\epsilon}) \approx \max(A)\)</span>。</p>
+</li>
+<li>
+<p><strong>代入公式</strong>：</p>
+<div class="arithmatex">\[\epsilon \ln \sum_{\hat{y}} \exp \frac{L + \mathbf{w}^T \psi}{\epsilon} \quad \xrightarrow{\epsilon \to 0} \quad \max_{\hat{y}} (L(y, \hat{y}) + \mathbf{w}^T \psi(x, \hat{y}))\]</div>
+</li>
+<li>
+<p><strong>结果</strong>：这正好就是 PPT 上半部分写的 <strong>Multi-class SVM</strong> 的公式（Hinge Loss）！</p>
+<ul>
+<li>这里的 <span class="arithmatex">\(L(y, \hat{y})\)</span> 通常就是那个 <span class="arithmatex">\(1\)</span>（Margin），代表如果预测错了要惩罚多少。</li>
+<li><strong>结论</strong>：SVM 其实就是“低温”极限下的逻辑回归。它只关心那个<strong>最大</strong>的得分（最硬的边界），忽略其他的。</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ol start="3">
+<li>推导二：变身成逻辑回归 (<span class="arithmatex">\(\epsilon = 1\)</span>)</li>
+</ol>
+<p>让我们看看当温度 <span class="arithmatex">\(\epsilon = 1\)</span> 时，公式会发生什么。我们假设这是标准的逻辑回归（没有额外的边界惩罚 <span class="arithmatex">\(L=0\)</span>）。</p>
+<ul>
+<li>
+<p><strong>代入公式</strong>：</p>
+<div class="arithmatex">\[1 \cdot \ln \sum_{\hat{y}} \exp \left( \frac{0 + \mathbf{w}^T \psi(x, \hat{y})}{1} \right) - \mathbf{w}^T \psi(x, y)\]</div>
+<div class="arithmatex">\[= \ln \left( \sum_{\hat{y}} \exp(\mathbf{w}^T \psi(x, \hat{y})) \right) - \mathbf{w}^T \psi(x, y)\]</div>
+</li>
+<li>
+<p><strong>这是什么？</strong> 这正是 <strong>负对数似然函数 (Negative Log-Likelihood)</strong>，也就是逻辑回归用来优化的 <strong>交叉熵损失 (Cross-Entropy Loss)</strong>。</p>
+<ul>
+<li>第一项是配分函数（归一化项，<span class="arithmatex">\(Z\)</span>）的对数。</li>
+<li>第二项是正确类别的得分。</li>
+<li><strong>结论</strong>：逻辑回归是“常温”下的模型。它考虑了所有类别的得分，计算出一个概率分布。</li>
+</ul>
+</li>
+</ul>
+<p>这个公式建立了一个<strong>连续的光谱</strong>：</p>
+<ul>
+<li><strong>光谱的一端 (<span class="arithmatex">\(\epsilon \to 0\)</span>)</strong> 是 <strong>SVM</strong>：它是“硬”的，只在乎最强的那个对手（Support Vectors），计算的是几何间隔。</li>
+<li><strong>光谱的另一端 (<span class="arithmatex">\(\epsilon = 1\)</span>)</strong> 是 <strong>逻辑回归</strong>：它是“软”的，考虑全局的概率分布，计算的是概率似然。</li>
+</ul>
+<p><strong>一句话概括：</strong> SVM 只是逻辑回归在温度冷却到 0 度时的特例。</p>
+<p>Binary logistic regression/SVM is convex 凸的</p>
+<p><span class="arithmatex">\(\phi\)</span></p>
+<h3 id="kernels">Kernels<a class="headerlink" href="#kernels" title="Permanent link">&para;</a></h3>
+<hr />
+<p>第一部分：那四个公式是怎么来的？</p>
+<p>这四个公式分为两组：<strong>训练用的（Dual）*<em>和*</em>预测用的（Prediction）</strong>。它们的核心来源都是我们在前面提到的 <strong>拉格朗日乘数法</strong>。</p>
+<h4 id="1-prediction-with-dual-variables">1. 预测公式 (Prediction with dual variables)<a class="headerlink" href="#1-prediction-with-dual-variables" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[\mathbf{w}^T \phi(x) = \frac{1}{C} \sum \alpha^{(i)} y^{(i)} \phi(x^{(i)})^T \phi(x)\]</div>
+<ul>
+<li>
+<p><strong>这是什么？</strong> 这是告诉你，一旦模型训练好了，怎么用它来预测新数据。</p>
+</li>
+<li>
+<p><strong>怎么推导的？</strong></p>
+<p>还记得在求拉格朗日极值时，我们对 <span class="arithmatex">\(\mathbf{w}\)</span> 求导并令其为 0 吗？</p>
+<div class="arithmatex">\[\frac{\partial L}{\partial \mathbf{w}} = 0 \implies \mathbf{w} = \sum \alpha_i y_i \phi(x_i)\]</div>
+<p>这个式子被称为 <strong>表示定理 (Representer Theorem)</strong>。它告诉我们：<strong>最佳的权重向量 <span class="arithmatex">\(\mathbf{w}\)</span> 其实就是所有训练数据点 <span class="arithmatex">\(\phi(x_i)\)</span> 的线性组合（加权和）。</strong></p>
+<p>所以，当我们预测新数据 <span class="arithmatex">\(\phi(x)\)</span> 时，原本是计算 <span class="arithmatex">\(\mathbf{w}^T \phi(x)\)</span>，现在把 <span class="arithmatex">\(\mathbf{w}\)</span> 替换掉，就变成了公式里的样子：<strong>新数据与所有旧数据的内积的加权和</strong>。</p>
+</li>
+</ul>
+<h4 id="2-dual-of-svm-logistic">2. 对偶问题公式 (Dual of SVM / Logistic)<a class="headerlink" href="#2-dual-of-svm-logistic" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[\max g(\alpha) := \frac{-1}{2C} \| \sum \dots \|^2 + \sum \alpha\]</div>
+<ul>
+<li>
+<p><strong>这是什么？</strong> 这是训练阶段真正要解的数学题。</p>
+</li>
+<li>
+<p><strong>怎么推导的？</strong></p>
+<p>这就是我们在前几张 PPT 里做的“代回”步骤。</p>
+<p>既然我们知道 <span class="arithmatex">\(\mathbf{w}\)</span> 可以用 <span class="arithmatex">\(\alpha\)</span>（或 <span class="arithmatex">\(\lambda\)</span>）表示，我们就把 <span class="arithmatex">\(\mathbf{w}\)</span> 的表达式代回到原本的拉格朗日函数 <span class="arithmatex">\(L\)</span> 中。</p>
+<p>这样一来，式子里就没有 <span class="arithmatex">\(\mathbf{w}\)</span> 了，<strong>只剩下</strong>对偶变量 <span class="arithmatex">\(\alpha\)</span> 和数据点之间的内积。</p>
+</li>
+<li>
+<p><strong>观察点：</strong></p>
+<p>你会发现 Logistic Regression 和 SVM 的对偶公式长得<strong>非常像</strong>。它们都依赖于数据点的内积。区别仅在于约束条件和具体的系数（因为它们的 Loss Function 不同，一个是 Log Loss，一个是 Hinge Loss）。</p>
+</li>
+</ul>
+<hr />
+<p>第二部分：后面的 Kernel 相关是在干什么？</p>
+<p>既然我们有了上面的四个公式，数学家们发现了一个惊人的<strong>“漏洞”</strong>（或者说捷径），这就是 <strong>核技巧 (Kernel Trick)</strong>。</p>
+<h4 id="1-observation">1. 观察到的现象 (Observation)<a class="headerlink" href="#1-observation" title="Permanent link">&para;</a></h4>
+<p>请看上一张图的四个公式，不管是训练（Dual）还是预测（Prediction），所有的计算都<strong>只</strong>涉及数据向量之间的<strong>内积</strong>：</p>
+<div class="arithmatex">\[\phi(x^{(i)})^T \phi(x^{(j)})\]</div>
+<p>也就是说，我们根本不需要单独知道 <span class="arithmatex">\(\phi(x)\)</span> 长什么样，我们只需要知道两个数据点“乘起来”是多少。</p>
+<h4 id="2-kernel">2. 为什么要用 Kernel？<a class="headerlink" href="#2-kernel" title="Permanent link">&para;</a></h4>
+<p>假设我们的数据在低维空间不可分，我们需要把它映射到高维空间（比如 100万维）才能分开。</p>
+<ul>
+<li>
+<p><strong>笨办法（不用 Kernel）：</strong></p>
+<ol>
+<li>先把 <span class="arithmatex">\(x\)</span> 映射成 100万维的向量 <span class="arithmatex">\(\phi(x)\)</span>。（计算量爆炸）</li>
+<li>再计算这两个 100万维向量的内积。（计算量再次爆炸）</li>
+</ol>
+</li>
+<li>
+<p><strong>聪明办法（Kernel Trick）：</strong></p>
+<p>我们发现有一个函数 <span class="arithmatex">\(K(x, z)\)</span>，它在<strong>低维</strong>直接算出来的结果，<strong>刚好等于</strong>那个高维内积的结果。</p>
+<div class="arithmatex">\[K(x, z) = \phi(x)^T \phi(z)\]</div>
+<p>这样我们就可以<strong>不用</strong>去计算那个复杂的 <span class="arithmatex">\(\phi(x)\)</span>，直接在低维算个 <span class="arithmatex">\(K\)</span> 就行了。</p>
+</li>
+</ul>
+<h4 id="3">3. 总结<a class="headerlink" href="#3" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Kernel 是什么？</strong> 它是一个计算捷径。</li>
+<li><strong>Advantage (优势)：</strong> 不需要显式地构建特征向量 <span class="arithmatex">\(\phi(x)\)</span>。省内存、省时间，还能解决非线性问题。</li>
+<li><strong>But (但是)：</strong> 不是随便找个函数都能当 Kernel，它必须满足数学条件（Mercer's Theorem），保证它对应某个特征空间里的内积。</li>
+</ul>
+<p><strong>一句话总结这两张图的逻辑：</strong></p>
+<p>第一张图推导出公式，证明了“只要算出内积就能训练和预测”；第二张图接着说“既然只要内积，那我们就用 Kernel 函数来偷懒，直接算出内积，从而轻松实现高维映射”。</p>
+<p>Linear kernel:</p>
+<p>Squared exponential (Gaussian) kernel:</p>
+<p>Sigmoid kernel:</p>
+<p>New kernels:</p>
+<blockquote>
+<p>[!NOTE]</p>
+<p>How to extend binary classification to multiple classes?</p>
+<p>What are kernels good for?</p>
+</blockquote>
+<h2 id="deep-nets">Deep Nets<a class="headerlink" href="#deep-nets" title="Permanent link">&para;</a></h2>
+<p>Deep Learning</p>
+<p>AlexNet</p>
+<p>Decreasing spatial resolution and the increasing number of channels</p>
+<h3 id="fully-connected-layer">Fully connected layer<a class="headerlink" href="#fully-connected-layer" title="Permanent link">&para;</a></h3>
+<p>One particular output is influenced by all the other inputs: wx+b</p>
+<blockquote>
+<p>What’s an issue with fully connected layers?</p>
+<p>How to share weights?</p>
+</blockquote>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2026年2月20日 01:15:29 CST">2026年2月20日 01:15:29</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+<div id="__comments">
+  
+    <h2 ><!-- 评论 -->评论区~</h2>
+    
+    有用的话请给我个赞和 star => <a href="https://cindyzhou2003.github.io/mymkdocs/">
+        <img alt="GitHub stars" src="https://img.shields.io/github/stars/CindyZhou2003/mymkdocs.svg?style=plastic&amp;label=Stars"></a>
+    
+    
+    </div>
+    <script src="https://giscus.app/client.js"
+        data-repo="CindyZhou2003/mymkdocs"
+        data-repo-id="R_kgDOJHRt5g"
+        data-category="General"
+        data-category-id="DIC_kwDOJHRt5s4Cge0r"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+
+        updateScheme();
+
+    </script>
+    
+    
+    <!-- Synchronize Giscus theme with palette -->
+    <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+    
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+        var theme = palette.color.scheme === "slate" ? "dark" : "light"
+        giscus.setAttribute("data-theme", theme) 
+    }
+    
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+        var ref = document.querySelector("[data-md-component=palette]")
+        ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+            var theme = palette.color.scheme === "slate" ? "dark" : "light"
+            localStorage.setItem("data-md-color-scheme", palette.color.scheme === "slate" ? "slate" : "default");
+            /* Instruct Giscus to change theme */
+            var frame = document.querySelector(".giscus-frame")
+            frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+            )
+        }
+        })
+    })
+    </script>
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="ECE478.html" class="md-footer__link md-footer__link--prev" aria-label="上一页: CS477/ECE478 Formal Software Development Methods">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                CS477/ECE478 Formal Software Development Methods
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../skills/Algorithm.html" class="md-footer__link md-footer__link--next" aria-label="下一页: 算法">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                算法
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024-2025 <a href="https://github.com/CindyZhou2003/mymkdocs"  target="_blank" rel="noopener">Cindy</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/CindyZhou2003/mymkdocs" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.annotate", "navigation.indexes", "navigation.expand", "toc.follow", "navigation.top", "search.suggest", "navigation.footer", "navigation.tabs", "navigation.tracking", "navigation.instant.progress", "content.code.copy", "search.highlight", "search.share", "content.code.annotate", "navigation.tabs"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://gcore.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+      
+        <script src="../js/katex.js"></script>
+      
+        <script src="../js/tablesort.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
