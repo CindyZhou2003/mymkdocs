@@ -10,7 +10,6 @@
 >
 > 3 张 A4 纸（可正反打印）
 
-
 ## 概述 Overview
 
 > [!IMPORTANT]
@@ -2314,17 +2313,17 @@ To run a program of size n pages, need to find n free frames and load program
 
 #### Address Translation Scheme
 
-<img src="./assets/image-20241120144532930.png" alt="image-20241120144532930" style="zoom: 33%;" />
+<img src="./assets/image-20241120144532930.png" alt="image-20241120144532930" style="zoom: 67%;" />
 
 页号、页面偏移
 
 地址转换
 
-<img src="./assets/image-20241125100730054.png" alt="image-20241125100730054" style="zoom: 33%;" />
+<img src="./assets/image-20241125100730054.png" alt="image-20241125100730054" style="zoom: 67%;" />
 
 > 为了将虚拟地址转换为物理地址，需要结合虚拟地址的页号和页内偏移，以及页表中页号与页框号的映射关系。以下是计算步骤：
 >
-> ### 已知条件
+> **已知条件**
 >
 > 1. **页面大小** = $$4 \, \text{KB} = 2^{12} = 4096 \, \text{bytes}$$，页号用高 20 位，页内偏移用低 12 位表示。
 > 2. 虚拟地址：
@@ -2335,37 +2334,31 @@ To run a program of size n pages, need to find n free frames and load program
 >    - 页号 1 → 页框号 102H
 >    - 页号 2 → 页框号 254H
 >
-> ------
+> **转换步骤**
 >
-> ### 转换步骤
->
-> #### 1. 计算虚拟地址的页号和页内偏移
+> 1.   计算虚拟地址的页号和页内偏移
 >
 > $$\text{页号} = \left\lfloor \frac{\text{虚拟地址}}{\text{页面大小}} \right\rfloor$$, $$\quad \text{页内偏移} = \text{虚拟地址} \mod \text{页面大小}$$
 >
 > - **2362H**： $$\text{页号} = \left\lfloor \frac{9026}{4096} \right\rfloor = 2$$, $$\quad \text{页内偏移} = 9026 \mod 4096 = 1834$$
-> - **1565H**： $$\text{页号} = \left\lfloor \frac{5477}{4096} \right\rfloor = 1$$, $$\text{页内偏移} = 5477 \mod 4096 = 1381$$
->
-> #### 2. 根据页表找到对应页框号
+>- **1565H**： $$\text{页号} = \left\lfloor \frac{5477}{4096} \right\rfloor = 1$$,  $\text{页内偏移} = 5477 \mod 4096 = 1381$$
+> 
+> 2.   根据页表找到对应页框号
 >
 > - **页号 2** → 页框号 254H
-> - **页号 1** → 页框号 102H
->
+>- **页号 1** → 页框号 102H
+> 
 > 页框号左移 12 位（乘以 4096），再加上页内偏移，得到物理地址。
 >
-> ------
->
-> #### 3. 计算物理地址
+> 3.   计算物理地址
 >
 > - **2362H（页号 2，页框号 254H）**：$$\text{物理地址} = \text{页框号} \times 4096 + \text{页内偏移}$$，$$\text{物理地址} = 254H \times 4096 + 1834 = 254000H + 072A = 25472AH$$
-> - **1565H（页号 1，页框号 102H）**：$$\text{物理地址} = 102H \times 4096 + 1381 = 102000H + 0565 = 1020565H$$
->
-> ------
->
-> ### 结果
->
+>- **1565H（页号 1，页框号 102H）**：$$\text{物理地址} = 102H \times 4096 + 1381 = 102000H + 0565 = 1020565H$$
+> 
+>结果
+> 
 > 1. 虚拟地址 2362H → 物理地址 25472AH
-> 2. 虚拟地址 1565H → 物理地址 1020565H
+>2. 虚拟地址 1565H → 物理地址 1020565H
 
 #### Page 
 
@@ -2661,11 +2654,12 @@ If there is a reference to a page, first reference to that page will trap to ope
 
 What’s the state of the process that has page fault?
 
--------------
+>   **运行态 (Running)** $\rightarrow$ **阻塞态 (Blocked)** $\rightarrow$ **就绪态 (Ready)** $\rightarrow$ **运行态 (Running)**
 
 #### Performance of Demand Paging
 
 Page Fault Rate 0 ≤ p ≤ 1.0
+
 - if p = 0 no page faults 
 - if p = 1, every reference is a fault
 
@@ -3460,10 +3454,16 @@ Table – linear list with hash data structure. 哈希表
 #### Contiguous allocation 连续分配
 
 - Each file occupies a set of contiguous blocks on the disk
+
 - Simple – only starting location (block #) and length (number of blocks) are required
+
 - Random access supported
+
 - Wasteful of space (dynamic storage-allocation problem)
-- Files cannot grow Mapping from logical to physical：<img src="../images/image-20241211144254975.png" alt="image-20241211144254975" style="zoom:33%;" />
+
+- Files cannot grow Mapping from logical to physical
+
+    
 
 Block to be accessed = Q + start_no
 Displacement into block = R
