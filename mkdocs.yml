@@ -38,6 +38,10 @@ nav:
       - CS498 Machine Learning Systems: UIUC/CS498.md
       - CS477/ECE478 Formal Software Development Methods: UIUC/ECE478.md
       - ECE544 Pattern Recognition: UIUC/ECE544.md
+    - Fall 2026:
+      - CS425/ECE428 Distributed Systems: UIUC/ECE428.md
+      - CS441 Applied Machine Learning: UIUC/CS441.md
+      - CS562 Adv Top in Sec, Priv and ML: UIUC/CS562.md
   - 技能⚙️:
     - 算法: skills/Algorithm.md
     - 深度学习: skills/deeplearning.md
