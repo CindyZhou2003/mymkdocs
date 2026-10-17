@@ -1,8 +1,9 @@
-# INTRO
-
-ZJU 22级软工er
+# Intro
+ZJU 22 SE
 UIUC 25Fa ECE MEng
 
-课程笔记内容仅供参考，如有错误请指正
+The course notes are for reference only; please point out any errors.
 
-有些仓库里有对应[pdf版本](https://github.com/CindyZhou2003/mymkdocs/tree/master/docs/pdf)
+Some repositories contain corresponding [PDF versions](https://github.com/CindyZhou2003/mymkdocs/tree/master/docs/pdf).
+
+Not for commercial use.
