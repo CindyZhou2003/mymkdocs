@@ -7200,7 +7200,7 @@ where 省略时删除所有关系中的元组，但关系还存在，只是变�
 </span></code></pre></div></td></tr></table></div>
 <h4 id="sql">嵌入式SQL<a class="headerlink" href="#sql" title="Permanent link">&para;</a></h4>
 <p><code>EXEC SQL &lt;嵌入式SQL语句&gt; END_EXEC;</code> 识别嵌入sql请求</p>
-<p>可使用宿主语言host language的变量，需在变量名前加上**:**</p>
+<p>可使用宿主语言host language的变量，需在变量名前加上<strong>:</strong></p>
 <p>遍历一个嵌入式sql的查询结果，声明一个游标变量(cursor)，<code>declare c cursor for &lt;SQL query&gt;</code></p>
 <p><code>EXEC SQL open c;</code> open 执行语句并将结果存在一个临时关系中</p>
 <p><code>EXEC SQL fetch c into :si, :sn</code> fetch 在查询结果中一个元组的值放在宿主语言变量中</p>
@@ -7414,7 +7414,7 @@ where 省略时删除所有关系中的元组，但关系还存在，只是变�
 <p>联系集和实体集之间：</p>
 <ul>
 <li>
-<p>**有向线段→**指向”一“的一侧，<strong>无向线段–</strong> 指向”多“的一侧</p>
+<p><strong>有向线段→</strong>指向”一“的一侧，<strong>无向线段–</strong> 指向”多“的一侧</p>
 </li>
 <li>
 <p><strong>双线</strong>表示一个实体在联系集中全部参与</p>
@@ -7813,7 +7813,7 @@ where 省略时删除所有关系中的元组，但关系还存在，只是变�
 <p>非叶结点有⌈𝑛/2⌉~n个孩子；根节点有2 ~ n个孩子</p>
 <ul>
 <li>
-<p>每个<strong>叶节点</strong>最多可有<strong>n-1</strong>个值，最少包含**⌈(𝑛-1)/2⌉**个值</p>
+<p>每个<strong>叶节点</strong>最多可有<strong>n-1</strong>个值，最少包含<strong>⌈(𝑛-1)/2⌉</strong>个值</p>
 </li>
 <li>
 <p>非叶节点是一个多级稀疏索引，最多容纳n个指针，最少容纳⌈𝑛/2⌉个指针</p>
@@ -8326,7 +8326,7 @@ Neither T3 nor T4 can make progress — executing  lock-S(B) causes T4 to wait f
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2026年10月18日 05:43:14 CST">2026年10月18日 05:43:14</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2025年5月13日 10:19:19 CST">2025年5月13日 10:19:19</span>
   </span>
 
     

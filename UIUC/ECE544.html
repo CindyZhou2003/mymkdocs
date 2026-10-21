@@ -3429,7 +3429,7 @@
 <p>Set the derivative to zero</p>
 <p>Regularization</p>
 <div class="arithmatex">\[\mathbf{X}\mathbf{X}^T \mathbf{w} + C\mathbf{w} - \mathbf{X}\mathbf{Y} = 0\]</div>
-<p>w ∗ = XX ⊤ + CI *−*1 XY</p>
+<p>w ∗ = XX ⊤ + CI <em>−</em>1 XY</p>
 <p>Higher Po</p>
 <p>Maximize the likelihood of the given dataset <span class="arithmatex">\(D = \{(x(i) , y(i) )\}\)</span> assuming</p>
 <p>samples to be drawn independently from an identical distribution</p>
@@ -3798,7 +3798,7 @@ $$
 </ul>
 <hr />
 <p>第二部分：后面的 Kernel 相关是在干什么？</p>
-<p>既然我们有了上面的四个公式，数学家们发现了一个惊人的**“漏洞”**（或者说捷径），这就是 <strong>核技巧 (Kernel Trick)</strong>。</p>
+<p>既然我们有了上面的四个公式，数学家们发现了一个惊人的<strong>“漏洞”</strong>（或者说捷径），这就是 <strong>核技巧 (Kernel Trick)</strong>。</p>
 <h4 id="1-observation">1. 观察到的现象 (Observation)<a class="headerlink" href="#1-observation" title="Permanent link">&para;</a></h4>
 <p>请看上一张图的四个公式，不管是训练（Dual）还是预测（Prediction），所有的计算都<strong>只</strong>涉及数据向量之间的<strong>内积</strong>：</p>
 <div class="arithmatex">\[\phi(x^{(i)})^T \phi(x^{(j)})\]</div>
@@ -3924,7 +3924,7 @@ dropout 层是一种正则化技术。 它不提取特征或做预测;它的唯�
 <ul>
 <li><strong>How it works:</strong> During training, a Dropout layer randomly "turns off" (sets to zero) a certain percentage of neurons in the layer (e.g., <span class="arithmatex">\(50\%\)</span>) for every single batch of data.</li>
 <li><strong>Why this is brilliant:</strong> * It prevents "co-adaptation." If neurons know their neighbors might randomly disappear, they can't lazily rely on each other. Every neuron is forced to learn useful, independent features.
-    **为什么这很聪明:**它防止了“共适应”。如果神经元知道邻居可能会随机消失，就不能懒惰地依赖彼此。每个神经元都被迫学习有用且独立的特征。<ul>
+    <strong>为什么这很聪明:</strong>它防止了“共适应”。如果神经元知道邻居可能会随机消失，就不能懒惰地依赖彼此。每个神经元都被迫学习有用且独立的特征。<ul>
 <li>It acts like you are training thousands of slightly different, smaller neural networks at the same time and averaging their results (an ensemble).
     它就像你同时训练成千上万个略有不同、规模较小的神经网络，并对它们的结果进行平均（一个集合）。</li>
 </ul>
@@ -4115,7 +4115,7 @@ dropout 层是一种正则化技术。 它不提取特征或做预测;它的唯�
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2026年10月18日 05:43:14 CST">2026年10月18日 05:43:14</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2026年7月1日 23:11:17 CST">2026年7月1日 23:11:17</span>
   </span>
 
     
