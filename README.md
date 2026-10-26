@@ -1,6 +1,6 @@
 # Intro
 ZJU 22 SE
-UIUC 25Fa ECE MEng
+UIUC 25Fall ECE MEng
 
 The course notes are for reference only; please point out any errors.
 
