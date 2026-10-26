@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../assets/images/favcion.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -31,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -3818,6 +3818,777 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Lecture 17: Leader Election">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-election" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Election?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leader-election-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Leader Election Problem
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Leader Election Problem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#system-model_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calling-for-an-election" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Calling for an Election
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#election-problem-formally" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Election Problem, Formally
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first-classical-algorithm-ring-election" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        First Classical Algorithm: Ring Election
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="First Classical Algorithm: Ring Election">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-ring-election-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Ring Election Protocol
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-initiators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multiple Initiators?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#effect-of-failures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Effect of Failures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixing-for-failures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixing for Failures
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bully-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bully Algorithm
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bully Algorithm">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#failures-and-timeouts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Failures and Timeouts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analysis_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impossibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Impossibility?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ring-vs-bully" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ring vs. Bully
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-is-election-so-hard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why is Election so Hard?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#election-in-industry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Election in Industry
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Election in Industry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#google-chubby" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Google Chubby
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apache-zookeeper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Apache Zookeeper
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-18-a-paxos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecture 18-A: Paxos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 18-A: Paxos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consensus-recap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consensus Recap
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paxos-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paxos Algorithm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#political-science-101-ie-paxos-grokked" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Political Science 101, i.e., Paxos Grokked
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Political Science 101, i.e., Paxos Grokked">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-a-leader-is-elected-election" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 1: A leader is elected (Election)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-leader-proposes-a-value-processes-ack-bill" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 2: Leader proposes a value, processes ack (Bill)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-leader-multicasts-final-value-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3: Leader multicasts final value (Law)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#which-is-the-point-of-no-return" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Which is the Point of No-Return?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Safety
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-could-go-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What could go Wrong?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optional Exercises
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-18-b-raft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecture 18-B: Raft
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 18-B: Raft">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#from-single-decree-paxos-to-a-replicated-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        From Single-decree Paxos to a Replicated Log
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="From Single-decree Paxos to a Replicated Log">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#idea-state-machine-replication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Idea: State Machine Replication
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-how-to-agree-on-the-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem: How to Agree on the Log?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Raft
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Raft">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basics-1-server-states" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basics 1: Server States
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basics-2-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basics 2: Terms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basics-3-the-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basics 3: The Log
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#normal-operation-no-failures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Normal Operation (no failures)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leader-election" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Leader Election
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Leader Election">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#heartbeats-and-timeouts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Heartbeats and Timeouts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#election-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Election Basics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voting-conditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Voting Conditions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#candidate-outcomes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Candidate Outcomes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elections-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Elections: Safety
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elections-liveness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Elections: Liveness
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-consistency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Log Consistency
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Log Consistency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valid-log-states" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valid Log States?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Log Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#catching-up-followers-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Catching up Followers' Logs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consistency-check-during-log-appends" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consistency Check During Log Appends
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#safety-which-candidate-is-safe-to-elect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Safety: Which Candidate Is Safe to Elect?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Safety: Which Candidate Is Safe to Elect?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#safety-requirement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Safety Requirement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-leader-completeness-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Leader Completeness Matters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restriction-on-leader-election" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restriction on Leader Election
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restriction-on-commitment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restriction on Commitment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#safety-intuition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Safety: Intuition
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#neutralizing-old-leaders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Neutralizing Old Leaders
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reads
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paxos-vs-raft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paxos vs. Raft
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -3835,9 +4606,31 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="CS441.html" class="md-nav__link">
+    
+    
+      
         
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_2" id="__nav_3_3_2_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -3851,7 +4644,79 @@
   
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    CS441 Applied Machine Learning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CS441.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CS441 lectures
+  
+
+    
+  </span>
+  
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CS441_exam_review.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CS441 exam review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -6460,6 +7325,777 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Lecture 17: Leader Election">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-election" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Election?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leader-election-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Leader Election Problem
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Leader Election Problem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#system-model_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calling-for-an-election" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Calling for an Election
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#election-problem-formally" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Election Problem, Formally
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first-classical-algorithm-ring-election" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        First Classical Algorithm: Ring Election
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="First Classical Algorithm: Ring Election">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-ring-election-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Ring Election Protocol
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-initiators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multiple Initiators?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#effect-of-failures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Effect of Failures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixing-for-failures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixing for Failures
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bully-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bully Algorithm
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bully Algorithm">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#failures-and-timeouts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Failures and Timeouts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analysis_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impossibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Impossibility?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ring-vs-bully" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ring vs. Bully
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-is-election-so-hard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why is Election so Hard?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#election-in-industry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Election in Industry
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Election in Industry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#google-chubby" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Google Chubby
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apache-zookeeper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Apache Zookeeper
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-18-a-paxos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecture 18-A: Paxos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 18-A: Paxos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consensus-recap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consensus Recap
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paxos-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paxos Algorithm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#political-science-101-ie-paxos-grokked" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Political Science 101, i.e., Paxos Grokked
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Political Science 101, i.e., Paxos Grokked">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-a-leader-is-elected-election" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 1: A leader is elected (Election)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-leader-proposes-a-value-processes-ack-bill" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 2: Leader proposes a value, processes ack (Bill)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-leader-multicasts-final-value-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3: Leader multicasts final value (Law)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#which-is-the-point-of-no-return" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Which is the Point of No-Return?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Safety
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-could-go-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What could go Wrong?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optional Exercises
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-18-b-raft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecture 18-B: Raft
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 18-B: Raft">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#from-single-decree-paxos-to-a-replicated-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        From Single-decree Paxos to a Replicated Log
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="From Single-decree Paxos to a Replicated Log">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#idea-state-machine-replication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Idea: State Machine Replication
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-how-to-agree-on-the-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem: How to Agree on the Log?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Raft
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Raft">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basics-1-server-states" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basics 1: Server States
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basics-2-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basics 2: Terms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basics-3-the-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basics 3: The Log
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#normal-operation-no-failures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Normal Operation (no failures)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leader-election" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Leader Election
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Leader Election">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#heartbeats-and-timeouts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Heartbeats and Timeouts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#election-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Election Basics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voting-conditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Voting Conditions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#candidate-outcomes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Candidate Outcomes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elections-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Elections: Safety
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elections-liveness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Elections: Liveness
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-consistency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Log Consistency
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Log Consistency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valid-log-states" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valid Log States?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Log Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#catching-up-followers-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Catching up Followers' Logs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consistency-check-during-log-appends" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consistency Check During Log Appends
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#safety-which-candidate-is-safe-to-elect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Safety: Which Candidate Is Safe to Elect?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Safety: Which Candidate Is Safe to Elect?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#safety-requirement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Safety Requirement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-leader-completeness-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Leader Completeness Matters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restriction-on-leader-election" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restriction on Leader Election
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restriction-on-commitment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restriction on Commitment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#safety-intuition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Safety: Intuition
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#neutralizing-old-leaders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Neutralizing Old Leaders
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reads
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paxos-vs-raft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paxos vs. Raft
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -6484,7 +8120,7 @@
 
 <h1 id="cs-425-ece-428-distributed-systems">CS 425 / ECE 428 Distributed Systems<a class="headerlink" href="#cs-425-ece-428-distributed-systems" title="Permanent link">&para;</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 26194 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M360.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m64.6 136.1c-12.5 12.5-12.5 32.8 0 45.3l73.4 73.4-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0zm-274.7 0c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l73.3-73.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span> 91 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"/></svg></span> 9 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 88 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 32170 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M360.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m64.6 136.1c-12.5 12.5-12.5 32.8 0 45.3l73.4 73.4-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0zm-274.7 0c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l73.3-73.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span> 100 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"/></svg></span> 9 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 108 分钟</p>
 </div>
 <h2 id="lecture-1-welcome-and-introduction">Lecture 1: Welcome, and Introduction<a class="headerlink" href="#lecture-1-welcome-and-introduction" title="Permanent link">&para;</a></h2>
 <p>Operating System - The low-level software which handles peripheral hardware, schedules tasks, allocates storage, and presents a default interface to the user when no application program is running.</p>
@@ -10156,20 +11792,1243 @@
 <li><strong>Virtual synchrony</strong> combines membership + multicast to keep ordering and reliability under failures, but <strong>cannot solve consensus</strong> because of partitioning（虚拟同步不能解决共识）</li>
 </ul>
 <h2 id="lecture-17-leader-election">Lecture 17: Leader Election<a class="headerlink" href="#lecture-17-leader-election" title="Permanent link">&para;</a></h2>
-<p>Leader Election Problem</p>
+<h3 id="why-election">Why Election?<a class="headerlink" href="#why-election" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Any process can call for an election.</li>
-<li>A process can call for at most one election at a time.</li>
-<li>Multiple processes are allowed to call an election simultaneously.</li>
-<li>All of them together must yield only a single leader</li>
-<li>The result of an election should not depend on which process calls for it</li>
+<li><strong>Example 1</strong>: your bank account is replicated at a few servers, but <strong>one</strong> of them receives all reads and writes. That server is the <strong>leader</strong> among the replicas<ul>
+<li>What if there are <strong>two leaders</strong> per customer?</li>
+<li>What if servers <strong>disagree</strong> about who the leader is?</li>
+<li>What if the leader <strong>crashes</strong>?</li>
+<li>Each of these leads to <strong>inconsistency</strong>（每种情况都会导致不一致）</li>
 </ul>
+</li>
+<li><strong>Example 2</strong>: in sequencer-based total-order multicast (Lecture 16), the <strong>sequencer</strong> = leader</li>
+<li><strong>Example 3</strong>: in a group of NTP servers, who is the <strong>root</strong> server?</li>
+<li>Other systems that need leader election: <strong>Apache Zookeeper</strong>, <strong>Google Chubby</strong>, <strong>Raft</strong></li>
+<li>A leader is useful for <strong>coordination</strong> among distributed servers, and can be used to <strong>solve consensus</strong></li>
+</ul>
+<h3 id="leader-election-problem">Leader Election Problem<a class="headerlink" href="#leader-election-problem" title="Permanent link">&para;</a></h3>
+<ul>
+<li>In a group of processes, elect a <strong>Leader</strong> to undertake special tasks, and <strong>let everyone know</strong> in the group about this leader</li>
+<li>When the leader fails (crashes), some process detects it (using a <strong>failure detector</strong>). Then what?</li>
+<li>Goal of an <strong>election algorithm</strong>:<ol>
+<li>Elect <strong>one leader only</strong> among the <strong>non-faulty</strong> processes（只选出一个，且必须是非故障进程）</li>
+<li><strong>All non-faulty processes agree</strong> on who the leader is（所有非故障进程对结果达成一致）</li>
+</ol>
+</li>
+</ul>
+<h4 id="system-model_1">System Model<a class="headerlink" href="#system-model_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li><span class="arithmatex">\(N\)</span> processes, each with a <strong>unique id</strong></li>
+<li>Messages are <strong>eventually delivered</strong>（消息最终会送达，但没有时间上限）</li>
+<li><strong>Failures may occur during the election protocol</strong>（选举过程中也可能有进程崩溃）</li>
+</ul>
+<h4 id="calling-for-an-election">Calling for an Election<a class="headerlink" href="#calling-for-an-election" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Any</strong> process can call for an election</li>
+<li>A process can call for <strong>at most one</strong> election at a time</li>
+<li><strong>Multiple</strong> processes may call an election <strong>simultaneously</strong>; all of them together must yield <strong>only a single leader</strong></li>
+<li>The result of an election should <strong>not depend on which process calls</strong> for it（结果与发起者无关）</li>
+</ul>
+<h4 id="election-problem-formally">Election Problem, Formally<a class="headerlink" href="#election-problem-formally" title="Permanent link">&para;</a></h4>
 <p>A run of the election algorithm must always guarantee at the end:</p>
 <ul>
-<li><strong>Safety</strong>: For all non-faulty processes p: (p ’s elected = (q: a particular non-faulty process with the best attribute value) or Null)  对于所有非故障进程 p，其“已选定对象”要么是 q（即具有最优属性值的某个非故障进程），要么为空（Null）</li>
-<li><strong>Liveness</strong>: For all election runs: (election run terminates) &amp; for all non-faulty processes p: p ’s elected is not Null 对于所有选举过程，该选举过程最终都会结束；且对于所有非故障进程 p，其“已选定对象”均不为空</li>
+<li><strong>Safety</strong>: For all non-faulty processes p: (p 's elected = (q: a particular non-faulty process with the best attribute value) or Null)  对于所有非故障进程 p，其"已选定对象"要么是 q（即具有最优属性值的某个非故障进程），要么为空（Null）</li>
+<li><strong>Liveness</strong>: For all election runs: (election run terminates) &amp; for all non-faulty processes p: p 's elected is not Null 对于所有选举过程，该选举过程最终都会结束；且对于所有非故障进程 p，其"已选定对象"均不为空</li>
 </ul>
-<p>First Classical Algorithm: Ring Election</p>
+<p>At the end, the non-faulty process with the <strong>best (highest) election attribute value</strong> is elected.</p>
+<ul>
+<li>Common attribute: <strong>highest id</strong></li>
+<li>Other examples: highest IP address, fastest CPU, most disk space, most files, etc.</li>
+</ul>
+<blockquote>
+<p>[!TIP]</p>
+<p>Safety allows <code>Null</code> (still undecided) but never a <strong>wrong</strong> leader. Liveness is what forces everyone to eventually stop being <code>Null</code>.</p>
+<p>安全性允许"还没选出来"（Null），但绝不允许选<strong>错</strong>；活性才要求最终每个人都选出结果。</p>
+</blockquote>
+<h3 id="first-classical-algorithm-ring-election">First Classical Algorithm: Ring Election<a class="headerlink" href="#first-classical-algorithm-ring-election" title="Permanent link">&para;</a></h3>
+<ul>
+<li><span class="arithmatex">\(N\)</span> processes are organized in a <strong>logical ring</strong> (similar to the ring in Chord)</li>
+<li>The <span class="arithmatex">\(i\)</span>-th process <span class="arithmatex">\(p_i\)</span> has a communication channel to <span class="arithmatex">\(p_{(i+1) \bmod N}\)</span></li>
+<li>All messages are sent <strong>clockwise</strong> around the ring（所有消息顺时针传）</li>
+</ul>
+<p>Example ring used below (clockwise): <strong>N3 → N32 → N5 → N80 → N6 → N12 → N3</strong>. Note the ring order is <strong>not</strong> sorted by id.</p>
+<h4 id="the-ring-election-protocol">The Ring Election Protocol<a class="headerlink" href="#the-ring-election-protocol" title="Permanent link">&para;</a></h4>
+<p><strong>Phase 1: Election message</strong></p>
+<ul>
+<li>Any process <span class="arithmatex">\(p_i\)</span> that discovers the old leader has failed initiates an <strong>"Election"</strong> message containing <span class="arithmatex">\(p_i\)</span>'s own <code>id:attr</code>. This process is the <strong>initiator</strong></li>
+<li>When <span class="arithmatex">\(p_i\)</span> receives an Election message, it compares the <code>attr</code> in the message with its own:<ul>
+<li><strong>Arrived attr is greater</strong> → <span class="arithmatex">\(p_i\)</span> <strong>forwards</strong> the message（比自己大，原样转发）</li>
+<li><strong>Arrived attr is smaller</strong> and <span class="arithmatex">\(p_i\)</span> has <strong>not forwarded an Election message earlier</strong> → it <strong>overwrites</strong> the message with its own <code>id:attr</code> and forwards it（比自己小且自己还没转发过，就换成自己的再转发）</li>
+<li><strong>Arrived <code>id:attr</code> matches <span class="arithmatex">\(p_i\)</span>'s own</strong> → <span class="arithmatex">\(p_i\)</span>'s attr must be the greatest, and it becomes the <strong>new leader</strong>（收到自己的 id，说明自己最大）</li>
+</ul>
+</li>
+</ul>
+<p><strong>Why must it be the greatest?</strong> The message went <strong>all the way around the ring unchanged</strong>. Every other process compared it with its own attr and did not replace it, so every process's attr is smaller.</p>
+<p>消息绕了整整一圈都没被替换，说明每个进程的属性都比它小。id最大的当选</p>
+<p><strong>Phase 2: Elected message</strong></p>
+<ul>
+<li>The leader sends an <strong>"Elected"</strong> message with its id to its neighbor, announcing the result</li>
+<li>When <span class="arithmatex">\(p_i\)</span> receives an Elected message, it<ul>
+<li>sets <span class="arithmatex">\(elected_i \leftarrow\)</span> id of the message</li>
+<li><strong>forwards</strong> the message, unless it is the new leader（回到新 leader 时停止）</li>
+</ul>
+</li>
+</ul>
+<details class="note">
+<summary>Example: N3 initiates (slides 13–23)</summary>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>At</th>
+<th>Receives</th>
+<th>Action</th>
+<th>Sends</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>N3</td>
+<td>(initiates)</td>
+<td>Initiator</td>
+<td>Election: 3</td>
+</tr>
+<tr>
+<td>2</td>
+<td>N32</td>
+<td>Election: 3</td>
+<td>3 &lt; 32, hasn't forwarded yet → overwrite</td>
+<td>Election: 32</td>
+</tr>
+<tr>
+<td>3</td>
+<td>N5</td>
+<td>Election: 32</td>
+<td>32 &gt; 5 → forward</td>
+<td>Election: 32</td>
+</tr>
+<tr>
+<td>4</td>
+<td>N80</td>
+<td>Election: 32</td>
+<td>32 &lt; 80 → overwrite</td>
+<td>Election: 80</td>
+</tr>
+<tr>
+<td>5</td>
+<td>N6</td>
+<td>Election: 80</td>
+<td>80 &gt; 6 → forward</td>
+<td>Election: 80</td>
+</tr>
+<tr>
+<td>6</td>
+<td>N12</td>
+<td>Election: 80</td>
+<td>forward</td>
+<td>Election: 80</td>
+</tr>
+<tr>
+<td>7</td>
+<td>N3</td>
+<td>Election: 80</td>
+<td>forward</td>
+<td>Election: 80</td>
+</tr>
+<tr>
+<td>8</td>
+<td>N32</td>
+<td>Election: 80</td>
+<td>forward</td>
+<td>Election: 80</td>
+</tr>
+<tr>
+<td>9</td>
+<td>N5</td>
+<td>Election: 80</td>
+<td>forward</td>
+<td>Election: 80</td>
+</tr>
+<tr>
+<td>10</td>
+<td>N80</td>
+<td>Election: 80</td>
+<td><strong>Own id → I am the leader</strong></td>
+<td>Elected: 80</td>
+</tr>
+<tr>
+<td>11–15</td>
+<td>N6, N12, N3, N32, N5</td>
+<td>Elected: 80</td>
+<td>set <code>elected = 80</code>, forward</td>
+<td>Elected: 80</td>
+</tr>
+<tr>
+<td>16</td>
+<td>N80</td>
+<td>Elected: 80</td>
+<td>Back at the leader → stop</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h4 id="analysis">Analysis<a class="headerlink" href="#analysis" title="Permanent link">&para;</a></h4>
+<p>Assume <strong>no failures</strong> during the election and <span class="arithmatex">\(N\)</span> processes.</p>
+<p><strong>Worst case</strong>: the initiator is the <strong>ring successor of the would-be leader</strong> (e.g. N6 initiates, N80 wins)</p>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Messages</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Election travels from initiator (N6) to would-be leader (N80)</td>
+<td><span class="arithmatex">\(N-1\)</span></td>
+</tr>
+<tr>
+<td>Election: 80 circulates the whole ring <strong>unchanged</strong></td>
+<td><span class="arithmatex">\(N\)</span></td>
+</tr>
+<tr>
+<td>Elected: 80 circulates the ring</td>
+<td><span class="arithmatex">\(N\)</span></td>
+</tr>
+<tr>
+<td><strong>Total message complexity</strong></td>
+<td><span class="arithmatex">\(3N-1\)</span></td>
+</tr>
+<tr>
+<td><strong>Completion time</strong></td>
+<td><span class="arithmatex">\(3N-1\)</span> message transmission times</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Best case</strong>: the initiator <strong>is</strong> the would-be leader (N80 initiates) → <span class="arithmatex">\(2N\)</span> messages, <span class="arithmatex">\(2N\)</span> transmission times.</p>
+<p>Thus, with no failures, the election terminates (<strong>liveness</strong>) and everyone knows the highest-attribute process as leader (<strong>safety</strong>).</p>
+<table>
+<thead>
+<tr>
+<th>Messages</th>
+<th>Completion time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>worst <span class="arithmatex">\(3N-1\)</span>，best <span class="arithmatex">\(2N\)</span></td>
+<td>worst <span class="arithmatex">\(3N-1\)</span>，best <span class="arithmatex">\(2N\)</span></td>
+</tr>
+</tbody>
+</table>
+<h4 id="multiple-initiators">Multiple Initiators?<a class="headerlink" href="#multiple-initiators" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Include the <strong>initiator's id</strong> with all messages</li>
+<li>Each process <strong>remembers in a cache</strong> the initiator of each Election/Elected message it receives</li>
+<li>(All the time) each process <strong>suppresses</strong> Election/Elected messages of any <strong>lower-id initiators</strong>, and updates the cache when it sees a <strong>higher-id initiator</strong></li>
+<li>Result: only the <strong>highest-id initiator's</strong> election run completes（只有 id 最大的发起者那一轮能跑完）</li>
+</ul>
+<h4 id="effect-of-failures">Effect of Failures<a class="headerlink" href="#effect-of-failures" title="Permanent link">&para;</a></h4>
+<p>N3 initiates. Election: 80 has been forwarded by N80, then <strong>N80 crashes</strong> before the message comes back. Nobody else will ever claim Election: 80, so it <strong>circulates around the ring forever</strong> ⟹ <strong>liveness violated</strong>.</p>
+<p>N80 发出 Election:80 后崩溃，没人会认领这条消息，它会永远绕圈，活性被破坏。</p>
+<h4 id="fixing-for-failures">Fixing for Failures<a class="headerlink" href="#fixing-for-failures" title="Permanent link">&para;</a></h4>
+<p><strong>Option 1: the predecessor (or successor) of the would-be leader re-initiates</strong></p>
+<ul>
+<li>The predecessor of N80 detects the failure and starts a new election run. It may re-initiate if it<ul>
+<li>receives an Election message but <strong>times out waiting for an Elected</strong> message, or</li>
+<li>receives the Elected: 80 message (and then sees N80 is gone)</li>
+</ul>
+</li>
+<li><strong>But</strong> what if the predecessor also fails? And its predecessor? (and so on)</li>
+</ul>
+<p><strong>Option 2: use the failure detector</strong></p>
+<ul>
+<li><strong>Any process</strong>, after receiving Election: 80, can detect the failure of N80 via its own <strong>local failure detector</strong>. If so, it starts a new run of leader election</li>
+<li><strong>But</strong> failure detectors may not be both <strong>complete</strong> and <strong>accurate</strong>（故障检测器不可能同时完全且准确）<ul>
+<li><strong>Incomplete</strong>: N80's failure is never detected → the message still circulates forever → <strong>liveness</strong> violated</li>
+<li><strong>Inaccurate</strong>: an alive N80 is wrongly suspected → a new run elects someone else while N80 still thinks it is the leader → <strong>safety</strong> violated</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!NOTE]</p>
+<p><strong>Ring election recap</strong>: two phases of messages around the ring, <strong>Election</strong> then <strong>Elected</strong>.</p>
+<p>环选举：两轮消息绕环，先 Election 再 Elected。</p>
+</blockquote>
+<h3 id="bully-algorithm">Bully Algorithm<a class="headerlink" href="#bully-algorithm" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>All processes know other processes' ids</strong>（每个进程都知道所有进程的 id）</li>
+<li>When a process finds the leader (<strong>coordinator</strong>) has failed (via the failure detector):<ul>
+<li><strong>If</strong> it knows its id is the <strong>highest</strong>: it elects itself as coordinator and sends a <strong>Coordinator</strong> message to all processes with <strong>lower</strong> ids. Election completed</li>
+<li><strong>Else</strong> it initiates an election by sending an <strong>Election</strong> message<ul>
+<li>Sends it <strong>only to processes with a higher id</strong> than itself</li>
+<li>If it receives <strong>no answer</strong> within a timeout: calls itself leader and sends <strong>Coordinator</strong> to all lower-id processes. Election completed</li>
+<li>If an answer (<strong>OK</strong>) is received: some non-faulty higher process exists, so <strong>wait for a Coordinator</strong> message. If none arrives after another timeout, <strong>start a new election run</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>A process that <strong>receives an Election</strong> message replies with <strong>OK</strong> and <strong>starts its own election</strong> (unless it already has)</li>
+</ul>
+<p>一句话：向比自己大的进程喊"选举"；没人回就自己当老大；有人回 OK 就等老大的通知，等不到就重来。收到 Election 的进程回 OK 并自己也发起选举。"Bully"（恶霸）指的是 id 大的总能压过 id 小的。</p>
+<details class="note">
+<summary>Example: N80 crashes, N6 detects it (slides 40–44)</summary>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>What happens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>N6 detects N80's failure, sends <strong>Election</strong> to the higher ids: N12, N32, N80</td>
+</tr>
+<tr>
+<td>2</td>
+<td>N12 and N32 reply <strong>OK</strong> to N6. N6 waits for a Coordinator message</td>
+</tr>
+<tr>
+<td>3</td>
+<td>N12 starts its own election → Election to N32, N80. N32 starts its own → Election to N80</td>
+</tr>
+<tr>
+<td>4</td>
+<td>N32 replies <strong>OK</strong> to N12. N12 waits</td>
+</tr>
+<tr>
+<td>5</td>
+<td>N32 <strong>times out</strong> waiting for N80's response → it is the highest alive</td>
+</tr>
+<tr>
+<td>6</td>
+<td>N32 sends <strong>Coordinator: N32</strong> to N3, N5, N6, N12. <strong>Election completed</strong></td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="note">
+<summary>Example: failures during the election run (slides 45–47)</summary>
+<ol>
+<li>After N32 sent its OKs, <strong>N32 also crashes</strong>. N12 and N6 are waiting for a Coordinator message that never comes</li>
+<li>N6 <strong>times out</strong> and starts a <strong>new election run</strong>: Election to N12, N32, N80. N12 replies OK</li>
+<li>Then <strong>N12 crashes</strong> too. N6 times out again and starts <strong>another</strong> new run</li>
+<li>This time nobody answers, so N6 calls itself leader and sends Coordinator to N3 and N5</li>
+</ol>
+</details>
+<h4 id="failures-and-timeouts">Failures and Timeouts<a class="headerlink" href="#failures-and-timeouts" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>If failures stop, eventually a leader will be elected</strong></li>
+<li><strong>How to set the timeouts?</strong> Based on the <strong>worst-case time to complete an election</strong></li>
+<li>With no failures during the run, that is <strong>5 message transmission times</strong>:<ol>
+<li><strong>Election</strong> from the lowest-id server in the group</li>
+<li><strong>Answer (OK)</strong> to the lowest-id server from the 2<sup>nd</sup>-highest-id process</li>
+<li><strong>Election</strong> from the 2<sup>nd</sup>-highest-id server to the highest id</li>
+<li><strong>Timeout</strong> for answers (OKs) at the 2<sup>nd</sup>-highest-id server</li>
+<li><strong>Coordinator</strong> from the 2<sup>nd</sup>-highest-id server</li>
+</ol>
+</li>
+</ul>
+<h4 id="analysis_1">Analysis<a class="headerlink" href="#analysis_1" title="Permanent link">&para;</a></h4>
+<p><strong>Worst case</strong></p>
+<ul>
+<li>Completion time: <strong>5 message transmission times</strong></li>
+<li>Happens when the process with the <strong>lowest id</strong> detects the failure<ul>
+<li><span class="arithmatex">\((N-1)\)</span> processes altogether begin elections, each sending messages to processes with higher ids</li>
+<li>The <span class="arithmatex">\(i\)</span>-th highest-id process sends <span class="arithmatex">\((i-1)\)</span> Election messages</li>
+</ul>
+</li>
+<li>Number of Election messages = <span class="arithmatex">\((N-1) + (N-2) + \dots + 1 = \frac{N(N-1)}{2} = O(N^2)\)</span></li>
+</ul>
+<p><strong>Best case</strong></p>
+<ul>
+<li>The <strong>second-highest</strong> id detects the leader failure</li>
+<li>Sends <span class="arithmatex">\((N-2)\)</span> Coordinator messages</li>
+<li>Completion time: <strong>1 message transmission time</strong></li>
+</ul>
+<h4 id="impossibility">Impossibility?<a class="headerlink" href="#impossibility" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Since <strong>timeouts</strong> are built into the protocol, in the <strong>asynchronous</strong> system model the protocol <strong>may never terminate</strong> ⟹ <strong>liveness not guaranteed</strong></li>
+<li>But it <strong>satisfies liveness in the synchronous model</strong>, where the worst-case one-way latency can be calculated: worst-case processing time + worst-case message latency</li>
+</ul>
+<p>异步系统里超时可能设得不对，协议可能永远结束不了；同步系统里延迟有上界，可以算出正确的超时。</p>
+<h3 id="ring-vs-bully">Ring vs. Bully<a class="headerlink" href="#ring-vs-bully" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Ring</th>
+<th>Bully</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Topology / knowledge</td>
+<td>Logical ring, only knows successor</td>
+<td>Everyone knows everyone's id</td>
+</tr>
+<tr>
+<td>Messages (worst)</td>
+<td><span class="arithmatex">\(3N-1\)</span></td>
+<td><span class="arithmatex">\(O(N^2)\)</span></td>
+</tr>
+<tr>
+<td>Messages (best)</td>
+<td><span class="arithmatex">\(2N\)</span></td>
+<td><span class="arithmatex">\(N-2\)</span></td>
+</tr>
+<tr>
+<td>Completion time (worst)</td>
+<td><span class="arithmatex">\(3N-1\)</span> transmission times</td>
+<td>5 transmission times</td>
+</tr>
+<tr>
+<td>Completion time (best)</td>
+<td><span class="arithmatex">\(2N\)</span></td>
+<td>1</td>
+</tr>
+<tr>
+<td>Handles failures by</td>
+<td>Re-initiation / failure detector</td>
+<td>Timeouts + new election runs</td>
+</tr>
+<tr>
+<td>Weakness</td>
+<td>Leader crash mid-run breaks liveness</td>
+<td>Liveness only in synchronous model</td>
+</tr>
+</tbody>
+</table>
+<h3 id="why-is-election-so-hard">Why is Election so Hard?<a class="headerlink" href="#why-is-election-so-hard" title="Permanent link">&para;</a></h3>
+<ul>
+<li>It is <strong>related to the consensus problem</strong></li>
+<li><strong>Election ⟹ consensus</strong>: elect a process, use <strong>its id's last bit</strong> as the consensus decision</li>
+<li>Since consensus is <strong>impossible in asynchronous systems</strong> (FLP, Lecture 15-A), <strong>so is election</strong></li>
+<li><strong>Consensus ⟹ election</strong> too: each process proposes a value, everyone reaches consensus on some process <span class="arithmatex">\(P_i\)</span>'s value, and that lucky <span class="arithmatex">\(P_i\)</span> is the new leader</li>
+</ul>
+<p>选举和共识可以互相归约：能选举就能共识（用 leader id 的最后一位），能共识就能选举。所以 FLP 也意味着异步系统里选举不可能保证。</p>
+<h3 id="election-in-industry">Election in Industry<a class="headerlink" href="#election-in-industry" title="Permanent link">&para;</a></h3>
+<p>Several systems use <strong>Paxos-like</strong> approaches for election. Paxos is a consensus protocol that is <strong>safe, but only eventually live</strong> (next lecture).</p>
+<h4 id="google-chubby">Google Chubby<a class="headerlink" href="#google-chubby" title="Permanent link">&para;</a></h4>
+<ul>
+<li>A system for <strong>locking</strong>, essential to Google's stack (BigTable, Megastore, etc. rely on it)</li>
+<li>A group of replicas (e.g. Servers A–E) that needs a <strong>master</strong> elected at all times</li>
+<li><strong>Election protocol</strong><ul>
+<li>A potential leader tries to get <strong>votes</strong> from other servers</li>
+<li>Each server <strong>votes for at most one</strong> leader</li>
+<li>The server with a <strong>majority</strong> of votes becomes the new leader and informs everyone</li>
+</ul>
+</li>
+<li><strong>Why safe?</strong> Each potential leader tries to reach a <strong>quorum</strong>. Any two quorums <strong>intersect</strong>, and each server votes at most once, so two leaders <strong>cannot</strong> be elected simultaneously（两个多数派必相交，而每个服务器只投一票）</li>
+<li><strong>Why live?</strong> <strong>Only eventually live</strong>: failures may keep happening so that no leader is ever elected. In practice elections take a few seconds; worst case Google observed: <strong>30 s</strong></li>
+<li><strong>Master lease</strong>: after an election, other servers promise <strong>not to run another election for "a while"</strong><ul>
+<li>"A while" = the <strong>master lease</strong>, set to a few seconds</li>
+<li>The master can <strong>renew</strong> the lease as long as it keeps winning a majority</li>
+<li>The lease ensures <strong>automatic re-election</strong> on master failure（租约到期没续上就自动重新选举）</li>
+</ul>
+</li>
+</ul>
+<h4 id="apache-zookeeper">Apache Zookeeper<a class="headerlink" href="#apache-zookeeper" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Centralized service for maintaining <strong>configuration information</strong></li>
+<li>Uses a variant of Paxos called <strong>Zab</strong> (Zookeeper Atomic Broadcast)</li>
+<li>Needs to keep a leader elected at all times</li>
+</ul>
+<h3 id="summary_3">Summary<a class="headerlink" href="#summary_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Leader election is an important component of many cloud computing systems</li>
+<li>Classical protocols: <strong>Ring-based</strong> and <strong>Bully</strong></li>
+<li>Both are <strong>failure-prone</strong>: election is as hard as consensus, so it cannot be guaranteed in asynchronous systems</li>
+<li>Industry uses <strong>Paxos-like</strong> protocols (Google Chubby, Apache Zookeeper): <strong>quorum</strong> voting for safety, eventual liveness</li>
+</ul>
+<h2 id="lecture-18-a-paxos">Lecture 18-A: Paxos<a class="headerlink" href="#lecture-18-a-paxos" title="Permanent link">&para;</a></h2>
+<h3 id="consensus-recap">Consensus Recap<a class="headerlink" href="#consensus-recap" title="Permanent link">&para;</a></h3>
+<p>(See Lecture 15-A.) <span class="arithmatex">\(N\)</span> processes; each has an input <span class="arithmatex">\(x_p \in \{0,1\}\)</span> and an output <span class="arithmatex">\(y_p\)</span> (initially <span class="arithmatex">\(b\)</span>, changed only once). At the end, either <strong>all-0's</strong> or <strong>all-1's</strong>.</p>
+<ul>
+<li>Every process contributes a value; the goal is to have all processes <strong>decide the same (some) value</strong>. A decision, once made, <strong>can't be changed</strong></li>
+<li>Other possible constraints:<ul>
+<li><strong>Validity</strong>: if everyone proposes the same value, then that's what's decided</li>
+<li><strong>Integrity</strong>: the decided value must have been proposed by some process</li>
+<li><strong>Non-triviality</strong>: there is at least one initial state that leads to each of the all-0's and all-1's outcomes</li>
+</ul>
+</li>
+<li><strong>Impossible</strong> in an asynchronous system (<strong>FLP</strong>, 1983): "every protocol for this problem has the possibility of nontermination, even with only one faulty process"</li>
+</ul>
+<h3 id="paxos-algorithm">Paxos Algorithm<a class="headerlink" href="#paxos-algorithm" title="Permanent link">&para;</a></h3>
+<p>Can't we just solve consensus? <strong>Yes, we can!</strong> (Sort of.)</p>
+<ul>
+<li>Most popular "consensus-solving" algorithm, invented by <strong>Leslie Lamport</strong></li>
+<li><em>Does not solve the consensus problem</em> (which would be impossible, because we already proved that)</li>
+<li>But provides <strong>safety</strong> and <strong>eventual liveness</strong><ul>
+<li><strong>Safety</strong>: consensus is not violated（永远不会出现两个不同的决定）</li>
+<li><strong>Eventual liveness</strong>: if things go well sometime in the future (messages, failures, etc.), there is a good chance consensus will be reached. But there is <strong>no guarantee</strong></li>
+</ul>
+</li>
+<li><strong>FLP still applies</strong>: Paxos is not <em>guaranteed</em> to reach consensus (ever, or within any bounded time)</li>
+<li>A lot of systems use it: <strong>Zookeeper</strong> (Yahoo!), <strong>Google Chubby</strong>, and many other companies</li>
+</ul>
+<h3 id="political-science-101-ie-paxos-grokked">Political Science 101, i.e., Paxos Grokked<a class="headerlink" href="#political-science-101-ie-paxos-grokked" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Paxos has <strong>rounds</strong>; each round has a unique <strong>ballot id</strong></li>
+<li>Rounds are <strong>asynchronous</strong><ul>
+<li><strong>Time synchronization not required</strong></li>
+<li>If you're in round <span class="arithmatex">\(j\)</span> and hear a message from round <span class="arithmatex">\(j+1\)</span>, <strong>abort everything</strong> and move over to round <span class="arithmatex">\(j+1\)</span></li>
+<li>Use <strong>timeouts</strong>; may be pessimistic</li>
+</ul>
+</li>
+<li>Each round is broken into <strong>phases</strong> (which are also asynchronous):</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Name</th>
+<th>Analogy</th>
+<th>What happens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Election</strong></td>
+<td>Election</td>
+<td>A leader is elected</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Proposal</strong></td>
+<td><strong>Bill</strong></td>
+<td>Leader proposes a value, processes ack</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Decision</strong></td>
+<td><strong>Law</strong></td>
+<td>Leader multicasts the final value</td>
+</tr>
+</tbody>
+</table>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
+<span class="normal"><a href="#__codelineno-10-2">2</a></span>
+<span class="normal"><a href="#__codelineno-10-3">3</a></span>
+<span class="normal"><a href="#__codelineno-10-4">4</a></span>
+<span class="normal"><a href="#__codelineno-10-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a>Leader   ──●─────────────────●──────────────────●──────▶
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2"></a>            \  Please elect me!  \  Value v ok?      \  v!
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3"></a>P2       ────●────OK!──────────────●────OK!────────────●──▶
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4"></a>P3       ────●────OK!──────────────●────OK!────────────●──▶
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5"></a>            Phase 1             Phase 2            Phase 3
+</span></code></pre></div></td></tr></table></div>
+<h4 id="phase-1-a-leader-is-elected-election">Phase 1: A leader is elected (Election)<a class="headerlink" href="#phase-1-a-leader-is-elected-election" title="Permanent link">&para;</a></h4>
+<ul>
+<li>A potential leader chooses a <strong>unique ballot id, higher than anything seen so far</strong>, and sends it to all processes（选一个比见过的都大的 ballot id 广播出去）</li>
+<li>Processes wait, and <strong>respond once to the highest ballot id</strong><ul>
+<li>If a potential leader sees a <strong>higher</strong> ballot id, it <strong>can't be a leader</strong></li>
+<li>Processes also <strong>log</strong> the received ballot id on disk: a <strong>promise not to accept any lower ballot id</strong>（持久化，承诺不再接受更小的 ballot）</li>
+</ul>
+</li>
+<li>If a process has <strong>in a previous round accepted a value <span class="arithmatex">\(v'\)</span></strong>, it includes <span class="arithmatex">\(v'\)</span> in its response, <strong>along with the ballot id</strong> of that accepted value</li>
+<li>If a <strong>majority (i.e., quorum)</strong> respond OK, you are the leader. If no one gets a majority, <strong>start a new round</strong></li>
+<li>(If things go right) a round <strong>cannot have two leaders</strong>. <strong>Why?</strong> Each process responds to only one (the highest) ballot, and any two majorities intersect</li>
+</ul>
+<h4 id="phase-2-leader-proposes-a-value-processes-ack-bill">Phase 2: Leader proposes a value, processes ack (Bill)<a class="headerlink" href="#phase-2-leader-proposes-a-value-processes-ack-bill" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The leader sends a proposed value <span class="arithmatex">\(v\)</span> to all, <strong>along with the ballot id</strong><ul>
+<li>Use <span class="arithmatex">\(v = v'\)</span> if some process already accepted a value <span class="arithmatex">\(v'\)</span> in a previous round and sent it to you（之前有人接受过值，就必须沿用那个值）</li>
+<li>If <strong>multiple</strong> such <span class="arithmatex">\(v'\)</span> are received, use the <strong>latest one</strong> (the one with the highest ballot id)</li>
+<li>Only if no <span class="arithmatex">\(v'\)</span> came back may the leader propose its own value</li>
+</ul>
+</li>
+<li>The recipient <strong>logs <span class="arithmatex">\(v\)</span> and the ballot id on disk</strong>, and responds <strong>OK</strong> if it has <strong>not seen a higher ballot id</strong></li>
+</ul>
+<h4 id="phase-3-leader-multicasts-final-value-law">Phase 3: Leader multicasts final value (Law)<a class="headerlink" href="#phase-3-leader-multicasts-final-value-law" title="Permanent link">&para;</a></h4>
+<ul>
+<li>If the leader hears a <strong>majority</strong> of OKs, it lets everyone know of the decision</li>
+<li>Recipients receive the decision and <strong>log it on disk</strong></li>
+</ul>
+<h3 id="which-is-the-point-of-no-return">Which is the Point of No-Return?<a class="headerlink" href="#which-is-the-point-of-no-return" title="Permanent link">&para;</a></h3>
+<p>That is, when is consensus actually <strong>reached</strong> in the system?</p>
+<ul>
+<li><strong>When a majority of processes have accepted (logged) the proposed value <span class="arithmatex">\(v\)</span> in Phase 2</strong>, i.e. the moment just after the Phase 2 messages land, before any OK is sent back</li>
+<li>Processes <strong>may not know it yet</strong>, but a decision has been made for the group. <strong>Even the leader does not know it yet</strong></li>
+<li><strong>What if the leader fails after that?</strong> Keep having rounds until some round completes. Every later round will rediscover <span class="arithmatex">\(v\)</span> in Phase 1 and re-propose it</li>
+</ul>
+<p>决定点在 Phase 2：一旦多数派把 <span class="arithmatex">\(v\)</span> 写入日志，结果就定了，哪怕 leader 自己还不知道。之后 leader 挂了也没关系，后续轮次一定会选出同一个 <span class="arithmatex">\(v\)</span>。</p>
+<h3 id="safety">Safety<a class="headerlink" href="#safety" title="Permanent link">&para;</a></h3>
+<p><strong>Claim</strong>: if some round has a <strong>majority (quorum) hearing proposed value <span class="arithmatex">\(v'\)</span> and accepting it</strong>, then subsequently <strong>at each round</strong> either (1) the round chooses <span class="arithmatex">\(v'\)</span> as its decision, or (2) the round fails.</p>
+<p><strong>Proof</strong>:</p>
+<ol>
+<li>A potential leader waits for a <strong>majority of OKs in Phase 1</strong></li>
+<li><strong>At least one</strong> of them will contain <span class="arithmatex">\(v'\)</span>, because <strong>two majorities always intersect</strong></li>
+<li>So it will choose to send out <span class="arithmatex">\(v'\)</span> in Phase 2</li>
+</ol>
+<p><strong>Success requires a majority, and any two majority sets intersect.</strong></p>
+<blockquote>
+<p>[!TIP]</p>
+<p>The whole safety argument rests on <strong>quorum intersection</strong>: the Phase 1 majority of a later round must overlap the Phase 2 majority that accepted <span class="arithmatex">\(v'\)</span>, so the new leader is forced to learn <span class="arithmatex">\(v'\)</span>.</p>
+<p>Paxos 安全性的核心就是<strong>多数派相交</strong>：后来那一轮 Phase 1 的多数派一定和接受了 <span class="arithmatex">\(v'\)</span> 的多数派重叠，所以新 leader 一定会得知 <span class="arithmatex">\(v'\)</span>。</p>
+</blockquote>
+<h3 id="what-could-go-wrong">What could go Wrong?<a class="headerlink" href="#what-could-go-wrong" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>What happens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Process fails</strong></td>
+<td>The majority does not include it. On restart, it uses its <strong>log</strong> to retrieve past decisions (if any) and past-seen ballot ids, and tries to learn of past decisions</td>
+</tr>
+<tr>
+<td><strong>Leader fails</strong></td>
+<td>Start another round</td>
+</tr>
+<tr>
+<td><strong>Messages dropped</strong></td>
+<td>If too flaky, just start another round</td>
+</tr>
+<tr>
+<td><strong>Never ends</strong></td>
+<td>Anyone can start a round at any time, so rounds can keep preempting each other. Protocol may never end. Impossibility result not violated; if things go well sometime in the future, consensus is reached</td>
+</tr>
+</tbody>
+</table>
+<p>What if a restarted process doesn't know whether a value has been decided? It can't decide on its own. It must <strong>ask others</strong> / wait for (or start) a round, which will re-discover the decided value through Phase 1.</p>
+<p>And <strong>a lot more</strong>: this is a highly simplified view. See Lamport's <a href="http://research.microsoft.com/en-us/um/people/lamport/pubs/paxos-simple.pdf">Paxos Made Simple</a>.</p>
+<h3 id="optional-exercises">Optional Exercises<a class="headerlink" href="#optional-exercises" title="Permanent link">&para;</a></h3>
+<details class="question">
+<summary>1. Why does Paxos provide safety?</summary>
+<p>Every phase needs a <strong>majority</strong>, and any two majorities intersect. Once a majority has accepted <span class="arithmatex">\(v'\)</span>, any later leader's Phase 1 majority contains at least one process that reports <span class="arithmatex">\(v'\)</span>, so the leader must propose <span class="arithmatex">\(v'\)</span>. Processes also promise (on disk) never to accept a lower ballot, so stale leaders can't sneak in a different value.</p>
+</details>
+<details class="question">
+<summary>2. Why does Paxos not provide liveness?</summary>
+<p>Rounds can be <strong>preempted forever</strong>: two potential leaders keep starting higher ballots, each aborting the other's round before Phase &#8532; finishes (dueling proposers). Failures and message delays can also keep killing rounds. FLP says some such execution must exist for any protocol.</p>
+</details>
+<details class="question">
+<summary>3. A buggy implementation uses quorums of &gt; N/3 instead of &gt; N/2. Is it safe?</summary>
+<p><strong>No.</strong> Two sets of size <span class="arithmatex">\(&gt; N/3\)</span> need not intersect (e.g. <span class="arithmatex">\(N=6\)</span>: {1,2,3} and {4,5,6}). One round's leader could get a value accepted by one group while a later leader's Phase 1 quorum is the other group, never learns <span class="arithmatex">\(v'\)</span>, and gets a different value decided.</p>
+</details>
+<details class="question">
+<summary>4. Paxos has \"rounds\". Why does it still work in an asynchronous system?</summary>
+<p>Rounds are <strong>logical</strong>, identified by ballot ids, not by clock time. Nobody needs to agree on when a round starts; a process just follows the highest ballot it has seen and aborts lower ones. Safety relies only on quorum intersection and ballot ordering, never on timing. Timeouts only affect <strong>liveness</strong>.</p>
+</details>
+<details class="question">
+<summary>5. Assuming no failures, what is the point of no return?</summary>
+<p>When a <strong>majority of processes have accepted (logged) <span class="arithmatex">\(v\)</span> in Phase 2</strong>, even before the leader receives the OKs.</p>
+</details>
+<details class="question">
+<summary>6. What could go wrong?</summary>
+<p>Process failures, leader failures, dropped/delayed messages, and competing leaders preempting each other. Safety is never violated, but the protocol may never terminate.</p>
+</details>
+<h3 id="summary_4">Summary<a class="headerlink" href="#summary_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Paxos</strong>: a widely used <strong>safe, eventually-live</strong> consensus protocol for <strong>asynchronous</strong> systems</li>
+<li>Paxos (or variants) are used in Apache Zookeeper, Google Chubby, Active Disk Paxos, and many other cloud systems</li>
+</ul>
+<h2 id="lecture-18-b-raft">Lecture 18-B: Raft<a class="headerlink" href="#lecture-18-b-raft" title="Permanent link">&para;</a></h2>
+<h3 id="from-single-decree-paxos-to-a-replicated-log">From Single-decree Paxos to a Replicated Log<a class="headerlink" href="#from-single-decree-paxos-to-a-replicated-log" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Consensus / single-decree Paxos: all processes decide the same (some) <strong>single value</strong></li>
+<li><strong>Practical applications</strong> need to agree on a <strong>sequence of values</strong>, usually via a <strong>replicated log</strong>（实际系统要对一串值达成一致，即复制日志）</li>
+</ul>
+<h4 id="idea-state-machine-replication">Idea: State Machine Replication<a class="headerlink" href="#idea-state-machine-replication" title="Permanent link">&para;</a></h4>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
+<span class="normal"><a href="#__codelineno-11-2">2</a></span>
+<span class="normal"><a href="#__codelineno-11-3">3</a></span>
+<span class="normal"><a href="#__codelineno-11-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1"></a>          ┌──────────── Server ────────────┐
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2"></a>client ─▶ │ Consensus Module ─▶ Log ─▶ State Machine │   × N servers
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3"></a>          └────────────────────────────────┘
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4"></a>Log on every server:  [1 add][1 mul][2 div][3 add]
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li>Each server starts from the <strong>same initial state</strong> and executes the <strong>same commands in the same order</strong> ⟹ final states and outputs are <strong>identical</strong></li>
+<li>The <strong>consensus module</strong> ensures proper log replication（共识模块负责让各服务器日志一致）</li>
+</ul>
+<h4 id="problem-how-to-agree-on-the-log">Problem: How to Agree on the Log?<a class="headerlink" href="#problem-how-to-agree-on-the-log" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Safety</strong> (compare: the safety condition of Paxos): if a server has <strong>applied</strong> a log entry at a given index to its state machine, <strong>no other server will ever apply a different log entry for the same index</strong></li>
+<li><strong>Liveness</strong>: available as long as <strong>any majority</strong> of servers are operational and can communicate with each other and with clients</li>
+<li><strong>Failure model</strong>: <strong>fail-stop</strong>, delayed/lost messages. Servers can <strong>recover</strong> from state on stable storage and rejoin the cluster</li>
+</ul>
+<h3 id="raft">Raft<a class="headerlink" href="#raft" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A consensus algorithm for agreeing on a <strong>replicated log</strong></li>
+<li><strong>Elect a leader</strong> to drive log consensus<ul>
+<li><strong>Decomposes</strong> the problem (normal operation vs. leader changes)</li>
+<li><strong>Simplifies normal operation</strong>: eliminates conflicts between proposers（只有 leader 提议，不会有 Paxos 里多个 proposer 互相冲突）</li>
+</ul>
+</li>
+<li><strong>Impact</strong>: many implementations, widely adopted: <strong>etcd</strong> (Kubernetes), Consul, CockroachDB, TiKV, RethinkDB</li>
+</ul>
+<h4 id="basics-1-server-states">Basics 1: Server States<a class="headerlink" href="#basics-1-server-states" title="Permanent link">&para;</a></h4>
+<p>At any given time, each server is either:</p>
+<table>
+<thead>
+<tr>
+<th>State</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Leader</strong></td>
+<td>Handles <strong>all client interactions</strong> and log replication. <strong>At most 1 viable leader</strong> at a time</td>
+</tr>
+<tr>
+<td><strong>Follower</strong></td>
+<td><strong>Completely passive</strong>: only responds to messages from leaders/candidates</td>
+</tr>
+<tr>
+<td><strong>Candidate</strong></td>
+<td><strong>Temporary</strong> state during leader election; later becomes leader or follower</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Normal operation</strong>: 1 leader, <span class="arithmatex">\(N-1\)</span> followers.</p>
+<table>
+<thead>
+<tr>
+<th>From</th>
+<th>Event</th>
+<th>To</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(start)</td>
+<td>Server boots</td>
+<td>Follower</td>
+</tr>
+<tr>
+<td>Follower</td>
+<td>electionTimeout with no RPCs</td>
+<td>Candidate</td>
+</tr>
+<tr>
+<td>Candidate</td>
+<td>Receives votes from a majority</td>
+<td>Leader</td>
+</tr>
+<tr>
+<td>Candidate</td>
+<td>Timeout (split vote) → new election</td>
+<td>Candidate</td>
+</tr>
+<tr>
+<td>Candidate</td>
+<td>Discovers current leader or a higher term</td>
+<td>Follower</td>
+</tr>
+<tr>
+<td>Leader</td>
+<td>Discovers a server with a higher term</td>
+<td>Follower</td>
+</tr>
+</tbody>
+</table>
+<h4 id="basics-2-terms">Basics 2: Terms<a class="headerlink" href="#basics-2-terms" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Term 1</th>
+<th>Term 2</th>
+<th>Term 3</th>
+<th>Term 4</th>
+<th>Term 5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>election + normal op</td>
+<td>election + normal op</td>
+<td>election only (<strong>split vote, no leader</strong>)</td>
+<td>election + normal op</td>
+<td>election + normal op</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Time is divided into terms</strong>. Each term begins with a <strong>leader election</strong>, then normal operation under a single leader until that leader fails</li>
+<li><strong>At most 1 leader per term</strong> ("at most", not "exactly one": a split vote yields none)</li>
+<li>Each server maintains its <strong>current term</strong>: its best guess of the leader's current term</li>
+<li>Terms are <strong>monotonically increasing</strong> and <strong>never reused</strong>; the current term is <strong>persisted on disk</strong></li>
+<li><strong>Key role of terms: identify obsolete information</strong>. If S1 is in term 2 and S2 is in term 4, S2 knows S1 is in an older state（term 是 Raft 的逻辑时钟，用来识别过时信息）</li>
+</ul>
+<blockquote>
+<p>[!NOTE]</p>
+<p>This answers "what is <em>time</em> here?" from the server-states slide: "at most 1 viable leader at a time" means <strong>per term</strong>, not per wall-clock instant. A deposed leader from an older term may briefly still think it is leader.</p>
+<p>"同一时间最多一个 leader"里的"时间"指的是 <strong>term</strong>，不是物理时间。</p>
+</blockquote>
+<h4 id="basics-3-the-log">Basics 3: The Log<a class="headerlink" href="#basics-3-the-log" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>log index</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>term</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>command</td>
+<td>add</td>
+<td>cmp</td>
+<td>ret</td>
+<td>mov</td>
+<td>jmp</td>
+<td>div</td>
+<td>shl</td>
+<td>sub</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Each server has its <strong>own copy</strong> of the log, made of <strong>entries</strong>. Each entry has:<ul>
+<li>an <strong>index</strong>: its position in the log</li>
+<li>a <strong>command</strong>: anything the state machine allows</li>
+<li>a <strong>term</strong>: the leader's term in which the entry was <strong>created</strong></li>
+</ul>
+</li>
+<li>The log is stored on <strong>stable storage (disk)</strong>; it must survive crashes</li>
+</ul>
+<h3 id="normal-operation-no-failures">Normal Operation (no failures)<a class="headerlink" href="#normal-operation-no-failures" title="Permanent link">&para;</a></h3>
+<p>Assume a leader has been elected and all followers are up:</p>
+<ol>
+<li>Client sends a command to the leader</li>
+<li>Leader <strong>appends</strong> the command to its log at index <span class="arithmatex">\(i\)</span>, in its current term <span class="arithmatex">\(t\)</span></li>
+<li>Leader sends the command to followers using <strong>AppendEntries</strong> RPCs</li>
+<li>A follower appends the command at index <span class="arithmatex">\(i\)</span> <strong>if the prefix of its log matches the leader's</strong> (checked via the consistency check below), then acks</li>
+<li>Once the leader receives acks from a <strong>majority (including itself)</strong>, it applies the command to its state machine. The entry is now <strong>committed</strong>; the leader returns the result to the client</li>
+<li>Leader notifies followers of committed entries in <strong>subsequent RPCs</strong> (followers then apply them)</li>
+</ol>
+<ul>
+<li><strong>Performance</strong>: one round of messages to a majority（正常情况下只需一轮到多数派的往返）</li>
+<li>Normal operation ensures identical logs. <strong>But we must deal with failures!</strong></li>
+</ul>
+<h3 id="leader-election">Leader Election<a class="headerlink" href="#leader-election" title="Permanent link">&para;</a></h3>
+<h4 id="heartbeats-and-timeouts">Heartbeats and Timeouts<a class="headerlink" href="#heartbeats-and-timeouts" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The leader must send <strong>periodic heartbeats</strong> (empty AppendEntries) to maintain authority</li>
+<li>Followers expect to receive RPCs from a leader (or candidates)</li>
+<li>If a period of time (<strong>electionTimeout</strong>) elapses with no RPCs:<ul>
+<li>The follower <strong>assumes the leader has crashed</strong> (or is partitioned). The leader could just be slow, and the follower <strong>cannot tell the difference</strong> (recall failure detectors!)</li>
+<li>The follower <strong>starts a new election</strong></li>
+<li>Timeouts are typically <strong>100–500 ms</strong></li>
+</ul>
+</li>
+</ul>
+<h4 id="election-basics">Election Basics<a class="headerlink" href="#election-basics" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The follower converts to the <strong>candidate</strong> state and runs for election</li>
+<li><strong>Increments its current term</strong> before running. Why?<ul>
+<li>There can be <strong>only one leader per term</strong>, and we already had a leader for this term (which crashed)</li>
+<li>Raft would never let the candidate win the old term; no point running in it</li>
+</ul>
+</li>
+<li><strong>Votes for itself</strong></li>
+<li><strong>Requests votes</strong> from all other servers (<strong>RequestVote</strong> RPCs)</li>
+<li><strong>Waits for votes from a majority</strong></li>
+</ul>
+<h4 id="voting-conditions">Voting Conditions<a class="headerlink" href="#voting-conditions" title="Permanent link">&para;</a></h4>
+<p>A server with current term <span class="arithmatex">\(st\)</span> <strong>denies</strong> its vote to a candidate with term <span class="arithmatex">\(ct\)</span> if:</p>
+<ol>
+<li>It has <strong>already voted for a different candidate</strong> in its current term <span class="arithmatex">\(st\)</span><ul>
+<li>Why? We cannot have <strong>two leaders for the same term</strong></li>
+<li>How does it never vote twice? It <strong>remembers on disk</strong> the candidate id it voted for in the current term (<code>votedFor</code>)</li>
+</ul>
+</li>
+<li><span class="arithmatex">\(ct &lt; st\)</span>: the candidate is in an <strong>older state</strong></li>
+<li>The candidate's <strong>log is lagging</strong> (defined precisely in the Election Restriction below)</li>
+</ol>
+<h4 id="candidate-outcomes">Candidate Outcomes<a class="headerlink" href="#candidate-outcomes" title="Permanent link">&para;</a></h4>
+<p>After timing out → incrementing its term → becoming candidate → voting for itself → asking others for votes, exactly one of these happens:</p>
+<table>
+<thead>
+<tr>
+<th>Outcome</th>
+<th>Next state</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(i) Receives votes from a <strong>majority</strong></td>
+<td><strong>Leader</strong>; immediately sends heartbeats to all servers to maintain authority</td>
+</tr>
+<tr>
+<td>(ii) Hears from a <strong>valid leader</strong> with term <span class="arithmatex">\(\ge ct\)</span></td>
+<td>Steps down to <strong>follower</strong></td>
+</tr>
+<tr>
+<td>(iii) <strong>electionTimeout</strong> elapses, neither (i) nor (ii) (split vote)</td>
+<td>Repeat: increment term, start a new election</td>
+</tr>
+</tbody>
+</table>
+<h4 id="elections-safety">Elections: Safety<a class="headerlink" href="#elections-safety" title="Permanent link">&para;</a></h4>
+<p><strong>Election safety: at most one winner per term</strong></p>
+<ul>
+<li>Each server gives out <strong>only one vote per term</strong></li>
+<li>Two different candidates <strong>cannot both accumulate majorities</strong> in the same term（两个多数派必相交，而每人每个 term 只投一票）</li>
+</ul>
+<h4 id="elections-liveness">Elections: Liveness<a class="headerlink" href="#elections-liveness" title="Permanent link">&para;</a></h4>
+<p>Is it possible to end up in a term with no leader? <strong>Yes: split votes.</strong></p>
+<ul>
+<li>The leader for term <span class="arithmatex">\(t\)</span> fails; <strong>all followers time out at the same time</strong></li>
+<li>Each votes for itself in term <span class="arithmatex">\(t+1\)</span> → no node gets a majority. Timeout... all vote for themselves again in term <span class="arithmatex">\(t+2\)</span>. Repeat...</li>
+</ul>
+<p><strong>How to avoid indefinite split votes? Randomness.</strong></p>
+<ul>
+<li>Each server chooses its electionTimeout <strong>uniformly at random in <span class="arithmatex">\([T, 2T]\)</span></strong></li>
+<li>One server usually times out and <strong>wins before the others</strong> even start</li>
+<li>Need <span class="arithmatex">\(T \gg\)</span> <strong>broadcast time</strong> (time to send an RPC to every server and get responses)</li>
+</ul>
+<p><strong>What if <span class="arithmatex">\(T\)</span> is too high? Too low?</strong></p>
+<ul>
+<li><strong>Too high</strong>: after a real crash, the cluster waits a long time before electing a new leader → <strong>unavailable</strong> for longer</li>
+<li><strong>Too low</strong> (close to broadcast time): followers time out on a <strong>healthy but slow</strong> leader → needless elections; and candidates can't collect votes before others also time out → more <strong>split votes</strong></li>
+</ul>
+<h3 id="log-consistency">Log Consistency<a class="headerlink" href="#log-consistency" title="Permanent link">&para;</a></h3>
+<h4 id="valid-log-states">Valid Log States?<a class="headerlink" href="#valid-log-states" title="Permanent link">&para;</a></h4>
+<details class="question">
+<summary>Q1. Log terms: 1, 1, 3, 2, 2. Valid?</summary>
+<p><strong>No.</strong> Terms in a log must be <strong>monotonically non-decreasing</strong>. A term-2 entry can never appear after a term-3 entry: once a server has accepted an entry from term 3 it has rejected term 2 leaders, and a later leader appends after its own entries.</p>
+</details>
+<details class="question">
+<summary>Q2. Log terms: 1, 1, 3, 5. Valid? Why?</summary>
+<p><strong>Yes.</strong> Terms only need to increase; they can <strong>skip</strong>. Term 2 and 4 may have had a split vote (no leader), or a leader whose entries never reached this server.</p>
+</details>
+<details class="question">
+<summary>Q3. Leader L = (1,a)(1,b)(3,c). Can a follower be F = (1,a)(2,b)(3,c)?</summary>
+<p><strong>No.</strong> Both have an entry at index 3 with term 3, so by <strong>Log Matching</strong> their logs must be identical in all preceding entries. But index 2 differs (term 1 vs. term 2).</p>
+</details>
+<details class="question">
+<summary>Q4. Can two nodes have different entries at the same log index? S1 = (1,a)(1,b)(3,c), S2 = (1,a)(1,b)(2,c)</summary>
+<p><strong>Yes.</strong> Index 3 carries different terms (3 vs. 2), so these are different entries, e.g. an uncommitted entry from a term-2 leader that never reached S1. Such conflicts get repaired later by the leader.</p>
+</details>
+<details class="question">
+<summary>Q5. Can two nodes have different commands for the same index <em>and</em> term? S1 = …(2,c), S2 = …(2,d)</summary>
+<p><strong>No.</strong> There is at most one leader per term, it creates at most one entry per index, and it <strong>never overwrites its own log</strong>. So (index, term) uniquely identifies a command.</p>
+</details>
+<h4 id="log-properties">Log Properties<a class="headerlink" href="#log-properties" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Log entries have terms that are <strong>monotonically increasing</strong></li>
+<li><strong>Log Matching</strong>: if entries on different servers have the <strong>same index and term</strong>:<ul>
+<li>they store the <strong>same command</strong></li>
+<li>the logs are <strong>identical in all preceding entries</strong></li>
+</ul>
+</li>
+<li>If a given entry is <strong>committed</strong>, all <strong>preceding entries are also committed</strong></li>
+</ul>
+<h4 id="catching-up-followers-logs">Catching up Followers' Logs<a class="headerlink" href="#catching-up-followers-logs" title="Permanent link">&para;</a></h4>
+<p>Leader changes can leave logs inconsistent:</p>
+<ul>
+<li>An old leader may have left entries <strong>partially replicated</strong></li>
+<li>Multiple crashes can leave many <strong>extraneous</strong> entries</li>
+<li>The leader <strong>eventually makes followers' logs identical to its own</strong>: delete extraneous entries, fill in missing entries（leader 以自己的日志为准，删掉多余的，补上缺的）</li>
+</ul>
+<h4 id="consistency-check-during-log-appends">Consistency Check During Log Appends<a class="headerlink" href="#consistency-check-during-log-appends" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The leader keeps, per follower, the index of the next entry to send (<strong>nextIndex</strong>), initialized to <strong>1 + leader's last index</strong></li>
+<li>Each AppendEntries RPC contains the <strong>index and term of the preceding entry</strong> (<strong>prevLogIndex</strong>, <strong>prevLogTerm</strong>)</li>
+<li>If the follower <strong>does not contain a matching preceding entry</strong>, it rejects; the leader <strong>decrements nextIndex</strong> and tries again</li>
+<li>When it matches, the follower accepts the new entries <strong>after truncating any conflicting tail</strong></li>
+<li>This implements an <strong>induction step</strong> that ensures the <strong>Log Matching</strong> property: if index <span class="arithmatex">\(i-1\)</span> matches, and the new entry at <span class="arithmatex">\(i\)</span> is copied from the leader, then the prefix through <span class="arithmatex">\(i\)</span> matches</li>
+</ul>
+<details class="note">
+<summary>Example: follower log scenarios (slide 24)</summary>
+<p>Leader for term 3 has log <code>1 1 1 3</code> and is replicating ⟨3⟩ at index 4. nextIndex starts at 4 for every follower.</p>
+<table>
+<thead>
+<tr>
+<th>Follower log</th>
+<th>How did it get there?</th>
+<th>Repair</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1 1</code></td>
+<td><strong>Missing</strong>: crashed/partitioned before the term-1 leader replicated index 3</td>
+<td>nextIndex 4: prev ⟨3, term 1⟩ vs. nothing → <strong>reject</strong>. nextIndex 3: prev ⟨2, term 1⟩ matches → append entries 3, 4</td>
+</tr>
+<tr>
+<td><code>1 1 1 1</code></td>
+<td><strong>Extra</strong>: was term-1 leader, appended ⟨1⟩ at index 4 locally, crashed before replicating</td>
+<td>nextIndex 4: prev ⟨3, term 1⟩ matches → remove conflicting tail (index 4), accept ⟨3⟩</td>
+</tr>
+<tr>
+<td><code>1 1 2 2</code></td>
+<td><strong>Missing + extra</strong>: was term-2 leader, appended two entries, crashed before reaching a majority</td>
+<td>nextIndex 4: prev ⟨3, term 1⟩ vs. ⟨3, term 2⟩ → <strong>reject</strong>. nextIndex 3: prev ⟨2, term 1⟩ matches → truncate 3–4, accept ⟨1⟩, ⟨3⟩</td>
+</tr>
+</tbody>
+</table>
+<p>Every follower ends up with <code>1 1 1 3</code>.</p>
+</details>
+<h3 id="safety-which-candidate-is-safe-to-elect">Safety: Which Candidate Is Safe to Elect?<a class="headerlink" href="#safety-which-candidate-is-safe-to-elect" title="Permanent link">&para;</a></h3>
+<p>Followers <strong>blindly trust the leader</strong> (they overwrite their logs to match it), so we must be careful about who becomes leader.</p>
+<h4 id="safety-requirement">Safety Requirement<a class="headerlink" href="#safety-requirement" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>If a server has applied a log entry at a given index to its state machine, no other server will ever apply a different log entry for the same index.</p>
+</blockquote>
+<p>To guarantee this, Raft ensures <strong>Leader Completeness</strong>: if a log entry is <strong>committed</strong> in a given term, then that entry will be <strong>present in the logs of the leaders for all higher-numbered terms</strong>.</p>
+<p>Committed → present in future leaders' logs. Achieved by two mechanisms:</p>
+<ol>
+<li><strong>Restrictions on leader election</strong></li>
+<li><strong>Restrictions on commitment</strong></li>
+</ol>
+<h4 id="why-leader-completeness-matters">Why Leader Completeness Matters<a class="headerlink" href="#why-leader-completeness-matters" title="Permanent link">&para;</a></h4>
+<details class="note">
+<summary>Example: losing a committed entry (slide 27)</summary>
+<ul>
+<li>Term 1: S1 is leader, replicates entries 1–3 on S1 and S2 (a majority), <strong>applies</strong> them, then fails. S3 has a stale log (only entries 1–2)</li>
+<li>Suppose S3 wins a later election (term 3) and replicates its own entry at index 3</li>
+<li>Entry ⟨1⟩ at index 3 was committed and applied by S1, then <strong>overwritten</strong> → lost. <strong>Wrong!</strong></li>
+</ul>
+</details>
+<p><strong>How to ensure Leader Completeness?</strong> During elections, choose a candidate whose log <strong>contains all committed entries</strong> (voting condition (iii)). <strong>Problem</strong>: a candidate cannot tell which entries are committed!（候选人自己不知道哪些条目已提交）</p>
+<h4 id="restriction-on-leader-election">Restriction on Leader Election<a class="headerlink" href="#restriction-on-leader-election" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Choose the candidate whose log is <strong>most likely</strong> to contain all committed entries</li>
+<li>Candidates include log info in RequestVote RPCs: <strong>index and term of their last log entry</strong></li>
+<li>Voting server <span class="arithmatex">\(V\)</span> <strong>denies</strong> its vote if its own log is <strong>"more complete"</strong>:</li>
+</ul>
+<div class="arithmatex">\[
+(\text{lastTerm}_V &gt; \text{lastTerm}_C)\ \lor\ \big(\text{lastTerm}_V = \text{lastTerm}_C\ \land\ \text{lastIndex}_V &gt; \text{lastIndex}_C\big)
+\]</div>
+<ul>
+<li>Compare <strong>last term first</strong>, then <strong>length</strong>. The leader will have the <strong>"most complete"</strong> log among the electing majority</li>
+</ul>
+<p>先比最后一条的 term，term 大的更新；term 一样再比长度。</p>
+<details class="note">
+<summary>Example: which log is more complete? (slide 29)</summary>
+<table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Candidate C log (terms)</th>
+<th>Server S log (terms)</th>
+<th>Comparison</th>
+<th>Vote</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(i)</td>
+<td><code>1 1 1 1</code></td>
+<td><code>2</code></td>
+<td>S's last term 2 &gt; C's last term 1</td>
+<td><strong>Deny</strong></td>
+</tr>
+<tr>
+<td>(ii)</td>
+<td><code>1 1</code></td>
+<td><code>1 1 1</code></td>
+<td>Same last term 1, S is longer (3 &gt; 2)</td>
+<td><strong>Deny</strong></td>
+</tr>
+<tr>
+<td>(iii)</td>
+<td><code>1 1 2</code></td>
+<td><code>1 1 1 1 1</code></td>
+<td>C's last term 2 &gt; S's last term 1 (length doesn't matter)</td>
+<td><strong>Grant</strong></td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="question">
+<summary>Exercise: which entries can S1 safely apply? (slides 30–31)</summary>
+<p>Current term 4, S1 is leader. Logs (terms by index):</p>
+<table>
+<thead>
+<tr>
+<th>Server</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td>S2</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>S3</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td>S4</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>S5</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Who could win term 5 if S1 fails now?</strong></p>
+<ul>
+<li><strong>S1</strong>: yes, votes from self, S3, S4</li>
+<li><strong>S2</strong>: yes, votes from self, S3, S4, S5 (last term 3 beats 2)</li>
+<li><strong>S3</strong>: no, only S4 and itself (S1, S2, S5 are more complete)</li>
+<li><strong>S4</strong>: no, only itself</li>
+<li><strong>S5</strong>: yes, votes from self, S4, S3 (same last term 2, longer log)</li>
+</ul>
+<p><strong>Answer: only entries 1 and 2.</strong> Potential leaders are S1, S2, S5; only entries present on all of them survive. If S2 wins, entries 3–5 are overwritten. Once S1 replicates entry 6 (term 4) on a majority, S2 can no longer win, and entries 3–5 become safe too.</p>
+</details>
+<h4 id="restriction-on-commitment">Restriction on Commitment<a class="headerlink" href="#restriction-on-commitment" title="Permanent link">&para;</a></h4>
+<p><strong>Case 1: committing an entry from the leader's current term</strong> — safe</p>
+<details class="note">
+<summary>Example (slide 32)</summary>
+<p>S1 is leader for term 2. Logs: S1 <code>1 1 2 2 2</code>, S2 <code>1 1 2 2</code>, S3 <code>1 1 2 2</code>, S4 <code>1 1 2</code>, S5 <code>1 1</code>. AppendEntries for index 4 just succeeded on S2, S3.</p>
+<p>Entry 4 is on a majority (S1–S3) <strong>and carries the leader's current term 2</strong>. Any leader for term 3 needs a vote from one of S1–S4, all more complete than S5, so S5 can't win. Every possible winner contains entry 4 → <strong>safely committed</strong>.</p>
+</details>
+<p><strong>Case 2: finishing an entry from an earlier term</strong> — <strong>not</strong> safe on its own</p>
+<details class="note">
+<summary>Example (slide 33)</summary>
+<p>S1 is leader for term 4. Logs: S1 <code>1 1 2 4</code>, S2 <code>1 1 2</code>, S3 <code>1 1 2</code> (index 3 just replicated), S4 <code>1 1</code>, S5 <code>1 1 3 3 3</code>.</p>
+<p>Entry 3 (term 2) is now on a majority (S1, S2, S3), but it is <strong>NOT safely committed</strong>: S5's last term 3 beats S2–S4's last term 2, so S2, S3, S4 would vote for S5 in term 5. If elected, S5 <strong>overwrites entry 3</strong> on S1, S2, S3!</p>
+</details>
+<p><strong>New rule.</strong> For a leader to decide an entry is committed:</p>
+<ul>
+<li>It must be stored on a <strong>majority</strong> of servers, <strong>and</strong></li>
+<li><strong>At least one new entry from the leader's current term</strong> must also be stored on a majority of servers</li>
+</ul>
+<p>In the Case 2 example, once entry 4 (term 4) reaches S1, S2, S3, S5 can no longer get votes from that majority (their last term 4 &gt; 3), so <strong>entries 3 and 4 are both safe</strong>.</p>
+<blockquote>
+<p>[!TIP]</p>
+<p>A leader <strong>never counts replicas</strong> to commit an entry from an older term. It commits its own current-term entry, and older entries become committed <strong>indirectly</strong> because of the "all preceding entries are committed" property.</p>
+<p>leader 不直接通过数副本来提交旧 term 的条目，而是提交一条当前 term 的条目，前面的旧条目随之<strong>间接</strong>提交。</p>
+</blockquote>
+<h4 id="safety-intuition">Safety: Intuition<a class="headerlink" href="#safety-intuition" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Only committed entries are applied</strong>. Committed = on a majority, including an entry from the leader's own term</li>
+<li><strong>Any later leader must have won votes from a majority</strong>. That majority <strong>overlaps</strong> the one holding the committed entry, so some voter <span class="arithmatex">\(V\)</span> has it</li>
+<li><strong><span class="arithmatex">\(V\)</span> voted only because the candidate's log was at least as up-to-date</strong>. By Log Matching, the new leader holds everything <span class="arithmatex">\(V\)</span> holds, including the committed entry ⟹ <strong>Leader Completeness</strong></li>
+<li><strong>Leaders never overwrite their own log</strong>. So once an entry is committed at index <span class="arithmatex">\(i\)</span>, no server can ever apply anything else at <span class="arithmatex">\(i\)</span> ⟹ <strong>State Machine Safety</strong></li>
+</ul>
+<h3 id="neutralizing-old-leaders">Neutralizing Old Leaders<a class="headerlink" href="#neutralizing-old-leaders" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A <strong>deposed leader may not be dead</strong> (e.g. it was partitioned and comes back)</li>
+<li>An election updates the terms of a <strong>majority</strong> of servers ⟹ a deposed server <strong>cannot commit new entries</strong> (it can't get a majority to accept its old term)</li>
+<li><strong>Terms are used to detect stale leaders</strong>. Every RPC contains the sender's term:<ul>
+<li><strong>Sender's term is older</strong>: the RPC is <strong>rejected</strong>; the sender reverts to follower and updates its term</li>
+<li><strong>Receiver's term is older</strong>: the receiver reverts to follower, updates its term, then processes the RPC normally</li>
+</ul>
+</li>
+</ul>
+<h3 id="reads">Reads<a class="headerlink" href="#reads" title="Permanent link">&para;</a></h3>
+<p><strong>Do reads have to go through consensus?</strong></p>
+<ul>
+<li>You <strong>cannot just read from the leader's state machine</strong>: it may be a <strong>deposed leader</strong> serving stale data (partition!)</li>
+<li><strong>Options</strong>:<ul>
+<li><strong>Commit the read</strong> as a log entry on a majority</li>
+<li>The leader <strong>confirms it is still leader</strong> via a heartbeat round (gets acks from a majority) before answering</li>
+</ul>
+</li>
+</ul>
+<h3 id="paxos-vs-raft">Paxos vs. Raft<a class="headerlink" href="#paxos-vs-raft" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Paxos (single-decree)</th>
+<th>Raft</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Agrees on</td>
+<td>One value</td>
+<td>A replicated log (sequence of values)</td>
+</tr>
+<tr>
+<td>Epoch / round id</td>
+<td>Ballot id</td>
+<td>Term</td>
+</tr>
+<tr>
+<td>Leader election</td>
+<td>Phase 1 of every round</td>
+<td>Separate RequestVote phase; leader stays until it fails</td>
+</tr>
+<tr>
+<td>Who may propose</td>
+<td>Any potential leader (can conflict)</td>
+<td>Only the current leader</td>
+</tr>
+<tr>
+<td>Picking safe values</td>
+<td>Leader adopts highest-ballot accepted <span class="arithmatex">\(v'\)</span></td>
+<td>Only "most complete" log can win; leader's log wins</td>
+</tr>
+<tr>
+<td>Safety rests on</td>
+<td>Quorum intersection</td>
+<td>Quorum intersection + election/commit restrictions</td>
+</tr>
+<tr>
+<td>Liveness</td>
+<td>Eventual</td>
+<td>Eventual (randomized timeouts make it likely)</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -10190,7 +13049,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2026年10月21日 14:09:20 CST">2026年10月21日 14:09:20</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2026年10月27日 04:14:01 CST">2026年10月27日 04:14:01</span>
   </span>
 
     
@@ -10300,13 +13159,13 @@
         
         
           
-          <a href="CS441.html" class="md-footer__link md-footer__link--next" aria-label="下一页: CS441 Applied Machine Learning">
+          <a href="CS441.html" class="md-footer__link md-footer__link--next" aria-label="下一页: CS441 lectures">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                CS441 Applied Machine Learning
+                CS441 lectures
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -10365,10 +13224,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.annotate", "navigation.indexes", "navigation.expand", "toc.follow", "navigation.top", "search.suggest", "navigation.footer", "navigation.tabs", "navigation.tracking", "navigation.instant.progress", "content.code.copy", "search.highlight", "search.share", "content.code.annotate", "navigation.tabs"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.annotate", "navigation.indexes", "navigation.expand", "toc.follow", "navigation.top", "search.suggest", "navigation.footer", "navigation.tabs", "navigation.tracking", "navigation.instant.progress", "content.code.copy", "search.highlight", "search.share", "content.code.annotate", "navigation.tabs"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
       
         <script src="https://gcore.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
       
