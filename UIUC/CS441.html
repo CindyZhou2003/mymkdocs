@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../assets/images/favcion.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -4090,6 +4090,67 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#lecture-20-foundation-models-clip-and-gpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecture 20: Foundation Models — CLIP and GPT
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 20: Foundation Models — CLIP and GPT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clip-contrastive-language-image-pre-training-radford-et-al-2021" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CLIP: Contrastive Language-Image Pre-training (Radford et al. 2021)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gpt-generative-pre-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GPT: Generative Pre-Training
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scaling-laws-and-limits-gpt-4-and-beyond" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scaling laws and limits: GPT-4 and beyond
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-to-remember_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What to remember
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -6924,6 +6985,67 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#lecture-20-foundation-models-clip-and-gpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecture 20: Foundation Models — CLIP and GPT
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 20: Foundation Models — CLIP and GPT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clip-contrastive-language-image-pre-training-radford-et-al-2021" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CLIP: Contrastive Language-Image Pre-training (Radford et al. 2021)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gpt-generative-pre-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GPT: Generative Pre-Training
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scaling-laws-and-limits-gpt-4-and-beyond" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scaling laws and limits: GPT-4 and beyond
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-to-remember_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What to remember
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -6946,7 +7068,7 @@
 
 <h1 id="cs441-applied-machine-learning">CS441 Applied Machine Learning<a class="headerlink" href="#cs441-applied-machine-learning" title="Permanent link">&para;</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 17989 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M360.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m64.6 136.1c-12.5 12.5-12.5 32.8 0 45.3l73.4 73.4-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0zm-274.7 0c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l73.3-73.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span> 59 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"/></svg></span> 28 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 61 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 19603 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M360.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m64.6 136.1c-12.5 12.5-12.5 32.8 0 45.3l73.4 73.4-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0zm-274.7 0c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l73.3-73.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span> 59 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"/></svg></span> 28 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 66 分钟</p>
 </div>
 <h2 id="lecture-1-introduction">Lecture 1: Introduction<a class="headerlink" href="#lecture-1-introduction" title="Permanent link">&para;</a></h2>
 <p><strong>Instructor:</strong> Derek Hoiem</p>
@@ -7503,7 +7625,7 @@
 <tr>
 <td>计算效率</td>
 <td>较慢</td>
-<td>较快(more efficient)</td>
+<td><em>较快(more efficient)</em></td>
 </tr>
 <tr>
 <td>适合什么情况</td>
@@ -7833,7 +7955,7 @@
 <p>Two approaches:</p>
 <ol>
 <li><strong>MLE (maximum likelihood estimation):</strong> choose the parameter maximizing the likelihood of the data 最大似然估计</li>
-<li><strong>MAP (maximum a priori):</strong> choose the parameter maximizing the data likelihood <em>and</em> its own prior 最大后验估计</li>
+<li><strong>MAP (maximum a posteriori):</strong> choose the parameter maximizing the data likelihood <em>and</em> its own prior 最大后验估计</li>
 </ol>
 <h4 id="mle">MLE<a class="headerlink" href="#mle" title="Permanent link">&para;</a></h4>
 <ul>
@@ -8163,7 +8285,7 @@
 </tr>
 <tr>
 <td>Examples</td>
-<td>Gaussian, exponential</td>
+<td>Gaussian, exponential, Uniform</td>
 <td>Mixture of Gaussians</td>
 <td>Discretization, kernel density estimation</td>
 </tr>
@@ -10169,6 +10291,230 @@
 <li>Arguably their biggest benefit is the ability to <strong>combine information from multiple domains</strong></li>
 <li>Next class: foundation models (CLIP, the GPT line of work)</li>
 </ul>
+<h2 id="lecture-20-foundation-models-clip-and-gpt">Lecture 20: Foundation Models — CLIP and GPT<a class="headerlink" href="#lecture-20-foundation-models-clip-and-gpt" title="Permanent link">&para;</a></h2>
+<p><strong>Foundation model 基础模型</strong>: a model trained with huge data and compute on a broad task, for general-purpose use or adaptation to other tasks.</p>
+<p>Key questions: <strong>how to train</strong> (architecture, data, objective) and <strong>how to apply</strong>:</p>
+<ul>
+<li><strong>Zero-shot 零样本</strong>: apply to a new task with <strong>no</strong> training examples for that task</li>
+<li><strong>Linear probe 线性探测</strong>: train a linear model on the frozen features</li>
+<li><strong>Fine-tune 微调</strong>: adjust the whole network for the target task</li>
+</ul>
+<p>Earlier foundation models were used by <strong>fine-tuning</strong> (ImageNet models for vision, BERT for language). <strong>CLIP</strong> and <strong>GPT</strong> can do <strong>zero-shot</strong>.</p>
+<h3 id="clip-contrastive-language-image-pre-training-radford-et-al-2021">CLIP: Contrastive Language-Image Pre-training (Radford et al. 2021)<a class="headerlink" href="#clip-contrastive-language-image-pre-training-radford-et-al-2021" title="Permanent link">&para;</a></h3>
+<p><strong>Key idea 1 — use a text encoder as the classifier</strong></p>
+<ul>
+<li>An old idea (words-and-pictures work since ~2000), but at small scale; the challenge was <strong>scaling up</strong>:<ul>
+<li>learn from <strong>natural language supervision</strong> (captions, not tags or class labels)</li>
+<li>scrape <strong>400 million image–text pairs</strong></li>
+<li><strong>contrastive objective</strong> instead of predicting the exact words</li>
+<li>Transformer architecture</li>
+</ul>
+</li>
+</ul>
+<p><strong>Key idea 2 — contrastively match text to images 对比学习</strong></p>
+<ul>
+<li>Image encoder (ResNet or ViT) + small text Transformer (63M params for base); both project into the <strong>same embedding space</strong> and are L2-normalized</li>
+<li>Huge batch (<strong>32,768</strong>): encode every image and caption, compute the <strong>32K × 32K</strong> similarity matrix <span class="arithmatex">\(I_i\cdot T_j\)</span></li>
+<li>Loss = <strong>cross-entropy</strong> for matching each image to its own text <strong>and</strong> each text to its own image (symmetric) → the <strong>diagonal</strong> (correct pairs) should score high, all off-diagonal (wrong pairs) low</li>
+<li>Contrastive formulations are a good general way to learn <strong>when the exact target is unpredictable</strong> (many captions could describe one image)</li>
+<li>Cost: largest ResNet (RN50x64) 18 days on 592 V100s (~<span class="arithmatex">\(300K); largest ViT 12 days on 256 V100s (~\)</span>91K)</li>
+</ul>
+<p><strong>Key idea 3 — zero-shot classification</strong></p>
+<p>Every training batch is like a new 32K-way classification task. To build a classifier for a new task:</p>
+<ol>
+<li>Turn each class label into a caption (e.g. "A photo of a {dog}.") and <strong>encode the text</strong></li>
+<li><strong>Encode the image</strong></li>
+<li>Assign the label whose caption has the <strong>highest similarity</strong> to the image</li>
+</ol>
+<p><strong>Four ways to adapt CLIP to a new task</strong></p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>How</th>
+<th>Keeps CLIP's generality?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Zero-shot</strong></td>
+<td>labels → text, use text–image similarity</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><strong>Linear probe</strong></td>
+<td>freeze the image encoder, train a linear layer on its features</td>
+<td>✅ (encoder unchanged)</td>
+</tr>
+<tr>
+<td><strong>Nearest neighbor</strong> (not in paper)</td>
+<td>store training features, K-NN classifier</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><strong>Fine-tune</strong></td>
+<td>update the CLIP encoder on the new task</td>
+<td>❌ <strong>loses its generality</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Results</strong></p>
+<ul>
+<li><strong>Zero-shot CLIP ≈ a strong baseline trained on 16 examples per class</strong>; a linear probe on CLIP needs ~<strong>4 examples per class</strong> to match zero-shot</li>
+<li>Zero-shot correlates with linear-probe performance (r = 0.82) but is usually <strong>10–25 points lower</strong></li>
+<li>Zero-shot error falls <strong>smoothly with model compute</strong> (scaling)</li>
+<li>CLIP is used as the image/text encoder in many later models: DALL-E 2, Stable Diffusion, BLIP-2, Molmo</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Quiz traps: CLIP 易错点</p>
+<p><strong>What is CLIP trained to do?</strong></p>
+<ul>
+<li>✅ <mark>Make correct image–text pairs have much higher similarity than incorrect pairs</mark> (对比学习)</li>
+<li>❌ Generate the words of a caption — that's captioning / GPT-style generation</li>
+<li>❌ Fill in missing words of a caption — that's <strong>BERT</strong>'s MLM</li>
+<li>❌ Generate an image from a caption — that's DALL-E / Stable Diffusion (which <em>use</em> CLIP, but CLIP itself doesn't generate)</li>
+</ul>
+<p><strong>Use CLIP on a new task <em>without losing its general ability</em>?</strong></p>
+<ul>
+<li>✅ <mark>Linear probe</mark> on the CLIP image encoding (encoder frozen 冻结)</li>
+<li>✅ <mark>Zero-shot</mark> by encoding the new task's text labels</li>
+<li>❌ Fine-tune the CLIP image encoder — changes the encoder, so it <strong>loses its generality</strong></li>
+</ul>
+</div>
+<h3 id="gpt-generative-pre-training">GPT: Generative Pre-Training<a class="headerlink" href="#gpt-generative-pre-training" title="Permanent link">&para;</a></h3>
+<p><strong>GPT-1 (Radford et al. 2018)</strong></p>
+<ul>
+<li>Came <strong>before BERT</strong>; similar architecture and training (117M params vs. 340M for BERT-Large); <strong>decoder-only</strong>, 12 blocks with <strong>masked</strong> self-attention</li>
+<li><strong>Pre-training</strong>: maximize data likelihood as a product of conditional probabilities — <strong>predict each token from the <span class="arithmatex">\(k\)</span> tokens before it</strong> (next-token prediction 预测下一个 token), on BooksCorpus:
+    $<span class="arithmatex">\(L_1(\mathcal U)=\sum_i\log P(u_i\mid u_{i-k},\dots,u_{i-1};\Theta)\)</span>$</li>
+<li><strong>Fine-tuned per task</strong> (keeping the generative objective too); some tasks need special input formats (e.g. entailment = <code>Start Premise Delim Hypothesis Extract</code> → Transformer → Linear)</li>
+<li>State of the art on 9 of 12 tasks</li>
+</ul>
+<p><strong>GPT-2 (Radford et al. 2019) — "Language Models are Unsupervised Multitask Learners"</strong></p>
+<ul>
+<li>Goal: a <strong>general-purpose</strong> learner instead of "narrow experts" trained on one dataset each</li>
+<li>A general system should model <span class="arithmatex">\(P(\text{output}\mid\text{input},\text{task})\)</span>; the <strong>task can be given in natural language</strong>, so language tasks become <strong>sequence-to-sequence</strong> text processing (input in some modality → output in some modality, not class probabilities for one fixed task)</li>
+<li><strong>Data</strong>: <strong>WebText</strong> — pages linked from Reddit posts with ≥3 karma (quality filter, no manual labels); 8M documents, 40GB; Wikipedia removed (common in test sets)</li>
+<li><strong>Trained generatively on WebText only, not fine-tuned</strong> on anything</li>
+<li>Sizes 117M (GPT-1 size), 345M (BERT size), 762M, 1542M; architecture basically the same as GPT-1/BERT</li>
+<li><strong>Zero-shot</strong>: state of the art on many tasks without tuning; much worse at summarization and translation (but can translate word for word). <strong>Perplexity</strong> 困惑度 (PPL) = <span class="arithmatex">\(2^{\text{entropy}}\)</span>, lower is better</li>
+<li>Performance keeps improving <strong>log-linearly with model size</strong> → "high-capacity models trained to maximize the likelihood of a sufficiently varied text corpus begin to learn how to perform a surprising amount of tasks <strong>without explicit supervision</strong>"</li>
+</ul>
+<p><strong>GPT-3 (Brown et al. 2020) — "Language Models are Few-Shot Learners"</strong></p>
+<ul>
+<li>Up to <strong>175B parameters</strong> (96 layers, <span class="arithmatex">\(d_{model}\)</span> = 12288, 96 heads); all models trained on <strong>300B tokens</strong></li>
+<li>Data mix: filtered Common Crawl (60%), WebText2 (22%), Books1/Books2 (8% each), Wikipedia (3%)</li>
+<li>Compute list price ~<strong>$4.5M</strong></li>
+<li><strong>In-context learning 上下文学习</strong> — <strong>no gradient updates</strong>, the examples are just put in the prompt:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Prompt contains</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Zero-shot</strong></td>
+<td>task description only ("Translate English to French: cheese =&gt;")</td>
+</tr>
+<tr>
+<td><strong>One-shot</strong></td>
+<td>task description + <strong>1</strong> example</td>
+</tr>
+<tr>
+<td><strong>Few-shot</strong></td>
+<td>task description + <strong>a few</strong> examples</td>
+</tr>
+<tr>
+<td>Fine-tuning (<strong>not used</strong> for GPT-3)</td>
+<td>repeated <strong>gradient updates</strong> on many examples</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Zero-shot improves with scale, but <strong>few-shot improves even faster</strong> → larger models are better in-context learners</li>
+<li>Few-shot GPT-3 ≈ <strong>fine-tuned BERT-Large</strong> on average (SuperGLUE 71.8 vs. 69.0), varies by task; specialized fine-tuned SOTA models are still best — but <strong>flexibility</strong> matters</li>
+<li>Arithmetic ability appears suddenly at large scale (2-digit addition near 100% at 175B)</li>
+<li>Humans can barely tell GPT-3 175B news articles from real ones (~52%, near chance)</li>
+</ul>
+<p><strong>What to learn from the GPT papers</strong></p>
+<ul>
+<li><strong>GPT</strong>: generative pre-training (predict the next word from preceding words) is effective for LLMs</li>
+<li><strong>GPT-2</strong>: larger models + more data → reasonable <strong>zero-shot</strong> performance</li>
+<li><strong>GPT-3</strong>: even larger → good at many tasks, especially generation, and can be "trained" at <strong>inference time with in-context examples</strong></li>
+</ul>
+<p><strong>GPT-3 → ChatGPT</strong>: <strong>SFT</strong> (supervised fine-tuning 监督微调 on demonstrations) → <strong>RLHF</strong> (Reinforcement Learning from Human Feedback 基于人类反馈的强化学习): humans rank several outputs → train a <strong>reward model</strong> (quality scorer) → tune the model with RL (PPO) to give higher-quality responses.</p>
+<div class="admonition warning">
+<p class="admonition-title">Quiz traps: GPT vs. BERT 易错点</p>
+<p><strong>Training task of GPT-3?</strong> ✅ <mark>Predict the next token</mark> (预测下一个 token). ❌ Fill in the blank (= BERT MLM), ❌ sentence classification, ❌ suite of benchmark tasks (those are <em>evaluations</em>, not the training task).</p>
+<table>
+<thead>
+<tr>
+<th>Applies to</th>
+<th>GPT-3</th>
+<th>BERT</th>
+<th>Both?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Transformer-based</strong> architecture</td>
+<td>✅ decoder-only</td>
+<td>✅ encoder-only</td>
+<td><mark>✅</mark></td>
+</tr>
+<tr>
+<td>Pre-training by <strong>next-token prediction</strong></td>
+<td>✅</td>
+<td>❌ MLM + NSP</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Adapt to target tasks by <strong>fine-tuning</strong></td>
+<td>❌ in-context learning (zero/few-shot), no gradient updates</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="scaling-laws-and-limits-gpt-4-and-beyond">Scaling laws and limits: GPT-4 and beyond<a class="headerlink" href="#scaling-laws-and-limits-gpt-4-and-beyond" title="Permanent link">&para;</a></h3>
+<p><strong>Scaling laws</strong> (Kaplan et al. 2020) — predict big-model performance from small runs:</p>
+<ul>
+<li><strong>Test loss follows simple power laws</strong> in parameters <span class="arithmatex">\(N\)</span>, data tokens <span class="arithmatex">\(D\)</span> and compute <span class="arithmatex">\(C_{min}\propto N\times D\)</span></li>
+<li>Loss depends only <strong>weakly on architecture shape</strong> (depth vs. width, heads, FF ratio) when <span class="arithmatex">\(N\)</span> is fixed</li>
+<li><strong>Larger models are more sample-efficient</strong> 样本效率更高: they need fewer tokens to reach the same loss</li>
+<li><strong>GPT-4</strong>'s loss and coding ability were predicted accurately from much smaller runs</li>
+</ul>
+<p><strong>Are bigger models enough?</strong> No — scaling alone (Gopher 280B vs. 7.1B) barely helps <strong>mathematical and logical reasoning</strong> tasks.</p>
+<p><strong>Ways to get better reasoning</strong></p>
+<ul>
+<li><strong>Chain-of-Thought (CoT) 思维链 prompting</strong>: put a worked reasoning example in the prompt → the model writes out its steps. Big gains on math word problems (PaLM 540B on GSM8K: 18% → 57%); CoT is an <strong>emergent ability of scale</strong> (helps only large models)</li>
+<li><strong>CoT in training</strong> (OpenAI o1): RL on chain-of-thought → the model learns to <strong>think longer</strong>, re-check and try alternatives</li>
+<li><strong>Tools / agents</strong>: let the model run code, browse and use a terminal (e.g. Humanity's Last Exam: o3 20.3% → with tools 24.9% → ChatGPT agent 41.6%)</li>
+<li><strong>DeepSeek-R1 (2025)</strong>: open recipe for o1-style reasoning<ul>
+<li><strong>R1-Zero = pure RL</strong>, no supervised reasoning data: sample many answers, reward only a <strong>correct final answer + correct format</strong> (GRPO, no learned reward model). Answers well but traces are unreadable; longer thinking and reflection ("wait…") <strong>emerge on their own</strong></li>
+<li><strong>R1</strong> = small SFT warm-up → reasoning RL → SFT on its own filtered outputs → RLHF; comparable to o1</li>
+<li>Reasoning can be <strong>distilled</strong> 蒸馏 into small models (1.5B–70B) via SFT on R1's outputs</li>
+</ul>
+</li>
+<li><strong>Best-of-N</strong>: run the model many times in parallel and pick the best answer (GPT-5 Pro, Gemini DeepThink, Grok 4 Heavy) — more <strong>test-time compute</strong> 推理时计算</li>
+</ul>
+<p><strong>Each capability jump had a different driver</strong>: knowledge (MMLU) ← <strong>pretraining scale</strong>; ChatGPT (RLHF) ← no score jump but <strong>usable</strong>; PhD science (GPQA) ← <strong>RL-trained reasoning</strong>; competition math (AIME) ← <strong>test-time compute</strong> / RL with verifiable rewards; GitHub issues (SWE-bench) ← <strong>agents + tools</strong>.</p>
+<h3 id="what-to-remember_1">What to remember<a class="headerlink" href="#what-to-remember_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Deep learning models are rarely trained from scratch:<ul>
+<li>large <strong>supervised</strong> dataset → fine-tune (ImageNet models)</li>
+<li>large <strong>unsupervised</strong> dataset → fine-tune (BERT)</li>
+<li>large <strong>unsupervised</strong> dataset → apply <strong>without fine-tuning</strong> (CLIP, GPT)</li>
+</ul>
+</li>
+<li>With large-scale training and the right formulation, models can do tasks they weren't explicitly trained for</li>
+<li><strong>CLIP</strong>: learning to <strong>match images to text</strong> gives a good zero-shot classifier and an excellent image encoder</li>
+<li><strong>GPT</strong>: learning to <strong>predict the next word</strong> gives a flexible zero-shot and few-shot language task performer</li>
+</ul>
 
 
 
@@ -10189,7 +10535,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2026年11月2日 04:18:22 CST">2026年11月2日 04:18:22</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2026年11月8日 10:08:13 CST">2026年11月8日 10:08:13</span>
   </span>
 
     
@@ -10367,7 +10713,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.annotate", "navigation.indexes", "navigation.expand", "toc.follow", "navigation.top", "search.suggest", "navigation.footer", "navigation.tabs", "navigation.tracking", "navigation.instant.progress", "content.code.copy", "search.highlight", "search.share", "content.code.annotate", "navigation.tabs"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
         <script src="https://gcore.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
       

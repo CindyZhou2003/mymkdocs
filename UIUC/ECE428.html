@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../assets/images/favcion.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -4904,10 +4904,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#rpcremote-procedure-call" class="md-nav__link">
+  <a href="#why-rpcs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        RPC(remote procedure call)
+        Why RPCs
       
     </span>
   </a>
@@ -4919,6 +4919,634 @@
     <span class="md-ellipsis">
       
         Local Procedure Call (LPC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-procedure-call" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remote Procedure Call
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rpc-call-semantics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RPC Call Semantics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RPC Call Semantics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#implementing-rpc-call-semantics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implementing RPC Call Semantics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#idempotent-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Idempotent Operations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementing-rpcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implementing RPCs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implementing RPCs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auto-generated-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto-Generated Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marshalling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Marshalling 编码
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transactions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Transactions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atomicity-and-isolation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Atomicity and Isolation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acid-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ACID Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-clients-one-server-what-could-go-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multiple Clients, One Server: What Could Go Wrong?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Multiple Clients, One Server: What Could Go Wrong?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-lost-update-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Lost Update Problem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-inconsistent-retrieval-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Inconsistent Retrieval Problem
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concurrent-transactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concurrent Transactions 并发
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serial-equivalence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Serial Equivalence
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Serial Equivalence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conflicting-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conflicting Operations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checking-for-serial-equivalence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checking for Serial Equivalence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-do-we-use-serial-equivalence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How Do We Use Serial Equivalence?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pessimistic-exclusive-locking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pessimistic: Exclusive Locking
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pessimistic: Exclusive Locking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#can-we-improve-concurrency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Can We Improve Concurrency?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#read-write-locks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Read-Write Locks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#two-phase-locking-2pl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Two-phase Locking (2PL)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#downside-of-locking-deadlocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Downside of Locking: Deadlocks!
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Downside of Locking: Deadlocks!">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-do-deadlocks-occur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When do Deadlocks Occur?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combating-deadlocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combating Deadlocks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optimistic-concurrency-control-occ" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optimistic Concurrency Control (OCC)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Optimistic Concurrency Control (OCC)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#first-cut-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        First-cut Approach
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#second-approach-timestamp-ordering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Second Approach: Timestamp Ordering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#third-approach-multi-version-concurrency-control-mvcc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Third Approach: Multi-version Concurrency Control (MVCC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eventual-consistency_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eventual Consistency
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Eventual Consistency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cassandra-and-dynamodb-last-write-wins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cassandra and DynamoDB: Last-Write-Wins
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#riak-vector-clocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Riak: Vector Clocks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-22-replication-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecture 22: Replication Control
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 22: Replication Control">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#server-side-focus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Server-side Focus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replication-what-and-why" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Replication: What and Why
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#availability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Availability
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Availability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nines-availability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nines Availability
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whats-the-catch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's the Catch?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What&#39;s the Catch?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#replication-transparency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Replication Transparency
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replication-consistency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Replication Consistency
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#passive-replication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passive Replication
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#active-replication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Active Replication
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Active Replication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#active-replication-using-concepts-youve-learnt-earlier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Active Replication Using Concepts You've Learnt Earlier
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transactions-and-replication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transactions and Replication
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transactions-with-distributed-servers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transactions with Distributed Servers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#one-phase-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        One-phase Commit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#two-phase-commit-2pc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Two-phase Commit (2PC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-paxos-in-distributed-servers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Paxos in Distributed Servers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
       
     </span>
   </a>
@@ -8750,10 +9378,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#rpcremote-procedure-call" class="md-nav__link">
+  <a href="#why-rpcs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        RPC(remote procedure call)
+        Why RPCs
       
     </span>
   </a>
@@ -8765,6 +9393,634 @@
     <span class="md-ellipsis">
       
         Local Procedure Call (LPC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-procedure-call" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remote Procedure Call
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rpc-call-semantics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RPC Call Semantics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RPC Call Semantics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#implementing-rpc-call-semantics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implementing RPC Call Semantics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#idempotent-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Idempotent Operations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementing-rpcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implementing RPCs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implementing RPCs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auto-generated-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto-Generated Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marshalling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Marshalling 编码
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transactions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Transactions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atomicity-and-isolation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Atomicity and Isolation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acid-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ACID Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-clients-one-server-what-could-go-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multiple Clients, One Server: What Could Go Wrong?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Multiple Clients, One Server: What Could Go Wrong?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-lost-update-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Lost Update Problem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-inconsistent-retrieval-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Inconsistent Retrieval Problem
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concurrent-transactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concurrent Transactions 并发
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serial-equivalence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Serial Equivalence
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Serial Equivalence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conflicting-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conflicting Operations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checking-for-serial-equivalence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checking for Serial Equivalence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-do-we-use-serial-equivalence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How Do We Use Serial Equivalence?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pessimistic-exclusive-locking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pessimistic: Exclusive Locking
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pessimistic: Exclusive Locking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#can-we-improve-concurrency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Can We Improve Concurrency?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#read-write-locks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Read-Write Locks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#two-phase-locking-2pl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Two-phase Locking (2PL)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#downside-of-locking-deadlocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Downside of Locking: Deadlocks!
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Downside of Locking: Deadlocks!">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-do-deadlocks-occur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When do Deadlocks Occur?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combating-deadlocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combating Deadlocks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optimistic-concurrency-control-occ" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optimistic Concurrency Control (OCC)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Optimistic Concurrency Control (OCC)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#first-cut-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        First-cut Approach
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#second-approach-timestamp-ordering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Second Approach: Timestamp Ordering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#third-approach-multi-version-concurrency-control-mvcc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Third Approach: Multi-version Concurrency Control (MVCC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eventual-consistency_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eventual Consistency
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Eventual Consistency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cassandra-and-dynamodb-last-write-wins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cassandra and DynamoDB: Last-Write-Wins
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#riak-vector-clocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Riak: Vector Clocks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-22-replication-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecture 22: Replication Control
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 22: Replication Control">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#server-side-focus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Server-side Focus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replication-what-and-why" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Replication: What and Why
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#availability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Availability
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Availability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nines-availability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nines Availability
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whats-the-catch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's the Catch?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What&#39;s the Catch?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#replication-transparency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Replication Transparency
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replication-consistency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Replication Consistency
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#passive-replication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passive Replication
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#active-replication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Active Replication
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Active Replication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#active-replication-using-concepts-youve-learnt-earlier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Active Replication Using Concepts You've Learnt Earlier
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transactions-and-replication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transactions and Replication
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transactions-with-distributed-servers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transactions with Distributed Servers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#one-phase-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        One-phase Commit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#two-phase-commit-2pc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Two-phase Commit (2PC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-paxos-in-distributed-servers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Paxos in Distributed Servers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
       
     </span>
   </a>
@@ -8798,7 +10054,7 @@
 
 <h1 id="cs-425-ece-428-distributed-systems">CS 425 / ECE 428 Distributed Systems<a class="headerlink" href="#cs-425-ece-428-distributed-systems" title="Permanent link">&para;</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 35910 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M360.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m64.6 136.1c-12.5 12.5-12.5 32.8 0 45.3l73.4 73.4-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0zm-274.7 0c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l73.3-73.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span> 160 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"/></svg></span> 10 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 122 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 40384 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M360.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m64.6 136.1c-12.5 12.5-12.5 32.8 0 45.3l73.4 73.4-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0zm-274.7 0c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l73.3-73.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span> 205 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"/></svg></span> 10 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 137 分钟</p>
 </div>
 <h2 id="lecture-1-welcome-and-introduction">Lecture 1: Welcome, and Introduction<a class="headerlink" href="#lecture-1-welcome-and-introduction" title="Permanent link">&para;</a></h2>
 <p>Operating System - The low-level software which handles peripheral hardware, schedules tasks, allocates storage, and presents a default interface to the user when no application program is running.</p>
@@ -12388,7 +13644,7 @@
 <tbody>
 <tr>
 <td>49</td>
-<td P1_P2_P3="P1,P2,P3">P1, P2, P3 deliver M1, M2, M3, then all install</td>
+<td P1_P2_P3>P1, P2, P3 deliver M1, M2, M3, then all install</td>
 <td>✓</td>
 <td>Same set of messages in the old view at every survivor</td>
 </tr>
@@ -12400,13 +13656,13 @@
 </tr>
 <tr>
 <td>51</td>
-<td P1_P2="P1,P2">Same as 50, but P1, P2 install</td>
+<td P1_P2>Same as 50, but P1, P2 install</td>
 <td>✓</td>
 <td>P3 missed M1, so it is <strong>removed</strong> from the next view (rule 3)</td>
 </tr>
 <tr>
 <td>52</td>
-<td P1_P2_P3="P1,P2,P3">M2 to P3 is lost; P3 still joins</td>
+<td P1_P2_P3>M2 to P3 is lost; P3 still joins</td>
 <td>✗</td>
 <td>P3 missed M2 in the old view but is not removed</td>
 </tr>
@@ -14404,14 +15660,1275 @@
 <li>Industry systems: <strong>Chubby</strong> (a coordination service), and similarly <strong>Apache Zookeeper</strong></li>
 </ul>
 <h2 id="lecture-20-21-rpcs-concurrency-control-transactions">Lecture 20-21: RPCs, Concurrency Control, &amp; Transactions<a class="headerlink" href="#lecture-20-21-rpcs-concurrency-control-transactions" title="Permanent link">&para;</a></h2>
-<h3 id="rpcremote-procedure-call">RPC(remote procedure call)<a class="headerlink" href="#rpcremote-procedure-call" title="Permanent link">&para;</a></h3>
-<p>Important abstraction for processes to call functions in other processes 进程间通信</p>
-<p>Allows code reuse</p>
-<p>Implemented and used in most distributed systems, including cloud computing systems</p>
-<p>Counterpart in Object-based settings is called RMI (Remote Method Invocation)</p>
+<h3 id="why-rpcs">Why RPCs<a class="headerlink" href="#why-rpcs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>RPC = Remote Procedure Call</strong>, proposed by <strong>Birrell and Nelson in 1984</strong></li>
+<li>An important abstraction for processes to <strong>call functions in other processes</strong>（进程间通信）</li>
+<li>Allows <strong>code reuse</strong></li>
+<li>Implemented and used in most distributed systems, including cloud computing systems</li>
+<li>The counterpart in object-based settings is <strong>RMI (Remote Method Invocation)</strong></li>
+</ul>
 <h3 id="local-procedure-call-lpc">Local Procedure Call (LPC)<a class="headerlink" href="#local-procedure-call-lpc" title="Permanent link">&para;</a></h3>
-<p>Call from one function to another function within the same process – Uses stack/registers to pass arguments and return values – Accesses objects via pointers (e.g., C) or by reference (e.g., Java) • LPC has exactly-once semantics – If process is alive, called function executed exactly once</p>
-<p>进程内通信</p>
+<p>A call from one function to another function <strong>within the same process</strong>（进程内通信）.</p>
+<ul>
+<li>Uses the <strong>stack/registers</strong> to pass arguments and return values</li>
+<li>Accesses objects via <strong>pointers</strong> (e.g. C) or <strong>by reference</strong> (e.g. Java)</li>
+<li>LPC has <strong>exactly-once</strong> semantics: if the process is alive, the called function is executed exactly once</li>
+</ul>
+<h3 id="remote-procedure-call">Remote Procedure Call<a class="headerlink" href="#remote-procedure-call" title="Permanent link">&para;</a></h3>
+<p>A call from one function to another function, where the caller and callee <strong>reside in different processes</strong>.</p>
+<ul>
+<li>The function call <strong>crosses a process boundary</strong></li>
+<li>Procedures are accessed via <strong>global references</strong><ul>
+<li>You can't use pointers across processes: an address in process P1 may point to a different object in P2</li>
+<li>E.g. procedure address = <strong>IP + port + procedure number</strong></li>
+</ul>
+</li>
+<li>Similarly, <strong>RMI</strong> in object-based settings</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Call</th>
+<th>Where caller and callee are</th>
+<th>Transport</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LPC</td>
+<td>Same process</td>
+<td>Stack / registers</td>
+</tr>
+<tr>
+<td>RPC (same host)</td>
+<td>Different processes on Host A</td>
+<td>IPC between the processes</td>
+</tr>
+<tr>
+<td>RPC (remote)</td>
+<td>P1 on Host A, P2 on Host B</td>
+<td><strong>RPC request message</strong> → <strong>RPC reply message</strong> over the network</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rpc-call-semantics">RPC Call Semantics<a class="headerlink" href="#rpc-call-semantics" title="Permanent link">&para;</a></h3>
+<p>Under failures, it's hard to guarantee <strong>exactly-once</strong> semantics.</p>
+<ul>
+<li>The function may <strong>not be executed</strong> if<ul>
+<li>the request (call) message is <strong>dropped</strong></li>
+<li>the reply (return) message is <strong>dropped</strong></li>
+<li>the callee process fails <strong>before</strong> executing the called function</li>
+<li>the callee process fails <strong>after</strong> executing the called function</li>
+<li>⚠️ It's <strong>hard for the caller to distinguish</strong> these cases: all of them look like "no reply"</li>
+</ul>
+</li>
+<li>The function may be <strong>executed multiple times</strong> if<ul>
+<li>the request (call) message is <strong>duplicated</strong></li>
+</ul>
+</li>
+</ul>
+<h4 id="implementing-rpc-call-semantics">Implementing RPC Call Semantics<a class="headerlink" href="#implementing-rpc-call-semantics" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Retransmit request?</th>
+<th>Filter duplicate requests?</th>
+<th>Re-execute function or retransmit reply?</th>
+<th>RPC semantics</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Yes</td>
+<td>No</td>
+<td>Re-execute</td>
+<td><strong>At least once</strong></td>
+<td>Sun RPC</td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>Yes</td>
+<td>Retransmit (the cached reply)</td>
+<td><strong>At most once</strong></td>
+<td>Java RMI</td>
+</tr>
+<tr>
+<td>No</td>
+<td>N/A</td>
+<td>N/A</td>
+<td><strong>Maybe</strong> (best-effort)</td>
+<td>CORBA</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>At least once</strong>：caller 超时就重发，callee 每次都执行 → 至少执行一次，但可能多次</li>
+<li><strong>At most once</strong>：callee 记住已处理过的请求，重复请求直接重发上次的 reply，不再执行 → 最多执行一次</li>
+<li><strong>Maybe</strong>：不重发，丢了就丢了</li>
+</ul>
+<h4 id="idempotent-operations">Idempotent Operations<a class="headerlink" href="#idempotent-operations" title="Permanent link">&para;</a></h4>
+<p><strong>Idempotent</strong> operations can be repeated multiple times <strong>without any side effects</strong>（幂等：执行一次和执行多次效果一样）.</p>
+<table>
+<thead>
+<tr>
+<th>Idempotent ✅ (x is a variable in P2)</th>
+<th>Not idempotent ❌</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>x = 1;</code></td>
+<td><code>x = x + 1;</code></td>
+</tr>
+<tr>
+<td><code>x = (argument) y;</code></td>
+<td><code>x = x * 2;</code></td>
+</tr>
+</tbody>
+</table>
+<p>Idempotent operations can be used safely with <strong>at-least-once</strong> semantics.</p>
+<h3 id="implementing-rpcs">Implementing RPCs<a class="headerlink" href="#implementing-rpcs" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1">1</a></span>
+<span class="normal"><a href="#__codelineno-17-2">2</a></span>
+<span class="normal"><a href="#__codelineno-17-3">3</a></span>
+<span class="normal"><a href="#__codelineno-17-4">4</a></span>
+<span class="normal"><a href="#__codelineno-17-5">5</a></span>
+<span class="normal"><a href="#__codelineno-17-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1"></a>P1 ("client")                    P2 ("server")
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2"></a>  caller()                         callee()
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3"></a>     ↕                                ↕
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4"></a>  Client stub                      Server stub
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5"></a>     ↕                                ↕
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6"></a>  Communication module   ⇄   Communication module → Dispatcher
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Side</th>
+<th>Component</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Client</td>
+<td><strong>Client stub</strong></td>
+<td>Has the <strong>same function signature</strong> as <code>callee()</code>, so the same <code>caller()</code> code works for LPC and RPC</td>
+</tr>
+<tr>
+<td>Client</td>
+<td><strong>Communication module</strong></td>
+<td>Forwards requests and replies to the appropriate hosts</td>
+</tr>
+<tr>
+<td>Server</td>
+<td><strong>Dispatcher</strong></td>
+<td>Selects which server stub to forward the request to</td>
+</tr>
+<tr>
+<td>Server</td>
+<td><strong>Server stub</strong></td>
+<td>Calls <code>callee()</code> and lets it return a value</td>
+</tr>
+</tbody>
+</table>
+<details class="question">
+<summary>Poll: can RPCs be combined?</summary>
+<ul>
+<li><strong>Can the callee (P2) invoke an RPC to another process (P3) while servicing P1's RPC?</strong> Yes. RPCs can <strong>cascade</strong>: P2 becomes a client of server P3</li>
+<li><strong>Can the caller (P1) invoke an RPC to a different server (P3)?</strong> Yes. P1 can call P2, then P3, and so on sequentially; it can even issue <strong>2+ RPCs in parallel</strong> to different servers</li>
+</ul>
+</details>
+<h4 id="auto-generated-code">Auto-Generated Code<a class="headerlink" href="#auto-generated-code" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Many popular libraries/frameworks:<ul>
+<li><strong>gRPC</strong> (<code>.proto</code> file): Google's <strong>protocol buffers</strong></li>
+<li><strong>Apache Thrift</strong> (<code>.thrift</code> file): originally built by Facebook</li>
+<li>xmlrpc-c, json-rpc, Cap'n Proto, tRPC, etc.</li>
+</ul>
+</li>
+<li>Some frameworks (gRPC/Thrift) use a formal <strong>Interface Definition Language (IDL)</strong><ul>
+<li>Programmers write (1) the <strong>IDL spec</strong> (<code>.proto</code>/<code>.thrift</code> file) and (2) the <strong>caller and callee</strong> functions</li>
+<li>The IDL spec is used to <strong>generate code for both stubs and the dispatcher</strong>, plus some fraction of the communication modules</li>
+</ul>
+</li>
+</ul>
+<h4 id="marshalling">Marshalling 编码<a class="headerlink" href="#marshalling" title="Permanent link">&para;</a></h4>
+<p>客户端存根（client stub）的主要职责是 marshalling：把调用方的参数序列化成统一的数据格式，打包成网络消息发给服务器，收到回复后再反序列化成返回值。</p>
+<p>Different architectures represent data differently:</p>
+<table>
+<thead>
+<tr>
+<th>Byte order</th>
+<th>Hex <code>12-AC-33</code> stored as (lowest → highest address)</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Big endian</strong> 大端</td>
+<td><code>12</code>, <code>AC</code>, <code>33</code></td>
+<td>IBM z, System 360</td>
+</tr>
+<tr>
+<td><strong>Little endian</strong> 小端</td>
+<td><code>33</code>, <code>AC</code>, <code>12</code></td>
+<td>Intel</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>The caller (and callee) process uses its own <strong>platform-dependent</strong> way of storing data</li>
+<li>Communication works by translating to/from a <strong>common, platform-independent data format</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Framework</th>
+<th>Platform-independent format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gRPC</td>
+<td>Protocol buffers</td>
+</tr>
+<tr>
+<td>Apache Thrift</td>
+<td>TBinaryProtocol or TCompactProtocol</td>
+</tr>
+<tr>
+<td>xmlrpc-c / jsonrpc</td>
+<td>XML / JSON string</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Marshalling</strong> (aka <strong>serialization</strong>): the <strong>client stub</strong> converts arguments into this format</li>
+<li><strong>Unmarshalling</strong> (aka <strong>deserialization</strong>): the <strong>server stub</strong> extracts the arguments and converts them into its own platform-dependent format</li>
+<li><strong>Response path</strong> is the reverse: the server stub marshals the return value, and the client stub unmarshals it</li>
+</ul>
+<h3 id="transactions">Transactions<a class="headerlink" href="#transactions" title="Permanent link">&para;</a></h3>
+<p>Now we can use RPCs as a building block to understand transactions.</p>
+<ul>
+<li>A <strong>series of operations</strong> executed by a client<ul>
+<li>The ops are clearly demarcated: <strong>start/open</strong> and <strong>close/end/commit</strong></li>
+</ul>
+</li>
+<li><strong>Each op is an RPC</strong> to the server (local ops are not interesting here)<ul>
+<li>Every op is either a <strong>read</strong> or a <strong>write</strong></li>
+</ul>
+</li>
+<li>A transaction either<ul>
+<li><strong>closes and commits</strong> all its ops at the server (commit = reflect the updates on server-side objects), <strong>or</strong></li>
+<li><strong>aborts</strong> and has <strong>no effect</strong> on the server</li>
+</ul>
+</li>
+</ul>
+<details class="note">
+<summary>Example: book an online airline ticket</summary>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1">1</a></span>
+<span class="normal"><a href="#__codelineno-18-2">2</a></span>
+<span class="normal"><a href="#__codelineno-18-3">3</a></span>
+<span class="normal"><a href="#__codelineno-18-4">4</a></span>
+<span class="normal"><a href="#__codelineno-18-5">5</a></span>
+<span class="normal"><a href="#__codelineno-18-6">6</a></span>
+<span class="normal"><a href="#__codelineno-18-7">7</a></span>
+<span class="normal"><a href="#__codelineno-18-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1"></a>int transaction_id = openTransaction();
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2"></a>x = server.getFlightAvailability(ABC, 123, date);   // read(ABC, 123, date)
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3"></a>if (x &gt; 0)
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4"></a>    y = server.bookTicket(ABC, 123, date);          // write(ABC, 123, date)
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5"></a>server.putSeat(y, "aisle");                         // write(more ticket info)
+</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6"></a>// more RPCs: e.g. provide payment info
+</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7"></a>// commit entire transaction or abort
+</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8"></a>closeTransaction(transaction_id);
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li><strong>Are open &amp; close RPCs too?</strong> Yes. The server has to hand out the id, and it is the server that commits or aborts</li>
+<li><strong>What's the point of <code>transaction_id</code>?</strong> Every RPC carries it, so the server knows which ops belong to the same transaction and must commit or abort together</li>
+</ul>
+</details>
+<h4 id="atomicity-and-isolation">Atomicity and Isolation<a class="headerlink" href="#atomicity-and-isolation" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Atomicity</strong> 原子性: the <strong>all-or-nothing</strong> principle. A transaction either completes successfully, so its effects are recorded in the server objects, or it has no effect at all</li>
+<li><strong>Isolation</strong> 隔离性: a transaction must be <strong>indivisible</strong> from the point of view of other transactions<ul>
+<li>No access to intermediate results/states of other transactions</li>
+<li>Free from interference by operations of other transactions</li>
+</ul>
+</li>
+<li>But…<ul>
+<li>Clients and/or servers might <strong>crash</strong></li>
+<li>Transactions could run <strong>concurrently</strong> (multiple clients)</li>
+<li>Transactions may be <strong>distributed</strong> (across multiple servers)</li>
+</ul>
+</li>
+</ul>
+<h4 id="acid-properties">ACID Properties<a class="headerlink" href="#acid-properties" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Atomicity</strong></td>
+<td>All or nothing</td>
+</tr>
+<tr>
+<td><strong>Consistency</strong></td>
+<td>If the server starts in a consistent state, the transaction ends with the server in a consistent state</td>
+</tr>
+<tr>
+<td><strong>Isolation</strong></td>
+<td>Each transaction runs without interference; <strong>non-final effects</strong> of a transaction are not visible to others</td>
+</tr>
+<tr>
+<td><strong>Durability</strong></td>
+<td>After a transaction completes successfully, all its effects are saved in <strong>permanent storage</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="multiple-clients-one-server-what-could-go-wrong">Multiple Clients, One Server: What Could Go Wrong?<a class="headerlink" href="#multiple-clients-one-server-what-could-go-wrong" title="Permanent link">&para;</a></h3>
+<h4 id="1-lost-update-problem">1. Lost Update Problem<a class="headerlink" href="#1-lost-update-problem" title="Permanent link">&para;</a></h4>
+<p>丢失更新问题</p>
+<p>Server starts with <code>seats = 10</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>T1</th>
+<th>T2</th>
+<th>Server</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>x = getSeats(ABC123)</code> // x=10</td>
+<td></td>
+<td>10</td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td><code>x = getSeats(ABC123)</code> // x=10</td>
+<td>10</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>if (x &gt; 1) x = x - 1</code></td>
+<td><code>if (x &gt; 1)</code></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>write(x, ABC123)</code></td>
+<td></td>
+<td><strong>9</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td></td>
+<td><code>x = x - 1; write(x, ABC123)</code></td>
+<td><strong>9</strong></td>
+</tr>
+<tr>
+<td>6</td>
+<td>commit</td>
+<td>commit</td>
+<td>9 (should be 8)</td>
+</tr>
+</tbody>
+</table>
+<p>T1's or T2's update was <strong>lost</strong>! ⟹ <strong>Consistency violated on the server</strong>.</p>
+<h4 id="2-inconsistent-retrieval-problem">2. Inconsistent Retrieval Problem<a class="headerlink" href="#2-inconsistent-retrieval-problem" title="Permanent link">&para;</a></h4>
+<p>Server starts with <code>ABC123 = 10</code>, <code>ABC789 = 15</code>. T1 moves 5 seats from ABC123 to ABC789; T2 prints the total.</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>T1</th>
+<th>T2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>x = getSeats(ABC123)</code>; <code>y = getSeats(ABC789)</code></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>write(x-5, ABC123)</code> // ABC123 = 5</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td><code>x = getSeats(ABC123)</code>; <code>y = getSeats(ABC789)</code> // x=5, y=15</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>write(y+5, ABC789)</code></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td></td>
+<td><code>print("Total:" x+y)</code> // prints <strong>20</strong></td>
+</tr>
+<tr>
+<td>6</td>
+<td>commit</td>
+<td>commit</td>
+</tr>
+</tbody>
+</table>
+<p>T2's sum is wrong: it should have been <strong>25</strong>. T2 saw T1's <strong>intermediate state</strong> ⟹ <strong>Consistency violated on the client</strong>.</p>
+<h3 id="concurrent-transactions">Concurrent Transactions 并发<a class="headerlink" href="#concurrent-transactions" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Transactions run on <strong>different clients</strong></li>
+<li>To prevent transactions from affecting each other, we <strong>could</strong> execute them one at a time at the server<ul>
+<li>But booking an airline ticket takes <strong>~5 min</strong>, so this cuts the number of concurrent transactions</li>
+<li><strong>Transactions per second (tps)</strong> is directly related to companies' revenue, so it needs to be maximized</li>
+</ul>
+</li>
+<li><strong>Goal</strong>: increase concurrency (tps) <strong>without sacrificing ACID semantics</strong></li>
+</ul>
+<h3 id="serial-equivalence">Serial Equivalence<a class="headerlink" href="#serial-equivalence" title="Permanent link">&para;</a></h3>
+<p>An interleaving <strong>O</strong> of transactions' operations is <strong>serially equivalent</strong> iff:</p>
+<ul>
+<li>there is <strong>some ordering O'</strong> of those transactions, <strong>one after the other</strong> (operations execute one at a time within each transaction), which</li>
+<li>yields the <strong>exact same end-state</strong> (on the server <strong>and</strong> clients) as O<ul>
+<li>⟹ we know O' is correct, and we <strong>cannot tell the difference</strong> between O' and O. That's why <strong>serial equivalence ⟹ correctness</strong></li>
+</ul>
+</li>
+</ul>
+<p>E.g. transactions A, B, C have 5 ops each. With O' = B1…B5, C1…C5, A1…A5, an interleaving O of these 15 ops is serially equivalent iff it yields the same end state as O'.</p>
+<p>交错执行的结果，和"某种一个接一个串行执行"的结果一样，就叫 serially equivalent（可串行化）。</p>
+<h4 id="conflicting-operations">Conflicting Operations<a class="headerlink" href="#conflicting-operations" title="Permanent link">&para;</a></h4>
+<p>An operation has an <strong>effect</strong> on</p>
+<ul>
+<li>the <strong>server object</strong>, if it is a <strong>write</strong></li>
+<li>the <strong>client</strong> (returned value), if it is a <strong>read</strong></li>
+</ul>
+<p>Two ops are <strong>conflicting</strong> if their <strong>combined effect depends on the order</strong> in which they are executed.</p>
+<table>
+<thead>
+<tr>
+<th>Op pair</th>
+<th>Conflicting?</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>read(x)</code> &amp; <code>write(x)</code></td>
+<td>✅</td>
+<td>Read returns old vs. new value</td>
+</tr>
+<tr>
+<td><code>write(x)</code> &amp; <code>write(x)</code></td>
+<td>✅</td>
+<td>Final value of x differs</td>
+</tr>
+<tr>
+<td><code>read(x)</code> &amp; <code>read(x)</code></td>
+<td>❌</td>
+<td>Reordering doesn't change the effect</td>
+</tr>
+<tr>
+<td><code>read(x)</code> &amp; <code>write(y)</code></td>
+<td>❌</td>
+<td>Different objects</td>
+</tr>
+<tr>
+<td><code>write(x)</code> &amp; <code>write(y)</code></td>
+<td>❌</td>
+<td>Different objects</td>
+</tr>
+</tbody>
+</table>
+<p>So there are only <strong>2 types of conflicts</strong>: <strong>read-write</strong> and <strong>write-write</strong> of the <strong>same object</strong>.</p>
+<h4 id="checking-for-serial-equivalence">Checking for Serial Equivalence<a class="headerlink" href="#checking-for-serial-equivalence" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Rule</strong>: An ordering across 2 transactions is serially equivalent <strong>iff all pairs of conflicting ops</strong> (one op from each transaction) are executed in the <strong>same transaction order</strong>.</p>
+</blockquote>
+<ol>
+<li>Take all pairs of conflicting ops, one from T1 and one from T2</li>
+<li>If the T1 op was reflected first on the server, mark the pair <strong>(T1, T2)</strong>; otherwise mark it <strong>(T2, T1)</strong></li>
+<li>All pairs must be marked <strong>(T1, T2)</strong>, or all must be marked <strong>(T2, T1)</strong></li>
+</ol>
+<p>In other words, a serially equivalent ordering produces the same end effect as T1 running after T2, or vice versa.</p>
+<details class="note">
+<summary>Both problems caught!</summary>
+<p><strong>Lost update</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Conflicting pair</th>
+<th>Order</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T1 <code>read(ABC123)</code> vs. T2 <code>write(ABC123)</code></td>
+<td>(T1, T2)</td>
+</tr>
+<tr>
+<td>T1 <code>write(ABC123)</code> vs. T2 <code>write(ABC123)</code></td>
+<td>(T1, T2)</td>
+</tr>
+<tr>
+<td>T2 <code>read(ABC123)</code> vs. T1 <code>write(ABC123)</code></td>
+<td><strong>(T2, T1)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Mixed marks → <strong>not</strong> serially equivalent.</p>
+<p><strong>Inconsistent retrieval</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Conflicting pair</th>
+<th>Order</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T1 <code>write(ABC123)</code> vs. T2 <code>read(ABC123)</code></td>
+<td>(T1, T2)</td>
+</tr>
+<tr>
+<td>T2 <code>read(ABC789)</code> vs. T1 <code>write(ABC789)</code></td>
+<td><strong>(T2, T1)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Mixed marks → <strong>not</strong> serially equivalent.</p>
+</details>
+<h4 id="how-do-we-use-serial-equivalence">How Do We Use Serial Equivalence?<a class="headerlink" href="#how-do-we-use-serial-equivalence" title="Permanent link">&para;</a></h4>
+<p><strong>What control does the server really have?</strong> Client ops arrive in some indeterminate order. The server can only:</p>
+<ol>
+<li><strong>Delay</strong> executing an RPC</li>
+<li><strong>Fail</strong> an RPC</li>
+<li><strong>Delay or fail the entire transaction</strong> at commit time</li>
+</ol>
+<p><strong>Check at commit time.</strong> Say transaction τ started at time <span class="arithmatex">\(t_s\)</span>:</p>
+<ul>
+<li>At τ's commit time, check for serial equivalence with <strong>every concurrent transaction</strong>, i.e. those that overlapped in time with τ:<ul>
+<li>(i) started after <span class="arithmatex">\(t_s\)</span>, (ii) completed after <span class="arithmatex">\(t_s\)</span>, or (iii) currently in progress</li>
+</ul>
+</li>
+<li><strong>Commit</strong> τ if it is serially equivalent with <strong>all</strong> concurrent transactions</li>
+<li>Otherwise, let <span class="arithmatex">\(τ_c\)</span> be the conflicting transaction<ul>
+<li>If <span class="arithmatex">\(τ_c\)</span> already <strong>committed</strong> → abort τ</li>
+<li>Else → abort <strong>either</strong> <span class="arithmatex">\(τ_c\)</span> or τ</li>
+<li><strong>Abort</strong> = roll back (undo) all writes to server objects by that transaction</li>
+</ul>
+</li>
+</ul>
+<p><strong>Can we do better?</strong> This is not great for performance:</p>
+<ul>
+<li>An N-min-long transaction may have <strong>1000s of concurrent transactions</strong>, so there are many conflicting pairs to check</li>
+<li>An abort means <strong>wasted work</strong></li>
+<li>Can we <strong>prevent</strong> violations from occurring? Two approaches:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Approach</th>
+<th>Idea</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pessimistic</strong> concurrency control</td>
+<td>Assume the worst, expect <strong>lots of conflicts</strong>: <strong>prevent</strong> transactions from accessing the same object</td>
+<td>Locking</td>
+</tr>
+<tr>
+<td><strong>Optimistic</strong> concurrency control (OCC)</td>
+<td>Assume the best, expect <strong>very few conflicts</strong>: let transactions proceed, but <strong>check later</strong></td>
+<td>Check at commit time, multi-version approaches</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pessimistic-exclusive-locking">Pessimistic: Exclusive Locking<a class="headerlink" href="#pessimistic-exclusive-locking" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Each object has a <strong>lock</strong>; at most <strong>one</strong> transaction can be inside it</li>
+<li>Before reading or writing object O, transaction T must call <code>lock(O)</code><ul>
+<li>It <strong>blocks</strong> if another transaction is already inside the lock</li>
+</ul>
+</li>
+<li>After entering the lock, T can read and write O multiple times</li>
+<li>When done (or at the commit point), T calls <code>unlock(O)</code><ul>
+<li>If other transactions are waiting at <code>lock(O)</code>, one of them is let in</li>
+</ul>
+</li>
+<li>Sound familiar? <strong>This is Mutual Exclusion!</strong> (Lecture 19)</li>
+</ul>
+<h4 id="can-we-improve-concurrency">Can We Improve Concurrency?<a class="headerlink" href="#can-we-improve-concurrency" title="Permanent link">&para;</a></h4>
+<ul>
+<li>More concurrency ⟹ more tps ⟹ more revenue ($$$)</li>
+<li>Real-life workloads have a lot of <strong>read-only or read-mostly</strong> transactions, and exclusive locking reduces their concurrency</li>
+<li>Hint: it's OK to let two transactions <strong>read an object concurrently</strong>, since read-read is <strong>not</strong> a conflicting pair</li>
+</ul>
+<h4 id="read-write-locks">Read-Write Locks<a class="headerlink" href="#read-write-locks" title="Permanent link">&para;</a></h4>
+<p>Each object has a lock that can be held in one of <strong>two modes</strong>:</p>
+<ul>
+<li><strong>Read mode</strong>: multiple transactions allowed in（共享锁）</li>
+<li><strong>Write mode</strong>: exclusive lock（排他锁）</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Call</th>
+<th>When</th>
+<th>Granted only if</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>read_lock(O)</code></td>
+<td>Before first reading O</td>
+<td><strong>All</strong> transactions inside the lock entered via <strong>read</strong> mode</td>
+</tr>
+<tr>
+<td><code>write_lock(O)</code></td>
+<td>Before first writing O</td>
+<td><strong>No other</strong> transaction is inside the lock</td>
+</tr>
+<tr>
+<td><code>write_lock(O)</code> (promote)</td>
+<td>T already holds <code>read_lock(O)</code> and wants to write</td>
+<td><strong>No other</strong> transaction holds the lock; otherwise T <strong>blocks</strong></td>
+</tr>
+<tr>
+<td><code>unlock(O)</code></td>
+<td>Release</td>
+<td>Releases T's lock on O, <strong>independent of the mode</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Lock compatibility（已有锁 vs. 新请求）:</p>
+<table>
+<thead>
+<tr>
+<th>Held  Requested</th>
+<th>Read</th>
+<th>Write</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>None</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Read (by others)</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Write (by others)</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+<h4 id="two-phase-locking-2pl">Two-phase Locking (2PL)<a class="headerlink" href="#two-phase-locking-2pl" title="Permanent link">&para;</a></h4>
+<p>Locks alone don't guarantee serial equivalence; we also need <strong>two-phase locking</strong>:</p>
+<ul>
+<li>A transaction <strong>cannot acquire (or promote) any locks after it has started releasing locks</strong></li>
+<li>A transaction has two phases:<ol>
+<li><strong>Growing phase</strong>: only acquires or promotes locks</li>
+<li><strong>Shrinking phase</strong>: only releases locks</li>
+</ol>
+</li>
+<li><strong>Strict two-phase locking</strong>: releases locks <strong>only at the commit point</strong>（避免别人读到未提交的数据 → 防止 cascading aborts）</li>
+</ul>
+<details class="note">
+<summary>Why 2PL ⟹ Serial Equivalence? (proof by contradiction)</summary>
+<ol>
+<li>Assume a 2PL system where serial equivalence is <strong>violated</strong> for some two transactions T1, T2</li>
+<li>Then two facts must be true:<ul>
+<li><strong>(A)</strong> For some object O1, conflicting ops in T1 and T2 have time order <strong>(T1, T2)</strong></li>
+<li><strong>(B)</strong> For some object O2, the conflicting op pair is <strong>(T2, T1)</strong></li>
+</ul>
+</li>
+<li>(A) ⟹ T1 released O1's lock and T2 acquired it after that ⟹ <strong>T1's shrinking phase is before or overlaps with T2's growing phase</strong></li>
+<li>Similarly, (B) ⟹ <strong>T2's shrinking phase is before or overlaps with T1's growing phase</strong></li>
+<li>Both can't be true! Each transaction's growing phase is entirely before its own shrinking phase, so T1 would have to start shrinking before T2 finishes growing, <strong>and</strong> T2 would have to start shrinking before T1 finishes growing ⟹ <strong>contradiction</strong></li>
+</ol>
+</details>
+<h3 id="downside-of-locking-deadlocks">Downside of Locking: Deadlocks!<a class="headerlink" href="#downside-of-locking-deadlocks" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>T1</th>
+<th>T2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>Lock(ABC123)</code></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td><code>Lock(ABC789)</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>write(10, ABC123)</code></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>Lock(ABC789)</code> // <strong>blocks waiting for T2</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td></td>
+<td><code>write(15, ABC789)</code></td>
+</tr>
+<tr>
+<td>6</td>
+<td></td>
+<td><code>Lock(ABC123)</code> // <strong>blocks waiting for T1</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Wait-for graph</strong>: T1 → T2 → T1, a <strong>cycle</strong> ⟹ deadlock.</p>
+<h4 id="when-do-deadlocks-occur">When do Deadlocks Occur?<a class="headerlink" href="#when-do-deadlocks-occur" title="Permanent link">&para;</a></h4>
+<p>Three <strong>necessary</strong> conditions:</p>
+<ol>
+<li>Some objects are accessed in <strong>exclusive</strong> lock modes</li>
+<li>Transactions holding locks <strong>cannot be preempted</strong></li>
+<li>There is a <strong>circular wait (cycle)</strong> in the Wait-for graph</li>
+</ol>
+<ul>
+<li><strong>Necessary</strong> = if there's a deadlock, all these conditions are definitely true</li>
+<li><strong>Not sufficient</strong>: if they're all present, that doesn't imply a deadlock is present</li>
+</ul>
+<h4 id="combating-deadlocks">Combating Deadlocks<a class="headerlink" href="#combating-deadlocks" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Strategy</th>
+<th>How</th>
+<th>Downside</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. <strong>Lock timeout</strong></td>
+<td>Abort a transaction if a lock can't be acquired within a timeout</td>
+<td>☹️ Expensive; wasted work</td>
+</tr>
+<tr>
+<td>2. <strong>Deadlock detection</strong></td>
+<td>Keep track of the Wait-for graph (e.g. via the <strong>Global Snapshot</strong> algorithm), find cycles in it (e.g. periodically); if a cycle is found, abort one or more transactions to break it</td>
+<td>☹️ Still allows deadlocks to occur</td>
+</tr>
+<tr>
+<td>3. <strong>Deadlock prevention</strong></td>
+<td>Set up the system so <strong>one of the necessary conditions is violated</strong> (see below)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Deadlock prevention, one fix per necessary condition:</p>
+<table>
+<thead>
+<tr>
+<th>Necessary condition</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Exclusive lock modes</td>
+<td>Allow <strong>read-only</strong> access to objects</td>
+</tr>
+<tr>
+<td>2. No preemption</td>
+<td>Allow <strong>preemption</strong> of some transactions</td>
+</tr>
+<tr>
+<td>3. Circular wait</td>
+<td><strong>Lock all objects at the beginning</strong>; if any fails, abort the transaction ⟹ no cycles in the Wait-for graph</td>
+</tr>
+</tbody>
+</table>
+<h3 id="optimistic-concurrency-control-occ">Optimistic Concurrency Control (OCC)<a class="headerlink" href="#optimistic-concurrency-control-occ" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Increases concurrency more than pessimistic concurrency control ⟹ increases <strong>tps</strong></li>
+<li>For non-transaction systems, increases <strong>operations per second</strong> and lowers latency</li>
+<li>Used in <strong>Dropbox, Google apps, Wikipedia</strong>, and key-value stores like <strong>Cassandra, Riak, Amazon's Dynamo</strong></li>
+<li>Preferable to pessimistic when conflicts are <strong>expected to be rare</strong><ul>
+<li>But we still need to ensure conflicts are <strong>caught</strong>!</li>
+</ul>
+</li>
+</ul>
+<h4 id="first-cut-approach">First-cut Approach<a class="headerlink" href="#first-cut-approach" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Write and read objects <strong>at will</strong></li>
+<li><strong>Check for serial equivalence at commit time</strong></li>
+<li>If aborting, roll back the updates made</li>
+<li>An abort may force <strong>other transactions that read dirty data</strong> to abort too<ul>
+<li>And any transactions that read from <strong>those</strong> transactions also need to be aborted</li>
+<li>☹️ <strong>Cascading aborts</strong>（连锁回滚）</li>
+</ul>
+</li>
+</ul>
+<h4 id="second-approach-timestamp-ordering">Second Approach: Timestamp Ordering<a class="headerlink" href="#second-approach-timestamp-ordering" title="Permanent link">&para;</a></h4>
+<ul>
+<li>At <code>openTransaction</code>, the server returns its <strong>timestamp</strong> as the transaction <strong>id</strong></li>
+<li>The id determines the transaction's position in the <strong>serialization order</strong></li>
+<li>For a transaction T, ensure both:<ol>
+<li>T's <strong>write</strong> to object O is allowed only if the transactions that have <strong>read or written</strong> O had <strong>lower ids</strong> than T</li>
+<li>T's <strong>read</strong> of object O is allowed only if O was <strong>last written</strong> by a transaction with a <strong>lower id</strong> than T</li>
+</ol>
+</li>
+<li>Implemented by maintaining <strong>read and write timestamps</strong> for each object</li>
+<li>If a rule is violated, <strong>abort</strong>!</li>
+</ul>
+<blockquote>
+<p>直观理解：事务 id 就是它在串行顺序里的位置。id 大的事务"假装"在 id 小的事务之后执行；如果它碰到了"未来"事务（更大 id）已经读写过的对象，就说明顺序被打乱了，只能 abort。</p>
+</blockquote>
+<h4 id="third-approach-multi-version-concurrency-control-mvcc">Third Approach: Multi-version Concurrency Control (MVCC)<a class="headerlink" href="#third-approach-multi-version-concurrency-control-mvcc" title="Permanent link">&para;</a></h4>
+<ul>
+<li>For each object, maintain<ul>
+<li>a <strong>per-transaction version</strong> of the object, marked as <strong>tentative</strong></li>
+<li>and a <strong>committed</strong> version</li>
+</ul>
+</li>
+<li>Each tentative version has a <strong>timestamp</strong><ul>
+<li>Some systems maintain both a read timestamp and a write timestamp</li>
+</ul>
+</li>
+<li>On a read or write, find the <strong>"correct" tentative version</strong> to read from or write to<ul>
+<li>"Correct" is based on the transaction id, and tries to make transactions read only from <strong>"immediately previous"</strong> transactions</li>
+</ul>
+</li>
+</ul>
+<p>相比 timestamp ordering：读操作可以去读一个合适的旧版本，而不是直接 abort，因此 abort 更少</p>
+<h3 id="eventual-consistency_1">Eventual Consistency<a class="headerlink" href="#eventual-consistency_1" title="Permanent link">&para;</a></h3>
+<p>Eventual consistency in key-value stores is a <strong>form of optimistic concurrency control</strong> (Cassandra, DynamoDB, Riak). Since these are <strong>non-transaction</strong> systems, the optimistic approach looks different.</p>
+<h4 id="cassandra-and-dynamodb-last-write-wins">Cassandra and DynamoDB: Last-Write-Wins<a class="headerlink" href="#cassandra-and-dynamodb-last-write-wins" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Only <strong>one version</strong> of each data item (key-value pair)</li>
+<li>
+<p><strong>Last-write-wins (LWW)</strong> 最后写入胜出: a timestamp, typically based on <strong>physical time</strong>, decides whether to overwrite</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1">1</a></span>
+<span class="normal"><a href="#__codelineno-19-2">2</a></span>
+<span class="normal"><a href="#__codelineno-19-3">3</a></span>
+<span class="normal"><a href="#__codelineno-19-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1"></a>if (new write's timestamp &gt; current object's timestamp)
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2"></a>    overwrite;
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3"></a>else
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4"></a>    do nothing;
+</span></code></pre></div></td></tr></table></div>
+</li>
+<li>
+<p>⚠️ With <strong>unsynchronized clocks</strong>: if two writes are close in time, the <strong>older write might have a newer timestamp, and might win</strong></p>
+</li>
+</ul>
+<h4 id="riak-vector-clocks">Riak: Vector Clocks<a class="headerlink" href="#riak-vector-clocks" title="Permanent link">&para;</a></h4>
+<ul>
+<li>An older version of Riak uses <strong>vector clocks</strong> (Lecture 12!) and implements <strong>causal ordering</strong></li>
+<li>Vector clocks detect whether<ol>
+<li>the new write is <strong>strictly newer</strong> than the current value, or</li>
+<li>the new write <strong>conflicts</strong> with the existing value (concurrent)</li>
+</ol>
+</li>
+<li>In case (2), a <strong>sibling value</strong> is created<ul>
+<li>Resolvable by the user, or automatically by the application (but <strong>not by Riak</strong>)</li>
+</ul>
+</li>
+<li>To keep vector clocks manageable<ul>
+<li><strong>Size-based pruning</strong>: prevents vector clocks from getting too many entries</li>
+<li><strong>Time-based pruning</strong>: removes entries updated a long time ago</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Versions kept</th>
+<th>Conflict resolution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cassandra / DynamoDB</td>
+<td>One</td>
+<td><strong>LWW</strong> by physical timestamp (may lose writes with clock skew)</td>
+</tr>
+<tr>
+<td>Riak (older)</td>
+<td>Siblings on conflict</td>
+<td><strong>Vector clocks</strong> detect concurrency; app/user merges siblings</td>
+</tr>
+</tbody>
+</table>
+<h3 id="summary_6">Summary<a class="headerlink" href="#summary_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>RPCs and RMIs</strong>: call semantics (at least once / at most once / maybe), idempotence, stubs, marshalling</li>
+<li><strong>Transactions</strong>: ACID</li>
+<li><strong>Serial equivalence</strong>: detect it via <strong>conflicting operations</strong> (read-write, write-write)</li>
+<li><strong>Pessimistic concurrency control</strong>: locking (exclusive, read-write), <strong>2PL</strong>, deadlocks</li>
+<li><strong>Optimistic concurrency control</strong>: check at commit, timestamp ordering, MVCC, eventual consistency (LWW, vector clocks)</li>
+</ul>
+<h2 id="lecture-22-replication-control">Lecture 22: Replication Control<a class="headerlink" href="#lecture-22-replication-control" title="Permanent link">&para;</a></h2>
+<h3 id="server-side-focus">Server-side Focus<a class="headerlink" href="#server-side-focus" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Concurrency Control</strong> (L20-21)</td>
+<td>How to coordinate <strong>multiple concurrent clients</strong> executing ops (or transactions) with a <strong>single server</strong></td>
+</tr>
+<tr>
+<td><strong>Replication Control</strong> (this lecture)</td>
+<td>How to handle ops (or transactions) when objects are stored at <strong>multiple servers</strong>, with or without replication</td>
+</tr>
+</tbody>
+</table>
+<h3 id="replication-what-and-why">Replication: What and Why<a class="headerlink" href="#replication-what-and-why" title="Permanent link">&para;</a></h3>
+<p><strong>Replication</strong> = an object has <strong>identical copies</strong>, each maintained by a separate server. The copies are called <strong>replicas</strong>（副本）.</p>
+<p>Why replicate?</p>
+<ul>
+<li><strong>Fault-tolerance</strong>: with <span class="arithmatex">\(k\)</span> replicas of each object, the system can tolerate the failure of <strong>any <span class="arithmatex">\((k-1)\)</span> servers</strong><ul>
+<li>Replicas should ideally be in <strong>different failure domains</strong>（不同的故障域：不同机架/机房/电源）</li>
+</ul>
+</li>
+<li><strong>Load balancing</strong>: spread reads/writes over the <span class="arithmatex">\(k\)</span> replicas ⟹ load is lowered by a factor of <span class="arithmatex">\(k\)</span> compared to a single replica</li>
+<li>Overall: replication ⟹ <strong>higher availability</strong></li>
+</ul>
+<h3 id="availability">Availability<a class="headerlink" href="#availability" title="Permanent link">&para;</a></h3>
+<p>If each server is down a fraction <span class="arithmatex">\(f\)</span> of the time (<span class="arithmatex">\(f\)</span> = the server's failure probability):</p>
+<table>
+<thead>
+<tr>
+<th>Setup</th>
+<th>Availability of the object</th>
+<th>Formula</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No replication</td>
+<td>P(the single copy is up)</td>
+<td><span class="arithmatex">\(1 - f\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(k\)</span> replicas</td>
+<td>P(at least one replica is up) = 1 − P(all replicas are down)</td>
+<td><span class="arithmatex">\(1 - f^k\)</span></td>
+</tr>
+</tbody>
+</table>
+<h4 id="nines-availability">Nines Availability<a class="headerlink" href="#nines-availability" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(f\)</span> = failure probability</th>
+<th>No replication</th>
+<th><span class="arithmatex">\(k = 3\)</span> replicas</th>
+<th><span class="arithmatex">\(k = 5\)</span> replicas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.1</td>
+<td>90%</td>
+<td>99.9%</td>
+<td>99.999%</td>
+</tr>
+<tr>
+<td>0.05</td>
+<td>95%</td>
+<td>99.9875%</td>
+<td>6 nines</td>
+</tr>
+<tr>
+<td>0.01</td>
+<td>99%</td>
+<td>99.9999%</td>
+<td>10 nines</td>
+</tr>
+</tbody>
+</table>
+<p>"<span class="arithmatex">\(n\)</span> nines" = availability with <span class="arithmatex">\(n\)</span> nines, e.g. 99.999% is <strong>5 nines</strong>. A few replicas turn a mediocre server into a very highly available object.</p>
+<p>例：<span class="arithmatex">\(f = 0.01\)</span>，<span class="arithmatex">\(k = 5\)</span> 时 <span class="arithmatex">\(1 - 0.01^5 = 1 - 10^{-10}\)</span>，也就是 10 个 9。</p>
+<h3 id="whats-the-catch">What's the Catch?<a class="headerlink" href="#whats-the-catch" title="Permanent link">&para;</a></h3>
+<p>The challenge is to maintain two properties:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Replication Transparency</strong></td>
+<td>A client ought to be <strong>unaware</strong> of multiple copies of objects existing on the server side（客户端感觉不到有多个副本）</td>
+</tr>
+<tr>
+<td><strong>Replication Consistency</strong></td>
+<td>All clients see a <strong>single consistent copy</strong> of the data, in spite of replication; for transactions, guarantee <strong>ACID</strong></td>
+</tr>
+</tbody>
+</table>
+<h4 id="replication-transparency">Replication Transparency<a class="headerlink" href="#replication-transparency" title="Permanent link">&para;</a></h4>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1">1</a></span>
+<span class="normal"><a href="#__codelineno-20-2">2</a></span>
+<span class="normal"><a href="#__codelineno-20-3">3</a></span>
+<span class="normal"><a href="#__codelineno-20-4">4</a></span>
+<span class="normal"><a href="#__codelineno-20-5">5</a></span>
+<span class="normal"><a href="#__codelineno-20-6">6</a></span>
+<span class="normal"><a href="#__codelineno-20-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1"></a>Client ─┐
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2"></a>        ├─→ Front End ─┐        ┌─────────────┐
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3"></a>Client ─┘              ├──────→ │  Replica 1  │
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4"></a>                       │        │  Replica 2  │  replicas of object O
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5"></a>Client ───→ Front End ─┘        │  Replica 3  │
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6"></a>                                └─────────────┘
+</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7"></a>        (requests →, replies flow the opposite way)
+</span></code></pre></div></td></tr></table></div>
+<p><strong>Front ends (FEs)</strong> provide replication transparency: clients talk only to an FE, and the FE deals with the replicas.</p>
+<h4 id="replication-consistency">Replication Consistency<a class="headerlink" href="#replication-consistency" title="Permanent link">&para;</a></h4>
+<p>Two ways to forward updates from FEs to the replica group:</p>
+<ul>
+<li><strong>Passive Replication</strong>: uses a <strong>primary replica (leader)</strong></li>
+<li><strong>Active Replication</strong>: treats <strong>all replicas identically</strong></li>
+</ul>
+<p>Both use the concept of <strong>Replicated State Machines (RSM)</strong>:</p>
+<ul>
+<li>Each replica's code runs the <strong>same state machine</strong></li>
+<li><em>"Multiple copies of the same State Machine begun in the Start state, and receiving the same Inputs in the same order will arrive at the same State having generated the same Outputs."</em> [Schneider 1990]</li>
+</ul>
+<p>同样的初始状态 + 同样顺序的同样输入 ⟹ 同样的最终状态和输出。所以副本一致的关键就是<strong>让所有副本以相同顺序收到相同的更新</strong>。</p>
+<h3 id="passive-replication">Passive Replication<a class="headerlink" href="#passive-replication" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-21-1">1</a></span>
+<span class="normal"><a href="#__codelineno-21-2">2</a></span>
+<span class="normal"><a href="#__codelineno-21-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1"></a>Client → Front End ─┐
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2"></a>                    ├─→ Replica 2 (Leader) ──→ Replica 1
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3"></a>Client → Front End ─┘                     └──→ Replica 3
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li>All FEs send requests to one <strong>elected leader</strong> (primary); the leader forwards updates to the other replicas</li>
+<li><strong>Leader ⟹ total ordering of all updates</strong>: the leader decides the one order everyone applies</li>
+<li><strong>On leader failure, run an election</strong> (Lecture 17)</li>
+</ul>
+<h3 id="active-replication">Active Replication<a class="headerlink" href="#active-replication" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-22-1">1</a></span>
+<span class="normal"><a href="#__codelineno-22-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1"></a>Client → Front End ──multicast──→ Replica 1, Replica 2, Replica 3
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2"></a>Client → Front End ──multicast──→ Replica 1, Replica 2, Replica 3
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li>Each FE <strong>multicasts</strong> requests <strong>inside the replica group</strong>; every replica processes every request</li>
+<li>Front ends still provide replication transparency</li>
+</ul>
+<h4 id="active-replication-using-concepts-youve-learnt-earlier">Active Replication Using Concepts You've Learnt Earlier<a class="headerlink" href="#active-replication-using-concepts-youve-learnt-earlier" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Can use any flavor of <strong>multicast ordering</strong> (Lecture 16), depending on the application:<ul>
+<li><strong>FIFO</strong> ordering</li>
+<li><strong>Causal</strong> ordering</li>
+<li><strong>Total</strong> ordering</li>
+<li><strong>Hybrid</strong> ordering</li>
+</ul>
+</li>
+<li><strong>Total or Hybrid (*-Total) ordering + Replicated State Machines</strong> ⟹ all replicas reflect the <strong>same sequence of updates</strong> to the object</li>
+<li><strong>What about failures?</strong> Use <strong>virtual synchrony</strong> (i.e. <strong>view synchrony</strong>)<ul>
+<li>Virtual synchrony + total ordering for multicasts ⟹ all replicas see <strong>all failures/joins/leaves and all multicasts in the same order</strong></li>
+<li>Could also use <strong>causal</strong> (or even <strong>FIFO</strong>) ordering if the application can tolerate it</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Approach</th>
+<th>Who orders updates</th>
+<th>On failure</th>
+<th>Builds on</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Passive</strong></td>
+<td>The <strong>leader</strong> (primary)</td>
+<td>Leader fails → <strong>election</strong></td>
+<td>Leader election</td>
+</tr>
+<tr>
+<td><strong>Active</strong></td>
+<td>The <strong>multicast protocol</strong> (e.g. total ordering)</td>
+<td>Membership changes handled by <strong>virtual synchrony</strong></td>
+<td>Ordered multicast + virtual synchrony</td>
+</tr>
+</tbody>
+</table>
+<h3 id="transactions-and-replication">Transactions and Replication<a class="headerlink" href="#transactions-and-replication" title="Permanent link">&para;</a></h3>
+<ul>
+<li>In a <strong>non-replicated</strong> system, transactions appear to be performed one at a time in some order<ul>
+<li>Correctness = <strong>serial equivalence</strong> of transactions (L20-21)</li>
+</ul>
+</li>
+<li>When objects are <strong>replicated</strong>, transaction systems need <strong>one-copy serializability</strong> for correctness:<ul>
+<li><em>A concurrent execution of transactions in a replicated database is one-copy-serializable if it is equivalent to a serial execution of these transactions over a <strong>single logical copy</strong> of the database.</em></li>
+<li>Or: the effect of transactions performed by clients on replicated objects should be the same as if they had been performed <strong>one at a time on a single set of objects</strong> (i.e. 1 replica per object)</li>
+</ul>
+</li>
+</ul>
+<p>单副本可串行化：有副本时，效果要和"只有一份数据、事务一个接一个执行"一样。</p>
+<h3 id="transactions-with-distributed-servers">Transactions with Distributed Servers<a class="headerlink" href="#transactions-with-distributed-servers" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-23-1">1</a></span>
+<span class="normal"><a href="#__codelineno-23-2">2</a></span>
+<span class="normal"><a href="#__codelineno-23-3">3</a></span>
+<span class="normal"><a href="#__codelineno-23-4">4</a></span>
+<span class="normal"><a href="#__codelineno-23-5">5</a></span>
+<span class="normal"><a href="#__codelineno-23-6">6</a></span>
+<span class="normal"><a href="#__codelineno-23-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1"></a>Transaction T                  Server 1:  Object A, Object B
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2"></a>  write(A, 1);   ──────────→       ...
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3"></a>  write(B, 2);   ──────────→   Server 13: Object Y, Object Z
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4"></a>  ...
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5"></a>  write(Y, 25);  ──────────→
+</span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6"></a>  write(Z, 26);  ──────────→
+</span><span id="__span-23-7"><a id="__codelineno-23-7" name="__codelineno-23-7"></a>  commit
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li>Transaction T may touch objects that reside on <strong>different servers</strong></li>
+<li>When T tries to commit, we need to ensure either<ul>
+<li><strong>all</strong> of these servers commit their updates from T ⟹ T commits, <strong>or</strong></li>
+<li><strong>none</strong> of these servers commit ⟹ T aborts</li>
+</ul>
+</li>
+<li>What problem is this? <strong>Consensus!</strong> It's also called the <strong>Atomic Commit problem</strong>（原子提交）</li>
+</ul>
+<h3 id="one-phase-commit">One-phase Commit<a class="headerlink" href="#one-phase-commit" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A special server called the <strong>Coordinator</strong> initiates the atomic commit</li>
+<li>It simply tells the other servers to either <strong>commit</strong> or <strong>abort</strong></li>
+</ul>
+<p><strong>Issues</strong>:</p>
+<ul>
+<li>A server holding an object has <strong>no say</strong> in whether the transaction commits or aborts<ul>
+<li>If its object is <strong>corrupted</strong>, it just cannot commit, while the other servers <strong>have committed</strong> ⟹ atomicity broken</li>
+</ul>
+</li>
+<li>A server may <strong>crash before receiving the commit message</strong>, with some updates still <strong>in memory</strong> ⟹ those updates are lost</li>
+</ul>
+<h3 id="two-phase-commit-2pc">Two-phase Commit (2PC)<a class="headerlink" href="#two-phase-commit-2pc" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-24-1">1</a></span>
+<span class="normal"><a href="#__codelineno-24-2">2</a></span>
+<span class="normal"><a href="#__codelineno-24-3">3</a></span>
+<span class="normal"><a href="#__codelineno-24-4">4</a></span>
+<span class="normal"><a href="#__codelineno-24-5">5</a></span>
+<span class="normal"><a href="#__codelineno-24-6">6</a></span>
+<span class="normal"><a href="#__codelineno-24-7">7</a></span>
+<span class="normal"><a href="#__codelineno-24-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1"></a>Coordinator                  Server 1 ... Server 13
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2"></a>    │ ── Prepare ──────────────→ │   • persist updates to log
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3"></a>    │ ←───────── Yes / No ────── │   • vote "Yes" or "No"
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4"></a>    │                            │
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5"></a>    │  any "No" or timeout?  → Abort
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6"></a>    │  all "Yes" in time?    → Commit
+</span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7"></a>    │ ── Commit / Abort ───────→ │   • commit: updates log → store
+</span><span id="__span-24-8"><a id="__codelineno-24-8" name="__codelineno-24-8"></a>    │ ←──────────────── OK ───── │
+</span></code></pre></div></td></tr></table></div>
+<p><strong>Phase 1: Prepare (voting)</strong></p>
+<ol>
+<li>The coordinator sends <strong>Prepare</strong> to all servers</li>
+<li>Each server <strong>persists its updates to a log</strong> (so they survive a crash) and responds <strong>"Yes"</strong> or <strong>"No"</strong></li>
+</ol>
+<p><strong>Phase 2: Commit or Abort (decision)</strong></p>
+<ul>
+<li>If <strong>any "No" vote</strong>, or a <strong>timeout before all (13) votes</strong> arrive → coordinator sends <strong>Abort</strong></li>
+<li>If <strong>all (13) "Yes" votes</strong> are received within the timeout → coordinator sends <strong>Commit</strong><ul>
+<li>Each server <strong>commits its updates: log → store</strong>, then replies <strong>OK</strong></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+After voting "Yes", a server has been <strong>waiting</strong>: it <strong>can't commit or abort on its own before receiving the next message</strong> from the coordinator. It has promised it <em>can</em> commit, but only the coordinator knows whether everyone else said Yes.</p>
+<p>投了 Yes 之后，参与者就进入"不确定"状态：既不能自己提交，也不能自己回滚，只能等协调者的决定。如果协调者此时崩溃，参与者会一直卡住（2PC 是 <strong>blocking</strong> 协议）。</p>
+</blockquote>
+<p><strong>How 2PC fixes one-phase commit's issues</strong></p>
+<table>
+<thead>
+<tr>
+<th>One-phase commit issue</th>
+<th>2PC fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Servers have no say</td>
+<td>Each server <strong>votes</strong>; a single "No" aborts everyone</td>
+</tr>
+<tr>
+<td>Crash loses in-memory updates before commit</td>
+<td>Updates are <strong>persisted to a log</strong> during Prepare, before voting Yes</td>
+</tr>
+</tbody>
+</table>
+<h3 id="using-paxos-in-distributed-servers">Using Paxos in Distributed Servers<a class="headerlink" href="#using-paxos-in-distributed-servers" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Atomic commit</strong><ul>
+<li>Can use <strong>Paxos</strong> (instead of 2PC) for the commit-vs-abort decision</li>
+<li>But need to ensure that <strong>if any server votes No, everyone aborts</strong>（普通 Paxos 只要多数派同意，而原子提交要求全员 Yes）</li>
+</ul>
+</li>
+<li><strong>Ordering updates</strong><ul>
+<li>A <strong>replica group</strong> (for an object) can use Paxos to <strong>order all updates</strong>; iteratively:<ul>
+<li>A server proposes a message for the <strong>next sequence number</strong></li>
+<li>The group reaches consensus (or not)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Use a combination of 2PC and Paxos</strong> (e.g. <strong>Google Spanner</strong>)<ul>
+<li>One for <strong>commit-vs-abort</strong> (2PC across servers/shards), the other for <strong>replica group consensus</strong> (Paxos within each group)</li>
+</ul>
+</li>
+</ul>
+<h3 id="summary_7">Summary<a class="headerlink" href="#summary_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Multiple servers in the cloud</strong><ul>
+<li>Replication for <strong>fault-tolerance</strong> (availability <span class="arithmatex">\(1 - f^k\)</span>)</li>
+<li><strong>Load balancing</strong> across objects</li>
+</ul>
+</li>
+<li><strong>Replication flavors</strong> using concepts we learnt earlier (replicated state machines)<ul>
+<li><strong>Active</strong> replication: ordered multicast + virtual synchrony</li>
+<li><strong>Passive</strong> replication: leader + election</li>
+</ul>
+</li>
+<li><strong>Transactions and distributed servers</strong><ul>
+<li>One-copy serializability</li>
+<li><strong>Two-phase commit</strong>; Paxos for ordering updates; Spanner combines both</li>
+</ul>
+</li>
+</ul>
 
 
 
@@ -14432,7 +16949,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2026年11月2日 04:18:22 CST">2026年11月2日 04:18:22</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2026年11月8日 10:08:13 CST">2026年11月8日 10:08:13</span>
   </span>
 
     
@@ -14610,7 +17127,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.annotate", "navigation.indexes", "navigation.expand", "toc.follow", "navigation.top", "search.suggest", "navigation.footer", "navigation.tabs", "navigation.tracking", "navigation.instant.progress", "content.code.copy", "search.highlight", "search.share", "content.code.annotate", "navigation.tabs"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
         <script src="https://gcore.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
       
