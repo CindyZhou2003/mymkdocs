@@ -1,11 +1,8 @@
 ## Exam 2 Review (Lectures 2–20)
 
-Format: 25 multiple choice / multi-select questions, conceptual only (no coding). MC = 3 pts, multi-select = 5 pts with partial credit (no multiple attempts). 重点是 L12–20，L2–11 考基本原理。点开 "Answer" 前先自己做。**MS** = select all that apply.
+Format: 25 multiple choice / multi-select questions, conceptual only (no coding). MC = 3 pts, multi-select = 5 pts with partial credit (no multiple attempts). L2–20 都考，前后半程比重差不多。点开 "Answer" 前先自己做。**MS** = select all that apply.
 
-**建议顺序**：先看 [易混点对比](#cross-lecture)，再做 [Mock exam](#mock-exam) 找弱点，最后回到对应 lecture 的题补漏。题目是按课件和笔记自拟的，不是真题；课程官方练习题（不显示答案）在 [All Questions form](https://tinyurl.com/AML441-AllQs)，其中 L12–L20 和 "Exam 2: Extra Questions" 最相关。
-
-!!! note "L20 的来源"
-    FA26 的 L20 在 11/3 才上，这里的 CLIP/GPT 内容来自 [FA25 课件](https://courses.grainger.illinois.edu/CS441/fa2025/lectures/Lecture%2020%20-%20Foundation%20Models%20-%20CLIP%20and%20GPT.pdf)。上完课后对照一下今年的 slides，数字以今年为准。
+**建议顺序**：先过一遍 [算法与缩写总表](#glossary) 和 [易混点对比](#cross-lecture)，再做 [Mock exam](#mock-exam) 找弱点，最后回到对应 lecture 的题补漏。题目是按课件和笔记自拟的，不是真题；课程官方练习题（不显示答案）在 [All Questions form](https://tinyurl.com/AML441-AllQs)，其中 L2–L20 和 "Exam 2: Extra Questions" 都相关。
 
 ### One-page cheat sheet
 
@@ -19,7 +16,7 @@ Format: 25 multiple choice / multi-select questions, conceptual only (no coding)
 | **Training / CV (L17)**  | Loop: forward → loss → `zero_grad` → `backward` → `step`. Augmentation ↓**variance**. Little data → **linear probe**; moderate → **fine-tune** (low lr!); huge → fine-tune or scratch. R-CNN → Fast (share features, RoI pool) → Faster (RPN) → Mask (RoIAlign + masks + keypoints). U-Net = encoder–decoder + skips |
 | **Words / attention (L18)** | Tokenization: character / subword (BPE: merge the most frequent pair, recount) / word (`<unk>`). Skip-gram: center → context; CBOW: context → center. **Attention = average of values, weighted by key–query similarity.** Self-attention ≈ soft clustering; cross-attention ≈ instance-based regression. Block = multi-head attention + MLP, residual + LayerNorm. Order-invariant → positional encoding |
 | **BERT / ViT (L19)**     | BERT: encoder-only, bidirectional, pre-trained on **MLM + NSP**, unlabeled text, fine-tune with a linear layer. ViT: patches → linear projection + position + [CLS] → same Transformer encoder. CNN: better with less data (locality bias); Transformer: scales better, any modality |
-| **CLIP / GPT (L20)**     | **Foundation model** = huge data + broad task. **Zero-shot** = no examples for this task. CLIP: image + text encoders, **contrastive** matching (32K × 32K, cross-entropy both ways), 400M pairs; zero-shot via label → caption. GPT: **predict the next token**. GPT-1 fine-tuned; GPT-2 zero-shot; GPT-3 (175B) few-shot in context, no weight updates |
+| **CLIP / GPT (L20)**     | **Foundation model** = huge data + broad task. **Zero-shot** = no examples for this task. CLIP: image + text encoders, **contrastive** matching (32K × 32K, cross-entropy both ways), 400M pairs; zero-shot via label → caption. GPT: **predict the next token**. GPT-1 fine-tuned; GPT-2 zero-shot; GPT-3 (175B) few-shot in context, no weight updates. ChatGPT = SFT → RLHF. Scaling laws: loss is a power law in N, D, C. CoT helps reasoning and only works at scale |
 | **Foundations (L2–11)**  | KNN: larger K → smoother, ↓variance ↑bias. Train/val/test roles. PCA keeps max variance (linear); MDS distances; IsoMap graph distances; t-SNE/UMAP neighbors. L1 sparse, L2 small + closed form. LR: every point has loss; SVM: support vectors, "confident enough". NB: independent **given y**. EM: E = latent probabilities, M = weighted parameters, local optimum; K-means = hard EM. MoG semi-parametric; KDE/histogram non-parametric. Median, RANSAC, IRLS are robust; least squares isn't |
 
 **Frequent traps**
@@ -100,6 +97,240 @@ Format: 25 multiple choice / multi-select questions, conceptual only (no coding)
 | Same weights at different positions | No  | **Yes**     | No: mixing weights come from data |
 | Assumes a neighborhood structure | No     | **Yes**     | No: every token sees every token |
 | Compute is mostly linear operations | Yes | Yes         | Yes                             |
+
+### 算法与缩写总表（L2–20） {#glossary}
+
+按 lecture 顺序列出所有算法、模型和缩写。"考点"一栏只写最常考的一句；细节回 [CS441 笔记](CS441.md)。没有缩写的算法（K-means、Pegasos 等）也放在这里。
+
+#### 缩写撞车：同一个缩写，不同的意思
+
+| 缩写       | 意思 1                                              | 意思 2                                                  |
+| ---------- | -------------------------------------------------- | ------------------------------------------------------ |
+| **LR / lr** | Logistic Regression（L7）                           | learning rate（L14 起，写作 `lr`）                       |
+| **NN**     | Nearest Neighbor（L2、L7 recap）                      | Neural Network（L15 起）                                 |
+| **MAP / mAP** | Maximum A Posteriori 最大后验（L8）                 | mean Average Precision，检测指标（L17）                   |
+| **CV**     | Cross-Validation（L6）                               | Computer Vision（L17）                                   |
+| **Bias**   | bias–variance 里的偏差（L3）                          | 模型里的常数项 $b$（L6）                                   |
+| **Kernel** | SVM 核函数（L7）                                     | KDE 核（L10）；卷积核 `kernel_size`（L16）                  |
+| **Encoder** | 预训练 backbone（L17）                              | Transformer encoder（L18–19）；CLIP 两个 encoder（L20）     |
+
+#### L2–3 · KNN 与泛化
+
+| 缩写 / 名称 | 全称                              | 中文          | 考点                                                                 |
+| ----------- | --------------------------------- | ------------- | -------------------------------------------------------------------- |
+| **KNN**     | K-Nearest Neighbors               | K 近邻         | 分类取多数标签，回归取均值。K 越大越平滑：↓variance ↑bias；1-NN 训练误差为 0 |
+| **i.i.d.**  | independent and identically distributed | 独立同分布 | 默认 train/test 来自同一分布                                         |
+| **L1 / L2** | Manhattan / Euclidean distance    | 曼哈顿/欧氏距离 | 加上 dot product、cosine similarity，是 KNN 常用的相似度               |
+| **RMSE**    | Root Mean Squared Error           | 均方根误差      | 有单位                                                               |
+| **MAE**     | Mean Absolute Error               | 平均绝对误差    | 有单位，对 outlier 没 RMSE 敏感                                      |
+| **R²**      | coefficient of determination      | 决定系数        | 无单位，解释的方差比例；接近 1 = 线性可预测                            |
+| Generalization error | test error − training error | 泛化误差      | 课程定义；数据越多，这个差距越小                                      |
+
+#### L4 · 检索与聚类
+
+| 缩写 / 名称 | 全称                              | 中文          | 考点                                                                 |
+| ----------- | --------------------------------- | ------------- | -------------------------------------------------------------------- |
+| **FAISS**   | Facebook AI Similarity Search     | —             | 高度优化的检索库，暴力搜索也很快                                       |
+| **LSH**     | Locality Sensitive Hashing        | 局部敏感哈希    | 随机投影 → bit → bucket，近似搜索；hash key 越长越准，但查询更慢（课上说法） |
+| K-means     | —                                 | K 均值         | 交替"分给最近中心 / 中心取均值"；依赖初始化，K 要自己选；= hard EM         |
+| Hierarchical K-means | —                        | 层次 K 均值     | 查找 $O(\log K\cdot D)$，比 $O(K\cdot D)$ 快                          |
+| Agglomerative clustering | —                    | 凝聚聚类       | 自底向上合并，找数据结构                                              |
+| Purity      | —                                 | 纯度           | 每簇最多标签的数量之和 ÷ N；需要标签                                   |
+
+#### L5 · 降维
+
+| 缩写 / 名称 | 全称                              | 中文          | 考点                                                                 |
+| ----------- | --------------------------------- | ------------- | -------------------------------------------------------------------- |
+| **PCA**     | Principal Component Analysis      | 主成分分析      | **线性**投影，保留最大方差（= 最小重建 MSE）；协方差矩阵的特征向量；不用标签，可能丢掉判别信息 |
+| **SVD**     | Singular Value Decomposition      | 奇异值分解      | $A=U\Sigma V^T$，可以用来算 PCA                                      |
+| Eigenfaces  | —                                 | 特征脸         | PCA 用在人脸上；成分越多重建越好                                       |
+| **MDS**     | MultiDimensional Scaling          | 多维缩放       | 保留**两两距离**；欧氏距离有闭式解；受远点影响大                         |
+| Non-metric MDS | —                              | 非度量 MDS     | 只保留距离的**排序**，更慢                                            |
+| **IsoMap**  | Isometric Mapping                 | 等距映射       | MDS + **图最短路径**（geodesic）距离；能展开 S-curve                    |
+| **t-SNE**   | t-distributed Stochastic Neighbor Embedding | t 分布随机邻域嵌入 | 保留**邻居概率分布**，最小化 KL；簇分得最开，但破坏全局形状，慢       |
+| **UMAP**    | Uniform Manifold Approximation and Projection | 均匀流形近似投影 | 保留局部结构，比 t-SNE 快很多                                    |
+| **KL**      | Kullback–Leibler divergence       | KL 散度        | t-SNE 的目标函数                                                     |
+
+#### L6 · 线性回归
+
+| 缩写 / 名称 | 全称                              | 中文          | 考点                                                                 |
+| ----------- | --------------------------------- | ------------- | -------------------------------------------------------------------- |
+| Least squares | ordinary least squares          | 最小二乘       | 闭式解 $w=(X^TX)^{-1}X^Ty$（伪逆）；对 outlier 敏感                   |
+| **L1 = Lasso** | —                              | L1 正则        | 权重**稀疏**（正好为 0），自动特征选择；**无**闭式解                    |
+| **L2 = Ridge** | —                              | L2 正则        | 权重小但不为 0，适合相关特征；**有**闭式解                             |
+| Elastic net | —                                 | 弹性网络       | L1 + L2                                                              |
+| Grid / line / randomized search | —           | 超参搜索       | 3 个以上超参时 randomized 往往最好                                     |
+| **CV / LOOCV** | Cross-Validation / Leave-One-Out CV | 交叉验证 / 留一法 | 训练数据少时用；LOOCV 是 N 折                                      |
+
+#### L7 · 线性分类器
+
+| 缩写 / 名称 | 全称                              | 中文          | 考点                                                                 |
+| ----------- | --------------------------------- | ------------- | -------------------------------------------------------------------- |
+| **LR**      | (Linear) Logistic Regression      | 逻辑回归       | 用线性函数建模 **log-odds（logit）**；每个点都有非零 loss；凸；"最大化置信度" |
+| Sigmoid / softmax | —                           | —             | 二分类 / 多分类时把分数变成概率                                       |
+| **SVM**     | Support Vector Machine            | 支持向量机      | 最大化 margin；只依赖 **support vectors**；"足够自信就行"；凸           |
+| Hinge loss  | —                                 | 合页损失       | margin ≥ 1 时为 0，否则线性增长                                       |
+| Soft margin / $C$ | —                           | 软间隔        | $C$ 控制允许多少违反 margin                                          |
+| Primal / dual | —                               | 原问题/对偶    | primal 每个**特征**一个参数；dual 每个**样本**一个 $\alpha$（大多为 0）  |
+| Representer theorem | —                         | 表示定理       | L2 正则的最优 $w$ 是训练样本的加权和；L1 不适用                        |
+| **RBF** kernel | Radial Basis Function          | 径向基（高斯）核 | 非线性 SVM；$\sigma$ 越小越像最近邻                                 |
+| **HOG**     | Histogram of Oriented Gradients   | 方向梯度直方图   | Dalal–Triggs 2005：HOG + linear SVM 行人检测                          |
+
+#### L8 · 朴素贝叶斯
+
+| 缩写 / 名称 | 全称                              | 中文          | 考点                                                                 |
+| ----------- | --------------------------------- | ------------- | -------------------------------------------------------------------- |
+| **NB**      | Naïve Bayes                       | 朴素贝叶斯      | 假设特征**在给定 y 时**条件独立；训练/预测都快；数据少时不易过拟合；置信度不准 |
+| **MLE**     | Maximum Likelihood Estimation     | 最大似然估计    | 只用数据：count / total                                               |
+| **MAP**     | Maximum A Posteriori              | 最大后验估计    | 数据 + 先验；Laplace smoothing $\frac{count+\alpha}{N+\alpha k}$；α=0 即 MLE |
+| Bernoulli / categorical / Gaussian NB | —     | —             | 二值 / 多值离散 / 连续特征                                             |
+
+#### L9–10 · EM 与概率密度估计
+
+| 缩写 / 名称 | 全称                              | 中文          | 考点                                                                 |
+| ----------- | --------------------------------- | ------------- | -------------------------------------------------------------------- |
+| **EM**      | Expectation-Maximization          | 期望最大化      | **E**：给定参数算隐变量概率；**M**：按这些概率加权重估参数；每步提高似然下界（Jensen），收敛到**局部**最优 |
+| Hard EM     | —                                 | 硬 EM         | E-step 只取最可能的值；**K-means 就是 hard EM**                         |
+| Latent variable | —                             | 隐变量        | 没观测到但模型需要的变量（好/坏标注者、前景/背景、topic）                  |
+| **PDF**     | Probability Density Function      | 概率密度函数    | 积分为 1，但**值可以大于 1**                                          |
+| **MoG / GMM** | Mixture of Gaussians / Gaussian Mixture Model | 高斯混合模型 | **半参数**；用 EM 拟合；成分够多能拟合几乎任何分布              |
+| **KDE**     | Kernel Density Estimation         | 核密度估计      | **非参数**；bandwidth 太小 → 尖刺，太大 → 过平滑；最通用                 |
+| Histogram   | equal width / equal count         | 直方图         | 非参数；偏态数据（工资）用 equal count                                  |
+| **CLT**     | Central Limit Theorem             | 中心极限定理    | 很多随机变量之和近似 Gaussian，所以常用 Gaussian 做噪声模型               |
+
+#### L11 · 离群点与鲁棒估计
+
+| 缩写 / 名称 | 全称                              | 中文          | 考点                                                                 |
+| ----------- | --------------------------------- | ------------- | -------------------------------------------------------------------- |
+| Moving average / median | —                     | 滑动平均/中位数 | 均值抗随机噪声但**不抗 outlier**；中位数抗 outlier                      |
+| **RANSAC**  | RANdom SAmple Consensus           | 随机抽样一致    | 随机取最少点拟合，按 inlier 比例打分；outlier **直接排除**；outlier 越多、参数越多越慢 |
+| **IRLS**    | Iteratively Reweighted Least Squares | 迭代重加权最小二乘 | 保留所有点，每轮按拟合程度**重新加权**                             |
+| M-estimation | robust least squares             | M 估计         | 换成对大残差增长更慢的 loss                                           |
+| Outlier detection | —                           | 离群点检测      | 低概率（MoG）、低密度（KNN 距离）、难压缩（PCA 重建误差）、低维可视化     |
+
+#### L12–13 · 树与集成
+
+| 缩写 / 名称 | 全称                              | 中文          | 考点                                                                 |
+| ----------- | --------------------------------- | ------------- | -------------------------------------------------------------------- |
+| **DT**      | Decision Tree                     | 决策树         | **贪心**分裂，不保证全局最优；axis-aligned；不需要 feature scaling；可解释 |
+| **H / IG**  | entropy / Information Gain        | 熵 / 信息增益   | $IG=H(Y)-H(Y\mid X)$，选 IG 最大的分裂                                |
+| Gini        | Gini index $1-\sum p_i^2$         | 基尼指数       | 熵的替代，不用 log，稍快                                               |
+| Regression tree | —                             | 回归树         | 最小化平方误差，叶子输出**均值**                                       |
+| Bootstrap   | —                                 | 自助法         | **有放回**抽样，估计统计量及其方差                                     |
+| **Bagging** | Bootstrap AGGregatING             | 装袋法         | bootstrap 训练多个模型再投票 → ↓**variance**                           |
+| **RF**      | Random Forest (Breiman 2001)      | 随机森林       | **深**树 + 随机样本 + 随机特征，**平均** → ↓**variance**；很难训坏      |
+| Boosting    | —                                 | 提升法         | **按顺序**训练，修正前面的错误 → ↓**bias**                             |
+| **AdaBoost** | Adaptive Boosting                | 自适应提升      | 错分样本**加权**；weak learner 误差 < 50%；最终加权投票；可能过拟合      |
+| Real AdaBoost | —                               | —             | 每个 learner 输出半个 logit，最后求和取符号                             |
+| **BST-DT**  | Boosted Decision Trees            | 提升决策树      | **小**树（深度 2–4）+ 叶子 logit 求和；Caruana 对比中最好               |
+| Cascade     | —                                 | 级联           | 前面的模型处理简单样本，难的才交给后面                                  |
+| Mean-shift  | —                                 | 均值漂移       | Kinect 中从每像素部位预测找关节（找众数）                               |
+
+#### L14–15 · 优化与 MLP
+
+| 缩写 / 名称 | 全称                              | 中文          | 考点                                                                 |
+| ----------- | --------------------------------- | ------------- | -------------------------------------------------------------------- |
+| **GD**      | Gradient Descent                  | 梯度下降       | 沿负梯度走；每步 $O(N)$，路径稳定                                      |
+| **SGD**     | Stochastic Gradient Descent       | 随机梯度下降    | 用一个/一小批样本估梯度；每步 $O(B)$，噪声 $O(1/\sqrt B)$；噪声可帮助逃离局部极小 |
+| Epoch       | —                                 | 轮次           | 完整过一遍训练集；每轮重新随机打乱最好                                  |
+| **Pegasos** | Primal Estimated sub-GrAdient SOlver for SVM | —     | SVM 的 SGD：总是收缩 $(1-\eta\lambda)$，只有 margin 内的样本推动 $w$     |
+| Perceptron  | —                                 | 感知机         | 线性 + 阈值；只能拟合**线性可分**数据                                  |
+| **MLP**     | Multi-Layer Perceptron            | 多层感知机      | 线性层 + **非线性激活**；↓bias ↑variance；非凸                          |
+| **FC**      | Fully Connected layer             | 全连接层        | $x_{k+1}=Wx_k$                                                       |
+| **ReLU**    | Rectified Linear Unit             | 修正线性单元    | $\max(0,x)$；正区间导数 1，缓解梯度消失；稀疏                           |
+| Sigmoid     | —                                 | —             | 导数 ≤ 0.25 → 深层**梯度消失**；适合输出概率                            |
+| Backprop    | backpropagation                   | 反向传播       | 链式法则，**路径求和**，复用公共项（动态规划）                           |
+| **MSE**     | Mean Squared Error                | 均方误差       | 回归 loss                                                            |
+| **NeRF**    | Neural Radiance Fields            | 神经辐射场      | 坐标 MLP；配合 **Fourier features** 输入编码，图像更清晰                |
+
+#### L16–17 · CNN 与视觉
+
+| 缩写 / 名称 | 全称                              | 中文          | 考点                                                                 |
+| ----------- | --------------------------------- | ------------- | -------------------------------------------------------------------- |
+| **CNN**     | Convolutional Neural Network      | 卷积神经网络    | 共享卷积核 → 平移不变，参数少；pooling 扩大感受野                        |
+| LeNet-5     | (LeCun 1998)                      | —             | average pooling + sigmoid/tanh，MNIST                                |
+| AlexNet     | (2012)                            | —             | ReLU + max pooling + dropout + ImageNet + GPU                         |
+| **ILSVRC**  | ImageNet Large Scale Visual Recognition Challenge | — | 1.2M 训练图，1000 类                                         |
+| VGG / GoogLeNet | —                             | —             | 更深的网络；GoogLeNet 用 bottleneck + auxiliary classifiers            |
+| **ResNet**  | Residual Network (He 2016)        | 残差网络        | skip connection $F(x)+x$；解决**优化**问题；bottleneck 1×1→3×3→1×1 省算力 |
+| **BN / BatchNorm** | Batch Normalization        | 批归一化       | 按 mini-batch 归一化，再学 $\gamma,\beta$；训练更稳更快                 |
+| Dropout     | —                                 | 随机失活       | 正则化 → ↓variance                                                    |
+| Momentum    | —                                 | 动量           | 梯度的滑动平均；更快，滚过浅的局部极小                                   |
+| **AdaGrad** | Adaptive Gradient                 | —             | 每个权重按累计梯度大小归一化；后期会变很慢                              |
+| **RMSProp** | Root Mean Square Propagation      | —             | AdaGrad + 滑动平均衰减                                                |
+| **Adam**    | Adaptive Moment Estimation        | —             | Momentum + RMSProp；好调参                                            |
+| **AdamW**   | Adam with decoupled Weight decay  | —             | 正确地做 weight decay；最常用之一                                      |
+| Data augmentation | —                           | 数据增强       | 不改标签的变换 → ↓**variance**，不增加表达力                            |
+| Linear probe | feature extraction               | 线性探测       | 冻结 encoder，只训线性层；数据**很少**时用                              |
+| Fine-tune   | —                                 | 微调           | 全部训练，lr 比从头训练**低 ≥10×**；数据**中等**时用                     |
+| **R-CNN**   | Regions with CNN features         | —             | Selective Search 约 2K 候选框，每个都过一遍 CNN → 很慢                  |
+| Fast R-CNN  | —                                 | —             | 整图只算一次特征 + **RoI pooling** → 约 100× 快                         |
+| Faster R-CNN | —                                | —             | 加 **RPN** 生成候选框 → 再约 10× 快                                    |
+| **RPN**     | Region Proposal Network           | 区域建议网络    | 共用卷积特征，每个 anchor 输出 objectness + 框修正                      |
+| **RoI**     | Region of Interest                | 感兴趣区域      | RoI pooling → **RoIAlign**（双线性插值，对齐更准）                      |
+| Mask R-CNN  | —                                 | —             | Faster R-CNN + RoIAlign + 实例 mask + keypoints                       |
+| **NMS**     | Non-Max Suppression               | 非极大值抑制    | 检测后处理，去掉重叠框                                                 |
+| **AP / mAP** | (mean) Average Precision         | 平均精度       | 检测指标（不是 L8 的 MAP）                                             |
+| **DPM**     | Deformable Part Model             | 可变形部件模型   | CNN 之前的检测方法（HOG 之后）                                         |
+| U-Net       | —                                 | —             | encoder–decoder + 镜像 skip；分割和图像生成                             |
+
+#### L18–19 · 文本、注意力、Transformer
+
+| 缩写 / 名称 | 全称                              | 中文          | 考点                                                                 |
+| ----------- | --------------------------------- | ------------- | -------------------------------------------------------------------- |
+| Token       | —                                 | 词元           | 整数 token 只是 ID；向量 token 才有相似度                               |
+| **BPE**     | Byte Pair Encoding                | 字节对编码      | 从字符开始，反复合并**最频繁的相邻对**，每次重新计数                      |
+| WordPiece / SentencePiece | —                   | —             | 子词分词；BERT 用 WordPiece，Unified-IO 用 SentencePiece                |
+| `<unk>`     | unknown token                     | 未知词         | 只有 word tokenizer 需要                                              |
+| Word2Vec    | (Mikolov 2013)                    | —             | 从上下文学词向量；Paris − France + Italy = Rome                        |
+| **CBOW**    | Continuous Bag of Words           | 连续词袋        | 周围词 → 中心词；训练更快                                              |
+| Skip-gram   | —                                 | 跳字模型       | 中心词 → 每个周围词；语义准确率更高                                     |
+| **Q / K / V** | Query / Key / Value             | 查询/键/值     | 输出 = **values** 按 key–query 相似度加权平均；都是输入乘可学的线性投影  |
+| Self- / cross-attention | —                     | 自/交叉注意力   | self ≈ soft clustering；cross（Q 和 K/V 来自不同集合）≈ 实例回归        |
+| Multi-head attention | —                        | 多头注意力      | $h$ 个头各有投影，每头输出 $D/h$，拼接后再过线性层                       |
+| Scaled dot-product | —                          | 缩放点积       | 除以 $\sqrt{d_k}$ 防止点积过大                                         |
+| **PE**      | Positional Encoding               | 位置编码       | 注意力与顺序无关，所以要加；sinusoidal 或可学                            |
+| **LayerNorm** | Layer Normalization             | 层归一化       | Transformer block 里的归一化（每个 token 内部）                         |
+| **FFN / MLP** | Feed-Forward Network            | 前馈层         | block 里对每个 token 单独的 2 层 MLP；attention = 处理，MLP = 记忆       |
+| Masked attention | —                            | 掩码注意力     | 只看**前面**的 token；GPT 和翻译 decoder 用                             |
+| **EOS**     | End Of Sequence                   | 序列结束符      | decoder 输出它时停止                                                  |
+| **BLEU**    | BiLingual Evaluation Understudy   | —             | 翻译质量指标，越高越好                                                 |
+| Label smoothing | —                             | 标签平滑       | 原始 Transformer 用的正则化之一                                        |
+| **BERT**    | Bidirectional Encoder Representations from Transformers | — | **encoder-only**，双向；预训练 = **MLM + NSP**；加线性层微调   |
+| **MLM**     | Masked Language Modeling          | 掩码语言模型    | 选 15% token：80% `[MASK]`，10% 随机，10% 不变；只算选中的 loss          |
+| **NSP**     | Next Sentence Prediction          | 下一句预测      | 50% 的 B 换成随机句，用 [CLS] 判断                                     |
+| **[CLS] / [SEP]** | classification / separator token | —         | [CLS] 汇总整句（ViT 汇总整图）；[SEP] 分隔句子                          |
+| **GLUE / SQuAD** | General Language Understanding Evaluation / Stanford Question Answering Dataset | — | BERT 刷榜的 benchmark |
+| **ViT**     | Vision Transformer                | 视觉 Transformer | 16×16 patch → 线性投影 + PE + [CLS] → 同样的 encoder；数据越多越占优    |
+| **JFT**     | Google 内部超大图像数据集           | —             | ViT 预训练数据越大越好（JFT > ImageNet-21k）                            |
+| **LLM**     | Large Language Model              | 大语言模型      | BERT 是最早的之一                                                     |
+| Unified-IO  | —                                 | —             | 一个 encoder–decoder 处理文本+图像的各种任务；所有东西变成离散 token       |
+| **VQ-VAE**  | Vector-Quantized Variational AutoEncoder | —      | Unified-IO 用它把输出图像变成离散 code                                  |
+| **VQA**     | Visual Question Answering         | 视觉问答       | 视觉-语言任务之一                                                     |
+
+#### L20 · Foundation models
+
+| 缩写 / 名称 | 全称                              | 中文          | 考点                                                                 |
+| ----------- | --------------------------------- | ------------- | -------------------------------------------------------------------- |
+| Foundation model | —                            | 基础模型       | 超大数据 + 算力 + 宽泛任务，通用或再适配                                |
+| Zero / one / few-shot | —                       | 零/单/少样本    | prompt 里有 0 / 1 / 几个例子；**都不更新权重**                           |
+| In-context learning | —                         | 上下文学习      | GPT-3 在推理时靠 prompt 里的例子"学"                                    |
+| **CLIP**    | Contrastive Language–Image Pre-training | 对比语言-图像预训练 | 图像 + 文本 encoder，对比匹配 4 亿图文对；zero-shot 分类；微调会丢通用性 |
+| **GPT**     | Generative Pre-trained Transformer | 生成式预训练    | **decoder-only**，预测下一个 token；GPT-1 微调，GPT-2 zero-shot，GPT-3 few-shot |
+| WebText     | —                                 | —             | GPT-2 数据：Reddit ≥3 karma 的链接，800 万文档；去掉了 Wikipedia         |
+| **PPL**     | Perplexity                        | 困惑度         | $2^{\text{entropy}}$，越低越好                                        |
+| **SOTA**    | State Of The Art                  | 当前最优       | —                                                                    |
+| **SFT**     | Supervised Fine-Tuning            | 监督微调       | ChatGPT 第一步：在人写的示范上微调                                      |
+| **RLHF**    | Reinforcement Learning from Human Feedback | 基于人类反馈的强化学习 | 人对多个输出排序 → 训 **reward model** → 用 RL 调模型        |
+| **RL**      | Reinforcement Learning            | 强化学习       | —                                                                    |
+| **PPO**     | Proximal Policy Optimization      | 近端策略优化    | RLHF 里用的 RL 算法                                                    |
+| Scaling laws | (Kaplan 2020)                    | 缩放定律       | test loss 对参数 N、数据 D、算力 C 是**幂律**；与结构形状关系弱；大模型更 sample-efficient |
+| **CoT**     | Chain-of-Thought                  | 思维链         | prompt 里给推理示例；**只有大模型**才有效（emergent）                    |
+| **GRPO**    | Group Relative Policy Optimization | —            | DeepSeek-R1 用的 RL；只奖励正确答案 + 格式，不学 reward model            |
+| DeepSeek-R1 / R1-Zero | —                       | —             | R1-Zero = 纯 RL，长思考自己涌现；R1 = SFT 热身 + RL + SFT + RLHF         |
+| Distillation | —                                | 蒸馏           | 用大模型输出 SFT 小模型                                                |
+| Best-of-N   | —                                 | —             | 并行跑 N 次挑最好的；增加 **test-time compute**                         |
+| Benchmarks  | MMLU / GPQA / AIME / SWE-bench / GSM8K / SuperGLUE | — | 知识 / 博士级科学 / 竞赛数学 / 修 GitHub issue / 数学应用题 / 语言理解；只需认得 |
 
 ### Practice questions
 
