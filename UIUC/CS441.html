@@ -7949,7 +7949,7 @@
 <p>The <em>"naive"</em> part of Naive Bayes is the assumption that features <span class="arithmatex">\(x_1,...,x_m\)</span> are <strong>conditionally independent</strong> given the label <span class="arithmatex">\(y\)</span> (e.g. two features x1, x2 are independent given y). Then:</p>
 <div class="arithmatex">\[P(\mathbf x\mid y)=\prod_i P(x_i\mid y)\\ y^*=\arg\max_y\prod_i P(x_i\mid y)P(y)=\arg\max_y\Big[\log P(y)+\sum_i\log P(x_i\mid y)\Big]\]</div>
 <p><strong>Spam example:</strong> estimate <span class="arithmatex">\(P(y=\text{spam})\)</span>, <span class="arithmatex">\(P(y=\text{ham})\)</span>, and <span class="arithmatex">\(P(\text{word}=j\mid\text{spam})\)</span>, <span class="arithmatex">\(P(\text{word}=j\mid\text{ham})\)</span> for each word <span class="arithmatex">\(j\)</span>:</p>
-<div class="arithmatex">\[P(\text{"Ok lar...Joking wif u..."},\text{spam})=P(\text{spam})\,P(\text{"Ok"}\mid\text{spam})\,P(\text{"lar"}\mid\text{spam})\cdots\]</div>
+<div class="arithmatex">\[P(\text{&quot;Ok lar...Joking wif u...&quot;},\text{spam})=P(\text{spam})\,P(\text{&quot;Ok&quot;}\mid\text{spam})\,P(\text{&quot;lar&quot;}\mid\text{spam})\cdots\]</div>
 <p>and similarly for ham; classify as spam if <span class="arithmatex">\(P(\text{msg},\text{spam})&gt;P(\text{msg},\text{ham})\)</span>.</p>
 <h3 id="estimating-px_imid-y-from-data">Estimating <span class="arithmatex">\(P(x_i\mid y)\)</span> from data<a class="headerlink" href="#estimating-px_imid-y-from-data" title="Permanent link">&para;</a></h3>
 <p>Two approaches:</p>
@@ -9229,7 +9229,7 @@
 </tr>
 <tr>
 <td>Gradient noise</td>
-<td>none (stable path)</td>
+<td>none (<em>stable path</em>)</td>
 <td>std. error <span class="arithmatex">\(O(1/\sqrt B)\)</span> — e.g. 100× the batch costs 100× more but only reduces noise 10×</td>
 </tr>
 <tr>
@@ -10535,7 +10535,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2026年11月8日 10:08:13 CST">2026年11月8日 10:08:13</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2026年11月9日 00:46:02 CST">2026年11月9日 00:46:02</span>
   </span>
 
     
