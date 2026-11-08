@@ -41,28 +41,81 @@ Format: 25 multiple choice / multi-select questions, conceptual only (no coding)
 
 先看症状，再选方法：**train error 高 → bias 或 noise**；**test error 远高于 train error → variance**；**更深的网络 train error 反而更高 → optimization**。
 
-| 问题              | 有效的方法                                                                                                   | 常见错误选项                  |
-| ----------------- | -------------------------------------------------------------------------------------------------------- | ----------------------------- |
-| **↓ Variance**    | Larger K; more training data; stronger regularization; simpler model; bagging / RF; data augmentation; averaging networks; linear probe (little data) | Boosting; more layers         |
-| **↓ Bias**        | Smaller K; weaker regularization; more complex model (perceptron → MLP); boosting; fine-tune instead of linear probe | More data; bagging            |
-| **Optimization**  | ReLU instead of sigmoid; skip connections; BatchNorm; momentum / Adam; learning-rate tuning                 | Dropout, augmentation (those target variance) |
-| **Noise**         | None: irreducible for the given features                                                                 | "A bigger model fixes it"     |
+| 问题             | 有效的方法                                                   | 常见错误选项                                  |
+| ---------------- | ------------------------------------------------------------ | --------------------------------------------- |
+| **↓ Variance**   | Larger K; more training data; stronger regularization; simpler model; bagging / RF; data augmentation; averaging networks; linear probe (little data) | Boosting; more layers                         |
+| **↓ Bias**       | Smaller K; weaker regularization; more complex model (perceptron → MLP); boosting; fine-tune instead of linear probe; decrease weight | More data; bagging                            |
+| **Optimization** | ReLU instead of sigmoid; skip connections; BatchNorm; momentum / Adam; learning-rate tuning | Dropout, augmentation (those target variance) |
+| **Noise**        | None: irreducible for the given features                     | "A bigger model fixes it"                     |
 
-#### 2. 模型性质总表
+#### 2. 所有方法对比总表 {#all-methods}
 
-| Model                 | Boundary / function          | Optimum                     | Init matters? | Training                      |
-| --------------------- | ---------------------------- | --------------------------- | ------------- | ----------------------------- |
-| 1-NN / KNN            | Non-linear, instance-based   | No optimization             | No            | Store data; new examples are trivial to add |
-| Linear regression     | Linear                       | Convex, global              | No            | Closed form (with or without L2) |
-| Logistic regression   | Linear                       | Convex, global              | No            | Iterative                     |
-| Linear / RBF SVM      | Linear / non-linear          | Convex, global              | No            | QP or Pegasos                 |
-| Naïve Bayes           | Usually linear               | Global (counts / MLE)       | No            | Closed form                   |
-| Decision tree         | Axis-aligned partitions      | **Greedy, not guaranteed**  | No            | Recursive splits              |
-| K-means               | Clusters                     | **Local**                   | **Yes**       | Iterative (hard EM)           |
-| MoG with EM           | Density                      | **Local**                   | **Yes**       | Iterative (soft EM)           |
-| MLP / CNN / Transformer | Non-linear                 | **Non-convex, local**       | **Yes**       | SGD + backprop                |
+L2–20 的所有方法放在同一张表里，列都一样，可以直接横向比（例如 "BERT 和 CLIP 都不用人工标签"、"t-SNE 和 K-means 都依赖初始化"）。按方法类型分组，括号里是 lecture。
 
-#### 3. 同一个词，不同的意思
+!!! info "三种 SVM 的关系"
+    **Kernelized SVM** = 把 dual 里的点积 $x_i^Tx_j$ 换成核函数 $k(x_i,x_j)$。**Linear SVM** 就是用 linear kernel 的特例；**RBF SVM** 是用 Gaussian (RBF) kernel 的 kernelized SVM，polynomial kernel 也是一种。三者都是**凸**的，区别在于：边界是否线性、参数个数（primal 每个特征一个 vs. dual 每个训练样本一个 $\alpha$）和速度。Pegasos 是用 SGD 解 linear SVM 的 primal。
+
+| 方法 | 任务 | 监督方式 | 函数形式 | 怎么学（目标） | 求解 | 最优解 | 依赖初始化 / 随机性 | 需要 feature scaling | 关键超参 | 考点 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| ***有监督 · 经典模型*** | | | | | | | | | | |
+| **KNN** (L2–3) | 分类 / 回归 | 有监督 | 非线性，按距离划分 | 不学，存训练集 | 无训练 | — | 否 | **要** | K、距离度量 | 1-NN 训练误差 0；加新样本最容易；预测慢；K↑ → ↓var ↑bias |
+| **Linear regression** (L6) | 回归 | 有监督 | 线性 | 平方误差 + L1/L2 | 无正则或 L2：闭式；L1：迭代 | 凸，全局 | 否 | 有正则时要 | λ | 能外推、系数可解释；对 outlier 敏感 |
+| **Logistic regression** (L7) | 分类 | 有监督 | 线性 | $-\log P(y\mid x)$ + 正则 | 迭代（GD） | 凸，全局 | 否 | 有正则时要 | λ | 每个点都有 loss；概率估计好；分类网络的最后一层 |
+| **Perceptron** (L14) | 分类 | 有监督 | 线性 + 阈值 | MSE / logistic loss | SGD | 凸 | 基本否 | 要 | lr | 只能拟合线性可分数据（XOR 不行） |
+| **Linear SVM** (L7, L14) | 分类 | 有监督 | 线性 | hinge loss + $\lVert w\rVert^2$（最大 margin） | QP，或 Pegasos（SGD） | 凸，全局 | 否 | 要 | C 或 λ | 只依赖 support vectors；"够自信就行" |
+| **Kernelized SVM**（RBF / polynomial）(L7) | 分类 | 有监督 | **非线性** | dual：每个训练样本一个 $\alpha$，用 $k(x_i,x_j)$ 代替点积 | QP | **凸，全局** | 否 | **要** | C、核函数、RBF 的 σ | σ 越小越像最近邻，越能贴合训练集；训练和预测慢；已基本被深度网络取代 |
+| **Naïve Bayes** (L8) | 分类 | 有监督 | 通常线性 | MLE / MAP 计数 | 闭式 | 全局 | 否 | 否 | 平滑 α | 假设给定 y 时特征独立；数据少也行；置信度不准 |
+| **Decision tree** (L12) | 分类 / 回归 | 有监督 | axis-aligned，分段常数 | 每步最大 IG / 最小平方误差 | **贪心**递归 | 不保证 | 否（但数据稍变树就变 → 高 var） | **否** | 深度、最小叶子 | 不限深度时训练误差可为 0；可解释 |
+| ***有监督 · 集成*** | | | | | | | | | | |
+| **Bagging** (L13) | 分类 / 回归 | 有监督 | 同基模型 | bootstrap 抽样后各自训练，投票 | 独立，可并行 | — | 有随机抽样 | 同基模型 | 模型个数 | ↓**variance** |
+| **Random forest** (L13) | 分类 / 回归 | 有监督 | 分段常数 | **深**树 + 随机样本 + 随机特征，**平均** | 独立，可并行 | — | 有随机性，但结果稳定 | 否 | 树数、每次选的特征数 | ↓**variance**；很难训坏；高维数据表现好 |
+| **Boosted trees / AdaBoost** (L13) | 分类 / 回归 | 有监督 | 分段常数 | **小**树，**按顺序**加权错误样本，logit 求和 | 顺序 | — | 否 | 否 | 树数、树深 | ↓**bias**；可能过拟合；Caruana 对比中最好 |
+| ***无监督 · 聚类、密度、隐变量*** | | | | | | | | | | |
+| **K-means** (L4) | 聚类 | 无监督 | 硬分配到最近中心 | 最小化到中心的平方距离 | 迭代，两步交替 | **局部** | **是** | **要** | K | = hard EM |
+| **EM**（通用算法）(L9) | 隐变量 + 参数 | 无监督 / 缺失数据 | 取决于模型 | 最大化似然（下界） | 迭代：E 求隐变量概率，M 加权重估参数 | **局部** | **是** | — | 模型形式 | 不是模型，是求解方法；用于 MoG、bad annotators、topic models |
+| **MoG / GMM** (L10) | 密度 / 软聚类 | 无监督 | 半参数：高斯加权和 | 最大似然 | 用 EM 迭代 | **局部** | **是** | — | 成分数 | 软分配（K-means 是硬分配）；可检测 outlier |
+| **KDE / histogram** (L10) | 密度 | 无监督 | 非参数 | 不学，存数据 / 计数 | 无训练 | — | 否 | KDE 要 | 带宽 h / bin 数 | 低维好、高维差；用验证集 log-likelihood 选超参 |
+| ***无监督 · 降维、检索*** | | | | | | | | | | |
+| **PCA** (L5) | 降维 | 无监督 | **线性**投影 | 最大方差 = 最小重建 MSE | 闭式（特征分解 / SVD） | 全局 | 否 | **要** | 维数 | 不用标签，可能丢判别信息；重建误差可找 outlier |
+| **MDS / IsoMap** (L5) | 降维 | 无监督 | 非线性嵌入 | 保留两两距离（IsoMap 用图最短路径距离） | 经典 MDS：闭式 | 经典 MDS：全局 | 否 | 要 | 维数；IsoMap 的邻居数 | IsoMap 能展开全局流形；MDS 受远点影响大 |
+| **t-SNE** (L5) | 可视化降维 | 无监督 | 非线性嵌入 | 最小化 KL（邻居概率分布） | 梯度下降 | **局部** | **是** | 要 | σ（邻域大小） | 簇分得最开，但破坏全局形状；慢；通常先 PCA |
+| **UMAP** (L5) | 降维 | 无监督 | 非线性嵌入 | 保留 kNN 局部结构 | 迭代优化 | 局部 | 是 | 要 | 邻居数、目标维数 | 比 t-SNE 快很多 |
+| **LSH** (L4) | 近似检索 | 无监督 | 随机投影 → bit → bucket | 不学 | 无训练 | — | 随机投影 | 要 | bit 数 | 用精确度换速度 |
+| ***鲁棒拟合*** | | | | | | | | | | |
+| **RANSAC** (L11) | 鲁棒拟合 | — | 任意模型 | 最大化 inlier 比例 | 随机抽最少点拟合并打分，重复 | — | 随机 | — | 阈值、迭代次数 | outlier 直接排除；outlier 越多越慢 |
+| **IRLS** (L11) | 鲁棒拟合 | — | 任意模型 | 鲁棒 loss | 迭代重加权最小二乘 | 局部 | 从最小二乘解开始 | — | loss 形状 | 保留所有点，只降低权重 |
+| ***神经网络与 foundation models*** | | | | | | | | | | |
+| **Word2Vec** (L18) | 词向量 | 自监督（上下文） | 浅层线性 | CBOW / skip-gram 预测上下文 | SGD | 非凸 | 是 | — | 向量维数 | 向量算术：Paris − France + Italy = Rome |
+| **MLP** (L15) | 分类 / 回归 | 有监督 | 非线性 | 任意 loss | SGD + backprop | **非凸** | **是** | 要（输入归一化） | lr、宽度、深度 | 比 perceptron ↓bias ↑var；sigmoid 会梯度消失 |
+| **CNN / ResNet** (L16–17) | 图像 | 有监督（如 ImageNet） | 卷积 + pooling + FC | 交叉熵 | SGD / Adam | 非凸 | 是 | 要（像素归一化） | lr、深度、augmentation | 局部性偏置，数据少时更好；skip connection 解决优化问题；常作预训练 backbone |
+| **Transformer** (L18) | 任意 token 序列 | 视任务 | attention + MLP，residual + LayerNorm | 视任务 | SGD / Adam | 非凸 | 是 | — | 层数、维数、头数 | 与顺序无关，所以要 PE；数据越多越占优 |
+| **BERT** (L19) | 语言表示 | **自监督** | encoder-only，双向 | **MLM + NSP**（BooksCorpus + Wikipedia） | SGD / Adam | 非凸 | 是 | — | — | 加线性层**微调** |
+| **GPT-1 / 2 / 3** (L18, L20) | 语言生成 | **自监督** | decoder-only，causal（masked） | **预测下一个 token**（GPT-2：WebText；GPT-3：300B tokens） | SGD / Adam | 非凸 | 是 | — | — | GPT-1 微调；GPT-2 zero-shot；GPT-3（175B）few-shot in context，不更新权重；ChatGPT = SFT + RLHF |
+| **ViT** (L19) | 图像分类 | 有监督（JFT / ImageNet-21k） | encoder-only，16×16 patch | 分类 | SGD / Adam | 非凸 | 是 | — | patch 大小 | 预训练数据越大越好；[CLS] + 线性头 |
+| **CLIP** (L20) | 图文表示 | **自然语言监督**（无类别标签） | 图像 encoder + 文本 Transformer | **对比匹配** 4 亿图文对 | SGD / Adam | 非凸 | 是 | — | batch 大小（32K） | zero-shot、linear probe、K-NN；微调会丢掉通用性 |
+
+#### 3. 按性质反查 {#by-property}
+
+跨课程的题通常问"下列哪些具有某性质"。先在这里查，再回总表看原因。
+
+| 题目问法 | 符合 | 常被误选 |
+| --- | --- | --- |
+| 线性决策边界 / linear classifier | Perceptron、Logistic regression、Linear SVM、Naïve Bayes（通常） | Kernelized / RBF SVM、1-NN、Decision tree、MLP |
+| 凸 / 只有一个局部最优 / 能得全局最优 | Linear & logistic regression、Linear SVM、**Kernelized SVM**、Naïve Bayes、PCA、经典 MDS | Decision tree（贪心）、K-means、EM / MoG、t-SNE、所有神经网络 |
+| 不同初始化 → 参数明显不同 | K-means、EM / MoG、t-SNE、UMAP、MLP、CNN、Transformer（BERT / GPT / ViT / CLIP） | Logistic regression、SVM（凸） |
+| 一定能把训练误差降到 0（没有冲突样本时） | 1-NN、不限深度的决策树 | 线性模型、Naïve Bayes（RBF SVM 只在 σ 很小时接近） |
+| 有闭式解 | Linear regression（无正则或 L2）、Naïve Bayes、PCA、经典 MDS | L1 regression、Logistic regression、SVM、K-means、EM |
+| 不用训练 / 最容易加新样本 | KNN、KDE、LSH | — |
+| 不需要 feature scaling | Decision tree、Random forest、Boosted trees、Naïve Bayes | KNN、K-means、PCA、SVM |
+| 只依赖少数训练样本 | Linear / kernelized SVM（support vectors） | Logistic regression（每个点都有 loss） |
+| 能外推 | Linear regression | KNN、树、RF（输出的是训练目标的平均） |
+| 无监督 | K-means、EM / MoG、KDE、PCA、MDS / IsoMap、t-SNE、UMAP、LSH | — |
+| 预训练不需要人工标签 | Word2Vec、BERT、GPT、CLIP（用自然语言） | ImageNet CNN、ViT（用类别标签） |
+| 能 zero-shot | CLIP、GPT-2 / GPT-3 | BERT、ImageNet CNN（要微调） |
+| 用 SGD / backprop 训练 | MLP、CNN、Transformer 系列、Word2Vec；Pegasos 解 linear SVM | Naïve Bayes、PCA、决策树 |
+| 主要 ↓variance / ↓bias | 见第 1 节 | — |
+
+#### 4. 同一个词，不同的意思
 
 | 词                | 不同 lecture 里的含义                                                                                                   |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------ |
@@ -77,30 +130,31 @@ Format: 25 multiple choice / multi-select questions, conceptual only (no coding)
 | **Soft vs. hard** | K-means = hard, EM/MoG = soft. Self-attention behaves like soft clustering; cross-attention like distance-weighted KNN regression |
 | **Few / zero**    | Zero-shot: no examples for this task. Few-shot (GPT-3): a few examples in the prompt. Linear probe: trains a new linear layer. Fine-tune: updates the whole network |
 
-#### 4. Foundation models 总表
+#### 5. 网络组件对比：FC / MLP vs. convolution / CNN vs. attention / Transformer
 
-| Model        | Architecture                               | Pre-training data              | Objective                | Human labels? | How it is applied                              |
-| ------------ | ------------------------------------------ | ------------------------------ | ------------------------ | ------------- | ---------------------------------------------- |
-| ImageNet CNN | CNN / ResNet                               | ImageNet                       | Classification           | **Yes**       | Linear probe or fine-tune                      |
-| ViT          | Encoder-only on image patches              | ImageNet-21k / JFT             | Classification           | **Yes**       | Head on [CLS]                                  |
-| BERT         | Encoder-only, bidirectional                | BooksCorpus + Wikipedia        | MLM + NSP                | No            | Fine-tune with a linear layer                  |
-| GPT-1        | Decoder-only, causal, 117M                 | BooksCorpus                    | Next token               | No            | Fine-tune per task                             |
-| GPT-2        | Same, larger                               | WebText (8M documents)         | Next token               | No            | Zero-shot; task stated in the text             |
-| GPT-3        | Same, 175B                                 | Even more text                 | Next token               | No            | Zero-shot and few-shot, in context             |
-| CLIP         | Image encoder + text Transformer           | 400M scraped image–text pairs  | Contrastive matching     | No (natural language) | Zero-shot, linear probe, K-NN; fine-tune loses generality |
+| 性质 | Linear / FC（MLP） | Convolution（CNN） | Self-attention（Transformer） |
+| --- | --- | --- | --- |
+| 输出依赖输入顺序 | 是（每个位置有自己的权重） | 是（窗口里的相对位置） | **否**，除非加了位置编码 |
+| 不同位置用同一组权重 | 否 | **是**（权重共享） | 投影 $W_q,W_k,W_v$ 共享，但混合权重由数据算出 |
+| 假设邻域结构 | 否 | **是**（局部窗口） | 否：每个 token 看所有 token |
+| 计算主要是线性运算 | 是 | 是 | 是 |
+| 输入长度可变 | 否 | 是 | 是 |
+| 内置的先验 | 无 | 局部性 + 平移不变 → 数据少时 variance 低 | 几乎没有 → 数据越多越占优 |
+| 经典 ML 里的类比 | 叠起来的线性模型（perceptron、logistic regression） | 线性滤波（L16） | cross-attention ≈ 距离加权的 **KNN regression**（L3）；self-attention ≈ **soft clustering**（K-means / EM，L4 / L9–10） |
+| 典型模型 | MLP；各种网络的最后一层 | LeNet、AlexNet、ResNet、U-Net、Mask R-CNN | BERT、GPT、ViT、CLIP 的文本（和 ViT 图像）encoder |
 
-#### 5. Linear vs. convolution vs. attention
+!!! tip "EM、K-means、KNN 和 attention 为什么像"
+    它们都在做**按相似度加权平均**：
 
-| 性质                             | Linear | Convolution | Attention                       |
-| -------------------------------- | ------ | ----------- | ------------------------------- |
-| Output depends on input order    | Yes    | Yes         | **No**, unless position is encoded |
-| Same weights at different positions | No  | **Yes**     | No: mixing weights come from data |
-| Assumes a neighborhood structure | No     | **Yes**     | No: every token sees every token |
-| Compute is mostly linear operations | Yes | Yes         | Yes                             |
+    -   MoG 的 M-step：$\hat\mu_m=\frac{\sum_n\alpha_{nm}x_n}{\sum_n\alpha_{nm}}$，权重 $\alpha_{nm}$ 是隐变量的后验概率
+    -   Attention：$out(q)=\frac{\sum_i s(k_i,q)\,v_i}{\sum_i s(k_i,q)}$，权重来自 key–query 相似度
+    -   KNN regression：只对最近的 K 个取平均（权重为 0 或 1）；K-means 也是硬分配
+
+    区别：EM / K-means 是**反复迭代到收敛**的拟合算法；attention 是网络里的**一层**，相似度用**学到的** Q/K 投影计算，靠 backprop 训练。软的对应 EM 和 attention，硬的对应 K-means 和 1-NN。
 
 ### 算法与缩写总表（L2–20） {#glossary}
 
-按 lecture 顺序列出所有算法、模型和缩写。"考点"一栏只写最常考的一句；细节回 [CS441 笔记](CS441.md)。没有缩写的算法（K-means、Pegasos 等）也放在这里。
+按 lecture 顺序列出所有算法、模型和缩写，方便查名字；要跨课程比较性质，看 [所有方法对比总表](#all-methods) 和 [按性质反查](#by-property)。"考点"一栏只写最常考的一句；细节回 [CS441 笔记](CS441.md)。没有缩写的算法（K-means、Pegasos 等）也放在这里。
 
 #### 缩写撞车：同一个缩写，不同的意思
 
