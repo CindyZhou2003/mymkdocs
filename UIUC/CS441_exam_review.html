@@ -3437,7 +3437,7 @@
   <h1>CS441 exam review</h1>
 
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 10927 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 36 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 11869 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 40 分钟</p>
 </div>
 <h2 id="exam-2-review-lectures-220">Exam 2 Review (Lectures 2–20)<a class="headerlink" href="#exam-2-review-lectures-220" title="Permanent link">&para;</a></h2>
 <p>Format: 25 multiple choice / multi-select questions, conceptual only (no coding). MC = 3 pts, multi-select = 5 pts with partial credit (no multiple attempts). L2–20 都考，前后半程比重差不多。点开 "Answer" 前先自己做。<strong>MS</strong> = select all that apply.</p>
@@ -3489,7 +3489,7 @@
 </tr>
 <tr>
 <td><strong>Foundations (L2–11)</strong></td>
-<td>KNN: larger K → smoother, ↓variance ↑bias. Train/val/test roles. PCA keeps max variance (linear); MDS distances; IsoMap graph distances; t-SNE/UMAP neighbors. L1 sparse, L2 small + closed form. LR: every point has loss; SVM: support vectors, "confident enough". NB: independent <strong>given y</strong>. EM: E = latent probabilities, M = weighted parameters, local optimum; K-means = hard EM. MoG semi-parametric; KDE/histogram non-parametric. Median, RANSAC, IRLS are robust; least squares isn't</td>
+<td>KNN: larger K → smoother, ↓variance ↑bias. Train/val/test roles. PCA keeps max variance (linear); MDS distances; IsoMap graph distances; t-SNE/UMAP keep <strong>local</strong> neighbors, destroy global shape. KNN/K-means weight all features equally. L1 sparse (no closed form), L2 small + closed form; λ↑ → ↑bias ↓variance. LR: every point has loss; SVM: support vectors, "confident enough". NB: independent <strong>given y</strong>. EM: E = latent probabilities, M = weighted parameters, local optimum; K-means = hard EM. MoG semi-parametric; KDE/histogram non-parametric. Median, RANSAC, IRLS are robust; least squares isn't</td>
 </tr>
 </tbody>
 </table>
@@ -3548,6 +3548,10 @@
 <p class="admonition-title">三种 SVM 的关系</p>
 <p><strong>Kernelized SVM</strong> = 把 dual 里的点积 <span class="arithmatex">\(x_i^Tx_j\)</span> 换成核函数 <span class="arithmatex">\(k(x_i,x_j)\)</span>。<strong>Linear SVM</strong> 就是用 linear kernel 的特例；<strong>RBF SVM</strong> 是用 Gaussian (RBF) kernel 的 kernelized SVM，polynomial kernel 也是一种。三者都是<strong>凸</strong>的，区别在于：边界是否线性、参数个数（primal 每个特征一个 vs. dual 每个训练样本一个 <span class="arithmatex">\(\alpha\)</span>）和速度。Pegasos 是用 SGD 解 linear SVM 的 primal。</p>
 </div>
+<div class="admonition info">
+<p class="admonition-title">L1 vs. L2 正则</p>
+<p><strong>L1（Lasso）</strong> 罚 <span class="arithmatex">\(\lambda\sum|w_i|\)</span>：大小权重按同样的力度往 0 推，一部分权重<strong>正好为 0</strong> → 稀疏、自动特征选择；相关特征里往往只留一个；<span class="arithmatex">\(|w|\)</span> 在 0 处不可导，<strong>没有闭式解</strong>，要迭代。<strong>L2（Ridge）</strong> 罚 <span class="arithmatex">\(\lambda\sum w_i^2\)</span>：对大权重罚得重，所有权重都变小但几乎不为 0；相关特征时把权重分摊开，更稳定；<strong>有闭式解</strong>。几何：L1 约束区域是菱形，角在坐标轴上，解容易落在轴上（某个 <span class="arithmatex">\(w=0\)</span>）；L2 是圆，没有角。两者都是<strong>凸</strong>的；λ 用验证集选，λ 越大 → 权重越小、模型越简单 → ↑bias ↓variance，λ=0 就是普通 least squares。加了正则就要 <strong>feature scaling</strong>，否则尺度大的特征罚得少。不只用于 linear regression：logistic regression 也加；SVM 的 <span class="arithmatex">\(\lVert w\rVert^2\)</span> 就是 L2；神经网络里的 weight decay 也是 L2。什么时候用：认为只有少数特征有用 → L1；大多数特征都有点用、特征相关 → L2；也可以先用 L1 选特征，再用 L2，或者直接用 Elastic net（L1 + L2）。</p>
+</div>
 <table>
 <thead>
 <tr>
@@ -3589,20 +3593,46 @@
 <td>否</td>
 <td><strong>要</strong></td>
 <td>K、距离度量</td>
-<td>1-NN 训练误差 0；加新样本最容易；预测慢；K↑ → ↓var ↑bias</td>
+<td>1-NN 训练误差 0；加新样本最容易；预测慢；K↑ → ↓var ↑bias；欧氏距离下<strong>所有特征权重相同</strong>，无关或尺度大的特征会主导距离</td>
 </tr>
 <tr>
-<td><strong>Linear regression</strong> (L6)</td>
+<td><strong>Linear regression</strong>（least squares，无正则）(L6)</td>
 <td>回归</td>
 <td>有监督</td>
 <td>线性</td>
-<td>平方误差 + L1/L2</td>
-<td>无正则或 L2：闭式；L1：迭代</td>
+<td>平方误差</td>
+<td>闭式（伪逆）</td>
 <td>凸，全局</td>
 <td>否</td>
-<td>有正则时要</td>
+<td>否（不影响预测；加正则就要）</td>
+<td>—</td>
+<td>能外推、系数可解释；对 outlier 敏感；特征多、数据少时容易过拟合</td>
+</tr>
+<tr>
+<td><strong>Ridge</strong>（+ L2）(L6)</td>
+<td>回归</td>
+<td>有监督</td>
+<td>线性</td>
+<td>平方误差 + <span class="arithmatex">\(\lambda\sum w_i^2\)</span></td>
+<td><strong>闭式</strong></td>
+<td>凸，全局</td>
+<td>否</td>
+<td><strong>要</strong></td>
 <td>λ</td>
-<td>能外推、系数可解释；对 outlier 敏感</td>
+<td>权重都变小但几乎不为 0；相关特征时权重分摊、更稳定；λ↑ → ↑bias ↓var</td>
+</tr>
+<tr>
+<td><strong>Lasso</strong>（+ L1）(L6)</td>
+<td>回归</td>
+<td>有监督</td>
+<td>线性</td>
+<td>平方误差 + <span class="arithmatex">\(\lambda\sum\lvert w_i\rvert\)</span></td>
+<td><strong>迭代</strong>（0 处不可导，无闭式解）</td>
+<td>凸，全局</td>
+<td>否</td>
+<td><strong>要</strong></td>
+<td>λ</td>
+<td>一部分权重<strong>正好为 0</strong> → 稀疏、<strong>自动特征选择</strong>；相关特征里往往只留一个；λ↑ → 0 越多</td>
 </tr>
 <tr>
 <td><strong>Logistic regression</strong> (L7)</td>
@@ -3706,7 +3736,7 @@
 <td>有随机抽样</td>
 <td>同基模型</td>
 <td>模型个数</td>
-<td>↓<strong>variance</strong></td>
+<td>多个模型投票 / 平均 → ↓<strong>variance</strong>，bias 基本不变；基模型本身 variance 高才有用</td>
 </tr>
 <tr>
 <td><strong>Random forest</strong> (L13)</td>
@@ -3719,7 +3749,7 @@
 <td>有随机性，但结果稳定</td>
 <td>否</td>
 <td>树数、每次选的特征数</td>
-<td>↓<strong>variance</strong>；很难训坏；高维数据表现好</td>
+<td>深树 = low bias / high variance；随机样本 + 随机特征让树之间<strong>不相关</strong>，<strong>平均</strong>后 ↓<strong>variance</strong>，bias 仍低；很难训坏；高维数据表现好</td>
 </tr>
 <tr>
 <td><strong>Boosted trees / AdaBoost</strong> (L13)</td>
@@ -3732,7 +3762,7 @@
 <td>否</td>
 <td>否</td>
 <td>树数、树深</td>
-<td>↓<strong>bias</strong>；可能过拟合；Caruana 对比中最好</td>
+<td>小树 = high bias / low variance；<strong>按顺序</strong>修正前面的错误 → ↓<strong>bias</strong>；可能过拟合；Caruana 对比中最好</td>
 </tr>
 <tr>
 <td><strong><em>无监督 · 聚类、密度、隐变量</em></strong></td>
@@ -3758,7 +3788,7 @@
 <td><strong>是</strong></td>
 <td><strong>要</strong></td>
 <td>K</td>
-<td>= hard EM</td>
+<td>= hard EM；<strong>所有特征权重相同</strong>（欧氏距离），所以要 scaling；簇大小倾向于差不多；不考虑局部结构；K 不好选</td>
 </tr>
 <tr>
 <td><strong>EM</strong>（通用算法）(L9)</td>
@@ -3823,7 +3853,7 @@
 <td>否</td>
 <td><strong>要</strong></td>
 <td>维数</td>
-<td>不用标签，可能丢判别信息；重建误差可找 outlier</td>
+<td>保留<strong>全局</strong>方差，不一定保留局部近邻结构；不用标签，可能丢判别信息；重建误差可找 outlier</td>
 </tr>
 <tr>
 <td><strong>MDS / IsoMap</strong> (L5)</td>
@@ -3836,7 +3866,7 @@
 <td>否</td>
 <td>要</td>
 <td>维数；IsoMap 的邻居数</td>
-<td>IsoMap 能展开全局流形；MDS 受远点影响大</td>
+<td>保留<strong>全局</strong>的两两距离；IsoMap 用近邻图（局部）算距离，能展开全局流形；MDS 受远点影响大</td>
 </tr>
 <tr>
 <td><strong>t-SNE</strong> (L5)</td>
@@ -3849,7 +3879,7 @@
 <td><strong>是</strong></td>
 <td>要</td>
 <td>σ（邻域大小）</td>
-<td>簇分得最开，但破坏全局形状；慢；通常先 PCA</td>
+<td>保留<strong>局部</strong>结构（近邻相似度）；簇分得最开，但破坏<strong>全局</strong>形状（簇之间的距离没意义）；慢；通常先 PCA</td>
 </tr>
 <tr>
 <td><strong>UMAP</strong> (L5)</td>
@@ -3862,7 +3892,7 @@
 <td>是</td>
 <td>要</td>
 <td>邻居数、目标维数</td>
-<td>比 t-SNE 快很多</td>
+<td>保留<strong>局部</strong>结构（kNN 图），假设数据均匀分布在局部连通的流形上；簇分离效果和 t-SNE 相当，但快很多</td>
 </tr>
 <tr>
 <td><strong>LSH</strong> (L4)</td>
@@ -4068,8 +4098,18 @@
 </tr>
 <tr>
 <td>有闭式解</td>
-<td>Linear regression（无正则或 L2）、Naïve Bayes、PCA、经典 MDS</td>
-<td>L1 regression、Logistic regression、SVM、K-means、EM</td>
+<td>Least squares、Ridge（L2）、Naïve Bayes、PCA、经典 MDS</td>
+<td>Lasso（L1）、Logistic regression、SVM、K-means、EM</td>
+</tr>
+<tr>
+<td>权重稀疏（正好为 0）/ 自动特征选择</td>
+<td>Lasso（L1）</td>
+<td>Ridge（L2，只变小不为 0）</td>
+</tr>
+<tr>
+<td>相关特征时更稳定，权重分摊</td>
+<td>Ridge（L2）</td>
+<td>Lasso（L1，往往只留一个）</td>
 </tr>
 <tr>
 <td>不用训练 / 最容易加新样本</td>
@@ -4095,6 +4135,21 @@
 <td>无监督</td>
 <td>K-means、EM / MoG、KDE、PCA、MDS / IsoMap、t-SNE、UMAP、LSH</td>
 <td>—</td>
+</tr>
+<tr>
+<td>保留局部结构（近邻关系）</td>
+<td>t-SNE、UMAP；IsoMap 用近邻图算距离</td>
+<td>PCA、MDS</td>
+</tr>
+<tr>
+<td>保留全局结构</td>
+<td>PCA（方差）、MDS（两两距离）、IsoMap（全局流形）</td>
+<td>t-SNE（破坏全局形状）</td>
+</tr>
+<tr>
+<td>所有特征权重相同（欧氏距离）</td>
+<td>KNN、K-means</td>
+<td>Decision tree（每次选一个特征）、Lasso（会把一些特征置 0）</td>
 </tr>
 <tr>
 <td>预训练不需要人工标签</td>
@@ -4371,7 +4426,7 @@
 <td>K-means</td>
 <td>—</td>
 <td>K 均值</td>
-<td>交替"分给最近中心 / 中心取均值"；依赖初始化，K 要自己选；= hard EM</td>
+<td>交替"分给最近中心 / 中心取均值"；依赖初始化，K 要自己选；= hard EM；所有特征权重相同</td>
 </tr>
 <tr>
 <td>Hierarchical K-means</td>
@@ -4444,13 +4499,13 @@
 <td><strong>t-SNE</strong></td>
 <td>t-distributed Stochastic Neighbor Embedding</td>
 <td>t 分布随机邻域嵌入</td>
-<td>保留<strong>邻居概率分布</strong>，最小化 KL；簇分得最开，但破坏全局形状，慢</td>
+<td>保留<strong>局部</strong>结构（邻居概率分布），最小化 KL；簇分得最开，但破坏全局形状，慢</td>
 </tr>
 <tr>
 <td><strong>UMAP</strong></td>
 <td>Uniform Manifold Approximation and Projection</td>
 <td>均匀流形近似投影</td>
-<td>保留局部结构，比 t-SNE 快很多</td>
+<td>保留<strong>局部</strong>结构（kNN 图），比 t-SNE 快很多</td>
 </tr>
 <tr>
 <td><strong>KL</strong></td>
@@ -4481,13 +4536,13 @@
 <td><strong>L1 = Lasso</strong></td>
 <td>—</td>
 <td>L1 正则</td>
-<td>权重<strong>稀疏</strong>（正好为 0），自动特征选择；<strong>无</strong>闭式解</td>
+<td>罚 <span class="arithmatex">\(\sum\lvert w_i\rvert\)</span>；权重<strong>稀疏</strong>（正好为 0），自动特征选择；<strong>无</strong>闭式解</td>
 </tr>
 <tr>
 <td><strong>L2 = Ridge</strong></td>
 <td>—</td>
 <td>L2 正则</td>
-<td>权重小但不为 0，适合相关特征；<strong>有</strong>闭式解</td>
+<td>罚 <span class="arithmatex">\(\sum w_i^2\)</span>；权重小但不为 0，适合相关特征；<strong>有</strong>闭式解；SVM 的 <span class="arithmatex">\(\lVert w\rVert^2\)</span>、weight decay 也是 L2</td>
 </tr>
 <tr>
 <td>Elastic net</td>
@@ -6031,6 +6086,18 @@ E. Is an example of hard EM</p>
 <summary>Answer</summary>
 <p><strong>A, B, C, E.</strong></p>
 </details>
+<p><strong>Q90 (MS).</strong> Which embedding methods mainly preserve <strong>local</strong> neighborhood structure?<br />
+A. PCA B. t-SNE C. UMAP D. Classical MDS E. IsoMap's neighbor graph step</p>
+<details class="success">
+<summary>Answer</summary>
+<p><strong>B, C, E.</strong> L5. PCA keeps global variance and MDS keeps all pairwise distances (dominated by far points). IsoMap builds its graph from local neighbors, but then preserves global geodesic distances.</p>
+</details>
+<p><strong>Q91 (MS).</strong> Two features are almost identical copies of each other. Compared with Ridge (L2), Lasso (L1) is more likely to…<br />
+A. put most weight on one of them and set the other near or exactly 0 B. split the weight evenly between them C. need an iterative solver D. give a sparser weight vector overall E. work fine without feature scaling</p>
+<details class="success">
+<summary>Answer</summary>
+<p><strong>A, C, D.</strong> L6. B describes L2. With any penalty, feature scale changes how hard each weight is penalized, so scaling matters (E).</p>
+</details>
 <h3 id="mock-exam">Mock exam (混合 25 题)<a class="headerlink" href="#mock-exam" title="Permanent link">&para;</a></h3>
 <p>全部跨 lecture，9 道 MC + 16 道 MS，共 107 分（比例和实际考试不一定相同）。做完再统一看答案，答案里标了涉及的 lecture。错题对应回 <a href="#cross-lecture">易混点对比</a>。</p>
 <p><strong>M1 (MS).</strong> For which of these will different initializations likely give substantially different parameters?<br />
@@ -6267,7 +6334,7 @@ E. Pick <span class="arithmatex">\(\lambda\)</span> by training error</p>
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2026年11月9日 00:46:02 CST">2026年11月9日 00:46:02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2026年11月19日 02:50:20 CST">2026年11月19日 02:50:20</span>
   </span>
 
     

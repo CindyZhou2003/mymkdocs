@@ -5558,6 +5558,801 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#lecture-23a-stream-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecture 23A: Stream Processing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 23A: Stream Processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enter-storm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enter Storm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storms-vocabulary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Storm’s vocabulary
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Storm’s vocabulary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parallelizing-bolts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parallelizing Bolts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storm-cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Storm Cluster
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Storm Cluster">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#failures_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Failures
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-23b-scheduling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecture 23B: Scheduling
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 23B: Scheduling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#single-processor-scheduling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Single Processor Scheduling
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Single Processor Scheduling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fifo-fcfs-first-in-first-out-first-come-first-served" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FIFO / FCFS (First-In First-Out / First-Come First-Served)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stf-shortest-task-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        STF (Shortest Task First)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#round-robin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Round-Robin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#round-robin-vs-stffifo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Round-Robin vs. STF/FIFO
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hadoop-scheduling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hadoop Scheduling
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hadoop Scheduling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hadoop-capacity-scheduler-hcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hadoop Capacity Scheduler (HCS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hadoop-fair-scheduler-hfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hadoop Fair Scheduler (HFS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estimating-task-lengths" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estimating Task Lengths
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dominant-resource-fairness-drf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dominant Resource Fairness (DRF)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dominant Resource Fairness (DRF)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-drf-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How DRF Works
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drf-fairness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DRF Fairness
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internal-cluster-scheduling-at-cloud-vendors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Internal Cluster Scheduling at Cloud Vendors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-apache-spark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecture: Apache Spark
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture: Apache Spark">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-spark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Spark?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resilient-distributed-datasets-rdds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resilient Distributed Datasets (RDDs)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resilient Distributed Datasets (RDDs)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fault-recovery-lineage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fault Recovery: Lineage
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-can-you-do-with-spark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Can You Do with Spark?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What Can You Do with Spark?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#partitioning-example-pagerank" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partitioning Example: PageRank
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generality
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Generality">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gather-apply-scatter-on-graphx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gather-Apply-Scatter on GraphX
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-24-remote-distributed-file-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecture 24: Remote &amp; Distributed File Systems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 24: Remote &amp; Distributed File Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-system-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        File System Basics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="File System Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        File Contents
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#directories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Directories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unix-file-system-calls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unix File System Calls
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-distributed-file-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remote &amp; Distributed File Systems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-file-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remote File Systems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Remote File Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#virtual-file-system-vfs-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Virtual File System (VFS) Layer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nfs-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NFS Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-file-access-protocols" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remote File Access Protocols
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nfs-mount-export" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NFS: Mount &amp; Export
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vfs-file-handles-stateless-nfs-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VFS + File Handles ⟹ Stateless NFS Server
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concurrent-access-to-a-filedir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concurrent Access to a File/Dir
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-access-other-aspects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remote Access: Other Aspects
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server-side-caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Server-side Caching
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#client-side-caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Client-side Caching
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afs-andrew-file-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AFS (Andrew File System)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AFS (Andrew File System)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contrasting-design-decisions-in-afs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contrasting Design Decisions in AFS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afs-unified-namespace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AFS: Unified Namespace
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afs-details-callbacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AFS Details: Callbacks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stateful-servers-afs-nfsv4-smb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stateful Servers: AFS, NFSv4, &amp; SMB
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distributed-file-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distributed File Systems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Distributed File Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-distributed-file-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Distributed File Systems?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#many-popular-distributed-file-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Many Popular Distributed File Systems
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gfs-google-file-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GFS (Google File System)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GFS (Google File System)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gfs-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GFS Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gfs-a-few-important-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GFS: A Few Important Details
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gfs-read-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GFS: Read Path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gfs-write-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GFS: Write Path
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#after-gfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        After GFS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-25-distributed-shared-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecture 25: Distributed Shared Memory
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -10032,6 +10827,801 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#lecture-23a-stream-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecture 23A: Stream Processing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 23A: Stream Processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enter-storm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enter Storm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storms-vocabulary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Storm’s vocabulary
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Storm’s vocabulary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parallelizing-bolts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parallelizing Bolts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storm-cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Storm Cluster
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Storm Cluster">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#failures_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Failures
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-23b-scheduling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecture 23B: Scheduling
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 23B: Scheduling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#single-processor-scheduling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Single Processor Scheduling
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Single Processor Scheduling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fifo-fcfs-first-in-first-out-first-come-first-served" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FIFO / FCFS (First-In First-Out / First-Come First-Served)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stf-shortest-task-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        STF (Shortest Task First)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#round-robin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Round-Robin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#round-robin-vs-stffifo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Round-Robin vs. STF/FIFO
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hadoop-scheduling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hadoop Scheduling
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hadoop Scheduling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hadoop-capacity-scheduler-hcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hadoop Capacity Scheduler (HCS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hadoop-fair-scheduler-hfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hadoop Fair Scheduler (HFS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estimating-task-lengths" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estimating Task Lengths
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dominant-resource-fairness-drf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dominant Resource Fairness (DRF)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dominant Resource Fairness (DRF)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-drf-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How DRF Works
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drf-fairness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DRF Fairness
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internal-cluster-scheduling-at-cloud-vendors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Internal Cluster Scheduling at Cloud Vendors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-apache-spark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecture: Apache Spark
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture: Apache Spark">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-spark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Spark?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resilient-distributed-datasets-rdds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resilient Distributed Datasets (RDDs)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resilient Distributed Datasets (RDDs)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fault-recovery-lineage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fault Recovery: Lineage
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-can-you-do-with-spark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Can You Do with Spark?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What Can You Do with Spark?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#partitioning-example-pagerank" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partitioning Example: PageRank
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generality
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Generality">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gather-apply-scatter-on-graphx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gather-Apply-Scatter on GraphX
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-24-remote-distributed-file-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecture 24: Remote &amp; Distributed File Systems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 24: Remote &amp; Distributed File Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-system-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        File System Basics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="File System Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        File Contents
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#directories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Directories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unix-file-system-calls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unix File System Calls
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-distributed-file-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remote &amp; Distributed File Systems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-file-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remote File Systems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Remote File Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#virtual-file-system-vfs-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Virtual File System (VFS) Layer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nfs-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NFS Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-file-access-protocols" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remote File Access Protocols
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nfs-mount-export" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NFS: Mount &amp; Export
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vfs-file-handles-stateless-nfs-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VFS + File Handles ⟹ Stateless NFS Server
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concurrent-access-to-a-filedir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concurrent Access to a File/Dir
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-access-other-aspects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remote Access: Other Aspects
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server-side-caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Server-side Caching
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#client-side-caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Client-side Caching
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afs-andrew-file-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AFS (Andrew File System)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AFS (Andrew File System)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contrasting-design-decisions-in-afs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contrasting Design Decisions in AFS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afs-unified-namespace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AFS: Unified Namespace
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afs-details-callbacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AFS Details: Callbacks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stateful-servers-afs-nfsv4-smb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stateful Servers: AFS, NFSv4, &amp; SMB
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distributed-file-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distributed File Systems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Distributed File Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-distributed-file-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Distributed File Systems?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#many-popular-distributed-file-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Many Popular Distributed File Systems
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gfs-google-file-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GFS (Google File System)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GFS (Google File System)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gfs-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GFS Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gfs-a-few-important-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GFS: A Few Important Details
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gfs-read-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GFS: Read Path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gfs-write-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GFS: Write Path
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#after-gfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        After GFS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-25-distributed-shared-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecture 25: Distributed Shared Memory
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -10054,7 +11644,7 @@
 
 <h1 id="cs-425-ece-428-distributed-systems">CS 425 / ECE 428 Distributed Systems<a class="headerlink" href="#cs-425-ece-428-distributed-systems" title="Permanent link">&para;</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 40384 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M360.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m64.6 136.1c-12.5 12.5-12.5 32.8 0 45.3l73.4 73.4-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0zm-274.7 0c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l73.3-73.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span> 205 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"/></svg></span> 10 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 137 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 45442 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M360.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m64.6 136.1c-12.5 12.5-12.5 32.8 0 45.3l73.4 73.4-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0zm-274.7 0c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l73.3-73.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span> 244 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"/></svg></span> 10 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 155 分钟</p>
 </div>
 <h2 id="lecture-1-welcome-and-introduction">Lecture 1: Welcome, and Introduction<a class="headerlink" href="#lecture-1-welcome-and-introduction" title="Permanent link">&para;</a></h2>
 <p>Operating System - The low-level software which handles peripheral hardware, schedules tasks, allocates storage, and presents a default interface to the user when no application program is running.</p>
@@ -16108,7 +17698,7 @@
 </li>
 </ul>
 <p>E.g. transactions A, B, C have 5 ops each. With O' = B1…B5, C1…C5, A1…A5, an interleaving O of these 15 ops is serially equivalent iff it yields the same end state as O'.</p>
-<p>交错执行的结果，和"某种一个接一个串行执行"的结果一样，就叫 serially equivalent（可串行化）。</p>
+<p>每个事物内部顺序不能变。交错执行的结果，和"某种一个接一个串行执行"的结果一样，就叫 serially equivalent（可串行化）。</p>
 <h4 id="conflicting-operations">Conflicting Operations<a class="headerlink" href="#conflicting-operations" title="Permanent link">&para;</a></h4>
 <p>An operation has an <strong>effect</strong> on</p>
 <ul>
@@ -16472,6 +18062,7 @@
 </tbody>
 </table>
 <h3 id="optimistic-concurrency-control-occ">Optimistic Concurrency Control (OCC)<a class="headerlink" href="#optimistic-concurrency-control-occ" title="Permanent link">&para;</a></h3>
+<p>乐观并发控制</p>
 <ul>
 <li>Increases concurrency more than pessimistic concurrency control ⟹ increases <strong>tps</strong></li>
 <li>For non-transaction systems, increases <strong>operations per second</strong> and lowers latency</li>
@@ -16497,7 +18088,7 @@
 <li>At <code>openTransaction</code>, the server returns its <strong>timestamp</strong> as the transaction <strong>id</strong></li>
 <li>The id determines the transaction's position in the <strong>serialization order</strong></li>
 <li>For a transaction T, ensure both:<ol>
-<li>T's <strong>write</strong> to object O is allowed only if the transactions that have <strong>read or written</strong> O had <strong>lower ids</strong> than T</li>
+<li>T's <strong>write</strong> to object O is allowed only if the transactions that have <strong>read or written</strong> O had <strong>lower ids</strong> than T </li>
 <li>T's <strong>read</strong> of object O is allowed only if O was <strong>last written</strong> by a transaction with a <strong>lower id</strong> than T</li>
 </ol>
 </li>
@@ -16929,6 +18520,1350 @@ After voting "Yes", a server has been <strong>waiting</strong>: it <strong>can't
 </ul>
 </li>
 </ul>
+<h2 id="lecture-23a-stream-processing">Lecture 23A: Stream Processing<a class="headerlink" href="#lecture-23a-stream-processing" title="Permanent link">&para;</a></h2>
+<p><strong>Why not just use MapReduce?</strong></p>
+<p>Some data never stops arriving: tweets, website clicks, stock trades, network traffic you’re watching for intrusions. People want answers from it within a few seconds, and the system has to keep up with a huge volume (high throughput).</p>
+<p>MapReduce is <em>batch processing</em>. You give it a fixed dataset, it runs, and the answer comes at the end. That fails here twice over. The data has no end, and even if you chopped it into batches, each answer would arrive minutes or hours late.</p>
+<h3 id="enter-storm">Enter Storm<a class="headerlink" href="#enter-storm" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Stream processing concepts go back to <strong>'90s research</strong></li>
+<li>The startup <strong>BackType</strong> built Storm → acquired by <strong>Twitter in '11</strong> → open-sourced, handed to <strong>Apache in '13</strong></li>
+<li>A highly active <strong>JVM</strong> project; multiple languages supported via API (Python, Ruby, etc.)</li>
+<li>Used by 30+ companies: <strong>Twitter</strong> (personalization, search), <strong>Flipboard</strong> (custom feeds), Weather Channel, WebMD, …</li>
+<li>Cloud vendors now offer stream processing as a service: <strong>Kinesis</strong> (AWS), <strong>Dataflow</strong> (Google), <strong>Stream Analytics</strong> (Azure)</li>
+</ul>
+<h3 id="storms-vocabulary">Storm’s vocabulary<a class="headerlink" href="#storms-vocabulary" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-25-1">1</a></span>
+<span class="normal"><a href="#__codelineno-25-2">2</a></span>
+<span class="normal"><a href="#__codelineno-25-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1"></a> [Spout] ──stream──▶ [Bolt: filter] ──stream──▶ [Bolt: count] ──▶ output
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2"></a>   ▲                        tuples flow along the edges
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3"></a> reads from a crawler / database
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li><strong>Tuple</strong>: one record, an ordered list of fields. Example: <code>&lt;username, tweet&gt;</code> or <code>&lt;URL, clicker-IP, date, time&gt;</code>. 类似向量</li>
+<li><strong>Stream</strong>: a sequence of tuples that may never end. 流</li>
+<li><strong>Spout</strong>: where streams come from. It’s the source. 来源</li>
+<li><strong>Bolt</strong> 组件: takes streams in, processes them, and sends new streams out. Common kinds:<ul>
+<li><strong>filter</strong>: passes along only the tuples that match a condition</li>
+<li><strong>join</strong>: pairs up tuples from two streams</li>
+<li><strong>transform</strong>: changes each tuple(apply)</li>
+<li><strong>stateful aggregation</strong>: keeps a running result, like a count</li>
+</ul>
+</li>
+<li><strong>Topology</strong>: the directed graph of spouts and bolts. It is the whole Storm “application,” and it can contain cycles.</li>
+</ul>
+<h4 id="parallelizing-bolts">Parallelizing Bolts<a class="headerlink" href="#parallelizing-bolts" title="Permanent link">&para;</a></h4>
+<p>Bolts must process a lot of data, so they need to be fast:</p>
+<ul>
+<li>A bolt is made of <strong>multiple processes ("tasks")</strong></li>
+<li>Incoming streams are <strong>split among the tasks</strong>; typically each incoming tuple goes to <strong>one</strong> task of the bolt</li>
+<li>Which task gets which tuple is decided by the <strong>grouping strategy</strong></li>
+</ul>
+<p><strong>Grouping strategy</strong></p>
+<ul>
+<li><strong>Shuffle grouping</strong>：Streams are distributed evenly among the bolt’s tasks, round-robin<ul>
+<li>无状态</li>
+</ul>
+</li>
+<li><strong>Fields grouping</strong>：Group a stream by a subset of its fields, 字段值相同的 tuple，一定去同一个 task<ul>
+<li>按key有状态</li>
+</ul>
+</li>
+<li><strong>All grouping</strong>：All tasks of bolt receive all input tuples 需要全量</li>
+</ul>
+<h3 id="storm-cluster">Storm Cluster<a class="headerlink" href="#storm-cluster" title="Permanent link">&para;</a></h3>
+<p><strong>Coordinator/Leader node</strong></p>
+<ul>
+<li>Runs a daemon called Nimbus</li>
+<li>Responsible for <ul>
+<li>Distributing code around cluster </li>
+<li>Assigning tasks to machines </li>
+<li>Monitoring for failures of machines</li>
+</ul>
+</li>
+</ul>
+<p><strong>Worker node</strong> </p>
+<ul>
+<li>Runs on a machine (server) </li>
+<li>Runs a daemon called Supervisor </li>
+<li>Listens for work assigned to its machine</li>
+<li>Runs “Executors”(which contain groups of tasks) </li>
+</ul>
+<p><strong>Zookeeper</strong></p>
+<ul>
+<li>Coordinates Nimbus and Supervisors communication</li>
+<li>All state of Supervisor and Nimbus is kept here</li>
+</ul>
+<h4 id="failures_1">Failures<a class="headerlink" href="#failures_1" title="Permanent link">&para;</a></h4>
+<p>A tuple is considered failed when its topology (graph) of resulting tuples fails to be fully processed within a specified timeout</p>
+<p><strong>Anchoring</strong> 锚定: Anchor an output to one or more input tuples bolt 发出新 tuple 时，用 <code>emit(input, output)</code> 把它挂在输入 tuple 下面</p>
+<ul>
+<li>Failure of one tuple causes one or more tuples to replayed</li>
+</ul>
+<p><strong>Emit(tuple, output)</strong> </p>
+<ul>
+<li>Emits an output tuple, perhaps anchored on an input tuple (first argument) </li>
+</ul>
+<p><strong>Ack(tuple)</strong> </p>
+<ul>
+<li>Acknowledge that you (bolt) finished processing a tuple </li>
+</ul>
+<p><strong>Fail(tuple)</strong></p>
+<ul>
+<li>Immediately fail the spout tuple at the root of tuple topology if there is an exception from the database, etc. 主动报告失败</li>
+</ul>
+<p>Must remember to ack/fail each tuple</p>
+<ul>
+<li>Each tuple consumes memory. Failure to do so results in memory leaks 内存泄漏</li>
+<li><strong>超时</strong>：如果整棵树在规定时间内没有全部 ack，这个 tuple 也算失败。</li>
+<li>失败的 tuple 会从 spout <strong>重放（replay）</strong>，代价是 <strong>at-least-once</strong>，可能重复计数。</li>
+</ul>
+<details class="note">
+<summary>Twitter's Heron System (optional slide)</summary>
+<ul>
+<li>Fixes the <strong>inefficiencies of Storm's acking mechanism</strong> (among other things)</li>
+<li>Uses <strong>backpressure</strong>: a congested downstream <strong>stage</strong> asks the upstream stage/spout to <strong>slow down or stop</strong> sending tuples（下游处理不过来就让上游减速，而不是靠超时丢弃再重放）</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Backpressure type</th>
+<th>How it works</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>TCP</strong></td>
+<td>Uses the TCP windowing mechanism to propagate backpressure</td>
+</tr>
+<tr>
+<td><strong>Spout</strong></td>
+<td>Node stops reading from its upstream spouts</td>
+</tr>
+<tr>
+<td><strong>Stage by stage</strong></td>
+<td>Treat the topology as stages and propagate back stage by stage</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Heron uses <strong>Spout + TCP</strong>, or <strong>Stage by Stage + TCP</strong></li>
+<li>Beats Storm's throughput handily (see the Heron paper)</li>
+</ul>
+</details>
+<h3 id="summary_8">Summary<a class="headerlink" href="#summary_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Processing data in <strong>real time</strong> is a big requirement today</li>
+<li><strong>Storm</strong>, plus sister systems: Spark Streaming, Heron, LinkedIn's Samza, Kafka, etc.</li>
+<li>Key ideas: <strong>parallelism</strong> (tasks + grouping), <strong>application topologies</strong> (spouts + bolts), <strong>fault-tolerance</strong> (anchoring + ack/fail + replay)</li>
+</ul>
+<h2 id="lecture-23b-scheduling">Lecture 23B: Scheduling<a class="headerlink" href="#lecture-23b-scheduling" title="Permanent link">&para;</a></h2>
+<ul>
+<li>一个 <strong>Job（作业）</strong> 由多个 <strong>Task（任务）</strong> 组成，比如一个 MapReduce job 包含很多 map task 和 reduce task。</li>
+<li>很多 job 要抢有限的资源（CPU、内存，其次是磁盘和网络）。</li>
+<li>调度有两个目标：① 任务完成得快（吞吐量高、响应时间短），这是<strong>用户</strong>关心的；② 资源利用率高，这是<strong>云服务商</strong>关心的。课件上那个问号问的就是这一点</li>
+</ul>
+<h3 id="single-processor-scheduling">Single Processor Scheduling<a class="headerlink" href="#single-processor-scheduling" title="Permanent link">&para;</a></h3>
+<p>Running example: which tasks run when?</p>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Length</th>
+<th>Arrival</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>10</td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>3</td>
+<td>3</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Completion time</strong> of a task = finish time − arrival time.</p>
+<h4 id="fifo-fcfs-first-in-first-out-first-come-first-served">FIFO / FCFS (First-In First-Out / First-Come First-Served)<a class="headerlink" href="#fifo-fcfs-first-in-first-out-first-come-first-served" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Maintain tasks in a <strong>queue in order of arrival</strong></li>
+<li>When the processor is free, dequeue the head and schedule it</li>
+</ul>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-26-1">1</a></span>
+<span class="normal"><a href="#__codelineno-26-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1"></a>Time:  0          10        15     18
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2"></a>       | Task 1   | Task 2  | Task 3 |
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li>Average completion time <span class="arithmatex">\(= \frac{10 + (15-6) + (18-8)}{3} = \frac{29}{3} \approx 9.67\)</span></li>
+<li>But if Task 2 and Task 3 arrived <strong>immediately after</strong> Task 1 (all at <span class="arithmatex">\(t = 0\)</span>): <span class="arithmatex">\(\frac{10 + 15 + 18}{3} = \frac{43}{3} \approx 14.33\)</span></li>
+<li>⟹ Average completion time <strong>may be high</strong></li>
+</ul>
+<details class="question">
+<summary>Other disadvantages of FIFO? Advantages?</summary>
+<ul>
+<li><strong>Disadvantage</strong>: short tasks get stuck behind a long one（convoy effect，短任务排在长任务后面干等）</li>
+<li><strong>Advantages</strong>: simple, low overhead (no preemption, no need to know task lengths), and <strong>no starvation</strong>: every task eventually runs in arrival order</li>
+</ul>
+</details>
+<h4 id="stf-shortest-task-first">STF (Shortest Task First)<a class="headerlink" href="#stf-shortest-task-first" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Maintain all tasks in a queue <strong>in increasing order of running time</strong></li>
+<li>When the processor is free, dequeue the head and schedule it</li>
+</ul>
+<p>Same tasks, all arriving at <span class="arithmatex">\(t = 0\)</span>:</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-27-1">1</a></span>
+<span class="normal"><a href="#__codelineno-27-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1"></a>Time:  0      3        8            18
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2"></a>       | T3   | T2     | T1          |
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li>Average completion time <span class="arithmatex">\(= \frac{3 + 8 + 18}{3} = \frac{29}{3} \approx 9.67\)</span> (vs. <strong>14.33</strong> for FIFO)</li>
+<li><strong>STF is optimal</strong>: its average completion time is the shortest among <strong>all</strong> scheduling approaches（当所有任务同时就绪时）</li>
+<li>STF is a special case of <strong>priority scheduling</strong>: instead of using running time as the priority, the scheduler could use a <strong>user-provided priority</strong></li>
+</ul>
+<details class="question">
+<summary>Another disadvantage of STF? What if Task 2 and Task 3 arrive at t = 1?</summary>
+<ul>
+<li><strong>Disadvantages</strong>: you need to <strong>know task lengths in advance</strong>; long tasks can <strong>starve</strong> if short ones keep arriving（长任务可能一直轮不到）</li>
+<li><strong>Arrive at <span class="arithmatex">\(t = 1\)</span></strong> (non-preemptive): at <span class="arithmatex">\(t = 0\)</span> only Task 1 exists, so it runs to 10. Then T3 (done at 13), then T2 (done at 18)<ul>
+<li>Average <span class="arithmatex">\(= \frac{10 + (18-1) + (13-1)}{3} = \frac{39}{3} = 13\)</span>, much worse than 9.67</li>
+<li>STF is optimal only if all tasks are available up front; otherwise you need <strong>preemption</strong> (Shortest Remaining Time First) to get back to the optimum</li>
+</ul>
+</li>
+</ul>
+</details>
+<h4 id="round-robin">Round-Robin<a class="headerlink" href="#round-robin" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Use a <strong>quantum</strong> (say 1 time unit) to run a <strong>portion</strong> of the task at the queue head</li>
+<li><strong>Pre-empts</strong> processes by saving their state and resuming them later</li>
+<li>After pre-empting, add the task to the <strong>end of the queue</strong></li>
+<li>In the running example, Task 1 runs alone until 6, then the three tasks take turns; Task 3 finishes at 15</li>
+</ul>
+<details class="question">
+<summary>What if you set the time slice too low?</summary>
+<p>Every switch costs a <strong>context switch</strong> (save/restore state). If the quantum is too small, the processor spends most of its time switching instead of doing work. If it is too large, RR degenerates into FIFO.</p>
+</details>
+<h4 id="round-robin-vs-stffifo">Round-Robin vs. STF/FIFO<a class="headerlink" href="#round-robin-vs-stffifo" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Scheduler</th>
+<th>Preferable for</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Round-Robin</td>
+<td><strong>Interactive</strong> apps</td>
+<td>The user needs <strong>quick responses</strong> from the system</td>
+</tr>
+<tr>
+<td>FIFO / STF</td>
+<td><strong>Batch</strong> apps</td>
+<td>The user submits jobs, goes away, comes back for the result</td>
+</tr>
+</tbody>
+</table>
+<h3 id="hadoop-scheduling">Hadoop Scheduling<a class="headerlink" href="#hadoop-scheduling" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A Hadoop job consists of <strong>Map tasks</strong> and <strong>Reduce tasks</strong></li>
+<li>With only one job in the entire cluster, it occupies the cluster</li>
+<li>But there are <strong>multiple customers with multiple jobs</strong><ul>
+<li>Users/jobs = <strong>"tenants"</strong> ⟹ a <strong>multi-tenant system</strong>（多租户）</li>
+<li>⟹ need a way to schedule all these jobs (and their tasks)</li>
+<li>⟹ need to be <strong>fair</strong> across the different tenants</li>
+</ul>
+</li>
+<li><strong>Hadoop YARN</strong> (Hadoop 2.0) has two popular schedulers:<ul>
+<li><strong>Hadoop Capacity Scheduler (HCS)</strong></li>
+<li><strong>Hadoop Fair Scheduler (HFS)</strong></li>
+</ul>
+</li>
+</ul>
+<h4 id="hadoop-capacity-scheduler-hcs">Hadoop Capacity Scheduler (HCS)<a class="headerlink" href="#hadoop-capacity-scheduler-hcs" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Contains <strong>multiple queues</strong>; each queue contains multiple jobs</li>
+<li>Each queue is <strong>guaranteed some portion</strong> of the cluster capacity<ul>
+<li>E.g. Queue 1 gets 80% of the cluster, Queue 2 gets 20%; higher-priority jobs go to Queue 1</li>
+</ul>
+</li>
+<li>Within the same queue, <strong>FIFO</strong> is typically used<ul>
+<li>A job can occupy the queue's entire share of the cluster</li>
+<li>If it doesn't have enough tasks, the next job can start and occupy the rest</li>
+</ul>
+</li>
+<li><strong>Administrators</strong> can configure queues</li>
+</ul>
+<p><strong>Elasticity in HCS</strong></p>
+<ul>
+<li>Per-queue limits<ul>
+<li><strong>Soft limit</strong>: the % of the cluster the queue is <strong>guaranteed</strong> to occupy</li>
+<li>(Optional) <strong>Hard limit</strong>: the <strong>max</strong> % of the cluster given to the queue</li>
+</ul>
+</li>
+<li><strong>Elasticity</strong>: a queue can <strong>borrow</strong> another queue's unused resources<ul>
+<li>But those resources are <strong>returned</strong> when new jobs arrive at that other queue</li>
+</ul>
+</li>
+<li>How do resources get returned?<ul>
+<li><strong>By default, no pre-emption</strong>: wait until the borrowed tasks complete</li>
+<li>Pre-emption can be enabled: pick a queue, then a job, then tasks of that job, typically <strong>LIFO</strong></li>
+</ul>
+</li>
+</ul>
+<details class="question">
+<summary>Advantage of not pre-empting? Why LIFO?</summary>
+<ul>
+<li><strong>Not pre-empting</strong> wastes no work: tasks that are already running get to finish</li>
+<li><strong>LIFO</strong> kills the <strong>most recently started</strong> tasks first. They have done the least work, so killing them <strong>wastes the least work</strong></li>
+</ul>
+</details>
+<p><strong>Other HCS features</strong></p>
+<ul>
+<li>Queues can be <strong>hierarchical</strong>: child sub-queues, which may have their own sub-queues, and so on; child sub-queues can share resources equally</li>
+<li>Scheduling can take <strong>memory requirements</strong> into account (memory specified by the user)</li>
+</ul>
+<h4 id="hadoop-fair-scheduler-hfs">Hadoop Fair Scheduler (HFS)<a class="headerlink" href="#hadoop-fair-scheduler-hfs" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Goal</strong>: all jobs get an <strong>equal share</strong> of resources</li>
+<li>When only one job is present, it occupies the entire cluster</li>
+<li>As other jobs arrive, each job gets an <strong>equal %</strong> of the cluster<ul>
+<li>E.g. each job might get an equal number of cluster-wide <strong>YARN containers</strong>; each container = 1 task of a job</li>
+</ul>
+</li>
+<li>Divides the cluster into <strong>pools</strong>, typically <strong>one pool per user</strong><ul>
+<li>Resources are divided <strong>equally among pools</strong> ⟹ each user gets a fair share</li>
+<li>Within each pool: <strong>fair share</strong> scheduling or <strong>FIFO/FCFS</strong> (configurable)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Pre-emption in HFS</strong></p>
+<ul>
+<li>Some pools may have <strong>minimum shares</strong>: the minimum % of the cluster the pool is guaranteed</li>
+<li>When a pool's minimum share is not met <strong>for a while</strong>:<ul>
+<li>Take resources away from other pools by <strong>pre-empting</strong> their jobs</li>
+<li>i.e. <strong>kill</strong> the currently running tasks of those jobs; they can be <strong>restarted later</strong></li>
+<li>To kill, the scheduler picks the <strong>most-recently-started</strong> tasks ⟹ minimizes wasted work</li>
+</ul>
+</li>
+</ul>
+<details class="question">
+<summary>Why is it okay to re-execute tasks?</summary>
+<p>Map and reduce tasks are <strong>idempotent</strong>: they read immutable input and write output only when they finish, so running a task again produces the same result (recall idempotent operations from L20-21).</p>
+</details>
+<p><strong>Other HFS features</strong>: limits on the number of concurrent <strong>jobs per user</strong>, <strong>jobs per pool</strong>, and <strong>tasks per pool</strong> ⟹ prevents the cluster from being hogged by one user/job.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Capacity Scheduler (HCS)</th>
+<th>Fair Scheduler (HFS)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unit</td>
+<td><strong>Queues</strong> with configured capacity %</td>
+<td><strong>Pools</strong> (one per user), equal shares</td>
+</tr>
+<tr>
+<td>Within a unit</td>
+<td>FIFO</td>
+<td>Fair share or FIFO</td>
+</tr>
+<tr>
+<td>Guarantee</td>
+<td>Soft limit (+ optional hard limit)</td>
+<td>Minimum share</td>
+</tr>
+<tr>
+<td>Getting resources back</td>
+<td>Default: wait for tasks to finish; optional pre-emption (LIFO)</td>
+<td>Pre-empt by killing most-recently-started tasks</td>
+</tr>
+</tbody>
+</table>
+<h4 id="estimating-task-lengths">Estimating Task Lengths<a class="headerlink" href="#estimating-task-lengths" title="Permanent link">&para;</a></h4>
+<ul>
+<li>HCS/HFS use FIFO, which may not be optimal. Why not use <strong>STF</strong> instead, since it's optimal?</li>
+<li><strong>Challenge</strong>: it's hard to know a task's expected running time before it completes</li>
+<li><strong>Solution</strong>: <strong>estimate</strong> the task length<ul>
+<li><strong>Within a job</strong>: running time is proportional to the size of the task's <strong>input</strong></li>
+<li><strong>Across tasks</strong>: running time of a task = <strong>average of other tasks in the same job</strong> (weighted by input size)</li>
+</ul>
+</li>
+<li>Lots of recent research results in this area!</li>
+</ul>
+<p>So far we've only considered <strong>one type of resource</strong> (either processor or memory). What about <strong>multi-resource</strong> requirements?</p>
+<h3 id="dominant-resource-fairness-drf">Dominant Resource Fairness (DRF)<a class="headerlink" href="#dominant-resource-fairness-drf" title="Permanent link">&para;</a></h3>
+<p><strong>Challenge</strong>: what about scheduling VMs in a cloud (cluster)? Jobs may have <strong>multi-resource requirements</strong>:</p>
+<ul>
+<li>Job 1's tasks: 2 CPUs, 8 GB</li>
+<li>Job 2's tasks: 6 CPUs, 2 GB</li>
+</ul>
+<p>How do you schedule these jobs <strong>fairly</strong>, i.e. how many tasks of each job should run concurrently? And what does fairness even mean?</p>
+<p><strong>DRF</strong> was proposed by researchers from <strong>UC Berkeley</strong> as a notion of fairness for multi-resource requirements. They showed DRF is:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fair</strong></td>
+<td>Fair for multi-tenant systems</td>
+</tr>
+<tr>
+<td><strong>Strategy-proof</strong></td>
+<td>A tenant <strong>can't benefit by lying</strong> about its requirements</td>
+</tr>
+<tr>
+<td><strong>Envy-free</strong></td>
+<td>A tenant <strong>can't envy</strong> another tenant's allocation（不会想要别人的分配）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Where is DRF useful?</strong> Scheduling VMs in a cluster, scheduling Hadoop in a cluster. It is used in <strong>Mesos</strong> (an OS for cloud environments), and DRF-like strategies are used by cloud vendors in their managed container and big data platforms.</p>
+<h4 id="how-drf-works">How DRF Works<a class="headerlink" href="#how-drf-works" title="Permanent link">&para;</a></h4>
+<p>Each job has a <strong>resource vector</strong> (per task): Job 1 = &lt;2 CPUs, 8 GB&gt;, Job 2 = &lt;6 CPUs, 2 GB&gt;. The cloud has <strong>&lt;18 CPUs, 36 GB RAM&gt;</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Job</th>
+<th>Per-task CPU share</th>
+<th>Per-task RAM share</th>
+<th><strong>Dominant resource</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Job 1</td>
+<td>2/18 = <strong>1/9</strong></td>
+<td>8/36 = <strong>2/9</strong></td>
+<td><strong>RAM</strong> (memory-intensive)</td>
+</tr>
+<tr>
+<td>Job 2</td>
+<td>6/18 = <strong>6/18</strong></td>
+<td>2/36 = <strong>1/18</strong></td>
+<td><strong>CPU</strong> (CPU-intensive)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Dominant resource</strong> = the resource type of which a job's task consumes the <strong>largest fraction</strong> of the cluster total（占集群比例最大的那种资源）.</p>
+<details class="question">
+<summary>What is Job 2's dominant resource if the cloud had 120 CPUs instead?</summary>
+<p>CPU share = 6/120 = 1/20 = 0.05, RAM share = 2/36 = 1/18 ≈ 0.056. Now RAM share &gt; CPU share, so Job 2's dominant resource becomes <strong>RAM</strong>. Dominance depends on the cluster's totals, not just the task's raw numbers.</p>
+</details>
+<h4 id="drf-fairness">DRF Fairness<a class="headerlink" href="#drf-fairness" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>For each job, the <strong>% of its dominant resource</strong> it gets cluster-wide is the <strong>same for all jobs</strong>.
+Here: Job 1's % of RAM = Job 2's % of CPU. This can be written as <strong>linear equations</strong> and solved.</p>
+</blockquote>
+<p>Let Job 1 run <span class="arithmatex">\(x\)</span> tasks and Job 2 run <span class="arithmatex">\(y\)</span> tasks:</p>
+<ul>
+<li>Fairness: <span class="arithmatex">\(\frac{8x}{36} = \frac{6y}{18}\)</span> ⟹ <span class="arithmatex">\(y = \frac{2}{3}x\)</span></li>
+<li>CPU limit: <span class="arithmatex">\(2x + 6y \le 18\)</span> ⟹ <span class="arithmatex">\(6x \le 18\)</span> ⟹ <span class="arithmatex">\(x \le 3\)</span></li>
+<li>RAM limit: <span class="arithmatex">\(8x + 2y \le 36\)</span> ⟹ <span class="arithmatex">\(\frac{28}{3}x \le 36\)</span> ⟹ <span class="arithmatex">\(x \le 3.86\)</span></li>
+<li>⟹ <span class="arithmatex">\(x = 3\)</span>, <span class="arithmatex">\(y = 2\)</span></li>
+</ul>
+<p><strong>DRF solution</strong>: Job 1 gets <strong>3 tasks</strong> &lt;2 CPUs, 8 GB&gt;, Job 2 gets <strong>2 tasks</strong> &lt;6 CPUs, 2 GB&gt;.</p>
+<ul>
+<li>Job 1's % of RAM <span class="arithmatex">\(= 3 \times 8 / 36 = 2/3\)</span></li>
+<li>Job 2's % of CPU <span class="arithmatex">\(= 2 \times 6 / 18 = 2/3\)</span> ✅ equal</li>
+</ul>
+<details class="question">
+<summary>Are resources fully utilized?</summary>
+<ul>
+<li>CPU: <span class="arithmatex">\(3 \times 2 + 2 \times 6 = 18\)</span> of 18 → <strong>fully used</strong></li>
+<li>RAM: <span class="arithmatex">\(3 \times 8 + 2 \times 2 = 28\)</span> of 36 → <strong>8 GB idle</strong></li>
+</ul>
+<p>CPU is the bottleneck, so no more tasks of either job fit. DRF is fair but doesn't guarantee every resource is fully utilized.</p>
+</details>
+<p><strong>Other DRF details</strong></p>
+<ul>
+<li>Generalizes to <strong>multiple jobs</strong> and to <strong>more than 2 resource types</strong> (CPU, RAM, network, disk, etc.)</li>
+<li>Each job gets a fair share of the resource type it <strong>desires the most</strong> ⟹ hence fairness</li>
+</ul>
+<h3 id="internal-cluster-scheduling-at-cloud-vendors">Internal Cluster Scheduling at Cloud Vendors<a class="headerlink" href="#internal-cluster-scheduling-at-cloud-vendors" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Cloud vendors use <strong>proprietary</strong> cluster-management and orchestration infrastructure<ul>
+<li>Google has published about theirs: <strong>Borg</strong> (and its successor <strong>Omega</strong>); AWS, Azure, etc. have equivalents</li>
+</ul>
+</li>
+<li>Most use some version of <strong>per-user quotas/allocations</strong> with <strong>priority-based or multi-queue</strong> scheduling<ul>
+<li>Paired with some version of <strong>Round-robin or FIFO</strong> within jobs of the same priority</li>
+<li>A <strong>"hierarchy" of schedulers</strong>: global, regional, per "cell", etc.</li>
+<li>Typically a <strong>leader per "cell"</strong> coordinates with a <strong>per-machine daemon</strong>, which may tweak the OS scheduler on each machine</li>
+</ul>
+</li>
+</ul>
+<h3 id="summary_9">Summary<a class="headerlink" href="#summary_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Scheduling is a very important problem in cloud computing: limited resources, lots of jobs needing them</li>
+<li><strong>Single-processor scheduling</strong>: FIFO/FCFS, STF (optimal!), Priority, Round-Robin</li>
+<li><strong>Hadoop scheduling</strong>: Capacity Scheduler, Fair Scheduler</li>
+<li><strong>Dominant Resource Fairness</strong> for multi-resource requirements</li>
+</ul>
+<h2 id="lecture-apache-spark">Lecture: Apache Spark<a class="headerlink" href="#lecture-apache-spark" title="Permanent link">&para;</a></h2>
+<p>TA lecture by Faria Kalim (see video).</p>
+<h3 id="why-spark">Why Spark?<a class="headerlink" href="#why-spark" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Another system for <strong>big data analytics</strong></li>
+<li>Isn't MapReduce good enough? It <strong>simplifies batch processing</strong> on large commodity clusters, but:<ul>
+<li>It does an <strong>expensive save to disk</strong> between stages <strong>for fault tolerance</strong>（每一步的中间结果都写磁盘）</li>
+<li>That is costly for <strong>iterative</strong> apps (e.g. ML, PageRank: the same data is processed many times) and <strong>interactive</strong> apps (repeated ad-hoc queries on the same data)</li>
+<li>It <strong>lacks efficient data sharing</strong> between jobs</li>
+</ul>
+</li>
+<li>Specialized frameworks evolved for different programming models<ul>
+<li><strong>Bulk Synchronous Processing</strong>: Pregel</li>
+<li><strong>Iterative MapReduce</strong>: HaLoop, …</li>
+</ul>
+</li>
+</ul>
+<p>Spark's goal: one general system with efficient, <strong>in-memory</strong> data sharing.</p>
+<h3 id="resilient-distributed-datasets-rdds">Resilient Distributed Datasets (RDDs)<a class="headerlink" href="#resilient-distributed-datasets-rdds" title="Permanent link">&para;</a></h3>
+<p>弹性分布式数据集</p>
+<ul>
+<li>An <strong>immutable, partitioned</strong> collection of records（不可变、分区存放在多台机器上）</li>
+<li>Built through <strong>coarse-grained, ordered transformations</strong> (map, join, …): one operation applies to the whole dataset, not to individual records 粗粒度、有序的变换</li>
+<li>Can be <strong>cached</strong> in memory for efficient reuse <strong>中间结果放在内存里</strong></li>
+</ul>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-28-1">1</a></span>
+<span class="normal"><a href="#__codelineno-28-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1"></a>HDFS ──Read──→ RDD ──Map──→ RDD ──Reduce──→ RDD (cached)
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2"></a>               (partitions spread across machines)
+</span></code></pre></div></td></tr></table></div>
+<h4 id="fault-recovery-lineage">Fault Recovery: Lineage<a class="headerlink" href="#fault-recovery-lineage" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Lineage</strong>: log the coarse-grained operations applied to the partitioned dataset</li>
+<li>RDDs track the <strong>graph of transformations</strong> that built them, so they can rebuild lost data</li>
+<li>If a partition is lost, simply <strong>recompute that partition</strong> from its lineage <strong>不保存数据本身，只记录"数据是怎么算出来的"</strong></li>
+<li><strong>No cost if no failure</strong>（不出错就没有额外开销，不需要像 MapReduce 那样每步都写磁盘或做副本）</li>
+</ul>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-29-1">1</a></span>
+<span class="normal"><a href="#__codelineno-29-2">2</a></span>
+<span class="normal"><a href="#__codelineno-29-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1"></a>Lineage:  HDFS ──Read──→ RDD ──Map──→ RDD ──Reduce──→ RDD
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2"></a>                                                      ✗ lost partition
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3"></a>          → re-run Read → Map → Reduce for that partition only
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>MapReduce</th>
+<th>Spark RDD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Intermediate data</td>
+<td>Written to <strong>disk</strong></td>
+<td>Kept <strong>in memory</strong> (cache)</td>
+</tr>
+<tr>
+<td>Fault tolerance</td>
+<td>Re-read from disk</td>
+<td><strong>Recompute from lineage</strong></td>
+</tr>
+<tr>
+<td>Cost without failures</td>
+<td>Disk I/O every stage</td>
+<td>~None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-can-you-do-with-spark">What Can You Do with Spark?<a class="headerlink" href="#what-can-you-do-with-spark" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>RDD operations</strong><ul>
+<li><strong>Transformations</strong>: filter, join, map, group-by, … (produce a new RDD)</li>
+<li><strong>Actions</strong>: count, print, … (return a result)</li>
+</ul>
+</li>
+<li><strong>Control</strong><ul>
+<li><strong>Partitioning</strong>: choose how records are spread across machines</li>
+<li><strong>Persistence</strong>: choose which RDDs to keep (cache) for reuse</li>
+</ul>
+</li>
+</ul>
+<h4 id="partitioning-example-pagerank">Partitioning Example: PageRank<a class="headerlink" href="#partitioning-example-pagerank" title="Permanent link">&para;</a></h4>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-30-1">1</a></span>
+<span class="normal"><a href="#__codelineno-30-2">2</a></span>
+<span class="normal"><a href="#__codelineno-30-3">3</a></span>
+<span class="normal"><a href="#__codelineno-30-4">4</a></span>
+<span class="normal"><a href="#__codelineno-30-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1"></a>Links (url, neighbors) ──┐
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2"></a>                         ├─join─→ Contributions ─→ Ranks (url, ranks) ─┐
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3"></a>Ranks (url, ranks) ──────┘                                             │
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4"></a>        ┌──────────────────────────────────────────────────────────────┘
+</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5"></a>Links ──┴─join─→ Contributions ─→ Ranks ─→ ...   (repeats every iteration)
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li><strong>Joins take place repeatedly</strong> (Links ⋈ Ranks in every iteration)</li>
+<li><strong>Good partitioning reduces shuffles</strong>: partition Links and Ranks the same way (by url), so matching records are already on the same machine and the join needs no network shuffle</li>
+</ul>
+<h3 id="generality">Generality<a class="headerlink" href="#generality" title="Permanent link">&para;</a></h3>
+<p>RDDs allow <strong>unification of different programming models</strong> on top of Apache Spark:</p>
+<table>
+<thead>
+<tr>
+<th>Library</th>
+<th>Programming model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Spark SQL</strong></td>
+<td>SQL queries</td>
+</tr>
+<tr>
+<td><strong>Spark Streaming</strong></td>
+<td>Stream processing</td>
+</tr>
+<tr>
+<td><strong>MLlib</strong></td>
+<td>Machine learning</td>
+</tr>
+<tr>
+<td><strong>GraphX</strong></td>
+<td>Graph processing</td>
+</tr>
+</tbody>
+</table>
+<h4 id="gather-apply-scatter-on-graphx">Gather-Apply-Scatter on GraphX<a class="headerlink" href="#gather-apply-scatter-on-graphx" title="Permanent link">&para;</a></h4>
+<p>A graph is <strong>represented as a table</strong> of edges (vertex, neighbor), e.g. A–B, A–C, B–C, D–C, and turned into <strong>triplets</strong> (src, edge, dst). Each GAS step is then an ordinary RDD operation:</p>
+<table>
+<thead>
+<tr>
+<th>GAS step</th>
+<th>What happens (vertex A)</th>
+<th>RDD operation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Gather</strong></td>
+<td>Collect values from A's neighbors (B, C)</td>
+<td><strong>Group-by</strong> A</td>
+</tr>
+<tr>
+<td><strong>Apply</strong></td>
+<td>Update A's value with the gathered result</td>
+<td><strong>Map</strong></td>
+</tr>
+<tr>
+<td><strong>Scatter</strong></td>
+<td>Send A's new value along its edges to B and C</td>
+<td><strong>Join</strong> with the triplets</td>
+</tr>
+</tbody>
+</table>
+<p>So graph processing is just transformations on tables, which is why it fits Spark.</p>
+<h3 id="summary_10">Summary<a class="headerlink" href="#summary_10" title="Permanent link">&para;</a></h3>
+<ul>
+<li>RDDs provide a <strong>simple and efficient</strong> programming model</li>
+<li>Generalized to a <strong>broad set of applications</strong> (SQL, streaming, ML, graphs)</li>
+<li>Leverages the <strong>coarse-grained</strong> nature of parallel algorithms for <strong>failure recovery</strong> (lineage)</li>
+</ul>
+<h2 id="lecture-24-remote-distributed-file-systems">Lecture 24: Remote &amp; Distributed File Systems<a class="headerlink" href="#lecture-24-remote-distributed-file-systems" title="Permanent link">&para;</a></h2>
+<h3 id="file-system-basics">File System Basics<a class="headerlink" href="#file-system-basics" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>File</strong>: a sequence of persisted bytes</li>
+<li><strong>File system</strong>: a collection of files arranged into a <strong>directory (folder) namespace</strong>, e.g. <code>/foo/bar.txt</code></li>
+<li>A higher level of abstraction: users and processes avoid dealing with storage blocks and memory blocks, and use the <strong>POSIX file system API</strong> instead</li>
+</ul>
+<h4 id="file-contents">File Contents<a class="headerlink" href="#file-contents" title="Permanent link">&para;</a></h4>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-31-1">1</a></span>
+<span class="normal"><a href="#__codelineno-31-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1"></a>| Header | Block 0 | Block 1 | ... | Block N-1 |
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2"></a>  └ metadata └──────────── file content ───────┘
+</span></code></pre></div></td></tr></table></div>
+<p>The <strong>header</strong> holds the <strong>metadata</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Metadata</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Timestamps</td>
+<td>Creation, most-recent read, most-recent write</td>
+</tr>
+<tr>
+<td>File type</td>
+<td><code>.c</code>, <code>.o</code>, <code>.exe</code>, <code>.java</code></td>
+</tr>
+<tr>
+<td>Ownership</td>
+<td>Who owns the file</td>
+</tr>
+<tr>
+<td><strong>Access Control List (ACL)</strong></td>
+<td>Fine-grained permissions: who can access the file and in what mode</td>
+</tr>
+<tr>
+<td><strong>Reference count</strong></td>
+<td>Number of directories containing this file; may be &gt; 1 (<strong>hard links</strong>); the file is deleted when it reaches <strong>0</strong></td>
+</tr>
+<tr>
+<td>Block locations</td>
+<td>Where the N blocks of content are</td>
+</tr>
+</tbody>
+</table>
+<h4 id="directories">Directories<a class="headerlink" href="#directories" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Directories are just special files</strong>, with similar metadata (timestamps, ownership, etc.)</li>
+<li>Their "data" contains:<ul>
+<li>Info about files in the directory (e.g. file name)</li>
+<li><strong>Pointers</strong> (on disk) to the actual files' headers</li>
+<li>Info about child directories (e.g. dir name)</li>
+</ul>
+</li>
+<li>Files are accessed via <strong>system calls</strong></li>
+</ul>
+<h4 id="unix-file-system-calls">Unix File System Calls<a class="headerlink" href="#unix-file-system-calls" title="Permanent link">&para;</a></h4>
+<p>Files are accessed through <strong>file descriptors (fd)</strong>: a handle for the calling process. A process must <strong>open</strong> a file before reading/writing it; the OS creates an internal data structure for the fd and returns it.</p>
+<table>
+<thead>
+<tr>
+<th>Call</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fd = open(name, mode)</code></td>
+<td>Open a file; mode = access mode (r, w, x)</td>
+</tr>
+<tr>
+<td><code>fd = creat(name, mode)</code></td>
+<td>Create a new file, return its fd</td>
+</tr>
+<tr>
+<td><code>close(fd)</code></td>
+<td>Close the file</td>
+</tr>
+<tr>
+<td><code>error = read(fd, buffer, nbytes)</code></td>
+<td>Read <code>nbytes</code> from the fd's current <strong>offset pointer</strong> into <code>buffer</code>, then <strong>advance the pointer</strong> by <code>nbytes</code>. Returns #bytes read, 0 at EOF, −1 on error (<code>errno</code> set)</td>
+</tr>
+<tr>
+<td><code>error = write(fd, buffer, nbytes)</code></td>
+<td>Write <code>nbytes</code> from <code>buffer</code> at the current offset, then advance the pointer</td>
+</tr>
+<tr>
+<td><code>pos = lseek(fd, offset, whence)</code></td>
+<td>Move the pointer to <code>offset</code>; <code>whence</code> says whether <code>offset</code> is <strong>absolute</strong> or <strong>relative</strong> to the current pointer</td>
+</tr>
+</tbody>
+</table>
+<p>注意：fd 自己维护一个 <strong>offset 指针</strong>，所以 <code>read</code>/<code>write</code> 本身不带位置参数，这一点后面讲 NFS 的 statelessness 时很关键。</p>
+<h3 id="remote-distributed-file-systems">Remote &amp; Distributed File Systems<a class="headerlink" href="#remote-distributed-file-systems" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Era</th>
+<th>Approach</th>
+<th>How</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Earlier</td>
+<td>FTP</td>
+<td>Copy files over the network</td>
+<td>FTP</td>
+</tr>
+<tr>
+<td>Mid '80s</td>
+<td><strong>Remote file system access</strong></td>
+<td>Clients use <strong>RPCs</strong> to access files/dirs on <strong>one server</strong> machine</td>
+<td><strong>NFS, SMB, AFS</strong></td>
+</tr>
+<tr>
+<td>Mid '90s</td>
+<td><strong>Distributed file systems</strong></td>
+<td><strong>Multiple servers</strong> collaborate to export a <strong>single</strong> file system</td>
+<td>GFS/Colossus, Azure Files, HDFS, Ceph, GlusterFS, GPFS, Lustre</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Conflation</strong>: remote file access is often (loosely) called a "distributed file system" too.</p>
+</blockquote>
+<h3 id="remote-file-systems">Remote File Systems<a class="headerlink" href="#remote-file-systems" title="Permanent link">&para;</a></h3>
+<p><strong>Desirable properties</strong></p>
+<ul>
+<li><strong>Transparency</strong>: clients access remote files <strong>as if they were local</strong><ul>
+<li>Same API as local files, so client code doesn't change</li>
+<li>Location, replication, etc. are invisible to the client</li>
+</ul>
+</li>
+<li><strong>Support concurrent clients</strong>: multiple client processes reading/writing the same file concurrently</li>
+</ul>
+<h4 id="virtual-file-system-vfs-layer">Virtual File System (VFS) Layer<a class="headerlink" href="#virtual-file-system-vfs-layer" title="Permanent link">&para;</a></h4>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-32-1">1</a></span>
+<span class="normal"><a href="#__codelineno-32-2">2</a></span>
+<span class="normal"><a href="#__codelineno-32-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1"></a>User applications → GNU C library → System call interface
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2"></a>        → VFS (+ inode cache, directory cache)
+</span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3"></a>        → Individual file systems (ext4, NFS client, ...) → Buffer cache → Device drivers
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li>Used by many OSes: an <strong>abstraction layer over different FS types</strong></li>
+<li>VFS <strong>translates each system call</strong> into the underlying FS's API</li>
+<li>Keeps info from all FSs in <strong>local caches</strong> (files, dirs, data)</li>
+<li>Lets a single machine <strong>"mount"</strong> many file systems</li>
+</ul>
+<h4 id="nfs-architecture">NFS Architecture<a class="headerlink" href="#nfs-architecture" title="Permanent link">&para;</a></h4>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-33-1">1</a></span>
+<span class="normal"><a href="#__codelineno-33-2">2</a></span>
+<span class="normal"><a href="#__codelineno-33-3">3</a></span>
+<span class="normal"><a href="#__codelineno-33-4">4</a></span>
+<span class="normal"><a href="#__codelineno-33-5">5</a></span>
+<span class="normal"><a href="#__codelineno-33-6">6</a></span>
+<span class="normal"><a href="#__codelineno-33-7">7</a></span>
+<span class="normal"><a href="#__codelineno-33-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1"></a>        Client                                       Server
+</span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2"></a> Process A   Process B
+</span><span id="__span-33-3"><a id="__codelineno-33-3" name="__codelineno-33-3"></a>      \         /
+</span><span id="__span-33-4"><a id="__codelineno-33-4" name="__codelineno-33-4"></a>   Virtual File System                        Virtual File System
+</span><span id="__span-33-5"><a id="__codelineno-33-5" name="__codelineno-33-5"></a>     /            \                             ↑            \
+</span><span id="__span-33-6"><a id="__codelineno-33-6" name="__codelineno-33-6"></a> Unix FS      NFS client  ───── RPCs ─────→  NFS server    Unix FS
+</span><span id="__span-33-7"><a id="__codelineno-33-7" name="__codelineno-33-7"></a>    |                                                         |
+</span><span id="__span-33-8"><a id="__codelineno-33-8" name="__codelineno-33-8"></a> Local disk                                               Local disk
+</span></code></pre></div></td></tr></table></div>
+<h4 id="remote-file-access-protocols">Remote File Access Protocols<a class="headerlink" href="#remote-file-access-protocols" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Protocol</th>
+<th>Origin</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>NFS</strong> (Network File System), v1–v4.2</td>
+<td><strong>Sun Microsystems '84</strong>, for Solaris workstations</td>
+<td>Published as an <strong>open standard</strong> ⟹ <strong>most popular</strong></td>
+</tr>
+<tr>
+<td><strong>SMB</strong> (Server Message Block), v1–v3.1.1</td>
+<td><strong>IBM '83</strong>, for DOS PCs (open standard)</td>
+<td>Microsoft rebranded it <strong>CIFS</strong>, kept implementations proprietary; open-source <strong>Samba</strong>; a '07 EU anti-trust ruling folded CIFS back into open SMB</td>
+</tr>
+<tr>
+<td><strong>AFS</strong> (Andrew File System)</td>
+<td><strong>CMU</strong> (with IBM) <strong>'83</strong></td>
+<td>Pioneered <strong>aggressive caching</strong>, <strong>global namespace</strong>, <strong>Kerberos security</strong>; used only at some academic/research institutions</td>
+</tr>
+</tbody>
+</table>
+<h4 id="nfs-mount-export">NFS: Mount &amp; Export<a class="headerlink" href="#nfs-mount-export" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>NFS client system</strong><ul>
+<li>Typically runs as a <strong>kernel module</strong> in the client's OS</li>
+<li>Lets the client <strong>mount</strong> a remote file system <strong>exported</strong> by an NFS server</li>
+<li>Local POSIX file system calls → the NFS client sends <strong>RPCs</strong> to the NFS server</li>
+</ul>
+</li>
+<li><strong>NFS server system</strong><ul>
+<li><strong>Exports</strong> a local file system over the network; multiple clients can mount it</li>
+<li>Executes received RPCs by reading/modifying the exported file system</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Mount <code>/server/bar</code> from the server onto <code>/usr/local/foo</code>
+⟹ <code>/usr/local/foo/baz</code> on the client refers to <code>/server/bar/baz</code> on the server.
+Mount does <strong>NOT</strong> clone or copy files; it just points to the remote files.</p>
+</blockquote>
+<h4 id="vfs-file-handles-stateless-nfs-server">VFS + File Handles ⟹ Stateless NFS Server<a class="headerlink" href="#vfs-file-handles-stateless-nfs-server" title="Permanent link">&para;</a></h4>
+<ul>
+<li>VFS lets processes access files via <strong>file descriptors</strong>, just like local Unix files ⟹ local and remote files are <strong>indistinguishable</strong> (transparency)</li>
+<li>For each file access, VFS decides whether to route it to the <strong>local FS</strong> or to the <strong>NFS client</strong></li>
+</ul>
+<details class="question">
+<summary>If processes use file descriptors, does the NFS server need to be stateful?</summary>
+<p><strong>No.</strong> The client's VFS maps each <strong>fd</strong> to an opaque NFS <strong>file handle</strong>:</p>
+<ul>
+<li><strong>File handle</strong> = an opaque blob of bytes that the client <strong>doesn't parse</strong>; the NFS server returns it in reply to the RPC for <code>open()</code></li>
+<li>The server guarantees the mapping <strong>file handle → local file never changes</strong></li>
+<li>So every RPC carries everything needed (file handle + absolute offset + count); the server does not need to remember who has what open ⟹ the server can stay <strong>stateless</strong>（无状态：server 崩溃重启后客户端直接重发请求即可）</li>
+</ul>
+<p>The fd and its offset pointer live on the <strong>client</strong>; the server only ever sees file handles.</p>
+</details>
+<h4 id="concurrent-access-to-a-filedir">Concurrent Access to a File/Dir<a class="headerlink" href="#concurrent-access-to-a-filedir" title="Permanent link">&para;</a></h4>
+<p>Changes to a file from one client should <strong>not interfere</strong> with another client's access to the same file.</p>
+<table>
+<thead>
+<tr>
+<th>Technique</th>
+<th>Idea</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Best effort</strong></td>
+<td>Client-side &amp; server-side caching (can be <strong>unpredictable</strong>)</td>
+</tr>
+<tr>
+<td><strong>Session-based</strong></td>
+<td>Changes are <strong>invisible to others until the file is closed</strong> (<strong>last write wins</strong>)</td>
+</tr>
+<tr>
+<td><strong>Immutable</strong></td>
+<td>A file can never be modified; a <strong>new version</strong> is created instead</td>
+</tr>
+<tr>
+<td><strong>Leases/delegations &amp; byte-range locking</strong></td>
+<td>Server grants a client temporary rights, or locks part of a file</td>
+</tr>
+</tbody>
+</table>
+<p><strong>At-most-once vs. at-least-once</strong>: choose carefully (recall RPC semantics in L20-21)</p>
+<ul>
+<li>E.g. <strong>append</strong> operations <strong>cannot be repeated</strong></li>
+<li><strong>Idempotent</strong> operations can be at-least-once, e.g. <strong>read at an absolute position</strong> in the file</li>
+</ul>
+<details class="question">
+<summary>More examples of at-most-once and at-least-once operations?</summary>
+<table>
+<thead>
+<tr>
+<th>At-least-once OK (idempotent)</th>
+<th>Needs at-most-once (not idempotent)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Read at an absolute offset</td>
+<td><strong>Append</strong> (repeating appends the data twice)</td>
+</tr>
+<tr>
+<td>Write at an absolute offset (same bytes, same place)</td>
+<td><strong>Create</strong> a file exclusively (2<sup>nd</sup> attempt fails)</td>
+</tr>
+<tr>
+<td>Get file attributes, look up a name in a directory</td>
+<td><strong>Delete/remove</strong> (2<sup>nd</sup> attempt returns "no such file")</td>
+</tr>
+<tr>
+<td>Set a file's size/mode to a fixed value</td>
+<td><strong>Rename</strong>, <code>mkdir</code></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h4 id="remote-access-other-aspects">Remote Access: Other Aspects<a class="headerlink" href="#remote-access-other-aspects" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Authentication</strong>: verify that a user is who they claim to be</li>
+<li>
+<p><strong>Authorization</strong>: after authentication, verify they have <strong>permission</strong> to access the file. Two flavors:</p>
+<table>
+<thead>
+<tr>
+<th>Flavor</th>
+<th>Organized by</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Access Control Lists (ACLs)</strong></td>
+<td>Per <strong>file</strong></td>
+<td>List of allowed users and the access allowed to each</td>
+</tr>
+<tr>
+<td><strong>Capability Lists</strong></td>
+<td>Per <strong>user</strong></td>
+<td>List of files the user may access and the access type</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><strong>Stateless vs. stateful</strong> servers</p>
+</li>
+<li><strong>Performance</strong>: caching</li>
+</ul>
+<h4 id="server-side-caching">Server-side Caching<a class="headerlink" href="#server-side-caching" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Server caching</strong> is one of the big reasons <strong>NFS is so fast with reads</strong><ul>
+<li>Caches recently accessed blocks (of files and directories) in memory</li>
+<li>Most programs have <strong>locality of access, even across clients</strong>: blocks accessed recently will be accessed again soon</li>
+</ul>
+</li>
+<li>Writes come in two flavors:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Write policy</th>
+<th>How</th>
+<th>Trade-off</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Delayed write</strong></td>
+<td>Write in memory, flush to disk every <strong>30 s</strong> (e.g. Unix <code>sync</code>)</td>
+<td><strong>Fast</strong> but <strong>not consistent</strong> (lost on crash)</td>
+</tr>
+<tr>
+<td><strong>Write-through</strong></td>
+<td>Write to disk <strong>immediately</strong>, before acking the client</td>
+<td><strong>Consistent</strong> but may be <strong>slow</strong></td>
+</tr>
+</tbody>
+</table>
+<h4 id="client-side-caching">Client-side Caching<a class="headerlink" href="#client-side-caching" title="Permanent link">&para;</a></h4>
+<p>The client also caches recently accessed blocks. Each cached block is tagged with:</p>
+<ul>
+<li><strong>Tc</strong>: the time the cache entry was <strong>last validated</strong></li>
+<li><strong>Tm</strong>: the time the block was <strong>last modified at the server</strong></li>
+</ul>
+<p>A cache entry is <strong>valid at time T</strong> if</p>
+<div class="arithmatex">\[
+(T - T_c &lt; t) \quad \text{or} \quad (Tm_{client} = Tm_{server})
+\]</div>
+<ul>
+<li>First condition: the entry was validated recently (no need to ask the server)</li>
+<li>Second condition: ask the server; the file hasn't been modified since I cached it</li>
+<li><strong>t = freshness interval</strong>: a compromise between <strong>consistency</strong> and <strong>efficiency</strong><ul>
+<li>Sun Solaris sets <span class="arithmatex">\(t\)</span> adaptively: <strong>3–30 s for files</strong>, <strong>30–60 s for directories</strong></li>
+</ul>
+</li>
+<li><strong>On a write</strong>: the client <strong>buffers "dirty" blocks locally</strong> and sends the RPC later (<strong>write-back caching</strong>)<ul>
+<li>When: on <code>close()</code>, under memory pressure, on <code>fsync()</code>, or on a timeout</li>
+</ul>
+</li>
+</ul>
+<details class="question">
+<summary>What is the risk with client-side caching? How to avoid the problem?</summary>
+<ul>
+<li><strong>Risk</strong>: <strong>stale data</strong>. Within the freshness interval, client A may read an old cached block even though client B already changed the file. And with write-back, two clients can each buffer conflicting writes, so one overwrites the other (last writer wins)</li>
+<li><strong>Avoid it</strong> with: a shorter freshness interval (more validation traffic); having the <strong>server notify clients</strong> when the file changes (AFS <strong>callbacks</strong>, NFSv4 <strong>delegations</strong>); or <strong>locks/leases</strong> so only one client writes at a time</li>
+</ul>
+</details>
+<h3 id="afs-andrew-file-system">AFS (Andrew File System)<a class="headerlink" href="#afs-andrew-file-system" title="Permanent link">&para;</a></h3>
+<h4 id="contrasting-design-decisions-in-afs">Contrasting Design Decisions in AFS<a class="headerlink" href="#contrasting-design-decisions-in-afs" title="Permanent link">&para;</a></h4>
+<p>Two unusual design principles:</p>
+<ul>
+<li><strong>Whole-file serving</strong>: the server sends the <strong>entire file</strong>, not just specific blocks</li>
+<li><strong>Whole-file caching</strong>: the client keeps a <strong>permanent cache</strong> (in RAM &amp; local disk) that <strong>survives reboots</strong></li>
+</ul>
+<p>Based on (validated) assumptions:</p>
+<ul>
+<li>Most file accesses are by a <strong>single user</strong></li>
+<li>Most files are <strong>small</strong></li>
+<li>A <strong>"large" client cache</strong> is possible</li>
+<li>File <strong>reads are much more frequent than writes</strong>, and typically <strong>sequential</strong></li>
+</ul>
+<h4 id="afs-unified-namespace">AFS: Unified Namespace<a class="headerlink" href="#afs-unified-namespace" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>One top-level directory "/"</strong> mounted by all AFS clients<ul>
+<li>Different administrative domains manage their own servers, but their file systems are <strong>stitched under the same "/"</strong> using a <strong>VLDB</strong> (Volume Location DataBase)</li>
+<li>E.g. <code>/afs/cs.cmu.edu</code>, <code>/afs/cern.ch</code>; a client can navigate to any file system from "/"</li>
+</ul>
+</li>
+<li>By contrast, <strong>NFS uses centralized directory services</strong> (LDAP, NIS, AD)<ul>
+<li>Fixed the annoyance of maintaining each client's <code>/etc/fstab</code></li>
+<li><strong>Automounter (autofs)</strong>: a client mounts file systems <strong>on demand</strong> using the same local directory path</li>
+<li>If an admin moves Alice's home dir to another server, they only update the <strong>LDAP map</strong>; the client's access to <code>/home/alice</code> stays correct</li>
+</ul>
+</li>
+</ul>
+<h4 id="afs-details-callbacks">AFS Details: Callbacks<a class="headerlink" href="#afs-details-callbacks" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Reads and writes are <strong>optimistic</strong><ul>
+<li>Done on the <strong>local copy</strong> of the file at the client</li>
+<li>When the file is <strong>closed</strong>, writes are propagated to the server (session semantics)</li>
+</ul>
+</li>
+<li>When a client <strong>opens</strong> a file, the server<ul>
+<li>sends it the <strong>entire file</strong></li>
+<li>gives the client a <strong>callback promise</strong></li>
+</ul>
+</li>
+<li><strong>Callback promise</strong>: if <strong>another client modifies and closes</strong> the file, the server will send a <strong>callback</strong> to this client<ul>
+<li>The callback state at the client is binary: <strong>valid</strong> or <strong>canceled</strong></li>
+</ul>
+</li>
+</ul>
+<details class="question">
+<summary>Advantages of callbacks? Disadvantages?</summary>
+<ul>
+<li><strong>Advantages</strong>: no polling. While the callback is valid, the client can open and read its cached copy <strong>without contacting the server</strong>, which cuts server load and network traffic a lot（文件没被别人改过就完全不用问 server）</li>
+<li><strong>Disadvantages</strong>:<ul>
+<li>The <strong>server becomes stateful</strong>: it must remember which clients hold callbacks on which files, and that state must be recovered after a server crash</li>
+<li>A widely shared file triggers <strong>many callbacks</strong> at once when it changes</li>
+<li>Consistency is only at <strong>close</strong> granularity: concurrent writers still get <strong>last-close-wins</strong></li>
+</ul>
+</li>
+</ul>
+</details>
+<h4 id="stateful-servers-afs-nfsv4-smb">Stateful Servers: AFS, NFSv4, &amp; SMB<a class="headerlink" href="#stateful-servers-afs-nfsv4-smb" title="Permanent link">&para;</a></h4>
+<p>状态服务</p>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Stateful?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SMB</strong></td>
+<td><strong>Always stateful</strong> (and connection-based)</td>
+</tr>
+<tr>
+<td><strong>NFSv2 &amp; v3</strong></td>
+<td>Designed for <strong>UDP</strong> ⟹ <strong>stateless</strong> (file handles)</td>
+</tr>
+<tr>
+<td><strong>NFSv4 onwards</strong></td>
+<td><strong>Stateful</strong>: tracks clients, lock state, etc.; hands out <strong>file delegations</strong>; clients can take <strong>read/write locks on byte ranges</strong>; server uses <strong>callbacks</strong> to reclaim them; <strong>pNFS</strong> (parallel NFS)</td>
+</tr>
+<tr>
+<td><strong>AFS</strong></td>
+<td>Stateful (callback promises)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="distributed-file-systems">Distributed File Systems<a class="headerlink" href="#distributed-file-systems" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Many servers collaborate</strong> to export a <strong>single</strong> file system</li>
+<li><strong>Concurrent</strong> client access</li>
+<li><strong>Transparency</strong>: the client is unaware of <strong>location, failure, and replication</strong></li>
+</ul>
+<h4 id="why-distributed-file-systems">Why Distributed File Systems?<a class="headerlink" href="#why-distributed-file-systems" title="Permanent link">&para;</a></h4>
+<ul>
+<li>A single server is limited by how much it can <strong>"scale up"</strong><ul>
+<li>The total storage attachable to that server</li>
+<li>The CPU + memory needed to execute remote access protocol RPCs (NFS, SMB, …) → performance</li>
+</ul>
+</li>
+<li>Also, <strong>design for failures</strong> → availability</li>
+<li><strong>"Scale out"</strong>: keep adding cheap/commodity servers for more storage and performance<ul>
+<li>Ideally, IOPS load and storage are <strong>evenly distributed</strong> across servers</li>
+<li>Ideal for <strong>pNFS</strong>-style high-throughput file access</li>
+</ul>
+</li>
+</ul>
+<h4 id="many-popular-distributed-file-systems">Many Popular Distributed File Systems<a class="headerlink" href="#many-popular-distributed-file-systems" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Year</th>
+<th>Open source?</th>
+<th>Company</th>
+<th>POSIX?可移植操作系统接口</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPFS</td>
+<td>1998</td>
+<td>No</td>
+<td>IBM</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>GFS/Colossus</strong></td>
+<td>2003</td>
+<td>No</td>
+<td>Google</td>
+<td><strong>No</strong></td>
+</tr>
+<tr>
+<td><strong>HDFS</strong></td>
+<td>2006</td>
+<td>Yes</td>
+<td>Yahoo</td>
+<td>No</td>
+</tr>
+<tr>
+<td>CephFS &amp; GlusterFS</td>
+<td>2006</td>
+<td>Yes</td>
+<td>Red Hat</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Pangu</td>
+<td>2009</td>
+<td>No</td>
+<td>Alibaba</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Tectonic</td>
+<td>2021</td>
+<td>No</td>
+<td>Meta</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<h3 id="gfs-google-file-system">GFS (Google File System)<a class="headerlink" href="#gfs-google-file-system" title="Permanent link">&para;</a></h3>
+<h4 id="gfs-architecture">GFS Architecture<a class="headerlink" href="#gfs-architecture" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Designed for <strong>reading/writing large files</strong></li>
+<li><strong>No actual directory structure</strong>, even though filenames can encode a hierarchy (<code>/a/b/c/foo</code>)</li>
+<li>A file is just a sequence of <strong>chunks (64 MiB)</strong>; each chunk gets a <strong>unique ID</strong></li>
+<li><strong>Single metadata server</strong> + <strong>many chunk servers</strong> (you can keep adding chunk servers)</li>
+<li><strong>Metadata server</strong> holds:<ul>
+<li>a <strong>flat map</strong> <code>&lt;filename + offset&gt; → &lt;chunkID&gt;</code></li>
+<li><code>chunkID → chunk server replicas</code></li>
+</ul>
+</li>
+<li><strong>Chunk server</strong>: stores chunks as files in its <strong>local file system</strong> (e.g. ext4)<ul>
+<li><strong>3 replicas</strong> of each chunk, each on a <strong>different</strong> chunk server</li>
+</ul>
+</li>
+<li><strong>Heartbeats</strong> between the metadata server and chunk servers (failure detection, Lecture 5-6)</li>
+<li>The application is compiled with the <strong>GFS client</strong> library, which hides all the complexity</li>
+</ul>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-34-1">1</a></span>
+<span class="normal"><a href="#__codelineno-34-2">2</a></span>
+<span class="normal"><a href="#__codelineno-34-3">3</a></span>
+<span class="normal"><a href="#__codelineno-34-4">4</a></span>
+<span class="normal"><a href="#__codelineno-34-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1"></a>Application + GFS client ──(file name, chunk index)──→ Metadata server
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2"></a>                         ←─(chunk handle, chunk locations)──
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3"></a>                         ──(chunk handle, byte range)──→ Chunkserver ──┐
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4"></a>                         ←════════ chunk data ═══════════════════════════┘
+</span><span id="__span-34-5"><a id="__codelineno-34-5" name="__codelineno-34-5"></a>Metadata server ⇄ chunkservers: instructions &amp; chunkserver state (heartbeats)
+</span></code></pre></div></td></tr></table></div>
+<h4 id="gfs-a-few-important-details">GFS: A Few Important Details<a class="headerlink" href="#gfs-a-few-important-details" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>GFS is not POSIX compliant</strong> (true for most scale-out distributed file systems)<ul>
+<li><strong>No directories</strong></li>
+<li>Files are <strong>append-only</strong>: a file is written only once, sequentially; an update creates a <strong>new version</strong> (file versioning is supported)</li>
+</ul>
+</li>
+<li>This <strong>greatly simplifies</strong> GFS (and scale-out DFS) design<ul>
+<li>Easy to provide <strong>one-copy update semantics</strong>: when a file is replicated, its contents as visible to clients are no different from when it has exactly 1 replica (cf. one-copy serializability in L22)</li>
+</ul>
+</li>
+<li><strong>Erasure encoding</strong> of chunks: 3 (or more) replicas get <strong>expensive</strong> (3× storage)</li>
+</ul>
+<h4 id="gfs-read-path">GFS: Read Path<a class="headerlink" href="#gfs-read-path" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Client → <em>metadata server (MS)</em>: <strong>filename + offset</strong> (chunk index)</li>
+<li>MS → client: <strong>chunk handle + replica locations</strong></li>
+<li>The client <strong>caches</strong> this metadata</li>
+<li>The client picks a chunk server (typically the <strong>closest</strong>) and <strong>reads directly</strong> from it</li>
+<li>Future reads use the <strong>cached metadata</strong> and talk <strong>directly</strong> to chunk servers</li>
+</ol>
+<p>数据流不经过 metadata server，它只负责"告诉你去哪读"，所以单个 metadata server 才撑得住。</p>
+<h4 id="gfs-write-path">GFS: Write Path<a class="headerlink" href="#gfs-write-path" title="Permanent link">&para;</a></h4>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-35-1">1</a></span>
+<span class="normal"><a href="#__codelineno-35-2">2</a></span>
+<span class="normal"><a href="#__codelineno-35-3">3</a></span>
+<span class="normal"><a href="#__codelineno-35-4">4</a></span>
+<span class="normal"><a href="#__codelineno-35-5">5</a></span>
+<span class="normal"><a href="#__codelineno-35-6">6</a></span>
+<span class="normal"><a href="#__codelineno-35-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1"></a>         ①②
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2"></a>Client ⇄ Metadata server
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3"></a>  │ ③ data (daisy chain)          ④ write request
+</span><span id="__span-35-4"><a id="__codelineno-35-4" name="__codelineno-35-4"></a>  ▼                         Client ───────→ Primary
+</span><span id="__span-35-5"><a id="__codelineno-35-5" name="__codelineno-35-5"></a>Secondary A → Primary → Secondary B         │ ⑤ assigns serial order
+</span><span id="__span-35-6"><a id="__codelineno-35-6" name="__codelineno-35-6"></a>                                            ├─⑥→ Secondary A, B apply &amp; ack
+</span><span id="__span-35-7"><a id="__codelineno-35-7" name="__codelineno-35-7"></a>Client ←──────── ⑦ ack ───────────── Primary
+</span></code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>What happens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Client asks the metadata server for the <strong>replicas</strong> of the chunk</td>
+</tr>
+<tr>
+<td>2</td>
+<td>MS replies with the <strong>primary + secondary</strong> replicas; the client caches this</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Client pushes the <strong>data</strong> to the replicas, <strong>daisy-chained</strong> across them; waits for all to ack</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Client sends the <strong>formal write request</strong> to the <strong>primary</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Primary <strong>assigns a serial order</strong> to the write</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Secondaries <strong>apply</strong> the write in that order and <strong>ack</strong> the primary</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Primary <strong>acks</strong> the client</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Data flow is separated from control flow</strong>: data travels along the daisy chain, while the order is decided by the primary</li>
+<li>The primary acts like the leader in <strong>passive replication</strong> (L22): it imposes one order on all replicas</li>
+</ul>
+<h3 id="after-gfs">After GFS<a class="headerlink" href="#after-gfs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>HDFS has similar limitations</strong><ul>
+<li><strong>Single metadata server</strong> = performance bottleneck</li>
+<li>It eliminated the metadata server as a <strong>SPOF</strong> (single point of failure) using <strong>ZooKeeper</strong></li>
+</ul>
+</li>
+<li>Google now uses <strong>Colossus</strong>, the successor to GFS</li>
+<li><strong>Tectonic (Meta) &amp; Colossus</strong><ul>
+<li>The <strong>metadata service is also distributed</strong> and "scales out"</li>
+<li>The client writes chunks <strong>in parallel to all replicas</strong> instead of daisy-chaining</li>
+</ul>
+</li>
+<li><strong>Reed-Solomon erasure encoding</strong>: <strong>1.25×–1.5×</strong> storage instead of <strong>3×</strong> in GFS<ul>
+<li>Based on <strong>Galois Field</strong> math</li>
+<li><span class="arithmatex">\(RS(n, k)\)</span>: <strong>k data shards + (n − k) parity shards</strong></li>
+<li>Tolerates and recovers from <strong>n − k</strong> failed shards</li>
+</ul>
+</li>
+</ul>
+<p>例：<span class="arithmatex">\(RS(9, 6)\)</span> = 6 个数据块 + 3 个校验块，存储开销 <span class="arithmatex">\(9/6 = 1.5\times\)</span>，能容忍任意 3 块丢失；3 副本是 <span class="arithmatex">\(3\times\)</span> 开销，只能容忍 2 份丢失。</p>
+<h3 id="summary_11">Summary<a class="headerlink" href="#summary_11" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Local file systems</strong>: files, directories, fds, system calls</li>
+<li><strong>Accessing remote file systems</strong> over the network; <strong>VFS</strong> hides the complexity</li>
+<li><strong>NFS, AFS, SMB</strong><ul>
+<li>Concurrent access (session semantics, immutability, leases/locks; at-most-once vs. at-least-once)</li>
+<li>Performance: server-side and client-side <strong>caching</strong>; AFS whole-file caching + <strong>callbacks</strong></li>
+<li>Stateless (NFSv2/v3, file handles) vs. stateful (AFS, NFSv4, SMB)</li>
+</ul>
+</li>
+<li><strong>Distributed file systems</strong><ul>
+<li><strong>Append-only</strong> files, not POSIX</li>
+<li><strong>GFS</strong>: single metadata server + chunk servers, read/write paths; successors use distributed metadata and <strong>erasure coding</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="lecture-25-distributed-shared-memory">Lecture 25: Distributed Shared Memory<a class="headerlink" href="#lecture-25-distributed-shared-memory" title="Permanent link">&para;</a></h2>
 
 
 
@@ -16949,7 +19884,7 @@ After voting "Yes", a server has been <strong>waiting</strong>: it <strong>can't
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2026年11月8日 10:08:13 CST">2026年11月8日 10:08:13</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2026年11月19日 02:50:20 CST">2026年11月19日 02:50:20</span>
   </span>
 
     
