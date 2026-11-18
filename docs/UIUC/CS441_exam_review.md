@@ -17,7 +17,7 @@ Format: 25 multiple choice / multi-select questions, conceptual only (no coding)
 | **Words / attention (L18)** | Tokenization: character / subword (BPE: merge the most frequent pair, recount) / word (`<unk>`). Skip-gram: center → context; CBOW: context → center. **Attention = average of values, weighted by key–query similarity.** Self-attention ≈ soft clustering; cross-attention ≈ instance-based regression. Block = multi-head attention + MLP, residual + LayerNorm. Order-invariant → positional encoding |
 | **BERT / ViT (L19)**     | BERT: encoder-only, bidirectional, pre-trained on **MLM + NSP**, unlabeled text, fine-tune with a linear layer. ViT: patches → linear projection + position + [CLS] → same Transformer encoder. CNN: better with less data (locality bias); Transformer: scales better, any modality |
 | **CLIP / GPT (L20)**     | **Foundation model** = huge data + broad task. **Zero-shot** = no examples for this task. CLIP: image + text encoders, **contrastive** matching (32K × 32K, cross-entropy both ways), 400M pairs; zero-shot via label → caption. GPT: **predict the next token**. GPT-1 fine-tuned; GPT-2 zero-shot; GPT-3 (175B) few-shot in context, no weight updates. ChatGPT = SFT → RLHF. Scaling laws: loss is a power law in N, D, C. CoT helps reasoning and only works at scale |
-| **Foundations (L2–11)**  | KNN: larger K → smoother, ↓variance ↑bias. Train/val/test roles. PCA keeps max variance (linear); MDS distances; IsoMap graph distances; t-SNE/UMAP neighbors. L1 sparse, L2 small + closed form. LR: every point has loss; SVM: support vectors, "confident enough". NB: independent **given y**. EM: E = latent probabilities, M = weighted parameters, local optimum; K-means = hard EM. MoG semi-parametric; KDE/histogram non-parametric. Median, RANSAC, IRLS are robust; least squares isn't |
+| **Foundations (L2–11)**  | KNN: larger K → smoother, ↓variance ↑bias. Train/val/test roles. PCA keeps max variance (linear); MDS distances; IsoMap graph distances; t-SNE/UMAP keep **local** neighbors, destroy global shape. KNN/K-means weight all features equally. L1 sparse (no closed form), L2 small + closed form; λ↑ → ↑bias ↓variance. LR: every point has loss; SVM: support vectors, "confident enough". NB: independent **given y**. EM: E = latent probabilities, M = weighted parameters, local optimum; K-means = hard EM. MoG semi-parametric; KDE/histogram non-parametric. Median, RANSAC, IRLS are robust; least squares isn't |
 
 **Frequent traps**
 
@@ -55,11 +55,16 @@ L2–20 的所有方法放在同一张表里，列都一样，可以直接横向
 !!! info "三种 SVM 的关系"
     **Kernelized SVM** = 把 dual 里的点积 $x_i^Tx_j$ 换成核函数 $k(x_i,x_j)$。**Linear SVM** 就是用 linear kernel 的特例；**RBF SVM** 是用 Gaussian (RBF) kernel 的 kernelized SVM，polynomial kernel 也是一种。三者都是**凸**的，区别在于：边界是否线性、参数个数（primal 每个特征一个 vs. dual 每个训练样本一个 $\alpha$）和速度。Pegasos 是用 SGD 解 linear SVM 的 primal。
 
+!!! info "L1 vs. L2 正则"
+    **L1（Lasso）** 罚 $\lambda\sum|w_i|$：大小权重按同样的力度往 0 推，一部分权重**正好为 0** → 稀疏、自动特征选择；相关特征里往往只留一个；$|w|$ 在 0 处不可导，**没有闭式解**，要迭代。**L2（Ridge）** 罚 $\lambda\sum w_i^2$：对大权重罚得重，所有权重都变小但几乎不为 0；相关特征时把权重分摊开，更稳定；**有闭式解**。几何：L1 约束区域是菱形，角在坐标轴上，解容易落在轴上（某个 $w=0$）；L2 是圆，没有角。两者都是**凸**的；λ 用验证集选，λ 越大 → 权重越小、模型越简单 → ↑bias ↓variance，λ=0 就是普通 least squares。加了正则就要 **feature scaling**，否则尺度大的特征罚得少。不只用于 linear regression：logistic regression 也加；SVM 的 $\lVert w\rVert^2$ 就是 L2；神经网络里的 weight decay 也是 L2。什么时候用：认为只有少数特征有用 → L1；大多数特征都有点用、特征相关 → L2；也可以先用 L1 选特征，再用 L2，或者直接用 Elastic net（L1 + L2）。
+
 | 方法 | 任务 | 监督方式 | 函数形式 | 怎么学（目标） | 求解 | 最优解 | 依赖初始化 / 随机性 | 需要 feature scaling | 关键超参 | 考点 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | ***有监督 · 经典模型*** | | | | | | | | | | |
-| **KNN** (L2–3) | 分类 / 回归 | 有监督 | 非线性，按距离划分 | 不学，存训练集 | 无训练 | — | 否 | **要** | K、距离度量 | 1-NN 训练误差 0；加新样本最容易；预测慢；K↑ → ↓var ↑bias |
-| **Linear regression** (L6) | 回归 | 有监督 | 线性 | 平方误差 + L1/L2 | 无正则或 L2：闭式；L1：迭代 | 凸，全局 | 否 | 有正则时要 | λ | 能外推、系数可解释；对 outlier 敏感 |
+| **KNN** (L2–3) | 分类 / 回归 | 有监督 | 非线性，按距离划分 | 不学，存训练集 | 无训练 | — | 否 | **要** | K、距离度量 | 1-NN 训练误差 0；加新样本最容易；预测慢；K↑ → ↓var ↑bias；欧氏距离下**所有特征权重相同**，无关或尺度大的特征会主导距离 |
+| **Linear regression**（least squares，无正则）(L6) | 回归 | 有监督 | 线性 | 平方误差 | 闭式（伪逆） | 凸，全局 | 否 | 否（不影响预测；加正则就要） | — | 能外推、系数可解释；对 outlier 敏感；特征多、数据少时容易过拟合 |
+| **Ridge**（+ L2）(L6) | 回归 | 有监督 | 线性 | 平方误差 + $\lambda\sum w_i^2$ | **闭式** | 凸，全局 | 否 | **要** | λ | 权重都变小但几乎不为 0；相关特征时权重分摊、更稳定；λ↑ → ↑bias ↓var |
+| **Lasso**（+ L1）(L6) | 回归 | 有监督 | 线性 | 平方误差 + $\lambda\sum\lvert w_i\rvert$ | **迭代**（0 处不可导，无闭式解） | 凸，全局 | 否 | **要** | λ | 一部分权重**正好为 0** → 稀疏、**自动特征选择**；相关特征里往往只留一个；λ↑ → 0 越多 |
 | **Logistic regression** (L7) | 分类 | 有监督 | 线性 | $-\log P(y\mid x)$ + 正则 | 迭代（GD） | 凸，全局 | 否 | 有正则时要 | λ | 每个点都有 loss；概率估计好；分类网络的最后一层 |
 | **Perceptron** (L14) | 分类 | 有监督 | 线性 + 阈值 | MSE / logistic loss | SGD | 凸 | 基本否 | 要 | lr | 只能拟合线性可分数据（XOR 不行） |
 | **Linear SVM** (L7, L14) | 分类 | 有监督 | 线性 | hinge loss + $\lVert w\rVert^2$（最大 margin） | QP，或 Pegasos（SGD） | 凸，全局 | 否 | 要 | C 或 λ | 只依赖 support vectors；"够自信就行" |
@@ -67,19 +72,19 @@ L2–20 的所有方法放在同一张表里，列都一样，可以直接横向
 | **Naïve Bayes** (L8) | 分类 | 有监督 | 通常线性 | MLE / MAP 计数 | 闭式 | 全局 | 否 | 否 | 平滑 α | 假设给定 y 时特征独立；数据少也行；置信度不准 |
 | **Decision tree** (L12) | 分类 / 回归 | 有监督 | axis-aligned，分段常数 | 每步最大 IG / 最小平方误差 | **贪心**递归 | 不保证 | 否（但数据稍变树就变 → 高 var） | **否** | 深度、最小叶子 | 不限深度时训练误差可为 0；可解释 |
 | ***有监督 · 集成*** | | | | | | | | | | |
-| **Bagging** (L13) | 分类 / 回归 | 有监督 | 同基模型 | bootstrap 抽样后各自训练，投票 | 独立，可并行 | — | 有随机抽样 | 同基模型 | 模型个数 | ↓**variance** |
-| **Random forest** (L13) | 分类 / 回归 | 有监督 | 分段常数 | **深**树 + 随机样本 + 随机特征，**平均** | 独立，可并行 | — | 有随机性，但结果稳定 | 否 | 树数、每次选的特征数 | ↓**variance**；很难训坏；高维数据表现好 |
-| **Boosted trees / AdaBoost** (L13) | 分类 / 回归 | 有监督 | 分段常数 | **小**树，**按顺序**加权错误样本，logit 求和 | 顺序 | — | 否 | 否 | 树数、树深 | ↓**bias**；可能过拟合；Caruana 对比中最好 |
+| **Bagging** (L13) | 分类 / 回归 | 有监督 | 同基模型 | bootstrap 抽样后各自训练，投票 | 独立，可并行 | — | 有随机抽样 | 同基模型 | 模型个数 | 多个模型投票 / 平均 → ↓**variance**，bias 基本不变；基模型本身 variance 高才有用 |
+| **Random forest** (L13) | 分类 / 回归 | 有监督 | 分段常数 | **深**树 + 随机样本 + 随机特征，**平均** | 独立，可并行 | — | 有随机性，但结果稳定 | 否 | 树数、每次选的特征数 | 深树 = low bias / high variance；随机样本 + 随机特征让树之间**不相关**，**平均**后 ↓**variance**，bias 仍低；很难训坏；高维数据表现好 |
+| **Boosted trees / AdaBoost** (L13) | 分类 / 回归 | 有监督 | 分段常数 | **小**树，**按顺序**加权错误样本，logit 求和 | 顺序 | — | 否 | 否 | 树数、树深 | 小树 = high bias / low variance；**按顺序**修正前面的错误 → ↓**bias**；可能过拟合；Caruana 对比中最好 |
 | ***无监督 · 聚类、密度、隐变量*** | | | | | | | | | | |
-| **K-means** (L4) | 聚类 | 无监督 | 硬分配到最近中心 | 最小化到中心的平方距离 | 迭代，两步交替 | **局部** | **是** | **要** | K | = hard EM |
+| **K-means** (L4) | 聚类 | 无监督 | 硬分配到最近中心 | 最小化到中心的平方距离 | 迭代，两步交替 | **局部** | **是** | **要** | K | = hard EM；**所有特征权重相同**（欧氏距离），所以要 scaling；簇大小倾向于差不多；不考虑局部结构；K 不好选 |
 | **EM**（通用算法）(L9) | 隐变量 + 参数 | 无监督 / 缺失数据 | 取决于模型 | 最大化似然（下界） | 迭代：E 求隐变量概率，M 加权重估参数 | **局部** | **是** | — | 模型形式 | 不是模型，是求解方法；用于 MoG、bad annotators、topic models |
 | **MoG / GMM** (L10) | 密度 / 软聚类 | 无监督 | 半参数：高斯加权和 | 最大似然 | 用 EM 迭代 | **局部** | **是** | — | 成分数 | 软分配（K-means 是硬分配）；可检测 outlier |
 | **KDE / histogram** (L10) | 密度 | 无监督 | 非参数 | 不学，存数据 / 计数 | 无训练 | — | 否 | KDE 要 | 带宽 h / bin 数 | 低维好、高维差；用验证集 log-likelihood 选超参 |
 | ***无监督 · 降维、检索*** | | | | | | | | | | |
-| **PCA** (L5) | 降维 | 无监督 | **线性**投影 | 最大方差 = 最小重建 MSE | 闭式（特征分解 / SVD） | 全局 | 否 | **要** | 维数 | 不用标签，可能丢判别信息；重建误差可找 outlier |
-| **MDS / IsoMap** (L5) | 降维 | 无监督 | 非线性嵌入 | 保留两两距离（IsoMap 用图最短路径距离） | 经典 MDS：闭式 | 经典 MDS：全局 | 否 | 要 | 维数；IsoMap 的邻居数 | IsoMap 能展开全局流形；MDS 受远点影响大 |
-| **t-SNE** (L5) | 可视化降维 | 无监督 | 非线性嵌入 | 最小化 KL（邻居概率分布） | 梯度下降 | **局部** | **是** | 要 | σ（邻域大小） | 簇分得最开，但破坏全局形状；慢；通常先 PCA |
-| **UMAP** (L5) | 降维 | 无监督 | 非线性嵌入 | 保留 kNN 局部结构 | 迭代优化 | 局部 | 是 | 要 | 邻居数、目标维数 | 比 t-SNE 快很多 |
+| **PCA** (L5) | 降维 | 无监督 | **线性**投影 | 最大方差 = 最小重建 MSE | 闭式（特征分解 / SVD） | 全局 | 否 | **要** | 维数 | 保留**全局**方差，不一定保留局部近邻结构；不用标签，可能丢判别信息；重建误差可找 outlier |
+| **MDS / IsoMap** (L5) | 降维 | 无监督 | 非线性嵌入 | 保留两两距离（IsoMap 用图最短路径距离） | 经典 MDS：闭式 | 经典 MDS：全局 | 否 | 要 | 维数；IsoMap 的邻居数 | 保留**全局**的两两距离；IsoMap 用近邻图（局部）算距离，能展开全局流形；MDS 受远点影响大 |
+| **t-SNE** (L5) | 可视化降维 | 无监督 | 非线性嵌入 | 最小化 KL（邻居概率分布） | 梯度下降 | **局部** | **是** | 要 | σ（邻域大小） | 保留**局部**结构（近邻相似度）；簇分得最开，但破坏**全局**形状（簇之间的距离没意义）；慢；通常先 PCA |
+| **UMAP** (L5) | 降维 | 无监督 | 非线性嵌入 | 保留 kNN 局部结构 | 迭代优化 | 局部 | 是 | 要 | 邻居数、目标维数 | 保留**局部**结构（kNN 图），假设数据均匀分布在局部连通的流形上；簇分离效果和 t-SNE 相当，但快很多 |
 | **LSH** (L4) | 近似检索 | 无监督 | 随机投影 → bit → bucket | 不学 | 无训练 | — | 随机投影 | 要 | bit 数 | 用精确度换速度 |
 | ***鲁棒拟合*** | | | | | | | | | | |
 | **RANSAC** (L11) | 鲁棒拟合 | — | 任意模型 | 最大化 inlier 比例 | 随机抽最少点拟合并打分，重复 | — | 随机 | — | 阈值、迭代次数 | outlier 直接排除；outlier 越多越慢 |
@@ -104,12 +109,17 @@ L2–20 的所有方法放在同一张表里，列都一样，可以直接横向
 | 凸 / 只有一个局部最优 / 能得全局最优 | Linear & logistic regression、Linear SVM、**Kernelized SVM**、Naïve Bayes、PCA、经典 MDS | Decision tree（贪心）、K-means、EM / MoG、t-SNE、所有神经网络 |
 | 不同初始化 → 参数明显不同 | K-means、EM / MoG、t-SNE、UMAP、MLP、CNN、Transformer（BERT / GPT / ViT / CLIP） | Logistic regression、SVM（凸） |
 | 一定能把训练误差降到 0（没有冲突样本时） | 1-NN、不限深度的决策树 | 线性模型、Naïve Bayes（RBF SVM 只在 σ 很小时接近） |
-| 有闭式解 | Linear regression（无正则或 L2）、Naïve Bayes、PCA、经典 MDS | L1 regression、Logistic regression、SVM、K-means、EM |
+| 有闭式解 | Least squares、Ridge（L2）、Naïve Bayes、PCA、经典 MDS | Lasso（L1）、Logistic regression、SVM、K-means、EM |
+| 权重稀疏（正好为 0）/ 自动特征选择 | Lasso（L1） | Ridge（L2，只变小不为 0） |
+| 相关特征时更稳定，权重分摊 | Ridge（L2） | Lasso（L1，往往只留一个） |
 | 不用训练 / 最容易加新样本 | KNN、KDE、LSH | — |
 | 不需要 feature scaling | Decision tree、Random forest、Boosted trees、Naïve Bayes | KNN、K-means、PCA、SVM |
 | 只依赖少数训练样本 | Linear / kernelized SVM（support vectors） | Logistic regression（每个点都有 loss） |
 | 能外推 | Linear regression | KNN、树、RF（输出的是训练目标的平均） |
 | 无监督 | K-means、EM / MoG、KDE、PCA、MDS / IsoMap、t-SNE、UMAP、LSH | — |
+| 保留局部结构（近邻关系） | t-SNE、UMAP；IsoMap 用近邻图算距离 | PCA、MDS |
+| 保留全局结构 | PCA（方差）、MDS（两两距离）、IsoMap（全局流形） | t-SNE（破坏全局形状） |
+| 所有特征权重相同（欧氏距离） | KNN、K-means | Decision tree（每次选一个特征）、Lasso（会把一些特征置 0） |
 | 预训练不需要人工标签 | Word2Vec、BERT、GPT、CLIP（用自然语言） | ImageNet CNN、ViT（用类别标签） |
 | 能 zero-shot | CLIP、GPT-2 / GPT-3 | BERT、ImageNet CNN（要微调） |
 | 用 SGD / backprop 训练 | MLP、CNN、Transformer 系列、Word2Vec；Pegasos 解 linear SVM | Naïve Bayes、PCA、决策树 |
@@ -186,7 +196,7 @@ L2–20 的所有方法放在同一张表里，列都一样，可以直接横向
 | ----------- | --------------------------------- | ------------- | -------------------------------------------------------------------- |
 | **FAISS**   | Facebook AI Similarity Search     | —             | 高度优化的检索库，暴力搜索也很快                                       |
 | **LSH**     | Locality Sensitive Hashing        | 局部敏感哈希    | 随机投影 → bit → bucket，近似搜索；hash key 越长越准，但查询更慢（课上说法） |
-| K-means     | —                                 | K 均值         | 交替"分给最近中心 / 中心取均值"；依赖初始化，K 要自己选；= hard EM         |
+| K-means     | —                                 | K 均值         | 交替"分给最近中心 / 中心取均值"；依赖初始化，K 要自己选；= hard EM；所有特征权重相同 |
 | Hierarchical K-means | —                        | 层次 K 均值     | 查找 $O(\log K\cdot D)$，比 $O(K\cdot D)$ 快                          |
 | Agglomerative clustering | —                    | 凝聚聚类       | 自底向上合并，找数据结构                                              |
 | Purity      | —                                 | 纯度           | 每簇最多标签的数量之和 ÷ N；需要标签                                   |
@@ -201,8 +211,8 @@ L2–20 的所有方法放在同一张表里，列都一样，可以直接横向
 | **MDS**     | MultiDimensional Scaling          | 多维缩放       | 保留**两两距离**；欧氏距离有闭式解；受远点影响大                         |
 | Non-metric MDS | —                              | 非度量 MDS     | 只保留距离的**排序**，更慢                                            |
 | **IsoMap**  | Isometric Mapping                 | 等距映射       | MDS + **图最短路径**（geodesic）距离；能展开 S-curve                    |
-| **t-SNE**   | t-distributed Stochastic Neighbor Embedding | t 分布随机邻域嵌入 | 保留**邻居概率分布**，最小化 KL；簇分得最开，但破坏全局形状，慢       |
-| **UMAP**    | Uniform Manifold Approximation and Projection | 均匀流形近似投影 | 保留局部结构，比 t-SNE 快很多                                    |
+| **t-SNE**   | t-distributed Stochastic Neighbor Embedding | t 分布随机邻域嵌入 | 保留**局部**结构（邻居概率分布），最小化 KL；簇分得最开，但破坏全局形状，慢 |
+| **UMAP**    | Uniform Manifold Approximation and Projection | 均匀流形近似投影 | 保留**局部**结构（kNN 图），比 t-SNE 快很多                        |
 | **KL**      | Kullback–Leibler divergence       | KL 散度        | t-SNE 的目标函数                                                     |
 
 #### L6 · 线性回归
@@ -210,8 +220,8 @@ L2–20 的所有方法放在同一张表里，列都一样，可以直接横向
 | 缩写 / 名称 | 全称                              | 中文          | 考点                                                                 |
 | ----------- | --------------------------------- | ------------- | -------------------------------------------------------------------- |
 | Least squares | ordinary least squares          | 最小二乘       | 闭式解 $w=(X^TX)^{-1}X^Ty$（伪逆）；对 outlier 敏感                   |
-| **L1 = Lasso** | —                              | L1 正则        | 权重**稀疏**（正好为 0），自动特征选择；**无**闭式解                    |
-| **L2 = Ridge** | —                              | L2 正则        | 权重小但不为 0，适合相关特征；**有**闭式解                             |
+| **L1 = Lasso** | —                              | L1 正则        | 罚 $\sum\lvert w_i\rvert$；权重**稀疏**（正好为 0），自动特征选择；**无**闭式解 |
+| **L2 = Ridge** | —                              | L2 正则        | 罚 $\sum w_i^2$；权重小但不为 0，适合相关特征；**有**闭式解；SVM 的 $\lVert w\rVert^2$、weight decay 也是 L2 |
 | Elastic net | —                                 | 弹性网络       | L1 + L2                                                              |
 | Grid / line / randomized search | —           | 超参搜索       | 3 个以上超参时 randomized 往往最好                                     |
 | **CV / LOOCV** | Cross-Validation / Leave-One-Out CV | 交叉验证 / 留一法 | 训练数据少时用；LOOCV 是 N 折                                      |
@@ -1051,6 +1061,18 @@ E. Is an example of hard EM
 
 ??? success "Answer"
     **A, B, C, E.**
+
+**Q90 (MS).** Which embedding methods mainly preserve **local** neighborhood structure?  
+A. PCA B. t-SNE C. UMAP D. Classical MDS E. IsoMap's neighbor graph step
+
+??? success "Answer"
+    **B, C, E.** L5. PCA keeps global variance and MDS keeps all pairwise distances (dominated by far points). IsoMap builds its graph from local neighbors, but then preserves global geodesic distances.
+
+**Q91 (MS).** Two features are almost identical copies of each other. Compared with Ridge (L2), Lasso (L1) is more likely to…  
+A. put most weight on one of them and set the other near or exactly 0 B. split the weight evenly between them C. need an iterative solver D. give a sparser weight vector overall E. work fine without feature scaling
+
+??? success "Answer"
+    **A, C, D.** L6. B describes L2. With any penalty, feature scale changes how hard each weight is penalized, so scaling matters (E).
 
 ### Mock exam (混合 25 题) {#mock-exam}
 
