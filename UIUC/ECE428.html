@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../assets/images/favcion.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
     
     
       
@@ -6351,6 +6351,501 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Lecture 25: Distributed Shared Memory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#from-message-passing-to-shared-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        From Message Passing to Shared Memory
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="From Message Passing to Shared Memory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-two-models-are-equivalent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Two Models Are Equivalent
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dsm-over-a-message-passing-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DSM over a Message-Passing Network
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DSM over a Message-Passing Network">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#historical-perspective" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Historical Perspective
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dsm-invalidate-protocolinvalidation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DSM: Invalidate Protocol(invalidation)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DSM: Invalidate Protocol(invalidation)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process-1-attempting-a-read" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Process 1 Attempting a Read
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-1-attempting-a-write" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Process 1 Attempting a Write
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary-of-the-invalidate-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary of the Invalidate Protocol
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invalidate-downsides-false-sharing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Invalidate Downsides: False Sharing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#an-alternative-update-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        An Alternative: Update Protocol
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consistency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consistency
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trendy-again" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trendy Again
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-26-graph-processing-machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecture 26: Graph Processing, Machine Learning
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 26: Graph Processing, Machine Learning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#graph-processing-what-well-cover" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Graph Processing: What We'll Cover
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lots-of-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lots of Graphs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lots of Graphs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#graph-processing-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Graph Processing Operations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-hard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Hard?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typical-graph-processing-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Typical Graph Processing Application
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bulk-synchronous-parallel-bsp-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bulk Synchronous Parallel (BSP) Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-distributed-graph-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Distributed Graph Processing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Distributed Graph Processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assigning-vertices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assigning Vertices
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pregel-system-by-google" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pregel System by Google
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pregel System by Google">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pregel-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pregel Execution
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fault-tolerance-in-pregel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fault-Tolerance in Pregel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-fast-is-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How Fast Is It?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary-graph-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary: Graph Processing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#machine-learning-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Machine Learning Basics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Machine Learning Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sgd-stochastic-gradient-descent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SGD (Stochastic Gradient Descent)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-neural-networks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Neural Networks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ann-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ANN Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distributed-machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distributed Machine Learning
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Distributed Machine Learning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kinds-of-parallelism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kinds of Parallelism
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ml-frameworks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ML Frameworks
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ML Frameworks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tensorflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TensorFlow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytorch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PyTorch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JAX
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-ml-federated-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other ML: Federated Learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -11620,6 +12115,501 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Lecture 25: Distributed Shared Memory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#from-message-passing-to-shared-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        From Message Passing to Shared Memory
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="From Message Passing to Shared Memory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-two-models-are-equivalent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Two Models Are Equivalent
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dsm-over-a-message-passing-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DSM over a Message-Passing Network
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DSM over a Message-Passing Network">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#historical-perspective" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Historical Perspective
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dsm-invalidate-protocolinvalidation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DSM: Invalidate Protocol(invalidation)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DSM: Invalidate Protocol(invalidation)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process-1-attempting-a-read" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Process 1 Attempting a Read
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-1-attempting-a-write" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Process 1 Attempting a Write
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary-of-the-invalidate-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary of the Invalidate Protocol
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invalidate-downsides-false-sharing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Invalidate Downsides: False Sharing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#an-alternative-update-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        An Alternative: Update Protocol
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consistency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consistency
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trendy-again" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trendy Again
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-26-graph-processing-machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecture 26: Graph Processing, Machine Learning
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 26: Graph Processing, Machine Learning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#graph-processing-what-well-cover" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Graph Processing: What We'll Cover
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lots-of-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lots of Graphs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lots of Graphs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#graph-processing-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Graph Processing Operations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-hard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Hard?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typical-graph-processing-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Typical Graph Processing Application
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bulk-synchronous-parallel-bsp-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bulk Synchronous Parallel (BSP) Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-distributed-graph-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Distributed Graph Processing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Distributed Graph Processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assigning-vertices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assigning Vertices
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pregel-system-by-google" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pregel System by Google
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pregel System by Google">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pregel-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pregel Execution
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fault-tolerance-in-pregel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fault-Tolerance in Pregel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-fast-is-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How Fast Is It?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary-graph-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary: Graph Processing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#machine-learning-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Machine Learning Basics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Machine Learning Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sgd-stochastic-gradient-descent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SGD (Stochastic Gradient Descent)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-neural-networks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Neural Networks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ann-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ANN Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distributed-machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distributed Machine Learning
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Distributed Machine Learning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kinds-of-parallelism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kinds of Parallelism
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ml-frameworks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ML Frameworks
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ML Frameworks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tensorflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TensorFlow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytorch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PyTorch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JAX
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-ml-federated-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other ML: Federated Learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -11644,7 +12634,7 @@
 
 <h1 id="cs-425-ece-428-distributed-systems">CS 425 / ECE 428 Distributed Systems<a class="headerlink" href="#cs-425-ece-428-distributed-systems" title="Permanent link">&para;</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 45442 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M360.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m64.6 136.1c-12.5 12.5-12.5 32.8 0 45.3l73.4 73.4-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0zm-274.7 0c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l73.3-73.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span> 244 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"/></svg></span> 10 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 155 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 49116 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M360.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m64.6 136.1c-12.5 12.5-12.5 32.8 0 45.3l73.4 73.4-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0zm-274.7 0c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l73.3-73.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span> 309 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"/></svg></span> 10 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 168 分钟</p>
 </div>
 <h2 id="lecture-1-welcome-and-introduction">Lecture 1: Welcome, and Introduction<a class="headerlink" href="#lecture-1-welcome-and-introduction" title="Permanent link">&para;</a></h2>
 <p>Operating System - The low-level software which handles peripheral hardware, schedules tasks, allocates storage, and presents a default interface to the user when no application program is running.</p>
@@ -19768,7 +20758,13 @@ Mount does <strong>NOT</strong> clone or copy files; it just points to the remot
 <li>The client picks a chunk server (typically the <strong>closest</strong>) and <strong>reads directly</strong> from it</li>
 <li>Future reads use the <strong>cached metadata</strong> and talk <strong>directly</strong> to chunk servers</li>
 </ol>
-<p>数据流不经过 metadata server，它只负责"告诉你去哪读"，所以单个 metadata server 才撑得住。</p>
+<p>GFS 只有一个 master（元数据服务器），它扛得住大量读请求，靠的是<strong>不让数据经过 master</strong>。读文件的流程是这样的：</p>
+<ol>
+<li>客户端问 master：这个文件的第 N 个 chunk 在哪几台 chunkserver 上？</li>
+<li>master 只回一个很小的位置信息。客户端把它<strong>缓存</strong>下来，之后一段时间读同一个 chunk 就不用再问 master 了。</li>
+<li>客户端<strong>直接找 chunkserver</strong> 读真正的数据。</li>
+</ol>
+<p>master 每次只处理一个很小的元数据请求，而且因为有缓存，这种请求也不多。几十 MB 的大数据流全都走 chunkserver，master 自然成不了瓶颈。</p>
 <h4 id="gfs-write-path">GFS: Write Path<a class="headerlink" href="#gfs-write-path" title="Permanent link">&para;</a></h4>
 <div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-35-1">1</a></span>
 <span class="normal"><a href="#__codelineno-35-2">2</a></span>
@@ -19864,6 +20860,970 @@ Mount does <strong>NOT</strong> clone or copy files; it just points to the remot
 </li>
 </ul>
 <h2 id="lecture-25-distributed-shared-memory">Lecture 25: Distributed Shared Memory<a class="headerlink" href="#lecture-25-distributed-shared-memory" title="Permanent link">&para;</a></h2>
+<h3 id="from-message-passing-to-shared-memory">From Message Passing to Shared Memory<a class="headerlink" href="#from-message-passing-to-shared-memory" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Thus far</strong>: a <strong>message-passing</strong> network. Processes communicate by <strong>send message</strong> / <strong>receive message</strong></li>
+<li><strong>But what if</strong> processes could <strong>share memory pages</strong> instead?<ul>
+<li>Makes it <strong>convenient to write programs</strong></li>
+<li>Lets you <strong>reuse programs</strong> written for a single machine</li>
+</ul>
+</li>
+</ul>
+<p><strong>Distributed Shared Memory (DSM)</strong> = processes <strong>virtually share pages</strong>: one process writes to page 5, another reads page 5, even though they run on different machines.</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-36-1">1</a></span>
+<span class="normal"><a href="#__codelineno-36-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1"></a>Page 0 | Page 1 | Page 2 | ... | Page N-1     ← one shared (virtual) address space
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2"></a>   ↑ write page 5 (P1)        ↑ read page 5 (P4)
+</span></code></pre></div></td></tr></table></div>
+<h4 id="the-two-models-are-equivalent">The Two Models Are Equivalent<a class="headerlink" href="#the-two-models-are-equivalent" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Direction</th>
+<th>How</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Message passing over DSM</strong></td>
+<td>Use a <strong>common page as a buffer</strong> to read/write messages</td>
+</tr>
+<tr>
+<td><strong>DSM over a message-passing network</strong></td>
+<td>The rest of this lecture</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dsm-over-a-message-passing-network">DSM over a Message-Passing Network<a class="headerlink" href="#dsm-over-a-message-passing-network" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Each process maintains a <strong>cache</strong> of the pages it accessed recently</li>
+<li><strong>Reads/writes go to the cache first</strong></li>
+<li>Pages can be <strong>mapped in local memory</strong><ul>
+<li>Page present in memory → <strong>page hit</strong></li>
+<li>Otherwise → <strong>page fault</strong> (kernel trap). The trap handler invokes the <strong>DSM software</strong>, which may contact other processes in the DSM group via <strong>multicast</strong></li>
+</ul>
+</li>
+</ul>
+<p>就是把操作系统的虚拟内存机制搬到网络上：本地没有这一页就触发缺页，由 DSM 软件通过网络把页取过来。</p>
+<h4 id="historical-perspective">Historical Perspective<a class="headerlink" href="#historical-perspective" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Period</th>
+<th>What happened</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>'80s/'90s</strong></td>
+<td>A <strong>trendy research topic</strong>: multiprocessor workstations became popular; large computations without the cost of supercomputing hardware</td>
+</tr>
+<tr>
+<td><strong>'00s/'10s</strong></td>
+<td><strong>Decline</strong>: network bottlenecks (Ethernet was too slow); industry pivoted to <strong>"shared-nothing"</strong> architectures and message-passing models</td>
+</tr>
+<tr>
+<td><strong>Now</strong></td>
+<td><strong>Modern resurgence</strong> (see "Trendy Again" below)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dsm-invalidate-protocolinvalidation">DSM: Invalidate Protocol(invalidation)<a class="headerlink" href="#dsm-invalidate-protocolinvalidation" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Owner</strong> = the process with the <strong>latest version</strong> of the page page 最新版本的持有者</li>
+<li>Each page is in either <strong>R</strong> (read) or <strong>W</strong> (write) state<ul>
+<li><strong>R state</strong>: the owner has an R copy, and <strong>other processes may also have R copies</strong>, but <strong>no W copies exist</strong></li>
+<li><strong>W state</strong>: <strong>only the owner</strong> has a copy</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>Invariant</strong>（核心不变式）: at any time, a page has either <strong>many readers (all R)</strong> or <strong>exactly one writer (W, the owner)</strong>, never both. 要么很多读者，要么一个写者
+This is just like a <strong>read-write lock</strong> (L20-21): read mode is shared, write mode is exclusive.</p>
+</blockquote>
+<p>Notation below: <code>(R)</code>/<code>(W)</code> = state of the local copy, <code>(O)</code> = owner.</p>
+<h4 id="process-1-attempting-a-read">Process 1 Attempting a Read<a class="headerlink" href="#process-1-attempting-a-read" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Initial state</th>
+<th>Action</th>
+<th>Messages</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>P1 is owner, page <strong>(R)(O)</strong></td>
+<td>Read from cache</td>
+<td>None</td>
+</tr>
+<tr>
+<td>2</td>
+<td>P1 is owner, page <strong>(W)(O)</strong></td>
+<td>Read from cache</td>
+<td>None</td>
+</tr>
+<tr>
+<td>3</td>
+<td>P1 <strong>(R)(O)</strong>; others also have (R)</td>
+<td>Read from cache</td>
+<td>None</td>
+</tr>
+<tr>
+<td>4</td>
+<td>P1 <strong>(R)</strong>; others have (R); <strong>someone else is owner</strong> (P4 (R)(O))</td>
+<td>Read from cache</td>
+<td>None</td>
+</tr>
+<tr>
+<td>5</td>
+<td>P1 <strong>doesn't have</strong> the page; others have it in <strong>(R)</strong> (P4 is owner)</td>
+<td><strong>Ask for a copy</strong> via <strong>multicast</strong>; mark it <strong>R</strong>; do the read</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>6</td>
+<td>P1 <strong>doesn't have</strong> the page; another process has it in <strong>(W)</strong> (P4 (W)(O))</td>
+<td>Locate it via multicast; <strong>ask it to degrade its copy to (R)</strong>; get the page, mark it <strong>R</strong>; do the read</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p>End states:</p>
+<ul>
+<li>Scenario 5: P1 <strong>(R)</strong>, P3 (R), P4 <strong>(R)(O)</strong></li>
+<li>Scenario 6: P1 <strong>(R)</strong>, P4 degraded from (W)(O) to <strong>(R)(O)</strong>; P4 is still the owner</li>
+</ul>
+<details class="question">
+<summary>Scenario 4: can Process 1 read from its cache, even though it isn't the owner?</summary>
+<p><strong>Yes.</strong> The page is in R state, so <strong>no W copy exists anywhere</strong>. If anyone had written the page since P1 got its copy, they would first have had to <strong>invalidate</strong> P1's copy (write scenarios below). So an R copy that still exists is guaranteed to equal the owner's latest version.</p>
+</details>
+<details class="question">
+<summary>Scenario 6: can Process 1 get a copy from Process 4, simply mark it R, and read?</summary>
+<p><strong>No.</strong> If P4 stays in <strong>W</strong> state, it may keep writing the page <strong>locally without telling anyone</strong>, so P1's R copy would silently become <strong>stale</strong>. It would also break the invariant "W state ⟹ only the owner has a copy". Degrading P4 to <strong>R</strong> means P4's next write must go through the write protocol and <strong>invalidate</strong> P1's copy first.</p>
+</details>
+<h4 id="process-1-attempting-a-write">Process 1 Attempting a Write<a class="headerlink" href="#process-1-attempting-a-write" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Initial state</th>
+<th>Action</th>
+<th>Messages</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>P1 is owner, page <strong>(W)(O)</strong></td>
+<td>Write to cache</td>
+<td>None</td>
+</tr>
+<tr>
+<td>2</td>
+<td>P1 is owner, page <strong>(R)(O)</strong>; others may have (R)</td>
+<td>Ask the others to <strong>invalidate</strong> their copies (<strong>multicast</strong>); mark page <strong>(W)</strong>; do the write</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>3</td>
+<td>P1 has page <strong>(R)</strong>; others may have (R); <strong>someone else is owner</strong></td>
+<td>Ask the others to <strong>invalidate</strong> their copies (multicast); mark page <strong>(W)</strong>, <strong>become owner</strong>; do the write</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>4</td>
+<td>P1 <strong>doesn't have</strong> the page; others have it in (R) or (W)</td>
+<td>Ask the others to <strong>invalidate</strong> (multicast); <strong>fetch all copies, use the latest</strong>; mark <strong>(W)</strong>, <strong>become owner</strong>; do the write</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p>End states: P1 has <strong>(W)(O)</strong>; every other copy is <strong>invalidated</strong>, including the old owner's (in scenarios 3 and 4, P4's (R)(O) is crossed out).</p>
+<details class="question">
+<summary>Write Scenario 2: can Process 1 simply mark the page W and write, because it is the owner?</summary>
+<p><strong>No.</strong> Other processes (P3, P4) still hold <strong>R copies</strong>. If P1 wrote without invalidating them, they would keep reading the <strong>old</strong> value from their caches. That breaks the invariant (a W copy coexisting with R copies) and gives inconsistent reads. Being the owner only means P1 has the latest version; it doesn't give P1 exclusive access.</p>
+</details>
+<h4 id="summary-of-the-invalidate-protocol">Summary of the Invalidate Protocol<a class="headerlink" href="#summary-of-the-invalidate-protocol" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>Have a valid copy?</th>
+<th>Need messages?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Read</strong></td>
+<td>Any copy (R or W)</td>
+<td><strong>No</strong>: read locally</td>
+</tr>
+<tr>
+<td><strong>Read</strong></td>
+<td>No copy</td>
+<td><strong>Yes</strong>: fetch a copy; if the holder is in W, degrade it to R</td>
+</tr>
+<tr>
+<td><strong>Write</strong></td>
+<td>Already <strong>(W)(O)</strong></td>
+<td><strong>No</strong>: write locally</td>
+</tr>
+<tr>
+<td><strong>Write</strong></td>
+<td>(R) or no copy</td>
+<td><strong>Yes</strong>: <strong>invalidate all other copies</strong>, (fetch the latest), become <strong>(W)(O)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Reads are cheap as long as you have a copy. Writes are cheap only if you already hold the page exclusively.</p>
+<h4 id="invalidate-downsides-false-sharing">Invalidate Downsides: False Sharing<a class="headerlink" href="#invalidate-downsides-false-sharing" title="Permanent link">&para;</a></h4>
+<ul>
+<li>If two processes <strong>write the same page concurrently</strong><ul>
+<li><strong>Back-and-forth messages</strong>: each write invalidates the other process's copy, so the page <strong>ping-pongs</strong> between them</li>
+<li><strong>Lots of network transfer</strong></li>
+</ul>
+</li>
+<li>This can happen even when <strong>unrelated variables</strong> fall on the <strong>same page</strong> → called <strong>false sharing</strong>（假共享：两个进程改的是不同变量，只是碰巧在同一页上）</li>
+<li>Page size needs to capture a process's <strong>locality of interest</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Page size</th>
+<th>Problem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Too large</strong></td>
+<td>More unrelated variables on one page ⟹ <strong>false sharing</strong></td>
+</tr>
+<tr>
+<td><strong>Too small</strong></td>
+<td>Too many <strong>page transfers</strong> ⟹ also inefficient</td>
+</tr>
+</tbody>
+</table>
+<h3 id="an-alternative-update-protocol">An Alternative: Update Protocol<a class="headerlink" href="#an-alternative-update-protocol" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Multiple processes</strong> are allowed to have the page in <strong>W state</strong></li>
+<li>When process P writes to a page, DSM <strong>multicasts</strong> it (or just the newly written fraction) to <strong>all other holders</strong> of that page</li>
+<li>Other processes can then keep reading and writing the page</li>
+<li>Many mechanisms are used to <strong>resolve races</strong> and guarantee consistency (e.g. ordered multicast)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Invalidate</strong></th>
+<th><strong>Update</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>On a write</td>
+<td>Invalidate all other copies; writer becomes the single (W) owner</td>
+<td>Multicast the new data to all holders; everyone keeps a copy</td>
+</tr>
+<tr>
+<td>W copies allowed</td>
+<td><strong>One</strong> (the owner)</td>
+<td><strong>Many</strong></td>
+</tr>
+<tr>
+<td>Preferable when</td>
+<td><strong>In general</strong> (the preferred option)</td>
+<td><strong>Lots of sharing</strong> among processes; <strong>page size is large</strong> and/or <strong>writes are to small variables</strong></td>
+</tr>
+<tr>
+<td>Main cost</td>
+<td>False sharing → page ping-pong</td>
+<td>Every write is multicast to all holders</td>
+</tr>
+</tbody>
+</table>
+<h3 id="consistency">Consistency<a class="headerlink" href="#consistency" title="Permanent link">&para;</a></h3>
+<p>Whenever multiple processes share data, <strong>consistency</strong> comes into the picture. DSM systems can be implemented with any of these models (from Lecture 11):</p>
+<table>
+<thead>
+<tr>
+<th>Model (strongest → weakest)</th>
+<th>Guarantee (recap)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Linearizability</strong></td>
+<td>One total order that respects <strong>real time</strong></td>
+</tr>
+<tr>
+<td><strong>Sequential consistency</strong></td>
+<td>One total order that respects <strong>each process's program order</strong> (not real time)</td>
+</tr>
+<tr>
+<td><strong>Causal consistency</strong></td>
+<td>Causally related writes are seen by everyone in the <strong>same causal order</strong></td>
+</tr>
+<tr>
+<td><strong>Pipelined RAM (PRAM)</strong> aka <strong>FIFO consistency</strong></td>
+<td>Writes <strong>from the same process</strong> are seen by everyone in the order they were issued</td>
+</tr>
+<tr>
+<td><strong>Eventual consistency</strong></td>
+<td>If writes stop, all copies <strong>eventually converge</strong></td>
+</tr>
+<tr>
+<td>(Others, e.g. <strong>Release consistency</strong>)</td>
+<td>Memory is only made consistent at synchronization points (lock acquire/release)</td>
+</tr>
+</tbody>
+</table>
+<p>As you go <strong>down</strong> this list, <strong>speed increases</strong> while <strong>consistency gets weaker</strong>. See the consistency spectrum in <a href="#lecture-11-kv-stores-consistency-models">Lecture 11</a>.</p>
+<h3 id="trendy-again">Trendy Again<a class="headerlink" href="#trendy-again" title="Permanent link">&para;</a></h3>
+<ul>
+<li>DSM hasn't been popular for the last 2 decades, but it is <strong>making a comeback</strong><ul>
+<li><strong>Ultra-fast hardware interconnects</strong>: <strong>RDMA</strong>, <strong>CXL</strong></li>
+<li><strong>CXL (Compute Express Link)</strong> has <strong>built-in cache coherency</strong></li>
+<li>A server can read/write <strong>remote memory at near-local speeds</strong></li>
+<li><strong>AI model training</strong> needs enormous amounts of RAM</li>
+<li>DSM is trendy again for <strong>pooling memory across server racks</strong>; poised for growth</li>
+</ul>
+</li>
+</ul>
+<p>当年 DSM 衰落是因为网络太慢；现在网络（RDMA/CXL）快到接近本地内存，这个瓶颈消失了，所以又回来了。</p>
+<h3 id="summary_12">Summary<a class="headerlink" href="#summary_12" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>DSM = Distributed Shared Memory</strong><ul>
+<li>Processes <strong>share pages</strong> rather than sending/receiving messages</li>
+<li>A useful abstraction: processes use the <strong>same code</strong> as if they all ran on the same OS (a multiprocessor OS)</li>
+</ul>
+</li>
+<li>DSM can be <strong>implemented over a message-passing</strong> interface (caches + page faults + multicast)</li>
+<li><strong>Invalidate vs. Update</strong> protocols (invalidate is generally preferred; watch out for <strong>false sharing</strong>)</li>
+<li>DSM can use any <strong>consistency model</strong>, from linearizability down to eventual consistency</li>
+<li>It has become <strong>trendy again</strong> (RDMA, CXL, memory pooling for AI)</li>
+</ul>
+<h2 id="lecture-26-graph-processing-machine-learning">Lecture 26: Graph Processing, Machine Learning<a class="headerlink" href="#lecture-26-graph-processing-machine-learning" title="Permanent link">&para;</a></h2>
+<h3 id="graph-processing-what-well-cover">Graph Processing: What We'll Cover<a class="headerlink" href="#graph-processing-what-well-cover" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Distributed graph processing</strong></li>
+<li><strong>Google's Pregel</strong> system: the inspiration for many newer graph processing systems (Piccolo, Giraph, GraphLab, PowerGraph, LFGraph, X-Stream, …)</li>
+</ul>
+<h3 id="lots-of-graphs">Lots of Graphs<a class="headerlink" href="#lots-of-graphs" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Graph</th>
+<th>Vertices</th>
+<th>Edges</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Internet graph</strong></td>
+<td>Routers/switches</td>
+<td>Links</td>
+</tr>
+<tr>
+<td><strong>World Wide Web</strong></td>
+<td>Webpages</td>
+<td>URL links from one page to another (<strong>directed</strong>: edges are uni-directional)</td>
+</tr>
+<tr>
+<td><strong>Social graphs</strong></td>
+<td>Users (Facebook, Twitter, LinkedIn)</td>
+<td>Friend/follow relationships</td>
+</tr>
+<tr>
+<td><strong>Biological graphs</strong></td>
+<td>Brain neurons, DNA, species</td>
+<td>Interactions (neural, DNA interaction, ecosystem graphs)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="graph-processing-operations">Graph Processing Operations<a class="headerlink" href="#graph-processing-operations" title="Permanent link">&para;</a></h4>
+<p>We need to <strong>derive properties</strong> from these graphs and <strong>summarize</strong> them into statistics, e.g.:</p>
+<ul>
+<li><strong>Shortest paths</strong> between pairs of vertices: Internet (routing), LinkedIn (degrees of separation)</li>
+<li><strong>Matching</strong>: dating graphs on match.com</li>
+<li><strong>PageRank</strong> on web graphs: Google, Bing, and Yahoo search all rely on it</li>
+<li>And many (many) others</li>
+</ul>
+<h4 id="why-hard">Why Hard?<a class="headerlink" href="#why-hard" title="Permanent link">&para;</a></h4>
+<ul>
+<li>These graphs are <strong>large</strong>: the human social network has 100s of millions of vertices and billions of edges; the WWW has millions of vertices and edges</li>
+<li>It's hard to <strong>store and process the entire graph on one server</strong>: one beefy server may be slow or very expensive (low performance-to-cost ratio) 一个server不够</li>
+<li>⟹ Use a <strong>distributed cluster/cloud</strong>! But <strong>walking a graph requires message passing</strong> between servers 消息传播</li>
+</ul>
+<h3 id="typical-graph-processing-application">Typical Graph Processing Application<a class="headerlink" href="#typical-graph-processing-application" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Works in <strong>iterations</strong>; each vertex is assigned a <strong>value</strong></li>
+<li>In each iteration, each vertex does <strong>Gather-Apply-Scatter (GAS)</strong>:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>What vertex A does</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Gather</strong></td>
+<td>Collect the values of its <strong>immediate neighbors</strong> (vertices joined to it by an edge) 获取相近邻居的值</td>
+<td>B→A, C→A, D→A, …</td>
+</tr>
+<tr>
+<td><strong>Apply</strong></td>
+<td>Compute a new value from <strong>its own value</strong> and its <strong>neighbors' values</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Scatter</strong></td>
+<td>Update its value and <strong>send it out</strong> to its neighbors</td>
+<td>A→B, C, D, E</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Processing <strong>terminates</strong> after (i) a <strong>fixed number of iterations</strong>, or (ii) when <strong>vertices stop changing</strong> values</li>
+</ul>
+<p>（GraphX 用 RDD 实现 GAS 的方式见 <a href="#lecture-apache-spark">Spark 那一节</a>）</p>
+<h3 id="bulk-synchronous-parallel-bsp-model">Bulk Synchronous Parallel (BSP) Model<a class="headerlink" href="#bulk-synchronous-parallel-bsp-model" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>"Think like a vertex"</strong></li>
+<li>Originally proposed by <strong>Valiant (1990)</strong></li>
+<li>Each <strong>superstep</strong> has three parts:</li>
+</ul>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-37-1">1</a></span>
+<span class="normal"><a href="#__codelineno-37-2">2</a></span>
+<span class="normal"><a href="#__codelineno-37-3">3</a></span>
+<span class="normal"><a href="#__codelineno-37-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1"></a>Processors:   |   |   |   |   |   |   |     ① Local computation (each processor in parallel)
+</span><span id="__span-37-2"><a id="__codelineno-37-2" name="__codelineno-37-2"></a>               \  X  /  \ X  /  \  /         ② Communication (send messages)
+</span><span id="__span-37-3"><a id="__codelineno-37-3" name="__codelineno-37-3"></a>═══════════════════════════════════════      ③ Barrier synchronisation (everyone waits)
+</span><span id="__span-37-4"><a id="__codelineno-37-4" name="__codelineno-37-4"></a>                → next superstep
+</span></code></pre></div></td></tr></table></div>
+<p>所有处理器各自算完、发完消息，在 barrier 处等齐，再一起进入下一轮。这就是 L15 同步系统"按 round 推进"的思路。</p>
+<h3 id="basic-distributed-graph-processing">Basic Distributed Graph Processing<a class="headerlink" href="#basic-distributed-graph-processing" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>"Think like a vertex"</strong></li>
+<li><strong>Assign each vertex to one server</strong>, so each server gets a subset of vertices</li>
+<li>In each iteration, each server performs <strong>Gather-Apply-Scatter</strong> for <strong>all its assigned vertices</strong><ul>
+<li><strong>Gather</strong>: get all neighboring vertices' values</li>
+<li><strong>Apply</strong>: compute the vertex's new value from its old value and the gathered values</li>
+<li><strong>Scatter</strong>: send the new value to neighboring vertices</li>
+</ul>
+</li>
+<li><strong>Races?</strong> <strong>No</strong>, unless the graph structure is modified（每个顶点只由一个 server 负责写，读的都是上一轮的值）</li>
+</ul>
+<h4 id="assigning-vertices">Assigning Vertices<a class="headerlink" href="#assigning-vertices" title="Permanent link">&para;</a></h4>
+<p>How to decide which server a vertex goes to?</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>How</th>
+<th>Trade-off</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hash-based</strong></td>
+<td><code>Hash(vertex id) mod #servers</code> (remember <strong>consistent hashing</strong> from P2P, L7-8!)</td>
+<td>Simple, balanced; ignores graph structure</td>
+</tr>
+<tr>
+<td><strong>Locality-based</strong></td>
+<td>Put vertices with many neighbors on the <strong>same server as their neighbors</strong></td>
+<td><strong>Reduces server-to-server communication</strong> each iteration; but some "intelligent" schemes take <strong>a lot of upfront time</strong> and may not pay off</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pregel-system-by-google">Pregel System by Google<a class="headerlink" href="#pregel-system-by-google" title="Permanent link">&para;</a></h3>
+<p><strong>Leader/worker model</strong> 领导+工人</p>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Responsibilities</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Leader</strong> (one server)</td>
+<td>Maintains the <strong>list of workers</strong>; <strong>monitors</strong> them and <strong>restarts</strong> them on failure; provides a <strong>Web-UI</strong> to monitor job progress</td>
+</tr>
+<tr>
+<td><strong>Workers</strong> (rest of servers)</td>
+<td><strong>Process their vertices</strong>; <strong>communicate</strong> with other workers</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Persistent data</strong>: files on a distributed storage system (e.g. <strong>GFS</strong> or <strong>BigTable</strong>)</li>
+<li><strong>Temporary data</strong>: on <strong>local disk</strong> 临时数据在本地磁盘</li>
+</ul>
+<h4 id="pregel-execution">Pregel Execution<a class="headerlink" href="#pregel-execution" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Many copies of the program begin executing on a cluster</li>
+<li>The <strong>leader</strong> ("Master" originally) assigns a <strong>partition of the input (vertices)</strong> to each worker<ul>
+<li>Each worker loads its vertices and marks them <strong>active</strong></li>
+</ul>
+</li>
+<li>The leader instructs each worker to perform an <strong>iteration</strong> (superstep)<ul>
+<li>Each worker loops through its <strong>active vertices</strong> and computes for each one</li>
+<li>Messages can be sent whenever, but must be <strong>delivered before the end of the iteration</strong> (i.e. the <strong>barrier</strong>)</li>
+<li>After the iteration, a worker tells the leader the <strong>#active vertices for the next iteration</strong>, plus any <strong>aggregator</strong> values</li>
+<li>When <strong>all</strong> workers reach the barrier, the leader starts the next iteration</li>
+</ul>
+</li>
+<li><strong>Computation halts</strong> when, in some iteration, <strong>no vertices are active</strong> and <strong>no messages are in transit</strong></li>
+</ol>
+<h4 id="fault-tolerance-in-pregel">Fault-Tolerance in Pregel<a class="headerlink" href="#fault-tolerance-in-pregel" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>How</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Checkpointing</strong>设置检查点</td>
+<td>Periodically, <strong>at the start of an iteration</strong>, the leader tells workers to save their partition state to <strong>persistent storage</strong> (vertex values, edge values, incoming messages)</td>
+</tr>
+<tr>
+<td><strong>Failure detection</strong></td>
+<td>Periodic <strong>"ping"</strong> messages from leader → worker (cf. failure detectors, L5-6)</td>
+</tr>
+<tr>
+<td><strong>Recovery</strong></td>
+<td>The leader <strong>reassigns graph partitions</strong> to the currently available workers; <strong>all</strong> workers <strong>reload</strong> their partition state from the <strong>most recent checkpoint</strong></td>
+</tr>
+</tbody>
+</table>
+<p>注意恢复时是<strong>所有</strong> worker 一起回滚到最近的 checkpoint，而不只是挂掉的那个：因为各分区之间每轮都在互发消息，只回滚一个分区会和其他分区的状态对不上。（对比 Spark 用 lineage 只重算丢失的分区。）</p>
+<h4 id="how-fast-is-it">How Fast Is It?<a class="headerlink" href="#how-fast-is-it" title="Permanent link">&para;</a></h4>
+<p><strong>SSSP</strong> (Single Source Shortest Path: shortest paths from one vertex to all vertices):</p>
+<table>
+<thead>
+<tr>
+<th>Graph size</th>
+<th>Workers</th>
+<th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 billion vertices (tree)</td>
+<td>50</td>
+<td>180 s</td>
+</tr>
+<tr>
+<td>1 billion vertices (tree)</td>
+<td>800</td>
+<td><strong>20 s</strong></td>
+</tr>
+<tr>
+<td><strong>50 billion</strong> vertices</td>
+<td>800</td>
+<td>700 s (~12 min)</td>
+</tr>
+</tbody>
+</table>
+<p>Pretty fast!</p>
+<details class="note">
+<summary>SSSP in Pregel style (think like a vertex)</summary>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-38-1">1</a></span>
+<span class="normal"><a href="#__codelineno-38-2">2</a></span>
+<span class="normal"><a href="#__codelineno-38-3">3</a></span>
+<span class="normal"><a href="#__codelineno-38-4">4</a></span>
+<span class="normal"><a href="#__codelineno-38-5">5</a></span>
+<span class="normal"><a href="#__codelineno-38-6">6</a></span>
+<span class="normal"><a href="#__codelineno-38-7">7</a></span>
+<span class="normal"><a href="#__codelineno-38-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1"></a>// each vertex v: value = current best distance from the source (∞ initially; 0 at the source)
+</span><span id="__span-38-2"><a id="__codelineno-38-2" name="__codelineno-38-2"></a>superstep:
+</span><span id="__span-38-3"><a id="__codelineno-38-3" name="__codelineno-38-3"></a>    minDist = (v is source) ? 0 : ∞
+</span><span id="__span-38-4"><a id="__codelineno-38-4" name="__codelineno-38-4"></a>    for each incoming message m: minDist = min(minDist, m)        // Gather
+</span><span id="__span-38-5"><a id="__codelineno-38-5" name="__codelineno-38-5"></a>    if minDist &lt; v.value:
+</span><span id="__span-38-6"><a id="__codelineno-38-6" name="__codelineno-38-6"></a>        v.value = minDist                                         // Apply
+</span><span id="__span-38-7"><a id="__codelineno-38-7" name="__codelineno-38-7"></a>        for each out-edge (v, u, w): send(u, minDist + w)         // Scatter
+</span><span id="__span-38-8"><a id="__codelineno-38-8" name="__codelineno-38-8"></a>    voteToHalt()        // becomes active again only if it receives a message
+</span></code></pre></div></td></tr></table></div>
+<p>The computation stops when no vertex improves its distance, so no messages are sent and every vertex has halted.</p>
+</details>
+<h4 id="summary-graph-processing">Summary: Graph Processing<a class="headerlink" href="#summary-graph-processing" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Lots of (large) graphs around us that need processing</li>
+<li><strong>MapReduce is not a good match</strong>（每轮迭代都要把整张图读写一遍磁盘，而图算法要迭代很多轮）</li>
+<li>Distributed graph processing systems: <strong>Pregel</strong> by Google</li>
+<li>Many follow-up systems<ul>
+<li><strong>Piccolo, Giraph</strong>: Pregel-like</li>
+<li><strong>GraphLab, PowerGraph, LFGraph, X-Stream</strong>: more advanced</li>
+</ul>
+</li>
+</ul>
+<h3 id="machine-learning-basics">Machine Learning Basics<a class="headerlink" href="#machine-learning-basics" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><em>"Machine learning is nothing but damn statistics."</em> – A lot of people</p>
+</blockquote>
+<ul>
+<li>ML trains <strong>"models"</strong> (computer representations)</li>
+<li><strong>Training</strong> vs. <strong>Inference</strong> (also called <strong>Prediction</strong> or <strong>Model Serving</strong>)</li>
+<li>Learning types: <strong>Supervised</strong> vs. <strong>Unsupervised</strong> vs. <strong>Reinforcement</strong></li>
+</ul>
+<h4 id="sgd-stochastic-gradient-descent">SGD (Stochastic Gradient Descent)<a class="headerlink" href="#sgd-stochastic-gradient-descent" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Minimizes an objective function</strong> that is <strong>smooth and differentiable</strong></li>
+<li>Popular variants: <strong>AdaGrad</strong> (adaptive gradient), <strong>Adam</strong> (adaptive moment), <strong>RMSProp</strong></li>
+<li>A common <strong>strawman application</strong> in many distributed ML papers!</li>
+</ul>
+<p>更新规则：<span class="arithmatex">\(w' = w - \eta \Delta w\)</span>（<span class="arithmatex">\(\eta\)</span> = learning rate，<span class="arithmatex">\(\Delta w\)</span> = 梯度）。下面 Parameter Server 图里的公式就是它。</p>
+<h4 id="basic-neural-networks">Basic Neural Networks<a class="headerlink" href="#basic-neural-networks" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>ANN = Artificial Neural Network</strong>: another kind of model; a common form of <strong>representation learning</strong>; used widely in vision, NLP, …</li>
+<li>A <strong>graph of operators</strong><ul>
+<li>Operators can be <strong>computationally heavy</strong></li>
+<li>The graph can be in <strong>"stages"</strong> or <strong>"layers"</strong></li>
+<li>Commonly <strong>all-to-all communication</strong> between operators in consecutive stages</li>
+</ul>
+</li>
+<li>Most edges have associated <strong>weights (parameters)</strong> (exceptions: activation functions like <strong>ReLU</strong>, <strong>dropout</strong>). <strong>The collection of these weights IS the model.</strong></li>
+<li>E.g. a <strong>perceptron</strong> layer: inputs <span class="arithmatex">\(x_i\)</span> × weights <span class="arithmatex">\(w_i\)</span> → weighted sum Σ → step function → output</li>
+</ul>
+<p><strong>Training</strong></p>
+<ol>
+<li><strong>Forward pass</strong>: training data goes forward through the network; compute the <strong>error</strong> against the known result (supervised learning)</li>
+<li><strong>Backward pass</strong>: adjust/update the weights at each operator, so that the same input would now produce the correct result
+-   Data flowing between operators: <strong>tensors</strong> (multi-dimensional vectors)
+-   Default: train on <strong>one item</strong> (forward + backward), then the next; extension: train on a <strong>mini-batch</strong> of items
+-   After training, <strong>inference needs only the forward pass</strong>
+-   Emerging area: <strong>online training</strong> (aka <strong>continual training</strong>): training and inference together
+-   <strong>Hyperparameter</strong> = a configuration parameter of the model (e.g. <strong>batch size</strong>). Not to be confused with a model <strong>weight</strong> (= <strong>parameter</strong>)</li>
+</ol>
+<h4 id="ann-types">ANN Types<a class="headerlink" href="#ann-types" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Structure</th>
+<th>Example use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>FFNN</strong> (feed-forward)</td>
+<td><strong>No loops</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DNN</strong> (deep)</td>
+<td>More than one stage; <strong>"hidden" layers</strong> between input and output</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>CNN</strong> (convolutional)</td>
+<td>DNN + <strong>convolution layers</strong>: a sequence of filters that leads to an activation/detection</td>
+<td>Images, e.g. Facebook photo captioning</td>
+</tr>
+<tr>
+<td><strong>RNN</strong> (recurrent)</td>
+<td>DNN + <strong>loops within a layer</strong> (time / sequential aspects, e.g. a GIF)</td>
+<td>Auto-correction on your phone</td>
+</tr>
+<tr>
+<td>Others</td>
+<td><strong>GNN</strong> (graph neural net), <strong>Transformer</strong>, …</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Neural nets used to evaluate distributed ML systems: <strong>Inception (v3)</strong>, <strong>(G)NMT</strong>, <strong>ResNet</strong>, …</p>
+<h3 id="distributed-machine-learning">Distributed Machine Learning<a class="headerlink" href="#distributed-machine-learning" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Training data: a collection of inputs and output labels <span class="arithmatex">\((x_i, y_i)\)</span> of size <span class="arithmatex">\(N\)</span>; learn the model <strong>weights</strong> <span class="arithmatex">\(w\)</span></li>
+<li><strong>Model size and <span class="arithmatex">\(N\)</span> can be huge</strong></li>
+<li><strong>Centralized ML</strong>: slow and often <strong>infeasible</strong></li>
+<li><strong>Distributed ML</strong>: parallelize across <strong>multiple workers</strong><ul>
+<li>A <strong>"Parameter Server"</strong> aggregates data from the workers for the current iteration, then starts the next iteration at the workers [Dean et al., NeurIPS 2012]</li>
+</ul>
+</li>
+</ul>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-39-1">1</a></span>
+<span class="normal"><a href="#__codelineno-39-2">2</a></span>
+<span class="normal"><a href="#__codelineno-39-3">3</a></span>
+<span class="normal"><a href="#__codelineno-39-4">4</a></span>
+<span class="normal"><a href="#__codelineno-39-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1"></a>             Parameter Server:  w' = w − η·Δw
+</span><span id="__span-39-2"><a id="__codelineno-39-2" name="__codelineno-39-2"></a>              ↓ w   ↑ Δw     ↓ w   ↑ Δw     ↓ w   ↑ Δw
+</span><span id="__span-39-3"><a id="__codelineno-39-3" name="__codelineno-39-3"></a>           Model replica   Model replica   Model replica
+</span><span id="__span-39-4"><a id="__codelineno-39-4" name="__codelineno-39-4"></a>                ↑               ↑               ↑
+</span><span id="__span-39-5"><a id="__codelineno-39-5" name="__codelineno-39-5"></a>            Data shard      Data shard      Data shard
+</span></code></pre></div></td></tr></table></div>
+<h4 id="kinds-of-parallelism">Kinds of Parallelism<a class="headerlink" href="#kinds-of-parallelism" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Data parallelism</strong></th>
+<th><strong>Model parallelism</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What's split</td>
+<td>The <strong>data</strong>: each worker runs the <strong>same (full) model</strong> on <strong>different data</strong> (mini-batches)</td>
+<td>The <strong>model</strong> (DNN graph) is split <strong>across devices</strong> (e.g. L1, L2 on worker 1; L3, L4 on worker 2)</td>
+</tr>
+<tr>
+<td>How an input flows</td>
+<td>Each worker processes its own mini-batch independently</td>
+<td><strong>One input passes through the collection of devices</strong></td>
+</tr>
+<tr>
+<td>Synchronization</td>
+<td>Workers <strong>synchronize after each mini-batch</strong></td>
+<td>Activations/gradients pass between devices at layer boundaries</td>
+</tr>
+<tr>
+<td>When to use</td>
+<td>Data is huge, model fits on one device</td>
+<td><strong>Model too big</strong> for one device</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Synchronizing data-parallel workers</strong></p>
+<ol>
+<li><strong>Parameter Server</strong> approach: workers send updates <span class="arithmatex">\(\Delta w\)</span> to the PS; the PS sends back new weights <span class="arithmatex">\(w\)</span></li>
+<li><strong>All-Reduce</strong> approach: each worker <strong>multicasts</strong> its weights/updates to all others (no central server)</li>
+</ol>
+<p><strong>Variant: asynchronous training</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Synchronous</strong> replication</th>
+<th><strong>Asynchronous</strong> replication</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Behavior</td>
+<td>All workers finish a step, then the PS updates once; everyone waits for the <strong>slowest</strong> worker</td>
+<td>Each worker pushes its update to the PS <strong>as soon as it's done</strong> and continues</td>
+</tr>
+<tr>
+<td>Pros</td>
+<td>Equivalent to single-machine SGD with a bigger batch; consistent</td>
+<td><strong>No waiting</strong> for stragglers → higher throughput</td>
+</tr>
+<tr>
+<td>Cons</td>
+<td>Stragglers slow everyone down</td>
+<td>Workers compute on <strong>stale weights</strong></td>
+</tr>
+</tbody>
+</table>
+<p>（同步训练就是 BSP：每个 mini-batch 是一个 superstep，结束时有个 barrier。）</p>
+<h3 id="ml-frameworks">ML Frameworks<a class="headerlink" href="#ml-frameworks" title="Permanent link">&para;</a></h3>
+<h4 id="tensorflow">TensorFlow<a class="headerlink" href="#tensorflow" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Built by <strong>Google</strong>: a framework for large-scale <strong>training and inference</strong> [Abadi et al., OSDI 2016]</li>
+<li><strong>Hides the details of distribution</strong></li>
+<li>Uses <strong>dataflow graphs</strong> to represent <strong>computation, shared state, and operations that mutate state</strong>; the dataflow captures the structure of ML computation</li>
+<li>Extensible: the runtime has <strong>200+ standard operations</strong></li>
+<li>Supports <strong>CPUs, GPUs, and TPUs</strong> (Tensor Processing Units) and different communication protocols</li>
+</ul>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-40-1">1</a></span>
+<span class="normal"><a href="#__codelineno-40-2">2</a></span>
+<span class="normal"><a href="#__codelineno-40-3">3</a></span>
+<span class="normal"><a href="#__codelineno-40-4">4</a></span>
+<span class="normal"><a href="#__codelineno-40-5">5</a></span>
+<span class="normal"><a href="#__codelineno-40-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1"></a>Training libraries | Inference libs
+</span><span id="__span-40-2"><a id="__codelineno-40-2" name="__codelineno-40-2"></a>Python client | C++ client | ...
+</span><span id="__span-40-3"><a id="__codelineno-40-3" name="__codelineno-40-3"></a>C API
+</span><span id="__span-40-4"><a id="__codelineno-40-4" name="__codelineno-40-4"></a>Distributed master | Dataflow executor
+</span><span id="__span-40-5"><a id="__codelineno-40-5" name="__codelineno-40-5"></a>Kernel implementations (Const, Var, MatMul, Conv2D, ReLU, Queue, ...)
+</span><span id="__span-40-6"><a id="__codelineno-40-6" name="__codelineno-40-6"></a>Networking layer (RPC, RDMA, ...) | Device layer (CPU, GPU, ...)
+</span></code></pre></div></td></tr></table></div>
+<details class="note">
+<summary>Image classifier with the TensorFlow API (3 steps)</summary>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-41-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-41-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-41-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-41-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-41-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-41-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-41-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-41-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-41-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-41-10">10</a></span>
+<span class="normal"><a href="#__codelineno-41-11">11</a></span>
+<span class="normal"><a href="#__codelineno-41-12">12</a></span>
+<span class="normal"><a href="#__codelineno-41-13">13</a></span>
+<span class="normal"><a href="#__codelineno-41-14">14</a></span>
+<span class="normal"><a href="#__codelineno-41-15">15</a></span>
+<span class="normal"><a href="#__codelineno-41-16">16</a></span>
+<span class="normal"><a href="#__codelineno-41-17">17</a></span>
+<span class="normal"><a href="#__codelineno-41-18">18</a></span>
+<span class="normal"><a href="#__codelineno-41-19">19</a></span>
+<span class="normal"><a href="#__codelineno-41-20">20</a></span>
+<span class="normal"><a href="#__codelineno-41-21">21</a></span>
+<span class="normal"><a href="#__codelineno-41-22">22</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1"></a><span class="c1"># 1. Construct a graph representing the model.</span>
+</span><span id="__span-41-2"><a id="__codelineno-41-2" name="__codelineno-41-2"></a><span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">placeholder</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="p">[</span><span class="n">BATCH_SIZE</span><span class="p">,</span> <span class="mi">784</span><span class="p">])</span>     <span class="c1"># Placeholder for input.</span>
+</span><span id="__span-41-3"><a id="__codelineno-41-3" name="__codelineno-41-3"></a><span class="n">y</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">placeholder</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="p">[</span><span class="n">BATCH_SIZE</span><span class="p">,</span> <span class="mi">10</span><span class="p">])</span>      <span class="c1"># Placeholder for labels.</span>
+</span><span id="__span-41-4"><a id="__codelineno-41-4" name="__codelineno-41-4"></a>
+</span><span id="__span-41-5"><a id="__codelineno-41-5" name="__codelineno-41-5"></a><span class="n">W_1</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">random_uniform</span><span class="p">([</span><span class="mi">784</span><span class="p">,</span> <span class="mi">100</span><span class="p">]))</span>      <span class="c1"># 784x100 weight matrix.</span>
+</span><span id="__span-41-6"><a id="__codelineno-41-6" name="__codelineno-41-6"></a><span class="n">b_1</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="mi">100</span><span class="p">]))</span>                    <span class="c1"># 100-element bias vector.</span>
+</span><span id="__span-41-7"><a id="__codelineno-41-7" name="__codelineno-41-7"></a><span class="n">layer_1</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">relu</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">W_1</span><span class="p">)</span> <span class="o">+</span> <span class="n">b_1</span><span class="p">)</span>         <span class="c1"># Output of hidden layer.</span>
+</span><span id="__span-41-8"><a id="__codelineno-41-8" name="__codelineno-41-8"></a>
+</span><span id="__span-41-9"><a id="__codelineno-41-9" name="__codelineno-41-9"></a><span class="n">W_2</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">random_uniform</span><span class="p">([</span><span class="mi">100</span><span class="p">,</span> <span class="mi">10</span><span class="p">]))</span>       <span class="c1"># 100x10 weight matrix.</span>
+</span><span id="__span-41-10"><a id="__codelineno-41-10" name="__codelineno-41-10"></a><span class="n">b_2</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="mi">10</span><span class="p">]))</span>                     <span class="c1"># 10-element bias vector.</span>
+</span><span id="__span-41-11"><a id="__codelineno-41-11" name="__codelineno-41-11"></a><span class="n">layer_2</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">layer_1</span><span class="p">,</span> <span class="n">W_2</span><span class="p">)</span> <span class="o">+</span> <span class="n">b_2</span>               <span class="c1"># Output of linear layer.</span>
+</span><span id="__span-41-12"><a id="__codelineno-41-12" name="__codelineno-41-12"></a>
+</span><span id="__span-41-13"><a id="__codelineno-41-13" name="__codelineno-41-13"></a><span class="c1"># 2. Add nodes that represent the optimization algorithm.</span>
+</span><span id="__span-41-14"><a id="__codelineno-41-14" name="__codelineno-41-14"></a><span class="n">loss</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">softmax_cross_entropy_with_logits</span><span class="p">(</span><span class="n">layer_2</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</span><span id="__span-41-15"><a id="__codelineno-41-15" name="__codelineno-41-15"></a><span class="n">train_op</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">AdagradOptimizer</span><span class="p">(</span><span class="mf">0.01</span><span class="p">)</span><span class="o">.</span><span class="n">minimize</span><span class="p">(</span><span class="n">loss</span><span class="p">)</span>
+</span><span id="__span-41-16"><a id="__codelineno-41-16" name="__codelineno-41-16"></a>
+</span><span id="__span-41-17"><a id="__codelineno-41-17" name="__codelineno-41-17"></a><span class="c1"># 3. Execute the graph on batches of input data.</span>
+</span><span id="__span-41-18"><a id="__codelineno-41-18" name="__codelineno-41-18"></a><span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span> <span class="k">as</span> <span class="n">sess</span><span class="p">:</span>                            <span class="c1"># Connect to the TF runtime.</span>
+</span><span id="__span-41-19"><a id="__codelineno-41-19" name="__codelineno-41-19"></a>    <span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">initialize_all_variables</span><span class="p">())</span>           <span class="c1"># Randomly initialize weights.</span>
+</span><span id="__span-41-20"><a id="__codelineno-41-20" name="__codelineno-41-20"></a>    <span class="k">for</span> <span class="n">step</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">NUM_STEPS</span><span class="p">):</span>                     <span class="c1"># Train iteratively for NUM_STEPS.</span>
+</span><span id="__span-41-21"><a id="__codelineno-41-21" name="__codelineno-41-21"></a>        <span class="n">x_data</span><span class="p">,</span> <span class="n">y_data</span> <span class="o">=</span> <span class="o">...</span>                          <span class="c1"># Load one batch of input data.</span>
+</span><span id="__span-41-22"><a id="__codelineno-41-22" name="__codelineno-41-22"></a>        <span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">train_op</span><span class="p">,</span> <span class="p">{</span><span class="n">x</span><span class="p">:</span> <span class="n">x_data</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">y_data</span><span class="p">})</span>    <span class="c1"># Perform one training step.</span>
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li>Step 1 only <strong>builds a static graph</strong> (nothing runs yet); step 3 actually executes it</li>
+<li>The slide's <code>layer_1</code> line says <code>+ b_2</code>, which looks like a typo; it should be <code>+ b_1</code> (as above)</li>
+</ul>
+</details>
+<h4 id="pytorch">PyTorch<a class="headerlink" href="#pytorch" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Another popular ML framework, originally developed by <strong>Meta</strong></li>
+<li>Used by Tesla Autopilot, Uber's Pyro, Hugging Face's Transformers</li>
+<li><strong>Dynamic computation graphs</strong>（边执行边建图，不像 TF 1.x 先建好静态图再运行）</li>
+<li><strong>Automatic computation of gradients</strong> (autograd)</li>
+<li>Implements many algorithms and components; domain-specific libraries (<strong>TorchText, TorchVision, TorchAudio</strong>) include datasets</li>
+<li><strong>Tensors</strong>: n-dimensional arrays</li>
+<li><strong>Module</strong>: defines what makes up the model, plus a <code>forward</code> member function<ul>
+<li>E.g. the <strong>Linear</strong> module: <code>weight</code> and <code>bias</code> as parameters; <code>forward</code> computes <code>input * weight + bias</code></li>
+</ul>
+</li>
+</ul>
+<details class="note">
+<summary>Example with DistributedDataParallel (DDP)</summary>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-42-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-42-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-42-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-42-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-42-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-42-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-42-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-42-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-42-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-42-10">10</a></span>
+<span class="normal"><a href="#__codelineno-42-11">11</a></span>
+<span class="normal"><a href="#__codelineno-42-12">12</a></span>
+<span class="normal"><a href="#__codelineno-42-13">13</a></span>
+<span class="normal"><a href="#__codelineno-42-14">14</a></span>
+<span class="normal"><a href="#__codelineno-42-15">15</a></span>
+<span class="normal"><a href="#__codelineno-42-16">16</a></span>
+<span class="normal"><a href="#__codelineno-42-17">17</a></span>
+<span class="normal"><a href="#__codelineno-42-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1"></a><span class="n">dist</span><span class="o">.</span><span class="n">init_process_group</span><span class="p">(</span><span class="s2">"gloo"</span><span class="p">,</span> <span class="n">rank</span><span class="o">=</span><span class="n">rank</span><span class="p">,</span> <span class="n">world_size</span><span class="o">=</span><span class="n">world_size</span><span class="p">)</span>  <span class="c1"># create default process group</span>
+</span><span id="__span-42-2"><a id="__codelineno-42-2" name="__codelineno-42-2"></a>
+</span><span id="__span-42-3"><a id="__codelineno-42-3" name="__codelineno-42-3"></a><span class="n">model</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">rank</span><span class="p">)</span>                 <span class="c1"># create local model</span>
+</span><span id="__span-42-4"><a id="__codelineno-42-4" name="__codelineno-42-4"></a><span class="n">ddp_model</span> <span class="o">=</span> <span class="n">DDP</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">device_ids</span><span class="o">=</span><span class="p">[</span><span class="n">rank</span><span class="p">])</span>          <span class="c1"># construct DDP model</span>
+</span><span id="__span-42-5"><a id="__codelineno-42-5" name="__codelineno-42-5"></a>
+</span><span id="__span-42-6"><a id="__codelineno-42-6" name="__codelineno-42-6"></a><span class="c1"># define loss function and optimizer</span>
+</span><span id="__span-42-7"><a id="__codelineno-42-7" name="__codelineno-42-7"></a><span class="n">loss_fn</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">MSELoss</span><span class="p">()</span>
+</span><span id="__span-42-8"><a id="__codelineno-42-8" name="__codelineno-42-8"></a><span class="n">optimizer</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">SGD</span><span class="p">(</span><span class="n">ddp_model</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
+</span><span id="__span-42-9"><a id="__codelineno-42-9" name="__codelineno-42-9"></a>
+</span><span id="__span-42-10"><a id="__codelineno-42-10" name="__codelineno-42-10"></a><span class="c1"># forward pass</span>
+</span><span id="__span-42-11"><a id="__codelineno-42-11" name="__codelineno-42-11"></a><span class="n">outputs</span> <span class="o">=</span> <span class="n">ddp_model</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">rank</span><span class="p">))</span>
+</span><span id="__span-42-12"><a id="__codelineno-42-12" name="__codelineno-42-12"></a><span class="n">labels</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">rank</span><span class="p">)</span>
+</span><span id="__span-42-13"><a id="__codelineno-42-13" name="__codelineno-42-13"></a>
+</span><span id="__span-42-14"><a id="__codelineno-42-14" name="__codelineno-42-14"></a><span class="c1"># backward pass</span>
+</span><span id="__span-42-15"><a id="__codelineno-42-15" name="__codelineno-42-15"></a><span class="n">loss_fn</span><span class="p">(</span><span class="n">outputs</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span><span class="o">.</span><span class="n">backward</span><span class="p">()</span>
+</span><span id="__span-42-16"><a id="__codelineno-42-16" name="__codelineno-42-16"></a>
+</span><span id="__span-42-17"><a id="__codelineno-42-17" name="__codelineno-42-17"></a><span class="c1"># update parameters</span>
+</span><span id="__span-42-18"><a id="__codelineno-42-18" name="__codelineno-42-18"></a><span class="n">optimizer</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
+</span></code></pre></div></td></tr></table></div>
+<p>DDP is <strong>data parallelism</strong>: every process (rank) holds a full copy of the model. During <code>backward()</code>, DDP <strong>all-reduces the gradients</strong> across processes, so after <code>optimizer.step()</code> every replica has the same weights.</p>
+</details>
+<h4 id="jax">JAX<a class="headerlink" href="#jax" title="Permanent link">&para;</a></h4>
+<ul>
+<li>ML framework from <strong>Google</strong> with a familiar <strong>NumPy-style API</strong></li>
+<li>Multiple backends: <strong>CPU, GPU, TPU</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Transform</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>grad</code></td>
+<td>Automatic differentiation</td>
+</tr>
+<tr>
+<td><code>jit</code></td>
+<td>Compilation</td>
+</tr>
+<tr>
+<td><code>vmap</code></td>
+<td>Auto-vectorization</td>
+</tr>
+<tr>
+<td><code>pmap</code></td>
+<td>Automatic parallelization</td>
+</tr>
+</tbody>
+</table>
+<h3 id="other-ml-federated-learning">Other ML: Federated Learning<a class="headerlink" href="#other-ml-federated-learning" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Distributed ML</strong></th>
+<th><strong>Federated ML</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data across workers</td>
+<td>Assumes <strong>homogeneous</strong> data</td>
+<td>Allows <strong>heterogeneous</strong> data</td>
+</tr>
+<tr>
+<td>Workers</td>
+<td>Servers in a datacenter</td>
+<td><strong>Datacenters or mobile devices</strong></td>
+</tr>
+<tr>
+<td>Challenges</td>
+<td></td>
+<td><strong>Failures</strong>, possibly <strong>privacy</strong> issues</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+<td>Google's federated learning to <strong>predict keystrokes</strong> on mobile devices</td>
+</tr>
+</tbody>
+</table>
+<p>联邦学习的关键：数据留在用户设备上，只上传模型更新（梯度/权重），不上传原始数据。</p>
+<h3 id="summary_13">Summary<a class="headerlink" href="#summary_13" title="Permanent link">&para;</a></h3>
+<p>Emerging topics in distributed computing:</p>
+<ul>
+<li><strong>Stream processing</strong> (L23A)</li>
+<li><strong>Graph processing</strong>: GAS, BSP, <strong>Pregel</strong> (leader/worker, supersteps with barriers, checkpoint-based fault tolerance)</li>
+<li><strong>Machine learning</strong>: SGD, neural nets, <strong>parameter server</strong> vs. <strong>all-reduce</strong>, <strong>data</strong> vs. <strong>model parallelism</strong>, TensorFlow / PyTorch / JAX, federated learning</li>
+<li>Plus the <strong>Spark</strong> video (in syllabus, <strong>NOT optional</strong>), see the <a href="#lecture-apache-spark">Apache Spark notes</a></li>
+</ul>
 
 
 
@@ -19884,7 +21844,7 @@ Mount does <strong>NOT</strong> clone or copy files; it just points to the remot
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2026年11月19日 02:50:20 CST">2026年11月19日 02:50:20</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2026年11月21日 14:03:07 CST">2026年11月21日 14:03:07</span>
   </span>
 
     
